@@ -8,8 +8,7 @@ from chromadb.config import Settings
 import os
 import json
 from typing import Optional
-from prompt import prompt_1, prompt_2, murged_prompt, prompt_o
-range
+from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
 from api_methodes import load_document, chunk_text, save_to_dataset
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")

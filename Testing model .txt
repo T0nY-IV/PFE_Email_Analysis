@@ -1,0 +1,1469 @@
+Testing model: qwen2.5:1.5b
+Running 50 iterations...
+
+Iteration 1/50: 3.425s
+Iteration 2/50: 0.589s
+Iteration 3/50: 0.867s
+Iteration 4/50: 0.615s
+Iteration 5/50: 0.643s
+Iteration 6/50: 0.644s
+Iteration 7/50: 0.803s
+Iteration 8/50: 0.690s
+Iteration 9/50: 0.685s
+Iteration 10/50: 0.713s
+Iteration 11/50: 0.624s
+Iteration 12/50: 0.585s
+Iteration 13/50: 0.591s
+Iteration 14/50: 0.567s
+Iteration 15/50: 0.602s
+Iteration 16/50: 0.666s
+Iteration 17/50: 0.637s
+Iteration 18/50: 0.713s
+Iteration 19/50: 1.114s
+Iteration 20/50: 0.842s
+Iteration 21/50: 0.710s
+Iteration 22/50: 0.784s
+Iteration 23/50: 0.618s
+Iteration 24/50: 0.614s
+Iteration 25/50: 0.610s
+Iteration 26/50: 0.873s
+Iteration 27/50: 0.639s
+Iteration 28/50: 0.713s
+Iteration 29/50: 0.562s
+Iteration 30/50: 0.590s
+Iteration 31/50: 0.663s
+Iteration 32/50: 0.551s
+Iteration 33/50: 0.560s
+Iteration 34/50: 0.602s
+Iteration 35/50: 0.577s
+Iteration 36/50: 0.701s
+Iteration 37/50: 0.586s
+Iteration 38/50: 0.628s
+Iteration 39/50: 0.588s
+Iteration 40/50: 0.819s
+Iteration 41/50: 0.681s
+Iteration 42/50: 0.750s
+Iteration 43/50: 0.636s
+Iteration 44/50: 0.704s
+Iteration 45/50: 0.728s
+Iteration 46/50: 0.680s
+Iteration 47/50: 0.742s
+Iteration 48/50: 0.600s
+Iteration 49/50: 0.599s
+Iteration 50/50: 0.559s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 36.280s  (sum of all iteration durations)
+  Min: 0.551s  (fastest single call)
+  Max: 3.425s  (slowest single call)
+  Mean: 0.726s  (average call duration)
+  Median: 0.641s  (middle value; less affected by outliers)
+  Stddev: 0.403s  (spread of timings; lower = more consistent)
+  90th perc: 0.819s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 1.378  (average throughput)
+
+CPU (system-wide):
+  Avg: 14.54%  Min: 5.90%  Max: 27.10%  Median: 13.65%
+
+Memory (system-wide):
+  Avg: 72.27%  Min: 71.50%  Max: 72.80%  Median: 72.30%
+
+GPU utilization (%):
+  Avg: 73.86%  Min: 0.00%  Max: 91.00%  Median: 88.00%
+
+GPU memory used (MB):
+  Avg: 2322.6MB  Min: 2315.0MB  Max: 2359.0MB  Median: 2318.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 15 / 50
+  Avg: 0.790  Min: 0.000  Max: 1.000  Median: 0.900  Stddev: 0.240
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.445  Min: 0.000  Max: 1.000  Median: 0.300  Stddev: 0.264
+  Matches: both=2, domain_only=0, intent_only=11, none=37
+
+Best result (both domain and intent match):
+  Iteration: 8  Elapsed: 0.690s  Computed confidence: 1.000  Model confidence: 0.9
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "client": "client@gmail.com",
+    "CMD-45632": "#CMD-45632"
+  },
+  "confidence_score": 0.9
+}
+Testing model: qwen2.5:3b
+Running 50 iterations...
+
+Iteration 1/50: 5.276s
+Iteration 2/50: 1.582s
+Iteration 3/50: 1.552s
+Iteration 4/50: 1.573s
+Iteration 5/50: 1.582s
+Iteration 6/50: 1.567s
+Iteration 7/50: 1.562s
+Iteration 8/50: 1.524s
+Iteration 9/50: 1.742s
+Iteration 10/50: 1.738s
+Iteration 11/50: 1.879s
+Iteration 12/50: 1.587s
+Iteration 13/50: 1.534s
+Iteration 14/50: 1.600s
+Iteration 15/50: 1.566s
+Iteration 16/50: 2.016s
+Iteration 17/50: 1.595s
+Iteration 18/50: 1.741s
+Iteration 19/50: 1.565s
+Iteration 20/50: 1.684s
+Iteration 21/50: 1.547s
+Iteration 22/50: 1.543s
+Iteration 23/50: 1.543s
+Iteration 24/50: 1.957s
+Iteration 25/50: 1.562s
+Iteration 26/50: 1.603s
+Iteration 27/50: 1.759s
+Iteration 28/50: 1.545s
+Iteration 29/50: 1.599s
+Iteration 30/50: 1.517s
+Iteration 31/50: 1.719s
+Iteration 32/50: 1.687s
+Iteration 33/50: 1.552s
+Iteration 34/50: 1.588s
+Iteration 35/50: 1.595s
+Iteration 36/50: 2.310s
+Iteration 37/50: 1.698s
+Iteration 38/50: 1.570s
+Iteration 39/50: 1.523s
+Iteration 40/50: 1.570s
+Iteration 41/50: 2.376s
+Iteration 42/50: 1.552s
+Iteration 43/50: 1.529s
+Iteration 44/50: 1.476s
+Iteration 45/50: 1.547s
+Iteration 46/50: 1.926s
+Iteration 47/50: 1.632s
+Iteration 48/50: 1.530s
+Iteration 49/50: 1.563s
+Iteration 50/50: 1.669s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 86.255s  (sum of all iteration durations)
+  Min: 1.476s  (fastest single call)
+  Max: 5.276s  (slowest single call)
+  Mean: 1.725s  (average call duration)
+  Median: 1.582s  (middle value; less affected by outliers)
+  Stddev: 0.545s  (spread of timings; lower = more consistent)
+  90th perc: 1.926s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.580  (average throughput)
+
+CPU (system-wide):
+  Avg: 13.58%  Min: 7.30%  Max: 38.40%  Median: 12.15%
+
+Memory (system-wide):
+  Avg: 74.98%  Min: 74.80%  Max: 75.20%  Median: 75.00%
+
+GPU utilization (%):
+  Avg: 87.82%  Min: 29.00%  Max: 94.00%  Median: 92.00%
+
+GPU memory used (MB):
+  Avg: 4716.5MB  Min: 4713.0MB  Max: 4721.0MB  Median: 4718.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 0.957  Min: 0.900  Max: 1.000  Median: 0.960  Stddev: 0.031
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.987  Min: 0.900  Max: 1.000  Median: 1.000  Stddev: 0.027
+  Matches: both=33, domain_only=0, intent_only=17, none=0
+
+Best result (both domain and intent match):
+  Iteration: 2  Elapsed: 1.582s  Computed confidence: 1.000  Model confidence: 0.95
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "product_name": "Chaussures running T42",
+    "order_number": "CMD-45632",
+    "return_reason": "Taille incorrecte (trop petit)",
+    "desired_option": "Échange contre T43 ou remboursement"
+  },
+  "confidence_score": 0.95
+}
+Testing model: gemma:2b
+Running 50 iterations...
+
+Iteration 1/50: 6.281s
+Iteration 2/50: 0.896s
+Iteration 3/50: 0.975s
+Iteration 4/50: 0.981s
+Iteration 5/50: 0.917s
+Iteration 6/50: 0.957s
+Iteration 7/50: 0.954s
+Iteration 8/50: 0.907s
+Iteration 9/50: 1.021s
+Iteration 10/50: 0.946s
+Iteration 11/50: 0.938s
+Iteration 12/50: 1.057s
+Iteration 13/50: 0.961s
+Iteration 14/50: 0.954s
+Iteration 15/50: 0.914s
+Iteration 16/50: 1.074s
+Iteration 17/50: 1.170s
+Iteration 18/50: 0.957s
+Iteration 19/50: 0.897s
+Iteration 20/50: 0.934s
+Iteration 21/50: 0.927s
+Iteration 22/50: 0.909s
+Iteration 23/50: 1.063s
+Iteration 24/50: 0.963s
+Iteration 25/50: 1.034s
+Iteration 26/50: 1.225s
+Iteration 27/50: 0.978s
+Iteration 28/50: 0.899s
+Iteration 29/50: 0.931s
+Iteration 30/50: 0.946s
+Iteration 31/50: 0.924s
+Iteration 32/50: 0.926s
+Iteration 33/50: 1.199s
+Iteration 34/50: 1.099s
+Iteration 35/50: 1.041s
+Iteration 36/50: 0.886s
+Iteration 37/50: 0.926s
+Iteration 38/50: 0.987s
+Iteration 39/50: 0.965s
+Iteration 40/50: 1.034s
+Iteration 41/50: 1.078s
+Iteration 42/50: 0.976s
+Iteration 43/50: 0.934s
+Iteration 44/50: 0.907s
+Iteration 45/50: 0.943s
+Iteration 46/50: 1.113s
+Iteration 47/50: 1.073s
+Iteration 48/50: 1.033s
+Iteration 49/50: 0.862s
+Iteration 50/50: 1.033s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 54.503s  (sum of all iteration durations)
+  Min: 0.862s  (fastest single call)
+  Max: 6.281s  (slowest single call)
+  Mean: 1.090s  (average call duration)
+  Median: 0.959s  (middle value; less affected by outliers)
+  Stddev: 0.754s  (spread of timings; lower = more consistent)
+  90th perc: 1.099s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.917  (average throughput)
+
+CPU (system-wide):
+  Avg: 15.10%  Min: 7.10%  Max: 59.80%  Median: 14.30%
+
+Memory (system-wide):
+  Avg: 73.64%  Min: 73.40%  Max: 73.90%  Median: 73.60%
+
+GPU utilization (%):
+  Avg: 83.42%  Min: 0.00%  Max: 95.00%  Median: 93.00%
+
+GPU memory used (MB):
+  Avg: 3156.5MB  Min: 3153.0MB  Max: 3160.0MB  Median: 3157.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 0.650  Min: 0.000  Max: 0.950  Median: 0.800  Stddev: 0.352
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.744  Min: 0.000  Max: 1.000  Median: 0.900  Stddev: 0.348
+  Matches: both=31, domain_only=2, intent_only=11, none=6
+
+Best result (both domain and intent match):
+  Iteration: 1  Elapsed: 6.281s  Computed confidence: 1.000  Model confidence: 0.9
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "article_name": "Chaussures running T42"
+  },
+  "confidence_score": 0.9
+}
+Testing model: gemma:latest
+Running 50 iterations...
+
+Iteration 1/50: 21.672s
+Iteration 2/50: 16.734s
+Iteration 3/50: 15.463s
+Iteration 4/50: 15.328s
+Iteration 5/50: 16.396s
+Iteration 6/50: 11.710s
+Iteration 7/50: 12.851s
+Iteration 8/50: 13.800s
+Iteration 9/50: 14.938s
+Iteration 10/50: 14.464s
+Iteration 11/50: 12.267s
+Iteration 12/50: 15.290s
+Iteration 13/50: 15.429s
+Iteration 14/50: 14.413s
+Iteration 15/50: 16.854s
+Iteration 16/50: 14.022s
+Iteration 17/50: 14.185s
+Iteration 18/50: 13.180s
+Iteration 19/50: 15.768s
+Iteration 20/50: 15.653s
+Iteration 21/50: 15.377s
+Iteration 22/50: 15.151s
+Iteration 23/50: 13.002s
+Iteration 24/50: 11.858s
+Iteration 25/50: 15.263s
+Iteration 26/50: 14.115s
+Iteration 27/50: 13.939s
+Iteration 28/50: 13.467s
+Iteration 29/50: 15.473s
+Iteration 30/50: 15.286s
+Iteration 31/50: 15.281s
+Iteration 32/50: 16.659s
+Iteration 33/50: 15.657s
+Iteration 34/50: 14.493s
+Iteration 35/50: 15.250s
+Iteration 36/50: 15.242s
+Iteration 37/50: 14.058s
+Iteration 38/50: 14.384s
+Iteration 39/50: 15.210s
+Iteration 40/50: 17.020s
+Iteration 41/50: 15.612s
+Iteration 42/50: 15.365s
+Iteration 43/50: 13.044s
+Iteration 44/50: 16.615s
+Iteration 45/50: 14.185s
+Iteration 46/50: 15.653s
+Iteration 47/50: 13.033s
+Iteration 48/50: 14.243s
+Iteration 49/50: 13.697s
+Iteration 50/50: 14.307s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 742.355s  (sum of all iteration durations)
+  Min: 11.710s  (fastest single call)
+  Max: 21.672s  (slowest single call)
+  Mean: 14.847s  (average call duration)
+  Median: 15.181s  (middle value; less affected by outliers)
+  Stddev: 1.601s  (spread of timings; lower = more consistent)
+  90th perc: 16.615s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.067  (average throughput)
+
+CPU (system-wide):
+  Avg: 13.73%  Min: 6.20%  Max: 41.20%  Median: 11.90%
+
+Memory (system-wide):
+  Avg: 83.40%  Min: 82.90%  Max: 84.10%  Median: 83.40%
+
+GPU utilization (%):
+  Avg: 33.18%  Min: 3.00%  Max: 42.00%  Median: 36.50%
+
+GPU memory used (MB):
+  Avg: 5278.4MB  Min: 5267.0MB  Max: 5297.0MB  Median: 5279.0MB
+
+Confidence score: no numeric confidence_score values parsed from responses.
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.300  Min: 0.300  Max: 0.300  Median: 0.300  Stddev: 0.000
+  Matches: both=0, domain_only=0, intent_only=0, none=50
+
+Best overall result (no both-match found):
+  Iteration: 1  Elapsed: 21.672s  Computed confidence: 0.300  Model confidence: None
+None
+Testing model: phi3:mini
+Running 50 iterations...
+
+Iteration 1/50: 32.826s
+Iteration 2/50: 1.700s
+Iteration 3/50: 1.555s
+Iteration 4/50: 2.190s
+Iteration 5/50: 2.489s
+Iteration 6/50: 2.215s
+Iteration 7/50: 2.600s
+Iteration 8/50: 2.585s
+Iteration 9/50: 1.560s
+Iteration 10/50: 2.744s
+Iteration 11/50: 2.562s
+Iteration 12/50: 2.155s
+Iteration 13/50: 2.471s
+Iteration 14/50: 1.614s
+Iteration 15/50: 1.637s
+Iteration 16/50: 1.893s
+Iteration 17/50: 2.594s
+Iteration 18/50: 2.193s
+Iteration 19/50: 1.848s
+Iteration 20/50: 1.800s
+Iteration 21/50: 1.827s
+Iteration 22/50: 1.595s
+Iteration 23/50: 2.162s
+Iteration 24/50: 1.553s
+Iteration 25/50: 1.996s
+Iteration 26/50: 2.737s
+Iteration 27/50: 2.579s
+Iteration 28/50: 2.220s
+Iteration 29/50: 2.177s
+Iteration 30/50: 2.136s
+Iteration 31/50: 1.770s
+Iteration 32/50: 2.565s
+Iteration 33/50: 2.170s
+Iteration 34/50: 2.239s
+Iteration 35/50: 1.702s
+Iteration 36/50: 2.244s
+Iteration 37/50: 1.920s
+Iteration 38/50: 1.756s
+Iteration 39/50: 2.135s
+Iteration 40/50: 1.560s
+Iteration 41/50: 1.505s
+Iteration 42/50: 1.559s
+Iteration 43/50: 2.181s
+Iteration 44/50: 2.209s
+Iteration 45/50: 1.314s
+Iteration 46/50: 1.911s
+Iteration 47/50: 2.485s
+Iteration 48/50: 2.401s
+Iteration 49/50: 1.959s
+Iteration 50/50: 2.207s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 134.005s  (sum of all iteration durations)
+  Min: 1.314s  (fastest single call)
+  Max: 32.826s  (slowest single call)
+  Mean: 2.680s  (average call duration)
+  Median: 2.158s  (middle value; less affected by outliers)
+  Stddev: 4.366s  (spread of timings; lower = more consistent)
+  90th perc: 2.585s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.373  (average throughput)
+
+CPU (system-wide):
+  Avg: 13.04%  Min: 5.90%  Max: 35.10%  Median: 11.20%
+
+Memory (system-wide):
+  Avg: 63.25%  Min: 62.70%  Max: 63.70%  Median: 63.20%
+
+GPU utilization (%):
+  Avg: 90.00%  Min: 16.00%  Max: 98.00%  Median: 97.00%
+
+GPU memory used (MB):
+  Avg: 4590.8MB  Min: 4584.0MB  Max: 4602.0MB  Median: 4591.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 31 / 50
+  Avg: 0.966  Min: 0.900  Max: 1.000  Median: 0.950  Stddev: 0.024
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.706  Min: 0.300  Max: 1.000  Median: 0.950  Stddev: 0.325
+  Matches: both=7, domain_only=20, intent_only=1, none=22
+
+Best result (both domain and intent match):
+  Iteration: 3  Elapsed: 1.555s  Computed confidence: 1.000  Model confidence: 0.98
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "product_name": "Chaussures running T42",
+    "order_number": "#CMD-45632",
+    "email_of_customer": "client@gmail.com"
+  },
+  "confidence_score": 0.98
+}
+Testing model: llama3:8b
+Running 50 iterations...
+
+Iteration 1/50: 25.822s
+Iteration 2/50: 3.881s
+Iteration 3/50: 4.294s
+Iteration 4/50: 4.550s
+Iteration 5/50: 5.018s
+Iteration 6/50: 4.667s
+Iteration 7/50: 4.090s
+Iteration 8/50: 4.283s
+Iteration 9/50: 4.703s
+Iteration 10/50: 4.071s
+Iteration 11/50: 4.621s
+Iteration 12/50: 4.940s
+Iteration 13/50: 4.366s
+Iteration 14/50: 3.278s
+Iteration 15/50: 3.840s
+Iteration 16/50: 4.648s
+Iteration 17/50: 3.988s
+Iteration 18/50: 4.477s
+Iteration 19/50: 3.878s
+Iteration 20/50: 4.042s
+Iteration 21/50: 3.898s
+Iteration 22/50: 5.007s
+Iteration 23/50: 5.213s
+Iteration 24/50: 4.535s
+Iteration 25/50: 3.800s
+Iteration 26/50: 4.947s
+Iteration 27/50: 5.498s
+Iteration 28/50: 4.315s
+Iteration 29/50: 3.722s
+Iteration 30/50: 3.961s
+Iteration 31/50: 4.036s
+Iteration 32/50: 4.189s
+Iteration 33/50: 4.964s
+Iteration 34/50: 4.846s
+Iteration 35/50: 4.738s
+Iteration 36/50: 4.142s
+Iteration 37/50: 4.352s
+Iteration 38/50: 4.133s
+Iteration 39/50: 5.130s
+Iteration 40/50: 4.015s
+Iteration 41/50: 4.375s
+Iteration 42/50: 4.139s
+Iteration 43/50: 4.218s
+Iteration 44/50: 5.320s
+Iteration 45/50: 3.902s
+Iteration 46/50: 3.855s
+Iteration 47/50: 4.465s
+Iteration 48/50: 4.173s
+Iteration 49/50: 4.255s
+Iteration 50/50: 4.257s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 239.859s  (sum of all iteration durations)
+  Min: 3.278s  (fastest single call)
+  Max: 25.822s  (slowest single call)
+  Mean: 4.797s  (average call duration)
+  Median: 4.288s  (middle value; less affected by outliers)
+  Stddev: 3.069s  (spread of timings; lower = more consistent)
+  90th perc: 5.018s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.208  (average throughput)
+
+CPU (system-wide):
+  Avg: 13.87%  Min: 5.70%  Max: 36.50%  Median: 11.55%
+
+Memory (system-wide):
+  Avg: 69.57%  Min: 69.20%  Max: 70.90%  Median: 69.50%
+
+GPU utilization (%):
+  Avg: 37.96%  Min: 0.00%  Max: 46.00%  Median: 41.00%
+
+GPU memory used (MB):
+  Avg: 5360.9MB  Min: 5357.0MB  Max: 5371.0MB  Median: 5359.5MB
+
+Confidence score (model-reported):
+  Samples parsed: 37 / 50
+  Avg: 0.981  Min: 0.900  Max: 1.000  Median: 1.000  Stddev: 0.040
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.798  Min: 0.300  Max: 1.000  Median: 1.000  Stddev: 0.305
+  Matches: both=3, domain_only=1, intent_only=31, none=15
+
+Best result (both domain and intent match):
+  Iteration: 5  Elapsed: 5.018s  Computed confidence: 1.000  Model confidence: 1.0
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "product_name": "Chaussures running T42",
+    "order_number": "CMD-45632",
+    "return_reason": "Taille incorrecte (trop petit)",
+    "desired_product": "T43"
+  },
+  "confidence_score": 1.0
+}
+Testing model: llama3.1:latest
+Running 50 iterations...
+
+Iteration 1/50: 13.221s
+Iteration 2/50: 5.509s
+Iteration 3/50: 6.383s
+Iteration 4/50: 5.563s
+Iteration 5/50: 5.421s
+Iteration 6/50: 5.182s
+Iteration 7/50: 5.849s
+Iteration 8/50: 5.659s
+Iteration 9/50: 6.789s
+Iteration 10/50: 5.699s
+Iteration 11/50: 5.584s
+Iteration 12/50: 5.529s
+Iteration 13/50: 5.547s
+Iteration 14/50: 6.018s
+Iteration 15/50: 5.610s
+Iteration 16/50: 5.529s
+Iteration 17/50: 5.667s
+Iteration 18/50: 5.063s
+Iteration 19/50: 5.593s
+Iteration 20/50: 7.425s
+Iteration 21/50: 5.493s
+Iteration 22/50: 6.218s
+Iteration 23/50: 5.599s
+Iteration 24/50: 6.430s
+Iteration 25/50: 5.060s
+Iteration 26/50: 5.544s
+Iteration 27/50: 5.575s
+Iteration 28/50: 6.594s
+Iteration 29/50: 5.567s
+Iteration 30/50: 5.517s
+Iteration 31/50: 5.454s
+Iteration 32/50: 5.528s
+Iteration 33/50: 5.484s
+Iteration 34/50: 5.619s
+Iteration 35/50: 6.127s
+Iteration 36/50: 5.762s
+Iteration 37/50: 6.404s
+Iteration 38/50: 5.644s
+Iteration 39/50: 5.541s
+Iteration 40/50: 6.064s
+Iteration 41/50: 5.437s
+Iteration 42/50: 5.574s
+Iteration 43/50: 5.015s
+Iteration 44/50: 5.522s
+Iteration 45/50: 5.532s
+Iteration 46/50: 5.508s
+Iteration 47/50: 5.525s
+Iteration 48/50: 5.557s
+Iteration 49/50: 5.538s
+Iteration 50/50: 5.469s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 292.743s  (sum of all iteration durations)
+  Min: 5.015s  (fastest single call)
+  Max: 13.221s  (slowest single call)
+  Mean: 5.855s  (average call duration)
+  Median: 5.565s  (middle value; less affected by outliers)
+  Stddev: 1.151s  (spread of timings; lower = more consistent)
+  90th perc: 6.404s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.171  (average throughput)
+
+CPU (system-wide):
+  Avg: 15.09%  Min: 7.10%  Max: 33.60%  Median: 12.35%
+
+Memory (system-wide):
+  Avg: 70.54%  Min: 69.90%  Max: 70.80%  Median: 70.60%
+
+GPU utilization (%):
+  Avg: 35.00%  Min: 0.00%  Max: 42.00%  Median: 41.00%
+
+GPU memory used (MB):
+  Avg: 5405.4MB  Min: 5399.0MB  Max: 5425.0MB  Median: 5403.5MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 1.000  Min: 1.000  Max: 1.000  Median: 1.000  Stddev: 0.000
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.996  Min: 0.800  Max: 1.000  Median: 1.000  Stddev: 0.028
+  Matches: both=46, domain_only=2, intent_only=1, none=1
+
+Best result (both domain and intent match):
+  Iteration: 2  Elapsed: 5.509s  Computed confidence: 1.000  Model confidence: 1.0
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "product_name": "Chaussures running T42",
+    "order_number": "#CMD-45632",
+    "reason": "Taille incorrecte (trop petit)",
+    "preferred_action": "Échange contre T43 ou remboursement"
+  },
+  "confidence_score": 1.0
+}
+Testing model: qwen3:1.7b
+Running 50 iterations...
+
+Iteration 1/50: 10.331s
+Iteration 2/50: 7.625s
+Iteration 3/50: 6.294s
+Iteration 4/50: 4.875s
+Iteration 5/50: 7.104s
+Iteration 6/50: 6.861s
+Iteration 7/50: 8.816s
+Iteration 8/50: 5.418s
+Iteration 9/50: 11.101s
+Iteration 10/50: 7.505s
+Iteration 11/50: 9.827s
+Iteration 12/50: 3.438s
+Iteration 13/50: 5.513s
+Iteration 14/50: 4.591s
+Iteration 15/50: 9.416s
+Iteration 16/50: 7.457s
+Iteration 17/50: 11.337s
+Iteration 18/50: 4.905s
+Iteration 19/50: 4.760s
+Iteration 20/50: 3.891s
+Iteration 21/50: 8.251s
+Iteration 22/50: 5.198s
+Iteration 23/50: 8.432s
+Iteration 24/50: 4.753s
+Iteration 25/50: 9.899s
+Iteration 26/50: 4.888s
+Iteration 27/50: 3.447s
+Iteration 28/50: 4.906s
+Iteration 29/50: 6.416s
+Iteration 30/50: 4.847s
+Iteration 31/50: 5.675s
+Iteration 32/50: 3.541s
+Iteration 33/50: 3.380s
+Iteration 34/50: 6.740s
+Iteration 35/50: 7.595s
+Iteration 36/50: 11.367s
+Iteration 37/50: 5.164s
+Iteration 38/50: 6.364s
+Iteration 39/50: 6.851s
+Iteration 40/50: 8.486s
+Iteration 41/50: 6.080s
+Iteration 42/50: 6.622s
+Iteration 43/50: 6.329s
+Iteration 44/50: 9.715s
+Iteration 45/50: 4.337s
+Iteration 46/50: 5.820s
+Iteration 47/50: 10.693s
+Iteration 48/50: 8.083s
+Iteration 49/50: 4.615s
+Iteration 50/50: 8.425s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 337.985s  (sum of all iteration durations)
+  Min: 3.380s  (fastest single call)
+  Max: 11.367s  (slowest single call)
+  Mean: 6.760s  (average call duration)
+  Median: 6.390s  (middle value; less affected by outliers)
+  Stddev: 2.250s  (spread of timings; lower = more consistent)
+  90th perc: 9.899s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.148  (average throughput)
+
+CPU (system-wide):
+  Avg: 12.62%  Min: 6.20%  Max: 38.30%  Median: 11.60%
+
+Memory (system-wide):
+  Avg: 64.67%  Min: 64.50%  Max: 64.90%  Median: 64.70%
+
+GPU utilization (%):
+  Avg: 82.46%  Min: 0.00%  Max: 90.00%  Median: 89.00%
+
+
+GPU memory used (MB):
+  Avg: 2595.6MB  Min: 2586.0MB  Max: 2616.0MB  Median: 2596.0MB
+
+Confidence score (model-reported):
+Confidence score (model-reported):
+  Samples parsed: 49 / 50
+  Avg: 0.489  Min: 0.000  Max: 0.950  Median: 0.800  Stddev: 0.430
+
+Computed confidence (adjusted by domain/intent match):
+  Samples parsed: 49 / 50
+  Avg: 0.489  Min: 0.000  Max: 0.950  Median: 0.800  Stddev: 0.430
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.626  Min: 0.000  Max: 1.000  Median: 0.850  Stddev: 0.399
+  Samples: 50 / 50
+  Avg: 0.626  Min: 0.000  Max: 1.000  Median: 0.850  Stddev: 0.399
+  Matches: both=42, domain_only=0, intent_only=7, none=1
+  Avg: 0.626  Min: 0.000  Max: 1.000  Median: 0.850  Stddev: 0.399
+  Matches: both=42, domain_only=0, intent_only=7, none=1
+
+  Matches: both=42, domain_only=0, intent_only=7, none=1
+
+Best result (both domain and intent match):
+
+Best result (both domain and intent match):
+  Iteration: 4  Elapsed: 4.875s  Computed confidence: 1.000  Model confidence: 0.9
+Best result (both domain and intent match):
+  Iteration: 4  Elapsed: 4.875s  Computed confidence: 1.000  Model confidence: 0.9
+{
+  Iteration: 4  Elapsed: 4.875s  Computed confidence: 1.000  Model confidence: 0.9
+{
+  "email_id": "UID: 9586",
+{
+  "email_id": "UID: 9586",
+  "email_id": "UID: 9586",
+  "domain": "commercial",
+  "domain": "commercial",
+  "intent": "request",
+  "intent": "request",
+  "entities": {
+  "entities": {
+    "product": "Chaussures running T42",
+    "order_number": "#CMD-45632",
+    "reason": "Taille incorrecte (trop petit)",
+    "return_label": "étiquette de retour"
+  },
+  "confidence_score": 0.9
+}
+Testing model: qwen3:4b
+Running 50 iterations...
+
+Iteration 1/50: 129.722s
+Iteration 2/50: 132.809s
+Iteration 3/50: 137.102s
+Iteration 4/50: 131.693s
+Iteration 5/50: 147.456s
+Iteration 6/50: 117.887s
+Iteration 7/50: 106.270s
+Iteration 8/50: 112.210s
+Iteration 9/50: 152.568s
+Iteration 10/50: 135.455s
+Iteration 11/50: 145.291s
+Iteration 12/50: 106.326s
+Iteration 13/50: 143.970s
+Iteration 14/50: 134.944s
+Iteration 15/50: 141.741s
+Iteration 16/50: 149.481s
+Iteration 17/50: 121.919s
+Iteration 18/50: 130.860s
+Iteration 19/50: 103.734s
+Iteration 20/50: 170.131s
+Iteration 21/50: 147.942s
+Iteration 22/50: 155.673s
+Iteration 23/50: 97.101s
+Iteration 24/50: 114.495s
+Iteration 25/50: 114.811s
+Iteration 26/50: 137.437s
+Iteration 27/50: 132.463s
+Iteration 28/50: 108.039s
+Iteration 29/50: 155.779s
+Iteration 30/50: 133.342s
+Iteration 31/50: 118.684s
+Iteration 32/50: 130.031s
+Iteration 33/50: 104.672s
+Iteration 34/50: 108.248s
+Iteration 35/50: 110.428s
+Iteration 36/50: 126.141s
+Iteration 37/50: 167.395s
+Iteration 38/50: 137.219s
+Iteration 39/50: 111.452s
+Iteration 40/50: 145.032s
+Iteration 41/50: 109.360s
+Iteration 42/50: 144.955s
+Iteration 43/50: 103.239s
+Iteration 44/50: 128.140s
+Iteration 45/50: 136.411s
+Iteration 46/50: 93.658s
+Iteration 47/50: 104.873s
+Iteration 48/50: 90.741s
+Iteration 49/50: 97.217s
+Iteration 50/50: 116.020s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 6332.564s  (sum of all iteration durations)
+  Min: 90.741s  (fastest single call)
+  Max: 170.131s  (slowest single call)
+  Mean: 126.651s  (average call duration)
+  Median: 129.877s  (middle value; less affected by outliers)
+  Stddev: 19.617s  (spread of timings; lower = more consistent)
+  90th perc: 149.481s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.008  (average throughput)
+
+CPU (system-wide):
+  Avg: 12.99%  Min: 1.00%  Max: 29.00%  Median: 12.45%
+
+Memory (system-wide):
+  Avg: 56.67%  Min: 56.40%  Max: 57.30%  Median: 56.65%
+
+GPU utilization (%):
+  Avg: 92.00%  Min: 27.00%  Max: 96.00%  Median: 94.00%
+
+GPU memory used (MB):
+  Avg: 3659.3MB  Min: 3657.0MB  Max: 3667.0MB  Median: 3658.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 47 / 50
+  Avg: 0.950  Min: 0.900  Max: 1.000  Median: 0.950  Stddev: 0.015
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.922  Min: 0.300  Max: 1.000  Median: 0.950  Stddev: 0.150
+  Matches: both=13, domain_only=0, intent_only=33, none=4
+
+Best result (both domain and intent match):
+  Iteration: 6  Elapsed: 117.887s  Computed confidence: 1.000  Model confidence: 0.95
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "order_id": "CMD-45632",
+    "product": "Chaussures running T42",
+    "reason": "Taille incorrecte (trop petit)",
+    "desired_action": "Échange contre T43 ou remboursement",
+    "product_condition": "n'a jamais été porté, étiquettes présentes"
+  },
+  "confidence_score": 0.95
+}
+Testing model: qwen3:8b
+Running 50 iterations...
+
+Iteration 1/50: 68.681s
+Iteration 2/50: 79.854s
+Iteration 3/50: 15.212s
+Iteration 4/50: 49.940s
+Iteration 5/50: 15.761s
+Iteration 6/50: 16.201s
+Iteration 7/50: 17.730s
+Iteration 8/50: 14.583s
+Iteration 9/50: 93.961s
+Iteration 10/50: 16.460s
+Iteration 11/50: 17.706s
+Iteration 12/50: 29.762s
+Iteration 13/50: 34.816s
+Iteration 14/50: 64.996s
+Iteration 15/50: 42.619s
+Iteration 16/50: 13.343s
+Iteration 17/50: 14.004s
+Iteration 18/50: 34.806s
+Iteration 19/50: 24.230s
+Iteration 20/50: 20.640s
+Iteration 21/50: 16.052s
+Iteration 22/50: 13.275s
+Iteration 23/50: 14.343s
+Iteration 24/50: 19.817s
+Iteration 25/50: 17.177s
+Iteration 26/50: 34.804s
+Iteration 27/50: 43.484s
+Iteration 28/50: 13.528s
+Iteration 29/50: 33.025s
+Iteration 30/50: 14.706s
+Iteration 31/50: 16.524s
+Iteration 32/50: 33.237s
+Iteration 33/50: 38.316s
+Iteration 34/50: 43.942s
+Iteration 35/50: 20.038s
+Iteration 36/50: 16.508s
+Iteration 37/50: 13.452s
+Iteration 38/50: 13.942s
+Iteration 39/50: 14.590s
+Iteration 40/50: 16.244s
+Iteration 41/50: 24.468s
+Iteration 42/50: 28.978s
+Iteration 43/50: 19.199s
+Iteration 44/50: 14.681s
+Iteration 45/50: 14.581s
+Iteration 46/50: 13.793s
+Iteration 47/50: 46.931s
+Iteration 48/50: 16.835s
+Iteration 49/50: 13.331s
+Iteration 50/50: 13.982s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 1339.087s  (sum of all iteration durations)
+  Min: 13.275s  (fastest single call)
+  Max: 93.961s  (slowest single call)
+  Mean: 26.782s  (average call duration)
+  Median: 17.441s  (middle value; less affected by outliers)
+  Stddev: 18.434s  (spread of timings; lower = more consistent)
+  90th perc: 46.931s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.037  (average throughput)
+
+CPU (system-wide):
+  Avg: 21.90%  Min: 9.30%  Max: 47.40%  Median: 20.30%
+
+Memory (system-wide):
+  Avg: 60.20%  Min: 59.90%  Max: 60.60%  Median: 60.20%
+
+GPU utilization (%):
+  Avg: 59.80%  Min: 18.00%  Max: 71.00%  Median: 62.50%
+
+GPU memory used (MB):
+  Avg: 5464.6MB  Min: 5463.0MB  Max: 5468.0MB  Median: 5464.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 0.886  Min: 0.000  Max: 0.950  Median: 0.950  Stddev: 0.227
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.901  Min: 0.000  Max: 1.000  Median: 0.950  Stddev: 0.216
+  Matches: both=11, domain_only=0, intent_only=39, none=0
+
+Best result (both domain and intent match):
+  Iteration: 3  Elapsed: 15.212s  Computed confidence: 1.000  Model confidence: 0.95
+{
+  "email_id": "9586",
+  "domain": "commercial",
+  "intent": "request",
+  "entities": {
+    "order_number": "#CMD-45632",
+    "product_name": "Chaussures running T42",
+    "desired_size": "T43",
+    "return_reason": "Taille incorrecte (trop petit)",
+    "return_label_request": "étiquette de retour"
+  },
+  "confidence_score": 0.95
+}
+----------------------------------------------------
+
+GEMINI API:
+Running 50 iterations against model gemini-3-flash-preview...
+
+Iteration 1/50: 38.524s
+Iteration 2/50: 32.339s
+Iteration 3/50: 60.859s
+Iteration 4/50: 30.167s
+Iteration 5/50: 42.046s
+Iteration 6/50: 28.989s
+Iteration 7/50: 30.955s
+Iteration 8/50: 35.725s
+Iteration 9/50: 31.512s
+Iteration 10/50: 33.490s
+Iteration 11/50: 39.501s
+Iteration 12/50: 86.882s
+Iteration 13/50: 41.426s
+Iteration 14/50: 20.187s
+Iteration 15/50: 27.522s
+Iteration 16/50: 103.122s
+Iteration 17/50: 28.766s
+Iteration 18/50: 41.910s
+Iteration 19/50: 38.407s
+Iteration 20/50: failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3-flash\nPlease retry in 30.194484579s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-3-flash', 'location': 'global'}, 'quotaValue': '20'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '30s'}]}}
+-----------------------------------------------------------
+
+complex email:
+only the models that have more than 50% of match in the previous test are going to take this test
+
+Testing model: qwen2.5:3b
+Running 50 iterations...
+
+Iteration 1/50: 5.229s
+Iteration 2/50: 1.326s
+Iteration 3/50: 1.137s
+Iteration 4/50: 1.674s
+Iteration 5/50: 1.150s
+Iteration 6/50: 1.116s
+Iteration 7/50: 2.038s
+Iteration 8/50: 1.347s
+Iteration 9/50: 1.158s
+Iteration 10/50: 1.079s
+Iteration 11/50: 1.297s
+Iteration 12/50: 2.281s
+Iteration 13/50: 1.986s
+Iteration 14/50: 1.162s
+Iteration 15/50: 1.193s
+Iteration 16/50: 1.077s
+Iteration 17/50: 1.011s
+Iteration 18/50: 1.106s
+Iteration 19/50: 1.170s
+Iteration 20/50: 1.131s
+Iteration 21/50: 1.424s
+Iteration 22/50: 1.071s
+Iteration 23/50: 1.681s
+Iteration 24/50: 2.680s
+Iteration 25/50: 1.137s
+Iteration 26/50: 2.607s
+Iteration 27/50: 1.046s
+Iteration 28/50: 1.150s
+Iteration 29/50: 1.178s
+Iteration 30/50: 2.867s
+Iteration 31/50: 1.207s
+Iteration 32/50: 0.992s
+Iteration 33/50: 1.177s
+Iteration 34/50: 1.023s
+Iteration 35/50: 1.330s
+Iteration 36/50: 1.433s
+Iteration 37/50: 1.683s
+Iteration 38/50: 1.127s
+Iteration 39/50: 2.004s
+Iteration 40/50: 1.197s
+Iteration 41/50: 1.153s
+Iteration 42/50: 1.036s
+Iteration 43/50: 1.400s
+Iteration 44/50: 1.015s
+Iteration 45/50: 1.114s
+Iteration 46/50: 1.371s
+Iteration 47/50: 1.059s
+Iteration 48/50: 1.080s
+Iteration 49/50: 0.975s
+Iteration 50/50: 1.125s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 72.008s  (sum of all iteration durations)
+  Min: 0.975s  (fastest single call)
+  Max: 5.229s  (slowest single call)
+  Mean: 1.440s  (average call duration)
+  Median: 1.166s  (middle value; less affected by outliers)
+  Stddev: 0.711s  (spread of timings; lower = more consistent)
+  90th perc: 2.038s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.694  (average throughput)
+
+CPU (system-wide):
+  Avg: 14.45%  Min: 6.10%  Max: 49.50%  Median: 11.35%
+
+Memory (system-wide):
+  Avg: 68.27%  Min: 67.90%  Max: 69.50%  Median: 68.05%
+
+GPU utilization (%):
+  Avg: 87.38%  Min: 9.00%  Max: 94.00%  Median: 93.00%
+
+GPU memory used (MB):
+  Avg: 3425.8MB  Min: 3422.0MB  Max: 3440.0MB  Median: 3422.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 0.728  Min: 0.000  Max: 0.980  Median: 0.850  Stddev: 0.325
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.560  Min: 0.000  Max: 0.780  Median: 0.650  Stddev: 0.253
+  Matches: both=0, domain_only=0, intent_only=0, none=50
+
+Best overall result (no both-match found):
+  Iteration: 3  Elapsed: 1.137s  Computed confidence: 0.780  Model confidence: 0.98
+{
+  "email_id": "9590",
+  "domains": [
+    "maintenance",
+    "other"
+  ],
+  "intents": [
+    "request",
+    "information",
+    "follow_up",
+    "quotation",
+    "urgent_request"
+  ],
+  "entities": {
+    "Enterprise_X": [
+      "Sami"
+    ]
+  },
+  "confidence_score": 0.98
+}
+Testing model: gemma:2b
+Running 50 iterations...
+
+Iteration 1/50: 5.356s
+Iteration 2/50: 0.923s
+Iteration 3/50: 1.011s
+Iteration 4/50: 0.962s
+Iteration 5/50: 1.022s
+Iteration 6/50: 1.035s
+Iteration 7/50: 1.011s
+Iteration 8/50: 1.020s
+Iteration 9/50: 1.074s
+Iteration 10/50: 1.113s
+Iteration 11/50: 1.218s
+Iteration 12/50: 1.246s
+Iteration 13/50: 1.109s
+Iteration 14/50: 1.009s
+Iteration 15/50: 0.939s
+Iteration 16/50: 1.209s
+Iteration 17/50: 1.249s
+Iteration 18/50: 1.405s
+Iteration 19/50: 1.026s
+Iteration 20/50: 0.916s
+Iteration 21/50: 1.173s
+Iteration 22/50: 1.042s
+Iteration 23/50: 0.991s
+Iteration 24/50: 1.033s
+Iteration 25/50: 0.993s
+Iteration 26/50: 1.202s
+Iteration 27/50: 1.367s
+Iteration 28/50: 1.007s
+Iteration 29/50: 1.011s
+Iteration 30/50: 0.924s
+Iteration 31/50: 1.191s
+Iteration 32/50: 1.248s
+Iteration 33/50: 1.060s
+Iteration 34/50: 1.117s
+Iteration 35/50: 1.161s
+Iteration 36/50: 0.990s
+Iteration 37/50: 1.084s
+Iteration 38/50: 1.022s
+Iteration 39/50: 0.978s
+Iteration 40/50: 1.022s
+Iteration 41/50: 1.076s
+Iteration 42/50: 1.081s
+Iteration 43/50: 1.005s
+Iteration 44/50: 1.365s
+Iteration 45/50: 1.010s
+Iteration 46/50: 1.413s
+Iteration 47/50: 1.019s
+Iteration 48/50: 1.079s
+Iteration 49/50: 0.977s
+Iteration 50/50: 1.070s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 58.565s  (sum of all iteration durations)
+  Min: 0.916s  (fastest single call)
+  Max: 5.356s  (slowest single call)
+  Mean: 1.171s  (average call duration)
+  Median: 1.038s  (middle value; less affected by outliers)
+  Stddev: 0.617s  (spread of timings; lower = more consistent)
+  90th perc: 1.249s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.854  (average throughput)
+
+CPU (system-wide):
+  Avg: 15.14%  Min: 5.90%  Max: 27.20%  Median: 13.35%
+
+Memory (system-wide):
+  Avg: 69.87%  Min: 69.40%  Max: 70.60%  Median: 70.05%
+
+GPU utilization (%):
+  Avg: 90.88%  Min: 41.00%  Max: 95.00%  Median: 94.00%
+
+GPU memory used (MB):
+  Avg: 3322.6MB  Min: 3322.0MB  Max: 3323.0MB  Median: 3323.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 45 / 50
+  Avg: 0.813  Min: 0.000  Max: 0.950  Median: 0.800  Stddev: 0.139
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.586  Min: 0.000  Max: 0.750  Median: 0.600  Stddev: 0.144
+  Matches: both=0, domain_only=0, intent_only=0, none=50
+
+Best overall result (no both-match found):
+  Iteration: 11  Elapsed: 1.218s  Computed confidence: 0.750  Model confidence: 0.95
+{
+  "email_id": "9590",
+  "domains": [
+    "maintenance",
+    "network"
+  ],
+  "intents": [
+    "request",
+    "complaint"
+  ],
+  "entities": {
+    "problem_type": "ACCLIMATIC",
+    "problem_subcategory": "HVAC",
+    "priority": "High"
+  },
+  "confidence_score": 0.95
+}
+Testing model: qwen3:1.7b
+Running 50 iterations...
+
+Iteration 1/50: 18.980s
+Iteration 2/50: 24.078s
+Iteration 3/50: 11.134s
+Iteration 4/50: 8.080s
+Iteration 5/50: 22.062s
+Iteration 6/50: 3.836s
+Iteration 7/50: 20.766s
+Iteration 8/50: 4.405s
+Iteration 9/50: 6.020s
+Iteration 10/50: 18.973s
+Iteration 11/50: 6.604s
+Iteration 12/50: 5.788s
+Iteration 13/50: 28.495s
+Iteration 14/50: 5.333s
+Iteration 15/50: 15.006s
+Iteration 16/50: 21.673s
+Iteration 17/50: 7.512s
+Iteration 18/50: 7.533s
+Iteration 19/50: 12.288s
+Iteration 20/50: 22.715s
+Iteration 21/50: 10.902s
+Iteration 22/50: 19.137s
+Iteration 23/50: 5.732s
+Iteration 24/50: 16.589s
+Iteration 25/50: 10.710s
+Iteration 26/50: 5.911s
+Iteration 27/50: 35.124s
+Iteration 28/50: 20.414s
+Iteration 29/50: 9.813s
+Iteration 30/50: 6.091s
+Iteration 31/50: 14.077s
+Iteration 32/50: 15.972s
+Iteration 33/50: 17.803s
+Iteration 34/50: 13.952s
+Iteration 35/50: 10.087s
+Iteration 36/50: 11.143s
+Iteration 37/50: 5.455s
+Iteration 38/50: 5.826s
+Iteration 39/50: 13.466s
+Iteration 40/50: 4.845s
+Iteration 41/50: 11.205s
+Iteration 42/50: 6.740s
+Iteration 43/50: 21.180s
+Iteration 44/50: 26.017s
+Iteration 45/50: 18.354s
+Iteration 46/50: 22.226s
+Iteration 47/50: 11.726s
+Iteration 48/50: 17.752s
+Iteration 49/50: 505.672s
+Iteration 50/50: 14.510s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 1179.712s  (sum of all iteration durations)
+  Min: 3.836s  (fastest single call)
+  Max: 505.672s  (slowest single call)
+  Mean: 23.594s  (average call duration)
+  Median: 12.877s  (middle value; less affected by outliers)
+  Stddev: 69.944s  (spread of timings; lower = more consistent)
+  90th perc: 22.715s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.042  (average throughput)
+
+CPU (system-wide):
+  Avg: 15.15%  Min: 8.20%  Max: 25.90%  Median: 14.30%
+
+Memory (system-wide):
+  Avg: 66.34%  Min: 58.20%  Max: 73.10%  Median: 68.40%
+
+GPU utilization (%):
+  Avg: 75.62%  Min: 2.00%  Max: 91.00%  Median: 89.00%
+
+GPU memory used (MB):
+  Avg: 3704.9MB  Min: 2688.0MB  Max: 5068.0MB  Median: 2768.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 49 / 50
+  Avg: 0.522  Min: 0.000  Max: 0.900  Median: 0.800  Stddev: 0.439
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.402  Min: 0.000  Max: 0.700  Median: 0.600  Stddev: 0.337
+  Matches: both=0, domain_only=0, intent_only=0, none=50
+
+Best overall result (no both-match found):
+  Iteration: 2  Elapsed: 24.078s  Computed confidence: 0.700  Model confidence: 0.9
+{
+  "email_id": "9590",
+  "domains": [],
+  "intents": [
+    "request",
+    "quotation",
+    "urgent_request"
+  ],
+  "entities": {
+    "climatisation": [
+      "technical"
+    ],
+    "réseau internet": [
+      "technical"
+    ],
+    "devis": [
+      "financial"
+    ],
+    "300€": [
+      "financial"
+    ]
+  },
+  "confidence_score": 0.9
+}
+Testing model: llama3.1:latest
+Running 50 iterations...
+
+Iteration 1/50: 12.953s
+Iteration 2/50: 6.093s
+Iteration 3/50: 5.527s
+Iteration 4/50: 7.122s
+Iteration 5/50: 5.212s
+Iteration 6/50: 7.056s
+Iteration 7/50: 6.411s
+Iteration 8/50: 5.077s
+Iteration 9/50: 6.097s
+Iteration 10/50: 6.656s
+Iteration 11/50: 5.787s
+Iteration 12/50: 5.921s
+Iteration 13/50: 7.181s
+Iteration 14/50: 5.818s
+Iteration 15/50: 5.120s
+Iteration 16/50: 7.260s
+Iteration 17/50: 6.233s
+Iteration 18/50: 7.418s
+Iteration 19/50: 6.468s
+Iteration 20/50: 6.996s
+Iteration 21/50: 8.360s
+Iteration 22/50: 7.269s
+Iteration 23/50: 6.187s
+Iteration 24/50: 6.662s
+Iteration 25/50: 7.152s
+Iteration 26/50: 6.680s
+Iteration 27/50: 6.552s
+Iteration 28/50: 6.572s
+Iteration 29/50: 6.032s
+Iteration 30/50: 6.021s
+Iteration 31/50: 6.364s
+Iteration 33/50: 4.861s
+Iteration 34/50: 4.758s
+Iteration 35/50: 6.914s
+Iteration 36/50: 5.767s
+Iteration 37/50: 5.417s
+Iteration 38/50: 9.037s
+Iteration 39/50: 6.078s
+Iteration 40/50: 6.423s
+Iteration 41/50: 6.315s
+Iteration 42/50: 6.491s
+Iteration 43/50: 6.875s
+Iteration 44/50: 5.280s
+Iteration 45/50: 6.408s
+Iteration 46/50: 7.576s
+Iteration 47/50: 4.582s
+Iteration 48/50: 6.879s
+Iteration 49/50: 6.892s
+Iteration 50/50: 8.127s
+
+Summary:
+  Iterations: 50  (number of calls made)
+  Total time: 325.539s  (sum of all iteration durations)
+  Min: 4.582s  (fastest single call)
+  Max: 12.953s  (slowest single call)
+  Mean: 6.511s  (average call duration)
+  Median: 6.417s  (middle value; less affected by outliers)
+  Stddev: 1.318s  (spread of timings; lower = more consistent)
+  90th perc: 7.418s  (90% of calls were this fast or faster)
+  Calls/sec (avg): 0.154  (average throughput)
+
+CPU (system-wide):
+  Avg: 14.72%  Min: 6.40%  Max: 31.60%  Median: 13.50%
+
+Memory (system-wide):
+  Avg: 65.30%  Min: 64.90%  Max: 66.10%  Median: 65.10%
+
+GPU utilization (%):
+  Avg: 33.48%  Min: 1.00%  Max: 43.00%  Median: 37.00%
+
+GPU memory used (MB):
+  Avg: 5372.5MB  Min: 5370.0MB  Max: 5405.0MB  Median: 5370.0MB
+
+Confidence score (model-reported):
+  Samples parsed: 50 / 50
+  Avg: 0.986  Min: 0.800  Max: 1.000  Median: 1.000  Stddev: 0.045
+
+Computed confidence (adjusted by domain/intent match):
+  Samples: 50 / 50
+  Avg: 0.786  Min: 0.600  Max: 0.800  Median: 0.800  Stddev: 0.045
+  Matches: both=0, domain_only=0, intent_only=0, none=50
+
+Best overall result (no both-match found):
+  Iteration: 1  Elapsed: 12.953s  Computed confidence: 0.800  Model confidence: 1.0
+{
+  "email_id": "9590",
+  "domains": [
+    "maintenance",
+    "it"
+  ],
+  "intents": [
+    "request"
+  ],
+  "entities": {
+    "company_name": "Entreprise X",
+    "employee_name": "Sami",
+    "required_service": "climatisation et réseau internet",
+    "required_date": "vendredi ou lundi matin",
+    "budget_limit": "300€"
+  },
+  "confidence_score": 1.0
+}

@@ -1,0 +1,22 @@
+Qwen 2.5 (1.5B / 3B) rayen
+Qwen3 (1.7B / 4B) rayen /yessin
+LLaMA 3 (8B) yessin
+LLaMA 3.1 (8B) yessin
+
+-Microsoft
+Phi-3 Mini (3.8B) rayen
+Phi-3 Small (7B) yessin
+
+-Google 
+Gemma 2B rayen
+Gemma 7B yessin
+
+
+
+-Tiny / Ultra-Light Models (for fast tests)
+TinyLlama 1.1B
+Qwen 0.5B
+SmolLM 1.7B
+
+Mistral Small (seulement francais)
+ 

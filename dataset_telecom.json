@@ -10516,5 +10516,94 @@
       },
       "confidence_score": 0.95
     }
+  },
+  {
+    "input_email": "UID: 9595\nFrom: JoeBiden@JMail.com\nSubject: طلب الحصول على Box 5G\nDate: Wed, 4 Feb 2026 18:28:58 +0000 (UTC)\nAttachments: 0\n--------------------------------------------------\nالسلام عليكم،\n\nنحب نقدّم طلب للحصول على Box 5G لمقرّ الشركة متاعنا في جدة، في إطار الاشتراك متاعنا Box 5G. حاليًا نعتمدوا على خط عادي، أما نحبّو نطوّرو الخدمة وننتقلوا إلى 5G باش نتحصلوا على سرعة أفضل واستقرار أكثر في الاتصال، خاصة وأن نشاطنا يعتمد برشا على الإنترنت.\n\nنرجو منكم مدّنا بالمعلومات الكاملة حول الشروط، التكلفة الشهرية، وآجال التركيب. وإذا يلزم، نحبّو كذلك تحديد موعد في أقرب وقت لتركيب الـ 5G Box.\n\nتنجموا تتصلوا بيا على 25318351 أو عبر البريد الإلكتروني  لأي تفاصيل إضافية.\n\nفي انتظار ردكم وتأكيد الإجراءات اللازمة.\n\nمع الشكر،\nالحريف",
+    "output": {
+      "email_id": "9595",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": "Wed, 4 Feb 2026 18:28:58 +0000 (UTC)",
+        "description": "طلب الحصول على Box 5G",
+        "produit": "Box 5G",
+        "site": "جدة",
+        "email": "JoeBiden@JMail.com",
+        "tel": "25318351",
+        "type": "Migration fibre"
+      },
+      "confidence_score": 0.98
+    }
+  },
+  {
+    "input_email": "UID: 9599\nFrom: client1@yahoo.com\nSubject: Problème persistant – Offre Business Pro\nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
+    "output": {
+      "email_id": "9599",
+      "workflow_type": "Réclamation",
+      "attributes": {
+        "titre": "Problème persistant – Offre Business Pro",
+        "date": "Tue, 03 Feb 2026 13:01:13 +0100",
+        "tel": "25318351",
+        "email": "client1@yahoo.com",
+        "etat": "En cours",
+        "description": "Malgré plusieurs redémarrages de mon équipement, le problème persiste.",
+        "produit": "Offre Business Pro",
+        "site": "Sfax"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9599\nFrom: client1@yahoo.com\nSubject: Problème persistant – Offre Business Pro\nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
+    "output": {
+      "email_id": "9599",
+      "workflow_type": "Réclamation",
+      "attributes": {
+        "titre": "Problème persistant – Offre Business Pro",
+        "date": "Tue, 03 Feb 2026",
+        "tel": "25318351",
+        "email": "client1@yahoo.com",
+        "etat": "En cours",
+        "description": "Je rencontre un dysfonctionnement au niveau de mon équipement...",
+        "produit": "Offre Business Pro",
+        "site": "Sfax"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9599\nFrom: client1@yahoo.com\nSubject: \nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
+    "output": {
+      "email_id": "9599",
+      "workflow_type": "Réclamation",
+      "attributes": {
+        "titre": "Dépôt de ticket",
+        "date": "Tue, 03 Feb 2026 13:01:13 +0100",
+        "tel": "25318351",
+        "email": "client1@yahoo.com",
+        "etat": "En cours",
+        "description": "Je rencontre un dysfonctionnement au niveau de mon équipement...",
+        "produit": "Offre Business Pro",
+        "site": "Sfax"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9599\nFrom: client1@yahoo.com\nSubject: Problème persistant – Offre Business Pro\nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
+    "output": {
+      "email_id": "9599",
+      "workflow_type": "Réclamation",
+      "attributes": {
+        "titre": "Problème persistant – Offre Business Pro",
+        "date": "Tue, 03 Feb 2026",
+        "tel": "25318351",
+        "email": "client1@yahoo.com",
+        "etat": "En cours",
+        "description": "Je rencontre un dysfonctionnement au niveau de mon équipement...",
+        "produit": "Offre Business Pro",
+        "site": "Sfax"
+      },
+      "confidence_score": 0.95
+    }
   }
 ]

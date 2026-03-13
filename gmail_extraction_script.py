@@ -3,11 +3,11 @@ import email
 import os
 import re
 import json
+import pandas as pd
 
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ACCOUNT = "yessineht@gmail.com"
-PASSWORD = "aughykyuhihyhgqa"
-
+EMAIL_ACCOUNT = "******************"
+PASSWORD = "***************"
 OUTPUT_FOLDER = "emails_output"
 
 
@@ -125,13 +125,31 @@ _, data = mail.uid("search", None, "ALL")
 uids = data[0].split()
 last_10_uids = uids[-10:]
 
-print(f"🚀 Processing {len(last_10_uids)} emails...\n")
+print(f" Processing {len(last_10_uids)} emails...\n")
+
+# Load existing Excel data if available
+excel_path = os.path.join(OUTPUT_FOLDER, "emails.xlsx")
+try:
+    existing_df = pd.read_excel(excel_path)
+    existing_uids = set(existing_df['UID'].astype(str).tolist())
+    print(f"Loaded {len(existing_uids)} existing UIDs from Excel.")
+except FileNotFoundError:
+    existing_df = pd.DataFrame(columns=['UID', 'Email Content', 'Attachments'])
+    existing_uids = set()
+    print("No existing Excel file found. Starting fresh.")
+
+# List to hold new Excel data
+excel_data = []
 
 for uid in reversed(last_10_uids):
     _, msg_data = mail.uid("fetch", uid, "(RFC822)")
     msg = email.message_from_bytes(msg_data[0][1])
 
     email_uid = uid.decode()
+
+    if email_uid in existing_uids:
+        print(f"UID {email_uid} already exists, skipping.")
+        continue
 
     # 1. Save attachments and get metadata
     attachments = save_attachments(msg, email_uid, OUTPUT_FOLDER)
@@ -153,19 +171,17 @@ for uid in reversed(last_10_uids):
     print(json.dumps(email_json, indent=4, ensure_ascii=False))
     print("-" * 50)
 
-    # 4. Save individual TXT file
-    filename = os.path.join(OUTPUT_FOLDER, f"email_{email_uid}.txt")
-    try:
-        with open(filename, "w", encoding="utf-8") as f:
-            f.write(f"UID: {email_uid}\n")
-            f.write(f"From: {email_json['from']}\n")
-            f.write(f"Subject: {email_json['subject']}\n")
-            f.write(f"Date: {email_json['date']}\n")
-            f.write(f"Attachments: {len(attachments)}\n")
-            f.write("-" * 50 + "\n")
-            f.write(email_body)
-    except Exception as e:
-        print(f"Error saving TXT: {e}")
+    # Collect data for Excel
+    attachments_str = "; ".join([att['filename'] for att in attachments]) if attachments else ""
+    excel_data.append([email_uid, email_body.strip(), attachments_str])
 
 mail.logout()
-print("\n✅ Process complete.")
+
+# Save to Excel if there are new emails
+if excel_data:
+    new_df = pd.DataFrame(excel_data, columns=['UID', 'Email Content', 'Attachments'])
+    combined_df = pd.concat([existing_df, new_df], ignore_index=True)
+    combined_df.to_excel(excel_path, index=False)
+    print(f"\n Process complete. {len(excel_data)} new emails added to {excel_path}")
+else:
+    print("\n Process complete. No new emails to add.")

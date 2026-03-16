@@ -4,10 +4,13 @@ import os
 import re
 import json
 import pandas as pd
+import dotenv
 
+
+dotenv.load_dotenv()
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ACCOUNT = "******************"
-PASSWORD = "***************"
+EMAIL_ACCOUNT = os.getenv("mail_@")
+PASSWORD = os.getenv("mail_code")
 OUTPUT_FOLDER = "emails_output"
 
 
@@ -114,7 +117,7 @@ def save_attachments(msg, email_uid, base_folder="emails_output"):
 # --- Main Script ---
 
 mail = imaplib.IMAP4_SSL(IMAP_SERVER)
-mail.login(EMAIL_ACCOUNT, PASSWORD)
+mail.login(str(EMAIL_ACCOUNT), str(PASSWORD))
 mail.select("inbox")
 
 if not os.path.exists(OUTPUT_FOLDER):
@@ -141,7 +144,7 @@ except FileNotFoundError:
 # List to hold new Excel data
 excel_data = []
 
-for uid in reversed(last_10_uids):
+for uid in reversed(last_10_uids): 
     _, msg_data = mail.uid("fetch", uid, "(RFC822)")
     msg = email.message_from_bytes(msg_data[0][1])
 

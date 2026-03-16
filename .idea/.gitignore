@@ -6,5 +6,5 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-# Local history of files
+#ignore the .env file which may contain sensitive information
 .env

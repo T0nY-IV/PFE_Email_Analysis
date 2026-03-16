@@ -7,9 +7,10 @@ import chromadb
 from chromadb.config import Settings
 import os
 import json
+import pandas as pd
 from typing import Optional
 from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
-from api_methodes import load_document, chunk_text, save_to_dataset
+from api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
 
@@ -31,10 +32,66 @@ collection = None
 document_text = None
 chunks = None
 embeddings = None
+# Variables pour les derniers IDs
+last_excel_uid = None
+last_json_uid = None
+
+
 
 # Modèle de requête pour récupérer le chemin du fichier email
 class QueryRequest(BaseModel):
     email_file: Optional[str]
+
+def get_last_excel_uid():
+    """Récupère le dernier UID depuis le fichier Excel"""
+    global last_excel_uid
+    try:
+        excel_path = "emails_output/emails.xlsx"
+        if not os.path.exists(excel_path):
+            return None
+        
+        df = pd.read_excel(excel_path)
+        if 'UID' not in df.columns:
+            return None
+        
+        last_excel_uid = str(df['UID'].max())
+        return last_excel_uid
+    except Exception as e:
+        print(f"Erreur lors de la récupération du dernier UID Excel: {e}")
+        return None
+
+def get_last_json_uid():
+    """Récupère le dernier UID depuis le fichier JSON"""
+    global last_json_uid
+    try:
+        json_path = "dataset_telecom.json"
+        if not os.path.exists(json_path):
+            return None
+        
+        with open(json_path, "r", encoding="utf-8") as f:
+            dataset = json.load(f)
+        
+        if not dataset:
+            return None
+        
+        # Récupérer le dernier objet
+        last_entry = dataset[-1]
+        
+        # Extraire l'email_id depuis l'output
+        if "output" in last_entry and "email_id" in last_entry["output"]:
+            last_json_uid = str(last_entry["output"]["email_id"])
+            return last_json_uid
+        
+        return None
+    except Exception as e:
+        print(f"Erreur lors de la récupération du dernier UID JSON: {e}")
+        return None
+
+def update_last_uids():
+    """Met à jour les variables globales des derniers UIDs"""
+    global last_excel_uid, last_json_uid
+    last_excel_uid = get_last_excel_uid()
+    last_json_uid = get_last_json_uid()
 
 
 @app.post("/initialize")
@@ -60,7 +117,7 @@ async def initialize():
         embeddings = embedding_model.encode(chunks)
         
         # Définition du répertoire pour la base de données Chroma locale
-        persist_dir = "D:\\studying\\3eme info(DSI33)\\PFE\\chroma_db"
+        persist_dir = "./chroma_db"
         
         # Store in Vector Database (Chroma)
         # Initialisation du client ChromaDB avec un stockage persistant
@@ -93,12 +150,17 @@ async def initialize():
         print("cwd =", os.getcwd())
         print("persist dir =", os.path.abspath("./chroma_db"))
         
+        # Mettre à jour les derniers UIDs
+        update_last_uids()
+        
         # Retourne un message de succès avec des statistiques sur les données chargées
         return {
             "status": "success",
             "message": f"RAG system initialized with {len(chunks)} chunks",
             "chunks_count": len(chunks),
-            "document_path": "dataset_telecom.json"
+            "document_path": "dataset_telecom.json",
+            "last_excel_uid": last_excel_uid,
+            "last_json_uid": last_json_uid
         }
     
     except FileNotFoundError as e:
@@ -115,16 +177,13 @@ async def query(request: QueryRequest):
     
     try:
         # Check if system is initialized
-        # Vérification préventive pour s'assurer que `/initialize` a été appelé
         if embedding_model is None or collection is None:
             raise HTTPException(status_code=400, detail="RAG system not initialized. Call /initialize first.")
-        
-        # Create query embedding
+
         # Conversion de notre prompt spécifique en vecteur pour la recherche
         query_embedding = embedding_model.encode([prompt_orange])[0]
         
         # Retrieve relevant context
-        # Interrogation de la base vectorielle pour récupérer les 5 morceaux les plus pertinents
         results = collection.query(
             query_embeddings=[query_embedding.tolist()],
             n_results=5
@@ -133,13 +192,12 @@ async def query(request: QueryRequest):
         retrieved_docs = results["documents"][0]
         
         # Load email content
-        # Vérification si le fichier demandé par l'utilisateur existe bien
         if not os.path.exists(request.email_file):
             raise HTTPException(status_code=404, detail=f"Email file not found: {request.email_file}")
         
         # Lecture du contenu de l'email à traiter
-        with open(request.email_file, "r", encoding="utf-8") as f:
-            email_content = f.read()
+        
+        email_content = request.email_file
         
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email

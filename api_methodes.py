@@ -2,7 +2,7 @@ import os
 import json
 import pandas as pd
 
-def save_to_dataset(input_email: str, output_data: dict):
+def save_to_dataset(input_email, output_data):
     """Append new RAG result to dataset JSON file"""
     
     new_entry = {
@@ -40,7 +40,6 @@ def chunk_text(text, chunk_size=500):
 
 def get_last_excel_uid():
     """Récupère le dernier UID depuis le fichier Excel"""
-    global last_excel_uid
     try:
         excel_path = "emails_output/emails.xlsx"
         if not os.path.exists(excel_path):
@@ -50,7 +49,7 @@ def get_last_excel_uid():
         if 'UID' not in df.columns:
             return None
         
-        last_excel_uid = str(df['UID'].max())
+        last_excel_uid = int(df['UID'].max())
         return last_excel_uid
     except Exception as e:
         print(f"Erreur lors de la récupération du dernier UID Excel: {e}")
@@ -58,7 +57,6 @@ def get_last_excel_uid():
 
 def get_last_json_uid():
     """Récupère le dernier UID depuis le fichier JSON"""
-    global last_json_uid
     try:
         json_path = "dataset_telecom.json"
         if not os.path.exists(json_path):
@@ -75,7 +73,7 @@ def get_last_json_uid():
         
         # Extraire l'email_id depuis l'output
         if "output" in last_entry and "email_id" in last_entry["output"]:
-            last_json_uid = str(last_entry["output"]["email_id"])
+            last_json_uid = int(last_entry["output"]["email_id"])
             return last_json_uid
         
         return None
@@ -85,6 +83,6 @@ def get_last_json_uid():
 
 def update_last_uids():
     """Met à jour les variables globales des derniers UIDs"""
-    global last_excel_uid, last_json_uid
     last_excel_uid = get_last_excel_uid()
     last_json_uid = get_last_json_uid()
+    return last_excel_uid, last_json_uid

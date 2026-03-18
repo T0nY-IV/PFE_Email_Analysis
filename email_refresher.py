@@ -6,6 +6,8 @@ import json
 import time
 import pandas as pd
 import dotenv
+from mail_analyser import loop_through_emails_and_send_requests
+from api_methodes import get_last_excel_uid
 
 
 # Load credentials from the .env file (keeps secrets out of code).
@@ -16,8 +18,6 @@ PASSWORD = os.getenv("mail_code")
 
 # Output folder for exported content.
 OUTPUT_FOLDER = "emails_output"
-# File that stores the last processed UID (so we only fetch new emails).
-STATE_PATH = os.path.join(OUTPUT_FOLDER, "state.json")
 # How often to check the mailbox (seconds). Can be overridden via env var.
 POLL_INTERVAL_SECONDS = int(os.getenv("MAIL_POLL_SECONDS", "60"))
 
@@ -127,22 +127,6 @@ def save_attachments(msg, email_uid, base_folder=OUTPUT_FOLDER):
 # ---- Main flow ----
 
 
-def load_last_uid():
-    """Read the last processed UID from disk (or 0 if missing)."""
-    if os.path.exists(STATE_PATH):
-        try:
-            with open(STATE_PATH, "r", encoding="utf-8") as f:
-                state = json.load(f)
-                return int(state.get("last_uid", 0))
-        except (ValueError, json.JSONDecodeError, OSError):
-            return 0
-    return 0
-
-
-def save_last_uid(uid):
-    """Persist the newest UID to disk."""
-    with open(STATE_PATH, "w", encoding="utf-8") as f:
-        json.dump({"last_uid": uid}, f)
 
 
 def run_once():
@@ -151,7 +135,7 @@ def run_once():
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
     # Read the last processed UID (if any).
-    last_uid = load_last_uid()
+    last_uid = get_last_excel_uid()
     new_uids = []
 
     # Connect to Gmail over IMAP+SSL.
@@ -162,7 +146,7 @@ def run_once():
 
         # Search for new emails since the last UID we processed.
         # If no state exists yet, only process the most recent 10 emails.
-        if last_uid > 0:
+        if last_uid is not None and isinstance(last_uid, int) and last_uid > 0:
             _, data = mail.uid("search", None, f"(UID {last_uid + 1}:*)")
             new_uids = data[0].split() if data and data[0] else []
         else:
@@ -170,27 +154,29 @@ def run_once():
             all_uids = data[0].split() if data and data[0] else []
             new_uids = all_uids[-10:]
 
-        print(f"Processing {len(new_uids)} new emails...")
+        print(f" Processing {len(new_uids)} new emails...\n")
 
         # Load existing Excel data if available, so we don't duplicate rows.
         excel_path = os.path.join(OUTPUT_FOLDER, "emails.xlsx")
         try:
             existing_df = pd.read_excel(excel_path)
             existing_uids = set(existing_df["UID"].astype(str).tolist())
+            print(f"Loaded {len(existing_uids)} existing UIDs from Excel.")
         except FileNotFoundError:
             existing_df = pd.DataFrame(columns=["UID", "Email Content", "Attachments"])
             existing_uids = set()
+            print("No existing Excel file found. Starting fresh.")
 
         # Collect rows to append.
         excel_data = []
 
-        for uid in new_uids:
+        for uid in reversed(new_uids):
             _, msg_data = mail.uid("fetch", uid, "(RFC822)")
             msg = email.message_from_bytes(msg_data[0][1])
 
             email_uid = uid.decode()
             if email_uid in existing_uids:
-                # Already stored in Excel, skip to avoid duplicates.
+                print(f"UID {email_uid} already exists, skipping.")
                 continue
 
             # Extract attachments and message body.
@@ -206,8 +192,8 @@ def run_once():
                 "body": email_body.strip(),
                 "attachments": attachments,
             }
-            print(json.dumps(email_json, indent=2, ensure_ascii=False))
-            print("-" * 40)
+            print(json.dumps(email_json, indent=4, ensure_ascii=False))
+            print("-" * 50)
 
             # Prepare row for Excel export.
             attachments_str = "; ".join([att["filename"] for att in attachments]) if attachments else ""
@@ -218,14 +204,9 @@ def run_once():
             new_df = pd.DataFrame(excel_data, columns=["UID", "Email Content", "Attachments"])
             combined_df = pd.concat([existing_df, new_df], ignore_index=True)
             combined_df.to_excel(excel_path, index=False)
-            print(f"Added {len(excel_data)} new emails to {excel_path}")
+            print(f"\n Process complete. {len(excel_data)} new emails added to {excel_path}")
         else:
-            print("No new emails to add.")
-
-        # Update state with the newest UID we *saw*, so next run starts after it.
-        if new_uids:
-            newest_uid_seen = max(int(uid.decode()) for uid in new_uids)
-            save_last_uid(newest_uid_seen)
+            print("\n Process complete. No new emails to add.")
     finally:
         # Always attempt to close the connection cleanly.
         try:
@@ -247,6 +228,7 @@ def main():
             print(time.strftime("[%Y-%m-%d %H:%M:%S] Checking for new emails..."))
             run_once()
             print(f"Sleeping for {POLL_INTERVAL_SECONDS} seconds...\n")
+            loop_through_emails_and_send_requests()  # Call the function to process emails and send requests to the API
             time.sleep(POLL_INTERVAL_SECONDS)
     except KeyboardInterrupt:
         print("Mailbox watcher stopped by user.")

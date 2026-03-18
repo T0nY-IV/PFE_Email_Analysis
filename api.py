@@ -40,58 +40,7 @@ last_json_uid = None
 
 # Modèle de requête pour récupérer le chemin du fichier email
 class QueryRequest(BaseModel):
-    email_file: Optional[str]
-
-def get_last_excel_uid():
-    """Récupère le dernier UID depuis le fichier Excel"""
-    global last_excel_uid
-    try:
-        excel_path = "emails_output/emails.xlsx"
-        if not os.path.exists(excel_path):
-            return None
-        
-        df = pd.read_excel(excel_path)
-        if 'UID' not in df.columns:
-            return None
-        
-        last_excel_uid = str(df['UID'].max())
-        return last_excel_uid
-    except Exception as e:
-        print(f"Erreur lors de la récupération du dernier UID Excel: {e}")
-        return None
-
-def get_last_json_uid():
-    """Récupère le dernier UID depuis le fichier JSON"""
-    global last_json_uid
-    try:
-        json_path = "dataset_telecom.json"
-        if not os.path.exists(json_path):
-            return None
-        
-        with open(json_path, "r", encoding="utf-8") as f:
-            dataset = json.load(f)
-        
-        if not dataset:
-            return None
-        
-        # Récupérer le dernier objet
-        last_entry = dataset[-1]
-        
-        # Extraire l'email_id depuis l'output
-        if "output" in last_entry and "email_id" in last_entry["output"]:
-            last_json_uid = str(last_entry["output"]["email_id"])
-            return last_json_uid
-        
-        return None
-    except Exception as e:
-        print(f"Erreur lors de la récupération du dernier UID JSON: {e}")
-        return None
-
-def update_last_uids():
-    """Met à jour les variables globales des derniers UIDs"""
-    global last_excel_uid, last_json_uid
-    last_excel_uid = get_last_excel_uid()
-    last_json_uid = get_last_json_uid()
+    email_content: Optional[str]
 
 
 @app.post("/initialize")
@@ -146,12 +95,9 @@ async def initialize():
                 ids=[str(i)]
             )
             
-        # Affichage des répertoires de travail dans la console
-        print("cwd =", os.getcwd())
-        print("persist dir =", os.path.abspath("./chroma_db"))
         
         # Mettre à jour les derniers UIDs
-        update_last_uids()
+        last_excel_uid, last_json_uid = update_last_uids()
         
         # Retourne un message de succès avec des statistiques sur les données chargées
         return {
@@ -189,15 +135,13 @@ async def query(request: QueryRequest):
             n_results=5
         )
         
-        retrieved_docs = results["documents"][0]
-        
-        # Load email content
-        if not os.path.exists(request.email_file):
-            raise HTTPException(status_code=404, detail=f"Email file not found: {request.email_file}")
+        documents = results.get("documents")
+        if not documents or not documents[0]:
+            raise HTTPException(status_code=404, detail="No documents retrieved from vector store.")
+        retrieved_docs = documents[0]
         
         # Lecture du contenu de l'email à traiter
-        
-        email_content = request.email_file
+        email_content = str(request.email_content)
         
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email
@@ -242,7 +186,7 @@ Answer:
         #    #"query": augmented_prompt,
         #    #"retrieved_context": retrieved_docs,
         #    "response": response["message"]["content"],
-        #    #"email_file": request.email_file
+        #    #"email_content": request.email_content
         #}
     
     except HTTPException:

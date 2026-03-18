@@ -1,3 +1,10 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "claude.model": "custom",
+    "claude.customModel": {
+      "provider": "openai",
+      "apiKey": "not-used",
+      "baseUrl": "http://localhost:11434/v1",
+      "model": "qwen3-coder-next:cloud"
+    }
 }

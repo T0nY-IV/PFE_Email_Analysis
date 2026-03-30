@@ -18,6 +18,7 @@ prompt_1 = (
     "- Return ONLY the JSON. No explanations, no extra text.\n\n"
     "Email:\n"
 )
+
 prompt_2 = (
     "You are an enterprise email analysis agent specialized in complex business email understanding. "
     "Analyze the provided email and return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
@@ -36,14 +37,12 @@ prompt_2 = (
     "- If unsure about a value, use \"other\".\n"
     "- Return ONLY the JSON. No explanations. No extra text.\n\n"
     "Email:\n"
-    )
-murged_prompt = (
+)
 
+murged_prompt = (
     "You are an enterprise email analysis agent specialized in advanced business email understanding. "
     "Your task is to analyze professional emails, including complex, multi-topic, and conditional messages.\n\n"
-
     "Return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
-
     "{\n"
     "  \"email_id\": \"string\",\n"
     "  \"domains\": [\"rh|maintenance|commercial|support|finance|it|other\"],\n"
@@ -51,7 +50,6 @@ murged_prompt = (
     "  \"entities\": {},\n"
     "  \"confidence_score\": 0.0\n"
     "}\n\n"
-
     "Strict Instructions:\n"
     "- Detect ONE or MULTIPLE domains if the email concerns different business areas.\n"
     "- Detect ONE or MULTIPLE intents if multiple objectives exist.\n"
@@ -61,41 +59,34 @@ murged_prompt = (
     "- Entities may include (but are not limited to): dates, amounts, order numbers, product names, locations, conditions, deadlines, budgets, technical systems, people names, company names, constraints.\n"
     "- If no entities are found, return an empty object {}.\n"
     "- If no domain or intent is clearly identified, return [\"other\"].\n"
-    "- Ensure the JSON is syntactically valid.\n"
+    "- Ensure the JSON is syntactatically valid.\n"
     "- confidence_score must be a float between 0.0 and 1.0 reflecting classification confidence.\n"
     "- Return ONLY the JSON. No explanations. No comments. No markdown.\n\n"
-
     "Email:\n"
 )
-prompt_orange = (
 
+prompt_orange = (
     "You are an enterprise email analysis agent specialized in business workflow classification. "
     "Your task is to analyze a professional email and map it to the correct workflow configuration.\n\n"
-
     "There are TWO possible workflow types:\n"
     "1) 'Réclamation'\n"
     "2) 'Demande'\n\n"
-
     "Return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
-
     "{\n"
     "  \"email_id\": \"string\",\n"
     "  \"workflow_type\": \"Réclamation|Demande|other\",\n"
     "  \"attributes\": {},\n"
     "  \"confidence_score\": 0.0\n"
     "}\n\n"
-
     "Classification Rules:\n"
     "- If the email expresses dissatisfaction, a problem, or a complaint about a product/service → classify as 'Réclamation'.\n"
     "- If the email requests a service, information, intervention, or action without expressing dissatisfaction → classify as 'Demande'.\n"
     "- If unclear → use 'other'.\n\n"
-
     "Attribute Extraction Rules:\n"
     "- Extract ONLY attributes that match the selected workflow.\n"
     "- Use EXACT attribute keys as defined below.\n"
     "- If an attribute is missing, do NOT invent it.\n"
     "- If no attributes are found, return an empty object {}.\n\n"
-
     "For workflow_type = 'Réclamation', allowed attributes:\n"
     "- titre\n"
     "- date\n"
@@ -105,7 +96,6 @@ prompt_orange = (
     "- description\n"
     "- produit\n"
     "- site\n\n"
-
     "For workflow_type = 'Demande', allowed attributes:\n"
     "- date\n"
     "- description\n"
@@ -114,12 +104,36 @@ prompt_orange = (
     "- email\n"
     "- tel\n"
     "- type\n\n"
-
     "Additional Constraints:\n"
     "- Do NOT create attributes outside the allowed list.\n"
     "- Values must be extracted exactly from the email content.\n"
     "- confidence_score must be a float between 0.0 and 1.0.\n"
     "- Return ONLY the JSON. No explanations. No markdown. No extra text.\n\n"
+    "Email:\n"
+)
 
+# Prompt for config-list (25).json
+prompt_config_25 = (
+    "You are an enterprise email analysis agent specialized in business workflow classification using the configuration defined in config-list (25).json. "
+    "Your task is to analyze a professional email and map it to the correct workflow label defined in that configuration.\n\n"
+    "Return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
+    "{\n"
+    "  \"email_id\": \"string\",\n"
+    "  \"workflow_type\": \"string\",\n"
+    "  \"attributes\": {},\n"
+    "  \"confidence_score\": 0.0\n"
+    "}\n\n"
+    "Classification Rules:\n"
+    "- Choose the workflow_type that best matches the email content from the list of workflow labels in config-list (25).json.\n"
+    "- If none match, set \"workflow_type\" to \"other\".\n\n"
+    "Attribute Extraction Rules:\n"
+    "- Extract ONLY attributes that belong to the selected workflow. Use the \"label\" field of each listItem as the attribute key (convert spaces to underscores and lower case).\n"
+    "- Extract values exactly as they appear in the email; if a value is missing, omit that key.\n"
+    "- Return an empty object {} for attributes if none are found.\n\n"
+    "Additional Constraints:\n"
+    "- Do NOT create attributes outside the allowed list for the chosen workflow.\n"
+    "- Values must be extracted exactly from the email content.\n"
+    "- confidence_score must be a float between 0.0 and 1.0.\n"
+    "- Return ONLY the JSON, no extra text or markdown.\n\n"
     "Email:\n"
 )

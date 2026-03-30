@@ -10589,9 +10589,9 @@
     }
   },
   {
-    "input_email": "UID: 9599\nFrom: client1@yahoo.com\nSubject: Problème persistant – Offre Business Pro\nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
+    "input_email": "UID: 9834\nFrom: client1@yahoo.com\nSubject: Problème persistant – Offre Business Pro\nDate: Tue, 03 Feb 2026 13:01:13 +0100\nAttachments: 1\n--------------------------------------------------\n\nBonjour,\n\nJe me permets de vous contacter concernant mon abonnement Offre Business Pro rattaché au site de Sfax.\n\nDepuis quelques jours, je rencontre un dysfonctionnement au niveau de mon équipement. Malgré plusieurs redémarrages de mon équipement, le problème persiste. Cela impacte directement notre activité quotidienne et ralentit considérablement notre travail.\n\nUn ticket est actuellement marqué comme “En cours”, mais je souhaiterais avoir plus de visibilité sur le délai de résolution ainsi qu’une éventuelle intervention si nécessaire.\n\nVous pouvez me contacter au 25318351 ou par email pour toute information complémentaire ou pour planifier une vérification technique.\n\nMerci d’avance pour votre retour rapide.\n\nCordialement,\nClient",
     "output": {
-      "email_id": "9599",
+      "email_id": "9834",
       "workflow_type": "Réclamation",
       "attributes": {
         "titre": "Problème persistant – Offre Business Pro",
@@ -10604,6 +10604,254 @@
         "site": "Sfax"
       },
       "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9868\nRayen gargouri <gargourirayen@gmail.com>\nJe vous contacte afin de solliciter une intervention technique concernant_x000D_\nun problème que nous rencontrons actuellement au niveau de notre_x000D_\ninstallation._x000D_\n_x000D_\nDepuis quelques jours, le service présente des interruptions fréquentes, ce_x000D_\nqui impacte notre activité. Nous vous serions reconnaissants de bien_x000D_\nvouloir planifier une intervention dans les plus brefs délais._x000D_\n_x000D_\nNous restons disponibles pour toute information complémentaire et pouvons_x000D_\nêtre contactés par téléphone si nécessaire._x000D_\n_x000D_\nDans l’attente de votre retour, merci de nous communiquer vos_x000D_\ndisponibilités ainsi qu’un devis estimatif avant toute intervention._x000D_\n_x000D_\nCordialement,_x000D_\nTéléphone : 22145789",
+    "output": {
+      "email_id": "9868",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": "Several days",
+        "description": "Service presenta des interruptions fréquentes",
+        "produit": "Offre Business Pro",
+        "site": "installation",
+        "email": "gargourirayen@gmail.com",
+        "tel": "22145789",
+        "type": "Demande"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9871\nRayen gargouri <gargourirayen@gmail.com>\nJe me permets de vous contacter afin de faire une demande d’installation_x000D_\nd’un nouvel équipement dans nos locaux._x000D_\n_x000D_\nNous souhaitons mettre en place une solution supplémentaire pour améliorer_x000D_\nla qualité de notre connexion. Idéalement, l’intervention pourrait avoir_x000D_\nlieu en début de semaine prochaine, de préférence le matin. Toutefois, si_x000D_\ncela n’est pas possible, nous restons flexibles selon vos disponibilités._x000D_\n_x000D_\nNous vous serions reconnaissants de bien vouloir nous transmettre un devis_x000D_\ndétaillé avant toute intervention. Si le coût reste raisonnable, nous_x000D_\npourrons valider rapidement la demande._x000D_\n_x000D_\nMerci également de prévoir tout le matériel nécessaire afin d’éviter_x000D_\nplusieurs déplacements._x000D_\n_x000D_\nN’hésitez pas à me contacter pour toute information complémentaire._x000D_\n_x000D_\nDans l’attente de votre retour._x000D_\n_x000D_\nCordialement,_x000D_\nTéléphone : 25318351",
+    "output": {
+      "email_id": "9871",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": null,
+        "description": "Je me permets de vous contacter afin de faire une demande d’installation",
+        "produit": null,
+        "site": "locaux",
+        "email": "gargourirayen@gmail.com",
+        "tel": "25318351",
+        "type": "installation"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9872\n\"H't yessine\" <ye20042004@gmail.com>\nBonjour,_x000D_\n_x000D_\nJe vous écris afin de vous demander une vérification de notre réseau, car_x000D_\nnous rencontrons des coupures intermittentes depuis quelques jours._x000D_\n_x000D_\nLe problème n’est pas constant, mais il impacte régulièrement notre_x000D_\ntravail, surtout en fin de journée. Nous souhaiterions donc qu’un_x000D_\ntechnicien puisse intervenir pour diagnostiquer la situation et proposer_x000D_\nune solution adaptée._x000D_\n_x000D_\nSi possible, nous préférerions une intervention en milieu de semaine,_x000D_\nplutôt le matin. Merci également de nous informer à l’avance du coût de_x000D_\nl’intervention avant toute validation._x000D_\n_x000D_\nVous pouvez me contacter directement pour organiser cela._x000D_\n_x000D_\nMerci d’avance pour votre aide._x000D_\n_x000D_\nCordialement,_x000D_\nTéléphone : 28456712",
+    "output": {
+      "email_id": "9872",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": "Mon, 03 Feb 2026",
+        "description": "nous rencontrons des coupures intermittentes depuis quelques jours",
+        "produit": null,
+        "site": null,
+        "email": "ye20042004@gmail.com",
+        "tel": "28456712",
+        "type": "Intervention"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9874\nLinkedIn <messages-noreply@linkedin.com>\nYour profile is looking great_x000D_\n_x000D_\nYour work and accomplishments are being recognized_x000D_\n_x000D_\n2 profile views_x000D_\n  _x000D_\n          https://www.linkedin.com/comm/me/profile-views?lipi=urn%3Ali%3Apage%3Aemail_b2_professional_identity_digest_02%3B62vgDD%2FtSUiKBJjco8N2nQ%3D%3D&midToken=AQFDdUEz6WQ9Uw&midSig=39Vv6kzbeN7sc1&trk=eml-b2_professional_identity_digest_02-email~professional~identity~digest-0-profile~views&trkEmail=eml-b2_professional_identity_digest_02-email~professional~identity~digest-0-profile~views-null-m8w88x~mmweiv0w~x9-null-null&eid=m8w88x-mmweiv0w-x9&otpToken=MTMwNjFhZTUxMzI3Y2ZjMGJjMmYwZmViNDExOWU0YmM4OWNlZDI0Njk4YTc4YTY5N2JjZTAxNjg0OTVkNThmYmYyZDJkMGU5N2FkYWVhZDk1ZTgzZWI4MDg5MDE4YzgxNjVkMjYxZjYzY2EwMWVkM2YxYzllZDE3LDEsMQ%3D%3D      _x000D_\n_x000D_\n----------------------------------------_x000D_\n_x000D_\nThis email was intended for Yessine Hadj Taieb (IT Student)_x000D_\nLearn why we included this: https://www.linkedin.com/help/linkedin/answer/4788?lang=en&lipi=urn%3Ali%3Apage%3Aemail_b2_professional_identity_digest_02%3B62vgDD%2FtSUiKBJjco8N2nQ%3D%3D&midToken=AQFDdUEz6WQ9Uw&midSig=39Vv6kzbeN7sc1&trk=eml-b2_professional_identity_digest_02-SecurityHelp-0-textfooterglimmer&trkEmail=eml-b2_professional_identity_digest_02-SecurityHelp-0-textfooterglimmer-null-m8w88x~mmweiv0w~x9-null-null&eid=m8w88x-mmweiv0w-x9&otpToken=MTMwNjFhZTUxMzI3Y2ZjMGJjMmYwZmViNDExOWU0YmM4OWNlZDI0Njk4YTc4YTY5N2JjZTAxNjg0OTVkNThmYmYyZDJkMGU5N2FkYWVhZDk1ZTgzZWI4MDg5MDE4YzgxNjVkMjYxZjYzY2EwMWVkM2YxYzllZDE3LDEsMQ%3D%3D_x000D_\nYou are receiving LinkedIn notification emails._x000D_\n_x000D_\n_x000D_\nUnsubscribe: https://www.linkedin.com/comm/psettings/email-unsubscribe?lipi=urn%3Ali%3Apage%3Aemail_b2_professional_identity_digest_02%3B62vgDD%2FtSUiKBJjco8N2nQ%3D%3D&midToken=AQFDdUEz6WQ9Uw&midSig=39Vv6kzbeN7sc1&trk=eml-b2_professional_identity_digest_02-unsubscribe-0-textfooterglimmer&trkEmail=eml-b2_professional_identity_digest_02-unsubscribe-0-textfooterglimmer-null-m8w88x~mmweiv0w~x9-null-null&eid=m8w88x-mmweiv0w-x9&loid=AQG3BVUtl__J4gAAAZ0CT7c5JLAdWHA_u6Unebauj_iogGJ29o4YhdZVWbfjdRnWk-9-0SE_2f6eL9-icNx7oSA9qK_gEZRg80cQ4HlvDg4_x000D_\nHelp: https://www.linkedin.com/help/linkedin/answer/67?lang=en&lipi=urn%3Ali%3Apage%3Aemail_b2_professional_identity_digest_02%3B62vgDD%2FtSUiKBJjco8N2nQ%3D%3D&midToken=AQFDdUEz6WQ9Uw&midSig=39Vv6kzbeN7sc1&trk=eml-b2_professional_identity_digest_02-help-0-textfooterglimmer&trkEmail=eml-b2_professional_identity_digest_02-help-0-textfooterglimmer-null-m8w88x~mmweiv0w~x9-null-null&eid=m8w88x-mmweiv0w-x9&otpToken=MTMwNjFhZTUxMzI3Y2ZjMGJjMmYwZmViNDExOWU0YmM4OWNlZDI0Njk4YTc4YTY5N2JjZTAxNjg0OTVkNThmYmYyZDJkMGU5N2FkYWVhZDk1ZTgzZWI4MDg5MDE4YzgxNjVkMjYxZjYzY2EwMWVkM2YxYzllZDE3LDEsMQ%3D%3D_x000D_\n_x000D_\n© 2026 LinkedIn Corporation, 1zwnj000 West Maude Avenue, Sunnyvale, CA 94085._x000D_\nLinkedIn and the LinkedIn logo are registered trademarks of LinkedIn.",
+    "output": {
+      "email_id": "9874",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9877\ndaily.dev <informer@daily.dev>\nWe picked posts from your topics based on what the community found useful  _x000D_\n_x000D_\n*******_x000D_\nFor you_x000D_\n*******_x000D_\n_x000D_\n​Mar 19, 2026_x000D_\n_x000D_\nLogo ( https://app.daily.dev/ )_x000D_\n_x000D_\nFireship ( https://app.daily.dev/posts/rI6zUABsr?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nThe rise and fall of famo.us... ( https://app.daily.dev/posts/rI6zUABsr?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n--------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/rI6zUABsr?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nFast-track your growth. Upgrade to plus ( https://app.daily.dev/plus )_x000D_\n_x000D_\nTry daily.dev on mobile (if you haven’t yet)_x000D_\n_x000D_\n( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\ndaily.dev for iOS ( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\n_x000D_\n( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\ndaily.dev for Android ( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\n_x000D_\nExplore ( https://app.daily.dev/posts )   |   Discussions ( https://app.daily.dev/discussed )   |   Tags ( https://app.daily.dev/tags )   |   Sources ( https://app.daily.dev/sources )   |   Leaderboard ( https://app.daily.dev/users )_x000D_\n_x000D_\nX ( https://twitter.com/dailydotdev ) Yt ( https://www.youtube.com/c/dailydev )_x000D_\nInst ( https://www.instagram.com/dailydotdev/ ) Tt ( https://www.tiktok.com/@dailydotdev )_x000D_\nGitHub ( https://github.com/dailydotdev/daily )_x000D_\nThis email was intended for Yessine Ht (yessineht@gmail.com)_x000D_\nSettings notifications ( https://app.daily.dev/account/notifications ), account details ( https://app.daily.dev/account/profile ) or unsubscribe ( https://track.customer.io/manage_subscription_preferences/RLnCCQUAAZ0EexPe8pWgDm_9_8Z5Yw== ) _x000D_\n_x000D_\n( https://app.daily.dev )Daily Dev Ltd., 9 Derech HaTikva Ganei Tikva, Israel_x000D_\n5591252",
+    "output": {
+      "email_id": "9877",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9879\nOllama <hello@ollama.com>\n_x000D_\n_x000D_\n_x000D_\n _x000D_\n_x000D_\n_x000D_\n_x000D_\n_x000D_\n _x000D_\n_x000D_\nMiniMax-M2.7 is now available to run via Ollama's cloud. This new model is designed to excel at completing end-to-end tasks in_x000D_\nsoftware engineering and office productivity while improving its character and emotional intelligence._x000D_\n _x000D_\nM2.7 is also good at self-improvement using data from the web. This allows assistants like OpenClaw to do research and learn new_x000D_\nskills._x000D_\n _x000D_\nTo get started, download Ollama:_x000D_\n _x000D_\n_x000D_\nDownload Ollama [https://ollama.com/download]_x000D_\n_x000D_\n _x000D_\nNext, launch OpenClaw with MiniMax-M2.7:_x000D_\n _x000D_\nollama launch openclaw --model minimax-m2.7:cloud_x000D_\n _x000D_\nIf you already have OpenClaw running with Ollama, switch to MiniMax-M2.7 cloud by using the /model command:_x000D_\n _x000D_\n/model ollama/minimax-m2.7:cloud_x000D_\n_x000D_\n_x000D_\n _x000D_\n_x000D_\n_x000D_\nSelf-improvement & research_x000D_\n_x000D_\nOpenClaw can now perform deep research tasks and use up-to-date web information to teach itself skills and best practices._x000D_\n _x000D_\nExample: financial reporting_x000D_\n _x000D_\nTeach yourself how to write financial research reports by studying examples from top analysts. Write a PPT presentation and Word_x000D_\ndocument report on TSMC based on their latest earnings. Save your research framework as a skill so future reports follow the same_x000D_\nprocess._x000D_\n _x000D_\n_x000D_\n_x000D_\nLaunch agents in non-interactive mode_x000D_\n_x000D_\nOllama can now launch non-interactive agents using the new --yes flag._x000D_\n _x000D_\nThis enables running OpenClaw and other agents in the background without interruption on servers, scripts, and other environments_x000D_\nthat do not support the OpenClaw gateway._x000D_\n _x000D_\nTo launch a non-interactive OpenClaw agent, run:_x000D_\n _x000D_\nollama launch openclaw \\_x000D_\n--model minimax-m2.7:cloud \\_x000D_\n--yes -- agent \\_x000D_\n--agent main \\_x000D_\n--local \\_x000D_\n--message \"Prepare a pre-read for my next meeting\"_x000D_\n _x000D_\n _x000D_\nIf you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama]._x000D_\n _x000D_\n❤️ Ollama_x000D_\n _x000D_\nYou are receiving this email because you opted-in to receive updates from Ollama_x000D_\nOllama, 744 High Street, Palo Alto, CA 94301_x000D_\nUnsubscribe [https://app.loops.so/unsubscribe/cmmxhgs6303dm013ngna84jus/499521766e101b0c025b73bfd52c281472f937354753c009cada275d4d1bdfc29a49fcd2f675180c7de51707de78b4c3b770fc3c6dea959168cd0a50]",
+    "output": {
+      "email_id": "9879",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9880\nVercel <notifications@vercel.com>\nVercel_x000D_\nHi t0ny-iv,_x000D_\n_x000D_\nWe're updating our Terms of Service (https://vercel.com/terms)_x000D_\nand Privacy Policy (https://vercel.com/privacy) to reflect how_x000D_\nVercel uses data to support agentic features, improve our_x000D_\nplatform, and contribute to the AI ecosystem._x000D_\n_x000D_\n----------------_x000D_\n_x000D_\nWhat is changing_x000D_\n----------------_x000D_\n_x000D_\nAgentic infrastructure capabilities_x000D_\n_x000D_\nWe are developing features that allow Vercel to do more to keep_x000D_\nyour apps running efficiently, including:_x000D_\n_x000D_\n*_x000D_\nProactively investigating and mitigating incidents_x000D_\n*_x000D_\nAnalyzing web app performance data and suggesting improvements_x000D_\n*_x000D_\nIdentifying where your spend is going and creating PRs to_x000D_\noptimize usage_x000D_\nOptional AI model training_x000D_\n_x000D_\nYou may choose whether Vercel can:_x000D_\n_x000D_\n*_x000D_\nUse your code and Vercel agent chats to improve Vercel models_x000D_\n*_x000D_\nShare your code and Vercel agent chats with AI model providers_x000D_\n_x000D_\nVercel will not share personal data, account details, or_x000D_\nsensitive information like environment variables, and any_x000D_\ninformation of this nature will be removed from data you make_x000D_\navailable for AI training._x000D_\n_x000D_\n----------------_x000D_\n_x000D_\nDefaults by plan_x000D_\n----------------_x000D_\n_x000D_\n* Hobby and Trial Pro: Opted in to AI model training by default,_x000D_\ncan opt out at any time_x000D_\n* Pro: Opted out of AI model training by default, can opt in at_x000D_\nany time_x000D_\nYou can manage your preferences in Team Settings → Data_x000D_\nPreferences_x000D_\n(https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fsettings%23data-preferences&title=Go+to+Data+Preferences)._x000D_\n_x000D_\nIf you choose to opt out by March 31, 2026, no data will be used_x000D_\nby Vercel to train AI or shared with third parties. If you choose_x000D_\nto opt out after March 31, 2026, your data will not be used or_x000D_\nshared starting from the time of your opt-out._x000D_\n_x000D_\nOther changes to our Terms of Service include updated dispute_x000D_\nresolution processes, billing practices, and provisions to_x000D_\nreflect compliance with the latest data protection laws. While_x000D_\narbitration has always been our method of resolving disputes with_x000D_\ninternational and Enterprise customers, it now also applies to_x000D_\nU.S.-based customers. The opt-out process described in Section 21_x000D_\nof our Terms of Service is unchanged._x000D_\n_x000D_\nFor more detailed FAQs, visit our Changelog_x000D_\n(https://vercel.com/changelog/updates-to-terms-of-service-march-2026?utm_campaign=tos&utm_source=email)._x000D_\n_x000D_\n-----------------------------------------------------------------_x000D_\n_x000D_\nCopyright © 2026 Vercel Inc._x000D_\n(https://vercel.com?utm_medium=email&utm_source=notifications>)_x000D_\nAll rights reserved._x000D_\n440 N Barranca Ave #4133 Covina, CA 91723_x000D_\n_x000D_\nManage your notification settings_x000D_\n(https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fsettings%2Fnotifications&title=Notification+Settings)_x000D_\n_x000D_\np {_x000D_\ncolor:#000;_x000D_\nfont-family:_x000D_\nGeist,-apple-system,system-ui,BlinkMacSystemFont,\"Segoe UI\"_x000D_\n,\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Fira Sans\",\"Droid_x000D_\nSans\",\"Helvetica Neue\",sans-serif;_x000D_\nfont-size: 14px;_x000D_\nline-height: 24px;_x000D_\noverflow-wrap: anywhere;_x000D_\n}_x000D_\n.break-all {_x000D_\ncolor:#000;_x000D_\nfont-family:_x000D_\nGeist,-apple-system,system-ui,BlinkMacSystemFont,\"Segoe UI\"_x000D_\n,\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Fira Sans\",\"Droid_x000D_\nSans\",\"Helvetica Neue\",sans-serif;_x000D_\nfont-size: 14px;_x000D_\nline-height: 24px;_x000D_\nword-break: break-all_x000D_\n}_x000D_\nh1 {_x000D_\ncolor: #000;_x000D_\nfont-family: Geist,-apple-system, BlinkMacSystemFont, \"Segoe UI\",_x000D_\n\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Fira Sans\",\"Droid_x000D_\nSans\",\"Helvetica Neue\",sans-serif;_x000D_\nfont-size: 24px;_x000D_\nfont-weight: normal;_x000D_\nmargin: 30px 0;_x000D_\npadding: 0;_x000D_\n}_x000D_\nh2 {_x000D_\nfont-size: 18px;_x000D_\n}_x000D_\nh3 {_x000D_\nfont-size: 16px;_x000D_\n}_x000D_\npre {_x000D_\nfont-family: \"Geist_x000D_\nMono\",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation_x000D_\nMono\",\"Courier New\",monospace_x000D_\nwidth: 100%;_x000D_\nmax-width: 465px;_x000D_\noverflow: hidden;_x000D_\ntext-overflow: ellipsis;_x000D_\ncolor: #171717;_x000D_\nborder: 1px solid #e5e5e5;_x000D_\npadding: 20px;_x000D_\nborder-radius: 6px;_x000D_\n}_x000D_\n.block-button.block-button--solid.block-button--sm {_x000D_\nbackground-color:#000;_x000D_\nborder-radius:5px;_x000D_\ncolor: #fff;_x000D_\ndisplay: inline-block;_x000D_\nfont-family: -apple-system,system-ui,BlinkMacSystemFont,\"Segoe_x000D_\nUI\" ,\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Fira Sans\",\"Droid_x000D_\nSans\",\"Helvetica Neue\",sans-serif;_x000D_\nfont-size:14px;_x000D_\nfont-weight:500;_x000D_\nline-height:50px;_x000D_\ntext-align:center;_x000D_\ntext-decoration:none;_x000D_\nwidth:200px;_x000D_\n}_x000D_\nstrong {_x000D_\ncolor:#000;_x000D_\nfont-weight:bold;_x000D_\n}_x000D_\na {_x000D_\ncolor:#067df7;_x000D_\ntext-decoration:none;_x000D_\n}_x000D_\ncode.inline {_x000D_\ncolor:rgb(189,16,224);_x000D_\ntext-decoration:none;_x000D_\nfont-family:Menlo,Monaco,\"Lucida Console\",\"Liberation_x000D_\nMono\",\"DejaVu Sans Mono\",\"Bitstream Vera Sans Mono\",\"Courier_x000D_\nNew\",monospace,serif;_x000D_\nfont-size:0.9em;_x000D_\n}_x000D_\nul {_x000D_\npadding-left: 20px;_x000D_\n}_x000D_\nli, .usage {_x000D_\nfont-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\",_x000D_\n\"Roboto\",\"Oxygen\",\"Ubuntu\",\"Cantarell\",\"Fira Sans\",\"Droid_x000D_\nSans\",\"Helvetica Neue\",sans-serif;_x000D_\nfont-size:14px;_x000D_\nline-height: 2em;_x000D_\ncolor:#000;_x000D_\n}",
+    "output": {
+      "email_id": "9880",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9882\n\"Firas via Messenger\" <messages@facebookmail.com>\nHi Yessine,_x000D_\n_x000D_\n[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Ffiras.hadjtaieb1998&native_uri=fb%3A%2F%2Fprofile%2F100086414921033&email_type=email] _x000D_\n_x000D_\nView message[https://www.facebook.com/messenger/email/?recipient_fbid=100004844588432&sender_fbid=100086414921033&thread_fbid=7876397999072048&is_group_thread=0&source=msg&notif_id=1773950642411370&cta_type=view_message_body&is_fbm_redirect=0&is_e2ee_thread=1] _x000D_\n_x000D_\nGo to profile[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Ffiras.hadjtaieb1998&native_uri=fb%3A%2F%2Fprofile%2F100086414921033&email_type=email] _x000D_\n_x000D_\nThanks,_x000D_\nThe Facebook team_x000D_\n_x000D_\n_x000D_\n_x000D_\n========================================_x000D_\nThis message was sent to yessineht@gmail.com. If you don't want to receive these emails from Meta in the future, please follow the link below to unsubscribe._x000D_\nhttps://www.facebook.com/o.php?k=AS3zG75gr_Yk47pY3s0&u=100004844588432&mid=64d65c84dd498G5af4313ccd90G64d6611e3d76aG8431&ee=Af88QLM7Ebz3RpXJFgIOTjJsnAviBbVDdeh1m4ppS0gxMNuoHbdFdjAK_AfKlsQqVSwSzSXGrA26e0curw_x000D_\nMeta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025",
+    "output": {
+      "email_id": "9882",
+      "workflow_type": "Demande",
+      "attributes": {
+        "description": "View message[https://www.facebook.com/messenger/email/?recipient_fbid=100004844588432&sender_fbid=100086414921033&thread_fbid=7876397999072048&is_group_thread=0&source=msg&notif_id=1773950642411370&cta_type=view_message_body&is_e2ee_thread=1]",
+        "produit": null,
+        "site": null,
+        "email": "yessineht@gmail.com",
+        "tel": null,
+        "type": "Migration fibre"
+      },
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "input_email": "UID: 9883\nGitHub <noreply@github.com>\nA GitHub App, Vercel, installed on your account is requesting updated permissions._x000D_\n_x000D_\nVisit https://github.com/settings/installations/96614029/permissions/update to review and accept these permissions._x000D_\n_x000D_\nYou may choose to ignore this request, in which case Vercel will retain its current permissions._x000D_\n_x000D_\nYou can view pending requests directly by visiting your account’s settings page and clicking on Applications. If you run into problems, please contact support by visiting https://support.github.com/contact?tags=dotcom-integrations._x000D_\n_x000D_\nThanks,_x000D_\nYour friends at GitHub",
+    "output": {
+      "email_id": "9883",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9884\nnoreply@codeforces.com\nHello ToNy_IV,_x000D_\n_x000D_\nI'm glad to invite you to take part in Codeforces Round 1087. It starts on Saturday, March, 21, 2026 14:35 (UTC). The contest duration is 2 hours. The allowed programming languages are C/C++, Python, Java, Kotlin, Rust, Go, C#, F#, Pascal/Delphi, JavaScript, D, Haskell, OCaml, Perl, PHP, Ruby, Scala._x000D_\n_x000D_\nRegister Now →  The round writers are OtterZ, __baozii__. Don't miss the round!_x000D_\n_x000D_\nIt will be for newbies and participants from the second division (non-rated users or those whose rating is below 2100). The round will be held on the rules of Codeforces, so read the rules (here and here) beforehand. Want to compete? Do not forget to register for the contest and check your handle on the registration page. The registration will be closed 5 minutes before the contest._x000D_\n_x000D_\nIf you have any questions, please feel free to ask me on the pages of Codeforces. If you no longer wish to receive these emails, click https://codeforces.com/unsubscribe/contests/d51b03ab8bc362dd4f31ca9111e5b0937d3fe9c1/ to unsubscribe._x000D_\n_x000D_\nWish you high rating, Mike Mirzayanov and Codeforces team",
+    "output": {
+      "email_id": "9884",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9886\nOllama <hello@ollama.com>\n_x000D_\n _x000D_\n_x000D_\n_x000D_\n_x000D_\n _x000D_\nOllama and NVIDIA have teamed up to make OpenClaw faster and safer:_x000D_\n * Nemotron 3 Super is available to run with Ollama – a new open model from NVIDIA that ranks #1 on PinchBench (the benchmark_x000D_\n   measuring OpenClaw effectiveness), with 5x more throughput than previous models._x000D_\n_x000D_\n * NemoClaw is now available with built-in Ollama support to provide a safe environment for your OpenClaw assistant with privacy_x000D_\n   and security guardrails._x000D_\n_x000D_\n _x000D_\n_x000D_\n_x000D_\nOpenClaw with Nemotron 3 Super_x000D_\n_x000D_\nStart by downloading Ollama:_x000D_\n _x000D_\n_x000D_\nDownload Ollama [https://ollama.com/download]_x000D_\n_x000D_\n _x000D_\nNext, run OpenClaw with Nemotron 3 Super via Ollama's cloud:_x000D_\n _x000D_\nollama launch openclaw --model nemotron-3-super:cloud_x000D_\n _x000D_\nNemotron 3 Super can be used on Ollama's cloud for free._x000D_\n _x000D_\nFor challenging tasks, Ollama's Pro and Max plans [https://ollama.com/pricing] enable your OpenClaw assistant to run multiple_x000D_\nsub-agents and background tasks at the same time._x000D_\n _x000D_\nOn machines with 96GB of VRAM or more, Nemotron 3 Super can also be run locally using Ollama. See the model page_x000D_\n[https://ollama.com/library/nemotron-3-super]._x000D_\n _x000D_\n_x000D_\n_x000D_\nNemoClaw: run OpenClaw more safely_x000D_\n_x000D_\nNVIDIA's NemoClaw is an open source stack that installs OpenClaw with added privacy and security controls, including_x000D_\npre-configured support for Ollama._x000D_\n_x000D_\n_x000D_\ncurl -fsSL https://nvidia.com/nemoclaw.sh | bash_x000D_\n _x000D_\nThis will install NemoClaw and run its Installer. Enter 2 to select Ollama when prompted:_x000D_\n _x000D_\n_x000D_\n_x000D_\n_x000D_\n _x000D_\nWhen prompted for a model, select nemotron-3-super:cloud (or choose another model you may wish to run)._x000D_\n _x000D_\nOnce OpenClaw is running, connect to it:_x000D_\n _x000D_\nnemoclaw my-assistant connect_x000D_\n _x000D_\nFor more information on NemoClaw, see NVIDIA's documentation [https://docs.nvidia.com/nemoclaw/latest/index.html]._x000D_\n_x000D_\n_x000D_\n _x000D_\n_x000D_\n_x000D_\nOpenShell: a safe runtime for other agents_x000D_\n_x000D_\nNVIDIA's OpenShell [https://github.com/NVIDIA/OpenShell] is a private runtime for agents and assistants that brings the safety of_x000D_\nNemoClaw to other agents such as Claude Code, Codex, OpenCode and more._x000D_\n _x000D_\nTo get started with OpenShell, first download and install it [https://github.com/NVIDIA/OpenShell?tab=readme-ov-file#install]._x000D_\n _x000D_\nNext, create a new sandbox with Ollama:_x000D_\n _x000D_\nopenshell sandbox create --from ollama_x000D_\n _x000D_\nFinally, run Ollama to launch an agent:_x000D_\n _x000D_\nollama_x000D_\n _x000D_\n _x000D_\nIf you have any feedback, reply directly to this email or join Ollama's Discord channel [https://discord.gg/ollama]._x000D_\n _x000D_\n❤️ Ollama_x000D_\n _x000D_\nYou are receiving this email because you opted-in to receive updates from Ollama_x000D_\nOllama, 744 High Street, Palo Alto, CA 94301_x000D_\nUnsubscribe [https://app.loops.so/unsubscribe/cmmywaughhpu30170gmjl1xqo/e46ef131f1546eb91f38c3a58cea945b413506cceae01ec46b0134c91cb943ef8f97d09dece0254cf31a21c30369ba975c1261af57daf79552a78c71]",
+    "output": {
+      "email_id": "9886",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": null,
+        "produit": "OpenClaw",
+        "site": "Ollama",
+        "email": "hello@ollama.com",
+        "tel": null,
+        "type": "Migration fibre"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9888\n\"Firas via Messenger\" <messages@facebookmail.com>\nHi Yessine,_x000D_\n_x000D_\n[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Ffiras.hadjtaieb1998&native_uri=fb%3A%2F%2Fprofile%2F100086414921033&email_type=email] _x000D_\n_x000D_\nView message[https://www.facebook.com/messenger/email/?recipient_fbid=100004844588432&sender_fbid=100086414921033&thread_fbid=7876397999072048&is_group_thread=0&source=msg&notif_id=1774040367158696&cta_type=view_message_body&is_fbm_redirect=0&is_e2ee_thread=1] _x000D_\n_x000D_\nGo to profile[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Ffiras.hadjtaieb1998&native_uri=fb%3A%2F%2Fprofile%2F100086414921033&email_type=email] _x000D_\n_x000D_\nThanks,_x000D_\nThe Facebook team_x000D_\n_x000D_\n_x000D_\n_x000D_\n========================================_x000D_\nThis message was sent to yessineht@gmail.com. If you don't want to receive these emails from Meta in the future, please follow the link below to unsubscribe._x000D_\nhttps://www.facebook.com/o.php?k=AS1DaNPBne0njyqJZX0&u=100004844588432&mid=64d7aac50d2d6G5af4313ccd90G64d7af5e6d5a8G8431&ee=Af9JGtduP3SgVb0YWb_Jjb4bBQ-0x4mXLagxUgcdNlPyLmE2vjERLWVBtB7dHjadL6qBNd30tczfehz8XQ_x000D_\nMeta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025",
+    "output": {
+      "email_id": "9888",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": null,
+        "description": "Je souhaiterais obtenir des précisions complémentaires avant de prendre une décision.",
+        "produit": null,
+        "site": "Facebook",
+        "email": "yessineht@gmail.com",
+        "tel": null,
+        "type": "Unsubscribe"
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9889\nEpic Games <store@email.epicgames.com>\nIt looks like your email client might not support HTML formatted email._x000D_\n_x000D_\nTry opening this email in another email client._x000D_\n_x000D_\nOr, open the following link to view this email in a browser:_x000D_\nhttps://e.email.epicgames.com/click?EeWVzc2luZWh0QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzc0MDQwNzc5MTQwNDQwOGE0ZTliOTcxIiwiY3QiOiJlcGljLWdhbWVzLXN0b3JlLXByb2QtOWUwNDZhY2JiMzExOTQ3Y2JlOTA5ZWQ5ZDlmOTg4ZmYtMSIsInJkIjoiZ21haWwuY29tIn0/UaHR0cHM6Ly92aWV3LmVtYWlsLmVwaWNnYW1lcy5jb20vbWVzc2FnZXMvMTc3NDA0MDc3OTE0MDQ0MDhhNGU5Yjk3MS9yYXc/SWkhfZXBpY19OTlRBTjAzMjAyMDI2YzIwMDQ2Nzg/LZW4x/gab3CJw/JMDMyMDIwMjZDMjAwNDY3OA/sel4edc6159_x000D_\n_x000D_\n-------------------------------------------------------------------------------_x000D_\n_x000D_\nWe respect your privacy, if this e-mail has been sent to you by error or you no longer wish to receive email, open the following link in a browser to unsubscribe:_x000D_\nhttps://e.email.epicgames.com/click?EeWVzc2luZWh0QGdtYWlsLmNvbQ/CeyJtaWQiOiIxNzc0MDQwNzc5MTQwNDQwOGE0ZTliOTcxIiwiY3QiOiJlcGljLWdhbWVzLXN0b3JlLXByb2QtOWUwNDZhY2JiMzExOTQ3Y2JlOTA5ZWQ5ZDlmOTg4ZmYtMSIsInJkIjoiZ21haWwuY29tIn0/UaHR0cHM6Ly9wcmVmZXJlbmNlcy5lbWFpbC5lcGljZ2FtZXMuY29tL2VwaWNTdG9yZV91bnN1YnNjcmliZQ/SWkhfZXBpY19OTlRBTjAzMjAyMDI2YzIwMDQ2Nzg/LZW4x/qP2VuY2J1PU1qWmlNVGMwTURkalpUSmxORGt6T0dFNE1qRmtObUV3T0RZMVpUY3dZVFk9JmVuY2U9ZVdWemMybHVaV2gwUUdkdFlXbHNMbU52YlE9PSZtZXNzYWdlX3VpZD0xNzc0MDQwNzc5MTQwNDQwOGE0ZTliOTcx/gab3CJw/JMDMyMDIwMjZDMjAwNDY3OA/s4q1805549f",
+    "output": {
+      "email_id": "9889",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9891\n\"Nihel via Messenger\" <messages@facebookmail.com>\nHi Yessine,_x000D_\n_x000D_\n[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Faloulou.nihel.3&native_uri=fb%3A%2F%2Fprofile%2F100011764560621&email_type=email] _x000D_\n_x000D_\nView message[https://www.facebook.com/messenger/email/?recipient_fbid=100004844588432&sender_fbid=100011764560621&thread_fbid=7371965359591542&is_group_thread=0&source=msg&notif_id=1774121018850867&cta_type=view_message_body&is_fbm_redirect=0&is_e2ee_thread=1] _x000D_\n_x000D_\nGo to profile[https://facebook.com/email/appredirect/?rid=100004844588432&fallback_uri=https%3A%2F%2Fwww.facebook.com%2Faloulou.nihel.3&native_uri=fb%3A%2F%2Fprofile%2F100011764560621&email_type=email] _x000D_\n_x000D_\nThanks,_x000D_\nThe Facebook team_x000D_\n_x000D_\n_x000D_\n_x000D_\n========================================_x000D_\nThis message was sent to yessineht@gmail.com. If you don't want to receive these emails from Meta in the future, please follow the link below to unsubscribe._x000D_\nhttps://www.facebook.com/o.php?k=AS2jx6n7PqN30aDOM28&u=100004844588432&mid=64d8d7387fb61G5af4313ccd90G64d8dbd1dfe33G8431&ee=Af8r4DD-JKewGOE0L1ls7Aqm3si6XGukCtCwzwY1eCnopxGsKasEG9GEf5u2s7-mqXctLSoIEycxGFB1pw_x000D_\nMeta Platforms, Inc., Attention: Community Support, 1 Meta Way, Menlo Park, CA 94025",
+    "output": {
+      "email_id": "9891",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": null,
+        "description": "This message was sent to yessineht@gmail.com. If you don't want to receive these emails from Meta in the future, please follow the link below to unsubscribe.",
+        "produit": null,
+        "site": "Facebook",
+        "email": "messages@facebookmail.com"
+      },
+      "confidence_score": 0.6
+    }
+  },
+  {
+    "input_email": "UID: 9894\nSpotify <no-reply@spotify.com>\nفرصتك للاشتراك في Spotify Premium. https://www.spotify.com/purchase/offer/2026-q1-global-campaign-intro?splot=wqM2qvqAT0igMzConUU52A_x000D_\nموسيقى تطرب آذانك مجاناً لمدة 3 أشهر_x000D_\n_x000D_\n_x000D_\nيمكنك الاستماع إلى مقاطعك المفضَّلة مراراً وتكراراً بالترتيب الذي يعجبك. يتيح لك اشتراك Spotify Premium تنسيق أغانيك بنفسك — أو حتى سيكون هو الدي جي الخاص بك._x000D_\n_x000D_\n_x000D_\nالآن 3 أشهر مقابل 0 TND ( https://www.spotify.com/purchase/offer/2026-q1-global-campaign-intro?splot=wqM2qvqAT0igMzConUU52A )_x000D_\n_x000D_\n_x000D_\nالعرض سارٍ على باقة &quot;Premium للأفراد&quot; فقط. وينتهي في 31 مارس 2026. بعد ذلك، ستكون قيمة الاشتراك 12,50 TND شهرياً. <a href=\"https://www.spotify.com/legal/premium-promotional-offer-terms/\">تُطبَّق الشروط والأحكام.</a> هذا العرض متاح للمستخدمين الذين لم تسبق لهم تجربة اشتراك Premium فقط. بالنقر على الزر، سيتم تسجيل الدخول إلى حسابك على Spotify، حيث يمكنك قبول هذا العرض. يجب عدم إعادة توجيه هذه الرسالة الإلكترونية إلى أي شخص غير مصرَّح له بالدخول إلى حسابك._x000D_\n_x000D_\n_x000D_\n-------------_x000D_\n_x000D_\nاشترك في Spotify ديال:_x000D_\n  * iPhone (https://itunes.apple.com/app/spotify-music/id324684580)_x000D_\n  * iPad (https://itunes.apple.com/app/spotify-music/id324684580)_x000D_\n  * Android (https://play.google.com/store/apps/details?id=com.spotify.music)_x000D_\n  * شي حاجة أخرى (https://www.spotify.com/download/)_x000D_\n_x000D_\nالرسالة تصيفطات للبريد الإلكتروني yessineht@gmail.com._x000D_\nإذا ما تبي تجيك الرسائل الإلكترونية ذي من Spotify بعد كذا، تقدر_x000D_\nتعدّل صفحتك الشخصية_x000D_\n(https://www.spotify.com/account/notifications)_x000D_\nأو_x000D_\nتلغي اشتراكك_x000D_\n(https://www.spotify.com/account/unsubscribe?t=JcVBDoQgDADAr%2FgBDgWl%2BJyW0shGqVnWEH%2Bvyc5lAvgx27ZxpWOYoPVoA89PqXhNzX5Vb9fP%2F6Zavt1RE8dXk730yWf0gRKEmGHJxLSiMARWnNcSk1B6gfID&a=unsubscribe)_x000D_\n_x000D_\n_x000D_\n  * شروط الاستخدام https://www.spotify.com/legal/end-user-agreement/_x000D_\n  * سياسة الخصوصية https://www.spotify.com/legal/privacy-policy/_x000D_\n  * تواصل معانا https://www.spotify.com/about-us/contact/_x000D_\n_x000D_\n_x000D_\nSpotify AB, Regeringsgatan 19, 111 53, Stockholm, Sweden",
+    "output": {
+      "email_id": "9894",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": null,
+        "description": "about unsubscribing",
+        "produit": null,
+        "site": "Spotify AB",
+        "email": "yessineht@gmail.com",
+        "tel": null,
+        "type": null
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 9895\ndaily.dev <informer@daily.dev>\nWe picked posts from your topics based on what the community found useful  _x000D_\n_x000D_\n*******_x000D_\nFor you_x000D_\n*******_x000D_\n_x000D_\n​Mar 23, 2026_x000D_\n_x000D_\nLogo ( https://app.daily.dev/ )_x000D_\n_x000D_\nTech World With Milan ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nYou're Not Paid to Write Code ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nAddy Osmani ( https://app.daily.dev/posts/kthBgt6Kn?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\n14 More Lessons from 14 years at Google ( https://app.daily.dev/posts/kthBgt6Kn?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n----------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/kthBgt6Kn?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nAtomic Spin ( https://app.daily.dev/posts/aeJGGwMeD?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nUpgrade Your Note-Taking Skills ( https://app.daily.dev/posts/aeJGGwMeD?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n--------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/aeJGGwMeD?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nCode Like A Girl ( https://app.daily.dev/posts/AeOi33le7?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nYou Don’t Suck at Coding. You’re Just Meeting a Real Codebase. ( https://app.daily.dev/posts/AeOi33le7?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n-------------------------------------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/AeOi33le7?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nEngineering Enablement ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nAI productivity gains are 10%, not 10x ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n---------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nFast-track your growth. Upgrade to plus ( https://app.daily.dev/plus )_x000D_\n_x000D_\nTry daily.dev on mobile (if you haven’t yet)_x000D_\n_x000D_\n( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\ndaily.dev for iOS ( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\n_x000D_\n( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\ndaily.dev for Android ( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\n_x000D_\nExplore ( https://app.daily.dev/posts )   |   Discussions ( https://app.daily.dev/discussed )   |   Tags ( https://app.daily.dev/tags )   |   Sources ( https://app.daily.dev/sources )   |   Leaderboard ( https://app.daily.dev/users )_x000D_\n_x000D_\nX ( https://twitter.com/dailydotdev ) Yt ( https://www.youtube.com/c/dailydev )_x000D_\nInst ( https://www.instagram.com/dailydotdev/ ) Tt ( https://www.tiktok.com/@dailydotdev )_x000D_\nGitHub ( https://github.com/dailydotdev/daily )_x000D_\nThis email was intended for Yessine Ht (yessineht@gmail.com)_x000D_\nSettings notifications ( https://app.daily.dev/account/notifications ), account details ( https://app.daily.dev/account/profile ) or unsubscribe ( https://track.customer.io/manage_subscription_preferences/RLnCCQUAAZ0ZEzpvfu1zYMb-xjnEnw== ) _x000D_\n_x000D_\n( https://app.daily.dev )Daily Dev Ltd., 9 Derech HaTikva Ganei Tikva, Israel_x000D_\n5591252",
+    "output": {
+      "email_id": "9895",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9896\nMongoDB <mongodbteam@messages.mongodb.com>\nTo view this email as a web page, go to the following address: https://info.mongodb.com/index.php/email/emailWebview?mkt_tok=MTQ5LUNCSi0xMzYAAAGguYwlXakzx6ur_uwPwzmDXyUfclttn3FumR7HAdDtj67TjhbrB9uKZiNLA1s_dtRBR4mcLKN0YpF5GykRlcPBHIIffgL8MALhhnyZjgEGBqkxwg _x000D_\n_x000D_\n_x000D_\nBonjour Yessine,_x000D_\n_x000D_\n_x000D_\nQue vous souhaitiez développer vos compétences ou mieux comprendre tout le potentiel des solutions MongoDB, notre Programme de Certification vous accompagne avec une certification officielle à la clé._x000D_\n_x000D_\nConçue par les experts MongoDB, cette formation vous permettra d’approfondir vos connaissances, de développer vos compétences et de valoriser votre expertise._x000D_\n_x000D_\nEn vous inscrivant, vous bénéficierez de :_x000D_\n_x000D_\n_x000D_\n\t- 9 sessions en direct animées par des experts MongoDB_x000D_\n\t- Un contenu exclusif, avec des cas d’usage avancés_x000D_\n\t- Un examen de certification officiel gratuit_x000D_\n_x000D_\n_x000D_\n_x000D_\nQue vous soyez développeur, architecte ou responsable data, ce programme vous aidera à mieux exploiter les opportunités offertes par les architectures de données modernes MongoDB._x000D_\nInscrivez-vous  <https://em.mongodb.com/MTQ5LUNCSi0xMzYAAAGguYwlXTuCIKP6_LoBDLdFIsmZKyH45iQ6nDGf-UFAtSTG3VC72eDm9R1cwzlFDJWZw66Qw1Q=>_x000D_\nThink Big. Go Far,_x000D_\nThe MongoDB Team_x000D_\n_x000D_\nThis email was sent to yessineht@gmail.com. If you no longer wish to receive these emails you may unsubscribe here: https://info.mongodb.com/UnsubscribePage.html?mkt_unsubscribe=1&mkt_tok=MTQ5LUNCSi0xMzYAAAGguYwlXakzx6ur_uwPwzmDXyUfclttn3FumR7HAdDtj67TjhbrB9uKZiNLA1s_dtRBR4mcLKN0YpF5GykRlcPBHIIffgL8MALhhnyZjgEGBqkxwg.",
+    "output": {
+      "email_id": "9896",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9898\nsirine <sirine@lunflow.com>\nBonsoir , ok merci_x000D_\n_x000D_\nOn 3/23/2026 7:56 PM, Yessine Ht wrote:_x000D_\n> Bonjour,_x000D_\n>_x000D_\n> Je vous envoie ce mail pour vous informer que nous avons essayé de _x000D_\n> contacter notre encadrant académique par téléphone, mais nous n’avons _x000D_\n> pas réussi à le joindre.",
+    "output": {
+      "email_id": "9898",
+      "workflow_type": "other",
+      "attributes": {
+        "date": "3/23/2026",
+        "email": "sirine@lunflow.com",
+        "tel": "",
+        "site": ""
+      },
+      "confidence_score": 0.9
+    }
+  },
+  {
+    "input_email": "UID: 9899\nsirine <sirine@lunflow.com>\nok_x000D_\n_x000D_\nOn 3/23/2026 8:03 PM, Yessine Ht wrote:_x000D_\n> Bonsoir_x000D_\n>_x000D_\n> Je m’excuse pour le message précédent. Notre encadrant académique _x000D_\n> vient de nous rappeler et a confirmé qu’il est d’accord pour la _x000D_\n> réunion. Il sera disponible entre 10h et 11h._x000D_\n>_x000D_\n> On Mon, Mar 23, 2026, 19:58 sirine <sirine@lunflow.com> wrote:_x000D_\n>_x000D_\n>     Bonsoir , ok merci_x000D_\n>_x000D_\n>     On 3/23/2026 7:56 PM, Yessine Ht wrote:_x000D_\n>     > Bonjour,_x000D_\n>     >_x000D_\n>     > Je vous envoie ce mail pour vous informer que nous avons essayé de_x000D_\n>     > contacter notre encadrant académique par téléphone, mais nous_x000D_\n>     n’avons_x000D_\n>     > pas réussi à le joindre._x000D_\n>",
+    "output": {
+      "email_id": "9899",
+      "workflow_type": "other",
+      "attributes": {
+        "date": "3/23/2026",
+        "email": "sirine@lunflow.com"
+      },
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 9900\ndaily.dev <informer@daily.dev>\nWe picked posts from your topics based on what the community found useful  _x000D_\n_x000D_\n*******_x000D_\nFor you_x000D_\n*******_x000D_\n_x000D_\n​Mar 24, 2026_x000D_\n_x000D_\nLogo ( https://app.daily.dev/ )_x000D_\n_x000D_\ndaily.dev ( https://app.daily.dev/posts/kaAWQy79n?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nHow we built a Linear coding agent: the hard parts ( https://app.daily.dev/posts/kaAWQy79n?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n---------------------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/kaAWQy79n?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nJosh W Comeau ( https://app.daily.dev/posts/4AgbREn59?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nSneaky Header Blocker Trick • Josh W. Comeau ( https://app.daily.dev/posts/4AgbREn59?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n-----------------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/4AgbREn59?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nTkDodo ( https://app.daily.dev/posts/wSju3VMXu?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nTest IDs are an a11y smell ( https://app.daily.dev/posts/wSju3VMXu?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n---------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/wSju3VMXu?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nTech World With Milan ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nYou're Not Paid to Write Code ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/V90BEtMZY?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nEngineering Enablement ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nAI productivity gains are 10%, not 10x ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n---------------------------------------------------------------------------------------------------------------------------------------------_x000D_\n_x000D_\nRead_x000D_\narticle → ( https://app.daily.dev/posts/MCzNO6zN8?utm_source=notification&utm_medium=email&utm_campaign=digest )_x000D_\n_x000D_\nFast-track your growth. Upgrade to plus ( https://app.daily.dev/plus )_x000D_\n_x000D_\nTry daily.dev on mobile (if you haven’t yet)_x000D_\n_x000D_\n( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\ndaily.dev for iOS ( https://apps.apple.com/app/daily-dev/id6740634400 )_x000D_\n_x000D_\n( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\ndaily.dev for Android ( https://play.google.com/store/apps/details?id=dev.daily )_x000D_\n_x000D_\nExplore ( https://app.daily.dev/posts )   |   Discussions ( https://app.daily.dev/discussed )   |   Tags ( https://app.daily.dev/tags )   |   Sources ( https://app.daily.dev/sources )   |   Leaderboard ( https://app.daily.dev/users )_x000D_\n_x000D_\nX ( https://twitter.com/dailydotdev ) Yt ( https://www.youtube.com/c/dailydev )_x000D_\nInst ( https://www.instagram.com/dailydotdev/ ) Tt ( https://www.tiktok.com/@dailydotdev )_x000D_\nGitHub ( https://github.com/dailydotdev/daily )_x000D_\nThis email was intended for Yessine Ht (yessineht@gmail.com)_x000D_\nSettings notifications ( https://app.daily.dev/account/notifications ), account details ( https://app.daily.dev/account/profile ) or unsubscribe ( https://track.customer.io/manage_subscription_preferences/RLnCCQUAAZ0eOxYRP82OWI9PHu-BzQ== ) _x000D_\n_x000D_\n( https://app.daily.dev )Daily Dev Ltd., 9 Derech HaTikva Ganei Tikva, Israel_x000D_\n5591252",
+    "output": {
+      "email_id": "9900",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
     }
   }
 ]

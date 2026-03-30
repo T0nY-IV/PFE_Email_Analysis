@@ -117,7 +117,7 @@ def save_attachments(msg, email_uid, base_folder="emails_output"):
 # --- Main Script ---
 
 mail = imaplib.IMAP4_SSL(IMAP_SERVER)
-mail.login(str(EMAIL_ACCOUNT), str(PASSWORD))
+mail.login(EMAIL_ACCOUNT, PASSWORD)
 mail.select("inbox")
 
 if not os.path.exists(OUTPUT_FOLDER):
@@ -126,7 +126,7 @@ if not os.path.exists(OUTPUT_FOLDER):
 # Fetch UIDs
 _, data = mail.uid("search", None, "ALL")
 uids = data[0].split()
-last_10_uids = uids[-10:]
+last_10_uids = uids[-1:]
 
 print(f" Processing {len(last_10_uids)} emails...\n")
 

@@ -1,3 +1,3 @@
 @echo off
-ollama launch claude --model qwen3-coder-next:cloud
+ollama launch claude
 pause

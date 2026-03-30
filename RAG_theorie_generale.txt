@@ -1,0 +1,220 @@
+================================================================================
+                        LEARNING RAG (Retrieval-Augmented Generation)
+                              Théorie Générale du RAG
+================================================================================
+
+1. QU'EST-CE QUE LE RAG ?
+================================================================================
+
+RAG (Retrieval-Augmented Generation) est une architecture moderne d'intelligence
+artificielle qui combine deux approches complémentaires :
+
+1. Récupération (Retrieval) : Recherche de documents pertinents dans une base
+   de connaissances externe
+2. Génération (Generation) : Utilisation d'un modèle de langage (LLM) pour
+   générer des réponses basées sur le contexte récupéré
+
+Le RAG permet de surmonter les limitations des LLMs traditionnels :
+- Accès à des informations récentes non présentes dans l'entraînement
+- Réduction des hallucinations (fausses informations)
+- Personnalisation du contexte pour chaque requête
+
+--------------------------------------------------------------------------------
+
+2. ARCHITECTURE DU RAG
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          ARCHITECTURE GÉNÉRALE                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  1. Base de Connaissances (Knowledge Base)                                  │
+│     └── Documents bruts (PDF, JSON, TXT, etc.)                              │
+│                                                                             │
+│  2. Pré-processing                                                          │
+│     ├── Chunking (découpage du texte)                                       │
+│     └── Embedding (vectorisation)                                           │
+│                                                                             │
+│  3. Vector Database (Base de données vectorielle)                           │
+│     └── Stocke les embeddings avec des IDs                                  │
+│                                                                             │
+│  4. Requête Utilisateur                                                     │
+│     └── Prompt + Question                                                   │
+│                                                                             │
+│  5. Récupération (Retrieval)                                                │
+│     ├── Convertir la requête en vecteur                                     │
+│     └── Recherche de similarité (Top-K)                                     │
+│                                                                             │
+│  6. Génération (Generation)                                                 │
+│     ├── Construire le prompt augmenté                                       │
+│     └── Envoyer au LLM (ex: GPT, Ollama)                                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+
+3. ÉTAPES DU PROCESSUS RAG
+================================================================================
+
+ÉTAPE 1 : CHARGEMENT DU DOCUMENT
+--------------------------------------------------------------------------------
+Le document source est chargé en mémoire (JSON, PDF, texte, etc.)
+
+Exemple : Un fichier JSON contenant des informations sur les services Telecom
+
+--------------------------------------------------------------------------------
+
+ÉTAPE 2 : CHUNKING (Découpage en morceaux)
+--------------------------------------------------------------------------------
+Le document est divisé en chunks (morceaux) de taille fixe pour :
+- Permettre une recherche efficace
+- Gérer la limite de contexte du LLM
+- Améliorer la précision de la récupération
+
+Formule mathématique du découpage :
+    n_chunks = ceil(L_total / L_chunk)
+
+    où :
+    - L_total = longueur totale du texte (en caractères/mots)
+    - L_chunk = taille de chaque chunk (paramètre fixé)
+    - ceil() = fonction plafond
+
+Exemple : Un texte de 5000 caractères découpé en chunks de 500 caractères
+    donne n_chunks = ceil(5000 / 500) = 10 chunks
+
+--------------------------------------------------------------------------------
+
+ÉTAPE 3 : EMBEDDING (Vectorisation)
+--------------------------------------------------------------------------------
+Chaque chunk est converti en vecteur numérique à l'aide d'un modèle
+d'embedding (ex: all-MiniLM-L6-v2).
+
+Formule mathématique d'un embedding :
+    E : X → R^d
+
+    où :
+    - E = fonction d'embedding
+    - X = espace d'entrée (texte)
+    - R^d = espace vectoriel de dimension d (ex: d = 384 pour MiniLM)
+
+Exemple : Un chunk de texte "Service client disponible 24/7" devient
+    un vecteur de 384 dimensions :
+
+    E("Service client disponible 24/7") = [v₁, v₂, v₃, ..., v₃₈₄]
+
+--------------------------------------------------------------------------------
+
+ÉTAPE 4 : STOCKAGE DANS LA BASE DE DONNÉES VECTORIELLE
+--------------------------------------------------------------------------------
+Les vecteurs sont stockés dans une base de données vectorielle (ex: ChromaDB).
+
+Pour chaque chunk i :
+    - document_i : le texte original
+    - embedding_i : le vecteur associé
+    - id_i : identifiant unique (ex: "0", "1", "2", ...)
+
+Structure de stockage :
+    Collection = { (id_i, document_i, embedding_i) | i ∈ [0, n_chunks[ }
+
+--------------------------------------------------------------------------------
+
+4. MATHÉMATIQUES DU RAG
+================================================================================
+
+4.1 SIMILARITÉ COSINE
+--------------------------------------------------------------------------------
+La similarité cosine mesure l'angle entre deux vecteurs pour évaluer
+leur ressemblance.
+
+Formule :
+    cosine_similarity(A, B) = (A · B) / (||A|| × ||B||)
+
+    où :
+    - A · B = produit scalaire de A et B = Σ(A_i × B_i)
+    - ||A|| = norme euclidienne de A = √(Σ(A_i²))
+    - ||B|| = norme euclidienne de B = √(Σ(B_i²))
+
+Plage de valeurs :
+    - 1.0 = vecteurs identiques (même direction)
+    - 0.0 = vecteurs orthogonaux (aucune ressemblance)
+    - -1.0 = vecteurs opposés (contradictoires)
+
+Exemple de calcul :
+    A = [0.8, 0.6]    → ||A|| = √(0.64 + 0.36) = 1.0
+    B = [0.6, 0.8]    → ||B|| = √(0.36 + 0.64) = 1.0
+    A · B = 0.48 + 0.48 = 0.96
+
+    cosine_similarity(A, B) = 0.96 / (1.0 × 1.0) = 0.96
+
+--------------------------------------------------------------------------------
+
+4.2 TOP-K RETRIEVAL
+--------------------------------------------------------------------------------
+Après calcul de la similarité cosine entre la requête et tous les chunks,
+on sélectionne les K plus hauts scores.
+
+Formulation :
+    retrieved_docs = top_k({ (id_i, similarity(query, chunk_i)) | i })
+
+    où k est un hyperparamètre (ex: k = 5)
+
+Exemple :
+    Scores de similarité :
+    - chunk_0 : 0.82
+    - chunk_1 : 0.45
+    - chunk_2 : 0.91 ←
+    - chunk_3 : 0.33
+    - chunk_4 : 0.76 ←
+    - chunk_5 : 0.88 ←
+    - chunk_6 : 0.29
+
+    Pour k=5 : on sélectionne les chunks 2, 5, 0, 4, 1
+
+--------------------------------------------------------------------------------
+
+4.3 FORMATION DU PROMPT AUGMENTÉ
+--------------------------------------------------------------------------------
+Le prompt final combine le contexte récupéré et la requête originale.
+
+Formule :
+    prompt_augmente = prefixe + contexte + suffixe + requête
+
+    où :
+    - prefixe = instruction système
+    - contexte = documents récupérés (concaténés)
+    - suffixe = séparateur
+    - requête = question de l'utilisateur
+
+Exemple :
+    prefixe = "Vous êtes un assistant. Utilisez le contexte ci-dessous :\n\n"
+    contexte = "Document 1: ...\n\nDocument 2: ..."
+    suffixe = "\n\nQuestion : "
+    requête = "Quel est le service client ?"
+
+    → prompt_augmente = "Vous êtes un assistant..."
+
+--------------------------------------------------------------------------------
+
+5. AVANTAGES DU RAG
+================================================================================
+
+1. Actualisation facile : Ajouter/de nouveaux documents sans re-entraîner
+2. Contrôle du contexte : On sait exactement quelles informations sont utilisées
+3. Réduction des hallucinations : Le LLM se base sur des sources réelles
+4. Explicabilité : On peut tracer les sources utilisées pour une réponse
+5. Personnalisation : Le contexte peut être adapté à chaque utilisateur
+
+--------------------------------------------------------------------------------
+
+6. LIMITES DU RAG
+================================================================================
+
+1. Dépendance à la qualité du retrieval : Si la recherche échoue, la réponse échoue
+2. Coût de stockage : Les embeddings nécessitent de l'espace disque
+3. Latence : Deux appels (recherche + génération) plutôt qu'un seul
+4. Limitation de contexte : Le LLM a une limite de tokens à traiter
+5. Biais de récurrence : Les documents similaires sont souvent récupérés
+
+================================================================================
+                              FIN DU DOCUMENT
+================================================================================

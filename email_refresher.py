@@ -6,7 +6,7 @@ import json
 import time
 import pandas as pd
 import dotenv
-from mail_analyser import loop_through_emails_and_send_requests
+from mail_analyser import loop_through_emails_and_send_requests, initialize_rag_system
 from api_methodes import get_last_excel_uid
 
 
@@ -19,7 +19,7 @@ PASSWORD = os.getenv("mail_code")
 # Output folder for exported content.
 OUTPUT_FOLDER = "emails_output"
 # How often to check the mailbox (seconds). Can be overridden via env var.
-POLL_INTERVAL_SECONDS = int(os.getenv("MAIL_POLL_SECONDS", "60"))
+POLL_INTERVAL_SECONDS = 60
 
 
 def remove_html_tags(text):
@@ -170,7 +170,7 @@ def run_once():
         # Collect rows to append.
         excel_data = []
 
-        for uid in reversed(new_uids):
+        for uid in new_uids:
             _, msg_data = mail.uid("fetch", uid, "(RFC822)")
             msg = email.message_from_bytes(msg_data[0][1])
 
@@ -181,7 +181,7 @@ def run_once():
 
             # Extract attachments and message body.
             attachments = save_attachments(msg, email_uid, OUTPUT_FOLDER)
-            email_body = get_body(msg)
+            email_body = msg.get("from", "Unknown")+"\n"+get_body(msg)
 
             # Log extracted data to console (useful for quick checks).
             email_json = {
@@ -224,6 +224,7 @@ def main():
     print(f"Mailbox watcher started. Polling every {POLL_INTERVAL_SECONDS} seconds.")
 
     try:
+        initialize_rag_system()
         while True:
             print(time.strftime("[%Y-%m-%d %H:%M:%S] Checking for new emails..."))
             run_once()

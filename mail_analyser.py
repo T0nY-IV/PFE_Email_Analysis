@@ -6,13 +6,29 @@ from api_methodes import get_last_json_uid
 def send_request_to_api(email_content: str):
     url = "http://localhost:8086/query"
     payload = {
-        "email_file": email_content,
+        "email_content": email_content,
     }
     response = requests.post(url, json=payload)
     if response.status_code == 200:
         return response.json()
     else:
         raise Exception(f"API request failed with status code {response.status_code}: {response.text}")
+    
+def initialize_rag_system():
+    url = "http://localhost:8086/initialize"
+    try:
+        last_json_uid = get_last_json_uid()
+        last_excel_uid = 0  # Placeholder, can be updated to get the actual last Excel UID if needed
+        
+        response = requests.post(url, json={})
+        if response.status_code == 200:
+            return response.json()
+        else:
+            raise Exception(f"Initialization failed with status code {response.status_code}: {response.text}")
+    except Exception as e:
+        print(f"Error during initialization: {e}")
+        return None
+
 
 def get_mailContent_from_exel_by_uid(uid):
     """Récupère le contenu d'un email depuis le fichier Excel en utilisant l'UID"""

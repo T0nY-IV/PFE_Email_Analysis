@@ -1,0 +1,376 @@
+================================================================================
+                           RAG DANS api.py
+                    Implementation Pratique avec Ollama & ChromaDB
+================================================================================
+
+1. VUE D'ENSEMBLE DE L'API
+================================================================================
+
+L'API FastAPI implémente un système RAG complet pour l'analyse d'emails
+professionnels. Elle utilise :
+
+- FastAPI : Framework web pour l'API
+- SentenceTransformer : Modèle d'embedding (all-MiniLM-L6-v2)
+- ChromaDB : Base de données vectorielle
+- Ollama : LLM local (modèle qwen3:1.7b)
+
+--------------------------------------------------------------------------------
+
+2. ENDPOINTS DE L'API
+================================================================================
+
+2.1 POST /initialize - Initialisation du système RAG
+--------------------------------------------------------------------------------
+Cet endpoint Initialise le système en chargeant les documents, créant les
+embeddings et peuplant la base de données vectorielle.
+
+Code clé dans api.py (lignes 46-117) :
+    @app.post("/initialize")
+    async def initialize():
+        global embedding_model, client, collection, document_text, chunks, embeddings
+
+        # Étape 1 : Charger le modèle d'embedding
+        embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        # Dimension de l'embedding : 384
+
+        # Étape 2 : Charger le document source
+        document_text = load_document("dataset_telecom.json")
+
+        # Étape 3 : Découper en chunks (500 caractères)
+        chunks = chunk_text(document_text, 500)
+        # Formule : chunks = [text[i:i+500] for i in range(0, len(text), 500)]
+
+        # Étape 4 : Créer les embeddings pour chaque chunk
+        embeddings = embedding_model.encode(chunks)
+        # Résultat : matrice de forme (n_chunks, 384)
+
+        # Étape 5 : Initialiser ChromaDB
+        client = chromadb.Client(
+            Settings(
+                persist_directory="./chroma_db",
+                anonymized_telemetry=False
+            )
+        )
+
+        # Étape 6 : Créer la collection et ajouter les documents
+        collection = client.create_collection("my_docs")
+
+        for i, chunk in enumerate(chunks):
+            collection.add(
+                documents=[chunk],                    # Texte original
+                embeddings=[embeddings[i].tolist()], # Vecteur 384D
+                ids=[str(i)]                         # ID unique
+            )
+
+        return {
+            "status": "success",
+            "message": f"RAG system initialized with {len(chunks)} chunks",
+            "chunks_count": len(chunks),
+            "document_path": "dataset_telecom.json"
+        }
+
+Formule mathématique de vectorisation :
+    E ∈ R^(n_chunks × d)
+
+    où :
+    - E = matrice d'embeddings
+    - n_chunks = nombre de chunks
+    - d = 384 (dimension de MiniLM-L6-v2)
+
+--------------------------------------------------------------------------------
+
+2.2 POST /query - Requête et génération
+--------------------------------------------------------------------------------
+Cet endpoint traite une requête utilisateur en récupérant le contexte pertinent
+et en générant une réponse via le LLM.
+
+Code clé dans api.py (lignes 119-197) :
+    @app.post("/query")
+    async def query(request: QueryRequest):
+        # Vérifier l'initialisation
+        if embedding_model is None or collection is None:
+            raise HTTPException(status_code=400, detail="RAG system not initialized")
+
+        # Étape 1 : Convertir la requête en vecteur
+        query_embedding = embedding_model.encode([prompt_orange])[0]
+        # prompt_orange contient les instructions de classification
+
+        # Étape 2 : Recherche de similarité dans ChromaDB
+        results = collection.query(
+            query_embeddings=[query_embedding.tolist()],
+            n_results=5                    # Top-5 documents similaires
+        )
+
+        # Étape 3 : Extraire les documents récupérés
+        retrieved_docs = results.get("documents")[0]
+        # Formule : { chunk_i | cosine(query, chunk_i) = top-5 }
+
+        # Étape 4 : Construire le prompt augmenté
+        email_content = str(request.email_content)
+        full_prompt = prompt_orange + "\n\n" + email_content
+        context = "\n\n".join(retrieved_docs)
+
+        augmented_prompt = f"""
+You are an assistant. Use the context below to answer the question.
+
+Context:
+{context}
+
+Question:
+{full_prompt}
+
+Answer:
+"""
+
+        # Étape 5 : Générer la réponse avec Ollama
+        response = chat(
+            model="qwen3:1.7b",
+            messages=[{"role": "user", "content": augmented_prompt}]
+        )
+
+        # Étape 6 : Parse et sauvegarder la réponse
+        data_json = json.loads(response["message"]["content"])
+        save_to_dataset(email_content, data_json)
+
+        return data_json
+
+Formule mathématique de retrieval :
+    top-k_indices = argmax_k'∈{0..n_chunks-1} cosine(Q, C_k')
+
+    où :
+    - Q = vecteur de la requête
+    - C_k' = vecteur du chunk k'
+    - argmax_k' = indices des k' plus hauts scores
+
+Formule de similarité cosine (rappelez-vous) :
+    cosine(Q, C) = (Q · C) / (||Q|| × ||C||)
+
+--------------------------------------------------------------------------------
+
+3. STRUCTURE DES DONNÉES
+================================================================================
+
+3.1 LE PROMPT (prompt_orange)
+--------------------------------------------------------------------------------
+Le fichier prompt.py définit le comportement de l'assistant :
+
+Prompt principal (lignes 70-125 dans prompt.py) :
+    - Type de classification : 'Réclamation' ou 'Demande'
+    - Attributes dépendant du workflow :
+      * Réclamation : titre, date, tel, email, etat, description, produit, site
+      * Demande : date, description, produit, site, email, tel, type
+
+3.2 LE DATASET (dataset_telecom.json)
+--------------------------------------------------------------------------------
+Structure des données :
+    [
+        {
+            "input_email": "Contenu de l'email",
+            "output": {
+                "email_id": "string",
+                "workflow_type": "Réclamation|Demande|other",
+                "attributes": {},
+                "confidence_score": 0.0
+            }
+        },
+        ...
+    ]
+
+4. MATHÉMATIQUES DE L'IMPLEMENTATION
+================================================================================
+
+4.1 DÉCOMPOSITION EN CHUNKS
+--------------------------------------------------------------------------------
+Dans api_methodes.py (lignes 36-38) :
+    def chunk_text(text, chunk_size=500):
+        return [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
+
+Formule mathématique :
+    n_chunks = ⌈ L_total / L_chunk ⌉
+
+    où ⌈x⌉ est la fonction plafond (ceil)
+
+Exemple numérique :
+    L_total = 2500 caractères
+    L_chunk = 500 caractères
+    n_chunks = ⌈ 2500 / 500 ⌉ = ⌈ 5 ⌉ = 5 chunks
+
+4.2 VECTORISATION
+--------------------------------------------------------------------------------
+Dans api.py (ligne 66) :
+    embeddings = embedding_model.encode(chunks)
+
+Formule :
+    E = [e₁, e₂, ..., e_n_chunks]
+
+    où chaque e_i ∈ R^384 et e_i = E(chunk_i)
+
+Matrice résultante : E ∈ R^(n_chunks × 384)
+
+4.3 RECHERCHE DE SIMILARITÉ
+--------------------------------------------------------------------------------
+Dans api.py (lignes 133-136) :
+    results = collection.query(
+        query_embeddings=[query_embedding.tolist()],
+        n_results=5
+    )
+
+Calcul de similarité pour chaque chunk :
+    s_i = cosine(Q, C_i) = (Q · C_i) / (||Q|| × ||C_i||)
+
+Sélection du top-K :
+    I = { i | s_i = k_ièmes plus grands scores }
+
+4.4 PROMPT AUGMENTÉ
+--------------------------------------------------------------------------------
+Dans api.py (lignes 154-164) :
+    augmented_prompt = prefixe + contexte + suffixe + requête
+
+Où :
+    prefixe = "You are an assistant. Use the context below...\n\n"
+    contexte = "Context 1...\n\nContext 2...\n\n..."
+    suffixe = "\n\nQuestion:\n"
+    requête = prompt_orange + email_content
+
+Formule :
+    P_augmenté = P_system + ∪(C_topk) + P_question + Q_user
+
+--------------------------------------------------------------------------------
+
+5. FICHIER DE MÉTHODES (api_methodes.py)
+================================================================================
+
+5.1 CHARGEMENT DU DOCUMENT
+--------------------------------------------------------------------------------
+def load_document(path):
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()
+
+5.2 SAUVEGARDE DANS LE DATASET
+--------------------------------------------------------------------------------
+def save_to_dataset(input_email, output_data):
+    new_entry = {
+        "input_email": input_email,
+        "output": output_data
+    }
+
+    if os.path.exists("dataset_telecom.json"):
+        with open("dataset_telecom.json", "r") as f:
+            dataset = json.load(f)
+    else:
+        dataset = []
+
+    dataset.append(new_entry)
+
+    with open("dataset_telecom.json", "w") as f:
+        json.dump(dataset, f, indent=2, ensure_ascii=False)
+
+Formule :
+    dataset_n = dataset_n-1 + { input_email, output_data }
+
+--------------------------------------------------------------------------------
+
+6. FLOW COMPLET D'EXÉCUTION
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    FLOW D'EXÉCUTION RAG DANS api.py                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  CLIENT                                                                     │
+│     |                                                                       │
+│     | POST /initialize                                                      │
+│     |                                                                       │
+│     ▼                                                                       │
+│  ┌──────────────────────┐                                                   │
+│  │   1. Loading         │                                                   │
+│  │   dataset_telecom    │                                                   │
+│  └──────────────────────┘                                                   │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐            ┌──────────────────────┐               │
+│  │   2. Chunking        │            │   Document Text      │               │
+│  │   500 char chunks    │            │   (raw text)         │               │
+│  └──────────────────────┘            └──────────────────────┘               │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐                                                   │
+│  │   3. Embedding       │                                                   │
+│  │   all-MiniLM-L6-v2   │                                                   │
+│  │   d=384 dimensions   │                                                   │
+│  └──────────────────────┘                                                   │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐            ┌──────────────────────┐               │
+│  │   4. Store in        │            │   Vector Database    │               │
+│  │   ChromaDB           │            │   (persistent)       │               │
+│  └──────────────────────┘            └──────────────────────┘               │
+│                                                                             │
+│  ──────── QUERY FLOW ────────                                               │
+│                                                                             │
+│  CLIENT                                                                     │
+│     |                                                                       │
+│  POST /query (email_content)                                                │
+│     |                                                                       │
+│     ▼                                                                       │
+│  ┌──────────────────────┐                                                   │
+│  │   5. Query Embedding │                                                   │
+│  │   prompt_orange      │                                                   │
+│  └──────────────────────┘                                                   │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐                                                   │
+│  │   6. Vector Search   │                                                   │
+│  │   Top-5 retrieval    │                                                   │
+│  └──────────────────────┘                                                   │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐                                                   │
+│  │   7. Augment Prompt  │                                                   │
+│  │   context + query    │                                                   │
+│  └──────────────────────┘                                                   │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐            ┌──────────────────────┐               │
+│  │   8. Ollama LLM      │            │   Response JSON      │               │
+│  │   qwen3:1.7b         │            │   classification     │               │
+│  └──────────────────────┘            └──────────────────────┘               │
+│         |                                                                   │
+│         |                                                                   │
+│         ▼                                                                   │
+│  ┌──────────────────────┐                                                   │
+│  │   9. Save to         │                                                   │
+│  │   dataset_telecom    │                                                   │
+│  └──────────────────────┘                                                   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+
+7. MATHÉMATIQUES RÉCAPITULATIVES
+================================================================================
+
+7.1 COMPLEXITÉ ALGORITHMIQUE
+--------------------------------------------------------------------------------
+- Chunking : O(n) où n = taille du texte
+- Embedding : O(n_chunks × d) = O(⌈n/500⌉ × 384)
+- Similarité cosine : O(n_chunks × d) par requête
+- Total : O(n + ⌈n/500⌉ × 384 + ⌈n/500⌉ × 384) ≈ O(n)
+
+7.2 FORMULES CLÉS
+--------------------------------------------------------------------------------
+1. Nombre de chunks :    n_chunks = ⌈ L_total / L_chunk ⌉
+2. Embedding :           E(chunk) ∈ R^384
+3. Similarité cosine :   sim(Q, C) = (Q · C) / (||Q|| × ||C||)
+4. Top-K :               retrieved = argmax_k sim(Q, C_i)
+5. Prompt augmenté :     P = P_sys + C_topk + P_req
+
+================================================================================
+                              FIN DU DOCUMENT
+================================================================================

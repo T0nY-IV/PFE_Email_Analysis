@@ -1,0 +1,27 @@
+**Contexte du projet et énoncé du problème
+Ce projet met en place une solution complète permettant d’extraire, d’organiser et d’analyser automatiquement le contenu des e‑mails. Le flux de travail comprend :
+
+- La connexion à une boîte de réception e‑mail, la récupération des messages récents, l’extraction du texte brut et la sauvegarde sécurisée des pièces jointes.
+- La transformation du texte en représentations vectorielles grâce à un modèle d’encodage de phrases, puis l’indexation de ces vecteurs dans une base de données spécialisée pour faciliter la recherche sémantique.
+- L’utilisation d’un grand modèle de langage pour combiner le contexte récupéré avec le contenu d’un e‑mail et générer des réponses enrichies ou des résumés pertinents.
+- Un cadre de test qui exécute de multiples itérations d’inférence afin de mesurer les performances, la consommation de ressources et la confiance des réponses produites.
+- L’empaquetage du tout dans un conteneur Docker, permettant un déploiement simple, isolé et scalable.
+
+En résumé, l’objectif du projet est d’automatiser la collecte et l’interprétation des communications par e‑mail, d’offrir des capacités de recherche intelligente sur le contenu et de fournir un environnement fiable pour évaluer différents modèles d’IA dans ce contexte.
+
+**Problématique / Objectif :
+- Le problème central que le projet résout est l'extraction automatisée d'informations utiles à partir de données d'e‑mail non structurées et la capacité d'interroger ces informations avec de grands modèles de langage.
+- Les défis spécifiques comprennent :
+  1. Analyse fiable des messages e‑mail multipart et gestion des différents encodages.
+  2. Stockage sûr des pièces jointes tout en conservant les noms de fichiers.
+  3. Transformation du texte brut d'e‑mail en un espace vectoriel permettant la recherche sémantique (RAG).
+  4. Fournir un cadre de benchmark reproductible pour évaluer différents LLM (Qwen, Gemma, LLaMA, etc.) sur les mêmes tâches basées sur les e‑mails, en capturant les performances et les métriques de confiance.
+  5. Conditionner l'ensemble du workflow dans un conteneur Docker pour un déploiement et une mise à l'échelle faciles.
+
+En résumé, le dépôt propose une solution complète de bout en bout pour :
+1) récupérer et normaliser les données d'e‑mail,
+2) construire un index d'embeddings consultable,
+3) interroger cet index avec des LLM, et
+4) mesurer le comportement du modèle à travers plusieurs exécutions et configurations matérielles.
+
+Généré par Claude Code.

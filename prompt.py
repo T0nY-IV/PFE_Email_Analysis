@@ -1,3 +1,8 @@
+import json
+with open("config-list-transformed.json", "r") as f:
+    json_conf = json.dumps(json.load(f), indent=2)
+
+
 prompt_1 = (
     "You are an enterprise email analysis agent specialized in business email understanding. "
     "Analyze the provided email and return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
@@ -113,27 +118,11 @@ prompt_orange = (
 )
 
 # Prompt for config-list (25).json
-prompt_config_25 = (
-    "You are an enterprise email analysis agent specialized in business workflow classification using the configuration defined in config-list (25).json. "
-    "Your task is to analyze a professional email and map it to the correct workflow label defined in that configuration.\n\n"
-    "Return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
-    "{\n"
-    "  \"email_id\": \"string\",\n"
-    "  \"workflow_type\": \"string\",\n"
-    "  \"attributes\": {},\n"
-    "  \"confidence_score\": 0.0\n"
-    "}\n\n"
-    "Classification Rules:\n"
-    "- Choose the workflow_type that best matches the email content from the list of workflow labels in config-list (25).json.\n"
-    "- If none match, set \"workflow_type\" to \"other\".\n\n"
-    "Attribute Extraction Rules:\n"
-    "- Extract ONLY attributes that belong to the selected workflow. Use the \"label\" field of each listItem as the attribute key (convert spaces to underscores and lower case).\n"
-    "- Extract values exactly as they appear in the email; if a value is missing, omit that key.\n"
-    "- Return an empty object {} for attributes if none are found.\n\n"
-    "Additional Constraints:\n"
-    "- Do NOT create attributes outside the allowed list for the chosen workflow.\n"
-    "- Values must be extracted exactly from the email content.\n"
-    "- confidence_score must be a float between 0.0 and 1.0.\n"
-    "- Return ONLY the JSON, no extra text or markdown.\n\n"
-    "Email:\n"
+#read the json file and convert it to a string
+
+prompt_configlist = (
+    f"You are an AI assistant that receives a JSON configuration: {json_conf}"
+    "Select the workflow whose \"label\" best matches the email, extract the attributes defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\", \"workflow_label\", \"attributes\", \"confidence_score\". "
+    "Only include attributes that appear in the email; omit missing ones. "
+    "Return ONLY the JSON, no extra text. "
 )

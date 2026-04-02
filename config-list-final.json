@@ -3,7 +3,6 @@
     "label": "Analyse docs transports",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Client/Agent": null,
@@ -23,13 +22,13 @@
       "Bon de douane N°:": null,
       "Facture N°:": null,
       "Dossier/Action traité par:": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Constitution dossier import",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Client/Agent": null,
@@ -49,38 +48,38 @@
       "Bon de douane N°:": null,
       "Facture N°:": null,
       "Dossier/Action traité par:": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de Conformité Financière des Contrats",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation ": null,
       "Référence ": null,
       "Détail": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des Risques et Litiges Contractuels",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
       "Projet": null,
       "Entreprise": null,
       "Date": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Revue des contrats",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission du contrat": null,
@@ -106,78 +105,21 @@
       "Signataire(s)": null,
       "Contrat signé": "0",
       "Statut final du contrat": null
-    }
-  },
-  {
-    "label": "Revue des contrats",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission du contrat": null,
-      "Nom du contrat": null,
-      "Type de contrat": null,
-      "Date de soumission": null,
-      "Durée du contrat": null,
-      "Montant estimé": null,
-      "Description brève": null,
-      "Document du contrat": "0",
-      "Commentaires": null,
-      "Validation juridique": null,
-      "Analyse des risques juridiques": null,
-      "Clauses sensibles à revoir ?": null,
-      "Contrat conforme ?": null,
-      "Document modifié (si applicable)": "0",
-      "Révision financière": null,
-      "Budget disponible ?": null,
-      "Montant validé": null,
-      "Conditions de paiement": null,
-      "Signature & Archivage": null,
-      "Date de signature": null,
-      "Signataire(s)": null,
-      "Contrat signé": "0",
-      "Statut final du contrat": null
-    }
-  },
-  {
-    "label": "Gestion des Risques et Litiges Contractuels",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Nom": null,
-      "Projet": null,
-      "Entreprise": null,
-      "Date": null
-    }
-  },
-  {
-    "label": "Contrôle de Conformité Financière des Contrats",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
-      "Détail": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "mm",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "Demande d'achat",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Identification du besoin": null,
@@ -187,13 +129,13 @@
       "Articles demandés": null,
       "Justif du BL": "0",
       "Justif du BC": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Permis de Travail pour Chantier",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Informations sur le Demandeur": null,
@@ -218,25 +160,25 @@
       "Surveillance et conformité ": null,
       "Les travailleurs respectes les conditions de permis de travail ": null,
       "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Réclamation Technique",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Object de réclamation": null,
       "Description": null,
       "Niveau d'urgence": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Processus Export",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Client/Agent": null,
@@ -256,82 +198,13 @@
       "Bon de douane N°:": null,
       "Facture N°:": null,
       "Dossier/Action traité par:": null
-    }
-  },
-  {
-    "label": "Permis de Travail pour Chantier",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Informations sur le Demandeur": null,
-      "Nom du Demandeur": null,
-      "Adresse": null,
-      "Numéro de téléphone": null,
-      "Adresse e-mail": null,
-      "Informations sur le Chantier": null,
-      "Nom du Chantier": null,
-      "Adresse du Chantier": null,
-      "Description du Travail à Effectuer": null,
-      "Durée Prévue du Travail": null,
-      "Superviseur ou Responsable sur le Chantier": null,
-      "Informations sur l'Entreprise/Employeur": null,
-      "Nom de l'Entreprise/Employeur": null,
-      "Adresse de l'Entreprise": null,
-      "Numéro de téléphone de l'Entreprise": null,
-      "Adresse e-mail de l'Entreprise ": null,
-      "Informations sur les Travailleurs": null,
-      "Déclaration et Signature": null,
-      "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
-      "Surveillance et conformité ": null,
-      "Les travailleurs respectes les conditions de permis de travail ": null,
-      "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
-    }
-  },
-  {
-    "label": "Réclamation Technique",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Object de réclamation": null,
-      "Description": null,
-      "Niveau d'urgence": null
-    }
-  },
-  {
-    "label": "Processus Export",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Client/Agent": null,
-      "Date de réception de la demande": null,
-      "Preuve demande C/A": null,
-      "List choix Transporteur": null,
-      "Autre transporteur": null,
-      "Date enlèvement ": null,
-      "Vérification étapes du processus import": null,
-      "Pré-alerte": null,
-      "Réception pré-alerte": null,
-      "Numéro BL": null,
-      "Pièce jointe ": null,
-      "Dossier de transport": null,
-      "Commentaire": null,
-      "Dossier douane N°:": null,
-      "Bon de douane N°:": null,
-      "Facture N°:": null,
-      "Dossier/Action traité par:": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contract Review",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Contract Submission": null,
@@ -357,38 +230,38 @@
       "Signer(s)": null,
       "Signed Contract": "0",
       "Final Contract Status": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Management of Contractual Risks and Disputes",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
       "Projet": null,
       "Entreprise": null,
       "Date": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Financial Compliance Monitoring of Contracts",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation ": null,
       "Référence ": null,
       "Détail": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Fiche des accidents & des incidents",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "déclarante d'incident/ accident": null,
@@ -417,13 +290,13 @@
       "Détails concernant les Causes apparents": null,
       " Recommandations préliminaires": null,
       "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Fiche des NC",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "date": null,
@@ -439,13 +312,13 @@
       "Evaluation de l'efficacité/clôture": null,
       "Risques et opportunités": null,
       "Besoin de modification SMQ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "REVUE DE DIRECTION",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date de revue": null,
@@ -462,13 +335,13 @@
       "L'amélioration de l'efficacité du système de management de la qualité et de ses processus": null,
       "L'amélioration du produit en rapport avec les exigences du client": null,
       "Besoins en ressources": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Audit interne",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Planning de l'audit interne": null,
@@ -478,13 +351,13 @@
       "Rapport d'audit": null,
       "Diffusion du rapport d’audit": null,
       "Résultat d'audit pour prochaine revue de direction": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle Qualité ISO 22000",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Identification et critère de qualité du produit": null,
@@ -499,91 +372,13 @@
       "Conformité Contrôle Qualité ": null,
       "Rapport": null,
       "Rapport d'inspection finale": null
-    }
-  },
-  {
-    "label": "Fiche des accidents & des incidents",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "déclarante d'incident/ accident": null,
-      "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
-      "Date de l'incident": null,
-      "Heure de l'incendie": null,
-      "Lieu": null,
-      "Type": null,
-      "si dommage corporel a remplir": null,
-      "si dommage matériel a remplir": null,
-      "si réputation a remplir": null,
-      "si fatalité a remplir": null,
-      "type du préjudice": null,
-      "localisation du préjudice": null,
-      "Etat physique actuel de la (des) victime(s)": null,
-      "Provenance/Cause probable d’incident": null,
-      "Mesures existantes ayant pu prévenir tel Incident": null,
-      "Description de l’événement": null,
-      "Conséquence": null,
-      " Photo de l'incident / accident si existe": null,
-      "Réaction d'urgence du Resp HSE": null,
-      "Personne cible pour cette alerte": null,
-      "Réaction médicale": null,
-      "Réaction technique": null,
-      "Action Correctives provisoires ": null,
-      "Détails concernant les Causes apparents": null,
-      " Recommandations préliminaires": null,
-      "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
-    }
-  },
-  {
-    "label": "Fiche des NC",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "date": null,
-      "Processus": null,
-      "Source": null,
-      "remarque": null,
-      "Support ": null,
-      "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": null,
-      "Correction (s) \t": null,
-      "Evaluation du correction": null,
-      "Analyse des causes \t\t\t\t\t\t\t": null,
-      "Action Corrective (s) :\t": null,
-      "Evaluation de l'efficacité/clôture": null,
-      "Risques et opportunités": null,
-      "Besoin de modification SMQ": null
-    }
-  },
-  {
-    "label": "Contrôle Qualité ISO 22000",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Identification et critère de qualité du produit": null,
-      "Numéro d'identification unique du Produit": null,
-      "Classement Par Risque ": null,
-      "Classement par ancienneté ": null,
-      "Le produit respecte les critères de qualité de l'entreprise": null,
-      "Le produit conforme au politique interne": null,
-      "Validation": null,
-      "Conformité Juridique": null,
-      "Conformité Financière ": null,
-      "Conformité Contrôle Qualité ": null,
-      "Rapport": null,
-      "Rapport d'inspection finale": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des information documenté",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Libéllé": null,
@@ -596,46 +391,46 @@
       "Vérificateur": null,
       "Approbateur": null,
       "Archivage": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des événements",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création de l'événement": null,
-      "📝 Nom de l'événement": null,
-      "📚 Type": null,
-      "🗓️ Date Début": null,
-      "🗓️ Date Fin": null,
-      "📍 Lieu": null,
-      "🧾 Description": null,
-      "✔️ Etat": null,
+      " Nom de l'événement": null,
+      " Type": null,
+      " Date Début": null,
+      " Date Fin": null,
+      " Lieu": null,
+      " Description": null,
+      " Etat": null,
       "Réservation des ressources": null,
-      "🧑‍🏫 Équipements requis": null,
-      "🏛️ Nom Salle": null,
-      "👥 Capacité": null,
+      " Équipements requis": null,
+      " Nom Salle": null,
+      " Capacité": null,
       "⏰ Date et heure d'installation": null,
-      "📞 Responsable logistique": null,
-      "✔️ Statut Disponibilité": null,
+      " Responsable logistique": null,
+      " Statut Disponibilité": null,
       "Gestion des participants": null,
-      "👥 Liste des participants": null,
+      " Liste des participants": null,
       "Gestion des intervenants": null,
-      "🗣️ Liste des intervenants": null,
+      " Liste des intervenants": null,
       "Check-list d'exécution": null,
-      "✅ Salles prêtes ?": null,
-      "🖥️ Équipements en place ?": null,
-      "🗣️ Intervenants confirmés ?": null,
-      "🧾 Commentaires": null
-    }
+      " Salles prêtes ?": null,
+      " Équipements en place ?": null,
+      " Intervenants confirmés ?": null,
+      " Commentaires": null
+    },
+    "input_email": null
   },
   {
     "label": "Approbation budgétaire",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission budgétaire": null,
@@ -650,13 +445,13 @@
       "Révision financière": null,
       "Montant approuvé": null,
       "Commentaires financiers": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des événements",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création de l'événement": null,
@@ -680,34 +475,13 @@
       "Équipements en place ?": null,
       "Intervenants confirmés ?": null,
       "Commentaires": null
-    }
-  },
-  {
-    "label": "Approbation budgétaire",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission budgétaire": null,
-      "Nom d'événement": null,
-      "Description": null,
-      "Montant demandé": null,
-      "Catégorie budgétaire": null,
-      "Date souhaitée d’approbation": null,
-      "Pièce jointe": null,
-      "Validation initiale": null,
-      "Commentaires": null,
-      "Révision financière": null,
-      "Montant approuvé": null,
-      "Commentaires financiers": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Leave Request",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Employer Request": null,
@@ -723,13 +497,13 @@
       "Leave Balance": null,
       "Replacement": null,
       "HR Processing": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Mission Order",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Mission Details": "Détails de la mission",
@@ -757,13 +531,13 @@
       "Mission Report": null,
       "Summary of Activities Performed": null,
       "Expense Receipts": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Absence Authorization Request",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Type of Authorization": null,
@@ -772,13 +546,13 @@
       "Departure Time": null,
       "Return Time": null,
       "Reason for Absence": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Advance Payment Request",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Employee Information": null,
@@ -787,13 +561,13 @@
       "Type of Reimbursement": null,
       "Reason for Request": null,
       "Attachment": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "New Employee Onboarding",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Préparation d’intégration": null,
@@ -824,13 +598,13 @@
       "Conformité aux attentes": null,
       "Recommandations": null,
       "Commentaires supplémentaires": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Recruitment Request",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
@@ -844,13 +618,13 @@
       "Cause de recrutement": null,
       "Expérience souhaitée": null,
       "Type de contrat ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Recruitment ",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description du besoin": null,
@@ -873,13 +647,13 @@
       "Proposition final d'embauche": null,
       "Signature de contrat ": null,
       "Contrat": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Post-Probation Evaluation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Collaborateurs": null,
@@ -904,104 +678,104 @@
       "Proposition d'amélioration ": null,
       "Décision ": null,
       "Décision proposé": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande de congé",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Employer Request": null,
-      "🧍 Full Name": null,
-      "💼 Position": null,
-      "🏢 Department": null,
-      "📝 Type of Leave": null,
-      "🗒️ Reason for Request": null,
-      "🔢 Current Leave Balance": null,
-      "🗓️ Departure Date": null,
-      "📆 Return Date": null,
+      " Full Name": null,
+      " Position": null,
+      " Department": null,
+      " Type of Leave": null,
+      " Reason for Request": null,
+      " Current Leave Balance": null,
+      " Departure Date": null,
+      " Return Date": null,
       "⏳ Duration (Days)": null,
-      "🕰️ Departure Period": null,
-      "🕰️ Return Period": null,
-      "⛔ Veuillez sélectionner la valeur proposée": null,
-      "🔢 New Leave Balance\t": null,
+      " Departure Period": null,
+      " Return Period": null,
+      " Veuillez sélectionner la valeur proposée": null,
+      " New Leave Balance\t": null,
       "Supporting Document": "0",
-      "🔄 Replacement": null,
+      " Replacement": null,
       "a": null,
       "b": null,
       "c": null,
       "d": null,
       "Approbation": null,
       "test": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Ordre de mission",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Informations sur le Collaborateur": null,
-      "🧍Nom et prénom": null,
-      "💼 Fonction": null,
-      "🏢 Département": null,
-      "🏠 Adresse personnelle": null,
+      "Nom et prénom": null,
+      " Fonction": null,
+      " Département": null,
+      " Adresse personnelle": null,
       "Informations Générales sur la Mission": "Détails de la mission",
-      "🎯 Objet de la mission": null,
-      "📋 Motif(s) de la mission": null,
-      "🗓️ Date de départ": null,
+      " Objet de la mission": null,
+      " Motif(s) de la mission": null,
+      " Date de départ": null,
       "⏰ Heure de départ": null,
-      "🗓️ Date de retour": null,
+      " Date de retour": null,
       "⏰ Heure de retour": null,
-      "📍 Type de destination": null,
-      "📌 Adresse / Lieu de la mission": null,
-      "📎 Pièce jointe ": "0",
+      " Type de destination": null,
+      " Adresse / Lieu de la mission": null,
+      " Pièce jointe ": "0",
       "Logistique et Préparation de Mission": null,
-      "🏨 Hébergement nécessaire": null,
-      "🚗 Moyen de transport principal": null,
-      "🧳 Type du moyen de transport": null,
-      "📝 A préciser": null,
-      "🧰 Liste des outils / équipements à emporter": null,
-      "💸 Fond de roulement estimé": null,
+      " Hébergement nécessaire": null,
+      " Moyen de transport principal": null,
+      " Type du moyen de transport": null,
+      " A préciser": null,
+      " Liste des outils / équipements à emporter": null,
+      " Fond de roulement estimé": null,
       "Financement & Ressources": null,
-      "✅ Budget pré-approuvé": null,
-      "📊 Allocation des ressources": null,
-      "📥 Ressources allouées": "0",
+      " Budget pré-approuvé": null,
+      " Allocation des ressources": null,
+      " Ressources allouées": "0",
       "Rapport de mission": null,
-      "📝 Résumé des activités réalisées": null,
-      "💵 Dépenses réelles engagées": null,
-      "📎 Justificatifs des dépenses": "0"
-    }
+      " Résumé des activités réalisées": null,
+      " Dépenses réelles engagées": null,
+      " Justificatifs des dépenses": "0"
+    },
+    "input_email": null
   },
   {
     "label": "Demande d'autorisation d'absence",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Demande Employeur": null,
-      "🧍Nom et prénom": null,
-      "💼 Fonction": null,
-      "🏢 Département": null,
-      "🏖️ Type d'autorisation": null,
-      "✏️ A préciser": null,
-      "🗓️ Date de Sortie": null,
+      "Nom et prénom": null,
+      " Fonction": null,
+      " Département": null,
+      " Type d'autorisation": null,
+      " A préciser": null,
+      " Date de Sortie": null,
       "⏰ Heure de départ": null,
       "⏰ Heure de retour": null,
-      "🔢 Nombre total d’heures": null,
-      "📝 Motif d'absence ": null,
-      "🔄 Remplaçant désigné pendant l'absence": null
-    }
+      " Nombre total d’heures": null,
+      " Motif d'absence ": null,
+      " Remplaçant désigné pendant l'absence": null
+    },
+    "input_email": null
   },
   {
     "label": "Demande d'avance",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Données Employé": null,
@@ -1010,178 +784,178 @@
       "Type de remboursement": null,
       "Motif de la demande ": null,
       "Pièce jointe": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Processus de Recrutement",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description du besoin": null,
-      "👥Besoin de Recrutement": null,
-      "🏢 Département demandeur": null,
-      "🧾 Intitulé du poste à pourvoir": null,
-      "📄 Type de contrat": null,
-      "🧐 Motif du recrutement": null,
-      "📝 Profil recherché": null,
-      "🔢 Nombre de postes souhaitées": null,
-      "💼 Expérience souhaitée": null,
-      "📆 Date souhaitée d'entrée en poste": null,
-      "💰 Budget salarial estimé (mensuel)": null,
+      "Besoin de Recrutement": null,
+      " Département demandeur": null,
+      " Intitulé du poste à pourvoir": null,
+      " Type de contrat": null,
+      " Motif du recrutement": null,
+      " Profil recherché": null,
+      " Nombre de postes souhaitées": null,
+      " Expérience souhaitée": null,
+      " Date souhaitée d'entrée en poste": null,
+      " Budget salarial estimé (mensuel)": null,
       "Choix du candidat": null,
-      "🧑‍💼Candidat présélectionné": null,
-      "🧍Nom et prénom": null,
-      "📞 Téléphone": null,
-      "📧 Email ": null,
-      "💼 Quel poste prétendez-vous ?": null,
-      "💵 Salaire désiré net (TND)": null,
-      "📸 Photo d’identité": "0",
-      "🎓 Photocopie des diplômes et certificats de scolarité": "0",
-      "📃CV": "0",
-      "📝 Lettre de Motivation": "0",
+      "Candidat présélectionné": null,
+      "Nom et prénom": null,
+      " Téléphone": null,
+      " Email ": null,
+      " Quel poste prétendez-vous ?": null,
+      " Salaire désiré net (TND)": null,
+      " Photo d’identité": "0",
+      " Photocopie des diplômes et certificats de scolarité": "0",
+      "CV": "0",
+      " Lettre de Motivation": "0",
       "Planification de l'entretien": null,
-      "📅 Date Entretien": null,
-      "🗄️ Type Entretien": null,
+      " Date Entretien": null,
+      " Type Entretien": null,
       "Évaluateurs ": null,
       "Entretien technique": null,
-      "🧪 Évaluation technique": null,
+      " Évaluation technique": null,
       "Entretien RH": null,
-      "💬 Évaluation comportementale": null,
-      "📝 Commentaires RH": null,
+      " Évaluation comportementale": null,
+      " Commentaires RH": null,
       "Décision DG": null,
-      "✅ Décision finale": null,
+      " Décision finale": null,
       "Envoi de Motif de Rejet": null,
-      "❌ Motif de Rejet": null,
+      " Motif de Rejet": null,
       "Envoi de réponse": null,
-      "🗓️ Date d'embauche": null,
-      "💵 Proposition final d'embauche": null,
-      "📄Contrat": "0"
-    }
+      " Date d'embauche": null,
+      " Proposition final d'embauche": null,
+      "Contrat": "0"
+    },
+    "input_email": null
   },
   {
     "label": "Expression de Besoin de Recrutement",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
-      "🏢 Département demandeur": null,
-      "🧾 Intitulé du poste à pourvoir": null,
-      "📄 Type de contrat": null,
-      "🧐 Motif du recrutement": null,
+      " Département demandeur": null,
+      " Intitulé du poste à pourvoir": null,
+      " Type de contrat": null,
+      " Motif du recrutement": null,
       "Autre": null,
-      "📝 Profil recherché": null,
-      "🔢 Nombre de postes souhaitées ": null,
-      "💼 Expérience souhaitée": null,
-      "📆 Date souhaitée d'entrée en poste": null,
-      "📍 Lieu de travail": null,
-      "💰 Budget salarial estimé (mensuel)": null,
-      "📝 Description des taches ": null,
-      "🛠️ Compétences spécifiques souhaitées": null
-    }
+      " Profil recherché": null,
+      " Nombre de postes souhaitées ": null,
+      " Expérience souhaitée": null,
+      " Date souhaitée d'entrée en poste": null,
+      " Lieu de travail": null,
+      " Budget salarial estimé (mensuel)": null,
+      " Description des taches ": null,
+      " Compétences spécifiques souhaitées": null
+    },
+    "input_email": null
   },
   {
     "label": "Planification des formations",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Détails de la Formation": null,
-      "🧠 Thématique de la formation": null,
-      "📚 Titre ou sujet souhaité": null,
-      "🎯 Objectif de la formation": null,
-      "📍 Type de formation souhaité": null,
-      "📆 Du": null,
-      "📆 Au": null,
+      " Thématique de la formation": null,
+      " Titre ou sujet souhaité": null,
+      " Objectif de la formation": null,
+      " Type de formation souhaité": null,
+      " Du": null,
+      " Au": null,
       "Documents justificatifs": "0",
       "Sélection du formateur": null,
-      "📇 Type de formateur\t": null,
-      "🗣️ Nom du formateur / Organisme": null,
+      " Type de formateur\t": null,
+      " Nom du formateur / Organisme": null,
       "Planification logistique": null,
-      "🗓️ Date": null,
-      "🕰️ Durée (en heures ou jours)": null,
-      "🚩 Lieu": null,
-      "🔢 Nombre de participants": null,
-      "♾️ Supports et logistique nécessaires": null,
+      " Date": null,
+      " Durée (en heures ou jours)": null,
+      " Lieu": null,
+      " Nombre de participants": null,
+      " Supports et logistique nécessaires": null,
       "Convocation des participants": null,
-      "👥 Participants": null,
+      " Participants": null,
       "Réalisation de la formation": null,
       "Fiche de présence": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation après une période d'essai",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Détails du Collaborateur": null,
-      "🧑‍💼 Nom du collaborateur": null,
-      "💼 Poste": null,
-      "👨‍💼 Manager hiérarchique": null,
-      "📅 Date d’entrée": null,
-      "🗓️ Fin de période d’essai": null,
+      " Nom du collaborateur": null,
+      " Poste": null,
+      " Manager hiérarchique": null,
+      " Date d’entrée": null,
+      " Fin de période d’essai": null,
       "Évaluation par le responsable hiérarchique": null,
-      "🧠 Connaissance de l'emploi": null,
-      "⚙️ Productivité (Qualité / Quantité)": null,
-      "🔒 Fiabilité / Respect des engagements": null,
-      "🤝 Collaboration avec les collègues": null,
-      "🔁 Adaptabilité": null,
-      "🚀 Initiative et proactivité": null,
-      "📞 Relation client/fournisseur (si applicable)": null,
-      "🗒️ Commentaires du manager": null,
+      " Connaissance de l'emploi": null,
+      " Productivité (Qualité / Quantité)": null,
+      " Fiabilité / Respect des engagements": null,
+      " Collaboration avec les collègues": null,
+      " Adaptabilité": null,
+      " Initiative et proactivité": null,
+      " Relation client/fournisseur (si applicable)": null,
+      " Commentaires du manager": null,
       "Évaluation par le service RH": null,
-      "🤝 Attitudes et comportements professionnels": null,
-      "🔥 Motivation / Satisfaction personnelle": null,
-      "🏢 Adaptation à l’environnement de travail": null,
-      "👨‍🏫 Niveau d’intégration / Encadrement reçu": null,
-      "📊 Écarts constatés par rapport au profil recherché": null,
-      "👬 Relation avec collègues au sein du département": null,
-      "🎯 Ambitions exprimées": null,
-      "🗒️ Commentaire RH": null,
-      "🛠️ Proposition d’amélioration ou accompagnement": null,
+      " Attitudes et comportements professionnels": null,
+      " Motivation / Satisfaction personnelle": null,
+      " Adaptation à l’environnement de travail": null,
+      " Niveau d’intégration / Encadrement reçu": null,
+      " Écarts constatés par rapport au profil recherché": null,
+      " Relation avec collègues au sein du département": null,
+      " Ambitions exprimées": null,
+      " Commentaire RH": null,
+      " Proposition d’amélioration ou accompagnement": null,
       "Décision finale par la Direction Générale": null,
-      "✅ Décision proposé": null,
-      "🖊️ Commentaire ou précision DG": null
-    }
+      " Décision proposé": null,
+      " Commentaire ou précision DG": null
+    },
+    "input_email": null
   },
   {
     "label": "Expression Besoin en Formation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Informations personnelles": null,
-      "👤 Nom et prénom": null,
-      "🧑‍💼 Fonction": null,
-      "🏢 Département / Service": null,
+      " Nom et prénom": null,
+      " Fonction": null,
+      " Département / Service": null,
       "Détails de la formation souhaitée": null,
-      "🧠 Thématique de la formation": null,
+      " Thématique de la formation": null,
       "Autre": null,
-      "📚 Titre ou sujet souhaité": null,
-      "🎯 Objectif de la formation": null,
+      " Titre ou sujet souhaité": null,
+      " Objectif de la formation": null,
       "⏳ Urgence du besoin": null,
-      "📍 Type de formation souhaité": null,
-      "📅Période souhaitée de la formation": "📅Période souhaitée de la formation",
-      "📆Du": null,
-      "📆Au": null,
-      "🧑‍🏫 Formateur pressenti (si connu)": null,
-      "💰 Budget estimé (si connu)": null,
+      " Type de formation souhaité": null,
+      "Période souhaitée de la formation": "Période souhaitée de la formation",
+      "Du": null,
+      "Au": null,
+      " Formateur pressenti (si connu)": null,
+      " Budget estimé (si connu)": null,
       "Documents justificatifs": "0",
-      "🗣️ Commentaire complémentaire": null
-    }
+      " Commentaire complémentaire": null
+    },
+    "input_email": null
   },
   {
     "label": "Demande d'attestation de travail",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Demande Employeur ": null,
@@ -1197,13 +971,13 @@
       "Attestation": "0",
       "Validation ": null,
       "Attestation Signée": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Conciliation entre HP et HT",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Collecte des Données": null,
@@ -1228,13 +1002,13 @@
       "Date Validation": null,
       "Heures Validées": null,
       "Statut Validation": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demandes WFH",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Demande Employeur ": null,
@@ -1259,13 +1033,13 @@
       "Feedback Employé": null,
       "Impact Opérationnel Final": null,
       "Recommandations Futures": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Post infos importantes",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Formulaire de Création": null,
@@ -1276,13 +1050,13 @@
       "Pièces Jointes": null,
       "Révision": null,
       "Commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Eléments de paie",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Formulaire de Demande": null,
@@ -1298,57 +1072,57 @@
       "Commentaire": null,
       "Traitement Service financier": null,
       "Fiche de paie": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Intégration du nouveau collaborateur",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Préparation d’intégration": null,
-      "🧑‍💼 Nom du collaborateur": null,
-      "📞 Téléphone": null,
-      "📧 Email ": null,
-      "💼 Poste": null,
-      "📄 Type de contrat": null,
-      "🗓️ Date d’entrée prévue": null,
-      "👨‍💼 Responsable hiérarchique": null,
-      "🖥️ Matériel requis": null,
-      "🔐 Accès informatiques nécessaires": null,
-      "🪑 Bureau attribué (étage, numéro)": null,
+      " Nom du collaborateur": null,
+      " Téléphone": null,
+      " Email ": null,
+      " Poste": null,
+      " Type de contrat": null,
+      " Date d’entrée prévue": null,
+      " Responsable hiérarchique": null,
+      " Matériel requis": null,
+      " Accès informatiques nécessaires": null,
+      " Bureau attribué (étage, numéro)": null,
       "Accueil le premier jour": null,
-      "🗣️ Briefing de bienvenue": null,
-      "🏢 Tour des locaux effectué\t": null,
-      "📝 Remarques éventuelles": null,
-      "👥 Présentation à l’équipe\t": null,
-      "👥 Personnes rencontrées": null,
-      "📦 Remise du matériel\t": null,
-      "🔓 Accès informatiques activés": null,
+      " Briefing de bienvenue": null,
+      " Tour des locaux effectué\t": null,
+      " Remarques éventuelles": null,
+      " Présentation à l’équipe\t": null,
+      " Personnes rencontrées": null,
+      " Remise du matériel\t": null,
+      " Accès informatiques activés": null,
       "Formation & orientation": null,
-      "👨‍🏫 Responsable des formations": null,
-      "📅 Dates de formation prévues\t": null,
-      "📚 Formations obligatoires": null,
-      "🧰 Matériel de formation fourni": null,
-      "🗒️ Commentaires": null,
+      " Responsable des formations": null,
+      " Dates de formation prévues\t": null,
+      " Formations obligatoires": null,
+      " Matériel de formation fourni": null,
+      " Commentaires": null,
       "Suivi de la période d’essai": null,
-      "🛠️ Compétences techniques observées": null,
-      "👥 Intégration dans l’équipe": null,
-      "✅ Conformité aux attentes": null,
-      "💬 Recommandations": null,
-      "📝 Commentaires supplémentaires": null,
+      " Compétences techniques observées": null,
+      " Intégration dans l’équipe": null,
+      " Conformité aux attentes": null,
+      " Recommandations": null,
+      " Commentaires supplémentaires": null,
       "Clôture de l’intégration": null,
-      "🔚 Évaluation finale de l’intégration": null,
-      "🔄 Prolongation ou fin de période d’essai": null,
-      "📝 Justification": null
-    }
+      " Évaluation finale de l’intégration": null,
+      " Prolongation ou fin de période d’essai": null,
+      " Justification": null
+    },
+    "input_email": null
   },
   {
     "label": "Ordre de mission",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Objet de la mission": null,
@@ -1366,13 +1140,13 @@
       "Pièce jointe ": "0",
       "Fond de roulement ": null,
       "Moyen de Transport": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande de congé",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Demande Employeur ": null,
@@ -1390,13 +1164,13 @@
       "Remplaçant": null,
       "Traitement RH": null,
       "Solde congé ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Ordre de mission",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Détails de la mission": "Détails de la mission",
@@ -1426,13 +1200,13 @@
       "Résumé des activités réalisées": null,
       "Dépenses réelles": null,
       "Justificatifs des dépenses": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande d'autorisation d'absence",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Type d'autorisation": null,
@@ -1441,28 +1215,13 @@
       "Heure de départ ": null,
       "Heure de retour": null,
       "Motif d'absence ": null
-    }
-  },
-  {
-    "label": "Demande d'avance",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Données Employé": null,
-      "Montant demandé": null,
-      "Date souhaité ": null,
-      "Type de remboursement": null,
-      "Motif de la demande ": null,
-      "Pièce jointe": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Onboarding d'un nouveau employé",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Préparation d’intégration": null,
@@ -1493,13 +1252,13 @@
       "Conformité aux attentes": null,
       "Recommandations": null,
       "Commentaires supplémentaires": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Expression besoin de recrutement",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
@@ -1513,13 +1272,13 @@
       "Cause de recrutement": null,
       "Expérience souhaitée": null,
       "Type de contrat ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Recrutement",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description du besoin": null,
@@ -1542,13 +1301,13 @@
       "Proposition final d'embauche": null,
       "Signature de contrat ": null,
       "Contrat": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "évaluation aprés une période d'essai",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Collaborateurs": null,
@@ -1573,155 +1332,41 @@
       "Proposition d'amélioration ": null,
       "Décision ": null,
       "Décision proposé": null
-    }
-  },
-  {
-    "label": "Ordre de mission",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Informations sur le Collaborateur": null,
-      "🧍Nom et prénom": null,
-      "💼 Fonction": null,
-      "🏢 Département": null,
-      "🏠 Adresse personnelle": null,
-      "Informations Générales sur la Mission": "Détails de la mission",
-      "🎯 Objet de la mission": null,
-      "📋 Motif(s) de la mission": null,
-      "🗓️ Date de départ": null,
-      "⏰ Heure de départ": null,
-      "🗓️ Date de retour": null,
-      "⏰ Heure de retour": null,
-      "📍 Type de destination": null,
-      "📌 Adresse / Lieu de la mission": null,
-      "📎 Pièce jointe ": "0",
-      "Logistique et Préparation de Mission": null,
-      "🏨 Hébergement nécessaire": null,
-      "🚗 Moyen de transport principal": null,
-      "🧳 Type du moyen de transport": null,
-      "📝 A préciser": null,
-      "🧰 Liste des outils / équipements à emporter": null,
-      "💸 Fond de roulement estimé": null,
-      "Financement & Ressources": null,
-      "✅ Budget pré-approuvé": null,
-      "📊 Allocation des ressources": null,
-      "📥 Ressources allouées": "0",
-      "Rapport de mission": null,
-      "📝 Résumé des activités réalisées": null,
-      "💵 Dépenses réelles engagées": null,
-      "📎 Justificatifs des dépenses": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Déclenchement de campagnes de déclarations",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Détails de la campagne": null,
-      "📝 Libellé": null,
-      "📂 Type_Déclaration": null,
+      " Libellé": null,
+      " Type_Déclaration": null,
       "⏳ Mois": null,
       "⏳ Trimestre": null,
-      "📅 Année": null
-    }
-  },
-  {
-    "label": "Tâches de Déclaration Impôts",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Détails de la Campagne": null,
-      "📝 Nom de la campagne": null,
-      "Mois": null,
-      "Année": null,
-      "👤 Nom du client": null,
-      "🆔 Matricule fiscal": null,
-      "📞 Numéro de contact": null,
-      "📧 Email": null,
-      "👤 Référent chez nous": null,
-      "Collecte des documents comptables": null,
-      "Documents comptables": "0",
-      "Préparation de la déclaration": null,
-      "Déclarations Impôts mensuels": "0",
-      "Paiment Déclaration": null,
-      "Mode de paiement": null,
-      "Justificatif": "0"
-    }
-  },
-  {
-    "label": "Exécution des Tâches de Déclaration",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Détails de la Campagne": null,
-      "📝 Nom de la campagne": null,
-      "Mois": null,
-      "Année": null,
-      "👤 Nom du client": null,
-      "🆔 Matricule fiscal": null,
-      "📞 Numéro de contact": null,
-      "📧 Email": null,
-      "👤 Référent chez nous": null,
-      "Collecte des documents comptables": null,
-      "Documents comptables": "0",
-      "Préparation de la déclaration": null,
-      "Déclarations Impôts mensuels": "0",
-      "Paiment Déclaration": null,
-      "Mode de paiement": null,
-      "Justificatif": "0"
-    }
-  },
-  {
-    "label": "Tâches de Déclaration CNSS",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Détails de la Campagne": null,
-      "📝 Nom de la campagne": null,
-      "Trimestre": null,
-      "Année": null,
-      "👤 Nom du client": null,
-      "🆔 Matricule fiscal": null,
-      "📞 Numéro de contact": null,
-      "📧 Email": null,
-      "👤 Référent chez nous": null,
-      "Collecte des documents comptables": null,
-      "Documents comptables": "0",
-      "Préparation de la déclaration": null,
-      "Déclarations Impôts mensuels": "0",
-      "Paiment Déclaration": null,
-      "Mode de paiement": null,
-      "Justificatif": "0"
-    }
+      " Année": null
+    },
+    "input_email": null
   },
   {
     "label": "Suivi d'intégration nouveau recrutement",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom de nouveau recrue ": null,
       "Fonction": null,
       "Date de recrutement ": null,
       "Plan d'intégration ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation de formation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Details sur la formation ": null,
@@ -1750,13 +1395,13 @@
       "Recommandations/Remarques ": null,
       "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.": "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.",
       "Commentaires ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Audit 5S",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Zone": null,
@@ -1767,23 +1412,13 @@
       "Q2": null,
       "Support Q2": "0",
       "Somme S3": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande d'achat",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description générale": null,
@@ -1803,24 +1438,24 @@
       "Factures et Reçus": null,
       "Mode de paiement": null,
       "Montant payé": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Projet",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "nom": null,
       "date": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Fiche Poste",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "suivre le remboursement des sinistres déclarés": null,
@@ -1829,126 +1464,118 @@
       "réaliser les inventaires des immobilisations ": null,
       "Attachement": "0",
       "piloter les projets de construction / aménagement/ entretien  ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Fiche poste 2",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description": null,
       "Attachement": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "jklj",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "date": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "zez",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "Content validation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "534345",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "fsqf": null,
       "chgbjhc": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "gestion des absences ",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date sortie": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion d’un lot de production",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "Gestion de projet",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Projet": null,
       "Exécution": null,
       "Envoie": null,
       "description": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {}
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de conformité du Produit",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
-      "🏷️ OF": null,
-      "📅 Date de production": null,
-      "📆 Date d'échéance": null,
-      "🧴 Normes de sécurité alimentaire": null,
-      "🏷️ Étiquetage": null,
-      "❌ Défauts visibles": null,
-      "🎨 Couleur du produit": null,
-      "🍽️ Saveur du produit": null,
-      "👃 Odeurs désagréables": null,
-      "📦 Déchirures/perforations en emballage": null,
-      "🌡️ Températures": null,
+      " OF": null,
+      " Date de production": null,
+      " Date d'échéance": null,
+      " Normes de sécurité alimentaire": null,
+      " Étiquetage": null,
+      " Défauts visibles": null,
+      " Couleur du produit": null,
+      " Saveur du produit": null,
+      " Odeurs désagréables": null,
+      " Déchirures/perforations en emballage": null,
+      " Températures": null,
       "Conformité Globale": null,
       "Analyse": null,
-      "🔬 Analyse Approfondie": null,
+      " Analyse Approfondie": null,
       "Validation de la conformité du produit": null,
-      "✅ Validation de la conformité du produit": null
-    }
+      " Validation de la conformité du produit": null
+    },
+    "input_email": null
   },
   {
     "label": "Décontamination et Nettoyage ",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Préparation de nettoyage Zone ou Equipement": null,
@@ -1970,13 +1597,13 @@
       " Inspection et Validation": null,
       "Rapport D'inspection": null,
       "Commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de conformité du Produit",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
@@ -1998,13 +1625,13 @@
       "Analyse": null,
       "Analyse Approfondit": null,
       "Validation de la conformité du produit": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de conformité du MP",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
@@ -2024,25 +1651,25 @@
       "Analyse": null,
       "Analyse Approfondit": null,
       "Validation de la conformité du MP": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Planification",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date": null,
       "Ordre": null,
       "Mp": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de conformité du Produit",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
@@ -2061,190 +1688,44 @@
       "Analyse": null,
       "Analyse Approfondie": null,
       "Validation de la conformité du produit": null
-    }
-  },
-  {
-    "label": "Décontamination et Nettoyage ",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Préparation de nettoyage Zone ou Equipement": null,
-      "Zone ou Equipement": null,
-      "Date début": null,
-      "Heure de Début": null,
-      "Observations Préliminaires": null,
-      " Nettoyage Initial": null,
-      "Produit de nettoyage Utilisé": null,
-      "Temps de Nettoyage": null,
-      "Résultats du Nettoyage": null,
-      "Décontamination": null,
-      "Produit de Décontamination Utilisé": null,
-      "Temps d'Application": null,
-      "Résultats de la Décontamination": null,
-      "Nettoyage Final": null,
-      "Méthode de Nettoyage Final ": null,
-      "Résultats de Nettoyage Final": null,
-      " Inspection et Validation": null,
-      "Rapport D'inspection": null,
-      "Commentaire": null
-    }
-  },
-  {
-    "label": "Contrôle de conformité du MP",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Check List de Conformité ": null,
-      "Identification Du MP": null,
-      "Fournisseur ": null,
-      "Demande d'achat": null,
-      "Echantillon ": null,
-      "Date de production": null,
-      "Date d'échéance": null,
-      "Normes de sécurité alimentaire": null,
-      " Défauts visibles": null,
-      "Couleur ": null,
-      "Saveur ": null,
-      "Odeurs désagréables": null,
-      "Mesures de sécurité alimentaire": null,
-      "Conformité Globale": null,
-      "Analyse": null,
-      "Analyse Approfondit": null,
-      "Validation de la conformité du MP": null
-    }
-  },
-  {
-    "label": "Planification",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Date": null,
-      "Ordre": null,
-      "Mp": null
-    }
-  },
-  {
-    "label": "Contrôle de conformité du MP",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Check List de Conformité ": null,
-      "Identification Du MP": null,
-      "Fournisseur ": null,
-      "Demande d'achat": null,
-      "Echantillon ": null,
-      "Date de production": null,
-      "Date d'échéance": null,
-      "Normes de sécurité alimentaire": null,
-      " Défauts visibles": null,
-      "Couleur ": null,
-      "Saveur ": null,
-      "Odeurs désagréables": null,
-      "Mesures de sécurité alimentaire": null,
-      "Conformité Globale": null,
-      "Analyse": null,
-      "Analyse Approfondit": null,
-      "Validation de la conformité du MP": null
-    }
-  },
-  {
-    "label": "Contrôle de conformité du Produit",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Check List de Conformité ": null,
-      "🏷️ OF": null,
-      "📅 Date de production": null,
-      "📆 Date d'échéance": null,
-      "🧴 Normes de sécurité alimentaire": null,
-      "🏷️ Étiquetage": null,
-      "❌ Défauts visibles": null,
-      "🎨 Couleur du produit": null,
-      "🍽️ Saveur du produit": null,
-      "👃 Odeurs désagréables": null,
-      "📦 Déchirures/perforations en emballage": null,
-      "🌡️ Températures": null,
-      "Conformité Globale": null,
-      "Analyse": null,
-      "🔬 Analyse Approfondie": null,
-      "Validation de la conformité du produit": null,
-      "✅ Validation de la conformité du produit": null
-    }
-  },
-  {
-    "label": "Décontamination et Nettoyage ",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Préparation de nettoyage Zone ou Equipement": null,
-      "Zone ou Equipement": null,
-      "Date début": null,
-      "Heure de Début": null,
-      "Observations Préliminaires": null,
-      " Nettoyage Initial": null,
-      "Produit de nettoyage Utilisé": null,
-      "Temps de Nettoyage": null,
-      "Résultats du Nettoyage": null,
-      "Décontamination": null,
-      "Produit de Décontamination Utilisé": null,
-      "Temps d'Application": null,
-      "Résultats de la Décontamination": null,
-      "Nettoyage Final": null,
-      "Méthode de Nettoyage Final ": null,
-      "Résultats de Nettoyage Final": null,
-      " Inspection et Validation": null,
-      "Rapport D'inspection": null,
-      "Commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion d’un lot de production",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
+      " Référence du lot": null,
+      " Produit à fabriquer": null,
+      " Quantité planifiée": null,
+      " Date de début prévue": null,
+      " Ligne de production": null,
+      " Responsable de ligne": null,
       "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
+      "▶ Date de démarrage": null,
+      " Quantité produite": null,
+      " Quantité rejetée": null,
+      " Motif du rejet": null,
       "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
+      " Goût": null,
+      " Poids": null,
+      " Résultat final": null,
       "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
+      " Type d’emballage": null,
+      " Quantité emballée": null,
+      " Date d’expédition prévue": null,
+      " Transporteur": null,
+      " Bon de livraison": null
+    },
+    "input_email": null
   },
   {
     "label": "Work Permit for Construction Site",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Informations sur le Demandeur": null,
@@ -2269,25 +1750,25 @@
       "Surveillance et conformité ": null,
       "Les travailleurs respectes les conditions de permis de travail ": null,
       "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Technical Claim",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Object de réclamation": null,
       "Description": null,
       "Niveau d'urgence": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Events Management",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création de l'événement": null,
@@ -2311,13 +1792,13 @@
       "Équipements en place ?": null,
       "Intervenants confirmés ?": null,
       "Commentaires": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Budget Approval",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission budgétaire": null,
@@ -2332,21 +1813,13 @@
       "Révision financière": null,
       "Montant approuvé": null,
       "Commentaires financiers": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {}
+    },
+    "input_email": null
   },
   {
     "label": "Validation des Modules",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Niveau": null,
@@ -2356,13 +1829,13 @@
       "Note DS": null,
       "Note Examen": null,
       "Décision": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des Projets de Fin d'Etudes",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission du sujet": null,
@@ -2386,13 +1859,13 @@
       "Rapport de stage": "0",
       "Validation finale": null,
       "Décision": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Organisation des Examens",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Niveau": null,
@@ -2400,26 +1873,26 @@
       "Module": null,
       "Horaire": null,
       "Salle": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Validation des Modules",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Étudiant ": null,
       "Module ": null,
       "Note obtenue": null,
       "Décision": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des Projets de Fin d'Etudes",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission du sujet": null,
@@ -2442,195 +1915,13 @@
       "Rapport de stage": "0",
       "Validation finale": null,
       "Décision": null
-    }
-  },
-  {
-    "label": "Organisation des Examens",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Niveau": null,
-      "Semestre": null,
-      "Module": null,
-      "Horaire": null,
-      "Salle": null
-    }
-  },
-  {
-    "label": "Validation des Modules",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Étudiant ": null,
-      "Module ": null,
-      "Note obtenue": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Gestion des Projets de Fin d'Etudes",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission du sujet": null,
-      "Étudiant ": null,
-      "Titre du sujet": null,
-      "Description du sujet": null,
-      "Désignation d’un encadrant": null,
-      "Encadrant": null,
-      "Évaluation intermédiaire du stage": null,
-      "Rapport d’avancement soumis": null,
-      "Avancement du projet": null,
-      "Qualité du travail": null,
-      "Respect des délais": null,
-      "Problèmes rencontrés": null,
-      "Commentaires": null,
-      "Fixation de la soutenance": null,
-      "Date de soutenance": null,
-      "Jury désigné": null,
-      "Lieu de la soutenance": null,
-      "Rapport de stage": "0",
-      "Validation finale": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Organisation des Examens",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Niveau": null,
-      "Semestre": null,
-      "Module": null,
-      "Horaire": null,
-      "Salle": null
-    }
-  },
-  {
-    "label": "Validation des Modules",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Étudiant ": null,
-      "Module ": null,
-      "Note obtenue": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Gestion des Projets de Fin d'Etudes",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission du sujet": null,
-      "Étudiant ": null,
-      "Titre du sujet": null,
-      "Description du sujet": null,
-      "Désignation d’un encadrant": null,
-      "Encadrant": null,
-      "Évaluation intermédiaire du stage": null,
-      "Rapport d’avancement soumis": null,
-      "Avancement du projet": null,
-      "Qualité du travail": null,
-      "Respect des délais": null,
-      "Problèmes rencontrés": null,
-      "Commentaires": null,
-      "Fixation de la soutenance": null,
-      "Date de soutenance": null,
-      "Jury désigné": null,
-      "Lieu de la soutenance": null,
-      "Rapport de stage": "0",
-      "Validation finale": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Organisation des Examens",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Niveau": null,
-      "Semestre": null,
-      "Module": null,
-      "Horaire": null,
-      "Salle": null
-    }
-  },
-  {
-    "label": "Validation des Modules",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Étudiant ": null,
-      "Module ": null,
-      "Note obtenue": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Gestion des Projets de Fin d'Etudes",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission du sujet": null,
-      "Étudiant ": null,
-      "Titre du sujet": null,
-      "Description du sujet": null,
-      "Désignation d’un encadrant": null,
-      "Encadrant": null,
-      "Évaluation intermédiaire du stage": null,
-      "Rapport d’avancement soumis": null,
-      "Avancement du projet": null,
-      "Qualité du travail": null,
-      "Respect des délais": null,
-      "Problèmes rencontrés": null,
-      "Commentaires": null,
-      "Fixation de la soutenance": null,
-      "Date de soutenance": null,
-      "Jury désigné": null,
-      "Lieu de la soutenance": null,
-      "Rapport de stage": "0",
-      "Validation finale": null,
-      "Décision": null
-    }
-  },
-  {
-    "label": "Organisation des Examens",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Niveau": null,
-      "Semestre": null,
-      "Module": null,
-      "Horaire": null,
-      "Salle": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Product Compliance Check",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
@@ -2649,13 +1940,13 @@
       "Analyse": null,
       "Analyse Approfondie": null,
       "Validation de la conformité du produit": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Decontamination and Cleaning",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Préparation de nettoyage Zone ou Equipement": null,
@@ -2677,13 +1968,13 @@
       " Inspection et Validation": null,
       "Rapport D'inspection": null,
       "Commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Compliance Check of RM",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Check List de Conformité ": null,
@@ -2703,25 +1994,13 @@
       "Analyse": null,
       "Analyse Approfondit": null,
       "Validation de la conformité du MP": null
-    }
-  },
-  {
-    "label": "Planification",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Date": null,
-      "Ordre": null,
-      "Mp": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Non-Conformity Report",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "date": null,
@@ -2737,13 +2016,13 @@
       "Evaluation de l'efficacité/clôture": null,
       "Risques et opportunités": null,
       "Besoin de modification SMQ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "ISO 22000 Quality Control",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Identification et critère de qualité du produit": null,
@@ -2758,13 +2037,13 @@
       "Conformité Contrôle Qualité ": null,
       "Rapport": null,
       "Rapport d'inspection finale": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Accident & Incident Report",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "déclarante d'incident/ accident": null,
@@ -2793,13 +2072,13 @@
       "Détails concernant les Causes apparents": null,
       " Recommandations préliminaires": null,
       "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Expression Besoin en Formation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Détails sur la formation": null,
@@ -2831,13 +2110,13 @@
       "Date de réalisation": null,
       "Satisfaction": null,
       "Fiche de présence ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Session de formation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Formation": null,
@@ -2851,13 +2130,13 @@
       "Date Fin Réel": null,
       "Lieu de formation": null,
       "Liste des personnels Final": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation à chaud",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Donnée Générale De La Formation": null,
@@ -2891,13 +2170,13 @@
       "Les informations présentées sont-elle utiles pour vous ?": null,
       "Pouvez-vous appliquer ce que vous venez d’apprendre à vos tâches quotidiennes ?": null,
       "Le sujet présenté répondait il à votre attente ?": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation à froid",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Donnée Générale De La Formation": null,
@@ -2916,46 +2195,46 @@
       "La personne formée doit suivre un module  complémentaire sur le sujet ? si oui lequel": null,
       "La personne formée doit suivre un plan  d’action pour la mise en œuvre du nouveau  savoir-faire ? si oui préciser le N° d’action": null,
       "Note générale du supérieur hiérarchique ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Ordre de mission",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Informations Générales sur la Mission": "Détails de la mission",
-      "🎯 Objet de la mission": null,
-      "📋 Motif(s) de la mission": null,
-      "🗓️ Date de départ": null,
+      " Objet de la mission": null,
+      " Motif(s) de la mission": null,
+      " Date de départ": null,
       "⏰ Heure de départ": null,
-      "🗓️ Date de retour": null,
+      " Date de retour": null,
       "⏰ Heure de retour": null,
-      "📍 Type de destination": null,
-      "📌 Adresse / Lieu de la mission": null,
-      "📎 Pièce jointe ": "0",
+      " Type de destination": null,
+      " Adresse / Lieu de la mission": null,
+      " Pièce jointe ": "0",
       "Logistique et Préparation de Mission": null,
-      "🏨 Hébergement nécessaire": null,
-      "🚗 Moyen de transport principal": null,
-      "🧳 Type du moyen de transport": null,
-      "📝 A préciser": null,
-      "💸 Fond de roulement estimé": null,
+      " Hébergement nécessaire": null,
+      " Moyen de transport principal": null,
+      " Type du moyen de transport": null,
+      " A préciser": null,
+      " Fond de roulement estimé": null,
       "Financement & Ressources": null,
-      "✅ Budget pré-approuvé": null,
+      " Budget pré-approuvé": null,
       "Réservation Voiture": null,
-      "📥 Ressources allouées": "0",
+      " Ressources allouées": "0",
       "Rapport de mission": null,
-      "📝 Résumé des activités réalisées": null,
-      "💵 Dépenses réelles engagées": null,
-      "📎 Justificatifs des dépenses": "0"
-    }
+      " Résumé des activités réalisées": null,
+      " Dépenses réelles engagées": null,
+      " Justificatifs des dépenses": "0"
+    },
+    "input_email": null
   },
   {
     "label": "Permis de Travail Chantier",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Information sur le chantier": null,
@@ -2984,13 +2263,13 @@
       "État du chantier": null,
       "Les travailleurs respectes les conditions de permis de travail ": null,
       "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": " PERMIS DE TRAVAIL",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "SCG // Sous-traitant ": null,
@@ -3012,13 +2291,13 @@
       "ACHÈVEMENT": null,
       "Date de fin des travaux": null,
       "Responsable SCG": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande Achat",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Demandes d’Achat": null,
@@ -3027,96 +2306,46 @@
       "Article": null,
       "Urgence": null,
       "Justification": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {}
-  },
-  {
-    "label": "Test Pièce Joint\"",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Objet": null,
-      "Attachement Facture": "0"
-    }
-  },
-  {
-    "label": "Gestion d’un lot de production",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
-      "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
-      "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
-      "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "ijipi",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "nom": null,
       "date": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Process Appel Offre",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
       "Date soumission": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Control",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Titre": null,
       "PJ": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande de support",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nouvelle demande": null,
@@ -3131,13 +2360,13 @@
       "Traitement": null,
       "Date d'acquittement ": null,
       "Action faite": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "EP014c-Engineering-Management",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Numéro projet": null,
@@ -3161,13 +2390,13 @@
       "Envoie Client": null,
       "Code Envoie": null,
       "Pièce Jointe": "0"
-    }
+    },
+    "input_email": null
   },
   {
     "label": "demande d'intervention",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "donnée utilisateur": null,
@@ -3175,56 +2404,44 @@
       "prénom": null,
       "motif de la demande ": null,
       "détail": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "coomercial ",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nom": null,
-      "date": null,
-      "liste": null
-    }
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "Help Desk GLPI",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
       "Article": null,
       "Objet": null,
       "Description du problem": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Workflow",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "liste": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "مطلب قطع اشجار ملك خاص",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "تقديم المطلب": null,
@@ -3255,50 +2472,13 @@
       "تاريخ الإصدار": null,
       "المخول له بالقطع": "المخول له بالقطع",
       "عدد الأشجار المرخص بقطعها": null
-    }
-  },
-  {
-    "label": "مطلب قطع اشجار ملك خاص",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "تقديم المطلب": null,
-      "الاسم واللقب": null,
-      "رقم بطاقة التعريف الوطنية": null,
-      "صادرة في": null,
-      "بطاقة التعريف الوطنية": null,
-      "شهادة ملكية او مايثبت ملكية العقار": null,
-      "مطلب قطع اشجار ملك خاص": null,
-      "العنوان": null,
-      "مكان العقار": null,
-      "عدد العقار": null,
-      "عدد الاشجار": null,
-      "نوع الأشجار": null,
-      "سبب الطلب": null,
-      "زيارة المكان": null,
-      "تقرير معاينة أشجار": null,
-      "المعاين": null,
-      "الصفة": null,
-      "تاريخ المعاينة": null,
-      "موقع العقار": null,
-      "مالك العقار": null,
-      "عدد الأشجار": null,
-      "الحالة الفعلية للأشجار": null,
-      "الادارة العامة للغابات": null,
-      "رخصة قطع أشجار بالملك الخاص": null,
-      "رقم الرخصة": null,
-      "تاريخ الإصدار": null,
-      "المخول له بالقطع": "المخول له بالقطع",
-      "عدد الأشجار المرخص بقطعها": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "مطلب قطع اشجار ملك خاص 2",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "تقديم المطلب": null,
@@ -3335,279 +2515,162 @@
       "تاريخ القطع": "تاريخ القطع",
       "من": null,
       "الى": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "مطلب قطع اشجار ملك خاص 2",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "DEMANDE D’ACHAT",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "Informations générales 📝": null,
-      "Numéro de la demande 🔢": null,
-      "Date de la demande 📅": null,
-      "Demandeur 👤": null,
-      "Département 🏷️": null,
-      "Détails de l’achat 🛒": null,
-      "Type d’achat 🛒": null,
-      "Désignation de l’article 🧾": null,
-      "Description détaillée 📝": null,
-      "Quantité 📦": null,
-      "Urgence ⚡": null,
-      "Informations financières 💰": null,
-      "Budget estimé 💰": null,
+      "Informations générales ": null,
+      "Numéro de la demande ": null,
+      "Date de la demande ": null,
+      "Demandeur ": null,
+      "Département ": null,
+      "Détails de l’achat ": null,
+      "Type d’achat ": null,
+      "Désignation de l’article ": null,
+      "Description détaillée ": null,
+      "Quantité ": null,
+      "Urgence ": null,
+      "Informations financières ": null,
+      "Budget estimé ": null,
       "Fournisseur proposé": null,
-      "Devis joint 📌": "0",
-      "Pièces jointes📎": "0",
-      "CONTRÔLE CONFORMITÉ 🛡️": null,
-      "Type de conformité 📋": null,
-      "Résultat du contrôle 🔍": null,
-      "Risque identifié ⚠️": null,
+      "Devis joint ": "0",
+      "Pièces jointes": "0",
+      "CONTRÔLE CONFORMITÉ ": null,
+      "Type de conformité ": null,
+      "Résultat du contrôle ": null,
+      "Risque identifié ": null,
       "bon de commande ": "0",
       "nombre": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Traitement commande client",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "création de la commande": null,
-      "Référence commande 🔢": null,
-      "Client 👤": null,
-      "Type de produit 🏷️": null,
-      "Traitement demandé 🛠️": null,
-      "Quantité 📦": null,
-      "Délai de livraison ⏱️": null,
-      "bon de commande 📎": null,
-      "Validation commerciale 💼": null,
-      "Commentaire / Remarques 📝": null,
+      "Référence commande ": null,
+      "Client ": null,
+      "Type de produit ": null,
+      "Traitement demandé ": null,
+      "Quantité ": null,
+      "Délai de livraison ⏱": null,
+      "bon de commande ": null,
+      "Validation commerciale ": null,
+      "Commentaire / Remarques ": null,
       "Validation technique et planification": null,
-      "Etat de stock 📊": null,
+      "Etat de stock ": null,
       "Disponibilité Machine ": null,
       "Disponibilité matière": null,
-      "Date de début prévue ▶️": null,
-      "Date de fin prévue ⏹️": null,
+      "Date de début prévue ▶": null,
+      "Date de fin prévue ⏹": null,
       "Fabrication & Contrôle en production": null,
-      "Machine utilisée 🏭": null,
-      "Etat actuel 🔄": null,
-      "Date début fabrication 🕒": null,
-      "Date fin fabrication 🕒": null,
-      "Quantité produite 📈": null,
+      "Machine utilisée ": null,
+      "Etat actuel ": null,
+      "Date début fabrication ": null,
+      "Date fin fabrication ": null,
+      "Quantité produite ": null,
       "Contrôle qualité final": null,
       "Résultat contrôle final": null,
       "Observation qualité": null,
       "expédition": null,
-      "Numéro de colis 📦": null,
-      "Transporteur 🚛": null,
-      "Bon de livraison joint 📎": null,
+      "Numéro de colis ": null,
+      "Transporteur ": null,
+      "Bon de livraison joint ": null,
       "Facturation & clôture": null,
-      "Montant total 💰": null,
-      "Mode de paiement 💳": null,
-      "Numéro de facture 🔢": null,
-      "Facture 📎": null
-    }
+      "Montant total ": null,
+      "Mode de paiement ": null,
+      "Numéro de facture ": null,
+      "Facture ": null
+    },
+    "input_email": null
   },
   {
     "label": "DEMANDE D’ACHAT",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "Informations générales 📝": null,
-      "Numéro de la demande 🔢": null,
-      "Date de la demande 📅": null,
-      "Demandeur 👤": null,
-      "Département 🏷️": null,
-      "Détails de l’achat 🛒": null,
-      "Type d’achat 🛒": null,
-      "Désignation de l’article 🧾": null,
-      "Description détaillée 📝": null,
-      "Quantité 📦": null,
-      "Urgence ⚡": null,
-      "Informations financières 💰": null,
-      "Budget estimé 💰": null,
+      "Informations générales ": null,
+      "Numéro de la demande ": null,
+      "Date de la demande ": null,
+      "Demandeur ": null,
+      "Département ": null,
+      "Détails de l’achat ": null,
+      "Type d’achat ": null,
+      "Désignation de l’article ": null,
+      "Description détaillée ": null,
+      "Quantité ": null,
+      "Urgence ": null,
+      "Informations financières ": null,
+      "Budget estimé ": null,
       "Fournisseur proposé": null,
-      "Devis joint 📌": null,
-      "Pièces jointes📎": null,
-      "CONTRÔLE CONFORMITÉ 🛡️": null,
-      "Type de conformité 📋": null,
-      "Résultat du contrôle 🔍": null,
-      "Risque identifié ⚠️": null,
+      "Devis joint ": null,
+      "Pièces jointes": null,
+      "CONTRÔLE CONFORMITÉ ": null,
+      "Type de conformité ": null,
+      "Résultat du contrôle ": null,
+      "Risque identifié ": null,
       "bon de commande ": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
-  },
-  {
-    "label": "Gestion d’un lot de production",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
-      "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
-      "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
-      "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Demande et traitement d’achat",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Création de la demande": null,
-      "🏢 Département demandeur": null,
-      "🛒 Type d’achat": null,
-      "🔢 Quantité demandée": null,
-      "📅 Délai souhaité": null,
-      "⚡ Urgence": null,
-      "💬 Motif du besoin": null,
+      " Département demandeur": null,
+      " Type d’achat": null,
+      " Quantité demandée": null,
+      " Délai souhaité": null,
+      " Urgence": null,
+      " Motif du besoin": null,
       "Validation hiérarchique": null,
-      "📝 Commentaire": null,
+      " Commentaire": null,
       "Traitement par le service achat": null,
-      "🏷️ Fournisseur sélectionné": null,
-      "💰 Montant estimé": null,
-      "📆 Délai fournisseur": null,
-      "🧾 Bon de commande": null,
+      " Fournisseur sélectionné": null,
+      " Montant estimé": null,
+      " Délai fournisseur": null,
+      " Bon de commande": null,
       "Validation budgétaire": null,
-      "💳 Mode de paiement": null,
+      " Mode de paiement": null,
       "Réception": null,
-      "📅 Date de réception": null,
-      "📦 Quantité reçue": null,
-      "📊 Statut réception": null,
-      "📝 Rapport réception": null,
+      " Date de réception": null,
+      " Quantité reçue": null,
+      " Statut réception": null,
+      " Rapport réception": null,
       "Vérification facture et clôture": null,
-      "🧾 Numéro facture fournisseur": null,
-      "💵 Montant facture": null,
-      "📅 Date facture": null,
-      "📊 Statut paiement": null,
-      "📅 Date paiement": null,
-      "🧾 Bon de réception associé": null
-    }
-  },
-  {
-    "label": "Gestion d’un lot de production",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
-      "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
-      "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
-      "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
-  },
-  {
-    "label": "Demande et traitement d’achat",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création de la demande": null,
-      "🏢 Département demandeur": null,
-      "🛒 Type d’achat": null,
-      "🔢 Quantité demandée": null,
-      "📅 Délai souhaité": null,
-      "⚡ Urgence": null,
-      "💬 Motif du besoin": null,
-      "Validation hiérarchique": null,
-      "📝 Commentaire": null,
-      "Traitement par le service achat": null,
-      "🏷️ Fournisseur sélectionné": null,
-      "💰 Montant estimé": null,
-      "📆 Délai fournisseur": null,
-      "🧾 Bon de commande": null,
-      "Validation budgétaire": null,
-      "💳 Mode de paiement": null,
-      "Réception": null,
-      "📅 Date de réception": null,
-      "📦 Quantité reçue": null,
-      "📊 Statut réception": null,
-      "📝 Rapport réception": null,
-      "Vérification facture et clôture": null,
-      "🧾 Numéro facture fournisseur": null,
-      "💵 Montant facture": null,
-      "📅 Date facture": null,
-      "📊 Statut paiement": null,
-      "📅 Date paiement": null,
-      "🧾 Bon de réception associé": null
-    }
-  },
-  {
-    "label": "Test WF",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {}
+      " Numéro facture fournisseur": null,
+      " Montant facture": null,
+      " Date facture": null,
+      " Statut paiement": null,
+      " Date paiement": null,
+      " Bon de réception associé": null
+    },
+    "input_email": null
   },
   {
     "label": "Traitement Réclamation",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
@@ -3618,13 +2681,13 @@
       "Objet": null,
       "Description": null,
       "Pièce jointe": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "طلب الإجازة",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "اسم الموظف": null,
@@ -3635,21 +2698,21 @@
       "عدد أيام الإجازة": null,
       "سبب الإجازة": null,
       "مرفقات": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "11²",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "متابعة الجودة والسلامة",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "المهندس المسؤول": null,
@@ -3662,131 +2725,29 @@
       "الصور / المرفقات": null,
       "الإجراءات المقترحة": null,
       "التحليلات والتقارير": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "New Opportunity Request",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "Client Name 👤": null,
-      "Opportunity Description 📝": null,
-      "Estimated Value 💰": null,
+      "Client Name ": null,
+      "Opportunity Description ": null,
+      "Estimated Value ": null,
       "Urgency Level ⏰": null,
-      "Strategic Importance🎯": null,
-      "Main Risk ⚠️": null,
-      "Decision Deadline 📅": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
-  },
-  {
-    "label": "Gestion d’un lot de production",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
-      "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
-      "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
-      "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
-  },
-  {
-    "label": "Gestion d’un lot de production",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Création du lot": null,
-      "🔖 Référence du lot": null,
-      "🧴 Produit à fabriquer": null,
-      "📦 Quantité planifiée": null,
-      "📅 Date de début prévue": null,
-      "🏭 Ligne de production": null,
-      "👷‍♂️ Responsable de ligne": null,
-      "Fabrication": null,
-      "▶️ Date de démarrage": null,
-      "⚖️ Quantité produite": null,
-      "❌ Quantité rejetée": null,
-      "🧾 Motif du rejet": null,
-      "Contrôle qualité": null,
-      "🍽️ Goût": null,
-      "⚖️ Poids": null,
-      "✅ Résultat final": null,
-      "Logistique": null,
-      "🎁 Type d’emballage": null,
-      "📦 Quantité emballée": null,
-      "📆 Date d’expédition prévue": null,
-      "🚛 Transporteur": null,
-      "📄 Bon de livraison": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
+      "Strategic Importance": null,
+      "Main Risk ": null,
+      "Decision Deadline ": null
+    },
+    "input_email": null
   },
   {
     "label": "consulting",
     "type": "WORKFLOW",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
@@ -3795,13 +2756,13 @@
       "piéce jointe": null,
       "liste": null,
       "autre données": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des formateurs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Matricule": null,
@@ -3818,51 +2779,51 @@
       "Filiale": null,
       "Rattachement Hiérarchique ": null,
       "Documents en Pièce joint ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "table des donnees",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "article": null,
       "quantite": null,
       "commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "si dommage corporel a remplir",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "nbre de victime": null,
       "type victime": null,
       "nom et prénom": null,
       "gravité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "si dommage matériel a remplir",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "identif matériel endommagé": null,
       "description du dommage ": null,
       "valeur estimée": null,
       "gravité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "si réputation a remplir",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "effet local": null,
@@ -3870,25 +2831,25 @@
       "autorité": null,
       "media": null,
       "gravité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "si fatalité a remplir",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "nbre de victimes ": null,
       "type victime": null,
       "gravité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Articles demandés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "N°": null,
@@ -3898,73 +2859,73 @@
       "Quantité": null,
       "Remarque": null,
       "Fiche technique": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "N°": null,
       "Enoncé de non-conformité": null,
       "Responsable": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Correction (s) \t",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "N°": null,
       "Action/ Décision \t\t\t\t\t\t\t\t\t": null,
       "Date prévue \t\t": null,
       "Responsable": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation du correction",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Résultat (%)": null,
       "Responsable": null,
       "Date réalisée \t\t": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Analyse des causes \t\t\t\t\t\t\t",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "5M": null,
       "Causes": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Action Corrective (s) :\t",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "N°": null,
       "Action/ Décision \t\t\t\t\t\t\t\t\t\t\t\t": null,
       "Responsable d'action": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Informations sur les Travailleurs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom complet": null,
@@ -3973,33 +2934,33 @@
       "Expérience professionnelle pertinente": null,
       "Date de début prévue": null,
       "Date de fin prévue": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Description des Tâches",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Tâche": null,
       "Niveau d'importance ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Enquête de satisfaction des gérant ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
       " Nom et prénom": null,
       "Fonction ": null,
       " Évaluation": null,
-      "Satisfait     😍": "Satisfait    😍",
-      "Moyennement satisfait   😐": "Moyennement satisfait     😐",
-      "insatisfait 😡": "insatisfait   😡",
+      "Satisfait     ": "Satisfait    ",
+      "Moyennement satisfait   ": "Moyennement satisfait     ",
+      "insatisfait ": "insatisfait   ",
       "Les conditions de travail ": null,
       "Les ressources disponibles ": null,
       "La charge de travail ": null,
@@ -4012,34 +2973,34 @@
       "Degré de satisfaction ": null,
       "Votre degré de satisfaction général ": null,
       "Observation/proposition": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Description des taches ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "📝 Tache": null
-    }
+      " Tache": null
+    },
+    "input_email": null
   },
   {
     "label": "Plan d'intégration ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "RESP": null,
       "Commentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Gestion des contrats employés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Information sur l'employé": null,
@@ -4052,37 +3013,37 @@
       "Echelon": null,
       "Contrat": null,
       "Lettre de démission (en cas de démission) et PV de passation ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Compétences ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Type": null,
       "Compétences": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Base des données candidats ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
       "Diplome": null,
       "Etat": null,
       "Documents en pièces joint ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table de Produit Dattes",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence ": null,
@@ -4096,13 +3057,13 @@
       "Température": null,
       " Humidité Relative": null,
       "Ventilation": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Zones et Equipements",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Identification ": null,
@@ -4122,13 +3083,13 @@
       "Q2/ La mesure de contrôle élimine le danger": null,
       "Q3/Exitance d'une étape qui élimine danger": null,
       "CCP": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle de conformité du Produit",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date de Contrôle": null,
@@ -4146,59 +3107,59 @@
       "Respect des niveaux d'humidité recommandés": null,
       "Personnel formé aux bonnes pratiques de manipulation et de stockage": null,
       " Respect des mesures de sécurité alimentaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des Clients",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🏢 Libellé": null,
-      "🆔 Matricule Fiscal": null,
-      "🧪 Type": null,
-      "📍 Adresse": null,
-      "🌆 Ville": null,
-      "🌍 Pays": null,
-      "🔗 Site Web": null,
-      "📝 Description": null,
-      "👤 Nom et prénom du contact": null,
-      "📧 Mail du contact": null
-    }
+      " Libellé": null,
+      " Matricule Fiscal": null,
+      " Type": null,
+      " Adresse": null,
+      " Ville": null,
+      " Pays": null,
+      " Site Web": null,
+      " Description": null,
+      " Nom et prénom du contact": null,
+      " Mail du contact": null
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Commandes",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "👤 Client": null,
-      "📅 Date Commande": null,
-      "📅 Date Livraison Demandée ": null,
-      "📦 Liste des Produits": null,
-      "📋 Bon de Commande": "0",
+      " Client": null,
+      " Date Commande": null,
+      " Date Livraison Demandée ": null,
+      " Liste des Produits": null,
+      " Bon de Commande": "0",
       "Etat": null,
-      "🔍 Liste des OF": null
-    }
+      " Liste des OF": null
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Produits",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "📦 Produit": null,
-      "🔢 Quantité": null
-    }
+      " Produit": null,
+      " Quantité": null
+    },
+    "input_email": null
   },
   {
     "label": "Détail",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Révision": null,
@@ -4207,26 +3168,26 @@
       "Crée par": null,
       " Vérifiée par": null,
       " Approuvée par": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des processus",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation ": null,
       "Référence ": null,
       "Détail ": null,
       "Procédure liée": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Détail ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Révision": null,
@@ -4235,111 +3196,81 @@
       "Crée par": null,
       " Vérifiée par": null,
       " Approuvée par": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des processus",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation ": null,
       "Référence ": null,
       "Détail ": null
-    }
-  },
-  {
-    "label": "Détail ",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Révision": null,
-      "Pièce jointe ": null,
-      "Date de création": null,
-      "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des procédures",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation ": null,
       "Référence ": null,
       "Processus liée ": null,
       "Détail ": null
-    }
-  },
-  {
-    "label": "Détail ",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Révision": null,
-      "Pièce jointe ": null,
-      "Date de création": null,
-      "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Axes Stratégiques",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Axe": null,
       "Objectif/Action": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Objectifs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Objectif": null,
       "Axe liée": null,
       "Actions": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des actions",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Action": null,
       "Valeurs Cible": null,
       "Objectif liée": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste Fournisseurs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
     "label": "Liste des cadres",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Code": null,
@@ -4352,95 +3283,76 @@
       "Mail": null,
       "Téléphone ": null,
       "Adresse ": null
-    }
-  },
-  {
-    "label": "Liste des cadres",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Code": null,
-      "Nom": null,
-      "Prénom": null,
-      "Poste": null,
-      "Département": null,
-      "Niveau Hiérarchique": null,
-      "Date Embauche": null,
-      "Mail": null,
-      "Téléphone ": null,
-      "Adresse ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Enregistrement de candidature – Appel à talents",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "IDENTITÉ DU CANDIDAT": null,
-      "🧍Nom et prénom": null,
-      "📅 Date de naissance": null,
-      "📍 Lieu de naissance": null,
-      "🪪 CIN N°": null,
-      "📆 Délivrée le": null,
-      "📌 À": null,
-      "🧾 Matricule CNSS": null,
-      "💍 État civil": null,
-      "👶 Nombre d’enfant": null,
-      "🏠 Adresse": null,
-      "📞 Téléphone": null,
-      "📧 Email ": null,
+      "Nom et prénom": null,
+      " Date de naissance": null,
+      " Lieu de naissance": null,
+      " CIN N°": null,
+      " Délivrée le": null,
+      " À": null,
+      "Matricule CNSS": null,
+      " État civil": null,
+      " Nombre d’enfant": null,
+      " Adresse": null,
+      " Téléphone": null,
+      " Email ": null,
       "FORMATION ACADÉMIQUE": null,
-      "📚 FORMATION ACADÉMIQUE": null,
+      " FORMATION ACADÉMIQUE": null,
       "RENSEIGNEMENTS PROFESSIONNELS ": null,
-      "📁 RENSEIGNEMENTS PROFESSIONNELS": null,
+      " RENSEIGNEMENTS PROFESSIONNELS": null,
       "AUTRES CONNAISSANCES": null,
-      "👨‍💻 Logiciels maîtrisés": null,
-      "✍️ Langues écrites": null,
-      "🗣️ Langues parlées": null,
+      " Logiciels maîtrisés": null,
+      " Langues écrites": null,
+      " Langues parlées": null,
       "PERMIS DE CONDUIRE": null,
-      "🚗 Avez-vous un permis de conduire ": null,
-      "📄 Catégorie": null,
+      " Avez-vous un permis de conduire ": null,
+      " Catégorie": null,
       "POSTE SOUHAITÉ": null,
-      "💼 Quel poste prétendez-vous ?": null,
-      "💵 Salaire désiré net (TND)": null,
+      " Quel poste prétendez-vous ?": null,
+      " Salaire désiré net (TND)": null,
       "PIÈCES JOINTES": null,
-      "🪪 Photocopie de la carte d’identité": "0",
-      "📄 Extrait de naissance": "0",
-      "📸 Photo d’identité": "0",
-      "🎓 Photocopie des diplômes et certificats de scolarité": "0",
-      "📃CV": "0",
-      "📝 Lettre de Motivation": "0"
-    }
+      " Photocopie de la carte d’identité": "0",
+      " Extrait de naissance": "0",
+      " Photo d’identité": "0",
+      " Photocopie des diplômes et certificats de scolarité": "0",
+      "CV": "0",
+      "Lettre de Motivation": "0"
+    },
+    "input_email": null
   },
   {
     "label": "Liste des employés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "👤 Nom et prénom": null,
-      "💼 Poste": null,
-      "🏢 Département": null,
-      "📅 Date d'embauche": null,
-      "📄 Type de contrat": null,
-      "📧 Mail": null,
-      "📞 Téléphone": null,
-      "📍 Adresse": null,
-      "🔢 Solde de congé": null,
+      "Nom et prénom": null,
+      "Poste": null,
+      "Département": null,
+      "Date d'embauche": null,
+      "Type de contrat": null,
+      "Mail": null,
+      "Téléphone": null,
+      "Adresse": null,
+      "Solde de congé": null,
       "Statut": null,
       "diplome": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table de Produit",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence ": null,
@@ -4454,80 +3366,79 @@
       "Température": null,
       " Humidité Relative": null,
       "Ventilation": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Evaluation post-formation",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🧑‍🎓 Informations générales": null,
-      "🧍 Nom et prénom": null,
-      "📚 Intitulé de la formation\t": null,
-      "📅 Date de la formation\t": null,
-      "👨‍🏫 Formateur": null,
-      "🏢 Département": null,
-      "📊 Contenu de la formation": null,
-      "🎯 Les objectifs ont-ils été clairement définis ?": null,
-      "📖 Les contenus étaient-ils adaptés à vos attentes ?": null,
-      "⏱️ Le rythme et la durée étaient-ils appropriés ?": null,
-      "📑 Le support utilisé était-il clair et pertinent ?": null,
-      "🧑‍🏫 Formateur": null,
-      "🧠 Le formateur maîtrisait-il son sujet ?\t": null,
-      "👂 Sa pédagogie était-elle efficace ?": null,
-      "🗣️ Son animation a-t-elle suscité l’intérêt du groupe ?": null,
-      "🛠️ Organisation & logistique": null,
-      "🛎️ L’organisation générale était-elle satisfaisante ?": null,
-      "🪑 Les conditions matérielles étaient-elles adéquates ?\t": null,
-      "💬 Commentaires & suggestions": null,
-      "🌟 Quels sont les points forts de la formation ?": null,
-      "🔧 Quelles améliorations proposez-vous ?\t": null,
-      "📌 Souhaitez-vous d'autres formations sur des sujets liés ?\t": null,
+      "Informations générales": null,
+      " Nom et prénom": null,
+      " Intitulé de la formation\t": null,
+      " Date de la formation\t": null,
+      " Formateur": null,
+      " Département": null,
+      " Contenu de la formation": null,
+      " Les objectifs ont-ils été clairement définis ?": null,
+      " Les contenus étaient-ils adaptés à vos attentes ?": null,
+      " Le rythme et la durée étaient-ils appropriés ?": null,
+      " Le support utilisé était-il clair et pertinent ?": null,
+      " Le formateur maîtrisait-il son sujet ?\t": null,
+      " Sa pédagogie était-elle efficace ?": null,
+      " Son animation a-t-elle suscité l’intérêt du groupe ?": null,
+      " Organisation & logistique": null,
+      " L’organisation générale était-elle satisfaisante ?": null,
+      " Les conditions matérielles étaient-elles adéquates ?\t": null,
+      " Commentaires & suggestions": null,
+      " Quels sont les points forts de la formation ?": null,
+      " Quelles améliorations proposez-vous ?\t": null,
+      " Souhaitez-vous d'autres formations sur des sujets liés ?\t": null,
       "Si oui, les quelles ?": null,
-      "✅ Note générale": null,
-      "⭐ Quelle note globale attribuez-vous à cette formation ?": null
-    }
+      " Note générale": null,
+      " Quelle note globale attribuez-vous à cette formation ?": null
+    },
+    "input_email": null
   },
   {
     "label": "Liste des produits",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🆔 Code Produit": null,
-      "📝 Nom du Produit": null,
-      "🔖 Famille": null,
-      "🧴 Forme": null,
-      "🖼️ Image du Produit": null,
-      "🧾 Spécification technique": null,
-      "🎯 Critères de Conservation": null,
-      "⚠️ Température min": null,
-      "⚠️ Température max": null
-    }
+      " Code Produit": null,
+      " Nom du Produit": null,
+      " Famille": null,
+      " Forme": null,
+      " Image du Produit": null,
+      " Spécification technique": null,
+      " Critères de Conservation": null,
+      " Température min": null,
+      " Température max": null
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Ordres de Fabrication (OF)",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🧾Commande": null,
-      "📦 Produit concerné": null,
-      "🧪 Matière Première": null,
-      "🔢 Quantité": null,
+      "Commande": null,
+      " Produit concerné": null,
+      " Matière Première": null,
+      " Quantité": null,
       "Unité": null,
-      "🔍 Contrôles effectués": null
-    }
+      " Contrôles effectués": null
+    },
+    "input_email": null
   },
   {
     "label": "Table des Clients",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Libellé": null,
@@ -4540,13 +3451,13 @@
       "Description": null,
       "Nom et prénom du contact": null,
       "Mail du contact": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des Litiges et Contentieux",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Fournisseur": null,
@@ -4559,13 +3470,13 @@
       "Quantité reçue": null,
       "Coût unitaire": null,
       "Coût total": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des fournisseurs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Libellé": null,
@@ -4578,51 +3489,13 @@
       "Description": null,
       "Nom et prénom du contact": null,
       "Mail du contact": null
-    }
-  },
-  {
-    "label": "Table des fournisseurs",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Libellé": null,
-      "Matricule Fiscal": null,
-      "Type": null,
-      "Adresse": null,
-      "Ville": null,
-      "Pays": null,
-      "Site Web": null,
-      "Description": null,
-      "Nom et prénom du contact": null,
-      "Mail du contact": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Libellé": null,
-      "Matricule Fiscal": null,
-      "Type": null,
-      "Adresse": null,
-      "Ville": null,
-      "Pays": null,
-      "Site Web": null,
-      "Description": null,
-      "Nom et prénom du contact": null,
-      "Mail du contact": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Bons de commande",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Fournisseur": null,
@@ -4635,13 +3508,13 @@
       "Quantité reçue": null,
       "Coût unitaire": null,
       "Coût total": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Bons de commande",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Fournisseur": null,
@@ -4656,32 +3529,13 @@
       "Coût unitaire": null,
       "Coût total": null,
       "Support": null
-    }
-  },
-  {
-    "label": "test a supp",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Date d'inspection": null,
-      "Heure": null,
-      "Ligne de production": null,
-      "Nombre de Pièces Bonnes": null,
-      "Nombre de Pièces Défectueuses": null,
-      "Pourcentage Défectueux": null,
-      "Type de Défaut": null,
-      "Inspecteur": null,
-      "Action Corrective": null,
-      "Commentaires": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contrôle Conformité",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date d'inspection": null,
@@ -4694,32 +3548,13 @@
       "Inspecteur": null,
       "Action Corrective": null,
       "Commentaires": null
-    }
-  },
-  {
-    "label": "Contrôle Conformité",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Date d'inspection": null,
-      "Heure": null,
-      "Inspecteur": null,
-      "Ligne de production": null,
-      "Nombre de Pièces Bonnes": null,
-      "Nombre de Pièces Défectueuses": null,
-      "Pourcentage Défectueux": null,
-      "Type de Défaut": null,
-      "Action Corrective": null,
-      "Commentaires": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table de MP",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Libellé": null,
@@ -4732,13 +3567,13 @@
       "Conditions de stockage": null,
       "Date de péremption": null,
       "Observations": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des employés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Code": null,
@@ -4751,13 +3586,13 @@
       "Mail": null,
       "Téléphone ": null,
       "Adresse ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Personnel",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
@@ -4768,43 +3603,43 @@
       "Mail": null,
       "Téléphone ": null,
       "Adresse ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Questionnaire de Satisfaction",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire": "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire",
       "Informations générales": null,
-      "👤 Vous êtes :": null,
+      " Vous êtes :": null,
       "Évaluation des services": null,
-      "1️⃣ Espaces de travail": "1️⃣ Espaces de travail",
-      "💺 La qualité des bureaux/salles de réunion répond à vos attentes ?": null,
-      "🖥️ Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels ?": null,
-      "2️⃣ Propreté et entretien": "2️⃣ Propreté et entretien",
-      "🧼 Les espaces sont propres et bien entretenus ?": null,
-      "3️⃣ Accueil et assistance": "3️⃣ Accueil et assistance",
-      "🤝 Le personnel est disponible et accueillant ?": null,
-      "⚡ Les réponses à vos demandes sont rapides et efficaces ?": null,
+      "1⃣ Espaces de travail": "1⃣ Espaces de travail",
+      " La qualité des bureaux/salles de réunion répond à vos attentes ?": null,
+      " Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels ?": null,
+      "2⃣ Propreté et entretien": "2⃣ Propreté et entretien",
+      " Les espaces sont propres et bien entretenus ?": null,
+      "3⃣ Accueil et assistance": "3⃣ Accueil et assistance",
+      " Le personnel est disponible et accueillant ?": null,
+      " Les réponses à vos demandes sont rapides et efficaces ?": null,
       "Évaluation des événements": null,
-      "🎫 La qualité des événements/conférences organisés est satisfaisante ?": null,
-      "🛠️ L’organisation logistique des événements est efficace ?": null,
+      " La qualité des événements/conférences organisés est satisfaisante ?": null,
+      " L’organisation logistique des événements est efficace ?": null,
       "Satisfaction globale": null,
-      "📊 Quel est votre degré de satisfaction globale ?": null,
+      " Quel est votre degré de satisfaction globale ?": null,
       "Suggestions et commentaires": null,
-      "👍 Quels sont, selon vous, les points forts du centre d'affaires ?": null,
-      "🛠️ Quels axes d'amélioration suggérez-vous ?": null,
+      " Quels sont, selon vous, les points forts du centre d'affaires ?": null,
+      " Quels axes d'amélioration suggérez-vous ?": null,
       "file": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste de participants",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
@@ -4812,60 +3647,60 @@
       "Téléphone": null,
       "Organisation/Entreprise\t": null,
       "Rôle dans l'événement": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des événements",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "📝 Nom de l’événement": null,
-      "📚 Type": null,
-      "🗓️ Date Début": null,
-      "🗓️ Date Fin": null,
-      "📍 Lieu": null,
-      "🧾 Description de l'événement": null,
-      "🔁 Statut": null,
-      "💰 Budget Prévu": null,
-      "💰 Budget Réel": null,
-      "✔️ Etat": null
-    }
+      " Nom de l’événement": null,
+      " Type": null,
+      " Date Début": null,
+      " Date Fin": null,
+      " Lieu": null,
+      " Description de l'événement": null,
+      " Statut": null,
+      " Budget Prévu": null,
+      " Budget Réel": null,
+      " Etat": null
+    },
+    "input_email": null
   },
   {
     "label": "Table des participants",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Veuillez remplir le formulaire ci-dessous avec vos informations personnelles. Ces données nous permettront d'assurer une organisation fluide de l'événement, de vous contacter si nécessaire, et de vous envoyer les documents ou communications en lien avec votre participation.": "Veuillez remplir le formulaire ci-dessous avec vos informations personnelles. Ces données nous permettront d'assurer une organisation fluide de l'événement, de vous contacter si nécessaire, et de vous envoyer les documents ou communications en lien avec votre participation.",
-      "👥 Nom et Prénom": null,
-      "📞 Téléphone": null,
-      "📧 Email": null,
-      "🏛️ Organisation": null,
-      "🎫 Rôle dans Événement": null
-    }
+      " Nom et Prénom": null,
+      " Téléphone": null,
+      " Email": null,
+      " Organisation": null,
+      " Rôle dans Événement": null
+    },
+    "input_email": null
   },
   {
     "label": "Table des salles et ressources",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🏛️ Nom Salle": null,
-      "👥 Capacité": null,
-      "🎤 Équipements Disponibles": null,
-      "✅ Statut Disponibilité": null
-    }
+      " Nom Salle": null,
+      " Capacité": null,
+      " Équipements Disponibles": null,
+      " Statut Disponibilité": null
+    },
+    "input_email": null
   },
   {
     "label": "Table des intervenants",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Événement": null,
@@ -4874,13 +3709,13 @@
       "Spécialité": null,
       "Email": null,
       "Téléphone": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des Étudiants",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Matricule": null,
@@ -4890,13 +3725,13 @@
       "Date d’inscription": null,
       "Email": null,
       "Téléphone": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des Modules",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Intitulé": null,
@@ -4904,13 +3739,13 @@
       "Filière": null,
       "Enseignant responsable": null,
       "Nombre de crédits": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des contrats",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission du contrat": null,
@@ -4936,61 +3771,26 @@
       "Date de signature": null,
       "Signataire(s)": null,
       "Statut final du contrat": null
-    }
-  },
-  {
-    "label": "Table des Clients",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🏢 Nom ou Raison sociale": null,
-      "🆔 Matricule fiscal\t": null,
-      "🧑‍💼 Type": null,
-      "⚙️ Secteur d'activité\t": null,
-      "Autre": null,
-      "📍 Adresse complète\t": null,
-      "📞 Numéro de contact\t": null,
-      "📧 Email": null,
-      "👤 Référent chez nous": null,
-      "Etat": null
-    }
-  },
-  {
-    "label": "Liste Matières Premières",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🆔 Code MP": null,
-      "📝 Nom MP": null,
-      "🚛 Fournisseur": null,
-      "🔢 Quantité": null,
-      "📦 Unité": null,
-      "📃 Spécifications techniques": null,
-      "⛔ MP critique ?": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des achats",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Description": null,
       "Type d'achat": null,
       "Quantité": null,
       "Montant": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Facture",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Désignation": null,
@@ -5002,39 +3802,13 @@
       "Montant total HT": null,
       "TVA": null,
       "Montant TTC": null
-    }
-  },
-  {
-    "label": "Liste outils a emporter",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🆔 Code Outil": null,
-      "🧰 Libellé Outil": null
-    }
-  },
-  {
-    "label": "Détail",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Révision": null,
-      "Pièce Jointe ": null,
-      "Date création ": null,
-      "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table of Disputes and Litigation",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Fournisseur": null,
@@ -5047,13 +3821,13 @@
       "Quantité reçue": null,
       "Coût unitaire": null,
       "Coût total": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Contracts List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Soumission du contrat": null,
@@ -5079,79 +3853,13 @@
       "Date de signature": null,
       "Signataire(s)": null,
       "Statut final du contrat": null
-    }
-  },
-  {
-    "label": "Détail",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Révision": null,
-      "Pièce Jointe ": null,
-      "Date création ": null,
-      "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
-    }
-  },
-  {
-    "label": "Contracts List",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Soumission du contrat": null,
-      "Nom du contrat": null,
-      "Type de contrat": null,
-      "Date de soumission": null,
-      "Durée du contrat": null,
-      "Montant estimé": null,
-      "Description brève": null,
-      "Document du contrat": "0",
-      "Commentaires": null,
-      "Validation juridique": null,
-      "Analyse des risques juridiques": null,
-      "Clauses sensibles à revoir ?": null,
-      "Contrat conforme ?": null,
-      "Document modifié (si applicable)": null,
-      "Révision financière": null,
-      "Budget disponible ?": null,
-      "Montant validé": null,
-      "Conditions de paiement ": null,
-      "Archivage & Signature": null,
-      "Contrat signé": null,
-      "Date de signature": null,
-      "Signataire(s)": null,
-      "Statut final du contrat": null
-    }
-  },
-  {
-    "label": "Table of Disputes and Litigation",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Fournisseur": null,
-      "Référence MP": null,
-      "Libellé de la MP": null,
-      "Quantité commandée": null,
-      "Unité": null,
-      "Date de commande": null,
-      "Date de réception": null,
-      "Quantité reçue": null,
-      "Coût unitaire": null,
-      "Coût total": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Satisfaction survey",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.": "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.",
@@ -5174,13 +3882,13 @@
       "Suggestions et commentaires": null,
       "Quels sont, selon vous, les points forts du centre d'affaires ?": null,
       "Quels axes d'amélioration suggérez-vous ?": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Events Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
@@ -5192,13 +3900,13 @@
       "Statut": null,
       "Budget Prévu (mD)": null,
       "Budget Réel (mD)": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Stakeholders Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Événement": null,
@@ -5207,13 +3915,13 @@
       "Spécialité": null,
       "Email": null,
       "Téléphone": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Participants Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et Prénom": null,
@@ -5221,13 +3929,13 @@
       "Téléphone": null,
       "Organisation": null,
       "Rôle dans Événement": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Rooms and Resources Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Événement": null,
@@ -5235,42 +3943,42 @@
       "Capacité": null,
       "Équipements Disponibles": null,
       "Statut Disponibilité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": " Satisfaction survey",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire": "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire",
       "General Information": null,
       "You are :": null,
       "Service Evaluation": null,
-      "🧑‍💼Workspaces": "🧑‍💼Workspaces",
+      "Workspaces": "Workspaces",
       "Are the quality of offices/meeting rooms up to your expectations?": null,
       "Are the equipment (furniture, internet connection, projector) adequate and functional?": null,
-      "🧹Cleanliness and Maintenance": "🧹Cleanliness and Maintenance",
+      "Cleanliness and Maintenance": "Cleanliness and Maintenance",
       "Are the spaces clean and well-maintained?": null,
-      "🙋Reception and Assistance": "🙋Reception and Assistance",
+      "Reception and Assistance": "Reception and Assistance",
       "Is the staff available and welcoming": null,
       "Are your requests handled quickly and efficiently?": null,
-      "🎤Event Evaluation": null,
+      "Event Evaluation": null,
       "Is the quality of the organized events/conferences satisfactory?": null,
       "Is the logistical organization of events efficient?": null,
-      "😊Overall Satisfaction": null,
+      "Overall Satisfaction": null,
       "What is your overall level of satisfaction?": null,
-      "💬Suggestions and Comments": null,
+      "Suggestions and Comments": null,
       "In your opinion, what are the strengths of the business center?": null,
       "What areas of improvement would you suggest?": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": " Events Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
@@ -5282,13 +3990,13 @@
       "Statut": null,
       "Budget Prévu (mD)": null,
       "Budget Réel (mD)": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": " Stakeholders Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Événement": null,
@@ -5297,41 +4005,13 @@
       "Spécialité": null,
       "Email": null,
       "Téléphone": null
-    }
-  },
-  {
-    "label": "Participants Table",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Nom et Prénom": null,
-      "Email": null,
-      "Téléphone": null,
-      "Organisation": null,
-      "Rôle dans Événement": null
-    }
-  },
-  {
-    "label": "Rooms and Resources Table",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Événement": null,
-      "Nom Salle": null,
-      "Capacité": null,
-      "Équipements Disponibles": null,
-      "Statut Disponibilité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Commandes",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Client": null,
@@ -5341,37 +4021,37 @@
       "Commande": null,
       "Description": null,
       "Listes des OF": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Produits",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Produit": null,
       "Quantité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des OF",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Commande": null,
       "Produit": null,
       "Quantité": null,
       "Contrôles effectués": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des produits",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence ": null,
@@ -5384,51 +4064,25 @@
       "Conditions de Conservation": null,
       "Température min (°C)": null,
       "Température max (°C)": null
-    }
-  },
-  {
-    "label": "Liste des Zones et Equipements",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Identification ": null,
-      "Zone et Equipement": null,
-      "Analyse des Dangers (HACCP)": null,
-      "Identification des Dangers": "Identification des Dangers",
-      "Dangers Biologiques": null,
-      "Dangers Chimiques": null,
-      "Dangers Physiques": null,
-      "Évaluation des Dangers": "Évaluation des Dangers",
-      "Probabilité d'Occurrence": null,
-      "Gravité": null,
-      "Documentation des Dangers": "Documentation des Dangers",
-      "Justification": "0",
-      "Arbre de Décision HSCCP": "Arbre de Décision HSCCP",
-      "Q1/Existence de mesure de contrôle": null,
-      "Q2/ La mesure de contrôle élimine le danger": null,
-      "Q3/Exitance d'une étape qui élimine danger": null,
-      "CCP": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste MP",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence": null,
       "Libellé": null,
       "Quantité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Orders List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Client": null,
@@ -5438,37 +4092,26 @@
       "Commande": null,
       "Description": null,
       "Listes des OF": null
-    }
-  },
-  {
-    "label": "Liste des Produits",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Produit": null,
-      "Quantité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Work Orders List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Commande": null,
       "Produit": null,
       "Quantité": null,
       "Contrôles effectués": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Products List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence ": null,
@@ -5481,13 +4124,13 @@
       "Conditions de Conservation": null,
       "Température min (°C)": null,
       "Température max (°C)": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Zones and Equipment List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Identification ": null,
@@ -5507,146 +4150,34 @@
       "Q2/ La mesure de contrôle élimine le danger": null,
       "Q3/Exitance d'une étape qui élimine danger": null,
       "CCP": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Raw Materials List",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Référence": null,
       "Libellé": null,
       "Quantité": null
-    }
-  },
-  {
-    "label": "si dommage corporel a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nbre de victime": null,
-      "type victime": null,
-      "nom et prénom": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si dommage matériel a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "identif matériel endommagé": null,
-      "description du dommage ": null,
-      "valeur estimée": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si réputation a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "effet local": null,
-      "tiers": null,
-      "autorité": null,
-      "media": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si fatalité a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nbre de victimes ": null,
-      "type victime": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Enoncé de non-conformité": null,
-      "Responsable": null
-    }
-  },
-  {
-    "label": "Correction (s) \t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t": null,
-      "Date prévue \t\t": null,
-      "Responsable": null
-    }
-  },
-  {
-    "label": "Evaluation du correction",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Résultat (%)": null,
-      "Responsable": null,
-      "Date réalisée \t\t": null
-    }
-  },
-  {
-    "label": "Analyse des causes \t\t\t\t\t\t\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "5M": null,
-      "Causes": null
-    }
-  },
-  {
-    "label": "Action Corrective (s) :\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t\t\t\t": null,
-      "Responsable d'action": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Enquête de satisfaction des gérant",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
       " Nom et prénom": null,
       "Fonction ": null,
       " Évaluation": null,
-      "Satisfait     😍": "Satisfait    😍",
-      "Moyennement satisfait   😐": "Moyennement satisfait     😐",
-      "insatisfait 😡": "insatisfait   😡",
+      "Satisfait     ": "Satisfait    ",
+      "Moyennement satisfait   ": "Moyennement satisfait     ",
+      "insatisfait ": "insatisfait   ",
       "Les conditions de travail ": null,
       "Les ressources disponibles ": null,
       "La charge de travail ": null,
@@ -5659,134 +4190,22 @@
       "Degré de satisfaction ": null,
       "Votre degré de satisfaction général ": null,
       "Observation/proposition": null
-    }
-  },
-  {
-    "label": "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Enoncé de non-conformité": null,
-      "Responsable": null
-    }
-  },
-  {
-    "label": "Correction (s) \t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t": null,
-      "Date prévue \t\t": null,
-      "Responsable": null
-    }
-  },
-  {
-    "label": "Evaluation du correction",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Résultat (%)": null,
-      "Responsable": null,
-      "Date réalisée \t\t": null
-    }
-  },
-  {
-    "label": "Analyse des causes \t\t\t\t\t\t\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "5M": null,
-      "Causes": null
-    }
-  },
-  {
-    "label": "Action Corrective (s) :\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t\t\t\t": null,
-      "Responsable d'action": null
-    }
-  },
-  {
-    "label": "si dommage corporel a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nbre de victime": null,
-      "type victime": null,
-      "nom et prénom": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si dommage matériel a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "identif matériel endommagé": null,
-      "description du dommage ": null,
-      "valeur estimée": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si réputation a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "effet local": null,
-      "tiers": null,
-      "autorité": null,
-      "media": null,
-      "gravité": null
-    }
-  },
-  {
-    "label": "si fatalité a remplir",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nbre de victimes ": null,
-      "type victime": null,
-      "gravité": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Manager Satisfaction Survey",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
       " Nom et prénom": null,
       "Fonction ": null,
       " Évaluation": null,
-      "Satisfait     😍": "Satisfait    😍",
-      "Moyennement satisfait   😐": "Moyennement satisfait     😐",
-      "insatisfait 😡": "insatisfait   😡",
+      "Satisfait     ": "Satisfait    ",
+      "Moyennement satisfait   ": "Moyennement satisfait     ",
+      "insatisfait ": "insatisfait   ",
       "Les conditions de travail ": null,
       "Les ressources disponibles ": null,
       "La charge de travail ": null,
@@ -5799,24 +4218,24 @@
       "Degré de satisfaction ": null,
       "Votre degré de satisfaction général ": null,
       "Observation/proposition": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste outils a emporter",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Code Outil": null,
       "Libelle": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des employés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
@@ -5828,32 +4247,13 @@
       "Mail": null,
       "Téléphone ": null,
       "Adresse ": null
-    }
-  },
-  {
-    "label": "Gestion des contrats employés",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Information sur l'employé": null,
-      "Date de recrutement ": null,
-      "Ancienneté": null,
-      "Date Début contrat ": null,
-      "Date Fin contrat ": null,
-      "Salaire net actuel ": null,
-      "Catégorie ": null,
-      "Echelon": null,
-      "Contrat": null,
-      "Lettre de démission (en cas de démission) et PV de passation ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Employee Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Full Name": null,
@@ -5865,13 +4265,13 @@
       "Email": null,
       "Phone Number": null,
       "Address": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Employee Contract Management",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Employee ID": null,
@@ -5887,209 +4287,148 @@
       "Grade": null,
       "Contract": "0",
       "Resignation Letter (if applicable)": "0"
-    }
-  },
-  {
-    "label": "Liste outils a emporter",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Code Outil": null,
-      "Libelle": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Description des taches ",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Tache": null
-    }
+    },
+    "input_email": null
   },
   {
-    "label": "Description des taches ",
+    "label": " FORMATION ACADÉMIQUE",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "Tache": null
-    }
-  },
-  {
-    "label": "Informations sur les Travailleurs",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Nom complet": null,
-      "Numéro d'identification": null,
-      "Qualifications ou certifications": null,
-      "Expérience professionnelle pertinente": null,
-      "Date de début prévue": null,
-      "Date de fin prévue": null
-    }
-  },
-  {
-    "label": "Informations sur les Travailleurs",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Nom complet": null,
-      "Numéro d'identification": null,
-      "Qualifications ou certifications": null,
-      "Expérience professionnelle pertinente": null,
-      "Date de début prévue": null,
-      "Date de fin prévue": null
-    }
-  },
-  {
-    "label": "📚 FORMATION ACADÉMIQUE",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🗓️ Année": null,
+      " Année": null,
       "⏳ Durée": null,
-      "📚 FORMATION": null,
-      "🏫 Établissement": null,
-      "🏅 Résultats obtenus": null
-    }
+      " FORMATION": null,
+      " Établissement": null,
+      " Résultats obtenus": null
+    },
+    "input_email": null
   },
   {
-    "label": "📁 RENSEIGNEMENTS PROFESSIONNELS",
+    "label": " RENSEIGNEMENTS PROFESSIONNELS",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🗓️ De": null,
-      "🗓️ À": null,
-      "🏢 Entreprise": null,
-      "🧑‍💼 Poste": null,
-      "💰 Salaire brut": null,
-      "🚪 Motif de départ": null
-    }
+      " De": null,
+      " À": null,
+      " Entreprise": null,
+      " Poste": null,
+      " Salaire brut": null,
+      " Motif de départ": null
+    },
+    "input_email": null
   },
   {
-    "label": "👨‍💻 Logiciels maîtrisés",
+    "label": " Logiciels maîtrisés",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "👨‍💻Logiciels": null,
+      "Logiciels": null,
       "Niveau": null
-    }
+    },
+    "input_email": null
   },
   {
-    "label": "✍️ Langues écrites",
+    "label": " Langues écrites",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "✍️ Langue": null,
+      " Langue": null,
       "Niveau": null
-    }
+    },
+    "input_email": null
   },
   {
-    "label": "🗣️ Langues parlées",
+    "label": " Langues parlées",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🗣️ Langue": null,
+      " Langue": null,
       "Niveau": null
-    }
+    },
+    "input_email": null
   },
   {
-    "label": "🛠️ Compétences spécifiques souhaitées",
+    "label": " Compétences spécifiques souhaitées",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🛠️ Compétences spécifiques souhaitées": null
-    }
+      " Compétences spécifiques souhaitées": null
+    },
+    "input_email": null
   },
   {
-    "label": "💬 Évaluation comportementale",
+    "label": " Évaluation comportementale",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "💬 Évaluation comportementale": null,
-      "🧪 Note": null
-    }
+      " Évaluation comportementale": null,
+      " Note": null
+    },
+    "input_email": null
   },
   {
-    "label": "🗓️ Dates préférées pour la formation",
+    "label": " Dates préférées pour la formation",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🗓️ Date souhaitée": null
-    }
+      " Date souhaitée": null
+    },
+    "input_email": null
   },
   {
-    "label": "🗓️ Dates préférées pour la formation",
+    "label": " Dates de formation prévues\t",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🗓️ Date souhaitée": null
-    }
-  },
-  {
-    "label": "📅 Dates de formation prévues\t",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "📅 De": null,
-      "📅 A": null
-    }
+      " De": null,
+      " A": null
+    },
+    "input_email": null
   },
   {
     "label": "SQFQSF",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "QFSF": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "analyse swot",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "SWOT": null,
       "descr": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Plan annuel de formation",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Année": null,
@@ -6104,13 +4443,13 @@
       "Date de réalisation": null,
       "Satisfaction": null,
       "Fiche de présence ": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Organisme de formation",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Organisme de formation": null,
@@ -6122,47 +4461,25 @@
       "CV Formateur": null,
       "Niveau formateur": null,
       "Brochure": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table des Voitures",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Modèle voiture": null,
       "Couleur": null,
       "Matricule": null
-    }
-  },
-  {
-    "label": "🧰 Liste des outils / équipements à emporter",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🆔 Code Outil": null,
-      "🧰 Libellé Outil": null
-    }
-  },
-  {
-    "label": "🧰 Liste des outils / équipements à emporter",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🆔 Code Outil": null,
-      "🧰 Libellé Outil": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste de Fournisseurs",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Raison Sociale": null,
@@ -6172,23 +4489,23 @@
       "Email": null,
       "Téléphone": null,
       "Statut": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "hgjgj",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "yiyiyi": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "EXTENSION",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Jours": null,
@@ -6196,60 +4513,47 @@
       "Responsable SCG": null,
       "Superviseur-ST": null,
       "Superviseur HSE": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Catalogue de support",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Catégorie": null,
       "Sous Catégorie": null,
       "Article": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Inventaire",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
       "Article": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Liste": null,
       "text": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nom": null,
-      "mail": null,
-      "tel": null,
-      "soci": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Suivi de Projet Digital",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom du Projet": null,
@@ -6270,37 +4574,37 @@
       "Avancement du Projet": null,
       "Table Équipe Projet": null,
       "Date de Livraison": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Table Équipe Projet",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et Prénom": null,
       "Rôle": null,
       "Email": null,
       "Charge horaire": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Statut stock",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Matiere": null,
       "Etat actuel": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Réclamation Client",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom": null,
@@ -6311,48 +4615,48 @@
       "Objet": null,
       "Pièce jointe": null,
       "Description": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste de Projets",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Titre de projet": null,
       "Date de début": null,
       "Pièce jointe": "0",
       "Type de projet": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Exécution",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "titre": null,
       "pj": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Envoie",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "titre": null,
       "pj": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des Articles / Matières",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Libellé": null,
@@ -6362,25 +4666,25 @@
       "Unité": null,
       "Prix Unitaire": null,
       "Fournisseur Habituel": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Article",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Article": null,
       "Quantité Stock": null,
       "Quantité demandée": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Libye",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom de l’entreprise": null,
@@ -6392,143 +4696,32 @@
       "Solution via App spécifique": null,
       "Arguments clés ": null,
       "Valeur ajoutée proposée": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "d",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
-    "attributes": {}
+    "attributes": {},
+    "input_email": null
   },
   {
-    "label": "Liste Matières Premières",
+    "label": " Liste des Produits",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
-      "🆔 Code MP": null,
-      "📝 Nom MP": null,
-      "🚛 Fournisseur": null,
-      "🔢 Quantité": null,
-      "📦 Unité": null,
-      "📃 Spécifications techniques": null,
-      "⛔ MP critique ?": null
-    }
-  },
-  {
-    "label": "Table des fournisseurs",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Libellé": null,
-      "Matricule Fiscal": null,
-      "Type": null,
-      "Adresse": null,
-      "Ville": null,
-      "Pays": null,
-      "Site Web": null,
-      "Description": null,
-      "Nom et prénom du contact": null,
-      "Mail du contact": null
-    }
-  },
-  {
-    "label": "Liste des Zones et Equipements",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "Identification ": null,
-      "Zone et Equipement": null,
-      "Analyse des Dangers (HACCP)": null,
-      "Identification des Dangers": "Identification des Dangers",
-      "Dangers Biologiques": null,
-      "Dangers Chimiques": null,
-      "Dangers Physiques": null,
-      "Évaluation des Dangers": "Évaluation des Dangers",
-      "Probabilité d'Occurrence": null,
-      "Gravité": null,
-      "Documentation des Dangers": "Documentation des Dangers",
-      "Justification": "0",
-      "Arbre de Décision HSCCP": "Arbre de Décision HSCCP",
-      "Q1/Existence de mesure de contrôle": null,
-      "Q2/ La mesure de contrôle élimine le danger": null,
-      "Q3/Exitance d'une étape qui élimine danger": null,
-      "CCP": null
-    }
-  },
-  {
-    "label": "Liste des Commandes",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "👤 Client": null,
-      "📅 Date Commande": null,
-      "📅 Date Livraison Demandée ": null,
-      "📦 Liste des Produits": null,
-      "📋 Bon de Commande": "0",
-      "Etat": null,
-      "🔍 Liste des OF": null
-    }
-  },
-  {
-    "label": "📦 Liste des Produits",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "📦 Produit": null,
-      "🔢 Quantité": null
-    }
-  },
-  {
-    "label": "Liste des Ordres de Fabrication (OF)",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🧾Commande": null,
-      "📦 Produit concerné": null,
-      "🧪 Matière Première": null,
-      "🔢 Quantité": null,
-      "Unité": null,
-      "🔍 Contrôles effectués": null
-    }
-  },
-  {
-    "label": "Table des Clients",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "🏢 Libellé": null,
-      "🆔 Matricule Fiscal": null,
-      "🧪 Type": null,
-      "📍 Adresse": null,
-      "🌆 Ville": null,
-      "🌍 Pays": null,
-      "🔗 Site Web": null,
-      "📝 Description": null,
-      "👤 Nom et prénom du contact": null,
-      "📧 Mail du contact": null
-    }
+      " Produit": null,
+      " Quantité": null
+    },
+    "input_email": null
   },
   {
     "label": "PLAN DE COMMUNICATION",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Document": null,
@@ -6536,13 +4729,13 @@
       "Responsable": null,
       "Public cible": null,
       "Par quel moyen ?": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "KPI",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Processus": null,
@@ -6568,13 +4761,13 @@
       "Tendance": null,
       "Analyse des écarts / Amélioration": null,
       "Action": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Liste des auditeurs interne et externes",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
@@ -6583,24 +4776,24 @@
       "Date formation": null,
       "Qualifier": null,
       "Certificat": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "Enjeux, PIP et identification des risque",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Date": null,
       "Enjeux, PIP et identification des risque": null
-    }
+    },
+    "input_email": null
   },
   {
     "label": "PLAN D’ACTION",
     "type": "DATATABLE",
     "email_id": null,
-    "workflow_type": null,
     "confidence_score": null,
     "attributes": {
       "Source et identification de l'action": null,
@@ -6619,26 +4812,7 @@
       "Clôturée": null,
       "Date Clôture": null,
       "Commentaire": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "test": null
-    }
-  },
-  {
-    "label": "test",
-    "type": "DATATABLE",
-    "email_id": null,
-    "workflow_type": null,
-    "confidence_score": null,
-    "attributes": {
-      "nom": null
-    }
+    },
+    "input_email": null
   }
 ]

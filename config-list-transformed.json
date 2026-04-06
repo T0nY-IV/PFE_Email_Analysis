@@ -6,12 +6,12 @@
     "confidence_score": null,
     "attributes": {
       " Année": null,
-      "⏳ Durée": null,
+      " Durée": null,
       " FORMATION": null,
       " Établissement": null,
       " Résultats obtenus": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": " RENSEIGNEMENTS PROFESSIONNELS",
@@ -25,8 +25,8 @@
       " Poste": null,
       " Salaire brut": null,
       " Motif de départ": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": " Satisfaction survey",
@@ -54,8 +54,8 @@
       "Suggestions and Comments": null,
       "In your opinion, what are the strengths of the business center?": null,
       "What areas of improvement would you suggest?": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": " Évaluation comportementale",
@@ -65,16 +65,16 @@
     "attributes": {
       " Évaluation comportementale": null,
       " Note": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "11²",
     "type": "WORKFLOW",
     "email_id": null,
     "confidence_score": null,
-    "attributes": {},
-    "input_email": null
+    "attributes": {}
+    
   },
   {
     "label": "534345",
@@ -627,8 +627,8 @@
       " Analyse Approfondie": null,
       "Validation de la conformité du produit": null,
       " Validation de la conformité du produit": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Correction (s)",
@@ -668,8 +668,8 @@
       "Risque identifié ": null,
       "bon de commande ": "0",
       "nombre": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "DEMANDE D’ACHAT",
@@ -698,8 +698,8 @@
       "Résultat du contrôle ": null,
       "Risque identifié ": null,
       "bon de commande ": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Dates de formation prévues",
@@ -832,13 +832,13 @@
       " Type d'autorisation": null,
       " A préciser": null,
       " Date de Sortie": null,
-      "⏰ Heure de départ": null,
-      "⏰ Heure de retour": null,
+      " Heure de départ": null,
+      " Heure de retour": null,
       " Nombre total d’heures": null,
       " Motif d'absence ": null,
       " Remplaçant désigné pendant l'absence": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Demande d'avance",
@@ -888,7 +888,7 @@
       " Current Leave Balance": null,
       " Departure Date": null,
       " Return Date": null,
-      "⏳ Duration (Days)": null,
+      " Duration (Days)": null,
       " Departure Period": null,
       " Return Period": null,
       " Veuillez sélectionner la valeur proposée": null,
@@ -901,8 +901,8 @@
       "d": null,
       "Approbation": null,
       "test": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Demande de support",
@@ -956,8 +956,8 @@
       " Statut paiement": null,
       " Date paiement": null,
       " Bon de réception associé": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Demandes WFH",
@@ -1011,11 +1011,11 @@
       "Détails de la campagne": null,
       " Libellé": null,
       " Type_Déclaration": null,
-      "⏳ Mois": null,
-      "⏳ Trimestre": null,
+      " Mois": null,
+      " Trimestre": null,
       " Année": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Décontamination et Nettoyage",
@@ -1199,8 +1199,8 @@
       "Degré de satisfaction ": null,
       "Votre degré de satisfaction général ": null,
       "Observation/proposition": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Enregistrement de candidature – Appel à talents",
@@ -1242,8 +1242,8 @@
       " Photocopie des diplômes et certificats de scolarité": "0",
       "CV": "0",
       "Lettre de Motivation": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Envoie",
@@ -1287,8 +1287,8 @@
       "Décision finale par la Direction Générale": null,
       " Décision proposé": null,
       " Commentaire ou précision DG": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Evaluation de formation",
@@ -1361,8 +1361,8 @@
       "Si oui, les quelles ?": null,
       " Note générale": null,
       " Quelle note globale attribuez-vous à cette formation ?": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Evaluation à chaud",
@@ -1515,7 +1515,7 @@
       "Autre": null,
       " Titre ou sujet souhaité": null,
       " Objectif de la formation": null,
-      "⏳ Urgence du besoin": null,
+      " Urgence du besoin": null,
       " Type de formation souhaité": null,
       "Période souhaitée de la formation": "Période souhaitée de la formation",
       "Du": null,
@@ -1524,8 +1524,8 @@
       " Budget estimé (si connu)": null,
       "Documents justificatifs": "0",
       " Commentaire complémentaire": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Expression besoin de recrutement",
@@ -1564,8 +1564,7 @@
       " Budget salarial estimé (mensuel)": null,
       " Description des taches ": null,
       " Compétences spécifiques souhaitées": null
-    },
-    "input_email": null
+    }
   },
   {
     "label": "Exécution",
@@ -1597,8 +1596,8 @@
       "Paiment Déclaration": null,
       "Mode de paiement": null,
       "Justificatif": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Facture",
@@ -1845,7 +1844,7 @@
       " Équipements requis": null,
       " Nom Salle": null,
       " Capacité": null,
-      "⏰ Date et heure d'installation": null,
+      " Date et heure d'installation": null,
       " Responsable logistique": null,
       " Statut Disponibilité": null,
       "Gestion des participants": null,
@@ -1857,8 +1856,8 @@
       " Équipements en place ?": null,
       " Intervenants confirmés ?": null,
       " Commentaires": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Gestion d’un lot de production",
@@ -1893,8 +1892,8 @@
       " Date d’expédition prévue": null,
       " Transporteur": null,
       " Bon de livraison": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Help Desk GLPI",
@@ -1977,8 +1976,8 @@
       " Évaluation finale de l’intégration": null,
       " Prolongation ou fin de période d’essai": null,
       " Justification": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Inventaire",
@@ -2094,8 +2093,8 @@
       " Unité": null,
       " Spécifications techniques": null,
       " MP critique ?": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Liste de Fournisseurs",
@@ -2468,8 +2467,8 @@
     "attributes": {
       " Code Outil": null,
       " Libellé Outil": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Management of Contractual Risks and Disputes",
@@ -2506,8 +2505,8 @@
       "Degré de satisfaction ": null,
       "Votre degré de satisfaction général ": null,
       "Observation/proposition": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Mission Order",
@@ -2583,12 +2582,12 @@
       "Client Name ": null,
       "Opportunity Description ": null,
       "Estimated Value ": null,
-      "Urgency Level ⏰": null,
+      "Urgency Level ": null,
       "Strategic Importance": null,
       "Main Risk ": null,
       "Decision Deadline ": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Non-Conformity Report",
@@ -2725,9 +2724,9 @@
       " Objet de la mission": null,
       " Motif(s) de la mission": null,
       " Date de départ": null,
-      "⏰ Heure de départ": null,
+      " Heure de départ": null,
       " Date de retour": null,
-      "⏰ Heure de retour": null,
+      " Heure de retour": null,
       " Type de destination": null,
       " Adresse / Lieu de la mission": null,
       " Pièce jointe ": "0",
@@ -2746,8 +2745,8 @@
       " Résumé des activités réalisées": null,
       " Dépenses réelles engagées": null,
       " Justificatifs des dépenses": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Ordre de mission",
@@ -2759,9 +2758,9 @@
       " Objet de la mission": null,
       " Motif(s) de la mission": null,
       " Date de départ": null,
-      "⏰ Heure de départ": null,
+      " Heure de départ": null,
       " Date de retour": null,
-      "⏰ Heure de retour": null,
+      " Heure de retour": null,
       " Type de destination": null,
       " Adresse / Lieu de la mission": null,
       " Pièce jointe ": "0",
@@ -2779,8 +2778,8 @@
       " Résumé des activités réalisées": null,
       " Dépenses réelles engagées": null,
       " Justificatifs des dépenses": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Organisation des Examens",
@@ -3013,8 +3012,8 @@
       " Participants": null,
       "Réalisation de la formation": null,
       "Fiche de présence": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Post infos importantes",
@@ -3133,8 +3132,8 @@
       " Date d'embauche": null,
       " Proposition final d'embauche": null,
       "Contrat": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Product Compliance Check",
@@ -3209,8 +3208,8 @@
       " Quels sont, selon vous, les points forts du centre d'affaires ?": null,
       " Quels axes d'amélioration suggérez-vous ?": null,
       "file": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "REVUE DE DIRECTION",
@@ -3567,8 +3566,8 @@
       " Email": null,
       " Référent chez nous": null,
       "Etat": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Table des Litiges et Contentieux",
@@ -3685,8 +3684,8 @@
       " Budget Prévu": null,
       " Budget Réel": null,
       " Etat": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Table of Disputes and Litigation",
@@ -3777,8 +3776,8 @@
       "Mode de paiement ": null,
       "Numéro de facture ": null,
       "Facture ": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Tâches de Déclaration CNSS",
@@ -3802,8 +3801,8 @@
       "Paiment Déclaration": null,
       "Mode de paiement": null,
       "Justificatif": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Tâches de Déclaration Impôts",
@@ -3827,8 +3826,8 @@
       "Paiment Déclaration": null,
       "Mode de paiement": null,
       "Justificatif": "0"
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "Validation des Modules",
@@ -3984,8 +3983,8 @@
     "attributes": {
       "nom": null,
       "date": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": "jklj",
@@ -3999,8 +3998,8 @@
     "type": "WORKFLOW",
     "email_id": null,
     "confidence_score": null,
-    "attributes": {},
-    "input_email": null
+    "attributes": {}
+    
   },
   {
     "label": "si dommage corporel a remplir",
@@ -4200,8 +4199,8 @@
     "attributes": {
       "Logiciels": null,
       "Niveau": null
-    },
-    "input_email": null
+    }
+    
   },
   {
     "label": " Liste des outils / équipements à emporter",
@@ -4211,7 +4210,6 @@
     "attributes": {
       " Code Outil": null,
       " Libellé Outil": null
-    },
-    "input_email": null
+    }
   }
 ]

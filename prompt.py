@@ -1,7 +1,4 @@
 import json
-with open("config-list-transformed.json", "r") as f:
-    json_conf = json.dumps(json.load(f), indent=2)
-
 
 prompt_1 = (
     "You are an enterprise email analysis agent specialized in business email understanding. "
@@ -118,8 +115,9 @@ prompt_orange = (
 )
 
 # Prompt for config-list (25).json
+with open("config-list-transformed.json", "r") as f:
+    json_conf = json.dumps(json.load(f), indent=2)
 #read the json file and convert it to a string
-
 prompt_configlist = (
     f"You are an AI assistant that receives a JSON configuration: {json_conf}"
     "Select the workflow whose \"label\" best matches the email, extract the attributes"

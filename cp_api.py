@@ -56,7 +56,7 @@ async def initialize():
         
         # Load document
         # Chargement du corpus depuis le fichier JSON
-        document_text = load_document("dataset_telecom.json")
+        document_text = load_document("config-list-final.json")
         
         # Chunk the text
         # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots

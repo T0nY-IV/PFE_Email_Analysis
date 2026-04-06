@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 import os
-from api_methodes import get_last_json_uid
+from orange_part.api_methodes import get_last_json_uid
 
 def send_request_to_api(email_content: str):
     url = "http://localhost:8086/query"

@@ -1,4 +1,4 @@
-from iteration_test import run_iterations
+from research_part.iteration_test import run_iterations
 import sys
 
 models = [

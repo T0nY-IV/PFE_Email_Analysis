@@ -3,7 +3,7 @@ import statistics
 import sys
 from pathlib import Path
 
-import model_test
+import research_part.model_test as model_test
 import json
 
 # Optional system monitoring libraries. psutil is used for CPU/memory.

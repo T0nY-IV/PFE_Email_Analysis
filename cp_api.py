@@ -1,3 +1,4 @@
+#completed project api.py
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -9,8 +10,8 @@ import os
 import json
 import pandas as pd
 from typing import Optional
-from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
-from api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from prompt import prompt_configlist
+from orange_part.api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
 
@@ -127,7 +128,7 @@ async def query(request: QueryRequest):
             raise HTTPException(status_code=400, detail="RAG system not initialized. Call /initialize first.")
 
         # Conversion de notre prompt spécifique en vecteur pour la recherche
-        query_embedding = embedding_model.encode([prompt_orange])[0]
+        query_embedding = embedding_model.encode([prompt_configlist])[0]
         
         # Retrieve relevant context
         results = collection.query(
@@ -145,7 +146,7 @@ async def query(request: QueryRequest):
         
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email
-        full_prompt = prompt_orange + "\n\n" + email_content
+        full_prompt = prompt_configlist + "\n\n" + email_content
         
         # Jointure des documents retrouvés pour former le contexte
         context = "\n\n".join(retrieved_docs)

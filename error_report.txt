@@ -1,0 +1,145 @@
+===============================================================
+                       ERROR REPORT
+         cp_api.py & cp_api_methodes.py & prompt.py
+                      2026-04-08
+===============================================================
+
+---------------------------
+cp_api.py
+---------------------------
+
+[1] DEPRECATED ChromaDB API (lines 74-79) ✅
+  - Using chromadb.Client(Settings(persist_directory=...)) is deprecated
+    in newer versions of chromadb. Should use chromadb.PersistentClient().
+  - Impact: Data will NOT actually persist between sessions. The vector
+    store is recreated every time and never saved to disk.
+
+[2] HARDCODED WRONG FILENAME in success response (line 109) ✅
+  - Returns "document_path": "dataset_telecom.json" but the actual file
+    loaded on line 59 is "config-list-final.json".
+  - Impact: Misleading API response.
+
+[3] HARDCODED WRONG FILENAME in error message (line 115) ✅
+  - FileNotFoundError handler says "Document not found: dataset_telecom.json"
+    but the actual file being loaded is "config-list-final.json".
+  - Impact: Wrong error message shown to the user.
+
+[4] BARE except CLAUSE (line 85)
+  - "except:" catches ALL exceptions including KeyboardInterrupt and
+    SystemExit, which should not be silently swallowed.
+  - Should be "except Exception:" or a more specific exception type.
+
+[5] json.loads() ON LLM OUTPUT WITHOUT ERROR HANDLING (line 175) ✅
+  - Assumes the LLM always returns valid JSON. LLMs can return
+    markdown, explanations, or malformed JSON.
+  - json.JSONDecodeError is not caught here and will bubble up as a
+    generic 500 error with an unhelpful message.
+  - Should wrap in try/except json.JSONDecodeError.
+
+[6] Optional[str] WITHOUT DEFAULT VALUE (line 44)
+  - "email_content: Optional[str]" has no default value.
+  - In Pydantic v2, this makes the field REQUIRED, not optional.
+  - If the intent is for it to be truly optional, it should be:
+    email_content: Optional[str] = None
+
+[7] RAG RETRIEVAL USES STATIC PROMPT INSTEAD OF DYNAMIC QUERY (line 131)
+  - query_embedding is computed from prompt_configlist (a static prompt),
+    NOT from the email content.
+  - Impact: The same documents will ALWAYS be retrieved regardless of
+    the email. This defeats the purpose of RAG retrieval. The email
+    content should be used as the query embedding for relevant retrieval.
+
+[8] DATA INCONSISTENCY: SAME FILE AS SOURCE AND TARGET (lines 59 + 178)
+  - "config-list-final.json" is both the source for embeddings (load_document)
+    AND the target for save_to_dataset. New entries added via /query won't be
+    in the vector store until /initialize is called again.
+  - Impact: RAG system becomes stale; retrieval misses newly added data.
+
+
+---------------------------
+cp_api_methodes.py
+---------------------------
+
+[9] chunk_text SPLITS BY CHARACTERS, NOT WORDS (lines 36-38)
+  - text[i:i+chunk_size] splits by raw character count, which breaks
+    words and JSON structures in the middle.
+  - Since the loaded document is a JSON file, this produces invalid JSON
+    fragments that degrade embedding quality.
+  - Should split on word/sentence boundaries or parse JSON entries
+    individually.
+
+[10] save_to_dataset WRITES TO THE SAME FILE USED AS SOURCE (line 14 + 27)
+  - Writes to "config-list-final.json", which is also the source document
+    for load_document in cp_api.py.
+  - Impact: Corrupts/modifies the source data and creates inconsistency
+    with existing embeddings (same issue as [8]).
+
+[11] pd.read_excel REQUIRES UNDECLARED DEPENDENCY (line 48)
+  - Requires openpyxl engine to be installed. If not installed, will
+    raise an error. No engine is explicitly specified.
+  - Should specify: pd.read_excel(excel_path, engine="openpyxl")
+
+[12] int(df['UID'].max()) CAN FAIL (line 52)
+  - If the UID column contains non-numeric values or the DataFrame is
+    empty, this will raise an exception.
+  - Should validate before casting to int.
+
+[13] last_entry["output"]["email_id"] ASSUMES WRONG STRUCTURE (line 76) ✅
+  - Assumes output is a dict with an "email_id" key.
+  - BUT: The prompt used in cp_api.py (prompt_configlist) asks the LLM
+    to return "workflow_label", NOT "email_id".
+  - Impact: get_last_json_uid() will ALWAYS return None because the key
+    "email_id" never exists in the output. This is a cross-file logic
+    inconsistency with prompt.py's prompt_configlist.
+
+
+---------------------------
+prompt.py
+---------------------------
+
+[14] TYPO: "syntactatically" (line 64)
+  - Should be "syntactically".
+
+[15] MODULE-LEVEL FILE READ CAN CRASH ON IMPORT (line 118) ✅
+  - "with open("config-list-transformed.json", "r") as f:" runs at
+    module import time. If the file doesn't exist, the entire module
+    fails to import, breaking cp_api.py completely.
+  - Should handle FileNotFoundError or load lazily.
+
+[16] MISSING SPACE IN STRING CONCATENATION (lines 122-123)
+  - prompt_configlist uses implicit string concatenation:
+      f"...: {json_conf}"
+      "Select the workflow..."
+  - This produces: "...configuration: {json_conf}Select the workflow..."
+    with NO space/newline between {json_conf} and "Select".
+  - Impact: The prompt sent to the LLM has missing spacing, which can
+    confuse the model.
+
+
+===============================================================
+                      SUMMARY
+===============================================================
+
+  Critical (will cause failures):
+    [1]  - ChromaDB deprecated API, data won't persist ✅
+    [5]  - json.loads() on LLM output, crashes on non-JSON response ✅
+    [13] - email_id vs workflow_label mismatch, UID tracking broken ✅
+    [15] - Module crashes if config-list-transformed.json missing
+
+  Logic Errors (wrong behavior):
+    [2]  - Wrong filename in API response
+    [3]  - Wrong filename in error message
+    [7]  - Static query embedding defeats RAG purpose
+    [8]  - Same file as source and target, stale embeddings
+    [10] - Same as [8], source file corruption
+    [16] - Missing space in prompt, confuses LLM
+
+  Code Quality:
+    [4]  - Bare except clause
+    [6]  - Optional without default
+    [9]  - Character-based chunking breaks JSON
+    [11] - Missing openpyxl dependency
+    [12] - Unsafe int() cast on UID
+    [14] - Typo in prompt
+
+===============================================================

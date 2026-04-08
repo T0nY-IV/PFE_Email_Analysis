@@ -11,7 +11,7 @@ import json
 import pandas as pd
 from typing import Optional
 from prompt import prompt_configlist
-from orange_part.api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from cp_api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
 
@@ -71,12 +71,7 @@ async def initialize():
         
         # Store in Vector Database (Chroma)
         # Initialisation du client ChromaDB avec un stockage persistant
-        client = chromadb.Client(
-            Settings(
-                persist_directory=persist_dir,
-                anonymized_telemetry=False
-            )
-        )
+        client = chromadb.PersistentClient(path=persist_dir)
         
         # Delete existing collection if it exists
         # Suppression de l'ancienne collection pour éviter les doublons lors de la réinitialisation
@@ -105,14 +100,14 @@ async def initialize():
             "status": "success",
             "message": f"RAG system initialized with {len(chunks)} chunks",
             "chunks_count": len(chunks),
-            "document_path": "dataset_telecom.json",
+            "document_path": "config-list-final.json",
             "last_excel_uid": last_excel_uid,
             "last_json_uid": last_json_uid
         }
     
     except FileNotFoundError as e:
         # Gestion de l'erreur si le fichier de données n'est pas trouvé
-        raise HTTPException(status_code=404, detail=f"Document not found: dataset_telecom.json")
+        raise HTTPException(status_code=404, detail=f"Document not found: config-list-final.json")
     except Exception as e:
         # Gestion des autres erreurs génériques lors de l'initialisation
         raise HTTPException(status_code=500, detail=f"Initialization error: {str(e)}")
@@ -153,16 +148,16 @@ async def query(request: QueryRequest):
         
         # Construction du prompt final (Augmented Prompt) à envoyer au modèle LLM
         augmented_prompt = f"""
-You are an assistant. Use the context below to answer the question.
+            You are an assistant. Use the context below to answer the question.
 
-Context:
-{context}
+            Context:
+            {context}
 
-Question:
-{full_prompt}
+            Question:
+            {full_prompt}
 
-Answer:
-"""
+            Answer:
+            """
         
         # Get response from Ollama
         # Génération de la réponse via le modèle LLM local (Ollama)
@@ -193,6 +188,9 @@ Answer:
     except HTTPException:
         # Propagation directe des exceptions HTTP déjà gérées
         raise
+    except json.JSONDecodeError:
+        # Gestion de l'erreur si la réponse du modèle n'est pas un JSON valide
+        raise HTTPException(status_code=500, detail="Invalid JSON response from model.")
     except Exception as e:
         # Transformation de toutes les autres erreurs en HTTP 500
         raise HTTPException(status_code=500, detail=f"Query error: {str(e)}")

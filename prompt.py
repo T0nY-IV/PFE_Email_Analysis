@@ -115,13 +115,13 @@ prompt_orange = (
 )
 
 # Prompt for config-list (25).json
-with open("config-list-transformed.json", "r") as f:
+with open("config-list-transformed.json", "r", encoding="utf-8") as f:
     json_conf = json.dumps(json.load(f), indent=2)
 #read the json file and convert it to a string
 prompt_configlist = (
-    f"You are an AI assistant that receives a JSON configuration: {json_conf}"
+    f"You are an AI assistant that receives a JSON configuration: {json_conf}\n"
     "Select the workflow whose \"label\" best matches the email, extract the attributes"
-    " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\", \"workflow_label\", \"attributes\", \"confidence_score\". "
+    " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\", \"workflow_label\", \"attributes\", \"confidence_score\".\n "
     "Only include attributes that appear in the email; omit missing ones. "
     "Return ONLY the JSON, no extra text. "
 )

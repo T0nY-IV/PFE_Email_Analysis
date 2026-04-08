@@ -4842,18 +4842,6 @@
   },
   {
     "output": {
-      "label": "SQFQSF",
-      "type": "DATATABLE",
-      "email_id": null,
-      "confidence_score": null,
-      "attributes": {
-        "QFSF": null
-      }
-    },
-    "input_email": null
-  },
-  {
-    "output": {
       "label": "analyse swot",
       "type": "DATATABLE",
       "email_id": null,
@@ -4936,18 +4924,6 @@
         "Email": null,
         "Téléphone": null,
         "Statut": null
-      }
-    },
-    "input_email": null
-  },
-  {
-    "output": {
-      "label": "hgjgj",
-      "type": "DATATABLE",
-      "email_id": null,
-      "confidence_score": null,
-      "attributes": {
-        "yiyiyi": null
       }
     },
     "input_email": null
@@ -5284,7 +5260,7 @@
     "output": {
       "label": "PLAN D’ACTION",
       "type": "DATATABLE",
-      "email_id": null,
+      "email_id": "12",
       "confidence_score": null,
       "attributes": {
         "Source et identification de l'action": null,

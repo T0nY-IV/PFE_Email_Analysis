@@ -1,0 +1,3251 @@
+[
+  {
+    "output": {
+      "label": "Contracts List",
+      "type": "DATATABLE",
+      "email_id": "1600",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Fourniture Equipements 2026",
+        "Type de contrat": "fourniture",
+        "Date de soumission": "18/04/2026",
+        "Durée du contrat": "12 mois",
+        "Montant estimé": "45000 TND",
+        "Description brève": "équipements bureau",
+        "Document du contrat": "0",
+        "Commentaires": "clauses paiement à valider",
+        "Validation juridique": "en cours",
+        "Analyse des risques juridiques": "faible",
+        "Clauses sensibles à revoir ?": "oui",
+        "Contrat conforme ?": "non",
+        "Document modifié (si applicable)": "0",
+        "Révision financière": "oui",
+        "Budget disponible ?": "oui",
+        "Montant validé": "42000 TND",
+        "Conditions de paiement ": "30 jours",
+        "Archivage & Signature": "non",
+        "Contrat signé": "0",
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Statut final du contrat": "en révision"
+      }
+    },
+    "input_email": "Bonjour,\n\nvoici pour Contracts List : soumission oui nom contrat Fourniture Equipements 2026 type fourniture date soumission 18 avril durée 12 mois montant estimé 45000 description équipements bureau document 0 commentaires clauses paiement à valider validation juridique en cours analyse risques faible clauses sensibles oui contrat conforme non révision financière oui budget dispo oui montant validé 42000 conditions 30 jours archivage non contrat signé 0 statut en révision. Merci de l'ajouter au tableau"
+  },
+  {
+    "output": {
+      "label": "Contracts List",
+      "type": "DATATABLE",
+      "email_id": "1601",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Maintenance IT 2026",
+        "Type de contrat": "service",
+        "Date de soumission": "20/04/2026",
+        "Durée du contrat": "24 mois",
+        "Montant estimé": "120000 TND",
+        "Description brève": "maintenance systèmes",
+        "Document du contrat": "0",
+        "Commentaires": "delais intervention 4h",
+        "Validation juridique": "oui",
+        "Analyse des risques juridiques": "faible",
+        "Clauses sensibles à revoir ?": "non",
+        "Contrat conforme ?": "oui",
+        "Document modifié (si applicable)": "0",
+        "Révision financière": "oui",
+        "Budget disponible ?": "non",
+        "Montant validé": "110000 TND",
+        "Conditions de paiement ": "mensuel",
+        "Archivage & Signature": "non",
+        "Contrat signé": "0",
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Statut final du contrat": "en cours"
+      }
+    },
+    "input_email": "Salut,\n\nContracts List à remplir : soumission oui nom Maintenance IT 2026 type service date 20 avril durée 24 mois montant 120000 description maintenance systèmes document 0 commentaires delais 4h validation juridique oui risques faible clauses non conforme oui révision financière oui budget non montant 110000 conditions mensuel archivage non signé 0 statut en cours. A mettre dans le tableau svp"
+  },
+  {
+    "output": {
+      "label": "Contracts List",
+      "type": "DATATABLE",
+      "email_id": "1602",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Consultation Stratégique",
+        "Type de contrat": "consulting",
+        "Date de soumission": "22/04/2026",
+        "Durée du contrat": "6 mois",
+        "Montant estimé": "25000 TND",
+        "Description brève": "étude faisabilité",
+        "Document du contrat": "0",
+        "Commentaires": "tout ok",
+        "Validation juridique": "en cours",
+        "Analyse des risques juridiques": "moyen",
+        "Clauses sensibles à revoir ?": "oui",
+        "Contrat conforme ?": "non",
+        "Document modifié (si applicable)": "0",
+        "Révision financière": "oui",
+        "Budget disponible ?": "oui",
+        "Montant validé": "23000 TND",
+        "Conditions de paiement ": "50% avance",
+        "Archivage & Signature": "non",
+        "Contrat signé": "0",
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Statut final du contrat": "en révision"
+      }
+    },
+    "input_email": "Bonjour,\n\npour le tableau Contracts List : soumission oui nom Consultation Stratégique type consulting date 22 avril durée 6 mois montant estimé 25000 description étude faisabilité document 0 commentaires tout ok validation en cours risques moyen clauses sensibles oui conforme non révision financière oui budget oui montant 23000 conditions 50% avance archivage non signé 0 statut en révision. Merci"
+  },
+  {
+    "output": {
+      "label": "Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1603",
+      "confidence_score": null,
+      "attributes": {
+        "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.": "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.",
+        "Informations générales": null,
+        "Vous êtes :": "client",
+        "Évaluation des services": null,
+        "1. Espaces de travail": "1. Espaces de travail",
+        "La qualité des bureaux/salles de réunion répond à vos attentes?": "oui",
+        "Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels?": "oui",
+        "2. Propreté et entretien": "2. Propreté et entretien",
+        "Les espaces sont propres et bien entretenus?": "oui",
+        "3. Accueil et assistance": "3. Accueil et assistance",
+        "Le personnel est disponible et accueillant?": "oui",
+        "Les réponses à vos demandes sont rapides et efficaces": "oui",
+        "Évaluation des événements": null,
+        "La qualité des événements/conférences organisés est satisfaisante?": "oui",
+        "L’organisation logistique des événements est efficace.": "oui",
+        "Satisfaction globale": null,
+        "Quel est votre degré de satisfaction globale?": "très satisfait",
+        "Suggestions et commentaires": null,
+        "Quels sont, selon vous, les points forts du centre d'affaires ?": "accueil rapide",
+        "Quels axes d'amélioration suggérez-vous ?": "plus de prises électriques"
+      }
+    },
+    "input_email": "Bonjour,\n\nvoici pour Satisfaction survey : vous êtes client espaces travail qualité bureaux oui équipements oui propreté oui accueil personnel disponible oui réponses rapides oui événements qualité satisfaisante oui logistique efficace oui satisfaction globale très satisfait points forts accueil rapide amélioration plus de prises. A remplir dans le tableau merci"
+  },
+  {
+    "output": {
+      "label": "Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1604",
+      "confidence_score": null,
+      "attributes": {
+        "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.": "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.",
+        "Informations générales": null,
+        "Vous êtes :": "fournisseur",
+        "Évaluation des services": null,
+        "1. Espaces de travail": "1. Espaces de travail",
+        "La qualité des bureaux/salles de réunion répond à vos attentes?": "moyen",
+        "Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels?": "oui",
+        "2. Propreté et entretien": "2. Propreté et entretien",
+        "Les espaces sont propres et bien entretenus?": "oui",
+        "3. Accueil et assistance": "3. Accueil et assistance",
+        "Le personnel est disponible et accueillant?": "oui",
+        "Les réponses à vos demandes sont rapides et efficaces": "oui",
+        "Évaluation des événements": null,
+        "La qualité des événements/conférences organisés est satisfaisante?": "oui",
+        "L’organisation logistique des événements est efficace.": "oui",
+        "Satisfaction globale": null,
+        "Quel est votre degré de satisfaction globale?": "satisfait",
+        "Suggestions et commentaires": null,
+        "Quels sont, selon vous, les points forts du centre d'affaires ?": "logistique",
+        "Quels axes d'amélioration suggérez-vous ?": "wifi plus rapide"
+      }
+    },
+    "input_email": "Salut,\n\nSatisfaction survey à remplir : vous êtes fournisseur espaces travail qualité moyen équipements oui propreté oui accueil oui réponses rapides oui événements satisfaisante oui logistique efficace oui satisfaction globale satisfait points forts logistique amélioration wifi plus rapide. Merci de l'ajouter"
+  },
+  {
+    "output": {
+      "label": "Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1605",
+      "confidence_score": null,
+      "attributes": {
+        "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.": "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire.",
+        "Informations générales": null,
+        "Vous êtes :": "employé",
+        "Évaluation des services": null,
+        "1. Espaces de travail": "1. Espaces de travail",
+        "La qualité des bureaux/salles de réunion répond à vos attentes?": "oui",
+        "Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels?": "oui",
+        "2. Propreté et entretien": "2. Propreté et entretien",
+        "Les espaces sont propres et bien entretenus?": "oui",
+        "3. Accueil et assistance": "3. Accueil et assistance",
+        "Le personnel est disponible et accueillant?": "oui",
+        "Les réponses à vos demandes sont rapides et efficaces": "oui",
+        "Évaluation des événements": null,
+        "La qualité des événements/conférences organisés est satisfaisante?": "oui",
+        "L’organisation logistique des événements est efficace.": "oui",
+        "Satisfaction globale": null,
+        "Quel est votre degré de satisfaction globale?": "très satisfait",
+        "Suggestions et commentaires": null,
+        "Quels sont, selon vous, les points forts du centre d'affaires ?": "tout est bien",
+        "Quels axes d'amélioration suggérez-vous ?": "aucun pour le moment"
+      }
+    },
+    "input_email": "Bonjour,\n\nvoici Satisfaction survey : vous êtes employé espaces travail qualité oui équipements oui propreté oui accueil oui réponses rapides oui événements satisfaisante oui logistique efficace oui satisfaction globale très satisfait points forts tout est bien amélioration aucun pour le moment. A noter dans le tableau stp"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1606",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Séminaire Qualité 2026",
+        "Type": "interne",
+        "Date Début": "22/04/2026",
+        "Date Fin": "23/04/2026",
+        "Lieu": "salle conférence",
+        "Description de l'événement": "formation ISO 22000",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "5000",
+        "Budget Réel (mD)": "4800"
+      }
+    },
+    "input_email": "Salut,\n\nEvents Table à remplir : nom Séminaire Qualité 2026 type interne date début 22 avril fin 23 avril lieu salle conférence description formation ISO 22000 statut confirmé budget prévu 5000 réel 4800. Merci"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1607",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Team Building",
+        "Type": "externe",
+        "Date Début": "26/04/2026",
+        "Date Fin": "26/04/2026",
+        "Lieu": "hotel La Marsa",
+        "Description de l'événement": "activités équipe",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "8000",
+        "Budget Réel (mD)": "7500"
+      }
+    },
+    "input_email": "Bonjour,\n\npour Events Table : nom Team Building type externe date début 26 avril fin 26 avril lieu hotel La Marsa description activités équipe statut confirmé budget prévu 8000 réel 7500. A mettre dans le tableau"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1608",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Reunion Client",
+        "Type": "interne",
+        "Date Début": "19/04/2026",
+        "Date Fin": "19/04/2026",
+        "Lieu": "bureau principal",
+        "Description de l'événement": "présentation nouveau projet",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "0",
+        "Budget Réel (mD)": "0"
+      }
+    },
+    "input_email": "Hello,\n\nEvents Table : nom Reunion Client type interne date début 19 avril fin 19 avril lieu bureau principal description présentation nouveau projet statut confirmé budget prévu 0 réel 0. Ok ?"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1609",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Séminaire Qualité 2026",
+        "Nom et Prénom": "Ahmed Khelifi",
+        "Organisation": "interne",
+        "Spécialité": "HSE",
+        "Email": "ahmed.k@company.tn",
+        "Téléphone": "98765432"
+      }
+    },
+    "input_email": "Salut,\n\nStakeholders Table : événement Séminaire Qualité 2026 nom Ahmed Khelifi organisation interne spécialité HSE email ahmed.k@company.tn téléphone 98765432"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1610",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Team Building",
+        "Nom et Prénom": "Leila Trabelsi",
+        "Organisation": "HR Pro",
+        "Spécialité": "team building",
+        "Email": "leila.t@company.tn",
+        "Téléphone": "23456789"
+      }
+    },
+    "input_email": "Bonjour,\n\nStakeholders Table : événement Team Building nom Leila Trabelsi organisation HR Pro spécialité team building email leila.t@company.tn téléphone 23456789"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1611",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Reunion Client",
+        "Nom et Prénom": "Karim Mansour",
+        "Organisation": "Sales Co",
+        "Spécialité": "commercial",
+        "Email": "karim.m@company.tn",
+        "Téléphone": "45678901"
+      }
+    },
+    "input_email": "Hello,\n\nStakeholders Table : événement Reunion Client nom Karim Mansour organisation Sales Co spécialité commercial email karim.m@company.tn téléphone 45678901"
+  },
+  {
+    "output": {
+      "label": "Participants Table",
+      "type": "DATATABLE",
+      "email_id": "1612",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Youssef Ben Ali",
+        "Email": "youssef.ba@email.tn",
+        "Téléphone": "98765432",
+        "Organisation": "Tech Solutions",
+        "Rôle dans Événement": "participant"
+      }
+    },
+    "input_email": "Salut,\n\nParticipants Table : nom Youssef Ben Ali email youssef.ba@email.tn téléphone 98765432 organisation Tech Solutions rôle participant"
+  },
+  {
+    "output": {
+      "label": "Participants Table",
+      "type": "DATATABLE",
+      "email_id": "1613",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Amina Khelifi",
+        "Email": "amina.k@email.tn",
+        "Téléphone": "23456789",
+        "Organisation": "HR Pro",
+        "Rôle dans Événement": "intervenant"
+      }
+    },
+    "input_email": "Bonjour,\n\nParticipants Table : nom Amina Khelifi email amina.k@email.tn téléphone 23456789 organisation HR Pro rôle intervenant"
+  },
+  {
+    "output": {
+      "label": "Participants Table",
+      "type": "DATATABLE",
+      "email_id": "1614",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Omar Mansour",
+        "Email": "omar.m@email.tn",
+        "Téléphone": "45678901",
+        "Organisation": "Sales Co",
+        "Rôle dans Événement": "participant"
+      }
+    },
+    "input_email": "Hello,\n\nParticipants Table : nom Omar Mansour email omar.m@email.tn téléphone 45678901 organisation Sales Co rôle participant"
+  },
+  {
+    "output": {
+      "label": "Rooms and Resources Table",
+      "type": "DATATABLE",
+      "email_id": "1615",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Séminaire Qualité 2026",
+        "Nom Salle": "Salle A",
+        "Capacité": "50",
+        "Équipements Disponibles": "projecteur micro",
+        "Statut Disponibilité": "disponible"
+      }
+    },
+    "input_email": "Salut,\n\nRooms and Resources Table : événement Séminaire Qualité 2026 nom salle Salle A capacité 50 équipements projecteur micro statut disponible"
+  },
+  {
+    "output": {
+      "label": "Rooms and Resources Table",
+      "type": "DATATABLE",
+      "email_id": "1616",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Team Building",
+        "Nom Salle": "Salle B",
+        "Capacité": "30",
+        "Équipements Disponibles": "tableau",
+        "Statut Disponibilité": "réservée"
+      }
+    },
+    "input_email": "Bonjour,\n\nRooms and Resources Table : événement Team Building nom salle Salle B capacité 30 équipements tableau statut réservée"
+  },
+  {
+    "output": {
+      "label": "Rooms and Resources Table",
+      "type": "DATATABLE",
+      "email_id": "1617",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Reunion Client",
+        "Nom Salle": "Salle C",
+        "Capacité": "100",
+        "Équipements Disponibles": "vidéo projecteur",
+        "Statut Disponibilité": "disponible"
+      }
+    },
+    "input_email": "Hello,\n\nRooms and Resources Table : événement Reunion Client nom salle Salle C capacité 100 équipements vidéo projecteur statut disponible"
+  },
+  {
+    "output": {
+      "label": " Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1618",
+      "confidence_score": null,
+      "attributes": {
+        "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire": "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire",
+        "General Information": null,
+        "You are :": "client",
+        "Service Evaluation": null,
+        "Workspaces": "Workspaces",
+        "Are the quality of offices/meeting rooms up to your expectations?": "yes",
+        "Are the equipment (furniture, internet connection, projector) adequate and functional?": "yes",
+        "Cleanliness and Maintenance": "Cleanliness and Maintenance",
+        "Are the spaces clean and well-maintained?": "yes",
+        "Reception and Assistance": "Reception and Assistance",
+        "Is the staff available and welcoming": "yes",
+        "Are your requests handled quickly and efficiently?": "yes",
+        "Event Evaluation": null,
+        "Is the quality of the organized events/conferences satisfactory?": "yes",
+        "Is the logistical organization of events efficient?": "yes",
+        "Overall Satisfaction": null,
+        "What is your overall level of satisfaction?": "very satisfied",
+        "Suggestions and Comments": null,
+        "In your opinion, what are the strengths of the business center?": "fast service",
+        "What areas of improvement would you suggest?": "more power outlets"
+      }
+    },
+    "input_email": "Bonjour,\n\nSatisfaction survey en anglais : you are client workspaces quality offices yes equipment yes cleanliness yes reception staff yes requests quick yes events quality yes logistics yes overall very satisfied strengths fast service improvement more power outlets. A remplir dans le tableau"
+  },
+  {
+    "output": {
+      "label": " Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1619",
+      "confidence_score": null,
+      "attributes": {
+        "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire": "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire",
+        "General Information": null,
+        "You are :": "supplier",
+        "Service Evaluation": null,
+        "Workspaces": "Workspaces",
+        "Are the quality of offices/meeting rooms up to your expectations?": "average",
+        "Are the equipment (furniture, internet connection, projector) adequate and functional?": "yes",
+        "Cleanliness and Maintenance": "Cleanliness and Maintenance",
+        "Are the spaces clean and well-maintained?": "yes",
+        "Reception and Assistance": "Reception and Assistance",
+        "Is the staff available and welcoming": "yes",
+        "Are your requests handled quickly and efficiently?": "yes",
+        "Event Evaluation": null,
+        "Is the quality of the organized events/conferences satisfactory?": "yes",
+        "Is the logistical organization of events efficient?": "yes",
+        "Overall Satisfaction": null,
+        "What is your overall level of satisfaction?": "satisfied",
+        "Suggestions and Comments": null,
+        "In your opinion, what are the strengths of the business center?": "logistics",
+        "What areas of improvement would you suggest?": "faster wifi"
+      }
+    },
+    "input_email": "Salut,\n\n Satisfaction survey : you are supplier workspaces quality average equipment yes cleanliness yes reception yes requests quick yes events quality yes logistics yes overall satisfied strengths logistics improvement faster wifi. Merci de l'ajouter"
+  },
+  {
+    "output": {
+      "label": " Satisfaction survey",
+      "type": "DATATABLE",
+      "email_id": "1620",
+      "confidence_score": null,
+      "attributes": {
+        "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire": "Your feedback is valuable to help us improve our services. Thank you for taking the time to complete this questionnaire",
+        "General Information": null,
+        "You are :": "employee",
+        "Service Evaluation": null,
+        "Workspaces": "Workspaces",
+        "Are the quality of offices/meeting rooms up to your expectations?": "yes",
+        "Are the equipment (furniture, internet connection, projector) adequate and functional?": "yes",
+        "Cleanliness and Maintenance": "Cleanliness and Maintenance",
+        "Are the spaces clean and well-maintained?": "yes",
+        "Reception and Assistance": "Reception and Assistance",
+        "Is the staff available and welcoming": "yes",
+        "Are your requests handled quickly and efficiently?": "yes",
+        "Event Evaluation": null,
+        "Is the quality of the organized events/conferences satisfactory?": "yes",
+        "Is the logistical organization of events efficient?": "yes",
+        "Overall Satisfaction": null,
+        "What is your overall level of satisfaction?": "very satisfied",
+        "Suggestions and Comments": null,
+        "In your opinion, what are the strengths of the business center?": "everything is good",
+        "What areas of improvement would you suggest?": "none for now"
+      }
+    },
+    "input_email": "Bonjour,\n\n Satisfaction survey : you are employee workspaces quality yes equipment yes cleanliness yes reception yes requests quick yes events quality yes logistics yes overall very satisfied strengths everything is good improvement none for now. A noter dans le tableau"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1621",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Séminaire Qualité 2026",
+        "Type": "interne",
+        "Date Début": "22/04/2026",
+        "Date Fin": "23/04/2026",
+        "Lieu": "salle conférence",
+        "Description de l'événement": "formation ISO 22000",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "5000",
+        "Budget Réel (mD)": "4800"
+      }
+    },
+    "input_email": "Salut,\n\nEvents Table : nom Séminaire Qualité 2026 type interne date début 22 avril fin 23 avril lieu salle conférence description formation ISO 22000 statut confirmé budget prévu 5000 réel 4800"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1622",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Team Building",
+        "Type": "externe",
+        "Date Début": "26/04/2026",
+        "Date Fin": "26/04/2026",
+        "Lieu": "hotel La Marsa",
+        "Description de l'événement": "activités équipe",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "8000",
+        "Budget Réel (mD)": "7500"
+      }
+    },
+    "input_email": "Bonjour,\n\nEvents Table : nom Team Building type externe date début 26 avril fin 26 avril lieu hotel La Marsa description activités équipe statut confirmé budget prévu 8000 réel 7500"
+  },
+  {
+    "output": {
+      "label": "Events Table",
+      "type": "DATATABLE",
+      "email_id": "1623",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Reunion Client",
+        "Type": "interne",
+        "Date Début": "19/04/2026",
+        "Date Fin": "19/04/2026",
+        "Lieu": "bureau principal",
+        "Description de l'événement": "présentation nouveau projet",
+        "Statut": "confirmé",
+        "Budget Prévu (mD)": "0",
+        "Budget Réel (mD)": "0"
+      }
+    },
+    "input_email": "Hello,\n\nEvents Table : nom Reunion Client type interne date début 19 avril fin 19 avril lieu bureau principal description présentation nouveau projet statut confirmé budget prévu 0 réel 0"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1624",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Séminaire Qualité 2026",
+        "Nom et Prénom": "Ahmed Khelifi",
+        "Organisation": "interne",
+        "Spécialité": "HSE",
+        "Email": "ahmed.k@company.tn",
+        "Téléphone": "98765432"
+      }
+    },
+    "input_email": "Salut,\n\nStakeholders Table : événement Séminaire Qualité 2026 nom Ahmed Khelifi organisation interne spécialité HSE email ahmed.k@company.tn téléphone 98765432"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1625",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Team Building",
+        "Nom et Prénom": "Leila Trabelsi",
+        "Organisation": "HR Pro",
+        "Spécialité": "team building",
+        "Email": "leila.t@company.tn",
+        "Téléphone": "23456789"
+      }
+    },
+    "input_email": "Bonjour,\n\nStakeholders Table : événement Team Building nom Leila Trabelsi organisation HR Pro spécialité team building email leila.t@company.tn téléphone 23456789"
+  },
+  {
+    "output": {
+      "label": "Stakeholders Table",
+      "type": "DATATABLE",
+      "email_id": "1626",
+      "confidence_score": null,
+      "attributes": {
+        "Événement": "Reunion Client",
+        "Nom et Prénom": "Karim Mansour",
+        "Organisation": "Sales Co",
+        "Spécialité": "commercial",
+        "Email": "karim.m@company.tn",
+        "Téléphone": "45678901"
+      }
+    },
+    "input_email": "Hello,\n\nStakeholders Table : événement Reunion Client nom Karim Mansour organisation Sales Co spécialité commercial email karim.m@company.tn téléphone 45678901"
+  },
+  {
+    "output": {
+      "label": "Liste des Commandes",
+      "type": "DATATABLE",
+      "email_id": "1627",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "Global Trade",
+        "Date Commande": "18/04/2026",
+        "Date Livraison Demandée ": "28/04/2026",
+        "Liste des Produits": "farine 2000kg",
+        "Commande": "CMD-112",
+        "Description": "standard",
+        "Listes des OF": "OF-1122"
+      }
+    },
+    "input_email": "Salut,\n\nListe des Commandes : client Global Trade date commande 18 avril date livraison 28 avril liste produits farine 2000kg commande CMD-112 description standard listes OF OF-1122"
+  },
+  {
+    "output": {
+      "label": "Liste des Commandes",
+      "type": "DATATABLE",
+      "email_id": "1628",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "Tunisia Import",
+        "Date Commande": "20/04/2026",
+        "Date Livraison Demandée ": "25/04/2026",
+        "Liste des Produits": "huile 1500L",
+        "Commande": "CMD-334",
+        "Description": "express",
+        "Listes des OF": "OF-3344"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des Commandes : client Tunisia Import date commande 20 avril date livraison 25 avril liste produits huile 1500L commande CMD-334 description express listes OF OF-3344"
+  },
+  {
+    "output": {
+      "label": "Liste des Commandes",
+      "type": "DATATABLE",
+      "email_id": "1629",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "ExportCo",
+        "Date Commande": "22/04/2026",
+        "Date Livraison Demandée ": "05/05/2026",
+        "Liste des Produits": "epices 1000kg",
+        "Commande": "CMD-556",
+        "Description": "standard",
+        "Listes des OF": "OF-5566"
+      }
+    },
+    "input_email": "Hello,\n\nListe des Commandes : client ExportCo date commande 22 avril date livraison 5 mai liste produits epices 1000kg commande CMD-556 description standard listes OF OF-5566"
+  },
+  {
+    "output": {
+      "label": "Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1630",
+      "confidence_score": null,
+      "attributes": {
+        "Produit": "farine",
+        "Quantité": "2000 kg"
+      }
+    },
+    "input_email": "Salut,\n\nListe des Produits : produit farine quantité 2000 kg"
+  },
+  {
+    "output": {
+      "label": "Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1631",
+      "confidence_score": null,
+      "attributes": {
+        "Produit": "huile olive",
+        "Quantité": "1500 L"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des Produits : produit huile olive quantité 1500 L"
+  },
+  {
+    "output": {
+      "label": "Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1632",
+      "confidence_score": null,
+      "attributes": {
+        "Produit": "epices mix",
+        "Quantité": "1000 kg"
+      }
+    },
+    "input_email": "Hello,\n\nListe des Produits : produit epices mix quantité 1000 kg"
+  },
+  {
+    "output": {
+      "label": "Liste des OF",
+      "type": "DATATABLE",
+      "email_id": "1633",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-112",
+        "Produit": "farine",
+        "Quantité": "2000 kg",
+        "Contrôles effectués": "qualité"
+      }
+    },
+    "input_email": "Salut,\n\nListe des OF : commande CMD-112 produit farine quantité 2000 kg contrôles effectués qualité"
+  },
+  {
+    "output": {
+      "label": "Liste des OF",
+      "type": "DATATABLE",
+      "email_id": "1634",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-334",
+        "Produit": "huile olive",
+        "Quantité": "1500 L",
+        "Contrôles effectués": "conformité"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des OF : commande CMD-334 produit huile olive quantité 1500 L contrôles effectués conformité"
+  },
+  {
+    "output": {
+      "label": "Liste des OF",
+      "type": "DATATABLE",
+      "email_id": "1635",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-556",
+        "Produit": "epices mix",
+        "Quantité": "1000 kg",
+        "Contrôles effectués": "qualité"
+      }
+    },
+    "input_email": "Hello,\n\nListe des OF : commande CMD-556 produit epices mix quantité 1000 kg contrôles effectués qualité"
+  },
+  {
+    "output": {
+      "label": "Liste des produits",
+      "type": "DATATABLE",
+      "email_id": "1636",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-001",
+        "Nom": "farine",
+        "DCI": "farine blanche",
+        "Produit": "farine",
+        "Forme": "poudre",
+        "Quantité": "1000 kg",
+        "Description": "farine premium",
+        "Conditions de Conservation": "sec",
+        "Température min (°C)": "15",
+        "Température max (°C)": "25"
+      }
+    },
+    "input_email": "Salut,\n\nListe des produits : référence P-001 nom farine DCI farine blanche produit farine forme poudre quantité 1000 kg description farine premium conditions sec temp min 15 max 25"
+  },
+  {
+    "output": {
+      "label": "Liste des produits",
+      "type": "DATATABLE",
+      "email_id": "1637",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-002",
+        "Nom": "huile olive",
+        "DCI": "huile extra vierge",
+        "Produit": "huile",
+        "Forme": "liquide",
+        "Quantité": "500 L",
+        "Description": "huile tunisienne",
+        "Conditions de Conservation": "frais",
+        "Température min (°C)": "10",
+        "Température max (°C)": "20"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des produits : référence P-002 nom huile olive DCI huile extra vierge produit huile forme liquide quantité 500 L description huile tunisienne conditions frais temp min 10 max 20"
+  },
+  {
+    "output": {
+      "label": "Liste des produits",
+      "type": "DATATABLE",
+      "email_id": "1638",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-003",
+        "Nom": "epices mix",
+        "DCI": "mélange oriental",
+        "Produit": "epices",
+        "Forme": "poudre",
+        "Quantité": "800 kg",
+        "Description": "épices pour cuisine",
+        "Conditions de Conservation": "sec",
+        "Température min (°C)": "18",
+        "Température max (°C)": "25"
+      }
+    },
+    "input_email": "Hello,\n\nListe des produits : référence P-003 nom epices mix DCI mélange oriental produit epices forme poudre quantité 800 kg description épices pour cuisine conditions sec temp min 18 max 25"
+  },
+  {
+    "output": {
+      "label": "Liste MP",
+      "type": "DATATABLE",
+      "email_id": "1639",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-001",
+        "Libellé": "sucre brut",
+        "Quantité": "1000 kg"
+      }
+    },
+    "input_email": "Salut,\n\nListe MP : référence MP-001 libellé sucre brut quantité 1000 kg"
+  },
+  {
+    "output": {
+      "label": "Liste MP",
+      "type": "DATATABLE",
+      "email_id": "1640",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-002",
+        "Libellé": "huile olive",
+        "Quantité": "500 L"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe MP : référence MP-002 libellé huile olive quantité 500 L"
+  },
+  {
+    "output": {
+      "label": "Liste MP",
+      "type": "DATATABLE",
+      "email_id": "1641",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-003",
+        "Libellé": "epices mix",
+        "Quantité": "800 kg"
+      }
+    },
+    "input_email": "Hello,\n\nListe MP : référence MP-003 libellé epices mix quantité 800 kg"
+  },
+  {
+    "output": {
+      "label": "Orders List",
+      "type": "DATATABLE",
+      "email_id": "1642",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "Global Trade",
+        "Date Commande": "18/04/2026",
+        "Date Livraison Demandée ": "28/04/2026",
+        "Liste des Produits": "farine 2000kg",
+        "Commande": "CMD-112",
+        "Description": "standard",
+        "Listes des OF": "OF-1122"
+      }
+    },
+    "input_email": "Salut,\n\nOrders List : client Global Trade date commande 18 avril date livraison 28 avril liste produits farine 2000kg commande CMD-112 description standard listes OF OF-1122"
+  },
+  {
+    "output": {
+      "label": "Orders List",
+      "type": "DATATABLE",
+      "email_id": "1643",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "Tunisia Import",
+        "Date Commande": "20/04/2026",
+        "Date Livraison Demandée ": "25/04/2026",
+        "Liste des Produits": "huile 1500L",
+        "Commande": "CMD-334",
+        "Description": "express",
+        "Listes des OF": "OF-3344"
+      }
+    },
+    "input_email": "Bonjour,\n\nOrders List : client Tunisia Import date commande 20 avril date livraison 25 avril liste produits huile 1500L commande CMD-334 description express listes OF OF-3344"
+  },
+  {
+    "output": {
+      "label": "Orders List",
+      "type": "DATATABLE",
+      "email_id": "1644",
+      "confidence_score": null,
+      "attributes": {
+        "Client": "ExportCo",
+        "Date Commande": "22/04/2026",
+        "Date Livraison Demandée ": "05/05/2026",
+        "Liste des Produits": "epices 1000kg",
+        "Commande": "CMD-556",
+        "Description": "standard",
+        "Listes des OF": "OF-5566"
+      }
+    },
+    "input_email": "Hello,\n\nOrders List : client ExportCo date commande 22 avril date livraison 5 mai liste produits epices 1000kg commande CMD-556 description standard listes OF OF-5566"
+  },
+  {
+    "output": {
+      "label": "Work Orders List",
+      "type": "DATATABLE",
+      "email_id": "1645",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-112",
+        "Produit": "farine",
+        "Quantité": "2000 kg",
+        "Contrôles effectués": "qualité"
+      }
+    },
+    "input_email": "Salut,\n\nWork Orders List : commande CMD-112 produit farine quantité 2000 kg contrôles effectués qualité"
+  },
+  {
+    "output": {
+      "label": "Work Orders List",
+      "type": "DATATABLE",
+      "email_id": "1646",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-334",
+        "Produit": "huile olive",
+        "Quantité": "1500 L",
+        "Contrôles effectués": "conformité"
+      }
+    },
+    "input_email": "Bonjour,\n\nWork Orders List : commande CMD-334 produit huile olive quantité 1500 L contrôles effectués conformité"
+  },
+  {
+    "output": {
+      "label": "Work Orders List",
+      "type": "DATATABLE",
+      "email_id": "1647",
+      "confidence_score": null,
+      "attributes": {
+        "Commande": "CMD-556",
+        "Produit": "epices mix",
+        "Quantité": "1000 kg",
+        "Contrôles effectués": "qualité"
+      }
+    },
+    "input_email": "Hello,\n\nWork Orders List : commande CMD-556 produit epices mix quantité 1000 kg contrôles effectués qualité"
+  },
+  {
+    "output": {
+      "label": "Products List",
+      "type": "DATATABLE",
+      "email_id": "1648",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-001",
+        "Nom": "farine",
+        "DCI": "farine blanche",
+        "Produit": "farine",
+        "Forme": "poudre",
+        "Quantité": "1000 kg",
+        "Description": "farine premium",
+        "Conditions de Conservation": "sec",
+        "Température min (°C)": "15",
+        "Température max (°C)": "25"
+      }
+    },
+    "input_email": "Salut,\n\nProducts List : référence P-001 nom farine DCI farine blanche produit farine forme poudre quantité 1000 kg description farine premium conditions sec temp min 15 max 25"
+  },
+  {
+    "output": {
+      "label": "Products List",
+      "type": "DATATABLE",
+      "email_id": "1649",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-002",
+        "Nom": "huile olive",
+        "DCI": "huile extra vierge",
+        "Produit": "huile",
+        "Forme": "liquide",
+        "Quantité": "500 L",
+        "Description": "huile tunisienne",
+        "Conditions de Conservation": "frais",
+        "Température min (°C)": "10",
+        "Température max (°C)": "20"
+      }
+    },
+    "input_email": "Bonjour,\n\nProducts List : référence P-002 nom huile olive DCI huile extra vierge produit huile forme liquide quantité 500 L description huile tunisienne conditions frais temp min 10 max 20"
+  },
+  {
+    "output": {
+      "label": "Products List",
+      "type": "DATATABLE",
+      "email_id": "1650",
+      "confidence_score": null,
+      "attributes": {
+        "Référence ": "P-003",
+        "Nom": "epices mix",
+        "DCI": "mélange oriental",
+        "Produit": "epices",
+        "Forme": "poudre",
+        "Quantité": "800 kg",
+        "Description": "épices pour cuisine",
+        "Conditions de Conservation": "sec",
+        "Température min (°C)": "18",
+        "Température max (°C)": "25"
+      }
+    },
+    "input_email": "Hello,\n\nProducts List : référence P-003 nom epices mix DCI mélange oriental produit epices forme poudre quantité 800 kg description épices pour cuisine conditions sec temp min 18 max 25"
+  },
+  {
+    "output": {
+      "label": "Zones and Equipment List",
+      "type": "DATATABLE",
+      "email_id": "1651",
+      "confidence_score": null,
+      "attributes": {
+        "Identification ": "Z1",
+        "Zone et Equipement": "Ligne production 1",
+        "Analyse des Dangers (HACCP)": "oui",
+        "Identification des Dangers": "Identification des Dangers",
+        "Dangers Biologiques": "bactéries",
+        "Dangers Chimiques": "résidus",
+        "Dangers Physiques": "métal",
+        "Évaluation des Dangers": "Évaluation des Dangers",
+        "Probabilité d'Occurrence": "faible",
+        "Gravité": "moyenne",
+        "Documentation des Dangers": "Documentation des Dangers",
+        "Justification": "0",
+        "Arbre de Décision HSCCP": "Arbre de Décision HSCCP",
+        "Q1/Existence de mesure de contrôle": "oui",
+        "Q2/ La mesure de contrôle élimine le danger": "oui",
+        "Q3/Exitance d'une étape qui élimine danger": "non",
+        "CCP": "oui"
+      }
+    },
+    "input_email": "Salut,\n\nZones and Equipment List : identification Z1 zone Ligne production 1 analyse dangers HACCP oui dangers biologiques bactéries chimiques résidus physiques métal évaluation probabilité faible gravité moyenne documentation justification 0 arbre Q1 oui Q2 oui Q3 non CCP oui"
+  },
+  {
+    "output": {
+      "label": "Zones and Equipment List",
+      "type": "DATATABLE",
+      "email_id": "1652",
+      "confidence_score": null,
+      "attributes": {
+        "Identification ": "Z2",
+        "Zone et Equipement": "Entrepôt stockage",
+        "Analyse des Dangers (HACCP)": "oui",
+        "Identification des Dangers": "Identification des Dangers",
+        "Dangers Biologiques": "moisissures",
+        "Dangers Chimiques": "pesticides",
+        "Dangers Physiques": "poussière",
+        "Évaluation des Dangers": "Évaluation des Dangers",
+        "Probabilité d'Occurrence": "moyenne",
+        "Gravité": "faible",
+        "Documentation des Dangers": "Documentation des Dangers",
+        "Justification": "0",
+        "Arbre de Décision HSCCP": "Arbre de Décision HSCCP",
+        "Q1/Existence de mesure de contrôle": "oui",
+        "Q2/ La mesure de contrôle élimine le danger": "non",
+        "Q3/Exitance d'une étape qui élimine danger": "oui",
+        "CCP": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\nZones and Equipment List : identification Z2 zone Entrepôt stockage analyse dangers HACCP oui dangers biologiques moisissures chimiques pesticides physiques poussière évaluation probabilité moyenne gravité faible documentation justification 0 arbre Q1 oui Q2 non Q3 oui CCP non"
+  },
+  {
+    "output": {
+      "label": "Zones and Equipment List",
+      "type": "DATATABLE",
+      "email_id": "1653",
+      "confidence_score": null,
+      "attributes": {
+        "Identification ": "Z3",
+        "Zone et Equipement": "Atelier emballage",
+        "Analyse des Dangers (HACCP)": "oui",
+        "Identification des Dangers": "Identification des Dangers",
+        "Dangers Biologiques": "contamination",
+        "Dangers Chimiques": "plastique",
+        "Dangers Physiques": "verre",
+        "Évaluation des Dangers": "Évaluation des Dangers",
+        "Probabilité d'Occurrence": "faible",
+        "Gravité": "haute",
+        "Documentation des Dangers": "Documentation des Dangers",
+        "Justification": "0",
+        "Arbre de Décision HSCCP": "Arbre de Décision HSCCP",
+        "Q1/Existence de mesure de contrôle": "oui",
+        "Q2/ La mesure de contrôle élimine le danger": "oui",
+        "Q3/Exitance d'une étape qui élimine danger": "oui",
+        "CCP": "oui"
+      }
+    },
+    "input_email": "Hello,\n\nZones and Equipment List : identification Z3 zone Atelier emballage analyse dangers HACCP oui dangers biologiques contamination chimiques plastique physiques verre évaluation probabilité faible gravité haute documentation justification 0 arbre Q1 oui Q2 oui Q3 oui CCP oui"
+  },
+  {
+    "output": {
+      "label": "Raw Materials List",
+      "type": "DATATABLE",
+      "email_id": "1654",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-001",
+        "Libellé": "sucre brut",
+        "Quantité": "1000 kg"
+      }
+    },
+    "input_email": "Salut,\n\nRaw Materials List : référence MP-001 libellé sucre brut quantité 1000 kg"
+  },
+  {
+    "output": {
+      "label": "Raw Materials List",
+      "type": "DATATABLE",
+      "email_id": "1655",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-002",
+        "Libellé": "huile olive",
+        "Quantité": "500 L"
+      }
+    },
+    "input_email": "Bonjour,\n\nRaw Materials List : référence MP-002 libellé huile olive quantité 500 L"
+  },
+  {
+    "output": {
+      "label": "Raw Materials List",
+      "type": "DATATABLE",
+      "email_id": "1656",
+      "confidence_score": null,
+      "attributes": {
+        "Référence": "MP-003",
+        "Libellé": "epices mix",
+        "Quantité": "800 kg"
+      }
+    },
+    "input_email": "Hello,\n\nRaw Materials List : référence MP-003 libellé epices mix quantité 800 kg"
+  },
+  {
+    "output": {
+      "label": "Enquête de satisfaction des gérant",
+      "type": "DATATABLE",
+      "email_id": "1657",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "20/04/2026",
+        " Nom et prénom": "Ahmed Khelifi",
+        "Fonction ": "gérant",
+        " Évaluation": "très satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "bonnes",
+        "Les ressources disponibles ": "suffisantes",
+        "La charge de travail ": "acceptable",
+        " La formation du personnel": "suffisante",
+        "La communication avec Service Client": "bonne",
+        "La communication avec Service achat": "moyenne",
+        "La communication avec chef secteur": "excellente",
+        "La connaissance en matière sécurité de travail": "bonne",
+        " La culture QHSE": "forte",
+        "Degré de satisfaction ": "élevé",
+        "Votre degré de satisfaction général ": "très satisfait",
+        "Observation/proposition": "continuer ainsi"
+      }
+    },
+    "input_email": "Bonjour,\n\nEnquête de satisfaction des gérant date 20 avril nom Ahmed Khelifi fonction gérant évaluation très satisfait conditions travail bonnes ressources suffisantes charge acceptable formation suffisante communication client bonne achat moyenne chef excellente sécurité bonne culture QHSE forte degré élevé général très satisfait observation continuer ainsi"
+  },
+  {
+    "output": {
+      "label": "Enquête de satisfaction des gérant",
+      "type": "DATATABLE",
+      "email_id": "1658",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "22/04/2026",
+        " Nom et prénom": "Leila Trabelsi",
+        "Fonction ": "gérante",
+        " Évaluation": "satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "moyennes",
+        "Les ressources disponibles ": "à améliorer",
+        "La charge de travail ": "lourde",
+        " La formation du personnel": "insuffisante",
+        "La communication avec Service Client": "bonne",
+        "La communication avec Service achat": "bonne",
+        "La communication avec chef secteur": "moyenne",
+        "La connaissance en matière sécurité de travail": "bonne",
+        " La culture QHSE": "moyenne",
+        "Degré de satisfaction ": "moyen",
+        "Votre degré de satisfaction général ": "satisfait",
+        "Observation/proposition": "plus de formation"
+      }
+    },
+    "input_email": "Salut,\n\nEnquête de satisfaction des gérant date 22 avril nom Leila Trabelsi fonction gérante évaluation satisfait conditions moyennes ressources à améliorer charge lourde formation insuffisante communication client bonne achat bonne chef moyenne sécurité bonne culture QHSE moyenne degré moyen général satisfait observation plus de formation"
+  },
+  {
+    "output": {
+      "label": "Enquête de satisfaction des gérant",
+      "type": "DATATABLE",
+      "email_id": "1659",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "25/04/2026",
+        " Nom et prénom": "Karim Mansour",
+        "Fonction ": "gérant",
+        " Évaluation": "très satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "excellentes",
+        "Les ressources disponibles ": "suffisantes",
+        "La charge de travail ": "acceptable",
+        " La formation du personnel": "bonne",
+        "La communication avec Service Client": "excellente",
+        "La communication avec Service achat": "excellente",
+        "La communication avec chef secteur": "excellente",
+        "La connaissance en matière sécurité de travail": "excellente",
+        " La culture QHSE": "forte",
+        "Degré de satisfaction ": "élevé",
+        "Votre degré de satisfaction général ": "très satisfait",
+        "Observation/proposition": "aucune"
+      }
+    },
+    "input_email": "Bonjour,\n\nEnquête de satisfaction des gérant date 25 avril nom Karim Mansour fonction gérant évaluation très satisfait conditions excellentes ressources suffisantes charge acceptable formation bonne communication tout excellente culture QHSE forte degré élevé général très satisfait observation aucune"
+  },
+  {
+    "output": {
+      "label": "Manager Satisfaction Survey",
+      "type": "DATATABLE",
+      "email_id": "1660",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "20/04/2026",
+        " Nom et prénom": "Ahmed Khelifi",
+        "Fonction ": "gérant",
+        " Évaluation": "très satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "bonnes",
+        "Les ressources disponibles ": "suffisantes",
+        "La charge de travail ": "acceptable",
+        " La formation du personnel": "suffisante",
+        "La communication avec Service Client": "bonne",
+        "La communication avec Service achat": "moyenne",
+        "La communication avec chef secteur": "excellente",
+        "La connaissance en matière sécurité de travail": "bonne",
+        " La culture QHSE": "forte",
+        "Degré de satisfaction ": "élevé",
+        "Votre degré de satisfaction général ": "très satisfait",
+        "Observation/proposition": "continuer ainsi"
+      }
+    },
+    "input_email": "Salut,\n\nManager Satisfaction Survey date 20 avril nom Ahmed Khelifi fonction gérant évaluation très satisfait conditions travail bonnes ressources suffisantes charge acceptable formation suffisante communication client bonne achat moyenne chef excellente sécurité bonne culture QHSE forte degré élevé général très satisfait observation continuer ainsi"
+  },
+  {
+    "output": {
+      "label": "Manager Satisfaction Survey",
+      "type": "DATATABLE",
+      "email_id": "1661",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "22/04/2026",
+        " Nom et prénom": "Leila Trabelsi",
+        "Fonction ": "gérante",
+        " Évaluation": "satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "moyennes",
+        "Les ressources disponibles ": "à améliorer",
+        "La charge de travail ": "lourde",
+        " La formation du personnel": "insuffisante",
+        "La communication avec Service Client": "bonne",
+        "La communication avec Service achat": "bonne",
+        "La communication avec chef secteur": "moyenne",
+        "La connaissance en matière sécurité de travail": "bonne",
+        " La culture QHSE": "moyenne",
+        "Degré de satisfaction ": "moyen",
+        "Votre degré de satisfaction général ": "satisfait",
+        "Observation/proposition": "plus de formation"
+      }
+    },
+    "input_email": "Bonjour,\n\nManager Satisfaction Survey date 22 avril nom Leila Trabelsi fonction gérante évaluation satisfait conditions moyennes ressources à améliorer charge lourde formation insuffisante communication client bonne achat bonne chef moyenne sécurité bonne culture QHSE moyenne degré moyen général satisfait observation plus de formation"
+  },
+  {
+    "output": {
+      "label": "Manager Satisfaction Survey",
+      "type": "DATATABLE",
+      "email_id": "1662",
+      "confidence_score": null,
+      "attributes": {
+        "Date enquête": "25/04/2026",
+        " Nom et prénom": "Karim Mansour",
+        "Fonction ": "gérant",
+        " Évaluation": "très satisfait",
+        "Satisfait     ": "Satisfait    ",
+        "Moyennement satisfait   ": "Moyennement satisfait     ",
+        "insatisfait ": "insatisfait   ",
+        "Les conditions de travail ": "excellentes",
+        "Les ressources disponibles ": "suffisantes",
+        "La charge de travail ": "acceptable",
+        " La formation du personnel": "bonne",
+        "La communication avec Service Client": "excellente",
+        "La communication avec Service achat": "excellente",
+        "La communication avec chef secteur": "excellente",
+        "La connaissance en matière sécurité de travail": "excellente",
+        " La culture QHSE": "forte",
+        "Degré de satisfaction ": "élevé",
+        "Votre degré de satisfaction général ": "très satisfait",
+        "Observation/proposition": "aucune"
+      }
+    },
+    "input_email": "Hello,\n\nManager Satisfaction Survey date 25 avril nom Karim Mansour fonction gérant évaluation très satisfait conditions excellentes ressources suffisantes charge acceptable formation bonne communication tout excellente culture QHSE forte degré élevé général très satisfait observation aucune"
+  },
+  {
+    "output": {
+      "label": "Liste outils a emporter",
+      "type": "DATATABLE",
+      "email_id": "1663",
+      "confidence_score": null,
+      "attributes": {
+        "Code Outil": "OUT-001",
+        "Libelle": "marteau"
+      }
+    },
+    "input_email": "Salut,\n\nListe outils a emporter : code OUT-001 libelle marteau"
+  },
+  {
+    "output": {
+      "label": "Liste outils a emporter",
+      "type": "DATATABLE",
+      "email_id": "1664",
+      "confidence_score": null,
+      "attributes": {
+        "Code Outil": "OUT-002",
+        "Libelle": "visseuse"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe outils a emporter : code OUT-002 libelle visseuse"
+  },
+  {
+    "output": {
+      "label": "Liste outils a emporter",
+      "type": "DATATABLE",
+      "email_id": "1665",
+      "confidence_score": null,
+      "attributes": {
+        "Code Outil": "OUT-003",
+        "Libelle": "casque"
+      }
+    },
+    "input_email": "Hello,\n\nListe outils a emporter : code OUT-003 libelle casque"
+  },
+  {
+    "output": {
+      "label": "Liste des employés",
+      "type": "DATATABLE",
+      "email_id": "1666",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Sami Ben Ahmed",
+        "Poste ": "manager IT",
+        "Département": "IT",
+        "Date Embauche": "01/02/2026",
+        "Type Contrat": "CDI",
+        "Solde Congé": "15 jours",
+        "Mail": "sami.ba@company.tn",
+        "Téléphone ": "98765432",
+        "Adresse ": "Tunis"
+      }
+    },
+    "input_email": "Salut,\n\nListe des employés : nom Sami Ben Ahmed poste manager IT departement IT date embauche 1 fev 2026 type contrat CDI solde congé 15 jours mail sami.ba@company.tn téléphone 98765432 adresse Tunis"
+  },
+  {
+    "output": {
+      "label": "Liste des employés",
+      "type": "DATATABLE",
+      "email_id": "1667",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Fatma Ben Romdhane",
+        "Poste ": "responsable RH",
+        "Département": "RH",
+        "Date Embauche": "15/03/2026",
+        "Type Contrat": "CDI",
+        "Solde Congé": "12 jours",
+        "Mail": "fatma.br@company.tn",
+        "Téléphone ": "23456789",
+        "Adresse ": "Sfax"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des employés : nom Fatma Ben Romdhane poste responsable RH departement RH date embauche 15 mars 2026 type contrat CDI solde congé 12 jours mail fatma.br@company.tn téléphone 23456789 adresse Sfax"
+  },
+  {
+    "output": {
+      "label": "Liste des employés",
+      "type": "DATATABLE",
+      "email_id": "1668",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Karim Mansour",
+        "Poste ": "directeur commercial",
+        "Département": "vente",
+        "Date Embauche": "10/05/2022",
+        "Type Contrat": "CDI",
+        "Solde Congé": "18 jours",
+        "Mail": "karim.m@company.tn",
+        "Téléphone ": "45678901",
+        "Adresse ": "Tunis"
+      }
+    },
+    "input_email": "Hello,\n\nListe des employés : nom Karim Mansour poste directeur commercial departement vente date embauche 10 mai 2022 type contrat CDI solde congé 18 jours mail karim.m@company.tn téléphone 45678901 adresse Tunis"
+  },
+  {
+    "output": {
+      "label": "Employee Table",
+      "type": "DATATABLE",
+      "email_id": "1669",
+      "confidence_score": null,
+      "attributes": {
+        "Full Name": "Sami Ben Ahmed",
+        "Position": "IT Manager",
+        "Department": "IT",
+        "Hire Date": "01/02/2026",
+        "Contract Type": "CDI",
+        "Leave Balance": "15 days",
+        "Email": "sami.ba@company.tn",
+        "Phone Number": "98765432",
+        "Address": "Tunis"
+      }
+    },
+    "input_email": "Salut,\n\nEmployee Table : full name Sami Ben Ahmed position IT Manager department IT hire date 1 feb 2026 contract type CDI leave balance 15 days email sami.ba@company.tn phone 98765432 address Tunis"
+  },
+  {
+    "output": {
+      "label": "Employee Table",
+      "type": "DATATABLE",
+      "email_id": "1670",
+      "confidence_score": null,
+      "attributes": {
+        "Full Name": "Fatma Ben Romdhane",
+        "Position": "HR Manager",
+        "Department": "HR",
+        "Hire Date": "15/03/2026",
+        "Contract Type": "CDI",
+        "Leave Balance": "12 days",
+        "Email": "fatma.br@company.tn",
+        "Phone Number": "23456789",
+        "Address": "Sfax"
+      }
+    },
+    "input_email": "Bonjour,\n\nEmployee Table : full name Fatma Ben Romdhane position HR Manager department HR hire date 15 mar 2026 contract type CDI leave balance 12 days email fatma.br@company.tn phone 23456789 address Sfax"
+  },
+  {
+    "output": {
+      "label": "Employee Table",
+      "type": "DATATABLE",
+      "email_id": "1671",
+      "confidence_score": null,
+      "attributes": {
+        "Full Name": "Karim Mansour",
+        "Position": "Commercial Director",
+        "Department": "Sales",
+        "Hire Date": "10/05/2022",
+        "Contract Type": "CDI",
+        "Leave Balance": "18 days",
+        "Email": "karim.m@company.tn",
+        "Phone Number": "45678901",
+        "Address": "Tunis"
+      }
+    },
+    "input_email": "Hello,\n\nEmployee Table : full name Karim Mansour position Commercial Director department Sales hire date 10 may 2022 contract type CDI leave balance 18 days email karim.m@company.tn phone 45678901 address Tunis"
+  },
+  {
+    "output": {
+      "label": "Employee Contract Management",
+      "type": "DATATABLE",
+      "email_id": "1672",
+      "confidence_score": null,
+      "attributes": {
+        "Employee ID": "EMP-001",
+        "Full Name": "Sami Ben Ahmed",
+        "Position": "IT Manager",
+        "Hire Date": "01/02/2026",
+        "Contract Type": "CDI",
+        "Seniority": "2 mois",
+        "Contract Start Date": "01/02/2026",
+        "Contract End Date": "31/01/2027",
+        "Current Net Salary": "2500 TND",
+        "Category": "cadre",
+        "Grade": "1",
+        "Contract": "0",
+        "Resignation Letter (if applicable)": "0"
+      }
+    },
+    "input_email": "Salut,\n\nEmployee Contract Management : employee ID EMP-001 full name Sami Ben Ahmed position IT Manager hire date 1 feb 2026 contract type CDI seniority 2 mois contract start 1 feb 2026 end 31 jan 2027 current net salary 2500 TND category cadre grade 1 contract 0 resignation 0"
+  },
+  {
+    "output": {
+      "label": "Employee Contract Management",
+      "type": "DATATABLE",
+      "email_id": "1673",
+      "confidence_score": null,
+      "attributes": {
+        "Employee ID": "EMP-002",
+        "Full Name": "Fatma Ben Romdhane",
+        "Position": "HR Manager",
+        "Hire Date": "15/03/2026",
+        "Contract Type": "CDI",
+        "Seniority": "1 mois",
+        "Contract Start Date": "15/03/2026",
+        "Contract End Date": "14/03/2027",
+        "Current Net Salary": "2200 TND",
+        "Category": "employé",
+        "Grade": "2",
+        "Contract": "0",
+        "Resignation Letter (if applicable)": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nEmployee Contract Management : employee ID EMP-002 full name Fatma Ben Romdhane position HR Manager hire date 15 mar 2026 contract type CDI seniority 1 mois contract start 15 mar 2026 end 14 mar 2027 current net salary 2200 TND category employé grade 2 contract 0 resignation 0"
+  },
+  {
+    "output": {
+      "label": "Employee Contract Management",
+      "type": "DATATABLE",
+      "email_id": "1674",
+      "confidence_score": null,
+      "attributes": {
+        "Employee ID": "EMP-003",
+        "Full Name": "Karim Mansour",
+        "Position": "Commercial Director",
+        "Hire Date": "10/05/2022",
+        "Contract Type": "CDI",
+        "Seniority": "3 ans",
+        "Contract Start Date": "10/05/2022",
+        "Contract End Date": "09/05/2027",
+        "Current Net Salary": "2800 TND",
+        "Category": "cadre",
+        "Grade": "1",
+        "Contract": "0",
+        "Resignation Letter (if applicable)": "0"
+      }
+    },
+    "input_email": "Hello,\n\nEmployee Contract Management : employee ID EMP-003 full name Karim Mansour position Commercial Director hire date 10 may 2022 contract type CDI seniority 3 ans contract start 10 may 2022 end 9 may 2027 current net salary 2800 TND category cadre grade 1 contract 0 resignation 0"
+  },
+  {
+    "output": {
+      "label": "Description des taches ",
+      "type": "DATATABLE",
+      "email_id": "1675",
+      "confidence_score": null,
+      "attributes": {
+        "Tache": "contrôle qualité"
+      }
+    },
+    "input_email": "Salut,\n\nDescription des taches : tache contrôle qualité"
+  },
+  {
+    "output": {
+      "label": "Description des taches ",
+      "type": "DATATABLE",
+      "email_id": "1676",
+      "confidence_score": null,
+      "attributes": {
+        "Tache": "gestion stock"
+      }
+    },
+    "input_email": "Bonjour,\n\nDescription des taches : tache gestion stock"
+  },
+  {
+    "output": {
+      "label": "Description des taches ",
+      "type": "DATATABLE",
+      "email_id": "1677",
+      "confidence_score": null,
+      "attributes": {
+        "Tache": "maintenance machine"
+      }
+    },
+    "input_email": "Hello,\n\nDescription des taches : tache maintenance machine"
+  },
+  {
+    "output": {
+      "label": " FORMATION ACADÉMIQUE",
+      "type": "DATATABLE",
+      "email_id": "1678",
+      "confidence_score": null,
+      "attributes": {
+        " Année": "2022",
+        " Durée": "2 ans",
+        " FORMATION": "master ingénieur",
+        " Établissement": "ENIT",
+        " Résultats obtenus": "mention bien"
+      }
+    },
+    "input_email": "Salut,\n\n FORMATION ACADÉMIQUE : année 2022 durée 2 ans formation master ingénieur établissement ENIT résultats mention bien"
+  },
+  {
+    "output": {
+      "label": " FORMATION ACADÉMIQUE",
+      "type": "DATATABLE",
+      "email_id": "1679",
+      "confidence_score": null,
+      "attributes": {
+        " Année": "2024",
+        " Durée": "3 ans",
+        " FORMATION": "licence gestion",
+        " Établissement": "ISG",
+        " Résultats obtenus": "mention très bien"
+      }
+    },
+    "input_email": "Bonjour,\n\n FORMATION ACADÉMIQUE : année 2024 durée 3 ans formation licence gestion établissement ISG résultats mention très bien"
+  },
+  {
+    "output": {
+      "label": " FORMATION ACADÉMIQUE",
+      "type": "DATATABLE",
+      "email_id": "1680",
+      "confidence_score": null,
+      "attributes": {
+        " Année": "2023",
+        " Durée": "1 an",
+        " FORMATION": "certificat commercial",
+        " Établissement": "centre formation",
+        " Résultats obtenus": "réussi"
+      }
+    },
+    "input_email": "Hello,\n\n FORMATION ACADÉMIQUE : année 2023 durée 1 an formation certificat commercial établissement centre formation résultats réussi"
+  },
+  {
+    "output": {
+      "label": " RENSEIGNEMENTS PROFESSIONNELS",
+      "type": "DATATABLE",
+      "email_id": "1681",
+      "confidence_score": null,
+      "attributes": {
+        " De": "01/01/2024",
+        " À": "31/12/2025",
+        " Entreprise": "Tech Solutions",
+        " Poste": "ingénieur qualité",
+        " Salaire brut": "2800 TND",
+        " Motif de départ": "nouveau poste"
+      }
+    },
+    "input_email": "Salut,\n\n RENSEIGNEMENTS PROFESSIONNELS : de 1 jan 2024 à 31 dec 2025 entreprise Tech Solutions poste ingénieur qualité salaire brut 2800 TND motif de départ nouveau poste"
+  },
+  {
+    "output": {
+      "label": " RENSEIGNEMENTS PROFESSIONNELS",
+      "type": "DATATABLE",
+      "email_id": "1682",
+      "confidence_score": null,
+      "attributes": {
+        " De": "01/03/2023",
+        " À": "31/12/2023",
+        " Entreprise": "HR Pro",
+        " Poste": "assistante RH",
+        " Salaire brut": "1800 TND",
+        " Motif de départ": "fin contrat"
+      }
+    },
+    "input_email": "Bonjour,\n\n RENSEIGNEMENTS PROFESSIONNELS : de 1 mars 2023 à 31 dec 2023 entreprise HR Pro poste assistante RH salaire brut 1800 TND motif de départ fin contrat"
+  },
+  {
+    "output": {
+      "label": " RENSEIGNEMENTS PROFESSIONNELS",
+      "type": "DATATABLE",
+      "email_id": "1683",
+      "confidence_score": null,
+      "attributes": {
+        " De": "01/06/2022",
+        " À": "31/12/2022",
+        " Entreprise": "Sales Co",
+        " Poste": "vendeur",
+        " Salaire brut": "2200 TND",
+        " Motif de départ": "promotion"
+      }
+    },
+    "input_email": "Hello,\n\n RENSEIGNEMENTS PROFESSIONNELS : de 1 juin 2022 à 31 dec 2022 entreprise Sales Co poste vendeur salaire brut 2200 TND motif de départ promotion"
+  },
+  {
+    "output": {
+      "label": " Logiciels maîtrisés",
+      "type": "DATATABLE",
+      "email_id": "1684",
+      "confidence_score": null,
+      "attributes": {
+        "Logiciels": "AutoCAD",
+        "Niveau": "avancé"
+      }
+    },
+    "input_email": "Salut,\n\n Logiciels maîtrisés : logiciels AutoCAD niveau avancé"
+  },
+  {
+    "output": {
+      "label": " Logiciels maîtrisés",
+      "type": "DATATABLE",
+      "email_id": "1685",
+      "confidence_score": null,
+      "attributes": {
+        "Logiciels": "Excel",
+        "Niveau": "expert"
+      }
+    },
+    "input_email": "Bonjour,\n\n Logiciels maîtrisés : logiciels Excel niveau expert"
+  },
+  {
+    "output": {
+      "label": " Logiciels maîtrisés",
+      "type": "DATATABLE",
+      "email_id": "1686",
+      "confidence_score": null,
+      "attributes": {
+        "Logiciels": "CRM",
+        "Niveau": "intermédiaire"
+      }
+    },
+    "input_email": "Hello,\n\n Logiciels maîtrisés : logiciels CRM niveau intermédiaire"
+  },
+  {
+    "output": {
+      "label": " Langues écrites",
+      "type": "DATATABLE",
+      "email_id": "1687",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "français",
+        "Niveau": "courant"
+      }
+    },
+    "input_email": "Salut,\n\n Langues écrites : langue français niveau courant"
+  },
+  {
+    "output": {
+      "label": " Langues écrites",
+      "type": "DATATABLE",
+      "email_id": "1688",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "anglais",
+        "Niveau": "intermédiaire"
+      }
+    },
+    "input_email": "Bonjour,\n\n Langues écrites : langue anglais niveau intermédiaire"
+  },
+  {
+    "output": {
+      "label": " Langues écrites",
+      "type": "DATATABLE",
+      "email_id": "1689",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "arabe",
+        "Niveau": "courant"
+      }
+    },
+    "input_email": "Hello,\n\n Langues écrites : langue arabe niveau courant"
+  },
+  {
+    "output": {
+      "label": " Langues parlées",
+      "type": "DATATABLE",
+      "email_id": "1690",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "français",
+        "Niveau": "courant"
+      }
+    },
+    "input_email": "Salut,\n\n Langues parlées : langue français niveau courant"
+  },
+  {
+    "output": {
+      "label": " Langues parlées",
+      "type": "DATATABLE",
+      "email_id": "1691",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "anglais",
+        "Niveau": "intermédiaire"
+      }
+    },
+    "input_email": "Bonjour,\n\n Langues parlées : langue anglais niveau intermédiaire"
+  },
+  {
+    "output": {
+      "label": " Langues parlées",
+      "type": "DATATABLE",
+      "email_id": "1692",
+      "confidence_score": null,
+      "attributes": {
+        " Langue": "arabe",
+        "Niveau": "courant"
+      }
+    },
+    "input_email": "Hello,\n\n Langues parlées : langue arabe niveau courant"
+  },
+  {
+    "output": {
+      "label": " Compétences spécifiques souhaitées",
+      "type": "DATATABLE",
+      "email_id": "1693",
+      "confidence_score": null,
+      "attributes": {
+        " Compétences spécifiques souhaitées": "maitrise HACCP"
+      }
+    },
+    "input_email": "Salut,\n\n Compétences spécifiques souhaitées : compétences spécifiques souhaitées maitrise HACCP"
+  },
+  {
+    "output": {
+      "label": " Compétences spécifiques souhaitées",
+      "type": "DATATABLE",
+      "email_id": "1694",
+      "confidence_score": null,
+      "attributes": {
+        " Compétences spécifiques souhaitées": "connaissance ISO 22000"
+      }
+    },
+    "input_email": "Bonjour,\n\n Compétences spécifiques souhaitées : compétences spécifiques souhaitées connaissance ISO 22000"
+  },
+  {
+    "output": {
+      "label": " Compétences spécifiques souhaitées",
+      "type": "DATATABLE",
+      "email_id": "1695",
+      "confidence_score": null,
+      "attributes": {
+        " Compétences spécifiques souhaitées": "expérience en contrôle qualité"
+      }
+    },
+    "input_email": "Hello,\n\n Compétences spécifiques souhaitées : compétences spécifiques souhaitées expérience en contrôle qualité"
+  },
+  {
+    "output": {
+      "label": " Évaluation comportementale",
+      "type": "DATATABLE",
+      "email_id": "1696",
+      "confidence_score": null,
+      "attributes": {
+        " Évaluation comportementale": "travail en équipe",
+        " Note": "9/10"
+      }
+    },
+    "input_email": "Salut,\n\n Évaluation comportementale : évaluation comportementale travail en équipe note 9/10"
+  },
+  {
+    "output": {
+      "label": " Évaluation comportementale",
+      "type": "DATATABLE",
+      "email_id": "1697",
+      "confidence_score": null,
+      "attributes": {
+        " Évaluation comportementale": "adaptabilité",
+        " Note": "8/10"
+      }
+    },
+    "input_email": "Bonjour,\n\n Évaluation comportementale : évaluation comportementale adaptabilité note 8/10"
+  },
+  {
+    "output": {
+      "label": " Évaluation comportementale",
+      "type": "DATATABLE",
+      "email_id": "1698",
+      "confidence_score": null,
+      "attributes": {
+        " Évaluation comportementale": "leadership",
+        " Note": "7/10"
+      }
+    },
+    "input_email": "Hello,\n\n Évaluation comportementale : évaluation comportementale leadership note 7/10"
+  },
+  {
+    "output": {
+      "label": " Dates préférées pour la formation",
+      "type": "DATATABLE",
+      "email_id": "1699",
+      "confidence_score": null,
+      "attributes": {
+        " Date souhaitée": "15/05/2026"
+      }
+    },
+    "input_email": "Salut,\n\n Dates préférées pour la formation : date souhaitée 15 mai 2026"
+  },
+  {
+    "output": {
+      "label": " Dates préférées pour la formation",
+      "type": "DATATABLE",
+      "email_id": "1700",
+      "confidence_score": null,
+      "attributes": {
+        " Date souhaitée": "20/05/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\n Dates préférées pour la formation : date souhaitée 20 mai 2026"
+  },
+  {
+    "output": {
+      "label": " Dates préférées pour la formation",
+      "type": "DATATABLE",
+      "email_id": "1701",
+      "confidence_score": null,
+      "attributes": {
+        " Date souhaitée": "25/05/2026"
+      }
+    },
+    "input_email": "Hello,\n\n Dates préférées pour la formation : date souhaitée 25 mai 2026"
+  },
+  {
+    "output": {
+      "label": " Dates de formation prévues\t",
+      "type": "DATATABLE",
+      "email_id": "1702",
+      "confidence_score": null,
+      "attributes": {
+        " De": "20/05/2026",
+        " A": "21/05/2026"
+      }
+    },
+    "input_email": "Salut,\n\n Dates de formation prévues : de 20 mai 2026 à 21 mai 2026"
+  },
+  {
+    "output": {
+      "label": " Dates de formation prévues\t",
+      "type": "DATATABLE",
+      "email_id": "1703",
+      "confidence_score": null,
+      "attributes": {
+        " De": "25/05/2026",
+        " A": "25/05/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\n Dates de formation prévues : de 25 mai 2026 à 25 mai 2026"
+  },
+  {
+    "output": {
+      "label": " Dates de formation prévues\t",
+      "type": "DATATABLE",
+      "email_id": "1704",
+      "confidence_score": null,
+      "attributes": {
+        " De": "28/05/2026",
+        " A": "29/05/2026"
+      }
+    },
+    "input_email": "Hello,\n\n Dates de formation prévues : de 28 mai 2026 à 29 mai 2026"
+  },
+  {
+    "output": {
+      "label": "analyse swot",
+      "type": "DATATABLE",
+      "email_id": "1705",
+      "confidence_score": null,
+      "attributes": {
+        "SWOT": "Strengths",
+        "descr": "équipe expérimentée"
+      }
+    },
+    "input_email": "Salut,\n\nanalyse swot : SWOT Strengths descr équipe expérimentée"
+  },
+  {
+    "output": {
+      "label": "analyse swot",
+      "type": "DATATABLE",
+      "email_id": "1706",
+      "confidence_score": null,
+      "attributes": {
+        "SWOT": "Weaknesses",
+        "descr": "manque de budget"
+      }
+    },
+    "input_email": "Bonjour,\n\nanalyse swot : SWOT Weaknesses descr manque de budget"
+  },
+  {
+    "output": {
+      "label": "analyse swot",
+      "type": "DATATABLE",
+      "email_id": "1707",
+      "confidence_score": null,
+      "attributes": {
+        "SWOT": "Opportunities",
+        "descr": "nouveaux marchés"
+      }
+    },
+    "input_email": "Hello,\n\nanalyse swot : SWOT Opportunities descr nouveaux marchés"
+  },
+  {
+    "output": {
+      "label": "Plan annuel de formation",
+      "type": "DATATABLE",
+      "email_id": "1708",
+      "confidence_score": null,
+      "attributes": {
+        "Année": "2026",
+        "Thématique": "sécurité",
+        "Objectif visé": "prévention risques",
+        "Mode": "présentiel",
+        "Durée": "2 jours",
+        "Date prévue": "20/05/2026",
+        "Organisme de formation": "interne",
+        "Budget estimé": "3000 TND",
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": null
+      }
+    },
+    "input_email": "Salut,\n\nPlan annuel de formation : année 2026 thématique sécurité objectif prévention risques mode présentiel durée 2 jours date prévue 20 mai organisme interne budget estimé 3000 TND"
+  },
+  {
+    "output": {
+      "label": "Plan annuel de formation",
+      "type": "DATATABLE",
+      "email_id": "1709",
+      "confidence_score": null,
+      "attributes": {
+        "Année": "2026",
+        "Thématique": "qualité",
+        "Objectif visé": "ISO 22000",
+        "Mode": "en ligne",
+        "Durée": "1 jour",
+        "Date prévue": "25/05/2026",
+        "Organisme de formation": "HSE Expert",
+        "Budget estimé": "1500 TND",
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": null
+      }
+    },
+    "input_email": "Bonjour,\n\nPlan annuel de formation : année 2026 thématique qualité objectif ISO 22000 mode en ligne durée 1 jour date prévue 25 mai organisme HSE Expert budget estimé 1500 TND"
+  },
+  {
+    "output": {
+      "label": "Plan annuel de formation",
+      "type": "DATATABLE",
+      "email_id": "1710",
+      "confidence_score": null,
+      "attributes": {
+        "Année": "2026",
+        "Thématique": "vente",
+        "Objectif visé": "techniques négociation",
+        "Mode": "présentiel",
+        "Durée": "2 jours",
+        "Date prévue": "28/05/2026",
+        "Organisme de formation": "interne",
+        "Budget estimé": "2500 TND",
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": null
+      }
+    },
+    "input_email": "Hello,\n\nPlan annuel de formation : année 2026 thématique vente objectif techniques négociation mode présentiel durée 2 jours date prévue 28 mai organisme interne budget estimé 2500 TND"
+  },
+  {
+    "output": {
+      "label": "Organisme de formation",
+      "type": "DATATABLE",
+      "email_id": "1711",
+      "confidence_score": null,
+      "attributes": {
+        "Organisme de formation": "HSE Expert",
+        "Thématique": "sécurité",
+        "Matricule fiscale ": "MF-987654",
+        "Adresse": "Tunis",
+        "Email": "contact@hseexpert.tn",
+        "Nom Formateur": "Ahmed Khelifi",
+        "CV Formateur": "joint",
+        "Niveau formateur": "expert",
+        "Brochure": "joint"
+      }
+    },
+    "input_email": "Salut,\n\nOrganisme de formation : organisme HSE Expert thématique sécurité matricule fiscale MF-987654 adresse Tunis email contact@hseexpert.tn nom formateur Ahmed Khelifi CV joint niveau expert brochure joint"
+  },
+  {
+    "output": {
+      "label": "Organisme de formation",
+      "type": "DATATABLE",
+      "email_id": "1712",
+      "confidence_score": null,
+      "attributes": {
+        "Organisme de formation": "Quality Center",
+        "Thématique": "qualité",
+        "Matricule fiscale ": "MF-112233",
+        "Adresse": "Sfax",
+        "Email": "info@qualitycenter.tn",
+        "Nom Formateur": "Leila Trabelsi",
+        "CV Formateur": "joint",
+        "Niveau formateur": "certifié",
+        "Brochure": "joint"
+      }
+    },
+    "input_email": "Bonjour,\n\nOrganisme de formation : organisme Quality Center thématique qualité matricule fiscale MF-112233 adresse Sfax email info@qualitycenter.tn nom formateur Leila Trabelsi CV joint niveau certifié brochure joint"
+  },
+  {
+    "output": {
+      "label": "Organisme de formation",
+      "type": "DATATABLE",
+      "email_id": "1713",
+      "confidence_score": null,
+      "attributes": {
+        "Organisme de formation": "Sales Academy",
+        "Thématique": "vente",
+        "Matricule fiscale ": "MF-445566",
+        "Adresse": "Tunis",
+        "Email": "contact@salesacademy.tn",
+        "Nom Formateur": "Karim Mansour",
+        "CV Formateur": "joint",
+        "Niveau formateur": "senior",
+        "Brochure": "joint"
+      }
+    },
+    "input_email": "Hello,\n\nOrganisme de formation : organisme Sales Academy thématique vente matricule fiscale MF-445566 adresse Tunis email contact@salesacademy.tn nom formateur Karim Mansour CV joint niveau senior brochure joint"
+  },
+  {
+    "output": {
+      "label": "Table des Voitures",
+      "type": "DATATABLE",
+      "email_id": "1714",
+      "confidence_score": null,
+      "attributes": {
+        "Modèle voiture": "Toyota Corolla",
+        "Couleur": "blanc",
+        "Matricule": "123 TUN 456"
+      }
+    },
+    "input_email": "Salut,\n\nTable des Voitures : modèle Toyota Corolla couleur blanc matricule 123 TUN 456"
+  },
+  {
+    "output": {
+      "label": "Table des Voitures",
+      "type": "DATATABLE",
+      "email_id": "1715",
+      "confidence_score": null,
+      "attributes": {
+        "Modèle voiture": "Peugeot 208",
+        "Couleur": "noir",
+        "Matricule": "789 TUN 012"
+      }
+    },
+    "input_email": "Bonjour,\n\nTable des Voitures : modèle Peugeot 208 couleur noir matricule 789 TUN 012"
+  },
+  {
+    "output": {
+      "label": "Table des Voitures",
+      "type": "DATATABLE",
+      "email_id": "1716",
+      "confidence_score": null,
+      "attributes": {
+        "Modèle voiture": "Renault Clio",
+        "Couleur": "rouge",
+        "Matricule": "345 TUN 678"
+      }
+    },
+    "input_email": "Hello,\n\nTable des Voitures : modèle Renault Clio couleur rouge matricule 345 TUN 678"
+  },
+  {
+    "output": {
+      "label": "Liste de Fournisseurs",
+      "type": "DATATABLE",
+      "email_id": "1717",
+      "confidence_score": null,
+      "attributes": {
+        "Raison Sociale": "SugarTun SA",
+        "Matricule Fiscal": "MF-SU-001",
+        "Type": "matière première",
+        "Adresse": "Sfax",
+        "Email": "contact@sugartun.tn",
+        "Téléphone": "98765432",
+        "Statut": "actif"
+      }
+    },
+    "input_email": "Salut,\n\nListe de Fournisseurs : raison sociale SugarTun SA matricule fiscal MF-SU-001 type matière première adresse Sfax email contact@sugartun.tn téléphone 98765432 statut actif"
+  },
+  {
+    "output": {
+      "label": "Liste de Fournisseurs",
+      "type": "DATATABLE",
+      "email_id": "1718",
+      "confidence_score": null,
+      "attributes": {
+        "Raison Sociale": "OilPro SARL",
+        "Matricule Fiscal": "MF-OI-002",
+        "Type": "huile",
+        "Adresse": "Tunis",
+        "Email": "info@oilpro.tn",
+        "Téléphone": "23456789",
+        "Statut": "actif"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe de Fournisseurs : raison sociale OilPro SARL matricule fiscal MF-OI-002 type huile adresse Tunis email info@oilpro.tn téléphone 23456789 statut actif"
+  },
+  {
+    "output": {
+      "label": "Liste de Fournisseurs",
+      "type": "DATATABLE",
+      "email_id": "1719",
+      "confidence_score": null,
+      "attributes": {
+        "Raison Sociale": "SpiceCo SA",
+        "Matricule Fiscal": "MF-SP-003",
+        "Type": "épices",
+        "Adresse": "Ariana",
+        "Email": "contact@spiceco.tn",
+        "Téléphone": "45678901",
+        "Statut": "actif"
+      }
+    },
+    "input_email": "Hello,\n\nListe de Fournisseurs : raison sociale SpiceCo SA matricule fiscal MF-SP-003 type épices adresse Ariana email contact@spiceco.tn téléphone 45678901 statut actif"
+  },
+  {
+    "output": {
+      "label": "EXTENSION",
+      "type": "DATATABLE",
+      "email_id": "1720",
+      "confidence_score": null,
+      "attributes": {
+        "Jours": "5",
+        "Date": "25/04/2026",
+        "Responsable SCG": "oui",
+        "Superviseur-ST": "oui",
+        "Superviseur HSE": "oui"
+      }
+    },
+    "input_email": "Salut,\n\nEXTENSION : jours 5 date 25 avril responsable SCG oui superviseur-ST oui superviseur HSE oui"
+  },
+  {
+    "output": {
+      "label": "EXTENSION",
+      "type": "DATATABLE",
+      "email_id": "1721",
+      "confidence_score": null,
+      "attributes": {
+        "Jours": "3",
+        "Date": "28/04/2026",
+        "Responsable SCG": "oui",
+        "Superviseur-ST": "oui",
+        "Superviseur HSE": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\nEXTENSION : jours 3 date 28 avril responsable SCG oui superviseur-ST oui superviseur HSE non"
+  },
+  {
+    "output": {
+      "label": "EXTENSION",
+      "type": "DATATABLE",
+      "email_id": "1722",
+      "confidence_score": null,
+      "attributes": {
+        "Jours": "7",
+        "Date": "02/05/2026",
+        "Responsable SCG": "oui",
+        "Superviseur-ST": "non",
+        "Superviseur HSE": "oui"
+      }
+    },
+    "input_email": "Hello,\n\nEXTENSION : jours 7 date 2 mai responsable SCG oui superviseur-ST non superviseur HSE oui"
+  },
+  {
+    "output": {
+      "label": "Catalogue de support",
+      "type": "DATATABLE",
+      "email_id": "1723",
+      "confidence_score": null,
+      "attributes": {
+        "Catégorie": "IT",
+        "Sous Catégorie": "panne ordinateur",
+        "Article": "PC bureau"
+      }
+    },
+    "input_email": "Salut,\n\nCatalogue de support : catégorie IT sous catégorie panne ordinateur article PC bureau"
+  },
+  {
+    "output": {
+      "label": "Catalogue de support",
+      "type": "DATATABLE",
+      "email_id": "1724",
+      "confidence_score": null,
+      "attributes": {
+        "Catégorie": "RH",
+        "Sous Catégorie": "accès système",
+        "Article": "compte employé"
+      }
+    },
+    "input_email": "Bonjour,\n\nCatalogue de support : catégorie RH sous catégorie accès système article compte employé"
+  },
+  {
+    "output": {
+      "label": "Catalogue de support",
+      "type": "DATATABLE",
+      "email_id": "1725",
+      "confidence_score": null,
+      "attributes": {
+        "Catégorie": "production",
+        "Sous Catégorie": "machine",
+        "Article": "ligne 3"
+      }
+    },
+    "input_email": "Hello,\n\nCatalogue de support : catégorie production sous catégorie machine article ligne 3"
+  },
+  {
+    "output": {
+      "label": "Inventaire",
+      "type": "DATATABLE",
+      "email_id": "1726",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "ordinateurs",
+        "Article": "PC bureau"
+      }
+    },
+    "input_email": "Salut,\n\nInventaire : nom ordinateurs article PC bureau"
+  },
+  {
+    "output": {
+      "label": "Inventaire",
+      "type": "DATATABLE",
+      "email_id": "1727",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "imprimantes",
+        "Article": "imprimante laser"
+      }
+    },
+    "input_email": "Bonjour,\n\nInventaire : nom imprimantes article imprimante laser"
+  },
+  {
+    "output": {
+      "label": "Inventaire",
+      "type": "DATATABLE",
+      "email_id": "1728",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "casques sécurité",
+        "Article": "casque jaune"
+      }
+    },
+    "input_email": "Hello,\n\nInventaire : nom casques sécurité article casque jaune"
+  },
+  {
+    "output": {
+      "label": "Table",
+      "type": "DATATABLE",
+      "email_id": "1729",
+      "confidence_score": null,
+      "attributes": {
+        "Liste": "taches quotidiennes",
+        "text": "contrôle qualité"
+      }
+    },
+    "input_email": "Salut,\n\nTable : liste taches quotidiennes text contrôle qualité"
+  },
+  {
+    "output": {
+      "label": "Table",
+      "type": "DATATABLE",
+      "email_id": "1730",
+      "confidence_score": null,
+      "attributes": {
+        "Liste": "processus RH",
+        "text": "recrutement"
+      }
+    },
+    "input_email": "Bonjour,\n\nTable : liste processus RH text recrutement"
+  },
+  {
+    "output": {
+      "label": "Table",
+      "type": "DATATABLE",
+      "email_id": "1731",
+      "confidence_score": null,
+      "attributes": {
+        "Liste": "contrôle qualité",
+        "text": "vérification produit"
+      }
+    },
+    "input_email": "Hello,\n\nTable : liste contrôle qualité text vérification produit"
+  },
+  {
+    "output": {
+      "label": "Suivi de Projet Digital",
+      "type": "DATATABLE",
+      "email_id": "1732",
+      "confidence_score": null,
+      "attributes": {
+        "Nom du Projet": "Site Web E-commerce",
+        "Description du Projet": "refonte site vente en ligne",
+        "Chef de Projet": "Ahmed Khelifi",
+        "Email du Responsable": "ahmed.k@company.tn",
+        "Date de Début": "18/04/2026",
+        "Heure de Début": "09:00",
+        "Date et Heure Livraison": "15/06/2026 18:00",
+        "Statut du Projet": "en cours",
+        "Priorité": "haute",
+        "Type de Projet": "développement",
+        "Modules Associés": "paiement catalogue",
+        "Fichiers Associés": "0",
+        "Photo du projet": "0",
+        "Galerie d’images des interfaces": "0",
+        "Budget Alloué": "35000 TND",
+        "Avancement du Projet": "40%",
+        "Table Équipe Projet": "oui",
+        "Date de Livraison": "15/06/2026"
+      }
+    },
+    "input_email": "Salut,\n\nSuivi de Projet Digital : nom Site Web E-commerce description refonte site vente en ligne chef Ahmed Khelifi email ahmed.k@company.tn date début 18 avril heure 09h00 date livraison 15 juin 18h statut en cours priorité haute type développement modules paiement catalogue fichiers 0 photo 0 galerie 0 budget 35000 avancement 40% table équipe oui date livraison 15 juin"
+  },
+  {
+    "output": {
+      "label": "Suivi de Projet Digital",
+      "type": "DATATABLE",
+      "email_id": "1733",
+      "confidence_score": null,
+      "attributes": {
+        "Nom du Projet": "App Mobile Commande",
+        "Description du Projet": "développement application commande",
+        "Chef de Projet": "Leila Trabelsi",
+        "Email du Responsable": "leila.t@company.tn",
+        "Date de Début": "20/04/2026",
+        "Heure de Début": "10:00",
+        "Date et Heure Livraison": "30/06/2026 17:00",
+        "Statut du Projet": "en cours",
+        "Priorité": "moyenne",
+        "Type de Projet": "développement",
+        "Modules Associés": "authentification panier",
+        "Fichiers Associés": "0",
+        "Photo du projet": "0",
+        "Galerie d’images des interfaces": "0",
+        "Budget Alloué": "28000 TND",
+        "Avancement du Projet": "25%",
+        "Table Équipe Projet": "oui",
+        "Date de Livraison": "30/06/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nSuivi de Projet Digital : nom App Mobile Commande description développement application commande chef Leila Trabelsi email leila.t@company.tn date début 20 avril heure 10h00 date livraison 30 juin 17h statut en cours priorité moyenne type développement modules authentification panier fichiers 0 photo 0 galerie 0 budget 28000 avancement 25% table équipe oui date livraison 30 juin"
+  },
+  {
+    "output": {
+      "label": "Suivi de Projet Digital",
+      "type": "DATATABLE",
+      "email_id": "1734",
+      "confidence_score": null,
+      "attributes": {
+        "Nom du Projet": "ERP Intégration",
+        "Description du Projet": "mise en place ERP",
+        "Chef de Projet": "Karim Mansour",
+        "Email du Responsable": "karim.m@company.tn",
+        "Date de Début": "22/04/2026",
+        "Heure de Début": "08:30",
+        "Date et Heure Livraison": "31/07/2026 18:00",
+        "Statut du Projet": "planifié",
+        "Priorité": "haute",
+        "Type de Projet": "intégration",
+        "Modules Associés": "stock finance",
+        "Fichiers Associés": "0",
+        "Photo du projet": "0",
+        "Galerie d’images des interfaces": "0",
+        "Budget Alloué": "65000 TND",
+        "Avancement du Projet": "10%",
+        "Table Équipe Projet": "oui",
+        "Date de Livraison": "31/07/2026"
+      }
+    },
+    "input_email": "Hello,\n\nSuivi de Projet Digital : nom ERP Intégration description mise en place ERP chef Karim Mansour email karim.m@company.tn date début 22 avril heure 08h30 date livraison 31 juillet 18h statut planifié priorité haute type intégration modules stock finance fichiers 0 photo 0 galerie 0 budget 65000 avancement 10% table équipe oui date livraison 31 juillet"
+  },
+  {
+    "output": {
+      "label": "Table Équipe Projet",
+      "type": "DATATABLE",
+      "email_id": "1735",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Ahmed Khelifi",
+        "Rôle": "chef projet",
+        "Email": "ahmed.k@company.tn",
+        "Charge horaire": "40h"
+      }
+    },
+    "input_email": "Salut,\n\nTable Équipe Projet : nom Ahmed Khelifi rôle chef projet email ahmed.k@company.tn charge horaire 40h"
+  },
+  {
+    "output": {
+      "label": "Table Équipe Projet",
+      "type": "DATATABLE",
+      "email_id": "1736",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Leila Trabelsi",
+        "Rôle": "développeur",
+        "Email": "leila.t@company.tn",
+        "Charge horaire": "30h"
+      }
+    },
+    "input_email": "Bonjour,\n\nTable Équipe Projet : nom Leila Trabelsi rôle développeur email leila.t@company.tn charge horaire 30h"
+  },
+  {
+    "output": {
+      "label": "Table Équipe Projet",
+      "type": "DATATABLE",
+      "email_id": "1737",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et Prénom": "Karim Mansour",
+        "Rôle": "designer",
+        "Email": "karim.m@company.tn",
+        "Charge horaire": "25h"
+      }
+    },
+    "input_email": "Hello,\n\nTable Équipe Projet : nom Karim Mansour rôle designer email karim.m@company.tn charge horaire 25h"
+  },
+  {
+    "output": {
+      "label": "Statut stock",
+      "type": "DATATABLE",
+      "email_id": "1738",
+      "confidence_score": null,
+      "attributes": {
+        "Matiere": "farine",
+        "Etat actuel": "disponible"
+      }
+    },
+    "input_email": "Salut,\n\nStatut stock : matiere farine etat actuel disponible"
+  },
+  {
+    "output": {
+      "label": "Statut stock",
+      "type": "DATATABLE",
+      "email_id": "1739",
+      "confidence_score": null,
+      "attributes": {
+        "Matiere": "huile olive",
+        "Etat actuel": "en stock"
+      }
+    },
+    "input_email": "Bonjour,\n\nStatut stock : matiere huile olive etat actuel en stock"
+  },
+  {
+    "output": {
+      "label": "Statut stock",
+      "type": "DATATABLE",
+      "email_id": "1740",
+      "confidence_score": null,
+      "attributes": {
+        "Matiere": "epices mix",
+        "Etat actuel": "faible"
+      }
+    },
+    "input_email": "Hello,\n\nStatut stock : matiere epices mix etat actuel faible"
+  },
+  {
+    "output": {
+      "label": "Réclamation Client",
+      "type": "DATATABLE",
+      "email_id": "1741",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Sami Ben Ahmed",
+        "Prénom": "Sami",
+        "Contrat Concernée ": "CTR-2026-045",
+        "N° Tél": "98765432",
+        "Type de réclamation": "qualité",
+        "Objet": "produit defectueux",
+        "Pièce jointe": "photo",
+        "Description": "couleur anormale"
+      }
+    },
+    "input_email": "Salut,\n\nRéclamation Client : nom Sami Ben Ahmed prénom Sami contrat CTR-2026-045 tel 98765432 type réclamation qualité objet produit defectueux pièce jointe photo description couleur anormale"
+  },
+  {
+    "output": {
+      "label": "Réclamation Client",
+      "type": "DATATABLE",
+      "email_id": "1742",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Leila Trabelsi",
+        "Prénom": "Leila",
+        "Contrat Concernée ": "CTR-2026-067",
+        "N° Tél": "23456789",
+        "Type de réclamation": "delai",
+        "Objet": "retard livraison",
+        "Pièce jointe": "0",
+        "Description": "commande pas arrivée"
+      }
+    },
+    "input_email": "Bonjour,\n\nRéclamation Client : nom Leila Trabelsi prénom Leila contrat CTR-2026-067 tel 23456789 type réclamation delai objet retard livraison pièce jointe 0 description commande pas arrivée"
+  },
+  {
+    "output": {
+      "label": "Réclamation Client",
+      "type": "DATATABLE",
+      "email_id": "1743",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Karim Mansour",
+        "Prénom": "Karim",
+        "Contrat Concernée ": "CTR-2026-089",
+        "N° Tél": "45678901",
+        "Type de réclamation": "service",
+        "Objet": "mauvais accueil",
+        "Pièce jointe": "email",
+        "Description": "client mécontent"
+      }
+    },
+    "input_email": "Hello,\n\nRéclamation Client : nom Karim Mansour prénom Karim contrat CTR-2026-089 tel 45678901 type réclamation service objet mauvais accueil pièce jointe email description client mécontent"
+  },
+  {
+    "output": {
+      "label": "Liste de Projets",
+      "type": "DATATABLE",
+      "email_id": "1744",
+      "confidence_score": null,
+      "attributes": {
+        "Titre de projet": "Site Web E-commerce",
+        "Date de début": "18/04/2026",
+        "Pièce jointe": "0",
+        "Type de projet": "développement"
+      }
+    },
+    "input_email": "Salut,\n\nListe de Projets : titre de projet Site Web E-commerce date de début 18 avril pièce jointe 0 type de projet développement"
+  },
+  {
+    "output": {
+      "label": "Liste de Projets",
+      "type": "DATATABLE",
+      "email_id": "1745",
+      "confidence_score": null,
+      "attributes": {
+        "Titre de projet": "App Mobile Commande",
+        "Date de début": "20/04/2026",
+        "Pièce jointe": "0",
+        "Type de projet": "développement"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe de Projets : titre de projet App Mobile Commande date de début 20 avril pièce jointe 0 type de projet développement"
+  },
+  {
+    "output": {
+      "label": "Liste de Projets",
+      "type": "DATATABLE",
+      "email_id": "1746",
+      "confidence_score": null,
+      "attributes": {
+        "Titre de projet": "ERP Intégration",
+        "Date de début": "22/04/2026",
+        "Pièce jointe": "0",
+        "Type de projet": "intégration"
+      }
+    },
+    "input_email": "Hello,\n\nListe de Projets : titre de projet ERP Intégration date de début 22 avril pièce jointe 0 type de projet intégration"
+  },
+  {
+    "output": {
+      "label": "Exécution",
+      "type": "DATATABLE",
+      "email_id": "1747",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "exécution phase 1",
+        "pj": "0"
+      }
+    },
+    "input_email": "Salut,\n\nExécution : titre exécution phase 1 pj 0"
+  },
+  {
+    "output": {
+      "label": "Exécution",
+      "type": "DATATABLE",
+      "email_id": "1748",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "exécution phase 2",
+        "pj": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nExécution : titre exécution phase 2 pj 0"
+  },
+  {
+    "output": {
+      "label": "Exécution",
+      "type": "DATATABLE",
+      "email_id": "1749",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "exécution finale",
+        "pj": "0"
+      }
+    },
+    "input_email": "Hello,\n\nExécution : titre exécution finale pj 0"
+  },
+  {
+    "output": {
+      "label": "Envoie",
+      "type": "DATATABLE",
+      "email_id": "1750",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "envoie client",
+        "pj": "0"
+      }
+    },
+    "input_email": "Salut,\n\nEnvoie : titre envoie client pj 0"
+  },
+  {
+    "output": {
+      "label": "Envoie",
+      "type": "DATATABLE",
+      "email_id": "1751",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "envoie interne",
+        "pj": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nEnvoie : titre envoie interne pj 0"
+  },
+  {
+    "output": {
+      "label": "Envoie",
+      "type": "DATATABLE",
+      "email_id": "1752",
+      "confidence_score": null,
+      "attributes": {
+        "titre": "envoie rapport",
+        "pj": "0"
+      }
+    },
+    "input_email": "Hello,\n\nEnvoie : titre envoie rapport pj 0"
+  },
+  {
+    "output": {
+      "label": "Liste des Articles / Matières",
+      "type": "DATATABLE",
+      "email_id": "1753",
+      "confidence_score": null,
+      "attributes": {
+        "Libellé": "farine blanche",
+        "Catégorie": "céréales",
+        "Sous Catégorie": "farine",
+        "Quantité Stock": "1000 kg",
+        "Unité": "kg",
+        "Prix Unitaire": "2 TND",
+        "Fournisseur Habituel": "SugarTun"
+      }
+    },
+    "input_email": "Salut,\n\nListe des Articles / Matières : libellé farine blanche catégorie céréales sous catégorie farine quantité stock 1000 kg unité kg prix unitaire 2 TND fournisseur habituel SugarTun"
+  },
+  {
+    "output": {
+      "label": "Liste des Articles / Matières",
+      "type": "DATATABLE",
+      "email_id": "1754",
+      "confidence_score": null,
+      "attributes": {
+        "Libellé": "huile olive",
+        "Catégorie": "huiles",
+        "Sous Catégorie": "huile",
+        "Quantité Stock": "500 L",
+        "Unité": "L",
+        "Prix Unitaire": "8 TND",
+        "Fournisseur Habituel": "OilPro"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des Articles / Matières : libellé huile olive catégorie huiles sous catégorie huile quantité stock 500 L unité L prix unitaire 8 TND fournisseur habituel OilPro"
+  },
+  {
+    "output": {
+      "label": "Liste des Articles / Matières",
+      "type": "DATATABLE",
+      "email_id": "1755",
+      "confidence_score": null,
+      "attributes": {
+        "Libellé": "epices mix",
+        "Catégorie": "épices",
+        "Sous Catégorie": "mélange",
+        "Quantité Stock": "800 kg",
+        "Unité": "kg",
+        "Prix Unitaire": "5 TND",
+        "Fournisseur Habituel": "SpiceCo"
+      }
+    },
+    "input_email": "Hello,\n\nListe des Articles / Matières : libellé epices mix catégorie épices sous catégorie mélange quantité stock 800 kg unité kg prix unitaire 5 TND fournisseur habituel SpiceCo"
+  },
+  {
+    "output": {
+      "label": "Article",
+      "type": "DATATABLE",
+      "email_id": "1756",
+      "confidence_score": null,
+      "attributes": {
+        "Article": "farine",
+        "Quantité Stock": "1000 kg",
+        "Quantité demandée": "500 kg"
+      }
+    },
+    "input_email": "Salut,\n\nArticle : article farine quantité stock 1000 kg quantité demandée 500 kg"
+  },
+  {
+    "output": {
+      "label": "Article",
+      "type": "DATATABLE",
+      "email_id": "1757",
+      "confidence_score": null,
+      "attributes": {
+        "Article": "huile olive",
+        "Quantité Stock": "500 L",
+        "Quantité demandée": "200 L"
+      }
+    },
+    "input_email": "Bonjour,\n\nArticle : article huile olive quantité stock 500 L quantité demandée 200 L"
+  },
+  {
+    "output": {
+      "label": "Article",
+      "type": "DATATABLE",
+      "email_id": "1758",
+      "confidence_score": null,
+      "attributes": {
+        "Article": "epices mix",
+        "Quantité Stock": "800 kg",
+        "Quantité demandée": "300 kg"
+      }
+    },
+    "input_email": "Hello,\n\nArticle : article epices mix quantité stock 800 kg quantité demandée 300 kg"
+  },
+  {
+    "output": {
+      "label": "Libye",
+      "type": "DATATABLE",
+      "email_id": "1759",
+      "confidence_score": null,
+      "attributes": {
+        "Nom de l’entreprise": "Oil Libya",
+        "Contact": "Mohamed",
+        "Lieu exact": "Tripoli",
+        "Domaine": "huile",
+        "Besoin principal observé": "fourniture huile",
+        "Solution via Lunflow": "oui",
+        "Solution via App spécifique": "non",
+        "Arguments clés ": "prix compétitif",
+        "Valeur ajoutée proposée": "livraison rapide"
+      }
+    },
+    "input_email": "Salut,\n\nLibye : nom entreprise Oil Libya contact Mohamed lieu exact Tripoli domaine huile besoin principal observé fourniture huile solution via Lunflow oui solution via App spécifique non arguments clés prix compétitif valeur ajoutée proposée livraison rapide"
+  },
+  {
+    "output": {
+      "label": "Libye",
+      "type": "DATATABLE",
+      "email_id": "1760",
+      "confidence_score": null,
+      "attributes": {
+        "Nom de l’entreprise": "Spice Libya",
+        "Contact": "Ahmed",
+        "Lieu exact": "Benghazi",
+        "Domaine": "épices",
+        "Besoin principal observé": "fourniture épices",
+        "Solution via Lunflow": "oui",
+        "Solution via App spécifique": "oui",
+        "Arguments clés ": "qualité premium",
+        "Valeur ajoutée proposée": "support technique"
+      }
+    },
+    "input_email": "Bonjour,\n\nLibye : nom entreprise Spice Libya contact Ahmed lieu exact Benghazi domaine épices besoin principal observé fourniture épices solution via Lunflow oui solution via App spécifique oui arguments clés qualité premium valeur ajoutée proposée support technique"
+  },
+  {
+    "output": {
+      "label": "Libye",
+      "type": "DATATABLE",
+      "email_id": "1761",
+      "confidence_score": null,
+      "attributes": {
+        "Nom de l’entreprise": "Sugar Libya",
+        "Contact": "Karim",
+        "Lieu exact": "Tripoli",
+        "Domaine": "sucre",
+        "Besoin principal observé": "fourniture sucre",
+        "Solution via Lunflow": "non",
+        "Solution via App spécifique": "non",
+        "Arguments clés ": "prix bas",
+        "Valeur ajoutée proposée": "volume important"
+      }
+    },
+    "input_email": "Hello,\n\nLibye : nom entreprise Sugar Libya contact Karim lieu exact Tripoli domaine sucre besoin principal observé fourniture sucre solution via Lunflow non solution via App spécifique non arguments clés prix bas valeur ajoutée proposée volume important"
+  },
+  {
+    "output": {
+      "label": " Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1765",
+      "confidence_score": null,
+      "attributes": {
+        " Produit": "farine",
+        " Quantité": "2000 kg"
+      }
+    },
+    "input_email": "Salut,\n\n Liste des Produits : produit farine quantité 2000 kg"
+  },
+  {
+    "output": {
+      "label": " Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1766",
+      "confidence_score": null,
+      "attributes": {
+        " Produit": "huile olive",
+        " Quantité": "1500 L"
+      }
+    },
+    "input_email": "Bonjour,\n\n Liste des Produits : produit huile olive quantité 1500 L"
+  },
+  {
+    "output": {
+      "label": " Liste des Produits",
+      "type": "DATATABLE",
+      "email_id": "1767",
+      "confidence_score": null,
+      "attributes": {
+        " Produit": "epices mix",
+        " Quantité": "1000 kg"
+      }
+    },
+    "input_email": "Hello,\n\n Liste des Produits : produit epices mix quantité 1000 kg"
+  },
+  {
+    "output": {
+      "label": "PLAN DE COMMUNICATION",
+      "type": "DATATABLE",
+      "email_id": "1768",
+      "confidence_score": null,
+      "attributes": {
+        "Document": "rapport mensuel",
+        "Quand ?": "fin du mois",
+        "Responsable": "Ahmed Khelifi",
+        "Public cible": "direction",
+        "Par quel moyen ?": "email"
+      }
+    },
+    "input_email": "Salut,\n\nPLAN DE COMMUNICATION : document rapport mensuel quand fin du mois responsable Ahmed Khelifi public cible direction par quel moyen email"
+  },
+  {
+    "output": {
+      "label": "PLAN DE COMMUNICATION",
+      "type": "DATATABLE",
+      "email_id": "1769",
+      "confidence_score": null,
+      "attributes": {
+        "Document": "newsletter",
+        "Quand ?": "chaque semaine",
+        "Responsable": "Leila Trabelsi",
+        "Public cible": "clients",
+        "Par quel moyen ?": "email"
+      }
+    },
+    "input_email": "Bonjour,\n\nPLAN DE COMMUNICATION : document newsletter quand chaque semaine responsable Leila Trabelsi public cible clients par quel moyen email"
+  },
+  {
+    "output": {
+      "label": "PLAN DE COMMUNICATION",
+      "type": "DATATABLE",
+      "email_id": "1770",
+      "confidence_score": null,
+      "attributes": {
+        "Document": "présentation",
+        "Quand ?": "avant réunion",
+        "Responsable": "Karim Mansour",
+        "Public cible": "équipe",
+        "Par quel moyen ?": "réunion"
+      }
+    },
+    "input_email": "Hello,\n\nPLAN DE COMMUNICATION : document présentation quand avant réunion responsable Karim Mansour public cible équipe par quel moyen réunion"
+  },
+  {
+    "output": {
+      "label": "KPI",
+      "type": "DATATABLE",
+      "email_id": "1771",
+      "confidence_score": null,
+      "attributes": {
+        "Processus": "production",
+        "Axe Politique": "qualité",
+        "Indicateurs de performance": "taux conformité",
+        "Formule": "bonnes / total",
+        "Fréquence de suivi": "mensuel",
+        "Responsable": "Ahmed Khelifi",
+        "Cible": "98%",
+        "Seuil": "95%",
+        "Janvier": "96%",
+        "Février": "97%",
+        "Mars": "98%",
+        "Avril": "99%",
+        "Mai": null,
+        "Juin": null,
+        "Juillet": null,
+        "Août": null,
+        "Septembre": null,
+        "Octobre": null,
+        "Novembre": null,
+        "Décembre": null,
+        "Tendance": "positive",
+        "Analyse des écarts / Amélioration": "en amélioration",
+        "Action": "formation"
+      }
+    },
+    "input_email": "Salut,\n\nKPI : processus production axe politique qualité indicateurs taux conformité formule bonnes / total fréquence mensuel responsable Ahmed Khelifi cible 98% seuil 95% janvier 96% février 97% mars 98% avril 99% tendance positive analyse en amélioration action formation"
+  },
+  {
+    "output": {
+      "label": "KPI",
+      "type": "DATATABLE",
+      "email_id": "1772",
+      "confidence_score": null,
+      "attributes": {
+        "Processus": "logistique",
+        "Axe Politique": "délais",
+        "Indicateurs de performance": "taux livraison à temps",
+        "Formule": "livraisons ok / total",
+        "Fréquence de suivi": "hebdomadaire",
+        "Responsable": "Leila Trabelsi",
+        "Cible": "95%",
+        "Seuil": "90%",
+        "Janvier": "92%",
+        "Février": "94%",
+        "Mars": "93%",
+        "Avril": null,
+        "Mai": null,
+        "Juin": null,
+        "Juillet": null,
+        "Août": null,
+        "Septembre": null,
+        "Octobre": null,
+        "Novembre": null,
+        "Décembre": null,
+        "Tendance": "stable",
+        "Analyse des écarts / Amélioration": "à surveiller",
+        "Action": "nouveau transporteur"
+      }
+    },
+    "input_email": "Bonjour,\n\nKPI : processus logistique axe politique délais indicateurs taux livraison à temps formule livraisons ok / total fréquence hebdomadaire responsable Leila Trabelsi cible 95% seuil 90% janvier 92% février 94% mars 93% tendance stable analyse à surveiller action nouveau transporteur"
+  },
+  {
+    "output": {
+      "label": "KPI",
+      "type": "DATATABLE",
+      "email_id": "1773",
+      "confidence_score": null,
+      "attributes": {
+        "Processus": "vente",
+        "Axe Politique": "commercial",
+        "Indicateurs de performance": "chiffre affaires",
+        "Formule": "ventes totales",
+        "Fréquence de suivi": "mensuel",
+        "Responsable": "Karim Mansour",
+        "Cible": "150000 TND",
+        "Seuil": "120000 TND",
+        "Janvier": "130000 TND",
+        "Février": "140000 TND",
+        "Mars": "135000 TND",
+        "Avril": null,
+        "Mai": null,
+        "Juin": null,
+        "Juillet": null,
+        "Août": null,
+        "Septembre": null,
+        "Octobre": null,
+        "Novembre": null,
+        "Décembre": null,
+        "Tendance": "positive",
+        "Analyse des écarts / Amélioration": "bonne progression",
+        "Action": "campagne"
+      }
+    },
+    "input_email": "Hello,\n\nKPI : processus vente axe politique commercial indicateurs chiffre affaires formule ventes totales fréquence mensuel responsable Karim Mansour cible 150000 TND seuil 120000 TND janvier 130000 février 140000 mars 135000 tendance positive analyse bonne progression action campagne"
+  },
+  {
+    "output": {
+      "label": "Liste des auditeurs interne et externes",
+      "type": "DATATABLE",
+      "email_id": "1774",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Ahmed Khelifi",
+        "Fonction": "ingénieur qualité",
+        "Type": "interne",
+        "Date formation": "10/03/2026",
+        "Qualifier": "oui",
+        "Certificat": "joint"
+      }
+    },
+    "input_email": "Salut,\n\nListe des auditeurs interne et externes : nom Ahmed Khelifi fonction ingénieur qualité type interne date formation 10 mars 2026 qualifier oui certificat joint"
+  },
+  {
+    "output": {
+      "label": "Liste des auditeurs interne et externes",
+      "type": "DATATABLE",
+      "email_id": "1775",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Leila Trabelsi",
+        "Fonction": "responsable RH",
+        "Type": "externe",
+        "Date formation": "15/03/2026",
+        "Qualifier": "oui",
+        "Certificat": "joint"
+      }
+    },
+    "input_email": "Bonjour,\n\nListe des auditeurs interne et externes : nom Leila Trabelsi fonction responsable RH type externe date formation 15 mars 2026 qualifier oui certificat joint"
+  },
+  {
+    "output": {
+      "label": "Liste des auditeurs interne et externes",
+      "type": "DATATABLE",
+      "email_id": "1776",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Karim Mansour",
+        "Fonction": "directeur commercial",
+        "Type": "interne",
+        "Date formation": "20/03/2026",
+        "Qualifier": "oui",
+        "Certificat": "joint"
+      }
+    },
+    "input_email": "Hello,\n\nListe des auditeurs interne et externes : nom Karim Mansour fonction directeur commercial type interne date formation 20 mars 2026 qualifier oui certificat joint"
+  },
+  {
+    "output": {
+      "label": "Enjeux, PIP et identification des risque",
+      "type": "DATATABLE",
+      "email_id": "1777",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "18/04/2026",
+        "Enjeux, PIP et identification des risque": "risque retard livraison"
+      }
+    },
+    "input_email": "Salut,\n\nEnjeux, PIP et identification des risque : date 18 avril enjeux PIP et identification des risque risque retard livraison"
+  },
+  {
+    "output": {
+      "label": "Enjeux, PIP et identification des risque",
+      "type": "DATATABLE",
+      "email_id": "1778",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "20/04/2026",
+        "Enjeux, PIP et identification des risque": "enjeu qualité produit"
+      }
+    },
+    "input_email": "Bonjour,\n\nEnjeux, PIP et identification des risque : date 20 avril enjeux PIP et identification des risque enjeu qualité produit"
+  },
+  {
+    "output": {
+      "label": "Enjeux, PIP et identification des risque",
+      "type": "DATATABLE",
+      "email_id": "1779",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "22/04/2026",
+        "Enjeux, PIP et identification des risque": "risque manque stock"
+      }
+    },
+    "input_email": "Hello,\n\nEnjeux, PIP et identification des risque : date 22 avril enjeux PIP et identification des risque risque manque stock"
+  },
+  {
+    "output": {
+      "label": "PLAN D’ACTION",
+      "type": "DATATABLE",
+      "email_id": "1780",
+      "confidence_score": null,
+      "attributes": {
+        "Source et identification de l'action": "audit interne",
+        "Date": "18/04/2026",
+        "Source": "audit",
+        "Problème / Sujet": "non conformité emballage",
+        "Type Action": "corrective",
+        "Titre de l'action": "changer fournisseur emballage",
+        "Responsable action": "Karim Mansour",
+        "Suivi de réalisation": "en cours",
+        "Date de réa.prévue": "25/04/2026",
+        "Date de Réa. Effectif": null,
+        "Efficacité": null,
+        "Effi. %": null,
+        "Clôture": null,
+        "Clôturée": "non",
+        "Date Clôture": null,
+        "Commentaire": "suivi hebdo"
+      }
+    },
+    "input_email": "Salut,\n\nPLAN D’ACTION : source et identification de l'action audit interne date 18 avril source audit problème non conformité emballage type corrective titre changer fournisseur emballage responsable Karim Mansour suivi en cours date réa prévue 25 avril clôturée non commentaire suivi hebdo"
+  },
+  {
+    "output": {
+      "label": "PLAN D’ACTION",
+      "type": "DATATABLE",
+      "email_id": "1781",
+      "confidence_score": null,
+      "attributes": {
+        "Source et identification de l'action": "réclamation client",
+        "Date": "20/04/2026",
+        "Source": "client",
+        "Problème / Sujet": "retard livraison",
+        "Type Action": "préventive",
+        "Titre de l'action": "nouveau transporteur",
+        "Responsable action": "Leila Trabelsi",
+        "Suivi de réalisation": "terminé",
+        "Date de réa.prévue": "22/04/2026",
+        "Date de Réa. Effectif": "22/04/2026",
+        "Efficacité": "100%",
+        "Effi. %": "100",
+        "Clôture": "oui",
+        "Clôturée": "oui",
+        "Date Clôture": "23/04/2026",
+        "Commentaire": "ok"
+      }
+    },
+    "input_email": "Bonjour,\n\nPLAN D’ACTION : source et identification de l'action réclamation client date 20 avril source client problème retard livraison type préventive titre nouveau transporteur responsable Leila Trabelsi suivi terminé date réa prévue 22 avril date réa effectif 22 avril efficacité 100% clôture oui clôturée oui date clôture 23 avril commentaire ok"
+  },
+  {
+    "output": {
+      "label": "PLAN D’ACTION",
+      "type": "DATATABLE",
+      "email_id": "1782",
+      "confidence_score": null,
+      "attributes": {
+        "Source et identification de l'action": "contrôle interne",
+        "Date": "22/04/2026",
+        "Source": "contrôle",
+        "Problème / Sujet": "stock faible",
+        "Type Action": "corrective",
+        "Titre de l'action": "augmenter commande",
+        "Responsable action": "Ahmed Khelifi",
+        "Suivi de réalisation": "en cours",
+        "Date de réa.prévue": "28/04/2026",
+        "Date de Réa. Effectif": null,
+        "Efficacité": null,
+        "Effi. %": null,
+        "Clôture": null,
+        "Clôturée": "non",
+        "Date Clôture": null,
+        "Commentaire": "suivi stock"
+      }
+    },
+    "input_email": "Hello,\n\nPLAN D’ACTION : source et identification de l'action contrôle interne date 22 avril source contrôle problème stock faible type corrective titre augmenter commande responsable Ahmed Khelifi suivi en cours date réa prévue 28 avril clôturée non commentaire suivi stock"
+  }
+]

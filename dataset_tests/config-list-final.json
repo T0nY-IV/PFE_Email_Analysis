@@ -5260,7 +5260,7 @@
     "output": {
       "label": "PLAN D’ACTION",
       "type": "DATATABLE",
-      "email_id": "12",
+      "email_id": "11",
       "confidence_score": null,
       "attributes": {
         "Source et identification de l'action": null,

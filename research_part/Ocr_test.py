@@ -1,4 +1,4 @@
-from Ocr_methodes import Ocr_pdf, Ocr_picture, Ocr_pdf_Init
+from completed_project.Ocr_methodes import Ocr_pdf, Ocr_picture, Ocr_pdf_Init
 
 layout = Ocr_pdf_Init()
 pdf_content = Ocr_pdf("C:/Users/loq/Downloads/emails_output/attachments/9576/Rapport.pdf", layout)

@@ -1,0 +1,4178 @@
+[
+  {
+    "output": {
+      "label": "Content validation",
+      "type": "WORKFLOW",
+      "email_id": "1207",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Salut equipe,\n\nvoici une content validation a faire rien de special ce coup ci. Peux tu checker svp ? Merci d avance"
+  },
+  {
+    "output": {
+      "label": "Content validation",
+      "type": "WORKFLOW",
+      "email_id": "1208",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Bonjour,\n\ncontent validation workflow vide a valider rapidement. Rien a ajouter. Bonne journee"
+  },
+  {
+    "output": {
+      "label": "Content validation",
+      "type": "WORKFLOW",
+      "email_id": "1209",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Hello,\n\njuste un content validation simple pour test. Ok pour toi ? Merci"
+  },
+  {
+    "output": {
+      "label": "gestion des absences ",
+      "type": "WORKFLOW",
+      "email_id": "1210",
+      "confidence_score": null,
+      "attributes": {
+        "Date sortie": "20/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\ngestion des absences avec date sortie le 20 avril 2026. Rien d autre a preciser. Merci"
+  },
+  {
+    "output": {
+      "label": "gestion des absences ",
+      "type": "WORKFLOW",
+      "email_id": "1211",
+      "confidence_score": null,
+      "attributes": {
+        "Date sortie": "23/04/2026"
+      }
+    },
+    "input_email": "Bonjour equipe,\n\ngestion absences date sortie 23 avril svp. A traiter rapidement"
+  },
+  {
+    "output": {
+      "label": "gestion des absences ",
+      "type": "WORKFLOW",
+      "email_id": "1212",
+      "confidence_score": null,
+      "attributes": {
+        "Date sortie": "28/04/2026"
+      }
+    },
+    "input_email": "Hi,\n\npour gestion des absences date sortie 28/04/2026. Ok ?"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1213",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Bonjour,\n\ngestion d un lot de production rien de particulier ce coup ci. Test workflow"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1214",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Salut,\n\njuste gestion lot production vide. A valider stp"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1215",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Hello,\n\ngestion d’un lot de production simple sans details. Merci"
+  },
+  {
+    "output": {
+      "label": "Gestion de projet",
+      "type": "WORKFLOW",
+      "email_id": "1216",
+      "confidence_score": null,
+      "attributes": {
+        "Projet": "Extension Usine",
+        "Exécution": "en cours",
+        "Envoie": "oui",
+        "description": "travaux phase 2"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion de projet Extension Usine execution en cours envoie oui description travaux phase 2. A checker"
+  },
+  {
+    "output": {
+      "label": "Gestion de projet",
+      "type": "WORKFLOW",
+      "email_id": "1217",
+      "confidence_score": null,
+      "attributes": {
+        "Projet": "Route Nationale",
+        "Exécution": "terminee",
+        "Envoie": "non",
+        "description": "rapport final pret"
+      }
+    },
+    "input_email": "Salut,\n\ngestion projet Route Nationale execution terminee envoie non description rapport final pret. Merci"
+  },
+  {
+    "output": {
+      "label": "Gestion de projet",
+      "type": "WORKFLOW",
+      "email_id": "1218",
+      "confidence_score": null,
+      "attributes": {
+        "Projet": "Port Commercial",
+        "Exécution": "planifie",
+        "Envoie": "oui",
+        "description": "etude faisabilite"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion de projet Port Commercial execution planifie envoie oui description etude faisabilite svp"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1219",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        " OF": "OF-98765",
+        " Date de production": "12/04/2026",
+        " Date d'échéance": "15/07/2026",
+        " Normes de sécurité alimentaire": "oui",
+        " Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        " Couleur du produit": "normale",
+        " Saveur du produit": "bonne",
+        " Odeurs désagréables": "aucune",
+        " Déchirures/perforations en emballage": "non",
+        " Températures": "correcte",
+        "Conformité Globale": "oui",
+        "Analyse": "ok",
+        " Analyse Approfondie": "validee",
+        "Validation de la conformité du produit": "oui",
+        " Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite produit checklist complete OF-98765 production 12 avril echeance 15 juillet tout normes ok etiquetage conforme defauts zero couleur saveur odeurs emballage temp ok. Conformite globale oui analyse validee"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1220",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        " OF": "OF-11223",
+        " Date de production": "18/04/2026",
+        " Date d'échéance": "20/08/2026",
+        " Normes de sécurité alimentaire": "oui",
+        " Étiquetage": "a verifier",
+        " Défauts visibles": "mineurs",
+        " Couleur du produit": "legere deviation",
+        " Saveur du produit": "ok",
+        " Odeurs désagréables": "aucune",
+        " Déchirures/perforations en emballage": "non",
+        " Températures": "correcte",
+        "Conformité Globale": "a corriger",
+        "Analyse": "en cours",
+        " Analyse Approfondie": "necessaire",
+        "Validation de la conformité du produit": "non",
+        " Validation de la conformité du produit": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole conformite produit OF-11223 production 18 avril. Checklist partielle etiquetage a verifier defauts mineurs couleur legere deviation mais saveur et temp ok. Globale a corriger analyse en cours"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1221",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        " OF": "OF-33445",
+        " Date de production": "10/04/2026",
+        " Date d'échéance": "05/06/2026",
+        " Normes de sécurité alimentaire": "oui",
+        " Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        " Couleur du produit": "normale",
+        " Saveur du produit": "excellente",
+        " Odeurs désagréables": "aucune",
+        " Déchirures/perforations en emballage": "non",
+        " Températures": "parfaite",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        " Analyse Approfondie": "ok",
+        "Validation de la conformité du produit": "oui",
+        " Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole produit OF-33445 prod 10 avril echeance 5 juin checklist complete tout normes etiquetage defauts zero couleur saveur odeurs emballage temp parfait. Globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Décontamination et Nettoyage ",
+      "type": "WORKFLOW",
+      "email_id": "1222",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Ligne production 2",
+        "Date début": "19/04/2026",
+        "Heure de Début": "08:00",
+        "Observations Préliminaires": "zone propre",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "detergent standard",
+        "Temps de Nettoyage": "45 min",
+        "Résultats du Nettoyage": "satisfaisant",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "desinfectant",
+        "Temps d'Application": "30 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "rinçage",
+        "Résultats de Nettoyage Final": "excellent",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "conforme",
+        "Commentaire": "tout ok"
+      }
+    },
+    "input_email": "Bonjour,\n\ndecontamination et nettoyage ligne production 2 debut 19 avril 8h. Preparation ok observations zone propre nettoyage initial 45 min detergent resultat satisfaisant. Decontamination desinfectant 30 min valide. Nettoyage final rinçage excellent inspection conforme tout ok"
+  },
+  {
+    "output": {
+      "label": "Décontamination et Nettoyage ",
+      "type": "WORKFLOW",
+      "email_id": "1223",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Reservoir stockage",
+        "Date début": "21/04/2026",
+        "Heure de Début": "14:00",
+        "Observations Préliminaires": "residus mineurs",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "acide",
+        "Temps de Nettoyage": "60 min",
+        "Résultats du Nettoyage": "bon",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "chlore",
+        "Temps d'Application": "40 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "rinçage eau",
+        "Résultats de Nettoyage Final": "satisfaisant",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "ok",
+        "Commentaire": "a surveiller"
+      }
+    },
+    "input_email": "Salut,\n\ndecontamination reservoir stockage debut 21 avril 14h. Observations residus mineurs nettoyage initial acide 60 min bon. Decontamination chlore 40 min valide. Final rinçage eau satisfaisant inspection ok commentaire a surveiller"
+  },
+  {
+    "output": {
+      "label": "Décontamination et Nettoyage ",
+      "type": "WORKFLOW",
+      "email_id": "1224",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Convoyeur",
+        "Date début": "24/04/2026",
+        "Heure de Début": "09:30",
+        "Observations Préliminaires": "poussiere",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "savon industriel",
+        "Temps de Nettoyage": "30 min",
+        "Résultats du Nettoyage": "propre",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "desinfectant",
+        "Temps d'Application": "20 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "sechage",
+        "Résultats de Nettoyage Final": "parfait",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "conforme",
+        "Commentaire": "tout bon"
+      }
+    },
+    "input_email": "Bonjour,\n\ndecontamination convoyeur debut 24 avril 9h30. Preparation ok observations poussiere nettoyage savon 30 min propre. Decontamination 20 min valide final sechage parfait inspection conforme tout bon"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1225",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification du Produit": "Farine 1kg",
+        "Echantillon ": "E-334",
+        "Date de production": "15/04/2026",
+        "Date d'échéance": "15/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "blanche",
+        "Saveur du produit": "neutre",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Humidité Relative ": "45%",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite produit farine 1kg echantillon E-334 prod 15 avril echeance 15 juillet normes ok etiquetage conforme defauts zero couleur blanche saveur neutre odeurs emballage temp humidite 45% tout ok validation oui"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1226",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        "Identification du Produit": "Huile olive",
+        "Echantillon ": "E-556",
+        "Date de production": "18/04/2026",
+        "Date d'échéance": "18/10/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "a corriger",
+        " Défauts visibles": "mineurs",
+        "Couleur du produit": "jaune",
+        "Saveur du produit": "bonne",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Humidité Relative ": "40%",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "a verifier",
+        "Analyse": "en cours",
+        "Analyse Approfondit": "necessaire",
+        "Validation de la conformité du produit": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole produit huile olive echantillon E-556 prod 18 avril. Checklist partielle etiquetage a corriger defauts mineurs couleur jaune saveur bonne temp humidite ok globale a verifier analyse en cours"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1227",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification du Produit": "Epices mix",
+        "Echantillon ": "E-778",
+        "Date de production": "10/04/2026",
+        "Date d'échéance": "10/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "normale",
+        "Saveur du produit": "epicee",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "parfaite",
+        "Humidité Relative ": "30%",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite epices mix echantillon E-778 prod 10 avril echeance 10 juillet checklist complete normes etiquetage defauts zero couleur saveur odeurs emballage temp humidite 30% tout valide"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du MP",
+      "type": "WORKFLOW",
+      "email_id": "1228",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification Du MP": "Sucre brut",
+        "Fournisseur ": "SugarTun",
+        "Demande d'achat": "DA-1122",
+        "Echantillon ": "MP-334",
+        "Date de production": "05/04/2026",
+        "Date d'échéance": "05/10/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "aucun",
+        "Couleur ": "blanche",
+        "Saveur ": "neutre",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du MP": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole conformite MP sucre brut fournisseur SugarTun DA-1122 echantillon MP-334 prod 5 avril echeance 5 octobre normes ok defauts zero couleur blanche saveur neutre odeurs ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du MP",
+      "type": "WORKFLOW",
+      "email_id": "1229",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        "Identification Du MP": "Farine import",
+        "Fournisseur ": "ImportCo",
+        "Demande d'achat": "DA-4455",
+        "Echantillon ": "MP-667",
+        "Date de production": "12/04/2026",
+        "Date d'échéance": "12/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "poussiere",
+        "Couleur ": "legere deviation",
+        "Saveur ": "ok",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "a verifier",
+        "Conformité Globale": "a corriger",
+        "Analyse": "en cours",
+        "Analyse Approfondit": "necessaire",
+        "Validation de la conformité du MP": "non"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole MP farine import fournisseur ImportCo DA-4455 echantillon MP-667 prod 12 avril. Checklist partielle defauts poussiere couleur deviation saveur ok mais mesures a verifier globale a corriger"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du MP",
+      "type": "WORKFLOW",
+      "email_id": "1230",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification Du MP": "Huile vegetale",
+        "Fournisseur ": "OilPro",
+        "Demande d'achat": "DA-7788",
+        "Echantillon ": "MP-990",
+        "Date de production": "08/04/2026",
+        "Date d'échéance": "08/09/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "aucun",
+        "Couleur ": "jaune clair",
+        "Saveur ": "neutre",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du MP": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole MP huile vegetale fournisseur OilPro DA-7788 echantillon MP-990 prod 8 avril echeance 8 septembre checklist complete normes ok defauts zero couleur saveur odeurs ok validation oui"
+  },
+  {
+    "output": {
+      "label": "Planification",
+      "type": "WORKFLOW",
+      "email_id": "1231",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "20/04/2026",
+        "Ordre": "ORD-123",
+        "Mp": "sucre"
+      }
+    },
+    "input_email": "Salut,\n\nplanification date 20 avril ordre ORD-123 mp sucre. A valider"
+  },
+  {
+    "output": {
+      "label": "Planification",
+      "type": "WORKFLOW",
+      "email_id": "1232",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "25/04/2026",
+        "Ordre": "ORD-456",
+        "Mp": "farine"
+      }
+    },
+    "input_email": "Bonjour,\n\nplanification date 25 avril ordre ORD-456 mp farine svp"
+  },
+  {
+    "output": {
+      "label": "Planification",
+      "type": "WORKFLOW",
+      "email_id": "1233",
+      "confidence_score": null,
+      "attributes": {
+        "Date": "28/04/2026",
+        "Ordre": "ORD-789",
+        "Mp": "huile"
+      }
+    },
+    "input_email": "Hello,\n\nplanification date 28 avril ordre ORD-789 mp huile. Merci"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1234",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "OF": "OF-998877",
+        "Date de production": "14/04/2026",
+        "Date d'échéance": "14/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "normale",
+        "Saveur du produit": "bonne",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondie": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite produit OF-998877 prod 14 avril echeance 14 juillet checklist complete normes etiquetage defauts zero couleur saveur odeurs emballage temp ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1235",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        "OF": "OF-112244",
+        "Date de production": "19/04/2026",
+        "Date d'échéance": "19/08/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "a corriger",
+        " Défauts visibles": "mineurs",
+        "Couleur du produit": "deviation",
+        "Saveur du produit": "ok",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Conformité Globale": "a verifier",
+        "Analyse": "en cours",
+        "Analyse Approfondie": "necessaire",
+        "Validation de la conformité du produit": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole produit OF-112244 prod 19 avril checklist partielle etiquetage a corriger defauts mineurs couleur deviation saveur ok globale a verifier analyse en cours"
+  },
+  {
+    "output": {
+      "label": "Contrôle de conformité du Produit",
+      "type": "WORKFLOW",
+      "email_id": "1236",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "OF": "OF-556677",
+        "Date de production": "11/04/2026",
+        "Date d'échéance": "11/06/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "normale",
+        "Saveur du produit": "excellente",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "parfaite",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondie": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite OF-556677 prod 11 avril echeance 11 juin checklist complete tout ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1237",
+      "confidence_score": null,
+      "attributes": {
+        "Création du lot": "oui",
+        " Référence du lot": "LOT-2026-045",
+        " Produit à fabriquer": "pain",
+        " Quantité planifiée": "5000 kg",
+        " Date de début prévue": "22/04/2026",
+        " Ligne de production": "L3",
+        " Responsable de ligne": "Karim",
+        "Fabrication": "en cours",
+        "▶ Date de démarrage": "22/04/2026",
+        " Quantité produite": "3200 kg",
+        " Quantité rejetée": "150 kg",
+        " Motif du rejet": "defaut cuisson",
+        "Contrôle qualité": "oui",
+        " Goût": "bon",
+        " Poids": "conforme",
+        " Résultat final": "satisfaisant",
+        "Logistique": "en cours",
+        " Type d’emballage": "sachets",
+        " Quantité emballée": "2800 kg",
+        " Date d’expédition prévue": "25/04/2026",
+        " Transporteur": "Medlog",
+        " Bon de livraison": "BL-9988"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion lot production LOT-2026-045 pain 5000kg debut prevu 22 avril ligne L3 responsable Karim. Fabrication en cours 3200kg produit rejet 150kg defaut cuisson. Controle qualite ok gout poids bon. Logistique emballage sachets 2800kg expedition 25 avril transporteur Medlog BL-9988"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1238",
+      "confidence_score": null,
+      "attributes": {
+        "Création du lot": "oui",
+        " Référence du lot": "LOT-2026-067",
+        " Produit à fabriquer": "biscuits",
+        " Quantité planifiée": "3000 kg",
+        " Date de début prévue": "25/04/2026",
+        " Ligne de production": "L2",
+        " Responsable de ligne": "Leila",
+        "Fabrication": "terminee",
+        "▶ Date de démarrage": "25/04/2026",
+        " Quantité produite": "2900 kg",
+        " Quantité rejetée": "80 kg",
+        " Motif du rejet": "forme irreguliere",
+        "Contrôle qualité": "oui",
+        " Goût": "excellent",
+        " Poids": "conforme",
+        " Résultat final": "bon",
+        "Logistique": "terminee",
+        " Type d’emballage": "boites",
+        " Quantité emballée": "2820 kg",
+        " Date d’expédition prévue": "28/04/2026",
+        " Transporteur": "Tunisian Shipping",
+        " Bon de livraison": "BL-1122"
+      }
+    },
+    "input_email": "Salut,\n\ngestion lot LOT-2026-067 biscuits 3000kg debut 25 avril ligne L2 Leila. Fabrication terminee 2900kg produit rejet 80kg forme irreguliere. Controle qualite excellent poids bon logistique terminee emballage boites expedition 28 avril transporteur Tunisian Shipping"
+  },
+  {
+    "output": {
+      "label": "Gestion d’un lot de production",
+      "type": "WORKFLOW",
+      "email_id": "1239",
+      "confidence_score": null,
+      "attributes": {
+        "Création du lot": "oui",
+        " Référence du lot": "LOT-2026-089",
+        " Produit à fabriquer": "yaourt",
+        " Quantité planifiée": "8000 unites",
+        " Date de début prévue": "28/04/2026",
+        " Ligne de production": "L4",
+        " Responsable de ligne": "Ahmed",
+        "Fabrication": "en cours",
+        "▶ Date de démarrage": "28/04/2026",
+        " Quantité produite": "4500 unites",
+        " Quantité rejetée": "200 unites",
+        " Motif du rejet": "date perimee",
+        "Contrôle qualité": "oui",
+        " Goût": "bon",
+        " Poids": "conforme",
+        " Résultat final": "satisfaisant",
+        "Logistique": "en cours",
+        " Type d’emballage": "pots",
+        " Quantité emballée": "4300 unites",
+        " Date d’expédition prévue": "02/05/2026",
+        " Transporteur": "CMA CGM",
+        " Bon de livraison": "BL-3344"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion lot LOT-2026-089 yaourt 8000 unites debut 28 avril ligne L4 Ahmed. Fabrication en cours 4500 produites rejet 200 date perimee. Controle qualite bon poids logistique emballage pots expedition 2 mai transporteur CMA CGM"
+  },
+  {
+    "output": {
+      "label": "Work Permit for Construction Site",
+      "type": "WORKFLOW",
+      "email_id": "1240",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Mohamed Ben Salah",
+        "Adresse": "Tunis centre",
+        "Numéro de téléphone": "98765432",
+        "Adresse e-mail": "mohamed.bs@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Projet Route",
+        "Adresse du Chantier": "La Marsa",
+        "Description du Travail à Effectuer": "installation cables",
+        "Durée Prévue du Travail": "4 semaines",
+        "Superviseur ou Responsable sur le Chantier": "Karim Mansour",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "BTP Tunis",
+        "Adresse de l'Entreprise": "Tunis",
+        "Numéro de téléphone de l'Entreprise": "12345678",
+        "Adresse e-mail de l'Entreprise ": "btp@company.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande work permit construction site pour Mohamed Ben Salah adresse Tunis tel 98765432 email mohamed.bs. Chantier Projet Route La Marsa travail installation cables duree 4 semaines superviseur Karim. Entreprise BTP Tunis tel 12345678 email btp@company.tn. Declaration signee"
+  },
+  {
+    "output": {
+      "label": "Work Permit for Construction Site",
+      "type": "WORKFLOW",
+      "email_id": "1241",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Sami Krimi",
+        "Adresse": "Sfax",
+        "Numéro de téléphone": "23456789",
+        "Adresse e-mail": "sami.k@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Usine Extension",
+        "Adresse du Chantier": "Ben Arous",
+        "Description du Travail à Effectuer": "peinture",
+        "Durée Prévue du Travail": "3 semaines",
+        "Superviseur ou Responsable sur le Chantier": "Leila Trabelsi",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "Paint Expert",
+        "Adresse de l'Entreprise": "Sfax",
+        "Numéro de téléphone de l'Entreprise": "34567890",
+        "Adresse e-mail de l'Entreprise ": "paint@expert.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Salut,\n\nwork permit chantier Sami Krimi Sfax tel 23456789 email sami.k. Chantier Usine Extension Ben Arous travail peinture 3 semaines superviseur Leila. Entreprise Paint Expert Sfax tel 34567890 email paint@expert.tn. Certifie conforme"
+  },
+  {
+    "output": {
+      "label": "Work Permit for Construction Site",
+      "type": "WORKFLOW",
+      "email_id": "1242",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Nadia Trabelsi",
+        "Adresse": "Ariana",
+        "Numéro de téléphone": "45678901",
+        "Adresse e-mail": "nadia.t@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Hotel Renovation",
+        "Adresse du Chantier": "Hammamet",
+        "Description du Travail à Effectuer": "plomberie",
+        "Durée Prévue du Travail": "2 semaines",
+        "Superviseur ou Responsable sur le Chantier": "Ahmed Khelifi",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "Plombier Pro",
+        "Adresse de l'Entreprise": "Ariana",
+        "Numéro de téléphone de l'Entreprise": "56789012",
+        "Adresse e-mail de l'Entreprise ": "plombier@pro.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\nwork permit chantier Nadia Trabelsi Ariana tel 45678901 nadia.t. Chantier Hotel Renovation Hammamet travail plomberie 2 semaines superviseur Ahmed. Entreprise Plombier Pro Ariana tel 56789012. Declaration signee"
+  },
+  {
+    "output": {
+      "label": "Technical Claim",
+      "type": "WORKFLOW",
+      "email_id": "1243",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "panne machine",
+        "Description": "machine bloquee bruit anormal",
+        "Niveau d'urgence": "haute"
+      }
+    },
+    "input_email": "Salut,\n\ntechnical claim object panne machine description machine bloquee bruit anormal urgence haute svp"
+  },
+  {
+    "output": {
+      "label": "Technical Claim",
+      "type": "WORKFLOW",
+      "email_id": "1244",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "defaut logiciel",
+        "Description": "crash frequent",
+        "Niveau d'urgence": "moyenne"
+      }
+    },
+    "input_email": "Bonjour,\n\ntechnical claim defaut logiciel description crash frequent urgence moyenne"
+  },
+  {
+    "output": {
+      "label": "Technical Claim",
+      "type": "WORKFLOW",
+      "email_id": "1245",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "probleme reseau",
+        "Description": "connexion lente",
+        "Niveau d'urgence": "basse"
+      }
+    },
+    "input_email": "Hello,\n\ntechnical claim object probleme reseau description connexion lente urgence basse"
+  },
+  {
+    "output": {
+      "label": "Events Management",
+      "type": "WORKFLOW",
+      "email_id": "1246",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Seminaire Qualite",
+        "Type": "interne",
+        "Date Début": "22/04/2026",
+        "Date Fin": "23/04/2026",
+        "Lieu": "salle conference",
+        "Description": "formation ISO",
+        "Réservation des ressources": "oui",
+        "Salles demandées": "Salle A",
+        "Équipements requis": "projecteur",
+        "Date et heure d'installation": "22/04 08:00",
+        "Personne de contact": "Sarah",
+        "Statut Disponibilité": "disponible",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "25",
+        "Check-list d'exécution": "complete",
+        "Statut": "prepare",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "oui",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "tout ok"
+      }
+    },
+    "input_email": "Bonjour,\n\nevents management creation Seminaire Qualite interne debut 22 fin 23 avril salle conference description formation ISO. Reservation salle A projecteur installation 08h contact Sarah dispo. Inscriptions 25 checklist complete tout ok"
+  },
+  {
+    "output": {
+      "label": "Events Management",
+      "type": "WORKFLOW",
+      "email_id": "1247",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Team Building",
+        "Type": "externe",
+        "Date Début": "26/04/2026",
+        "Date Fin": "26/04/2026",
+        "Lieu": "hotel",
+        "Description": "activites equipe",
+        "Réservation des ressources": "oui",
+        "Salles demandées": "salle hotel",
+        "Équipements requis": "bus",
+        "Date et heure d'installation": "26/04 09:00",
+        "Personne de contact": "Ahmed",
+        "Statut Disponibilité": "reserve",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "30",
+        "Check-list d'exécution": "en cours",
+        "Statut": "prepare",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "non",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "bus a confirmer"
+      }
+    },
+    "input_email": "Salut,\n\nevents management Team Building externe 26 avril hotel description activites equipe. Reservation salle hotel bus installation 09h contact Ahmed reserve. Participants 30 checklist en cours salles oui equip non"
+  },
+  {
+    "output": {
+      "label": "Events Management",
+      "type": "WORKFLOW",
+      "email_id": "1248",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Reunion Client",
+        "Type": "interne",
+        "Date Début": "19/04/2026",
+        "Date Fin": "19/04/2026",
+        "Lieu": "bureau",
+        "Description": "presentation projet",
+        "Réservation des ressources": "oui",
+        "Salles demandées": "Salle B",
+        "Équipements requis": "ordinateur",
+        "Date et heure d'installation": "19/04 10:00",
+        "Personne de contact": "Fatma",
+        "Statut Disponibilité": "disponible",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "10",
+        "Check-list d'exécution": "complete",
+        "Statut": "confirme",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "oui",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "ok"
+      }
+    },
+    "input_email": "Bonjour,\n\nevents management Reunion Client interne 19 avril bureau description presentation. Reservation Salle B ordi 10h contact Fatma. Participants 10 checklist complete tout ok"
+  },
+  {
+    "output": {
+      "label": "Budget Approval",
+      "type": "WORKFLOW",
+      "email_id": "1249",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Formation Securite",
+        "Description": "formation HSE",
+        "Montant demandé": "4500 TND",
+        "Catégorie budgétaire": "formation",
+        "Date souhaitée d’approbation": "20/04/2026",
+        "Pièce jointe": "devis",
+        "Validation initiale": "en attente",
+        "Commentaires": "budget serre",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Salut,\n\nbudget approval soumission Formation Securite description HSE montant 4500 categorie formation date approbation 20 avril piece devis. Commentaires budget serre"
+  },
+  {
+    "output": {
+      "label": "Budget Approval",
+      "type": "WORKFLOW",
+      "email_id": "1250",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Seminaire Vente",
+        "Description": "seminaire commercial",
+        "Montant demandé": "8500 TND",
+        "Catégorie budgétaire": "marketing",
+        "Date souhaitée d’approbation": "25/04/2026",
+        "Pièce jointe": "programme",
+        "Validation initiale": "ok",
+        "Commentaires": "a valider finance",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Bonjour,\n\nbudget approval evenement Seminaire Vente description commercial 8500 marketing date 25 avril piece programme. Commentaires a valider finance"
+  },
+  {
+    "output": {
+      "label": "Budget Approval",
+      "type": "WORKFLOW",
+      "email_id": "1251",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Atelier Innovation",
+        "Description": "atelier R&D",
+        "Montant demandé": "6200 TND",
+        "Catégorie budgétaire": "R&D",
+        "Date souhaitée d’approbation": "28/04/2026",
+        "Pièce jointe": "plan",
+        "Validation initiale": "en cours",
+        "Commentaires": "prioritaire",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Salut,\n\nbudget approval Atelier Innovation description R&D 6200 categorie R&D date 28 avril piece plan. Commentaires prioritaire"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1252",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Master 1",
+        "Étudiant ": "Youssef Ben Ali",
+        "Module ": "Gestion Projet",
+        "Note Projet": "16",
+        "Note DS": "14",
+        "Note Examen": "15",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\nvalidation modules niveau Master 1 etudiant Youssef Ben Ali module Gestion Projet note projet 16 DS 14 examen 15 decision valide"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1253",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Licence 3",
+        "Étudiant ": "Amina Khelifi",
+        "Module ": "Marketing",
+        "Note Projet": "12",
+        "Note DS": "13",
+        "Note Examen": "11",
+        "Décision": "valide avec reserve"
+      }
+    },
+    "input_email": "Salut,\n\nvalidation modules Licence 3 Amina Khelifi module Marketing notes projet 12 DS 13 examen 11 decision valide avec reserve"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1254",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Master 2",
+        "Étudiant ": "Omar Mansour",
+        "Module ": "Finance",
+        "Note Projet": "18",
+        "Note DS": "17",
+        "Note Examen": "16",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\nvalidation modules Master 2 Omar Mansour module Finance notes projet 18 DS 17 examen 16 decision valide"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1255",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Niveau": "Master 2",
+        "Étudiant ": "Youssef Ben Ali",
+        "Titre du sujet": "Optimisation supply chain",
+        "Description du sujet": "etude cas entreprise",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Ahmed Khelifi",
+        "Évaluation intermédiaire du stage": "positive",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "70%",
+        "Qualité du travail": "bonne",
+        "Respect des délais": "oui",
+        "Problèmes rencontrés": "aucun",
+        "Commentaires": "bon progres",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "15/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 3",
+        "Rapport de stage": "0",
+        "Validation finale": "en cours",
+        "Décision": "attente"
+      }
+    },
+    "input_email": "Salut,\n\ngestion projets fin etudes soumission sujet Master 2 Youssef titre Optimisation supply chain description etude cas encadrant Ahmed evaluation intermediaire positive rapport avancement 70% qualite bonne delais ok pas probleme. Soutenance 15 juin salle 3 rapport 0"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1256",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Niveau": "Licence 3",
+        "Étudiant ": "Amina Khelifi",
+        "Titre du sujet": "Marketing digital",
+        "Description du sujet": "campagne reseaux sociaux",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Leila Trabelsi",
+        "Évaluation intermédiaire du stage": "moyenne",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "50%",
+        "Qualité du travail": "moyenne",
+        "Respect des délais": "retard",
+        "Problèmes rencontrés": "manque donnees",
+        "Commentaires": "a accelerer",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "20/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 2",
+        "Rapport de stage": "0",
+        "Validation finale": "en cours",
+        "Décision": "attente"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion fin etudes Licence 3 Amina titre Marketing digital description campagne reseaux encadrant Leila eval intermediaire moyenne avancement 50% qualite moyenne delais retard probleme manque donnees. Soutenance 20 juin salle 2"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1257",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Niveau": "Master 1",
+        "Étudiant ": "Omar Mansour",
+        "Titre du sujet": "Analyse financiere",
+        "Description du sujet": "rapport entreprise",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Karim Mansour",
+        "Évaluation intermédiaire du stage": "tres bonne",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "85%",
+        "Qualité du travail": "excellente",
+        "Respect des délais": "oui",
+        "Problèmes rencontrés": "aucun",
+        "Commentaires": "excellent",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "10/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 1",
+        "Rapport de stage": "0",
+        "Validation finale": "terminee",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Salut,\n\ngestion projets fin etudes Master 1 Omar titre Analyse financiere description rapport entreprise encadrant Karim eval tres bonne avancement 85% qualite excellente delais ok. Soutenance 10 juin salle 1 validation terminee valide"
+  },
+  {
+    "output": {
+      "label": "Organisation des Examens",
+      "type": "WORKFLOW",
+      "email_id": "1258",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Master 2",
+        "Semestre": "S4",
+        "Module": "Gestion Projet",
+        "Horaire": "09:00-12:00",
+        "Salle": "Salle 3"
+      }
+    },
+    "input_email": "Bonjour,\n\norganisation examens niveau Master 2 semestre S4 module Gestion Projet horaire 09h-12h salle 3"
+  },
+  {
+    "output": {
+      "label": "Organisation des Examens",
+      "type": "WORKFLOW",
+      "email_id": "1259",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Licence 3",
+        "Semestre": "S6",
+        "Module": "Marketing",
+        "Horaire": "14:00-17:00",
+        "Salle": "Salle 2"
+      }
+    },
+    "input_email": "Salut,\n\norganisation examens Licence 3 S6 module Marketing 14h-17h salle 2"
+  },
+  {
+    "output": {
+      "label": "Organisation des Examens",
+      "type": "WORKFLOW",
+      "email_id": "1260",
+      "confidence_score": null,
+      "attributes": {
+        "Niveau": "Master 1",
+        "Semestre": "S2",
+        "Module": "Finance",
+        "Horaire": "10:00-13:00",
+        "Salle": "Salle 1"
+      }
+    },
+    "input_email": "Bonjour,\n\norganisation examens Master 1 S2 module Finance 10h-13h salle 1"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1261",
+      "confidence_score": null,
+      "attributes": {
+        "Étudiant ": "Youssef Ben Ali",
+        "Module ": "Gestion Projet",
+        "Note obtenue": "15.5",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Salut,\n\nvalidation modules etudiant Youssef module Gestion Projet note 15.5 decision valide"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1262",
+      "confidence_score": null,
+      "attributes": {
+        "Étudiant ": "Amina Khelifi",
+        "Module ": "Marketing",
+        "Note obtenue": "13",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\nvalidation modules Amina module Marketing note 13 decision valide"
+  },
+  {
+    "output": {
+      "label": "Validation des Modules",
+      "type": "WORKFLOW",
+      "email_id": "1263",
+      "confidence_score": null,
+      "attributes": {
+        "Étudiant ": "Omar Mansour",
+        "Module ": "Finance",
+        "Note obtenue": "17",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Hello,\n\nvalidation modules Omar module Finance note 17 decision valide"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1264",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Étudiant ": "Youssef Ben Ali",
+        "Titre du sujet": "Optimisation supply chain",
+        "Description du sujet": "etude cas",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Ahmed Khelifi",
+        "Évaluation intermédiaire du stage": "positive",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "75%",
+        "Qualité du travail": "bonne",
+        "Respect des délais": "oui",
+        "Problèmes rencontrés": "aucun",
+        "Commentaires": "bon progres",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "15/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 3",
+        "Rapport de stage": "0",
+        "Validation finale": "terminee",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion projets fin etudes Youssef titre Optimisation supply chain description etude cas encadrant Ahmed eval positive avancement 75% qualite bonne delais ok. Soutenance 15 juin salle 3 validation terminee valide"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1265",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Étudiant ": "Amina Khelifi",
+        "Titre du sujet": "Marketing digital",
+        "Description du sujet": "campagne",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Leila Trabelsi",
+        "Évaluation intermédiaire du stage": "moyenne",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "55%",
+        "Qualité du travail": "moyenne",
+        "Respect des délais": "retard",
+        "Problèmes rencontrés": "manque donnees",
+        "Commentaires": "a accelerer",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "20/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 2",
+        "Rapport de stage": "0",
+        "Validation finale": "en cours",
+        "Décision": "attente"
+      }
+    },
+    "input_email": "Salut,\n\ngestion fin etudes Amina titre Marketing digital description campagne encadrant Leila eval moyenne avancement 55% qualite moyenne delais retard probleme manque donnees. Soutenance 20 juin salle 2"
+  },
+  {
+    "output": {
+      "label": "Gestion des Projets de Fin d'Etudes",
+      "type": "WORKFLOW",
+      "email_id": "1266",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du sujet": "oui",
+        "Étudiant ": "Omar Mansour",
+        "Titre du sujet": "Analyse financiere",
+        "Description du sujet": "rapport",
+        "Désignation d’un encadrant": "oui",
+        "Encadrant": "Karim Mansour",
+        "Évaluation intermédiaire du stage": "tres bonne",
+        "Rapport d’avancement soumis": "oui",
+        "Avancement du projet": "90%",
+        "Qualité du travail": "excellente",
+        "Respect des délais": "oui",
+        "Problèmes rencontrés": "aucun",
+        "Commentaires": "excellent",
+        "Fixation de la soutenance": "oui",
+        "Date de soutenance": "10/06/2026",
+        "Jury désigné": "oui",
+        "Lieu de la soutenance": "salle 1",
+        "Rapport de stage": "0",
+        "Validation finale": "terminee",
+        "Décision": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion projets fin etudes Omar titre Analyse financiere description rapport encadrant Karim eval tres bonne avancement 90% qualite excellente delais ok. Soutenance 10 juin salle 1 validation terminee valide"
+  },
+  {
+    "output": {
+      "label": "Product Compliance Check",
+      "type": "WORKFLOW",
+      "email_id": "1267",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "OF": "OF-998877",
+        "Date de production": "14/04/2026",
+        "Date d'échéance": "14/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "normale",
+        "Saveur du produit": "bonne",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondie": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\nproduct compliance check OF-998877 prod 14 avril echeance 14 juillet checklist complete normes etiquetage defauts zero couleur saveur odeurs emballage temp ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Product Compliance Check",
+      "type": "WORKFLOW",
+      "email_id": "1268",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        "OF": "OF-112244",
+        "Date de production": "19/04/2026",
+        "Date d'échéance": "19/08/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "a corriger",
+        " Défauts visibles": "mineurs",
+        "Couleur du produit": "deviation",
+        "Saveur du produit": "ok",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "correcte",
+        "Conformité Globale": "a verifier",
+        "Analyse": "en cours",
+        "Analyse Approfondie": "necessaire",
+        "Validation de la conformité du produit": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\nproduct compliance check OF-112244 prod 19 avril checklist partielle etiquetage a corriger defauts mineurs couleur deviation saveur ok globale a verifier"
+  },
+  {
+    "output": {
+      "label": "Product Compliance Check",
+      "type": "WORKFLOW",
+      "email_id": "1269",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "OF": "OF-556677",
+        "Date de production": "11/04/2026",
+        "Date d'échéance": "11/06/2026",
+        "Normes de sécurité alimentaire": "oui",
+        "Étiquetage": "conforme",
+        " Défauts visibles": "aucun",
+        "Couleur du produit": "normale",
+        "Saveur du produit": "excellente",
+        "Odeurs désagréables": "aucune",
+        "Déchirures ou de perforations en emballage": "non",
+        "Températures": "parfaite",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondie": "ok",
+        "Validation de la conformité du produit": "oui"
+      }
+    },
+    "input_email": "Salut,\n\nproduct compliance check OF-556677 prod 11 avril checklist complete tout ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Decontamination and Cleaning",
+      "type": "WORKFLOW",
+      "email_id": "1270",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Ligne 2",
+        "Date début": "19/04/2026",
+        "Heure de Début": "08:00",
+        "Observations Préliminaires": "zone propre",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "detergent",
+        "Temps de Nettoyage": "45 min",
+        "Résultats du Nettoyage": "satisfaisant",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "desinfectant",
+        "Temps d'Application": "30 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "rinçage",
+        "Résultats de Nettoyage Final": "excellent",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "conforme",
+        "Commentaire": "tout ok"
+      }
+    },
+    "input_email": "Bonjour,\n\ndecontamination and cleaning ligne 2 debut 19 avril 8h. Preparation ok observations zone propre nettoyage initial 45 min detergent satisfaisant. Decontamination desinfectant 30 min valide final rinçage excellent inspection conforme tout ok"
+  },
+  {
+    "output": {
+      "label": "Decontamination and Cleaning",
+      "type": "WORKFLOW",
+      "email_id": "1271",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Reservoir",
+        "Date début": "21/04/2026",
+        "Heure de Début": "14:00",
+        "Observations Préliminaires": "residus",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "acide",
+        "Temps de Nettoyage": "60 min",
+        "Résultats du Nettoyage": "bon",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "chlore",
+        "Temps d'Application": "40 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "eau",
+        "Résultats de Nettoyage Final": "satisfaisant",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "ok",
+        "Commentaire": "a surveiller"
+      }
+    },
+    "input_email": "Salut,\n\ndecontamination and cleaning reservoir debut 21 avril 14h. Observations residus nettoyage acide 60 min bon. Decontamination chlore 40 min valide final eau satisfaisant inspection ok a surveiller"
+  },
+  {
+    "output": {
+      "label": "Decontamination and Cleaning",
+      "type": "WORKFLOW",
+      "email_id": "1272",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation de nettoyage Zone ou Equipement": "oui",
+        "Zone ou Equipement": "Convoyeur",
+        "Date début": "24/04/2026",
+        "Heure de Début": "09:30",
+        "Observations Préliminaires": "poussiere",
+        " Nettoyage Initial": "effectue",
+        "Produit de nettoyage Utilisé": "savon",
+        "Temps de Nettoyage": "30 min",
+        "Résultats du Nettoyage": "propre",
+        "Décontamination": "oui",
+        "Produit de Décontamination Utilisé": "desinfectant",
+        "Temps d'Application": "20 min",
+        "Résultats de la Décontamination": "valide",
+        "Nettoyage Final": "effectue",
+        "Méthode de Nettoyage Final ": "sechage",
+        "Résultats de Nettoyage Final": "parfait",
+        " Inspection et Validation": "oui",
+        "Rapport D'inspection": "conforme",
+        "Commentaire": "tout bon"
+      }
+    },
+    "input_email": "Bonjour,\n\ndecontamination and cleaning convoyeur debut 24 avril 9h30. Preparation poussiere nettoyage savon 30 min propre. Decontamination 20 min valide final sechage parfait inspection conforme tout bon"
+  },
+  {
+    "output": {
+      "label": "Compliance Check of RM",
+      "type": "WORKFLOW",
+      "email_id": "1273",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification Du MP": "Sucre brut",
+        "Fournisseur ": "SugarTun",
+        "Demande d'achat": "DA-1122",
+        "Echantillon ": "MP-334",
+        "Date de production": "05/04/2026",
+        "Date d'échéance": "05/10/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "aucun",
+        "Couleur ": "blanche",
+        "Saveur ": "neutre",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du MP": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncompliance check of RM sucre brut fournisseur SugarTun DA-1122 echantillon MP-334 prod 5 avril echeance 5 octobre normes ok defauts zero couleur blanche saveur neutre odeurs ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Compliance Check of RM",
+      "type": "WORKFLOW",
+      "email_id": "1274",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "partielle",
+        "Identification Du MP": "Farine import",
+        "Fournisseur ": "ImportCo",
+        "Demande d'achat": "DA-4455",
+        "Echantillon ": "MP-667",
+        "Date de production": "12/04/2026",
+        "Date d'échéance": "12/07/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "poussiere",
+        "Couleur ": "deviation",
+        "Saveur ": "ok",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "a verifier",
+        "Conformité Globale": "a corriger",
+        "Analyse": "en cours",
+        "Analyse Approfondit": "necessaire",
+        "Validation de la conformité du MP": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\ncompliance check of RM farine import fournisseur ImportCo DA-4455 echantillon MP-667 prod 12 avril checklist partielle defauts poussiere couleur deviation saveur ok mesures a verifier globale a corriger"
+  },
+  {
+    "output": {
+      "label": "Compliance Check of RM",
+      "type": "WORKFLOW",
+      "email_id": "1275",
+      "confidence_score": null,
+      "attributes": {
+        "Check List de Conformité ": "complete",
+        "Identification Du MP": "Huile vegetale",
+        "Fournisseur ": "OilPro",
+        "Demande d'achat": "DA-7788",
+        "Echantillon ": "MP-990",
+        "Date de production": "08/04/2026",
+        "Date d'échéance": "08/09/2026",
+        "Normes de sécurité alimentaire": "oui",
+        " Défauts visibles": "aucun",
+        "Couleur ": "jaune clair",
+        "Saveur ": "neutre",
+        "Odeurs désagréables": "aucune",
+        "Mesures de sécurité alimentaire": "ok",
+        "Conformité Globale": "oui",
+        "Analyse": "validee",
+        "Analyse Approfondit": "ok",
+        "Validation de la conformité du MP": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ncompliance check of RM huile vegetale fournisseur OilPro DA-7788 echantillon MP-990 prod 8 avril checklist complete normes ok defauts zero couleur saveur odeurs ok globale oui validation ok"
+  },
+  {
+    "output": {
+      "label": "Non-Conformity Report",
+      "type": "WORKFLOW",
+      "email_id": "1276",
+      "confidence_score": null,
+      "attributes": {
+        "date": "15/04/2026",
+        "Processus": "production",
+        "Source": "controle",
+        "remarque": "non conforme spec",
+        "Support ": "photo",
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "produit defaut couleur",
+        "Correction (s) \t": "retrait lot",
+        "Evaluation du correction": "ok",
+        "Analyse des causes \t\t\t\t\t\t\t": "erreur machine",
+        "Action Corrective (s) :\t": "maintenance",
+        "Evaluation de l'efficacité/clôture": "en cours",
+        "Risques et opportunités": "risque qualite",
+        "Besoin de modification SMQ": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nnon-conformity report date 15 avril processus production source controle enonce produit defaut couleur. Correction retrait lot evaluation ok analyse erreur machine action maintenance. Risques qualite besoin modification SMQ oui"
+  },
+  {
+    "output": {
+      "label": "Non-Conformity Report",
+      "type": "WORKFLOW",
+      "email_id": "1277",
+      "confidence_score": null,
+      "attributes": {
+        "date": "18/04/2026",
+        "Processus": "logistique",
+        "Source": "client",
+        "remarque": "retard livraison",
+        "Support ": null,
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "delai depasse",
+        "Correction (s) \t": "expedition express",
+        "Evaluation du correction": "ok",
+        "Analyse des causes \t\t\t\t\t\t\t": "probleme transport",
+        "Action Corrective (s) :\t": "nouveau transporteur",
+        "Evaluation de l'efficacité/clôture": "terminee",
+        "Risques et opportunités": "amelioration",
+        "Besoin de modification SMQ": "non"
+      }
+    },
+    "input_email": "Salut,\n\nnon-conformity report date 18 avril processus logistique source client enonce delai depasse. Correction expedition express evaluation ok analyse probleme transport action nouveau transporteur evaluation terminee pas besoin SMQ"
+  },
+  {
+    "output": {
+      "label": "Non-Conformity Report",
+      "type": "WORKFLOW",
+      "email_id": "1278",
+      "confidence_score": null,
+      "attributes": {
+        "date": "21/04/2026",
+        "Processus": "qualite",
+        "Source": "audit",
+        "remarque": "test echoue",
+        "Support ": "rapport",
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "resultat negatif",
+        "Correction (s) \t": "re-test",
+        "Evaluation du correction": "ok",
+        "Analyse des causes \t\t\t\t\t\t\t": "mauvais echantillon",
+        "Action Corrective (s) :\t": "formation",
+        "Evaluation de l'efficacité/clôture": "en cours",
+        "Risques et opportunités": "risque recurrence",
+        "Besoin de modification SMQ": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nnon-conformity report date 21 avril processus qualite source audit enonce resultat negatif. Correction re-test evaluation ok analyse mauvais echantillon action formation risque recurrence besoin SMQ oui"
+  },
+  {
+    "output": {
+      "label": "ISO 22000 Quality Control",
+      "type": "WORKFLOW",
+      "email_id": "1279",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "farine",
+        "Numéro d'identification unique du Produit": "PROD-22000-01",
+        "Classement Par Risque ": "moyen",
+        "Classement par ancienneté ": "nouveau",
+        "Le produit respecte les critères de qualité de l'entreprise": "oui",
+        "Le produit conforme au politique interne": "oui",
+        "Validation": "oui",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "oui",
+        "Conformité Contrôle Qualité ": "oui",
+        "Rapport": "positif",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Salut,\n\niso 22000 quality control produit farine ID PROD-22000-01 risque moyen nouveau respecte criteres oui politique oui validation oui juridique financier controle qualite tous oui rapport positif inspection jointe"
+  },
+  {
+    "output": {
+      "label": "ISO 22000 Quality Control",
+      "type": "WORKFLOW",
+      "email_id": "1280",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "huile olive",
+        "Numéro d'identification unique du Produit": "PROD-22000-02",
+        "Classement Par Risque ": "bas",
+        "Classement par ancienneté ": "ancien",
+        "Le produit respecte les critères de qualité de l'entreprise": "non",
+        "Le produit conforme au politique interne": "non",
+        "Validation": "non",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "oui",
+        "Conformité Contrôle Qualité ": "non",
+        "Rapport": "a corriger",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Bonjour,\n\niso 22000 quality control huile olive ID PROD-22000-02 risque bas ancien respecte criteres non politique non validation non mais juridique financier oui controle non rapport a corriger inspection jointe"
+  },
+  {
+    "output": {
+      "label": "ISO 22000 Quality Control",
+      "type": "WORKFLOW",
+      "email_id": "1281",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "epices",
+        "Numéro d'identification unique du Produit": "PROD-22000-03",
+        "Classement Par Risque ": "eleve",
+        "Classement par ancienneté ": "moyen",
+        "Le produit respecte les critères de qualité de l'entreprise": "oui",
+        "Le produit conforme au politique interne": "oui",
+        "Validation": "oui",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "non",
+        "Conformité Contrôle Qualité ": "oui",
+        "Rapport": "en attente",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Salut,\n\niso 22000 quality control epices ID PROD-22000-03 risque eleve respecte oui politique oui validation oui juridique oui financier non controle oui rapport en attente inspection jointe"
+  },
+  {
+    "output": {
+      "label": "Accident & Incident Report",
+      "type": "WORKFLOW",
+      "email_id": "1282",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Ahmed Khelifi",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "18/04/2026",
+        "Heure de l'incendie": "14:30",
+        "Lieu": "atelier",
+        "Type": "mineur corporel",
+        "si dommage corporel a remplir": "oui blessure legere",
+        "si dommage matériel a remplir": null,
+        "si réputation a remplir": null,
+        "si fatalité a remplir": null,
+        "type du préjudice": "blessure main",
+        "localisation du préjudice": "atelier",
+        "Etat physique actuel de la (des) victime(s)": "stable",
+        "Provenance/Cause probable d’incident": "mauvaise manipulation",
+        "Mesures existantes ayant pu prévenir tel Incident": "formation insuffisante",
+        "Description de l’événement": "chute outil",
+        "Conséquence": "arret 2 jours",
+        " Photo de l'incident / accident si existe": null,
+        "Réaction d'urgence du Resp HSE": "premiers soins",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": "bandage",
+        "Réaction technique": null,
+        "Action Correctives provisoires ": "nettoyage",
+        "Détails concernant les Causes apparents": "manque vigilance",
+        " Recommandations préliminaires": "formation",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Bonjour,\n\naccident incident report declare Ahmed Khelifi date 18 avril 14h30 lieu atelier type mineur corporel dommage blessure main localisation atelier etat stable cause mauvaise manipulation. Description chute outil consequence arret 2 jours reaction premiers soins action nettoyage recommandations formation diffusion 24h"
+  },
+  {
+    "output": {
+      "label": "Accident & Incident Report",
+      "type": "WORKFLOW",
+      "email_id": "1283",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Sara Ben Salem",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "20/04/2026",
+        "Heure de l'incendie": "09:15",
+        "Lieu": "entrepot",
+        "Type": "materiel",
+        "si dommage corporel a remplir": null,
+        "si dommage matériel a remplir": "oui casse palette",
+        "si réputation a remplir": null,
+        "si fatalité a remplir": null,
+        "type du préjudice": "dommage materiel",
+        "localisation du préjudice": "entrepot",
+        "Etat physique actuel de la (des) victime(s)": "aucune",
+        "Provenance/Cause probable d’incident": "chariot defectueux",
+        "Mesures existantes ayant pu prévenir tel Incident": "maintenance recente",
+        "Description de l’événement": "palette tombee",
+        "Conséquence": "perte marchandise",
+        " Photo de l'incident / accident si existe": "oui",
+        "Réaction d'urgence du Resp HSE": "isolement zone",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": null,
+        "Réaction technique": "reparation",
+        "Action Correctives provisoires ": "remplacement",
+        "Détails concernant les Causes apparents": "defaut frein",
+        " Recommandations préliminaires": "controle chariots",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Salut,\n\naccident report Sara Ben Salem date 20 avril 9h15 entrepot type materiel dommage casse palette cause chariot defectueux description palette tombee photo oui reaction isolement zone action remplacement recommandations controle chariots"
+  },
+  {
+    "output": {
+      "label": "Accident & Incident Report",
+      "type": "WORKFLOW",
+      "email_id": "1284",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Karim Mansour",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "22/04/2026",
+        "Heure de l'incendie": "16:45",
+        "Lieu": "bureau",
+        "Type": "mineur",
+        "si dommage corporel a remplir": null,
+        "si dommage matériel a remplir": null,
+        "si réputation a remplir": "oui",
+        "si fatalité a remplir": null,
+        "type du préjudice": "reputation",
+        "localisation du préjudice": "bureau",
+        "Etat physique actuel de la (des) victime(s)": "aucun",
+        "Provenance/Cause probable d’incident": "erreur communication",
+        "Mesures existantes ayant pu prévenir tel Incident": "procedure manquante",
+        "Description de l’événement": "info erronee client",
+        "Conséquence": "mecontentement",
+        " Photo de l'incident / accident si existe": null,
+        "Réaction d'urgence du Resp HSE": "excuses",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": null,
+        "Réaction technique": null,
+        "Action Correctives provisoires ": "correction",
+        "Détails concernant les Causes apparents": "manque verification",
+        " Recommandations préliminaires": "double check",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Bonjour,\n\naccident report Karim Mansour date 22 avril 16h45 bureau type mineur reputation description info erronee client consequence mecontentement action correction recommandations double check"
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1285",
+      "confidence_score": null,
+      "attributes": {
+        "Détails sur la formation": null,
+        "Nature": "interne",
+        "Organisme de Formation": "interne",
+        "Thématique": "securite",
+        "Année": "2026",
+        "Mode": "presentiel",
+        "Durée": "2 jours",
+        "Objectif visé": "prevention",
+        "Date prévue": "20/05/2026",
+        "Budget estimé": "3000 TND",
+        "Thématique de la formation": "securite",
+        "Objectif de la formation": "prevention accidents",
+        "Urgence du besoin": "moyenne",
+        "Mode de formation": "presentiel",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "20/05/2026",
+        "Au": "21/05/2026",
+        "Formateur pressenti (si connu)": "interne",
+        "Budget estimé (si connu)": "3000 TND",
+        "Documents justificatifs": "0",
+        "Personnel Cible": "equipe production",
+        "Commentaire complémentaire": "prioritaire",
+        "Sélection de l'organisme": "interne",
+        "Organisme de formation final": "interne",
+        "Clôture formation": null,
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin en formation nature interne thematique securite annee 2026 mode presentiel duree 2 jours objectif prevention date 20-21 mai budget 3000 personnel equipe production commentaire prioritaire"
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1286",
+      "confidence_score": null,
+      "attributes": {
+        "Détails sur la formation": null,
+        "Nature": "externe",
+        "Organisme de Formation": "HSE Expert",
+        "Thématique": "qualite",
+        "Année": "2026",
+        "Mode": "en ligne",
+        "Durée": "1 jour",
+        "Objectif visé": "ISO 22000",
+        "Date prévue": "25/05/2026",
+        "Budget estimé": "1500 TND",
+        "Thématique de la formation": "qualite",
+        "Objectif de la formation": "mise a jour norme",
+        "Urgence du besoin": "haute",
+        "Mode de formation": "en ligne",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "25/05/2026",
+        "Au": "25/05/2026",
+        "Formateur pressenti (si connu)": "HSE Expert",
+        "Budget estimé (si connu)": "1500 TND",
+        "Documents justificatifs": "0",
+        "Personnel Cible": "equipe qualite",
+        "Commentaire complémentaire": "urgent",
+        "Sélection de l'organisme": "HSE Expert",
+        "Organisme de formation final": "HSE Expert",
+        "Clôture formation": null,
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": "0"
+      }
+    },
+    "input_email": "Salut,\n\nexpression besoin formation nature externe organisme HSE Expert thematique qualite annee 2026 mode en ligne duree 1 jour objectif mise a jour ISO date 25 mai budget 1500 personnel equipe qualite urgent"
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1287",
+      "confidence_score": null,
+      "attributes": {
+        "Détails sur la formation": null,
+        "Nature": "interne",
+        "Organisme de Formation": "interne",
+        "Thématique": "vente",
+        "Année": "2026",
+        "Mode": "presentiel",
+        "Durée": "2 jours",
+        "Objectif visé": "negotiation",
+        "Date prévue": "28/05/2026",
+        "Budget estimé": "2500 TND",
+        "Thématique de la formation": "vente",
+        "Objectif de la formation": "ameliorer techniques",
+        "Urgence du besoin": "moyenne",
+        "Mode de formation": "presentiel",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "28/05/2026",
+        "Au": "29/05/2026",
+        "Formateur pressenti (si connu)": "interne",
+        "Budget estimé (si connu)": "2500 TND",
+        "Documents justificatifs": "0",
+        "Personnel Cible": "equipe vente",
+        "Commentaire complémentaire": "pour equipe",
+        "Sélection de l'organisme": "interne",
+        "Organisme de formation final": "interne",
+        "Clôture formation": null,
+        "Formation réaliser": null,
+        "Date de réalisation": null,
+        "Satisfaction": null,
+        "Fiche de présence ": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin formation nature interne thematique vente annee 2026 mode presentiel duree 2 jours objectif ameliorer techniques date 28-29 mai budget 2500 personnel equipe vente commentaire pour equipe"
+  },
+  {
+    "output": {
+      "label": "Session de formation",
+      "type": "WORKFLOW",
+      "email_id": "1288",
+      "confidence_score": null,
+      "attributes": {
+        "Formation": "securite",
+        "Organisme de formation Final": "interne",
+        "Thématique": "HSE",
+        "Nom Formateur": "Ahmed Khelifi",
+        "Adresse": "Tunis",
+        "CV Formateur": "joint",
+        "Niveau formateur": "expert",
+        "Date début Réel": "20/05/2026",
+        "Date Fin Réel": "21/05/2026",
+        "Lieu de formation": "salle conference",
+        "Liste des personnels Final": "15 personnes"
+      }
+    },
+    "input_email": "Salut,\n\nsession de formation securite organisme interne thematique HSE formateur Ahmed Khelifi adresse Tunis CV joint niveau expert debut 20 fin 21 mai lieu salle conference liste 15 personnes"
+  },
+  {
+    "output": {
+      "label": "Session de formation",
+      "type": "WORKFLOW",
+      "email_id": "1289",
+      "confidence_score": null,
+      "attributes": {
+        "Formation": "qualite",
+        "Organisme de formation Final": "HSE Expert",
+        "Thématique": "ISO 22000",
+        "Nom Formateur": "Sarah Ben Salem",
+        "Adresse": "en ligne",
+        "CV Formateur": "joint",
+        "Niveau formateur": "certifie",
+        "Date début Réel": "25/05/2026",
+        "Date Fin Réel": "25/05/2026",
+        "Lieu de formation": "zoom",
+        "Liste des personnels Final": "10 personnes"
+      }
+    },
+    "input_email": "Bonjour,\n\nsession de formation qualite organisme HSE Expert thematique ISO 22000 formateur Sarah adresse en ligne CV joint niveau certifie debut fin 25 mai lieu zoom liste 10 personnes"
+  },
+  {
+    "output": {
+      "label": "Session de formation",
+      "type": "WORKFLOW",
+      "email_id": "1290",
+      "confidence_score": null,
+      "attributes": {
+        "Formation": "vente",
+        "Organisme de formation Final": "interne",
+        "Thématique": "negotiation",
+        "Nom Formateur": "Karim Mansour",
+        "Adresse": "Tunis",
+        "CV Formateur": "joint",
+        "Niveau formateur": "senior",
+        "Date début Réel": "28/05/2026",
+        "Date Fin Réel": "29/05/2026",
+        "Lieu de formation": "salle B",
+        "Liste des personnels Final": "12 personnes"
+      }
+    },
+    "input_email": "Salut,\n\nsession de formation vente organisme interne thematique negotiation formateur Karim adresse Tunis CV joint niveau senior debut 28 fin 29 mai lieu salle B liste 12 personnes"
+  },
+  {
+    "output": {
+      "label": "Evaluation à chaud",
+      "type": "WORKFLOW",
+      "email_id": "1291",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "securite",
+        "Organisme de formation": "interne",
+        "Date Début": "20/05/2026",
+        "Date Fin": "21/05/2026",
+        "Lieu de la formation": "salle conference",
+        "Formateur": "Ahmed Khelifi",
+        "Nom et prénom du participant": "Youssef Ben Ali",
+        "Questions": "oui",
+        "Est-ce que le programme de formation  communiqué a été respecté ?": "oui",
+        "Le formateur était-il clair dans ses  explications ?": "oui",
+        "Aviez-vous la possibilité de poser des  questions ?": "oui",
+        "Le formateur a-t-il répondu clairement à vos  questions ?": "oui",
+        "Le formateur a-t-il montré une bonne  volonté pour vous faire apprendre ?": "oui",
+        "Les moyens pédagogiques (vidéo projecteur,  exemples pratiques…) utilisés par le formateur  étaient-ils adaptés ?": "oui",
+        "Le document remis est-il clair et riche ?": "oui",
+        "Les horaires et la durée étaient-ils adaptés à  la formation ?": "oui",
+        "Le lieu de déroulement de la formation est-il  adapté à la formation (salle, éclairage,  climatisation…) ?": "oui",
+        "Pensez-vous que cette formation  contribuera positivement à votre  développement dans la vie professionnelle ?": "oui",
+        "Intervention du formateur": "bonne",
+        "Le formateur sait transmettre ses connaissances (Maitrise du sujet, donne des exemples pratiques) ?": "oui",
+        "Le formateur sait mobiliser les participants (donne envie d’apprendre, fait participer …) ?": "oui",
+        "Que pensez-vous du formateur ?": "excellent",
+        "Qualité des supports pédagogiques": "bonne",
+        "Que pensez-vous des aides visuels utilisées ?": "bonnes",
+        "Comment trouvez-vous les polycopies, leur qualité, leur contenu ?": "riches",
+        "Les supports remis sont-ils utiles pour utiliser ce que vous avez appris ?": "oui",
+        "Perfectionnement de connaissances": "oui",
+        "Les informations présentées sont-elle utiles pour vous ?": "oui",
+        "Pouvez-vous appliquer ce que vous venez d’apprendre à vos tâches quotidiennes ?": "oui",
+        "Le sujet présenté répondait il à votre attente ?": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation a chaud formation securite organisme interne debut 20 fin 21 mai salle conference formateur Ahmed participant Youssef. Programme respecte formateur clair questions possibles reponses claires volonte bonne moyens adaptes document clair horaires lieu adaptes formation utile. Intervention bonne formateur maitrise mobilise supports bons polycopies riches utiles. Informations utiles applicables sujet repond attente"
+  },
+  {
+    "output": {
+      "label": "Evaluation à chaud",
+      "type": "WORKFLOW",
+      "email_id": "1292",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "qualite",
+        "Organisme de formation": "HSE Expert",
+        "Date Début": "25/05/2026",
+        "Date Fin": "25/05/2026",
+        "Lieu de la formation": "zoom",
+        "Formateur": "Sarah Ben Salem",
+        "Nom et prénom du participant": "Amina Khelifi",
+        "Questions": "oui",
+        "Est-ce que le programme de formation  communiqué a été respecté ?": "oui",
+        "Le formateur était-il clair dans ses  explications ?": "oui",
+        "Aviez-vous la possibilité de poser des  questions ?": "oui",
+        "Le formateur a-t-il répondu clairement à vos  questions ?": "oui",
+        "Le formateur a-t-il montré une bonne  volonté pour vous faire apprendre ?": "oui",
+        "Les moyens pédagogiques (vidéo projecteur,  exemples pratiques…) utilisés par le formateur  étaient-ils adaptés ?": "oui",
+        "Le document remis est-il clair et riche ?": "oui",
+        "Les horaires et la durée étaient-ils adaptés à  la formation ?": "oui",
+        "Le lieu de déroulement de la formation est-il  adapté à la formation (salle, éclairage,  climatisation…) ?": "oui",
+        "Pensez-vous que cette formation  contribuera positivement à votre  développement dans la vie professionnelle ?": "oui",
+        "Intervention du formateur": "bonne",
+        "Le formateur sait transmettre ses connaissances (Maitrise du sujet, donne des exemples pratiques) ?": "oui",
+        "Le formateur sait mobiliser les participants (donne envie d’apprendre, fait participer …) ?": "oui",
+        "Que pensez-vous du formateur ?": "bon",
+        "Qualité des supports pédagogiques": "moyenne",
+        "Que pensez-vous des aides visuels utilisées ?": "bonnes",
+        "Comment trouvez-vous les polycopies, leur qualité, leur contenu ?": "utiles",
+        "Les supports remis sont-ils utiles pour utiliser ce que vous avez appris ?": "oui",
+        "Perfectionnement de connaissances": "oui",
+        "Les informations présentées sont-elle utiles pour vous ?": "oui",
+        "Pouvez-vous appliquer ce que vous venez d’apprendre à vos tâches quotidiennes ?": "oui",
+        "Le sujet présenté répondait il à votre attente ?": "oui"
+      }
+    },
+    "input_email": "Salut,\n\nevaluation a chaud formation qualite HSE Expert 25 mai zoom formateur Sarah participant Amina. Programme respecte formateur clair questions reponses volonte bonne moyens adaptes document clair horaires lieu adaptes formation utile. Intervention bonne formateur maitrise mobilise supports moyens polycopies utiles informations utiles applicables sujet repond attente"
+  },
+  {
+    "output": {
+      "label": "Evaluation à chaud",
+      "type": "WORKFLOW",
+      "email_id": "1293",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "vente",
+        "Organisme de formation": "interne",
+        "Date Début": "28/05/2026",
+        "Date Fin": "29/05/2026",
+        "Lieu de la formation": "salle B",
+        "Formateur": "Karim Mansour",
+        "Nom et prénom du participant": "Omar Mansour",
+        "Questions": "oui",
+        "Est-ce que le programme de formation  communiqué a été respecté ?": "oui",
+        "Le formateur était-il clair dans ses  explications ?": "oui",
+        "Aviez-vous la possibilité de poser des  questions ?": "oui",
+        "Le formateur a-t-il répondu clairement à vos  questions ?": "oui",
+        "Le formateur a-t-il montré une bonne  volonté pour vous faire apprendre ?": "oui",
+        "Les moyens pédagogiques (vidéo projecteur,  exemples pratiques…) utilisés par le formateur  étaient-ils adaptés ?": "oui",
+        "Le document remis est-il clair et riche ?": "oui",
+        "Les horaires et la durée étaient-ils adaptés à  la formation ?": "oui",
+        "Le lieu de déroulement de la formation est-il  adapté à la formation (salle, éclairage,  climatisation…) ?": "oui",
+        "Pensez-vous que cette formation  contribuera positivement à votre  développement dans la vie professionnelle ?": "oui",
+        "Intervention du formateur": "excellente",
+        "Le formateur sait transmettre ses connaissances (Maitrise du sujet, donne des exemples pratiques) ?": "oui",
+        "Le formateur sait mobiliser les participants (donne envie d’apprendre, fait participer …) ?": "oui",
+        "Que pensez-vous du formateur ?": "excellent",
+        "Qualité des supports pédagogiques": "excellente",
+        "Que pensez-vous des aides visuels utilisées ?": "excellentes",
+        "Comment trouvez-vous les polycopies, leur qualité, leur contenu ?": "riches",
+        "Les supports remis sont-ils utiles pour utiliser ce que vous avez appris ?": "oui",
+        "Perfectionnement de connaissances": "oui",
+        "Les informations présentées sont-elle utiles pour vous ?": "oui",
+        "Pouvez-vous appliquer ce que vous venez d’apprendre à vos tâches quotidiennes ?": "oui",
+        "Le sujet présenté répondait il à votre attente ?": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation a chaud formation vente interne debut 28 fin 29 mai salle B formateur Karim participant Omar. Programme respecte formateur clair questions reponses volonte bonne moyens adaptes document clair horaires lieu adaptes formation utile. Intervention excellente formateur maitrise mobilise supports excellents polycopies riches utiles informations utiles applicables sujet repond attente"
+  },
+  {
+    "output": {
+      "label": "Evaluation à froid",
+      "type": "WORKFLOW",
+      "email_id": "1294",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "securite",
+        "Organisme de formation": "interne",
+        "Date début": "20/05/2026",
+        "Date Fin": "21/05/2026",
+        "Lieu de la formation": "salle conference",
+        "Formateur": "Ahmed Khelifi",
+        "Nom et prénom du participant": "Youssef Ben Ali",
+        "Appréciation du Supérieur Hiérarchique": "positive",
+        "Date d'évaluation": "15/06/2026",
+        "La personne formée utilise les connaissances  Transmises lors de la formation ?": "oui",
+        "Commentaires": "applique bien",
+        "La personne formée a progressé grâce à cette  formation ?": "oui",
+        "La personne formée doit suivre un module  complémentaire sur le sujet ? si oui lequel": "non",
+        "La personne formée doit suivre un plan  d’action pour la mise en œuvre du nouveau  savoir-faire ? si oui préciser le N° d’action": "non",
+        "Note générale du supérieur hiérarchique ": "8/10"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation a froid formation securite debut 20 fin 21 mai formateur Ahmed participant Youssef appreciation superieur positive date eval 15 juin utilise connaissances oui progres oui pas module complementaire pas plan action note 8/10"
+  },
+  {
+    "output": {
+      "label": "Evaluation à froid",
+      "type": "WORKFLOW",
+      "email_id": "1295",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "qualite",
+        "Organisme de formation": "HSE Expert",
+        "Date début": "25/05/2026",
+        "Date Fin": "25/05/2026",
+        "Lieu de la formation": "zoom",
+        "Formateur": "Sarah Ben Salem",
+        "Nom et prénom du participant": "Amina Khelifi",
+        "Appréciation du Supérieur Hiérarchique": "moyenne",
+        "Date d'évaluation": "20/06/2026",
+        "La personne formée utilise les connaissances  Transmises lors de la formation ?": "partiellement",
+        "Commentaires": "besoin pratique",
+        "La personne formée a progressé grâce à cette  formation ?": "oui",
+        "La personne formée doit suivre un module  complémentaire sur le sujet ? si oui lequel": "oui ISO avance",
+        "La personne formée doit suivre un plan  d’action pour la mise en œuvre du nouveau  savoir-faire ? si oui préciser le N° d’action": "oui action 45",
+        "Note générale du supérieur hiérarchique ": "6/10"
+      }
+    },
+    "input_email": "Salut,\n\nevaluation a froid formation qualite 25 mai formateur Sarah participant Amina appreciation moyenne date 20 juin utilise connaissances partiellement progres oui module complementaire ISO avance plan action 45 note 6/10"
+  },
+  {
+    "output": {
+      "label": "Evaluation à froid",
+      "type": "WORKFLOW",
+      "email_id": "1296",
+      "confidence_score": null,
+      "attributes": {
+        "Donnée Générale De La Formation": null,
+        "Thème de formation": "vente",
+        "Organisme de formation": "interne",
+        "Date début": "28/05/2026",
+        "Date Fin": "29/05/2026",
+        "Lieu de la formation": "salle B",
+        "Formateur": "Karim Mansour",
+        "Nom et prénom du participant": "Omar Mansour",
+        "Appréciation du Supérieur Hiérarchique": "tres positive",
+        "Date d'évaluation": "25/06/2026",
+        "La personne formée utilise les connaissances  Transmises lors de la formation ?": "oui",
+        "Commentaires": "tres bon",
+        "La personne formée a progressé grâce à cette  formation ?": "oui",
+        "La personne formée doit suivre un module  complémentaire sur le sujet ? si oui lequel": "non",
+        "La personne formée doit suivre un plan  d’action pour la mise en œuvre du nouveau  savoir-faire ? si oui préciser le N° d’action": "non",
+        "Note générale du supérieur hiérarchique ": "9/10"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation a froid formation vente debut 28 fin 29 mai formateur Karim participant Omar appreciation tres positive date 25 juin utilise connaissances oui progres oui pas module pas plan action note 9/10"
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1297",
+      "confidence_score": null,
+      "attributes": {
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "rencontre client",
+        " Motif(s) de la mission": "signature contrat",
+        " Date de départ": "22/04/2026",
+        " Heure de départ": "08:00",
+        " Date de retour": "24/04/2026",
+        " Heure de retour": "18:00",
+        " Type de destination": "Sfax",
+        " Adresse / Lieu de la mission": "siege client",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "oui",
+        " Moyen de transport principal": "voiture",
+        " Type du moyen de transport": "entreprise",
+        " A préciser": null,
+        " Fond de roulement estimé": "600 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": "oui",
+        "Réservation Voiture": "oui",
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre de mission details rencontre client motif signature contrat depart 22 avril 08h retour 24 18h destination Sfax siege client. Hebergement oui transport voiture entreprise fond 600 budget approuve reservation voiture piece 0"
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1298",
+      "confidence_score": null,
+      "attributes": {
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "formation",
+        " Motif(s) de la mission": "mise a jour",
+        " Date de départ": "25/04/2026",
+        " Heure de départ": "07:30",
+        " Date de retour": "27/04/2026",
+        " Heure de retour": "17:00",
+        " Type de destination": "Tunis",
+        " Adresse / Lieu de la mission": "centre formation",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "non",
+        " Moyen de transport principal": "train",
+        " Type du moyen de transport": "public",
+        " A préciser": null,
+        " Fond de roulement estimé": "350 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": "oui",
+        "Réservation Voiture": "non",
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Salut,\n\nordre de mission details formation motif mise a jour depart 25 avril 07h30 retour 27 17h destination Tunis centre formation. Hebergement non transport train public fond 350 budget approuve piece 0"
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1299",
+      "confidence_score": null,
+      "attributes": {
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "inspection site",
+        " Motif(s) de la mission": "controle qualite",
+        " Date de départ": "30/04/2026",
+        " Heure de départ": "09:00",
+        " Date de retour": "01/05/2026",
+        " Heure de retour": "16:00",
+        " Type de destination": "Kairouan",
+        " Adresse / Lieu de la mission": "usine",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "oui",
+        " Moyen de transport principal": "voiture",
+        " Type du moyen de transport": "entreprise",
+        " A préciser": null,
+        " Fond de roulement estimé": "450 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": "oui",
+        "Réservation Voiture": "oui",
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre de mission details inspection site motif controle qualite depart 30 avril 09h retour 1 mai 16h destination Kairouan usine. Hebergement oui transport voiture entreprise fond 450 budget approuve reservation voiture piece 0"
+  },
+  {
+    "output": {
+      "label": "Permis de Travail Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1300",
+      "confidence_score": null,
+      "attributes": {
+        "Information sur le chantier": null,
+        "Nom du chantier ": "Projet Route",
+        "Lieu du chantier": "La Marsa",
+        "Zone concernée": "section 2",
+        "Date et heure de début prévue": "22/04/2026 08:00",
+        "Date et heure de fin prévue": "20/05/2026 18:00",
+        "Description des travaux": "installation electricite",
+        "Autre": null,
+        "Description du Travail à Effectuer en détail": "pose cables",
+        "ÉQUIPE INTERVENANTE": null,
+        "Entreprise/Service": "BTP Tunis",
+        "Responsable d’équipe": "Ahmed Khelifi",
+        "Nombre d’ouvriers": "8",
+        "liste des Ouvriers": "liste jointe",
+        "Analyse des risques": "oui",
+        "Risque potentiels": "electrocution",
+        "Mesure de prévention": "EPI",
+        "Équipements de protection individuelle (obligatoire)": "casque gants",
+        "Autorisations spécifiques": "oui",
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Date réel des Travaux terminés": null,
+        "État du chantier": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\npermis de travail chantier nom Projet Route lieu La Marsa zone section 2 debut 22 avril 8h fin 20 mai 18h description installation electricite pose cables. Equipe BTP Tunis responsable Ahmed 8 ouvriers liste jointe analyse risques electrocution mesure EPI casque gants autorisations oui declaration signee"
+  },
+  {
+    "output": {
+      "label": "Permis de Travail Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1301",
+      "confidence_score": null,
+      "attributes": {
+        "Information sur le chantier": null,
+        "Nom du chantier ": "Usine Extension",
+        "Lieu du chantier": "Ben Arous",
+        "Zone concernée": "atelier",
+        "Date et heure de début prévue": "25/04/2026 09:00",
+        "Date et heure de fin prévue": "15/05/2026 17:00",
+        "Description des travaux": "peinture",
+        "Autre": null,
+        "Description du Travail à Effectuer en détail": "peinture murs",
+        "ÉQUIPE INTERVENANTE": null,
+        "Entreprise/Service": "Paint Expert",
+        "Responsable d’équipe": "Leila Trabelsi",
+        "Nombre d’ouvriers": "6",
+        "liste des Ouvriers": "liste jointe",
+        "Analyse des risques": "oui",
+        "Risque potentiels": "chute",
+        "Mesure de prévention": "harnais",
+        "Équipements de protection individuelle (obligatoire)": "casque harnais",
+        "Autorisations spécifiques": "oui",
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Date réel des Travaux terminés": null,
+        "État du chantier": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Salut,\n\npermis travail chantier Usine Extension lieu Ben Arous zone atelier debut 25 avril 9h fin 15 mai 17h description peinture murs. Equipe Paint Expert responsable Leila 6 ouvriers liste jointe analyse risques chute mesure harnais EPI casque harnais autorisations oui declaration signee"
+  },
+  {
+    "output": {
+      "label": "Permis de Travail Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1302",
+      "confidence_score": null,
+      "attributes": {
+        "Information sur le chantier": null,
+        "Nom du chantier ": "Hotel Renovation",
+        "Lieu du chantier": "Hammamet",
+        "Zone concernée": "salle bain",
+        "Date et heure de début prévue": "28/04/2026 08:30",
+        "Date et heure de fin prévue": "10/05/2026 18:00",
+        "Description des travaux": "plomberie",
+        "Autre": null,
+        "Description du Travail à Effectuer en détail": "installation tuyaux",
+        "ÉQUIPE INTERVENANTE": null,
+        "Entreprise/Service": "Plombier Pro",
+        "Responsable d’équipe": "Karim Mansour",
+        "Nombre d’ouvriers": "5",
+        "liste des Ouvriers": "liste jointe",
+        "Analyse des risques": "oui",
+        "Risque potentiels": "fuite eau",
+        "Mesure de prévention": "controle",
+        "Équipements de protection individuelle (obligatoire)": "gants lunettes",
+        "Autorisations spécifiques": "oui",
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Date réel des Travaux terminés": null,
+        "État du chantier": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\npermis travail chantier Hotel Renovation lieu Hammamet zone salle bain debut 28 avril 8h30 fin 10 mai 18h description plomberie installation tuyaux. Equipe Plombier Pro responsable Karim 5 ouvriers liste jointe analyse risques fuite eau mesure controle EPI gants lunettes autorisations oui declaration signee"
+  },
+  {
+    "output": {
+      "label": " PERMIS DE TRAVAIL",
+      "type": "WORKFLOW",
+      "email_id": "1303",
+      "confidence_score": null,
+      "attributes": {
+        "SCG // Sous-traitant ": "BTP Tunis",
+        "Nbre des travailleurs ": "8",
+        "Date et heure": "22/04/2026 08:00",
+        "Site": "Projet Route",
+        "Description de l’activité ": "installation cables",
+        "Précisée ": "electrique",
+        "Equipements & matériels ": "outils standard",
+        "Les mesures de contrôle": "EPI",
+        "Equipe de premiers secours": "oui",
+        "Equipe de lutte contre l’incendie ": "oui",
+        "Numéro d'urgence": "190",
+        "Responsable HSE": "Ahmed Khelifi",
+        "Date": "20/04/2026",
+        "Superviseur-ST": "oui",
+        "Superviseur HSE": "oui",
+        "EXTENSION": null,
+        "ACHÈVEMENT": null,
+        "Date de fin des travaux": "20/05/2026",
+        "Responsable SCG": "oui"
+      }
+    },
+    "input_email": "Salut,\n\npermis de travail SCG BTP Tunis 8 travailleurs date 22 avril 8h site Projet Route description installation cables electrique equipements outils mesures EPI equipe secours incendie numero 190 responsable HSE Ahmed date 20 avril superviseur ST HSE oui date fin travaux 20 mai responsable SCG oui"
+  },
+  {
+    "output": {
+      "label": " PERMIS DE TRAVAIL",
+      "type": "WORKFLOW",
+      "email_id": "1304",
+      "confidence_score": null,
+      "attributes": {
+        "SCG // Sous-traitant ": "Paint Expert",
+        "Nbre des travailleurs ": "6",
+        "Date et heure": "25/04/2026 09:00",
+        "Site": "Usine Extension",
+        "Description de l’activité ": "peinture",
+        "Précisée ": "murs",
+        "Equipements & matériels ": "pinceaux",
+        "Les mesures de contrôle": "harnais",
+        "Equipe de premiers secours": "oui",
+        "Equipe de lutte contre l’incendie ": "oui",
+        "Numéro d'urgence": "190",
+        "Responsable HSE": "Leila Trabelsi",
+        "Date": "23/04/2026",
+        "Superviseur-ST": "oui",
+        "Superviseur HSE": "oui",
+        "EXTENSION": null,
+        "ACHÈVEMENT": null,
+        "Date de fin des travaux": "15/05/2026",
+        "Responsable SCG": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\npermis de travail SCG Paint Expert 6 travailleurs date 25 avril 9h site Usine Extension description peinture murs equipements pinceaux mesures harnais equipe secours incendie numero 190 responsable HSE Leila date 23 avril superviseur ST HSE oui date fin 15 mai responsable SCG oui"
+  },
+  {
+    "output": {
+      "label": " PERMIS DE TRAVAIL",
+      "type": "WORKFLOW",
+      "email_id": "1305",
+      "confidence_score": null,
+      "attributes": {
+        "SCG // Sous-traitant ": "Plombier Pro",
+        "Nbre des travailleurs ": "5",
+        "Date et heure": "28/04/2026 08:30",
+        "Site": "Hotel Renovation",
+        "Description de l’activité ": "plomberie",
+        "Précisée ": "tuyaux",
+        "Equipements & matériels ": "outils plomberie",
+        "Les mesures de contrôle": "controle fuite",
+        "Equipe de premiers secours": "oui",
+        "Equipe de lutte contre l’incendie ": "oui",
+        "Numéro d'urgence": "190",
+        "Responsable HSE": "Karim Mansour",
+        "Date": "26/04/2026",
+        "Superviseur-ST": "oui",
+        "Superviseur HSE": "oui",
+        "EXTENSION": null,
+        "ACHÈVEMENT": null,
+        "Date de fin des travaux": "10/05/2026",
+        "Responsable SCG": "oui"
+      }
+    },
+    "input_email": "Salut,\n\npermis de travail SCG Plombier Pro 5 travailleurs date 28 avril 8h30 site Hotel Renovation description plomberie tuyaux equipements outils plomberie mesures controle fuite equipe secours incendie numero 190 responsable HSE Karim date 26 avril superviseur ST HSE oui date fin 10 mai responsable SCG oui"
+  },
+  {
+    "output": {
+      "label": "Demande Achat",
+      "type": "WORKFLOW",
+      "email_id": "1306",
+      "confidence_score": null,
+      "attributes": {
+        "Demandes d’Achat": "oui",
+        "Date Demande": "18/04/2026",
+        "Département": "IT",
+        "Article": "ordinateurs",
+        "Urgence": "haute",
+        "Justification": "remplacement materiel defectueux"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande achat date 18 avril departement IT article ordinateurs urgence haute justification remplacement materiel defectueux"
+  },
+  {
+    "output": {
+      "label": "Demande Achat",
+      "type": "WORKFLOW",
+      "email_id": "1307",
+      "confidence_score": null,
+      "attributes": {
+        "Demandes d’Achat": "oui",
+        "Date Demande": "21/04/2026",
+        "Département": "RH",
+        "Article": "fournitures bureau",
+        "Urgence": "moyenne",
+        "Justification": "consommables epuises"
+      }
+    },
+    "input_email": "Salut,\n\ndemande achat date 21 avril departement RH article fournitures bureau urgence moyenne justification consommables epuises"
+  },
+  {
+    "output": {
+      "label": "Demande Achat",
+      "type": "WORKFLOW",
+      "email_id": "1308",
+      "confidence_score": null,
+      "attributes": {
+        "Demandes d’Achat": "oui",
+        "Date Demande": "24/04/2026",
+        "Département": "production",
+        "Article": "pieces machine",
+        "Urgence": "haute",
+        "Justification": "panne ligne"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande achat date 24 avril departement production article pieces machine urgence haute justification panne ligne"
+  },
+  {
+    "output": {
+      "label": "ijipi",
+      "type": "WORKFLOW",
+      "email_id": "1309",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Projet Test",
+        "date": "30/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\nijipi nom Projet Test date 30 avril 2026. A valider"
+  },
+  {
+    "output": {
+      "label": "ijipi",
+      "type": "WORKFLOW",
+      "email_id": "1310",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Test 2",
+        "date": "05/05/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nijipi nom Test 2 date 5 mai 2026"
+  },
+  {
+    "output": {
+      "label": "ijipi",
+      "type": "WORKFLOW",
+      "email_id": "1311",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Projet Final",
+        "date": "10/05/2026"
+      }
+    },
+    "input_email": "Hello,\n\nijipi nom Projet Final date 10 mai 2026. Merci"
+  },
+  {
+    "output": {
+      "label": "Process Appel Offre",
+      "type": "WORKFLOW",
+      "email_id": "1312",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Appel Offre Fourniture",
+        "Date soumission": "25/04/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocess appel offre nom Appel Offre Fourniture date soumission 25 avril 2026"
+  },
+  {
+    "output": {
+      "label": "Process Appel Offre",
+      "type": "WORKFLOW",
+      "email_id": "1313",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Appel Offre Service",
+        "Date soumission": "28/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\nprocess appel offre nom Appel Offre Service date soumission 28 avril 2026"
+  },
+  {
+    "output": {
+      "label": "Process Appel Offre",
+      "type": "WORKFLOW",
+      "email_id": "1314",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Appel Offre Travaux",
+        "Date soumission": "02/05/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocess appel offre nom Appel Offre Travaux date soumission 2 mai 2026"
+  },
+  {
+    "output": {
+      "label": "Control",
+      "type": "WORKFLOW",
+      "email_id": "1315",
+      "confidence_score": null,
+      "attributes": {
+        "Titre": "Control Qualite",
+        "PJ": "0"
+      }
+    },
+    "input_email": "Salut,\n\ncontrol titre Control Qualite PJ 0"
+  },
+  {
+    "output": {
+      "label": "Control",
+      "type": "WORKFLOW",
+      "email_id": "1316",
+      "confidence_score": null,
+      "attributes": {
+        "Titre": "Control Stock",
+        "PJ": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrol titre Control Stock PJ 0"
+  },
+  {
+    "output": {
+      "label": "Control",
+      "type": "WORKFLOW",
+      "email_id": "1317",
+      "confidence_score": null,
+      "attributes": {
+        "Titre": "Control Paie",
+        "PJ": "0"
+      }
+    },
+    "input_email": "Hello,\n\ncontrol titre Control Paie PJ 0"
+  },
+  {
+    "output": {
+      "label": "Demande de support",
+      "type": "WORKFLOW",
+      "email_id": "1318",
+      "confidence_score": null,
+      "attributes": {
+        "Nouvelle demande": "oui",
+        "Date": "19/04/2026",
+        "Catégorie": "IT",
+        "Sous catégorie": "panne ordinateur",
+        "Article": "PC bureau",
+        "Descriptif": "ne demarre plus",
+        "Sévérité": "haute",
+        "Mode de communication recommandé": "email",
+        "Pièce jointe": "photo",
+        "Traitement": "en cours",
+        "Date d'acquittement ": "20/04/2026",
+        "Action faite": "diagnostic"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande de support nouvelle date 19 avril categorie IT sous categorie panne ordinateur article PC bureau descriptif ne demarre plus severite haute mode email piece photo traitement en cours acquittement 20 avril action diagnostic"
+  },
+  {
+    "output": {
+      "label": "Demande de support",
+      "type": "WORKFLOW",
+      "email_id": "1319",
+      "confidence_score": null,
+      "attributes": {
+        "Nouvelle demande": "oui",
+        "Date": "22/04/2026",
+        "Catégorie": "RH",
+        "Sous catégorie": "acces systeme",
+        "Article": "compte employe",
+        "Descriptif": "mot de passe oublie",
+        "Sévérité": "moyenne",
+        "Mode de communication recommandé": "telephone",
+        "Pièce jointe": "0",
+        "Traitement": "termine",
+        "Date d'acquittement ": "23/04/2026",
+        "Action faite": "reset mdp"
+      }
+    },
+    "input_email": "Salut,\n\ndemande de support nouvelle date 22 avril categorie RH sous categorie acces systeme article compte employe descriptif mot de passe oublie severite moyenne mode telephone piece 0 traitement termine acquittement 23 avril action reset mdp"
+  },
+  {
+    "output": {
+      "label": "Demande de support",
+      "type": "WORKFLOW",
+      "email_id": "1320",
+      "confidence_score": null,
+      "attributes": {
+        "Nouvelle demande": "oui",
+        "Date": "25/04/2026",
+        "Catégorie": "production",
+        "Sous catégorie": "machine",
+        "Article": "ligne 3",
+        "Descriptif": "bruit anormal",
+        "Sévérité": "haute",
+        "Mode de communication recommandé": "email",
+        "Pièce jointe": "video",
+        "Traitement": "en cours",
+        "Date d'acquittement ": "26/04/2026",
+        "Action faite": "intervention"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande de support nouvelle date 25 avril categorie production sous categorie machine article ligne 3 descriptif bruit anormal severite haute mode email piece video traitement en cours acquittement 26 avril action intervention"
+  },
+  {
+    "output": {
+      "label": "EP014c-Engineering-Management",
+      "type": "WORKFLOW",
+      "email_id": "1321",
+      "confidence_score": null,
+      "attributes": {
+        "Numéro projet": "PROJ-2026-12",
+        "Editeur": "Ahmed Khelifi",
+        "Code": "ENG-045",
+        "Sous Tache": "design",
+        "Description": "plan electrique",
+        "Complete Document References": "oui",
+        "Ref. Projet": "REF-998",
+        "Type Doc": "plan",
+        "Spec": "electrique",
+        "N Doc": "DOC-112",
+        "Rev": "v1",
+        "Nombre Heure Totale": "40",
+        "Qualif": "ingenieur",
+        "Nombre Heures Edition": "25",
+        "Vérificateur": "Leila Trabelsi",
+        "Verificateur": "Leila Trabelsi",
+        "Nombre Heures Verifcation": "10",
+        "Approbateur": "Direction",
+        "Envoie Client": "non",
+        "Code Envoie": null,
+        "Pièce Jointe": "0"
+      }
+    },
+    "input_email": "Salut,\n\nep014c engineering management numero projet PROJ-2026-12 editeur Ahmed code ENG-045 sous tache design description plan electrique references complete ref projet REF-998 type doc plan spec electrique n doc DOC-112 rev v1 heures total 40 qualif ingenieur edition 25 verificateur Leila verif 10 approbateur direction envoie client non piece 0"
+  },
+  {
+    "output": {
+      "label": "EP014c-Engineering-Management",
+      "type": "WORKFLOW",
+      "email_id": "1322",
+      "confidence_score": null,
+      "attributes": {
+        "Numéro projet": "PROJ-2026-34",
+        "Editeur": "Fatma Ben Romdhane",
+        "Code": "ENG-067",
+        "Sous Tache": "calcul",
+        "Description": "etude structure",
+        "Complete Document References": "oui",
+        "Ref. Projet": "REF-445",
+        "Type Doc": "rapport",
+        "Spec": "structure",
+        "N Doc": "DOC-556",
+        "Rev": "v2",
+        "Nombre Heure Totale": "60",
+        "Qualif": "ingenieur senior",
+        "Nombre Heures Edition": "35",
+        "Vérificateur": "Karim Mansour",
+        "Verificateur": "Karim Mansour",
+        "Nombre Heures Verifcation": "15",
+        "Approbateur": "DG",
+        "Envoie Client": "oui",
+        "Code Envoie": "SEND-001",
+        "Pièce Jointe": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nep014c engineering management numero projet PROJ-2026-34 editeur Fatma code ENG-067 sous tache calcul description etude structure references complete ref REF-445 type doc rapport spec structure n doc DOC-556 rev v2 heures total 60 qualif senior edition 35 verificateur Karim verif 15 approbateur DG envoie client oui code SEND-001 piece 0"
+  },
+  {
+    "output": {
+      "label": "EP014c-Engineering-Management",
+      "type": "WORKFLOW",
+      "email_id": "1323",
+      "confidence_score": null,
+      "attributes": {
+        "Numéro projet": "PROJ-2026-56",
+        "Editeur": "Leila Trabelsi",
+        "Code": "ENG-089",
+        "Sous Tache": "verification",
+        "Description": "controle plan",
+        "Complete Document References": "oui",
+        "Ref. Projet": "REF-778",
+        "Type Doc": "plan",
+        "Spec": "electrique",
+        "N Doc": "DOC-990",
+        "Rev": "v1",
+        "Nombre Heure Totale": "30",
+        "Qualif": "ingenieur",
+        "Nombre Heures Edition": "20",
+        "Vérificateur": "Ahmed Khelifi",
+        "Verificateur": "Ahmed Khelifi",
+        "Nombre Heures Verifcation": "8",
+        "Approbateur": "Direction",
+        "Envoie Client": "non",
+        "Code Envoie": null,
+        "Pièce Jointe": "0"
+      }
+    },
+    "input_email": "Salut,\n\nep014c engineering management numero projet PROJ-2026-56 editeur Leila code ENG-089 sous tache verification description controle plan references complete ref REF-778 type doc plan spec electrique n doc DOC-990 rev v1 heures total 30 qualif ingenieur edition 20 verificateur Ahmed verif 8 approbateur direction envoie non piece 0"
+  },
+  {
+    "output": {
+      "label": "demande d'intervention",
+      "type": "WORKFLOW",
+      "email_id": "1324",
+      "confidence_score": null,
+      "attributes": {
+        "donnée utilisateur": "employe",
+        "nom": "Sami Ben Ahmed",
+        "prénom": "Sami",
+        "motif de la demande ": "panne",
+        "détail": "ordinateur ne demarre plus"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d intervention donnee utilisateur employe nom Sami Ben Ahmed prenom Sami motif panne detail ordinateur ne demarre plus"
+  },
+  {
+    "output": {
+      "label": "demande d'intervention",
+      "type": "WORKFLOW",
+      "email_id": "1325",
+      "confidence_score": null,
+      "attributes": {
+        "donnée utilisateur": "client",
+        "nom": "Leila Trabelsi",
+        "prénom": "Leila",
+        "motif de la demande ": "support",
+        "détail": "acces systeme bloque"
+      }
+    },
+    "input_email": "Salut,\n\ndemande d intervention donnee utilisateur client nom Leila Trabelsi prenom Leila motif support detail acces systeme bloque"
+  },
+  {
+    "output": {
+      "label": "demande d'intervention",
+      "type": "WORKFLOW",
+      "email_id": "1326",
+      "confidence_score": null,
+      "attributes": {
+        "donnée utilisateur": "fournisseur",
+        "nom": "Karim Mansour",
+        "prénom": "Karim",
+        "motif de la demande ": "maintenance",
+        "détail": "machine defectueuse"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d intervention donnee utilisateur fournisseur nom Karim Mansour prenom Karim motif maintenance detail machine defectueuse"
+  },
+  {
+    "output": {
+      "label": "coomercial ",
+      "type": "WORKFLOW",
+      "email_id": "1327",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Salut,\n\ncoomercial workflow rien a ajouter test"
+  },
+  {
+    "output": {
+      "label": "coomercial ",
+      "type": "WORKFLOW",
+      "email_id": "1328",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Bonjour,\n\ncoomercial simple vide ok"
+  },
+  {
+    "output": {
+      "label": "coomercial ",
+      "type": "WORKFLOW",
+      "email_id": "1329",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Hello,\n\ncoomercial workflow test rien de special"
+  },
+  {
+    "output": {
+      "label": "Help Desk GLPI",
+      "type": "WORKFLOW",
+      "email_id": "1330",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Sami Ben Ahmed",
+        "Article": "ordinateur",
+        "Objet": "panne",
+        "Description du problem": "ne demarre plus ecran noir"
+      }
+    },
+    "input_email": "Bonjour,\n\nhelp desk GLPI nom Sami Ben Ahmed article ordinateur objet panne description ne demarre plus ecran noir"
+  },
+  {
+    "output": {
+      "label": "Help Desk GLPI",
+      "type": "WORKFLOW",
+      "email_id": "1331",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Leila Trabelsi",
+        "Article": "imprimante",
+        "Objet": "bloquee",
+        "Description du problem": "papier coince"
+      }
+    },
+    "input_email": "Salut,\n\nhelp desk GLPI nom Leila Trabelsi article imprimante objet bloquee description papier coince"
+  },
+  {
+    "output": {
+      "label": "Help Desk GLPI",
+      "type": "WORKFLOW",
+      "email_id": "1332",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Karim Mansour",
+        "Article": "reseaux",
+        "Objet": "connexion",
+        "Description du problem": "internet lent"
+      }
+    },
+    "input_email": "Bonjour,\n\nhelp desk GLPI nom Karim Mansour article reseaux objet connexion description internet lent"
+  },
+  {
+    "output": {
+      "label": "Workflow",
+      "type": "WORKFLOW",
+      "email_id": "1333",
+      "confidence_score": null,
+      "attributes": {
+        "liste": "taches quotidiennes"
+      }
+    },
+    "input_email": "Salut,\n\nworkflow liste taches quotidiennes"
+  },
+  {
+    "output": {
+      "label": "Workflow",
+      "type": "WORKFLOW",
+      "email_id": "1334",
+      "confidence_score": null,
+      "attributes": {
+        "liste": "processus RH"
+      }
+    },
+    "input_email": "Bonjour,\n\nworkflow liste processus RH"
+  },
+  {
+    "output": {
+      "label": "Workflow",
+      "type": "WORKFLOW",
+      "email_id": "1335",
+      "confidence_score": null,
+      "attributes": {
+        "liste": "controle qualite"
+      }
+    },
+    "input_email": "Hello,\n\nworkflow liste controle qualite"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص",
+      "type": "WORKFLOW",
+      "email_id": "1336",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "الاسم واللقب": "أحمد الخليفي",
+        "رقم بطاقة التعريف الوطنية": "12345678",
+        "صادرة في": "تونس",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "تونس",
+        "مكان العقار": "المرسى",
+        "عدد العقار": "45",
+        "عدد الاشجار": "12",
+        "نوع الأشجار": "زيتون",
+        "سبب الطلب": "بناء منزل",
+        "زيارة المكان": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "20/04/2026",
+        "موقع العقار": "المرسى",
+        "مالك العقار": "أحمد الخليفي",
+        "عدد الأشجار": "12",
+        "الحالة الفعلية للأشجار": "جيدة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد الأشجار المرخص بقطعها": null
+      }
+    },
+    "input_email": "Bonjour,\n\nمطلب قطع اشجار ملك خاص nom أحمد الخليفي carte identite 12345678 emise a تونس pieces jointes. Adresse تونس lieu عقار المرسى numero 45 nombre arbres 12 type زيتون raison بناء منزل visite lieu oui rapport معاينة joint. Etat arbres جيدة administration غابات oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص",
+      "type": "WORKFLOW",
+      "email_id": "1337",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "الاسم واللقب": "سارة بن سالم",
+        "رقم بطاقة التعريف الوطنية": "87654321",
+        "صادرة في": "صفاقس",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "صفاقس",
+        "مكان العقار": "بن عروس",
+        "عدد العقار": "78",
+        "عدد الاشجار": "8",
+        "نوع الأشجار": "صنوبر",
+        "سبب الطلب": "توسعة",
+        "زيارة المكان": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "22/04/2026",
+        "موقع العقار": "بن عروس",
+        "مالك العقار": "سارة بن سالم",
+        "عدد الأشجار": "8",
+        "الحالة الفعلية للأشجار": "متوسطة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد الأشجار المرخص بقطعها": null
+      }
+    },
+    "input_email": "Salut,\n\nمطلب قطع اشجار ملك خاص nom سارة بن سالم carte 87654321 emise a صفاقس pieces jointes. Adresse صفاقس lieu عقار بن عروس numero 78 nombre arbres 8 type صنوبر raison توسعة visite lieu oui rapport joint. Etat arbres متوسطة administration غابات oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص",
+      "type": "WORKFLOW",
+      "email_id": "1338",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "الاسم واللقب": "كريم منصور",
+        "رقم بطاقة التعريف الوطنية": "11223344",
+        "صادرة في": "أريانة",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "أريانة",
+        "مكان العقار": "حمامات",
+        "عدد العقار": "23",
+        "عدد الاشجار": "15",
+        "نوع الأشجار": "نخيل",
+        "سبب الطلب": "بناء",
+        "زيارة المكان": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "25/04/2026",
+        "موقع العقار": "حمامات",
+        "مالك العقار": "كريم منصور",
+        "عدد الأشجار": "15",
+        "الحالة الفعلية للأشجار": "جيدة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد الأشجار المرخص بقطعها": null
+      }
+    },
+    "input_email": "Bonjour,\n\nمطلب قطع اشجار ملك خاص nom كريم منصور carte 11223344 emise a أريانة pieces jointes. Adresse أريانة lieu عقار حمامات numero 23 nombre arbres 15 type نخيل raison بناء visite lieu oui rapport joint. Etat arbres جيدة administration غابات oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص 2",
+      "type": "WORKFLOW",
+      "email_id": "1339",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "التاريخ": "20/04/2026",
+        "الاسم واللقب": "أحمد الخليفي",
+        "رقم بطاقة التعريف الوطنية": "12345678",
+        "صادرة في": "تونس",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "تونس",
+        "مكان العقار": "المرسى",
+        "عدد العقار": "45",
+        "عدد ونوع الأشجار": "12 زيتون",
+        "سبب الطلب": "بناء منزل",
+        "زيارة المكان": "oui",
+        "دائرة الغابات": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "20/04/2026",
+        "موقع العقار": "المرسى",
+        "مالك العقار": "أحمد الخليفي",
+        "الحالة الفعلية للأشجار": "جيدة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد ونوع الأشجار المرخص بقطعها": null,
+        "رخـــصـــة": null,
+        "استغلال غابات": null,
+        "تكسيرغابات": null,
+        "تاريخ القطع": "تاريخ القطع",
+        "من": null,
+        "الى": null
+      }
+    },
+    "input_email": "Salut,\n\nمطلب قطع اشجار ملك خاص 2 date 20 avril nom أحمد الخليفي carte 12345678 emise تونس pieces jointes. Adresse تونس lieu المرسى numero 45 nombre type 12 زيتون raison بناء منزل visite دائرة غابات oui rapport joint. Etat جيدة administration oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص 2",
+      "type": "WORKFLOW",
+      "email_id": "1340",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "التاريخ": "22/04/2026",
+        "الاسم واللقب": "سارة بن سالم",
+        "رقم بطاقة التعريف الوطنية": "87654321",
+        "صادرة في": "صفاقس",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "صفاقس",
+        "مكان العقار": "بن عروس",
+        "عدد العقار": "78",
+        "عدد ونوع الأشجار": "8 صنوبر",
+        "سبب الطلب": "توسعة",
+        "زيارة المكان": "oui",
+        "دائرة الغابات": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "22/04/2026",
+        "موقع العقار": "بن عروس",
+        "مالك العقار": "سارة بن سالم",
+        "الحالة الفعلية للأشجار": "متوسطة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد ونوع الأشجار المرخص بقطعها": null,
+        "رخـــصـــة": null,
+        "استغلال غابات": null,
+        "تكسيرغابات": null,
+        "تاريخ القطع": "تاريخ القطع",
+        "من": null,
+        "الى": null
+      }
+    },
+    "input_email": "Bonjour,\n\nمطلب قطع اشجار ملك خاص 2 date 22 avril nom سارة بن سالم carte 87654321 emise صفاقس pieces jointes. Adresse صفاقس lieu بن عروس numero 78 nombre type 8 صنوبر raison توسعة visite دائرة غابات oui rapport joint. Etat متوسطة administration oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "مطلب قطع اشجار ملك خاص 2",
+      "type": "WORKFLOW",
+      "email_id": "1341",
+      "confidence_score": null,
+      "attributes": {
+        "تقديم المطلب": "oui",
+        "التاريخ": "25/04/2026",
+        "الاسم واللقب": "كريم منصور",
+        "رقم بطاقة التعريف الوطنية": "11223344",
+        "صادرة في": "أريانة",
+        "بطاقة التعريف الوطنية": "joint",
+        "شهادة ملكية او مايثبت ملكية العقار": "joint",
+        "مطلب قطع اشجار ملك خاص": "oui",
+        "العنوان": "أريانة",
+        "مكان العقار": "حمامات",
+        "عدد العقار": "23",
+        "عدد ونوع الأشجار": "15 نخيل",
+        "سبب الطلب": "بناء",
+        "زيارة المكان": "oui",
+        "دائرة الغابات": "oui",
+        "تقرير معاينة أشجار": "joint",
+        "المعاين": "المهندس",
+        "الصفة": "مسؤول",
+        "تاريخ المعاينة": "25/04/2026",
+        "موقع العقار": "حمامات",
+        "مالك العقار": "كريم منصور",
+        "الحالة الفعلية للأشجار": "جيدة",
+        "الادارة العامة للغابات": "oui",
+        "رخصة قطع أشجار بالملك الخاص": "en attente",
+        "رقم الرخصة": null,
+        "تاريخ الإصدار": null,
+        "المخول له بالقطع": "المخول له بالقطع",
+        "عدد ونوع الأشجار المرخص بقطعها": null,
+        "رخـــصـــة": null,
+        "استغلال غابات": null,
+        "تكسيرغابات": null,
+        "تاريخ القطع": "تاريخ القطع",
+        "من": null,
+        "الى": null
+      }
+    },
+    "input_email": "Salut,\n\nمطلب قطع اشجار ملك خاص 2 date 25 avril nom كريم منصور carte 11223344 emise أريانة pieces jointes. Adresse أريانة lieu حمامات numero 23 nombre type 15 نخيل raison بناء visite دائرة غابات oui rapport joint. Etat جيدة administration oui permis en attente"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1342",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-045",
+        "Date de la demande ": "18/04/2026",
+        "Demandeur ": "Ahmed Khelifi",
+        "Département ": "IT",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "matériel",
+        "Désignation de l’article ": "ordinateurs",
+        "Description détaillée ": "5 laptops",
+        "Quantité ": "5",
+        "Urgence ": "haute",
+        "Informations financières ": null,
+        "Budget estimé ": "12000 TND",
+        "Fournisseur proposé": "TechStore",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "technique",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "5"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d achat numero DA-2026-045 date 18 avril demandeur Ahmed departement IT type achat materiel designation ordinateurs description 5 laptops quantite 5 urgence haute budget 12000 fournisseur TechStore. Controle conformite technique resultat conforme risque aucun bon commande 0 nombre 5"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1343",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-067",
+        "Date de la demande ": "21/04/2026",
+        "Demandeur ": "Leila Trabelsi",
+        "Département ": "RH",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "fournitures",
+        "Désignation de l’article ": "papeterie",
+        "Description détaillée ": "papier A4 stylos",
+        "Quantité ": "50",
+        "Urgence ": "moyenne",
+        "Informations financières ": null,
+        "Budget estimé ": "800 TND",
+        "Fournisseur proposé": "OfficePro",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "financiere",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "50"
+      }
+    },
+    "input_email": "Salut,\n\ndemande d achat numero DA-2026-067 date 21 avril demandeur Leila departement RH type achat fournitures designation papeterie description papier A4 stylos quantite 50 urgence moyenne budget 800 fournisseur OfficePro. Controle conformite financiere resultat conforme risque aucun bon commande 0 nombre 50"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1344",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-089",
+        "Date de la demande ": "24/04/2026",
+        "Demandeur ": "Karim Mansour",
+        "Département ": "production",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "pieces",
+        "Désignation de l’article ": "pieces machine",
+        "Description détaillée ": "moteur ligne 3",
+        "Quantité ": "2",
+        "Urgence ": "haute",
+        "Informations financières ": null,
+        "Budget estimé ": "4500 TND",
+        "Fournisseur proposé": "MachinePro",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "technique",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "2"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d achat numero DA-2026-089 date 24 avril demandeur Karim departement production type achat pieces designation pieces machine description moteur ligne 3 quantite 2 urgence haute budget 4500 fournisseur MachinePro. Controle conformite technique resultat conforme risque aucun bon commande 0 nombre 2"
+  },
+  {
+    "output": {
+      "label": "Traitement commande client",
+      "type": "WORKFLOW",
+      "email_id": "1345",
+      "confidence_score": null,
+      "attributes": {
+        "création de la commande": "oui",
+        "Référence commande ": "CMD-2026-112",
+        "Client ": "Global Trade",
+        "Type de produit ": "farine",
+        "Traitement demandé ": "standard",
+        "Quantité ": "2000 kg",
+        "Délai de livraison ⏱": "10 jours",
+        "bon de commande ": "joint",
+        "Validation commerciale ": "oui",
+        "Commentaire / Remarques ": "prioritaire",
+        "Validation technique et planification": "oui",
+        "Etat de stock ": "disponible",
+        "Disponibilité Machine ": "oui",
+        "Disponibilité matière": "oui",
+        "Date de début prévue ▶": "22/04/2026",
+        "Date de fin prévue ⏹": "02/05/2026",
+        "Fabrication & Contrôle en production": "en cours",
+        "Machine utilisée ": "L3",
+        "Etat actuel ": "production",
+        "Date début fabrication ": "22/04/2026",
+        "Date fin fabrication ": null,
+        "Quantité produite ": "800 kg",
+        "Contrôle qualité final": "en cours",
+        "Résultat contrôle final": null,
+        "Observation qualité": null,
+        "expédition": "non",
+        "Numéro de colis ": null,
+        "Transporteur ": null,
+        "Bon de livraison joint ": null,
+        "Facturation & clôture": "non",
+        "Montant total ": "4500 TND",
+        "Mode de paiement ": "virement",
+        "Numéro de facture ": null,
+        "Facture ": null
+      }
+    },
+    "input_email": "Bonjour,\n\ntraitement commande client creation CMD-2026-112 client Global Trade type produit farine traitement standard quantite 2000kg delai 10 jours bon commande joint validation commerciale oui commentaire prioritaire. Validation technique stock disponible machine matiere ok debut 22 avril fin prevue 2 mai fabrication en cours machine L3 etat production quantite 800kg controle qualite en cours expedition non facturation non montant 4500 mode virement"
+  },
+  {
+    "output": {
+      "label": "Traitement commande client",
+      "type": "WORKFLOW",
+      "email_id": "1346",
+      "confidence_score": null,
+      "attributes": {
+        "création de la commande": "oui",
+        "Référence commande ": "CMD-2026-334",
+        "Client ": "Tunisia Import",
+        "Type de produit ": "huile",
+        "Traitement demandé ": "express",
+        "Quantité ": "1500 litres",
+        "Délai de livraison ⏱": "5 jours",
+        "bon de commande ": "joint",
+        "Validation commerciale ": "oui",
+        "Commentaire / Remarques ": "urgent",
+        "Validation technique et planification": "oui",
+        "Etat de stock ": "disponible",
+        "Disponibilité Machine ": "oui",
+        "Disponibilité matière": "oui",
+        "Date de début prévue ▶": "25/04/2026",
+        "Date de fin prévue ⏹": "30/04/2026",
+        "Fabrication & Contrôle en production": "terminee",
+        "Machine utilisée ": "L2",
+        "Etat actuel ": "controle",
+        "Date début fabrication ": "25/04/2026",
+        "Date fin fabrication ": "28/04/2026",
+        "Quantité produite ": "1500 litres",
+        "Contrôle qualité final": "ok",
+        "Résultat contrôle final": "conforme",
+        "Observation qualité": "aucune",
+        "expédition": "oui",
+        "Numéro de colis ": "COL-556",
+        "Transporteur ": "Medlog",
+        "Bon de livraison joint ": "oui",
+        "Facturation & clôture": "oui",
+        "Montant total ": "7500 TND",
+        "Mode de paiement ": "cheque",
+        "Numéro de facture ": "FACT-778",
+        "Facture ": "joint"
+      }
+    },
+    "input_email": "Salut,\n\ntraitement commande client creation CMD-2026-334 client Tunisia Import type huile traitement express quantite 1500 litres delai 5 jours bon commande joint validation commerciale oui commentaire urgent. Validation technique stock ok debut 25 avril fin 30 avril fabrication terminee machine L2 etat controle quantite 1500 controle qualite ok conforme observation aucune expedition oui colis COL-556 transporteur Medlog bon livraison joint facturation oui montant 7500 mode cheque facture FACT-778 joint"
+  },
+  {
+    "output": {
+      "label": "Traitement commande client",
+      "type": "WORKFLOW",
+      "email_id": "1347",
+      "confidence_score": null,
+      "attributes": {
+        "création de la commande": "oui",
+        "Référence commande ": "CMD-2026-556",
+        "Client ": "ExportCo",
+        "Type de produit ": "epices",
+        "Traitement demandé ": "standard",
+        "Quantité ": "1000 kg",
+        "Délai de livraison ⏱": "15 jours",
+        "bon de commande ": "joint",
+        "Validation commerciale ": "oui",
+        "Commentaire / Remarques ": "ok",
+        "Validation technique et planification": "oui",
+        "Etat de stock ": "disponible",
+        "Disponibilité Machine ": "oui",
+        "Disponibilité matière": "oui",
+        "Date de début prévue ▶": "28/04/2026",
+        "Date de fin prévue ⏹": "10/05/2026",
+        "Fabrication & Contrôle en production": "en cours",
+        "Machine utilisée ": "L4",
+        "Etat actuel ": "production",
+        "Date début fabrication ": "28/04/2026",
+        "Date fin fabrication ": null,
+        "Quantité produite ": "400 kg",
+        "Contrôle qualité final": "en cours",
+        "Résultat contrôle final": null,
+        "Observation qualité": null,
+        "expédition": "non",
+        "Numéro de colis ": null,
+        "Transporteur ": null,
+        "Bon de livraison joint ": null,
+        "Facturation & clôture": "non",
+        "Montant total ": "3200 TND",
+        "Mode de paiement ": "virement",
+        "Numéro de facture ": null,
+        "Facture ": null
+      }
+    },
+    "input_email": "Bonjour,\n\ntraitement commande client creation CMD-2026-556 client ExportCo type epices traitement standard quantite 1000kg delai 15 jours bon commande joint validation commerciale oui commentaire ok. Validation technique stock ok debut 28 avril fin 10 mai fabrication en cours machine L4 etat production quantite 400kg controle qualite en cours expedition non facturation non montant 3200 mode virement"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1348",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-112",
+        "Date de la demande ": "19/04/2026",
+        "Demandeur ": "Fatma Ben Romdhane",
+        "Département ": "production",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "matériel",
+        "Désignation de l’article ": "pieces machine",
+        "Description détaillée ": "moteur",
+        "Quantité ": "3",
+        "Urgence ": "haute",
+        "Informations financières ": null,
+        "Budget estimé ": "6000 TND",
+        "Fournisseur proposé": "MachinePro",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "technique",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "3"
+      }
+    },
+    "input_email": "Salut,\n\ndemande d achat numero DA-2026-112 date 19 avril demandeur Fatma departement production type achat materiel designation pieces machine description moteur quantite 3 urgence haute budget 6000 fournisseur MachinePro. Controle conformite technique resultat conforme risque aucun bon commande 0 nombre 3"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1349",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-334",
+        "Date de la demande ": "22/04/2026",
+        "Demandeur ": "Sami Ben Ahmed",
+        "Département ": "logistique",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "emballage",
+        "Désignation de l’article ": "sachets",
+        "Description détaillée ": "sachets plastique",
+        "Quantité ": "10000",
+        "Urgence ": "moyenne",
+        "Informations financières ": null,
+        "Budget estimé ": "1200 TND",
+        "Fournisseur proposé": "PackTun",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "financiere",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "10000"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d achat numero DA-2026-334 date 22 avril demandeur Sami departement logistique type achat emballage designation sachets description sachets plastique quantite 10000 urgence moyenne budget 1200 fournisseur PackTun. Controle conformite financiere resultat conforme risque aucun bon commande 0 nombre 10000"
+  },
+  {
+    "output": {
+      "label": "DEMANDE D’ACHAT",
+      "type": "WORKFLOW",
+      "email_id": "1350",
+      "confidence_score": null,
+      "attributes": {
+        "Informations générales ": null,
+        "Numéro de la demande ": "DA-2026-556",
+        "Date de la demande ": "25/04/2026",
+        "Demandeur ": "Nadia Krimi",
+        "Département ": "RH",
+        "Détails de l’achat ": null,
+        "Type d’achat ": "fournitures",
+        "Désignation de l’article ": "stylos",
+        "Description détaillée ": "stylos bleu",
+        "Quantité ": "200",
+        "Urgence ": "basse",
+        "Informations financières ": null,
+        "Budget estimé ": "300 TND",
+        "Fournisseur proposé": "OfficePro",
+        "Devis joint ": "0",
+        "Pièces jointes": "0",
+        "CONTRÔLE CONFORMITÉ ": null,
+        "Type de conformité ": "technique",
+        "Résultat du contrôle ": "conforme",
+        "Risque identifié ": "aucun",
+        "bon de commande ": "0",
+        "nombre": "200"
+      }
+    },
+    "input_email": "Salut,\n\ndemande d achat numero DA-2026-556 date 25 avril demandeur Nadia departement RH type achat fournitures designation stylos description stylos bleu quantite 200 urgence basse budget 300 fournisseur OfficePro. Controle conformite technique resultat conforme risque aucun bon commande 0 nombre 200"
+  },
+  {
+    "output": {
+      "label": "Demande et traitement d’achat",
+      "type": "WORKFLOW",
+      "email_id": "1351",
+      "confidence_score": null,
+      "attributes": {
+        "Création de la demande": "oui",
+        " Département demandeur": "IT",
+        " Type d’achat": "matériel",
+        " Quantité demandée": "5",
+        " Délai souhaité": "10 jours",
+        " Urgence": "haute",
+        " Motif du besoin": "remplacement",
+        "Validation hiérarchique": "oui",
+        " Commentaire": "urgent",
+        "Traitement par le service achat": "en cours",
+        " Fournisseur sélectionné": "TechStore",
+        " Montant estimé": "12000 TND",
+        " Délai fournisseur": "8 jours",
+        " Bon de commande": "joint",
+        "Validation budgétaire": "oui",
+        " Mode de paiement": "virement",
+        "Réception": "non",
+        " Date de réception": null,
+        " Quantité reçue": null,
+        " Statut réception": null,
+        " Rapport réception": null,
+        "Vérification facture et clôture": "non",
+        " Numéro facture fournisseur": null,
+        " Montant facture": null,
+        " Date facture": null,
+        " Statut paiement": null,
+        " Date paiement": null,
+        " Bon de réception associé": null
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande et traitement d achat creation demande departement IT type achat materiel quantite 5 delai 10 jours urgence haute motif remplacement validation hierarchique oui commentaire urgent. Traitement achat en cours fournisseur TechStore montant 12000 delai 8 jours bon commande joint validation budget oui mode virement reception non verification facture non"
+  },
+  {
+    "output": {
+      "label": "Demande et traitement d’achat",
+      "type": "WORKFLOW",
+      "email_id": "1352",
+      "confidence_score": null,
+      "attributes": {
+        "Création de la demande": "oui",
+        " Département demandeur": "production",
+        " Type d’achat": "pieces",
+        " Quantité demandée": "3",
+        " Délai souhaité": "5 jours",
+        " Urgence": "haute",
+        " Motif du besoin": "panne",
+        "Validation hiérarchique": "oui",
+        " Commentaire": "prioritaire",
+        "Traitement par le service achat": "termine",
+        " Fournisseur sélectionné": "MachinePro",
+        " Montant estimé": "4500 TND",
+        " Délai fournisseur": "4 jours",
+        " Bon de commande": "joint",
+        "Validation budgétaire": "oui",
+        " Mode de paiement": "cheque",
+        "Réception": "oui",
+        " Date de réception": "28/04/2026",
+        " Quantité reçue": "3",
+        " Statut réception": "conforme",
+        " Rapport réception": "joint",
+        "Vérification facture et clôture": "oui",
+        " Numéro facture fournisseur": "FACT-112",
+        " Montant facture": "4500 TND",
+        " Date facture": "27/04/2026",
+        " Statut paiement": "paye",
+        " Date paiement": "30/04/2026",
+        " Bon de réception associé": "joint"
+      }
+    },
+    "input_email": "Salut,\n\ndemande et traitement d achat creation demande departement production type achat pieces quantite 3 delai 5 jours urgence haute motif panne validation hierarchique oui commentaire prioritaire. Traitement achat termine fournisseur MachinePro montant 4500 delai 4 jours bon commande joint validation budget oui mode cheque reception oui date 28 avril quantite 3 statut conforme rapport joint verification facture oui numero FACT-112 montant 4500 date 27 avril statut paye date 30 avril bon reception joint"
+  },
+  {
+    "output": {
+      "label": "Demande et traitement d’achat",
+      "type": "WORKFLOW",
+      "email_id": "1353",
+      "confidence_score": null,
+      "attributes": {
+        "Création de la demande": "oui",
+        " Département demandeur": "RH",
+        " Type d’achat": "fournitures",
+        " Quantité demandée": "200",
+        " Délai souhaité": "15 jours",
+        " Urgence": "basse",
+        " Motif du besoin": "consommables",
+        "Validation hiérarchique": "oui",
+        " Commentaire": "standard",
+        "Traitement par le service achat": "en cours",
+        " Fournisseur sélectionné": "OfficePro",
+        " Montant estimé": "300 TND",
+        " Délai fournisseur": "12 jours",
+        " Bon de commande": "joint",
+        "Validation budgétaire": "oui",
+        " Mode de paiement": "especes",
+        "Réception": "non",
+        " Date de réception": null,
+        " Quantité reçue": null,
+        " Statut réception": null,
+        " Rapport réception": null,
+        "Vérification facture et clôture": "non",
+        " Numéro facture fournisseur": null,
+        " Montant facture": null,
+        " Date facture": null,
+        " Statut paiement": null,
+        " Date paiement": null,
+        " Bon de réception associé": null
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande et traitement d achat creation demande departement RH type achat fournitures quantite 200 delai 15 jours urgence basse motif consommables validation hierarchique oui commentaire standard. Traitement achat en cours fournisseur OfficePro montant 300 delai 12 jours bon commande joint validation budget oui mode especes reception non verification facture non"
+  },
+  {
+    "output": {
+      "label": "Traitement Réclamation",
+      "type": "WORKFLOW",
+      "email_id": "1354",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Sami Ben Ahmed",
+        "Prénom ": "Sami",
+        "Contrat concerné": "CTR-2026-045",
+        "N° Tél": "98765432",
+        "Type réclamation": "qualite",
+        "Objet": "produit defectueux",
+        "Description": "couleur anormale",
+        "Pièce jointe": "photo"
+      }
+    },
+    "input_email": "Salut,\n\ntraitement reclamation nom Sami Ben Ahmed prenom Sami contrat CTR-2026-045 tel 98765432 type reclamation qualite objet produit defectueux description couleur anormale piece photo"
+  },
+  {
+    "output": {
+      "label": "Traitement Réclamation",
+      "type": "WORKFLOW",
+      "email_id": "1355",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Leila Trabelsi",
+        "Prénom ": "Leila",
+        "Contrat concerné": "CTR-2026-067",
+        "N° Tél": "23456789",
+        "Type réclamation": "delai",
+        "Objet": "retard livraison",
+        "Description": "commande pas arrivee",
+        "Pièce jointe": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ntraitement reclamation nom Leila Trabelsi prenom Leila contrat CTR-2026-067 tel 23456789 type reclamation delai objet retard livraison description commande pas arrivee piece 0"
+  },
+  {
+    "output": {
+      "label": "Traitement Réclamation",
+      "type": "WORKFLOW",
+      "email_id": "1356",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Karim Mansour",
+        "Prénom ": "Karim",
+        "Contrat concerné": "CTR-2026-089",
+        "N° Tél": "45678901",
+        "Type réclamation": "service",
+        "Objet": "mauvais accueil",
+        "Description": "client mecontent",
+        "Pièce jointe": "email"
+      }
+    },
+    "input_email": "Salut,\n\ntraitement reclamation nom Karim Mansour prenom Karim contrat CTR-2026-089 tel 45678901 type reclamation service objet mauvais accueil description client mecontent piece email"
+  },
+  {
+    "output": {
+      "label": "طلب الإجازة",
+      "type": "WORKFLOW",
+      "email_id": "1357",
+      "confidence_score": null,
+      "attributes": {
+        "اسم الموظف": "Sami Ben Ahmed",
+        "القسم": "IT",
+        "نوع الإجازة": "سنوية",
+        "تاريخ بدء الإجازة": "20/04/2026",
+        "تاريخ انتهاء الإجازة": "27/04/2026",
+        "عدد أيام الإجازة": "7",
+        "سبب الإجازة": "عائلي",
+        "مرفقات": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nطلب الإجازة اسم الموظف Sami Ben Ahmed القسم IT نوع سنوية تاريخ بدء 20/04 انتهاء 27/04 عدد ايام 7 سبب عائلي مرفقات 0"
+  },
+  {
+    "output": {
+      "label": "طلب الإجازة",
+      "type": "WORKFLOW",
+      "email_id": "1358",
+      "confidence_score": null,
+      "attributes": {
+        "اسم الموظف": "Leila Trabelsi",
+        "القسم": "RH",
+        "نوع الإجازة": "مرضية",
+        "تاريخ بدء الإجازة": "15/04/2026",
+        "تاريخ انتهاء الإجازة": "18/04/2026",
+        "عدد أيام الإجازة": "3",
+        "سبب الإجازة": "طبي",
+        "مرفقات": "0"
+      }
+    },
+    "input_email": "Salut,\n\nطلب الإجازة اسم الموظف Leila Trabelsi القسم RH نوع مرضية تاريخ بدء 15/04 انتهاء 18/04 عدد ايام 3 سبب طبي مرفقات 0"
+  },
+  {
+    "output": {
+      "label": "طلب الإجازة",
+      "type": "WORKFLOW",
+      "email_id": "1359",
+      "confidence_score": null,
+      "attributes": {
+        "اسم الموظف": "Karim Mansour",
+        "القسم": "vente",
+        "نوع الإجازة": "شخصية",
+        "تاريخ بدء الإجازة": "22/04/2026",
+        "تاريخ انتهاء الإجازة": "23/04/2026",
+        "عدد أيام الإجازة": "1",
+        "سبب الإجازة": "شخصي",
+        "مرفقات": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nطلب الإجازة اسم الموظف Karim Mansour القسم vente نوع شخصية تاريخ بدء 22/04 انتهاء 23/04 عدد ايام 1 سبب شخصي مرفقات 0"
+  },
+  {
+    "output": {
+      "label": "11²",
+      "type": "WORKFLOW",
+      "email_id": "1360",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Salut,\n\n11² workflow test rien de plus"
+  },
+  {
+    "output": {
+      "label": "11²",
+      "type": "WORKFLOW",
+      "email_id": "1361",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Bonjour,\n\n11² simple vide ok"
+  },
+  {
+    "output": {
+      "label": "11²",
+      "type": "WORKFLOW",
+      "email_id": "1362",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Hello,\n\n11² workflow rapide"
+  },
+  {
+    "output": {
+      "label": "متابعة الجودة والسلامة",
+      "type": "WORKFLOW",
+      "email_id": "1363",
+      "confidence_score": null,
+      "attributes": {
+        "المهندس المسؤول": "Ahmed Khelifi",
+        "رقم المشروع": "PROJ-2026-12",
+        "القسم": "production",
+        "نوع الفحص": "دوري",
+        "تاريخ الفحص": "20/04/2026",
+        "الملاحظات": "tout conforme",
+        "مستوى المخالفة": "aucun",
+        "الصور / المرفقات": "0",
+        "الإجراءات المقترحة": "aucune",
+        "التحليلات والتقارير": "positif"
+      }
+    },
+    "input_email": "Bonjour,\n\nمتابعة الجودة والسلامة مهندس مسؤول Ahmed Khelifi رقم مشروع PROJ-2026-12 قسم production نوع فحص دوري تاريخ 20/04 ملاحظات tout conforme مستوى مخالفة aucun صور 0 إجراءات مقترحة aucune تحليلات positif"
+  },
+  {
+    "output": {
+      "label": "متابعة الجودة والسلامة",
+      "type": "WORKFLOW",
+      "email_id": "1364",
+      "confidence_score": null,
+      "attributes": {
+        "المهندس المسؤول": "Leila Trabelsi",
+        "رقم المشروع": "PROJ-2026-34",
+        "القسم": "qualite",
+        "نوع الفحص": "خاص",
+        "تاريخ الفحص": "22/04/2026",
+        "الملاحظات": "defaut mineur",
+        "مستوى المخالفة": "متوسط",
+        "الصور / المرفقات": "joint",
+        "الإجراءات المقترحة": "correction",
+        "التحليلات والتقارير": "en cours"
+      }
+    },
+    "input_email": "Salut,\n\nمتابعة الجودة والسلامة مهندس مسؤول Leila Trabelsi رقم مشروع PROJ-2026-34 قسم qualite نوع فحص خاص تاريخ 22/04 ملاحظات defaut mineur مستوى مخالفة متوسط صور joint إجراءات مقترحة correction تحليلات en cours"
+  },
+  {
+    "output": {
+      "label": "متابعة الجودة والسلامة",
+      "type": "WORKFLOW",
+      "email_id": "1365",
+      "confidence_score": null,
+      "attributes": {
+        "المهندس المسؤول": "Karim Mansour",
+        "رقم المشروع": "PROJ-2026-56",
+        "القسم": "logistique",
+        "نوع الفحص": "دوري",
+        "تاريخ الفحص": "25/04/2026",
+        "الملاحظات": "conforme",
+        "مستوى المخالفة": "aucun",
+        "الصور / المرفقات": "0",
+        "الإجراءات المقترحة": "aucune",
+        "التحليلات والتقارير": "positif"
+      }
+    },
+    "input_email": "Bonjour,\n\nمتابعة الجودة والسلامة مهندس مسؤول Karim Mansour رقم مشروع PROJ-2026-56 قسم logistique نوع فحص دوري تاريخ 25/04 ملاحظات conforme مستوى مخالفة aucun صور 0 إجراءات مقترحة aucune تحليلات positif"
+  },
+  {
+    "output": {
+      "label": "New Opportunity Request",
+      "type": "WORKFLOW",
+      "email_id": "1366",
+      "confidence_score": null,
+      "attributes": {
+        "Client Name ": "Global Trade",
+        "Opportunity Description ": "fourniture equipements",
+        "Estimated Value ": "45000 TND",
+        "Urgency Level ": "haute",
+        "Strategic Importance": "strategique",
+        "Main Risk ": "delai",
+        "Decision Deadline ": "30/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\nnew opportunity request client Global Trade description fourniture equipements valeur estimee 45000 TND urgence haute importance strategique risque principal delai decision deadline 30 avril 2026"
+  },
+  {
+    "output": {
+      "label": "New Opportunity Request",
+      "type": "WORKFLOW",
+      "email_id": "1367",
+      "confidence_score": null,
+      "attributes": {
+        "Client Name ": "Tunisia Import",
+        "Opportunity Description ": "contrat service",
+        "Estimated Value ": "28000 TND",
+        "Urgency Level ": "moyenne",
+        "Strategic Importance": "moyenne",
+        "Main Risk ": "concurrence",
+        "Decision Deadline ": "05/05/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nnew opportunity request client Tunisia Import description contrat service valeur estimee 28000 TND urgence moyenne importance moyenne risque concurrence decision deadline 5 mai 2026"
+  },
+  {
+    "output": {
+      "label": "New Opportunity Request",
+      "type": "WORKFLOW",
+      "email_id": "1368",
+      "confidence_score": null,
+      "attributes": {
+        "Client Name ": "ExportCo",
+        "Opportunity Description ": "fourniture matiere",
+        "Estimated Value ": "15000 TND",
+        "Urgency Level ": "basse",
+        "Strategic Importance": "faible",
+        "Main Risk ": "prix",
+        "Decision Deadline ": "15/05/2026"
+      }
+    },
+    "input_email": "Hello,\n\nnew opportunity request client ExportCo description fourniture matiere valeur estimee 15000 TND urgence basse importance faible risque prix decision deadline 15 mai 2026"
+  },
+  {
+    "output": {
+      "label": "consulting",
+      "type": "WORKFLOW",
+      "email_id": "1369",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Ahmed Khelifi",
+        "date": "20/04/2026",
+        "détails": "conseil projet",
+        "piéce jointe": "rapport",
+        "liste": "taches",
+        "autre données": "budget"
+      }
+    },
+    "input_email": "Bonjour,\n\nconsulting nom et prenom Ahmed Khelifi date 20 avril details conseil projet piece jointe rapport liste taches autre donnees budget"
+  },
+  {
+    "output": {
+      "label": "consulting",
+      "type": "WORKFLOW",
+      "email_id": "1370",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Leila Trabelsi",
+        "date": "23/04/2026",
+        "détails": "analyse risque",
+        "piéce jointe": "0",
+        "liste": "points",
+        "autre données": "recommandations"
+      }
+    },
+    "input_email": "Salut,\n\nconsulting nom et prenom Leila Trabelsi date 23 avril details analyse risque piece 0 liste points autre donnees recommandations"
+  },
+  {
+    "output": {
+      "label": "consulting",
+      "type": "WORKFLOW",
+      "email_id": "1371",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom": "Karim Mansour",
+        "date": "26/04/2026",
+        "détails": "etude marche",
+        "piéce jointe": "etude",
+        "liste": "clients",
+        "autre données": "chiffres"
+      }
+    },
+    "input_email": "Bonjour,\n\nconsulting nom et prenom Karim Mansour date 26 avril details etude marche piece jointe etude liste clients autre donnees chiffres"
+  },
+  {
+    "output": {
+      "label": "Liste des formateurs",
+      "type": "DATATABLE",
+      "email_id": "1372",
+      "confidence_score": null,
+      "attributes": {
+        "Matricule": "F-001",
+        "Nom et prénom ": "Ahmed Khelifi",
+        "Poste/ fonction": "formateur HSE",
+        "Téléphone ": "98765432",
+        "N° CNSS": "12345678",
+        "Date de 1er déclaration CNSS": "01/01/2020",
+        "N° RIB": "123456789012",
+        "Etat ": "actif",
+        "Adresse": "Tunis",
+        "Diplôme ": "master",
+        "Nom du diplôme et spécialité ": "securite",
+        "Filiale": "principale",
+        "Rattachement Hiérarchique ": "RH",
+        "Documents en Pièce joint ": "CV joint"
+      }
+    },
+    "input_email": "Bonjour,\n\nliste des formateurs matricule F-001 nom Ahmed Khelifi poste formateur HSE tel 98765432 CNSS 12345678 date declaration 01/01/2020 RIB 123456789012 etat actif adresse Tunis diplome master nom diplome securite filiale principale rattachement RH documents CV joint"
+  },
+  {
+    "output": {
+      "label": "Liste des formateurs",
+      "type": "DATATABLE",
+      "email_id": "1373",
+      "confidence_score": null,
+      "attributes": {
+        "Matricule": "F-002",
+        "Nom et prénom ": "Leila Trabelsi",
+        "Poste/ fonction": "formateur qualite",
+        "Téléphone ": "23456789",
+        "N° CNSS": "87654321",
+        "Date de 1er déclaration CNSS": "15/03/2021",
+        "N° RIB": "987654321098",
+        "Etat ": "actif",
+        "Adresse": "Sfax",
+        "Diplôme ": "licence",
+        "Nom du diplôme et spécialité ": "qualite",
+        "Filiale": "secondaire",
+        "Rattachement Hiérarchique ": "qualite",
+        "Documents en Pièce joint ": "CV joint"
+      }
+    },
+    "input_email": "Salut,\n\nliste des formateurs matricule F-002 nom Leila Trabelsi poste formateur qualite tel 23456789 CNSS 87654321 date declaration 15/03/2021 RIB 987654321098 etat actif adresse Sfax diplome licence nom diplome qualite filiale secondaire rattachement qualite documents CV joint"
+  },
+  {
+    "output": {
+      "label": "Liste des formateurs",
+      "type": "DATATABLE",
+      "email_id": "1374",
+      "confidence_score": null,
+      "attributes": {
+        "Matricule": "F-003",
+        "Nom et prénom ": "Karim Mansour",
+        "Poste/ fonction": "formateur vente",
+        "Téléphone ": "45678901",
+        "N° CNSS": "11223344",
+        "Date de 1er déclaration CNSS": "10/05/2022",
+        "N° RIB": "112233445566",
+        "Etat ": "actif",
+        "Adresse": "Tunis",
+        "Diplôme ": "master",
+        "Nom du diplôme et spécialité ": "vente",
+        "Filiale": "principale",
+        "Rattachement Hiérarchique ": "vente",
+        "Documents en Pièce joint ": "CV joint"
+      }
+    },
+    "input_email": "Bonjour,\n\nliste des formateurs matricule F-003 nom Karim Mansour poste formateur vente tel 45678901 CNSS 11223344 date declaration 10/05/2022 RIB 112233445566 etat actif adresse Tunis diplome master nom diplome vente filiale principale rattachement vente documents CV joint"
+  },
+  {
+    "output": {
+      "label": "table des donnees",
+      "type": "DATATABLE",
+      "email_id": "1375",
+      "confidence_score": null,
+      "attributes": {
+        "article": "ordinateur",
+        "quantite": "5",
+        "commentaire": "nouveau"
+      }
+    },
+    "input_email": "Salut,\n\ntable des donnees article ordinateur quantite 5 commentaire nouveau"
+  },
+  {
+    "output": {
+      "label": "table des donnees",
+      "type": "DATATABLE",
+      "email_id": "1376",
+      "confidence_score": null,
+      "attributes": {
+        "article": "papier",
+        "quantite": "100",
+        "commentaire": "A4"
+      }
+    },
+    "input_email": "Bonjour,\n\ntable des donnees article papier quantite 100 commentaire A4"
+  },
+  {
+    "output": {
+      "label": "table des donnees",
+      "type": "DATATABLE",
+      "email_id": "1377",
+      "confidence_score": null,
+      "attributes": {
+        "article": "stylo",
+        "quantite": "50",
+        "commentaire": "bleu"
+      }
+    },
+    "input_email": "Hello,\n\ntable des donnees article stylo quantite 50 commentaire bleu"
+  }
+]

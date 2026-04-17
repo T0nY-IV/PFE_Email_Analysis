@@ -1,6 +1,6 @@
 from ollama import chat
 import time
-from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
+from completed_project.prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
 
 
 

@@ -9,7 +9,7 @@ import os
 import json
 import pandas as pd
 from typing import Optional
-from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
+from completed_project.prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
 from orange_part.api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
@@ -55,7 +55,7 @@ async def initialize():
         
         # Load document
         # Chargement du corpus depuis le fichier JSON
-        document_text = load_document("dataset_telecom.json")
+        document_text = json.load(open("dataset_telecom.json", "r", encoding="utf-8"))
         
         # Chunk the text
         # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots

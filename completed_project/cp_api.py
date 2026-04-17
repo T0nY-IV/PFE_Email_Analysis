@@ -5,15 +5,14 @@ from pydantic import BaseModel
 from ollama import chat
 from sentence_transformers import SentenceTransformer
 import chromadb
-from chromadb.config import Settings
-import os
 import json
-import pandas as pd
 from typing import Optional
-from prompt import prompt_configlist
-from cp_api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from completed_project.prompt import prompt_configlist
+from completed_project.cp_api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from completed_project.Ocr_methodes import Ocr_pdf_Init, Ocr_pdf, Ocr_picture
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
+layout = Ocr_pdf_Init()
 
 # Add CORS middleware 
 # Configuration CORS pour autoriser les requêtes provenant de n'importe quelle origine ("*")
@@ -47,7 +46,7 @@ class QueryRequest(BaseModel):
 @app.post("/initialize")
 async def initialize():
     """Initialize the RAG system by loading document and creating embeddings"""
-    global embedding_model, client, collection, document_text, chunks, embeddings
+    global embedding_model, client, collection, document_text, chunks, embeddings, last_excel_uid, last_json_uid
     
     try:
         # Load embedding model
@@ -56,7 +55,7 @@ async def initialize():
         
         # Load document
         # Chargement du corpus depuis le fichier JSON
-        document_text = load_document("config-list-final.json")
+        document_text = json.load(open("full_dataset.json", "r", encoding="utf-8"))
         
         # Chunk the text
         # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots
@@ -100,14 +99,14 @@ async def initialize():
             "status": "success",
             "message": f"RAG system initialized with {len(chunks)} chunks",
             "chunks_count": len(chunks),
-            "document_path": "config-list-final.json",
+            "document_path": "full_dataset.json",
             "last_excel_uid": last_excel_uid,
             "last_json_uid": last_json_uid
         }
     
     except FileNotFoundError as e:
         # Gestion de l'erreur si le fichier de données n'est pas trouvé
-        raise HTTPException(status_code=404, detail=f"Document not found: config-list-final.json")
+        raise HTTPException(status_code=404, detail=f"Document not found: full_dataset.json")
     except Exception as e:
         # Gestion des autres erreurs génériques lors de l'initialisation
         raise HTTPException(status_code=500, detail=f"Initialization error: {str(e)}")
@@ -137,8 +136,32 @@ async def query(request: QueryRequest):
         retrieved_docs = documents[0]
         
         # Lecture du contenu de l'email à traiter
-        email_content = str(request.email_content)
-        
+        req_content = str(request.email_content)
+        email_content = req_content.split("/cut/")[0]
+        #separation of the attachments from the email content
+        email_attachments = req_content.split("/cut/")[1]
+        if email_attachments == "":
+            attachements = []
+        else:
+            attachements = email_attachments.split(";")
+        email_content += "\n\nAttachments:\n"
+        Uid = email_content.split("UID:")[1].split("\n")[0].strip()
+
+        #attachement processing with OCR if necessary
+        if attachements:
+            for att in attachements:
+                if att.endswith(".pdf"):
+                    link_att_pdf = "emails_output/attachments/" + Uid + "/" + att
+                    ocr_result = Ocr_pdf(link_att_pdf, layout)
+                    email_content += "\n\n" + str(ocr_result)
+                elif att.endswith((".jpg", ".jpeg", ".png")):
+                    link_att_img = "emails_output/images/" + Uid + "/" + att
+                    ocr_result = Ocr_picture(link_att_img)
+                    email_content += "\n\n" + str(ocr_result)
+        else:
+            email_content += "None"
+
+
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email
         full_prompt = prompt_configlist + "\n\n" + email_content

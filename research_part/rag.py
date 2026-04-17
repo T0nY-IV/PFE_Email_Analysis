@@ -1,7 +1,7 @@
 from ollama import chat
 from sentence_transformers import SentenceTransformer
 import chromadb
-from prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
+from completed_project.prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
 #Choose an Embedding Model
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 

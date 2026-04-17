@@ -1,0 +1,363 @@
+================================================================================
+                      ARCHITECTURE DU PROJET - DOCUMENTATION
+                      PFE - Système d'Analyse d'Emails Professionnels
+                      Généré le: 2026-04-17
+================================================================================
+
+1. Vue d'ensemble
+================================================================================
+
+Ce projet implémente un système complet d'analyse d'emails professionnels
+utilisant une architecture RAG (Retrieval-Augmented Generation). Le système
+extrait, stocke, analyse et classe automatiquement les emails avec support
+pour le traitement multi-workflow.
+
+Technologies principales:
+- FastAPI: Framework d'API REST
+- Ollama: LLM local (qwen3:1.7b)
+- ChromaDB: Base de données vectorielle
+- Sentence Transformers: Modèle d'embedding (all-MiniLM-L6-v2)
+- IMAP: Protocole de récupération d'emails
+- Pandas: Gestion des données Excel
+
+
+2. ARCHITECTURE DU SYSTÈME
+================================================================================
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    APPLICATION CLIENTE                                        │
+│                    (Email Refresher/Autre)                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       BOÎTE DE RÉCEPTION (Gmail)                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                  COUCHE D'EXTRACTION D'EMAILS                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────────────────────┐ │
+│  │ Connexion Gmail │  │ Extraction      │  │ Stockage Excel             │ │
+│  │ IMAP            │  │ des pièces      │  │ (emails.xlsx)              │ │
+│  │                 │  │ jointes         │  │                              │ │
+│  └─────────────────┘  └─────────────────┘  └──────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                     SERVEUR API RAG                                           │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────────────────────┐ │
+│  │ Endpoint        │  │ Endpoint        │  │ Endpoints                  │ │
+│  │ /initialize     │  │ /query          │  │ /health, /status           │ │
+│  └─────────────────┘  └─────────────────┘  └──────────────────────────────┘ │
+│         │                    │                     │                         │
+│         ▼                    ▼                     ▼                         │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌──────────────────────────────┐ │
+│  │ Modèle          │  │ Recherche       │  │ Génération LLM             │ │
+│  │ d'embedding     │  │ vectorielle     │  │ (Ollama)                   │ │
+│  │ (384D)          │  │ (ChromaDB)      │  │                              │ │
+│  └─────────────────┘  └─────────────────┘  └──────────────────────────────┘ │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    STOCKAGE DES DATASETS                                      │
+│  ┌─────────────────┐  ┌─────────────────┐                                    │
+│  │ full_dataset.json         │  │ dataset_telecom.json     │                │
+│  └─────────────────┘  └─────────────────┘                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+3. DÉCOMPOSITION DES COMPOSANTS
+================================================================================
+
+3.1 MODULES D'EXTRACTION D'EMAILS
+---------------------------------
+
+Fichier: email_refresher.py
+Objectif: Script principal de récupération et traitement des emails
+
+Fonctions clés:
+- run_once(): Cycle unique de polling
+  - Se connecte à Gmail via IMAP
+  - Récupère les nouveaux emails depuis le dernier UID
+  - Sauvegarde les pièces jointes dans des dossiers organisés
+  - Met à jour la base de données Excel
+
+- save_attachments(msg, email_uid, OUTPUT_FOLDER):
+  - Sauvegarde les pièces jointes PDF dans emails_output/attachments/{UID}/
+  - Sauvegarde les images dans emails_output/images/{UID}/
+  - Retourne une liste de métadonnées
+
+- get_body(msg): Extrait le texte du corps de l'email
+  - Privilégie text/plain, sinon HTML nettoyé
+
+Fichier: research_part/gmail_extraction_script.py
+Objectif: Extraction d'emails simplifiée (tests/autonome)
+
+
+3.2 MODULES SERVEUR API RAG
+---------------------------
+
+Fichier: cp_api.py (API principale - workflow config-list)
+Objectif: API principale pour l'analyse d'emails avec prompt config-list
+
+Endpoints:
+- POST /initialize: Initialisation du système RAG
+  1. Charger le modèle d'embedding (SentenceTransformer)
+  2. Lire full_dataset.json
+  3. Découper le texte en chunks (500 caractères)
+  4. Générer les embeddings
+  5. Stocker dans la collection ChromaDB "my_docs"
+
+- POST /query: Traitement de l'email et obtenir l'analyse
+  1. Embedding du prompt de requête
+  2. Récupérer les 5 chunks similaires
+  3. Augmenter le prompt avec le contexte + contenu de l'email
+  4. Appeler le LLM Ollama
+  5. Retourner l'analyse JSON
+
+- GET /health: Vérification de la santé du système
+- GET /status: Statut actuel du système
+
+Fichier: orange_part/api.py (API alternative - workflow Orange)
+Objectif: API alternative utilisant prompt_orange pour la classification
+
+Différence principale: Utilise dataset_telecom.json et prompt_orange
+
+
+3.3 MODULES MÉTHODES
+--------------------
+
+Fichier: cp_api_methodes.py
+Objectif: Fonctions utilitaires de base du RAG
+
+Fonctions:
+- save_to_dataset(input_email, output_data): Ajouter à full_dataset.json
+- load_document(path): Lire le contenu d'un fichier
+- chunk_text(text, chunk_size=500): Découper le texte en chunks
+- get_last_excel_uid(): Récupérer le dernier UID Excel
+- get_last_json_uid(): Récupérer le dernier email_id depuis JSON
+- update_last_uids(): Synchroniser les UIDs des deux sources
+
+Fichier: orange_part/api_methodes.py
+Objectif: Copie de cp_api_methodes.py
+- Utilise dataset_telecom.json au lieu de full_dataset.json
+
+
+3.4 MODULE OCR
+--------------
+
+Fichier: Ocr_methodes.py
+Objectif: Extraction de texte des pièces jointes
+
+Fonctions:
+- Ocr_pdf_Init(): Initialiser le modèle spaCy layout
+- Ocr_pdf(path, layout): Extraire le texte d'un PDF
+- Ocr_picture(path): Extraire le texte d'images (pytesseract)
+
+
+3.5 MODULES DE PROMPT
+---------------------
+
+Fichier: prompt.py
+Objectif: Définir les prompts LLM pour l'analyse d'emails
+
+Prompts:
+1. prompt_1: Classification domaine/intent unique
+2. prompt_2: Détection de plusieurs domaines/intents
+3. murged_prompt: Analyse multi-sujets améliorée
+4. prompt_orange: Classification de type de workflow (Réclamation/Demande)
+5. prompt_configlist: Mise en correspondance basée sur config-list
+   - Lit depuis config-list-transformed.json
+   - Associe l'email à un label de workflow
+   - Extrait les attributs définis
+
+
+4. TYPES DE WORKFLOW
+================================================================================
+
+4.1 Workflow Config-List (cp_api)
+---------------------------------
+Source: config-list-transformed.json
+Méthode: prompt_configlist
+Format de sortie:
+{
+  "email_id": entier,
+  "workflow_label": chaîne de caractères,
+  "attributes": objet,
+  "confidence_score": flottant
+}
+
+4.2 Workflow Orange (orange_part/api)
+-------------------------------------
+Source: dataset_telecom.json
+Méthode: prompt_orange
+Format de sortie:
+{
+  "email_id": chaîne de caractères,
+  "workflow_type": "Réclamation|Demande|other",
+  "attributes": objet,
+  "confidence_score": flottant
+}
+
+Attributs pour 'Réclamation': titre, date, tel, email, etat, description, produit, site
+Attributs pour 'Demande': date, description, produit, site, email, tel, type
+
+
+5. FLUX DE DONNÉES
+================================================================================
+
+Flux d'email:
+1. Gmail IMAP → Récupérer l'email → Extraire le contenu/pièces jointes
+2. Sauvegarder dans Excel (emails_output/emails.xlsx)
+3. Pièces jointes sauvegardées dans des dossiers organisés
+
+Flux RAG:
+4. full_dataset.json → Charger → Découper (500 caractères)
+5. Embedding des chunks → Stocker dans ChromaDB
+6. Requête: Embed du prompt → Recherche top-5 → Augmenter le prompt
+7. LLM Ollama → Générer la réponse JSON
+8. Sauvegarder dans full_dataset.json
+
+
+6. STRUCTURE DE FICHIERS
+================================================================================
+
+d:\studying\3eme info(DSI33)\PFE\
+├── completed_project/
+│   ├── cp_api.py                        # API principale (workflow config-list)
+│   ├── cp_api_methodes.py               # Utilitaires RAG
+│   ├── mail_analyser.py                 # Client API pour workflow principal
+│   ├── email_refresher.py               # Script d'extraction Gmail
+│   └── Ocr_methodes.py                  # OCR pour pièces jointes
+|           
+├── prompt.py                        # Prompts LLM
+│
+├── orange_part/
+│   ├── api.py                       # API alternative (workflow Orange)
+│   ├── api_methodes.py              # Utilitaires RAG Orange
+│   ├── mail_analyser.py             # Client API pour workflow Orange
+│   ├── prompt.py                    # Prompts spécifiques Orange
+│   └── dataset_telecom.json         # Dataset Orange
+│
+├── research_part/
+│   ├── rag.py                       # Test d'implémentation RAG
+│   ├── model_test.py                # Test de performance des modèles
+│   ├── all_models.py                # Exécuteur de tests multi-modèles
+│   ├── gmail_extraction_script.py   # Extraction alternative
+│   ├── pdf_ocr.py                   # Test OCR PDF
+│   └── iteration_test.py            # Framework de benchmarking
+│
+├── dataset_tests/                   # Jeux de données de test
+├── emails_output/                   # Emails et pièces jointes extraits
+├── chroma_db/                       # Base de données vectorielle
+│
+├── full_dataset.json                # Dataset principal
+├── config-list-transformed.json     # Configuration du workflow
+│
+└── .env                             # Variables d'environnement (identifiants IMAP)
+
+
+7. CONFIGURATION
+================================================================================
+
+Variables d'environnement (.env):
+- mail_@: Adresse email Gmail
+- mail_code: Mot de passe d'application Gmail
+- IMAP_SERVER: imap.gmail.com (par défaut)
+- POLL_INTERVAL_SECONDS: 60 (par défaut)
+- OUTPUT_FOLDER: emails_output (par défaut)
+
+Configuration API:
+- Hôte: 127.0.0.1
+- Port: 8086
+- CORS: Activé pour toutes les origines
+
+Configuration Embedding:
+- Modèle: all-MiniLM-L6-v2
+- Dimensions: 384
+- Taille de chunk: 500 caractères
+
+Configuration LLM:
+- Fournisseur: Ollama
+- Modèle: qwen3:1.7b
+
+
+8. SCHÉMA DE BASE DE DONNÉES
+================================================================================
+
+Collection ChromaDB: "my_docs"
+- documents: Chunk de texte
+- embeddings: List[float] (384 dimensions)
+- ids: String (index entier)
+
+Structure du dataset JSON:
+{
+  "input_email": "Contenu complet de l'email",
+  "output": {
+    "email_id": entier ou chaîne,
+    "workflow_label": chaîne,      # ou "workflow_type"
+    "domains": [],                 # optionnel
+    "intents": [],                 # optionnel
+    "attributes": {},
+    "confidence_score": flottant,
+    ...
+  }
+}
+
+
+9. UTILISATION DE L'API
+================================================================================
+
+Initialiser le système:
+POST http://localhost:8086/initialize
+Réponse:
+{
+  "status": "success",
+  "message": "Système RAG initialisé avec X chunks",
+  "chunks_count": X,
+  "last_excel_uid": Y,
+  "last_json_uid": Z
+}
+
+Analyser un email:
+POST http://localhost:8086/query
+Corps: { "email_content": "UID: 123\nContenu de l'email ici/cut/piece1.pdf" }
+Réponse: Résultat d'analyse JSON
+
+
+10. DÉPloiEMENT
+================================================================================
+
+Docker:
+- docker compose up --build
+- Accès sur http://localhost:8086
+
+Isolation de l'environnement:
+- Toutes les dépendances dans le conteneur Docker
+- Données persistantes dans les dossiers chroma_db et emails_output
+
+
+11. PROBLÈMES CONNUS & LIMITATIONS
+================================================================================
+
+1. Découpage JSON: full_dataset.json chargé comme texte, puis découpé
+   caractère par caractère, ce qui casse la structure JSON
+
+2. Chemins codés en dur: Excel et dossiers de sortie sont codés en dur
+
+3. Gestion d'erreurs: Vérifications de bornes manquantes sur les opérations split
+
+4. Chargement des prompts au moment de l'import: prompt_configlist chargé
+   à l'import du module, nécessite le redémarrage du serveur pour changer
+   la configuration
+
+5. Code dupliqué: Fonctions similaires dans cp_api_methodes.py et
+   orange_part/api_methodes.py (pourrait être consolidé)
+
+
+================================================================================
+                              FIN DE LA DOCUMENTATION
+================================================================================

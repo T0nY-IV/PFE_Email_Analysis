@@ -1,0 +1,4781 @@
+[
+  {
+    "output": {
+      "label": "Analyse docs transports",
+      "type": "WORKFLOW",
+      "email_id": "1024",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "ABC Logistics",
+        "Date de réception de la demande": "05/04/2026",
+        "Preuve demande C/A": "mail client joint",
+        "List choix Transporteur": "Tunisian Shipping",
+        "Autre transporteur": "CMA CGM",
+        "Date enlèvement ": "10/04/2026",
+        "Vérification étapes du processus import": "tout conforme",
+        "Pré-alerte": "envoyée 03/04",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-98765",
+        "Pièce jointe ": "BL + facture",
+        "Dossier de transport": "en cours",
+        "Commentaire": "verifier taxes svp",
+        "Dossier douane N°:": "DOU-123",
+        "Bon de douane N°:": "BD-456",
+        "Facture N°:": "FACT-789",
+        "Dossier/Action traité par:": "Jean Dupont"
+      }
+    },
+    "input_email": "Bonjour,\n\nj'aimerais que vous analysiez les docs de transport pour le client ABC Logistics. La demande a ete recu le 5 avril. Preuve C/A est le mail joint. Transporteur principal Tunisian Shipping, ou sinon CMA. Date enl evement le 10 avril. J'ai verifie les etapes import ok. Pre alerte ok, reception oui. BL numéro BL-98765. Piece jointe BL et fact. Dossier transport en cours. Comment : verifier taxes svp. Dossier douane DOU-123, bon douane BD-456, facture FACT-789. Traite par moi Jean.\n\nMerci"
+  },
+  {
+    "output": {
+      "label": "Analyse docs transports",
+      "type": "WORKFLOW",
+      "email_id": "1025",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Global Trade SA",
+        "Date de réception de la demande": "08/04/2026",
+        "Preuve demande C/A": "email du client",
+        "List choix Transporteur": "Medlog",
+        "Autre transporteur": null,
+        "Date enlèvement ": "12/04/2026",
+        "Vérification étapes du processus import": "ok apres verification",
+        "Pré-alerte": "oui recu",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-112233",
+        "Pièce jointe ": "documents scannes",
+        "Dossier de transport": "a valider",
+        "Commentaire": "delai serre attention",
+        "Dossier douane N°:": "DOU-4455",
+        "Bon de douane N°:": "BD-6677",
+        "Facture N°:": "INV-3344",
+        "Dossier/Action traité par:": "Sarah Ben Ali"
+      }
+    },
+    "input_email": "Salut equipe,\n\nvoila une nouvelle demande analyse docs transports pour Global Trade SA recu hier. Preuve C/A dans le mail joint. Transporteur Medlog cette fois. Date enlevement 12 avril. J ai checke les etapes import tout bon. Pre-alerte recu oui. BL-112233 joint. Pieces jointes scannes. Dossier transport a valider. Commentaire delai serre attention. Douane DOU-4455, bon BD-6677 facture INV-3344. Traite par Sarah.\n\nMerci d avance"
+  },
+  {
+    "output": {
+      "label": "Analyse docs transports",
+      "type": "WORKFLOW",
+      "email_id": "1026",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Export Tunisia",
+        "Date de réception de la demande": "11/04/2026",
+        "Preuve demande C/A": "formulaire rempli",
+        "List choix Transporteur": "Evergreen",
+        "Autre transporteur": "MSC",
+        "Date enlèvement ": "15/04/2026",
+        "Vérification étapes du processus import": "conforme",
+        "Pré-alerte": "envoyee",
+        "Réception pré-alerte": "non encore",
+        "Numéro BL": "BL-556677",
+        "Pièce jointe ": "oui",
+        "Dossier de transport": "initie",
+        "Commentaire": "besoin urgence",
+        "Dossier douane N°:": "DOU-8899",
+        "Bon de douane N°:": null,
+        "Facture N°:": "FACT-1122",
+        "Dossier/Action traité par:": "Karim Mansour"
+      }
+    },
+    "input_email": "Hello,\n\npeux tu analyser les docs transports stp pour Export Tunisia ? Demande recu ce matin 11 avril. Preuve C/A formulaire rempli. Choix Evergreen ou sinon MSC. Enlevement prevu 15 avril. Verification import ok. Pre alerte envoyee mais reception pas encore. BL 556677. Piece jointe oui. Dossier transport initie. Commentaire besoin urgence svp. Douane DOU-8899 facture FACT-1122. Traite par Karim.\n\nBonne journee"
+  },
+  {
+    "output": {
+      "label": "Constitution dossier import",
+      "type": "WORKFLOW",
+      "email_id": "1027",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "ImportPro",
+        "Date de réception de la demande": "06/04/2026",
+        "Preuve demande C/A": "contrat signe",
+        "List choix Transporteur": "Maersk",
+        "Autre transporteur": null,
+        "Date enlèvement ": "14/04/2026",
+        "Vérification étapes du processus import": "complete",
+        "Pré-alerte": "oui",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-334455",
+        "Pièce jointe ": "tous docs",
+        "Dossier de transport": "en preparation",
+        "Commentaire": "priorite client",
+        "Dossier douane N°:": "DOU-6677",
+        "Bon de douane N°:": "BD-9900",
+        "Facture N°:": "INV-2233",
+        "Dossier/Action traité par:": "Leila Trabelsi"
+      }
+    },
+    "input_email": "Bonjour equipe,\n\nje voudrais constituer le dossier import pour ImportPro. Demande recu 6 avril. Preuve C/A contrat signe joint. Transporteur Maersk. Date enlevement 14 avril. Verification etapes import complete. Pre-alerte oui reception oui. BL-334455. Piece jointe tous docs. Dossier transport en preparation. Commentaire priorite client. Douane DOU-6677 bon BD-9900 facture INV-2233. Traite par Leila.\n\nMerci"
+  },
+  {
+    "output": {
+      "label": "Constitution dossier import",
+      "type": "WORKFLOW",
+      "email_id": "1028",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Mediterranean Trade",
+        "Date de réception de la demande": "09/04/2026",
+        "Preuve demande C/A": "email confirme",
+        "List choix Transporteur": "COSCO",
+        "Autre transporteur": "Hapag-Lloyd",
+        "Date enlèvement ": "18/04/2026",
+        "Vérification étapes du processus import": "a verifier",
+        "Pré-alerte": "non",
+        "Réception pré-alerte": null,
+        "Numéro BL": "BL-778899",
+        "Pièce jointe ": "partiel",
+        "Dossier de transport": "nouveau",
+        "Commentaire": "besoin rapide",
+        "Dossier douane N°:": "DOU-1122",
+        "Bon de douane N°:": null,
+        "Facture N°:": "FACT-4455",
+        "Dossier/Action traité par:": "Ahmed Khelifi"
+      }
+    },
+    "input_email": "Salut,\n\nconstitution dossier import urgent pour Mediterranean Trade. Demande recu 9 avril. Preuve par email confirme. Choix COSCO ou Hapag. Enlevement 18 avril. Verification etapes import a verifier. Pre-alerte non. BL-778899. Piece jointe partiel. Dossier transport nouveau. Commentaire besoin rapide. Douane DOU-1122 facture FACT-4455. Traite par Ahmed.\n\nCordialement"
+  },
+  {
+    "output": {
+      "label": "Constitution dossier import",
+      "type": "WORKFLOW",
+      "email_id": "1029",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Tunisie Import",
+        "Date de réception de la demande": "13/04/2026",
+        "Preuve demande C/A": "bon de commande",
+        "List choix Transporteur": "Yang Ming",
+        "Autre transporteur": null,
+        "Date enlèvement ": "20/04/2026",
+        "Vérification étapes du processus import": "validee",
+        "Pré-alerte": "recue",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-001122",
+        "Pièce jointe ": "complet",
+        "Dossier de transport": "en cours",
+        "Commentaire": "tout ok",
+        "Dossier douane N°:": "DOU-3344",
+        "Bon de douane N°:": "BD-5566",
+        "Facture N°:": "INV-7788",
+        "Dossier/Action traité par:": "Fatma Ben Romdhane"
+      }
+    },
+    "input_email": "Bonjour,\n\nsvp constitution du dossier import pour Tunisie Import. Recu le 13 avril. Preuve bon de commande joint. Transporteur Yang Ming. Enlevement 20 avril. Etapes import validee. Pre alerte recue oui. BL 001122. Piece jointe complet. Dossier en cours. Commentaire tout ok. Douane DOU-3344 bon BD-5566 facture INV-7788. Traite par Fatma.\n\nMerci beaucoup"
+  },
+  {
+    "output": {
+      "label": "Contrôle de Conformité Financière des Contrats",
+      "type": "WORKFLOW",
+      "email_id": "1030",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Fourniture Materiel",
+        "Référence ": "CTR-2026-045",
+        "Détail": "montant depasse budget verifier paiements"
+      }
+    },
+    "input_email": "Bonjour,\n\nje demande controle conformite financiere du contrat CTR-2026-045 designation Contrat Fourniture Materiel. Detail : montant depasse budget verifier paiements svp. Merci"
+  },
+  {
+    "output": {
+      "label": "Contrôle de Conformité Financière des Contrats",
+      "type": "WORKFLOW",
+      "email_id": "1031",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Service Maintenance",
+        "Référence ": "CTR-2026-078",
+        "Détail": "echeances paiement non respectees risque penalites"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite financiere stp pour contrat CTR-2026-078 Service Maintenance. Detail echeances paiement non respectees risque penalites. A verifier rapidement.\n\nMerci"
+  },
+  {
+    "output": {
+      "label": "Contrôle de Conformité Financière des Contrats",
+      "type": "WORKFLOW",
+      "email_id": "1032",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Location Vehicules",
+        "Référence ": "CTR-2026-112",
+        "Détail": "cout total superieur prevision verifier clauses"
+      }
+    },
+    "input_email": "Bonjour equipe,\n\ncontrole conformite financiere contrat CTR-2026-112 designation Contrat Location Vehicules. Detail cout total superieur prevision verifier clauses. Besoin retour avant fin semaine.\n\nCordialement"
+  },
+  {
+    "output": {
+      "label": "Gestion des Risques et Litiges Contractuels",
+      "type": "WORKFLOW",
+      "email_id": "1033",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Ahmed Khelifi",
+        "Projet": "Projet Route Nationale",
+        "Entreprise": "BTP Tunis",
+        "Date": "07/04/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion risques et litiges contractuels pour Ahmed Khelifi projet Route Nationale entreprise BTP Tunis date 7 avril. Merci d analyser."
+  },
+  {
+    "output": {
+      "label": "Gestion des Risques et Litiges Contractuels",
+      "type": "WORKFLOW",
+      "email_id": "1034",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Sara Ben Salem",
+        "Projet": "Extension Usine",
+        "Entreprise": "Industrie Plus",
+        "Date": "10/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\nsvp gestion risques litiges pour Sara Ben Salem projet Extension Usine entreprise Industrie Plus. Date aujourdhui 10 avril. Besoin urgent."
+  },
+  {
+    "output": {
+      "label": "Gestion des Risques et Litiges Contractuels",
+      "type": "WORKFLOW",
+      "email_id": "1035",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Karim Mansour",
+        "Projet": "Construction Port",
+        "Entreprise": "Marine Works",
+        "Date": "12/04/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nje signale un risque litige contractuel Nom Karim Mansour projet Construction Port entreprise Marine Works date 12 avril. A traiter."
+  },
+  {
+    "output": {
+      "label": "Revue des contrats",
+      "type": "WORKFLOW",
+      "email_id": "1036",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Contrat Fourniture Equipements",
+        "Type de contrat": "Fourniture",
+        "Date de soumission": "04/04/2026",
+        "Durée du contrat": "12 mois",
+        "Montant estimé": "45000 TND",
+        "Description brève": "fourniture materiel bureau",
+        "Document du contrat": "0",
+        "Commentaires": "clauses paiement a verifier",
+        "Validation juridique": null,
+        "Analyse des risques juridiques": null,
+        "Clauses sensibles à revoir ?": "oui",
+        "Contrat conforme ?": null,
+        "Document modifié (si applicable)": "0",
+        "Révision financière": null,
+        "Budget disponible ?": "oui",
+        "Montant validé": null,
+        "Conditions de paiement": null,
+        "Signature & Archivage": null,
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Contrat signé": "0",
+        "Statut final du contrat": null
+      }
+    },
+    "input_email": "Bonjour,\n\nvoici la revue du contrat Fourniture Equipements type Fourniture soumis le 4 avril duree 12 mois montant 45000 TND. Description brève fourniture materiel bureau. Document joint mais je mets 0 pour info. Commentaires clauses paiement a verifier. Clauses sensibles oui a revoir. Budget dispo oui. Traite par moi."
+  },
+  {
+    "output": {
+      "label": "Revue des contrats",
+      "type": "WORKFLOW",
+      "email_id": "1037",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Contrat Maintenance IT",
+        "Type de contrat": "Service",
+        "Date de soumission": "09/04/2026",
+        "Durée du contrat": "24 mois",
+        "Montant estimé": "120000 TND",
+        "Description brève": "maintenance systemes informatiques",
+        "Document du contrat": "0",
+        "Commentaires": "delais intervention a preciser",
+        "Validation juridique": null,
+        "Analyse des risques juridiques": null,
+        "Clauses sensibles à revoir ?": "non",
+        "Contrat conforme ?": "oui",
+        "Document modifié (si applicable)": "0",
+        "Révision financière": null,
+        "Budget disponible ?": "non",
+        "Montant validé": null,
+        "Conditions de paiement": null,
+        "Signature & Archivage": null,
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Contrat signé": "0",
+        "Statut final du contrat": null
+      }
+    },
+    "input_email": "Salut,\n\nrevue contrat Maintenance IT soumis 9 avril type Service duree 24 mois montant estime 120000. Description maintenance systemes. Commentaires delais intervention a preciser. Clauses sensibles non. Budget dispo non. Document 0."
+  },
+  {
+    "output": {
+      "label": "Revue des contrats",
+      "type": "WORKFLOW",
+      "email_id": "1038",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission du contrat": "oui",
+        "Nom du contrat": "Contrat Consultation",
+        "Type de contrat": "Consulting",
+        "Date de soumission": "11/04/2026",
+        "Durée du contrat": "6 mois",
+        "Montant estimé": "25000 TND",
+        "Description brève": "etude faisabilite",
+        "Document du contrat": "0",
+        "Commentaires": "tout semble ok",
+        "Validation juridique": null,
+        "Analyse des risques juridiques": null,
+        "Clauses sensibles à revoir ?": "oui paiement",
+        "Contrat conforme ?": null,
+        "Document modifié (si applicable)": "0",
+        "Révision financière": null,
+        "Budget disponible ?": "oui",
+        "Montant validé": null,
+        "Conditions de paiement": null,
+        "Signature & Archivage": null,
+        "Date de signature": null,
+        "Signataire(s)": null,
+        "Contrat signé": "0",
+        "Statut final du contrat": null
+      }
+    },
+    "input_email": "Bonjour,\n\nrevue contrat Consultation soumis hier 11 avril duree 6 mois montant 25000 description etude faisabilite. Commentaires tout semble ok mais clauses sensibles paiement a revoir. Budget dispo oui. Merci"
+  },
+  {
+    "output": {
+      "label": "mm",
+      "type": "WORKFLOW",
+      "email_id": "1039",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Bonjour,\n\nje test juste mm pour voir si workflow ok rien a ajouter. Merci"
+  },
+  {
+    "output": {
+      "label": "mm",
+      "type": "WORKFLOW",
+      "email_id": "1040",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Salut equipe,\n\nmm workflow test rapide pas de details. Bonne journee"
+  },
+  {
+    "output": {
+      "label": "mm",
+      "type": "WORKFLOW",
+      "email_id": "1041",
+      "confidence_score": null,
+      "attributes": {}
+    },
+    "input_email": "Hello,\n\njuste un mm pour valider le process rien de special."
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1042",
+      "confidence_score": null,
+      "attributes": {
+        "Identification du besoin": "ordinateurs portables",
+        "Nom du demandeur ": "Leila Trabelsi",
+        "Objet": "equipement bureau",
+        "Date de livraison souhaité": "20/04/2026",
+        "Articles demandés": "5 laptops + accessoires",
+        "Justif du BL": "0",
+        "Justif du BC": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d'achat pour ordinateurs portables. Nom demandeur Leila Trabelsi objet equipement bureau. Livraison souhaitee 20 avril. Articles 5 laptops + accessoires. Justif BL et BC 0. Merci"
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1043",
+      "confidence_score": null,
+      "attributes": {
+        "Identification du besoin": "fournitures papeterie",
+        "Nom du demandeur ": "Karim Mansour",
+        "Objet": "consommables bureau",
+        "Date de livraison souhaité": "15/04/2026",
+        "Articles demandés": "papier A4 stylos etc",
+        "Justif du BL": "0",
+        "Justif du BC": "0"
+      }
+    },
+    "input_email": "Salut,\n\ndemande achat fournitures papeterie demandeur Karim Mansour objet consommables. Livraison 15 avril. Articles papier A4 stylos etc. Justifs 0."
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1044",
+      "confidence_score": null,
+      "attributes": {
+        "Identification du besoin": "materiel securite",
+        "Nom du demandeur ": "Fatma Ben Romdhane",
+        "Objet": "equipement chantier",
+        "Date de livraison souhaité": "25/04/2026",
+        "Articles demandés": "casques gilets",
+        "Justif du BL": "0",
+        "Justif du BC": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d achat materiel securite. Demandeur Fatma objet equipement chantier livraison 25 avril. Articles casques gilets. Justif 0."
+  },
+  {
+    "output": {
+      "label": "Permis de Travail pour Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1045",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Mohamed Ali",
+        "Adresse": "Tunis centre",
+        "Numéro de téléphone": "98765432",
+        "Adresse e-mail": "m.ali@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Projet Route",
+        "Adresse du Chantier": "La Marsa",
+        "Description du Travail à Effectuer": "installation electricite",
+        "Durée Prévue du Travail": "3 mois",
+        "Superviseur ou Responsable sur le Chantier": "Ahmed Khelifi",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "BTP Tunis",
+        "Adresse de l'Entreprise": "Tunis",
+        "Numéro de téléphone de l'Entreprise": "12345678",
+        "Adresse e-mail de l'Entreprise ": "btp@company.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\nje fais demande permis travail chantier pour Mohamed Ali adresse Tunis centre tel 98765432 email m.ali@email.tn. Chantier Projet Route a La Marsa travail installation electricite duree 3 mois superviseur Ahmed Khelifi. Entreprise BTP Tunis adresse Tunis tel 12345678 email btp@company.tn. Declaration signee comme specifie."
+  },
+  {
+    "output": {
+      "label": "Permis de Travail pour Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1046",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Sami Ben Ahmed",
+        "Adresse": "Sfax",
+        "Numéro de téléphone": "23456789",
+        "Adresse e-mail": "sami.b@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Construction Usine",
+        "Adresse du Chantier": "Ben Arous",
+        "Description du Travail à Effectuer": "peinture structure",
+        "Durée Prévue du Travail": "2 mois",
+        "Superviseur ou Responsable sur le Chantier": "Leila Trabelsi",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "PaintPro",
+        "Adresse de l'Entreprise": "Sfax",
+        "Numéro de téléphone de l'Entreprise": "34567890",
+        "Adresse e-mail de l'Entreprise ": "paint@pro.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Salut,\n\ndemande permis travail pour Sami Ben Ahmed Sfax tel 23456789 email sami.b@email.tn. Chantier Construction Usine Ben Arous travail peinture structure 2 mois superviseur Leila. Entreprise PaintPro Sfax tel 34567890 email paint@pro.tn. Certifie conforme."
+  },
+  {
+    "output": {
+      "label": "Permis de Travail pour Chantier",
+      "type": "WORKFLOW",
+      "email_id": "1047",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Demandeur": null,
+        "Nom du Demandeur": "Nadia Krimi",
+        "Adresse": "Ariana",
+        "Numéro de téléphone": "45678901",
+        "Adresse e-mail": "nadia.k@email.tn",
+        "Informations sur le Chantier": null,
+        "Nom du Chantier": "Renovation Hotel",
+        "Adresse du Chantier": "Hammamet",
+        "Description du Travail à Effectuer": "plomberie",
+        "Durée Prévue du Travail": "1 mois",
+        "Superviseur ou Responsable sur le Chantier": "Karim Mansour",
+        "Informations sur l'Entreprise/Employeur": null,
+        "Nom de l'Entreprise/Employeur": "Plombier Expert",
+        "Adresse de l'Entreprise": "Ariana",
+        "Numéro de téléphone de l'Entreprise": "56789012",
+        "Adresse e-mail de l'Entreprise ": "plombier@expert.tn",
+        "Informations sur les Travailleurs": null,
+        "Déclaration et Signature": "Je certifie que toutes les informations fournies dans cette demande sont exactes et complètes. Je comprends que la délivrance du permis de travail est soumise à l'approbation des autorités compétentes et que tout manquement aux réglementations en vigueur peut entraîner l'annulation du permis.",
+        "Surveillance et conformité ": null,
+        "Les travailleurs respectes les conditions de permis de travail ": null,
+        "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      }
+    },
+    "input_email": "Bonjour,\n\npermis travail chantier pour Nadia Krimi Ariana tel 45678901 nadia.k@email.tn. Chantier Renovation Hotel Hammamet travail plomberie 1 mois superviseur Karim. Entreprise Plombier Expert Ariana tel 56789012. Declaration signee."
+  },
+  {
+    "output": {
+      "label": "Réclamation Technique",
+      "type": "WORKFLOW",
+      "email_id": "1048",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "panne machine",
+        "Description": "la machine ne demarre plus bruit anormal",
+        "Niveau d'urgence": "haute"
+      }
+    },
+    "input_email": "Bonjour,\n\nreclamation technique object panne machine. Description la machine ne demarre plus bruit anormal. Urgence haute svp."
+  },
+  {
+    "output": {
+      "label": "Réclamation Technique",
+      "type": "WORKFLOW",
+      "email_id": "1049",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "defaut logiciel",
+        "Description": "erreur crash frequent",
+        "Niveau d'urgence": "moyenne"
+      }
+    },
+    "input_email": "Salut,\n\nreclamation technique defaut logiciel erreur crash frequent urgence moyenne."
+  },
+  {
+    "output": {
+      "label": "Réclamation Technique",
+      "type": "WORKFLOW",
+      "email_id": "1050",
+      "confidence_score": null,
+      "attributes": {
+        "Object de réclamation": "probleme reseau",
+        "Description": "connexion lente coupures",
+        "Niveau d'urgence": "basse"
+      }
+    },
+    "input_email": "Bonjour,\n\nreclmation technique object probleme reseau description connexion lente coupures. Niveau urgence basse."
+  },
+  {
+    "output": {
+      "label": "Processus Export",
+      "type": "WORKFLOW",
+      "email_id": "1051",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "ExportCo",
+        "Date de réception de la demande": "07/04/2026",
+        "Preuve demande C/A": "mail confirme",
+        "List choix Transporteur": "Evergreen",
+        "Autre transporteur": null,
+        "Date enlèvement ": "16/04/2026",
+        "Vérification étapes du processus import": "non applicable",
+        "Pré-alerte": "oui",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-998877",
+        "Pièce jointe ": "docs export",
+        "Dossier de transport": "prepare",
+        "Commentaire": "export urgent",
+        "Dossier douane N°:": "DOU-7788",
+        "Bon de douane N°:": "BD-3344",
+        "Facture N°:": "INV-6677",
+        "Dossier/Action traité par:": "Sami Ben Ahmed"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocessus export pour ExportCo demande recu 7 avril preuve mail. Transporteur Evergreen. Enlevement 16 avril. Pre alerte oui reception oui. BL-998877. Piece jointe docs export. Dossier prepare. Commentaire export urgent. Douane DOU-7788 bon BD-3344 facture INV-6677. Traite par Sami."
+  },
+  {
+    "output": {
+      "label": "Processus Export",
+      "type": "WORKFLOW",
+      "email_id": "1052",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Tunisia Export",
+        "Date de réception de la demande": "10/04/2026",
+        "Preuve demande C/A": "bon commande",
+        "List choix Transporteur": "MSC",
+        "Autre transporteur": "COSCO",
+        "Date enlèvement ": "22/04/2026",
+        "Vérification étapes du processus import": "non applicable",
+        "Pré-alerte": "envoyee",
+        "Réception pré-alerte": "non",
+        "Numéro BL": "BL-665544",
+        "Pièce jointe ": "oui",
+        "Dossier de transport": "initie",
+        "Commentaire": "delai important",
+        "Dossier douane N°:": "DOU-2233",
+        "Bon de douane N°:": null,
+        "Facture N°:": "FACT-8899",
+        "Dossier/Action traité par:": "Nadia Krimi"
+      }
+    },
+    "input_email": "Salut,\n\nprocessus export Tunisia Export recu 10 avril preuve bon commande. Choix MSC ou COSCO. Enlevement 22 avril. Pre alerte envoyee reception non. BL 665544 pieces oui. Dossier initie. Comment delai important. Douane DOU-2233 facture FACT-8899. Traite par Nadia."
+  },
+  {
+    "output": {
+      "label": "Processus Export",
+      "type": "WORKFLOW",
+      "email_id": "1053",
+      "confidence_score": null,
+      "attributes": {
+        "Client/Agent": "Med Export",
+        "Date de réception de la demande": "14/04/2026",
+        "Preuve demande C/A": "email client",
+        "List choix Transporteur": "Maersk",
+        "Autre transporteur": null,
+        "Date enlèvement ": "25/04/2026",
+        "Vérification étapes du processus import": "non applicable",
+        "Pré-alerte": "oui",
+        "Réception pré-alerte": "oui",
+        "Numéro BL": "BL-112244",
+        "Pièce jointe ": "complet",
+        "Dossier de transport": "en cours",
+        "Commentaire": "tout bon",
+        "Dossier douane N°:": "DOU-5566",
+        "Bon de douane N°:": "BD-7788",
+        "Facture N°:": "INV-0011",
+        "Dossier/Action traité par:": "Mohamed Ali"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocessus export Med Export 14 avril email client preuve. Transporteur Maersk. Enlevement 25 avril pre alerte oui reception oui. BL-112244 piece complet. Dossier en cours. Comment tout bon. Douane DOU-5566 bon BD-7788 facture INV-0011. Traite Mohamed."
+  },
+  {
+    "output": {
+      "label": "Contract Review",
+      "type": "WORKFLOW",
+      "email_id": "1054",
+      "confidence_score": null,
+      "attributes": {
+        "Contract Submission": "oui",
+        "Contract Name": "Supply Agreement",
+        "Type of Contract": "Supply",
+        "Submission Date": "05/04/2026",
+        "Contract Duration": "18 months",
+        "Estimated Amount": "75000 TND",
+        "Description": "supply of raw materials",
+        "Contract Document": "0",
+        "Comments": "payment terms need review",
+        "Legal Validation": null,
+        "Legal Risk Analysis": null,
+        "Sensitive Clauses to Review?": "yes",
+        "Is the Contract Compliant?": null,
+        "Modified Document (if applicable)": "0",
+        "Financial Review": null,
+        "Is Budget Available?": "yes",
+        "Validated Amount": null,
+        "Payment Terms": null,
+        "Signature & Archiving": null,
+        "Signature Date": null,
+        "Signer(s)": null,
+        "Signed Contract": "0",
+        "Final Contract Status": null
+      }
+    },
+    "input_email": "Hi team,\n\ncontract review for Supply Agreement submitted 05/04 duration 18 months amount 75000. Description supply raw materials. Document 0. Comments payment terms need review. Sensitive clauses yes. Budget available yes."
+  },
+  {
+    "output": {
+      "label": "Contract Review",
+      "type": "WORKFLOW",
+      "email_id": "1055",
+      "confidence_score": null,
+      "attributes": {
+        "Contract Submission": "oui",
+        "Contract Name": "Service Level Agreement",
+        "Type of Contract": "Service",
+        "Submission Date": "08/04/2026",
+        "Contract Duration": "12 months",
+        "Estimated Amount": "30000 TND",
+        "Description": "IT support services",
+        "Contract Document": "0",
+        "Comments": "all good",
+        "Legal Validation": null,
+        "Legal Risk Analysis": null,
+        "Sensitive Clauses to Review?": "no",
+        "Is the Contract Compliant?": "yes",
+        "Modified Document (if applicable)": "0",
+        "Financial Review": null,
+        "Is Budget Available?": "no",
+        "Validated Amount": null,
+        "Payment Terms": null,
+        "Signature & Archiving": null,
+        "Signature Date": null,
+        "Signer(s)": null,
+        "Signed Contract": "0",
+        "Final Contract Status": null
+      }
+    },
+    "input_email": "Hello,\n\ncontract review Service Level Agreement submitted 08/04 12 months 30000 TND IT support. Comments all good sensitive no. Compliant yes but budget no."
+  },
+  {
+    "output": {
+      "label": "Contract Review",
+      "type": "WORKFLOW",
+      "email_id": "1056",
+      "confidence_score": null,
+      "attributes": {
+        "Contract Submission": "oui",
+        "Contract Name": "Consultancy Contract",
+        "Type of Contract": "Consulting",
+        "Submission Date": "12/04/2026",
+        "Contract Duration": "3 months",
+        "Estimated Amount": "18000 TND",
+        "Description": "feasibility study",
+        "Contract Document": "0",
+        "Comments": "check penalties",
+        "Legal Validation": null,
+        "Legal Risk Analysis": null,
+        "Sensitive Clauses to Review?": "yes",
+        "Is the Contract Compliant?": null,
+        "Modified Document (if applicable)": "0",
+        "Financial Review": null,
+        "Is Budget Available?": "yes",
+        "Validated Amount": null,
+        "Payment Terms": null,
+        "Signature & Archiving": null,
+        "Signature Date": null,
+        "Signer(s)": null,
+        "Signed Contract": "0",
+        "Final Contract Status": null
+      }
+    },
+    "input_email": "Hi,\n\nreview Consultancy Contract submitted 12/04 3 months 18000 feasibility study. Comments check penalties sensitive yes budget yes."
+  },
+  {
+    "output": {
+      "label": "Management of Contractual Risks and Disputes",
+      "type": "WORKFLOW",
+      "email_id": "1057",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Leila Trabelsi",
+        "Projet": "IT Upgrade",
+        "Entreprise": "Tech Solutions",
+        "Date": "09/04/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nmanagement contractual risks disputes pour Leila Trabelsi projet IT Upgrade entreprise Tech Solutions date 9 avril."
+  },
+  {
+    "output": {
+      "label": "Management of Contractual Risks and Disputes",
+      "type": "WORKFLOW",
+      "email_id": "1058",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Fatma Ben Romdhane",
+        "Projet": "Logistics Hub",
+        "Entreprise": "LogiTun",
+        "Date": "11/04/2026"
+      }
+    },
+    "input_email": "Salut,\n\nrisques litiges contractuels Fatma projet Logistics Hub LogiTun 11 avril."
+  },
+  {
+    "output": {
+      "label": "Management of Contractual Risks and Disputes",
+      "type": "WORKFLOW",
+      "email_id": "1059",
+      "confidence_score": null,
+      "attributes": {
+        "Nom": "Sami Ben Ahmed",
+        "Projet": "Energy Project",
+        "Entreprise": "Green Energy",
+        "Date": "14/04/2026"
+      }
+    },
+    "input_email": "Hello,\n\nmanagement risks disputes Sami projet Energy Project Green Energy date 14 avril."
+  },
+  {
+    "output": {
+      "label": "Financial Compliance Monitoring of Contracts",
+      "type": "WORKFLOW",
+      "email_id": "1060",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Fourniture",
+        "Référence ": "CTR-F-2026-22",
+        "Détail": "suivi paiements en retard"
+      }
+    },
+    "input_email": "Bonjour,\n\nfinancial compliance monitoring contrat CTR-F-2026-22 designation Contrat Fourniture detail suivi paiements en retard."
+  },
+  {
+    "output": {
+      "label": "Financial Compliance Monitoring of Contracts",
+      "type": "WORKFLOW",
+      "email_id": "1061",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Service",
+        "Référence ": "CTR-S-2026-45",
+        "Détail": "budget depasse verifier"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole conformite financiere CTR-S-2026-45 Contrat Service detail budget depasse verifier."
+  },
+  {
+    "output": {
+      "label": "Financial Compliance Monitoring of Contracts",
+      "type": "WORKFLOW",
+      "email_id": "1062",
+      "confidence_score": null,
+      "attributes": {
+        "Désignation ": "Contrat Location",
+        "Référence ": "CTR-L-2026-67",
+        "Détail": "clauses financieres ok"
+      }
+    },
+    "input_email": "Bonjour,\n\nfinancial compliance CTR-L-2026-67 Contrat Location detail clauses financieres ok."
+  },
+  {
+    "output": {
+      "label": "Fiche des accidents & des incidents",
+      "type": "WORKFLOW",
+      "email_id": "1063",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Ahmed Khelifi",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "10/04/2026",
+        "Heure de l'incendie": "14:30",
+        "Lieu": "atelier production",
+        "Type": "mineur corporel",
+        "si dommage corporel a remplir": "oui legere blessure",
+        "si dommage matériel a remplir": null,
+        "si réputation a remplir": null,
+        "si fatalité a remplir": null,
+        "type du préjudice": "blessure main",
+        "localisation du préjudice": "atelier",
+        "Etat physique actuel de la (des) victime(s)": "stable",
+        "Provenance/Cause probable d’incident": "mauvaise manipulation",
+        "Mesures existantes ayant pu prévenir tel Incident": "formation manquante",
+        "Description de l’événement": "chute outil",
+        "Conséquence": "arret travail 2 jours",
+        " Photo de l'incident / accident si existe": null,
+        "Réaction d'urgence du Resp HSE": "premiers soins",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": "bandage",
+        "Réaction technique": null,
+        "Action Correctives provisoires ": "nettoyage zone",
+        "Détails concernant les Causes apparents": "manque vigilance",
+        " Recommandations préliminaires": "formation supplementaire",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche accident declaree par Ahmed Khelifi date 10 avril 14h30 lieu atelier type mineur corporel. Dommage corporel blessure main localisation atelier etat stable. Cause mauvaise manipulation. Description chute outil. Consequence arret 2 jours. Reaction urgence premiers soins. Action corrective nettoyage. Recommandations formation. Diffusion dans 24h."
+  },
+  {
+    "output": {
+      "label": "Fiche des accidents & des incidents",
+      "type": "WORKFLOW",
+      "email_id": "1064",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Sara Ben Salem",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "12/04/2026",
+        "Heure de l'incendie": "09:15",
+        "Lieu": "entrepot",
+        "Type": "materiel",
+        "si dommage corporel a remplir": null,
+        "si dommage matériel a remplir": "oui casse palette",
+        "si réputation a remplir": null,
+        "si fatalité a remplir": null,
+        "type du préjudice": "dommage materiel",
+        "localisation du préjudice": "entrepot",
+        "Etat physique actuel de la (des) victime(s)": "aucune victime",
+        "Provenance/Cause probable d’incident": "chariot elevateur defectueux",
+        "Mesures existantes ayant pu prévenir tel Incident": "maintenance recente",
+        "Description de l’événement": "palette tombee",
+        "Conséquence": "perte marchandise",
+        " Photo de l'incident / accident si existe": "oui jointe",
+        "Réaction d'urgence du Resp HSE": "isolement zone",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": null,
+        "Réaction technique": "reparation",
+        "Action Correctives provisoires ": "remplacement palette",
+        "Détails concernant les Causes apparents": "defaut frein",
+        " Recommandations préliminaires": "controle chariots",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Salut,\n\nfiche incident Sara Ben Salem 12 avril 9h15 entrepot type materiel dommage casse palette. Cause chariot defectueux. Description palette tombee. Photo jointe. Reaction isolement zone. Action remplacement. Recommandations controle chariots."
+  },
+  {
+    "output": {
+      "label": "Fiche des accidents & des incidents",
+      "type": "WORKFLOW",
+      "email_id": "1065",
+      "confidence_score": null,
+      "attributes": {
+        "déclarante d'incident/ accident": "Karim Mansour",
+        "NB": "Ce Rapport est à remplir en cas d’incident/accident Mineur ou Majeur",
+        "Date de l'incident": "13/04/2026",
+        "Heure de l'incendie": "16:45",
+        "Lieu": "bureau admin",
+        "Type": "mineur",
+        "si dommage corporel a remplir": null,
+        "si dommage matériel a remplir": null,
+        "si réputation a remplir": "oui",
+        "si fatalité a remplir": null,
+        "type du préjudice": "reputation",
+        "localisation du préjudice": "bureau",
+        "Etat physique actuel de la (des) victime(s)": "aucun",
+        "Provenance/Cause probable d’incident": "erreur communication",
+        "Mesures existantes ayant pu prévenir tel Incident": "procedure manquante",
+        "Description de l’événement": "info erronee client",
+        "Conséquence": "mecontentement client",
+        " Photo de l'incident / accident si existe": null,
+        "Réaction d'urgence du Resp HSE": "excuses",
+        "Personne cible pour cette alerte": "RHSE",
+        "Réaction médicale": null,
+        "Réaction technique": null,
+        "Action Correctives provisoires ": "correction info",
+        "Détails concernant les Causes apparents": "manque verification",
+        " Recommandations préliminaires": "double check",
+        "diffusion": "Tout incident/accident sera communiqué au plus tard dans les 24 heures qui suivent l’événement par le concerné (au RHSE)"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche incident Karim Mansour 13 avril 16h45 bureau type mineur reputation. Description info erronee client. Consequence mecontentement. Action correction info. Recommandations double check."
+  },
+  {
+    "output": {
+      "label": "Fiche des NC",
+      "type": "WORKFLOW",
+      "email_id": "1066",
+      "confidence_score": null,
+      "attributes": {
+        "date": "06/04/2026",
+        "Processus": "production",
+        "Source": "audit interne",
+        "remarque": "non respect norme",
+        "Support ": null,
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "produit non conforme spec",
+        "Correction (s) \t": "retrait lot",
+        "Evaluation du correction": null,
+        "Analyse des causes \t\t\t\t\t\t\t": "erreur machine",
+        "Action Corrective (s) :\t": "maintenance",
+        "Evaluation de l'efficacité/clôture": null,
+        "Risques et opportunités": "risque qualite",
+        "Besoin de modification SMQ": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche NC date 6 avril processus production source audit. Enonce non conformite produit non conforme spec. Correction retrait lot. Analyse causes erreur machine. Action corrective maintenance. Risques qualite besoin modification SMQ oui."
+  },
+  {
+    "output": {
+      "label": "Fiche des NC",
+      "type": "WORKFLOW",
+      "email_id": "1067",
+      "confidence_score": null,
+      "attributes": {
+        "date": "09/04/2026",
+        "Processus": "logistique",
+        "Source": "client",
+        "remarque": "delai depasse",
+        "Support ": null,
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "retard livraison",
+        "Correction (s) \t": "expedition express",
+        "Evaluation du correction": null,
+        "Analyse des causes \t\t\t\t\t\t\t": "probleme transport",
+        "Action Corrective (s) :\t": "nouveau transporteur",
+        "Evaluation de l'efficacité/clôture": null,
+        "Risques et opportunités": "opportunite amelioration",
+        "Besoin de modification SMQ": "non"
+      }
+    },
+    "input_email": "Salut,\n\nfiche NC 9 avril processus logistique source client enonce retard livraison. Correction expedition express. Analyse probleme transport. Action nouveau transporteur. Pas besoin modification SMQ."
+  },
+  {
+    "output": {
+      "label": "Fiche des NC",
+      "type": "WORKFLOW",
+      "email_id": "1068",
+      "confidence_score": null,
+      "attributes": {
+        "date": "12/04/2026",
+        "Processus": "qualite",
+        "Source": "controle",
+        "remarque": "test echoue",
+        "Support ": null,
+        "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": "resultat test negatif",
+        "Correction (s) \t": "re-test",
+        "Evaluation du correction": null,
+        "Analyse des causes \t\t\t\t\t\t\t": "mauvais echantillon",
+        "Action Corrective (s) :\t": "formation equipe",
+        "Evaluation de l'efficacité/clôture": null,
+        "Risques et opportunités": "risque recurrence",
+        "Besoin de modification SMQ": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche NC date 12 avril processus qualite source controle enonce resultat test negatif. Correction re-test. Analyse mauvais echantillon. Action formation. Besoin modification SMQ oui."
+  },
+  {
+    "output": {
+      "label": "REVUE DE DIRECTION",
+      "type": "WORKFLOW",
+      "email_id": "1069",
+      "confidence_score": null,
+      "attributes": {
+        "Date de revue": "15/04/2026",
+        "N° de la revue": "REV-2026-01",
+        "Données d'entrée de la revue de direction": "rapports Q1",
+        "Les résultats des audits": "conformes",
+        " Les retours d'information des clients": "positifs",
+        " Le fonctionnement des processus et la conformité du produit": "bon",
+        "L'état des actions préventives et correctives": "en cours",
+        "Les actions issues des revues de direction précédentes": "cloturees",
+        " Les changements pouvant affecter le système de management de la qualité": "nouveau logiciel",
+        "Les recommandations d'amélioration": "formation",
+        " Données de sortie de la revue de direction": "plan action",
+        "L'amélioration de l'efficacité du système de management de la qualité et de ses processus": "oui",
+        "L'amélioration du produit en rapport avec les exigences du client": "oui",
+        "Besoins en ressources": "2 personnes"
+      }
+    },
+    "input_email": "Bonjour,\n\nrevue de direction date 15 avril n REV-2026-01. Donnees entree rapports Q1. Audits conformes clients positifs processus bon. Actions preventives en cours. Changements nouveau logiciel. Recommandations formation. Sortie plan action. Amelioration oui besoins 2 personnes."
+  },
+  {
+    "output": {
+      "label": "REVUE DE DIRECTION",
+      "type": "WORKFLOW",
+      "email_id": "1070",
+      "confidence_score": null,
+      "attributes": {
+        "Date de revue": "20/04/2026",
+        "N° de la revue": "REV-2026-02",
+        "Données d'entrée de la revue de direction": "bilan semestriel",
+        "Les résultats des audits": "quelques NC",
+        " Les retours d'information des clients": "mixtes",
+        " Le fonctionnement des processus et la conformité du produit": "a ameliorer",
+        "L'état des actions préventives et correctives": "cloture",
+        "Les actions issues des revues de direction précédentes": "suivies",
+        " Les changements pouvant affecter le système de management de la qualité": "aucun",
+        "Les recommandations d'amélioration": "optimisation",
+        " Données de sortie de la revue de direction": "objectifs 2026",
+        "L'amélioration de l'efficacité du système de management de la qualité et de ses processus": "en cours",
+        "L'amélioration du produit en rapport avec les exigences du client": "oui",
+        "Besoins en ressources": "budget formation"
+      }
+    },
+    "input_email": "Salut,\n\nrevue direction 20 avril REV-2026-02 bilan semestriel. Audits quelques NC clients mixtes. Processus a ameliorer. Actions cloture. Recommandations optimisation. Sortie objectifs 2026. Amelioration en cours besoins budget formation."
+  },
+  {
+    "output": {
+      "label": "REVUE DE DIRECTION",
+      "type": "WORKFLOW",
+      "email_id": "1071",
+      "confidence_score": null,
+      "attributes": {
+        "Date de revue": "25/04/2026",
+        "N° de la revue": "REV-2026-03",
+        "Données d'entrée de la revue de direction": "donnees Q2",
+        "Les résultats des audits": "100% conforme",
+        " Les retours d'information des clients": "tres bons",
+        " Le fonctionnement des processus et la conformité du produit": "excellent",
+        "L'état des actions préventives et correctives": "terminees",
+        "Les actions issues des revues de direction précédentes": "validees",
+        " Les changements pouvant affecter le système de management de la qualité": "nouvelle norme",
+        "Les recommandations d'amélioration": "certification",
+        " Données de sortie de la revue de direction": "plan 2027",
+        "L'amélioration de l'efficacité du système de management de la qualité et de ses processus": "oui",
+        "L'amélioration du produit en rapport avec les exigences du client": "oui",
+        "Besoins en ressources": "logiciel nouveau"
+      }
+    },
+    "input_email": "Bonjour,\n\nrevue de direction 25 avril REV-2026-03 donnees Q2. Audits 100 conforme clients tres bons processus excellent. Actions terminees. Changements nouvelle norme. Recommandations certification. Sortie plan 2027 besoins logiciel."
+  },
+  {
+    "output": {
+      "label": "Audit interne",
+      "type": "WORKFLOW",
+      "email_id": "1072",
+      "confidence_score": null,
+      "attributes": {
+        "Planning de l'audit interne": "Q2 2026",
+        "Liste d'habilitation auditeurs internes": "3 auditeurs",
+        "Plan d'audit interne": "complet",
+        "Check List audit": "remplie",
+        "Rapport d'audit": "joint",
+        "Diffusion du rapport d’audit": "equipe",
+        "Résultat d'audit pour prochaine revue de direction": "positif"
+      }
+    },
+    "input_email": "Bonjour,\n\naudit interne planning Q2 liste 3 auditeurs plan complet checklist remplie rapport joint diffusion equipe resultat positif pour revue direction."
+  },
+  {
+    "output": {
+      "label": "Audit interne",
+      "type": "WORKFLOW",
+      "email_id": "1073",
+      "confidence_score": null,
+      "attributes": {
+        "Planning de l'audit interne": "avril 2026",
+        "Liste d'habilitation auditeurs internes": "2 auditeurs",
+        "Plan d'audit interne": "en cours",
+        "Check List audit": "partielle",
+        "Rapport d'audit": "en redaction",
+        "Diffusion du rapport d’audit": "direction",
+        "Résultat d'audit pour prochaine revue de direction": "a confirmer"
+      }
+    },
+    "input_email": "Salut,\n\naudit interne planning avril 2 auditeurs plan en cours checklist partielle rapport en redaction diffusion direction resultat a confirmer."
+  },
+  {
+    "output": {
+      "label": "Audit interne",
+      "type": "WORKFLOW",
+      "email_id": "1074",
+      "confidence_score": null,
+      "attributes": {
+        "Planning de l'audit interne": "mai 2026",
+        "Liste d'habilitation auditeurs internes": "4 auditeurs",
+        "Plan d'audit interne": "valide",
+        "Check List audit": "complete",
+        "Rapport d'audit": "finalise",
+        "Diffusion du rapport d’audit": "tout le monde",
+        "Résultat d'audit pour prochaine revue de direction": "excellent"
+      }
+    },
+    "input_email": "Bonjour,\n\naudit interne mai 4 auditeurs plan valide checklist complete rapport finalise diffusion tout le monde resultat excellent."
+  },
+  {
+    "output": {
+      "label": "Contrôle Qualité ISO 22000",
+      "type": "WORKFLOW",
+      "email_id": "1075",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "farine",
+        "Numéro d'identification unique du Produit": "PROD-22000-01",
+        "Classement Par Risque ": "moyen",
+        "Classement par ancienneté ": "nouveau",
+        "Le produit respecte les critères de qualité de l'entreprise": "oui",
+        "Le produit conforme au politique interne": "oui",
+        "Validation": "oui",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "oui",
+        "Conformité Contrôle Qualité ": "oui",
+        "Rapport": "positif",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole qualite ISO 22000 produit farine ID PROD-22000-01 risque moyen anciennete nouveau. Respecte criteres oui conforme politique oui. Validation oui juridique financier controle qualite tous oui. Rapport positif inspection finale joint."
+  },
+  {
+    "output": {
+      "label": "Contrôle Qualité ISO 22000",
+      "type": "WORKFLOW",
+      "email_id": "1076",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "huile olive",
+        "Numéro d'identification unique du Produit": "PROD-22000-02",
+        "Classement Par Risque ": "bas",
+        "Classement par ancienneté ": "ancien",
+        "Le produit respecte les critères de qualité de l'entreprise": "non",
+        "Le produit conforme au politique interne": "non",
+        "Validation": "non",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "oui",
+        "Conformité Contrôle Qualité ": "non",
+        "Rapport": "a corriger",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Salut,\n\ncontrole ISO 22000 huile olive ID PROD-22000-02 risque bas ancien. Respecte criteres non conforme politique non. Validation non mais juridique et financier oui controle non. Rapport a corriger inspection jointe."
+  },
+  {
+    "output": {
+      "label": "Contrôle Qualité ISO 22000",
+      "type": "WORKFLOW",
+      "email_id": "1077",
+      "confidence_score": null,
+      "attributes": {
+        "Identification et critère de qualité du produit": "epices",
+        "Numéro d'identification unique du Produit": "PROD-22000-03",
+        "Classement Par Risque ": "eleve",
+        "Classement par ancienneté ": "moyen",
+        "Le produit respecte les critères de qualité de l'entreprise": "oui",
+        "Le produit conforme au politique interne": "oui",
+        "Validation": "oui",
+        "Conformité Juridique": "oui",
+        "Conformité Financière ": "non",
+        "Conformité Contrôle Qualité ": "oui",
+        "Rapport": "en attente",
+        "Rapport d'inspection finale": "joint"
+      }
+    },
+    "input_email": "Bonjour,\n\ncontrole qualite epices ID PROD-22000-03 risque eleve. Respecte oui politique oui validation oui juridique oui financier non controle oui. Rapport en attente inspection jointe."
+  },
+  {
+    "output": {
+      "label": "Gestion des information documenté",
+      "type": "WORKFLOW",
+      "email_id": "1078",
+      "confidence_score": null,
+      "attributes": {
+        "Libéllé": "Procedure Qualite",
+        "Référence": "PQ-001",
+        "Révision": "v2.1",
+        "Document Joint": "oui",
+        "Processus": "qualite",
+        "Date de création": "01/04/2026",
+        "Créateur": "Leila Trabelsi",
+        "Vérificateur": "Ahmed Khelifi",
+        "Approbateur": "Direction",
+        "Archivage": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion info documentee libelle Procedure Qualite ref PQ-001 revision v2.1 document joint processus qualite cree 1 avril createur Leila verificateur Ahmed approbateur direction archivage oui."
+  },
+  {
+    "output": {
+      "label": "Gestion des information documenté",
+      "type": "WORKFLOW",
+      "email_id": "1079",
+      "confidence_score": null,
+      "attributes": {
+        "Libéllé": "Formulaire RH",
+        "Référence": "FRH-045",
+        "Révision": "v1.0",
+        "Document Joint": "oui",
+        "Processus": "RH",
+        "Date de création": "05/04/2026",
+        "Créateur": "Fatma Ben Romdhane",
+        "Vérificateur": "Sarah Ben Salem",
+        "Approbateur": "RH",
+        "Archivage": "oui"
+      }
+    },
+    "input_email": "Salut,\n\ngestion documentee Formulaire RH ref FRH-045 rev v1.0 joint processus RH cree 5 avril createur Fatma verif Sarah approb RH archivage oui."
+  },
+  {
+    "output": {
+      "label": "Gestion des information documenté",
+      "type": "WORKFLOW",
+      "email_id": "1080",
+      "confidence_score": null,
+      "attributes": {
+        "Libéllé": "Manuel ISO",
+        "Référence": "MAN-ISO-01",
+        "Révision": "v3.2",
+        "Document Joint": "oui",
+        "Processus": "management",
+        "Date de création": "10/04/2026",
+        "Créateur": "Karim Mansour",
+        "Vérificateur": "Direction",
+        "Approbateur": "DG",
+        "Archivage": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion info Manuel ISO ref MAN-ISO-01 rev v3.2 joint processus management cree 10 avril createur Karim verificateur direction approb DG."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1081",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        " Nom de l'événement": "Seminaire Qualite",
+        " Type": "interne",
+        " Date Début": "20/04/2026",
+        " Date Fin": "21/04/2026",
+        " Lieu": "salle conference",
+        " Description": "formation ISO",
+        " Etat": "planifie",
+        "Réservation des ressources": "oui",
+        " Équipements requis": "projecteur",
+        " Nom Salle": "Salle A",
+        " Capacité": "50",
+        " Date et heure d'installation": "20/04 08:00",
+        " Responsable logistique": "Sarah",
+        " Statut Disponibilité": "disponible",
+        "Gestion des participants": "oui",
+        " Liste des participants": "20 personnes",
+        "Gestion des intervenants": "oui",
+        " Liste des intervenants": "2 formateurs",
+        "Check-list d'exécution": "complete",
+        " Salles prêtes ?": "oui",
+        " Équipements en place ?": "oui",
+        " Intervenants confirmés ?": "oui",
+        " Commentaires": "tout ok"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion evenement creation Seminaire Qualite type interne debut 20 fin 21 avril lieu salle conference description formation ISO. Reservation ressources oui equip projecteur salle A capacite 50 installation 20/04 08h responsable Sarah dispo. Participants 20 intervenants 2 formateurs. Checklist complete salles oui equip oui intervenants oui."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1082",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        " Nom de l'événement": "Team Building",
+        " Type": "externe",
+        " Date Début": "25/04/2026",
+        " Date Fin": "25/04/2026",
+        " Lieu": "hotel",
+        " Description": "activites equipe",
+        " Etat": "en preparation",
+        "Réservation des ressources": "oui",
+        " Équipements requis": "bus",
+        " Nom Salle": "salle hotel",
+        " Capacité": "30",
+        " Date et heure d'installation": "25/04 09:00",
+        " Responsable logistique": "Ahmed",
+        " Statut Disponibilité": "reserve",
+        "Gestion des participants": "oui",
+        " Liste des participants": "25",
+        "Gestion des intervenants": "non",
+        " Liste des intervenants": null,
+        "Check-list d'exécution": "en cours",
+        " Salles prêtes ?": "oui",
+        " Équipements en place ?": "non",
+        " Intervenants confirmés ?": "non",
+        " Commentaires": "a confirmer bus"
+      }
+    },
+    "input_email": "Salut,\n\nevenement Team Building debut fin 25 avril lieu hotel description activites equipe. Reservation oui equip bus salle hotel capacite 30 installation 09h responsable Ahmed reserve. Participants 25 pas intervenants. Checklist en cours salles oui equip non."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1083",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        " Nom de l'événement": "Reunion Client",
+        " Type": "interne",
+        " Date Début": "18/04/2026",
+        " Date Fin": "18/04/2026",
+        " Lieu": "bureau",
+        " Description": "presentation projet",
+        " Etat": "confirme",
+        "Réservation des ressources": "oui",
+        " Équipements requis": "ordinateur",
+        " Nom Salle": "Salle B",
+        " Capacité": "10",
+        " Date et heure d'installation": "18/04 10:00",
+        " Responsable logistique": "Fatma",
+        " Statut Disponibilité": "disponible",
+        "Gestion des participants": "oui",
+        " Liste des participants": "8",
+        "Gestion des intervenants": "oui",
+        " Liste des intervenants": "1",
+        "Check-list d'exécution": "complete",
+        " Salles prêtes ?": "oui",
+        " Équipements en place ?": "oui",
+        " Intervenants confirmés ?": "oui",
+        " Commentaires": "ok"
+      }
+    },
+    "input_email": "Bonjour,\n\ngestion evenement Reunion Client 18 avril lieu bureau description presentation. Reservation oui equip ordi salle B capacite 10 10h responsable Fatma. Participants 8 intervenant 1 checklist complete tout ok."
+  },
+  {
+    "output": {
+      "label": "Approbation budgétaire",
+      "type": "WORKFLOW",
+      "email_id": "1084",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Formation",
+        "Description": "formation securite",
+        "Montant demandé": "5000 TND",
+        "Catégorie budgétaire": "formation",
+        "Date souhaitée d’approbation": "15/04/2026",
+        "Pièce jointe": "devis",
+        "Validation initiale": "en attente",
+        "Commentaires": "budget serre",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Bonjour,\n\napprobation budgetaire soumission pour evenement Formation description formation securite montant 5000 categorie formation date approbation souhaitee 15 avril piece devis. Commentaires budget serre."
+  },
+  {
+    "output": {
+      "label": "Approbation budgétaire",
+      "type": "WORKFLOW",
+      "email_id": "1085",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Seminaire",
+        "Description": "seminaire vente",
+        "Montant demandé": "12000 TND",
+        "Catégorie budgétaire": "marketing",
+        "Date souhaitée d’approbation": "18/04/2026",
+        "Pièce jointe": "programme",
+        "Validation initiale": "ok",
+        "Commentaires": "a valider finance",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Salut,\n\napprobation budgetaire evenement Seminaire description seminaire vente 12000 marketing date 18 avril piece programme. Commentaires a valider finance."
+  },
+  {
+    "output": {
+      "label": "Approbation budgétaire",
+      "type": "WORKFLOW",
+      "email_id": "1086",
+      "confidence_score": null,
+      "attributes": {
+        "Soumission budgétaire": "oui",
+        "Nom d'événement": "Atelier",
+        "Description": "atelier innovation",
+        "Montant demandé": "8000 TND",
+        "Catégorie budgétaire": "R&D",
+        "Date souhaitée d’approbation": "22/04/2026",
+        "Pièce jointe": "plan",
+        "Validation initiale": "en cours",
+        "Commentaires": "prioritaire",
+        "Révision financière": null,
+        "Montant approuvé": null,
+        "Commentaires financiers": null
+      }
+    },
+    "input_email": "Bonjour,\n\napprobation budgetaire Atelier description atelier innovation 8000 R&D date 22 avril piece plan. Commentaires prioritaire."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1087",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Conference",
+        "Type": "externe",
+        "Date Début": "30/04/2026",
+        "Date Fin": "30/04/2026",
+        "Lieu": "hotel Tunis",
+        "Description": "conference clients",
+        "Réservation des ressources": "oui",
+        "Salles demandées": "grande salle",
+        "Équipements requis": "micros ecrans",
+        "Date et heure d'installation": "30/04 08:30",
+        "Personne de contact": "Leila",
+        "Statut Disponibilité": "confirme",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "45",
+        "Check-list d'exécution": "en cours",
+        "Statut": "prepare",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "oui",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "bon evenement"
+      }
+    },
+    "input_email": "Salut,\n\ngestion evenement Conference externe 30 avril hotel Tunis description conference clients. Reservation oui salles grande salle equip micros ecrans installation 08h30 contact Leila dispo confirme. Inscriptions 45 checklist en cours salles oui equip oui."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1088",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Workshop",
+        "Type": "interne",
+        "Date Début": "28/04/2026",
+        "Date Fin": "28/04/2026",
+        "Lieu": "bureau",
+        "Description": "workshop equipe",
+        "Réservation des ressources": "oui",
+        "Salles demandées": "salle reunion",
+        "Équipements requis": "tableau",
+        "Date et heure d'installation": "28/04 14:00",
+        "Personne de contact": "Ahmed",
+        "Statut Disponibilité": "disponible",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "15",
+        "Check-list d'exécution": "complete",
+        "Statut": "ok",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "oui",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "pret"
+      }
+    },
+    "input_email": "Bonjour,\n\nevenement Workshop interne 28 avril bureau description workshop equipe. Reservation salles reunion equip tableau 14h contact Ahmed. Participants 15 checklist complete tout ok."
+  },
+  {
+    "output": {
+      "label": "Gestion des événements",
+      "type": "WORKFLOW",
+      "email_id": "1089",
+      "confidence_score": null,
+      "attributes": {
+        "Création de l'événement": "oui",
+        "Nom de l'événement": "Meeting",
+        "Type": "interne",
+        "Date Début": "16/04/2026",
+        "Date Fin": "16/04/2026",
+        "Lieu": "online",
+        "Description": "meeting hebdo",
+        "Réservation des ressources": "non",
+        "Salles demandées": "zoom",
+        "Équipements requis": "lien",
+        "Date et heure d'installation": "16/04 10:00",
+        "Personne de contact": "Fatma",
+        "Statut Disponibilité": "confirme",
+        "Gestion des inscriptions": "oui",
+        "Liste des participants": "12",
+        "Check-list d'exécution": "complete",
+        "Statut": "confirme",
+        "Salles prêtes ?": "oui",
+        "Équipements en place ?": "oui",
+        "Intervenants confirmés ?": "oui",
+        "Commentaires": "lien envoye"
+      }
+    },
+    "input_email": "Salut,\n\ngestion evenement Meeting interne 16 avril online description meeting hebdo. Pas reservation salle zoom equip lien 10h contact Fatma. Participants 12 checklist complete lien envoye."
+  },
+  {
+    "output": {
+      "label": "Leave Request",
+      "type": "WORKFLOW",
+      "email_id": "1090",
+      "confidence_score": null,
+      "attributes": {
+        "Employer Request": "oui",
+        "Employee Data": "Sami Ben Ahmed",
+        "Type of Leave": "vacances",
+        "Departure Date": "20/04/2026",
+        "Return Date": "27/04/2026",
+        "Duration": "7 jours",
+        "Departure Period": "matin",
+        "Return Period": "matin",
+        "Reason for the Request": "vacances famille",
+        "Supporting Document": "0",
+        "Leave Balance": "15 jours",
+        "Replacement": "Ahmed Khelifi",
+        "HR Processing": "en cours"
+      }
+    },
+    "input_email": "Bonjour,\n\nleave request employer oui employee Sami Ben Ahmed type vacances departure 20 avril return 27 avril duration 7 jours. Reason vacances famille. Supporting 0 balance 15 replacement Ahmed. HR en cours."
+  },
+  {
+    "output": {
+      "label": "Leave Request",
+      "type": "WORKFLOW",
+      "email_id": "1091",
+      "confidence_score": null,
+      "attributes": {
+        "Employer Request": "oui",
+        "Employee Data": "Leila Trabelsi",
+        "Type of Leave": "maladie",
+        "Departure Date": "15/04/2026",
+        "Return Date": "18/04/2026",
+        "Duration": "3 jours",
+        "Departure Period": "matin",
+        "Return Period": "soir",
+        "Reason for the Request": "consultation medicale",
+        "Supporting Document": "0",
+        "Leave Balance": "10 jours",
+        "Replacement": "Fatma",
+        "HR Processing": "en cours"
+      }
+    },
+    "input_email": "Salut,\n\nleave request employee Leila type maladie departure 15 avril return 18 duration 3. Reason consultation medicale. Balance 10 replacement Fatma."
+  },
+  {
+    "output": {
+      "label": "Leave Request",
+      "type": "WORKFLOW",
+      "email_id": "1092",
+      "confidence_score": null,
+      "attributes": {
+        "Employer Request": "oui",
+        "Employee Data": "Karim Mansour",
+        "Type of Leave": "personnel",
+        "Departure Date": "22/04/2026",
+        "Return Date": "23/04/2026",
+        "Duration": "1 jour",
+        "Departure Period": "matin",
+        "Return Period": "matin",
+        "Reason for the Request": "affaire personnelle",
+        "Supporting Document": "0",
+        "Leave Balance": "12 jours",
+        "Replacement": "Sami",
+        "HR Processing": "en cours"
+      }
+    },
+    "input_email": "Bonjour,\n\nleave request Karim type personnel departure 22 return 23 duration 1 reason affaire personnelle balance 12 replacement Sami."
+  },
+  {
+    "output": {
+      "label": "Mission Order",
+      "type": "WORKFLOW",
+      "email_id": "1093",
+      "confidence_score": null,
+      "attributes": {
+        "Mission Details": "Détails de la mission",
+        "Mission Purpose": "rencontre client",
+        "Mission Reasons": "signature contrat",
+        "Employee": "Ahmed Khelifi",
+        "Full Name": "Ahmed Khelifi",
+        "Position": "manager",
+        "Home Address": "Tunis",
+        "Departure Date": "18/04/2026",
+        "Departure Time": "08:00",
+        "Return Date": "20/04/2026",
+        "Return Time": "18:00",
+        "Destination Type": "Sfax",
+        "Address": "siege client",
+        "Attachment ": "0",
+        "Supervisor Approval": "en attente",
+        "Accommodation Required": "oui",
+        "Means of Transport": "voiture",
+        "Type": "voiture entreprise",
+        "Estimated Working Capital": "500 TND",
+        "Resource Allocation": null,
+        "Approved Budget": null,
+        "Allocated Resources": "0",
+        "Mission Report": null,
+        "Summary of Activities Performed": null,
+        "Expense Receipts": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nmission order details mission purpose rencontre client reason signature contrat employee Ahmed Khelifi manager adresse Tunis departure 18/04 08h return 20 18h destination Sfax. Accommodation oui transport voiture. Estimated 500 TND attachment 0."
+  },
+  {
+    "output": {
+      "label": "Mission Order",
+      "type": "WORKFLOW",
+      "email_id": "1094",
+      "confidence_score": null,
+      "attributes": {
+        "Mission Details": "Détails de la mission",
+        "Mission Purpose": "formation",
+        "Mission Reasons": "mise a jour competences",
+        "Employee": "Fatma Ben Romdhane",
+        "Full Name": "Fatma Ben Romdhane",
+        "Position": "technicienne",
+        "Home Address": "Sfax",
+        "Departure Date": "25/04/2026",
+        "Departure Time": "07:30",
+        "Return Date": "27/04/2026",
+        "Return Time": "17:00",
+        "Destination Type": "Tunis",
+        "Address": "centre formation",
+        "Attachment ": "0",
+        "Supervisor Approval": "approuve",
+        "Accommodation Required": "non",
+        "Means of Transport": "train",
+        "Type": "train",
+        "Estimated Working Capital": "300 TND",
+        "Resource Allocation": null,
+        "Approved Budget": null,
+        "Allocated Resources": "0",
+        "Mission Report": null,
+        "Summary of Activities Performed": null,
+        "Expense Receipts": "0"
+      }
+    },
+    "input_email": "Salut,\n\nmission order Fatma technicienne Sfax departure 25/04 07h30 return 27 17h destination Tunis centre formation purpose formation reason mise a jour. Transport train accommodation non estimated 300."
+  },
+  {
+    "output": {
+      "label": "Mission Order",
+      "type": "WORKFLOW",
+      "email_id": "1095",
+      "confidence_score": null,
+      "attributes": {
+        "Mission Details": "Détails de la mission",
+        "Mission Purpose": "inspection site",
+        "Mission Reasons": "controle qualite",
+        "Employee": "Leila Trabelsi",
+        "Full Name": "Leila Trabelsi",
+        "Position": "ingenieur",
+        "Home Address": "Tunis",
+        "Departure Date": "30/04/2026",
+        "Departure Time": "09:00",
+        "Return Date": "01/05/2026",
+        "Return Time": "16:00",
+        "Destination Type": "Kairouan",
+        "Address": "usine",
+        "Attachment ": "0",
+        "Supervisor Approval": "en attente",
+        "Accommodation Required": "oui",
+        "Means of Transport": "voiture",
+        "Type": "voiture",
+        "Estimated Working Capital": "400 TND",
+        "Resource Allocation": null,
+        "Approved Budget": null,
+        "Allocated Resources": "0",
+        "Mission Report": null,
+        "Summary of Activities Performed": null,
+        "Expense Receipts": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nmission order Leila ingenieur departure 30/04 09h return 01/05 16h destination Kairouan usine purpose inspection site. Accommodation oui transport voiture estimated 400."
+  },
+  {
+    "output": {
+      "label": "Absence Authorization Request",
+      "type": "WORKFLOW",
+      "email_id": "1096",
+      "confidence_score": null,
+      "attributes": {
+        "Type of Authorization": "absence courte",
+        "Date of Leave": "17/04/2026",
+        "Number of Hours": "4",
+        "Departure Time": "14:00",
+        "Return Time": "18:00",
+        "Reason for Absence": "rendez vous medical"
+      }
+    },
+    "input_email": "Bonjour,\n\nabsence authorization request type absence courte date 17 avril 4 heures departure 14h return 18h reason rendez vous medical."
+  },
+  {
+    "output": {
+      "label": "Absence Authorization Request",
+      "type": "WORKFLOW",
+      "email_id": "1097",
+      "confidence_score": null,
+      "attributes": {
+        "Type of Authorization": "absence",
+        "Date of Leave": "21/04/2026",
+        "Number of Hours": "2",
+        "Departure Time": "10:00",
+        "Return Time": "12:00",
+        "Reason for Absence": "banque"
+      }
+    },
+    "input_email": "Salut,\n\nabsence authorization date 21 avril 2 heures 10h a 12h reason banque."
+  },
+  {
+    "output": {
+      "label": "Absence Authorization Request",
+      "type": "WORKFLOW",
+      "email_id": "1098",
+      "confidence_score": null,
+      "attributes": {
+        "Type of Authorization": "absence",
+        "Date of Leave": "24/04/2026",
+        "Number of Hours": "3",
+        "Departure Time": "15:00",
+        "Return Time": "18:00",
+        "Reason for Absence": "affaire famille"
+      }
+    },
+    "input_email": "Bonjour,\n\nrequest absence authorization 24 avril 3h departure 15h return 18h reason affaire famille."
+  },
+  {
+    "output": {
+      "label": "Advance Payment Request",
+      "type": "WORKFLOW",
+      "email_id": "1099",
+      "confidence_score": null,
+      "attributes": {
+        "Employee Information": "Sami Ben Ahmed manager",
+        "Requested Amount": "800 TND",
+        "Requested Date": "19/04/2026",
+        "Type of Reimbursement": "frais mission",
+        "Reason for Request": "avance frais deplacement",
+        "Attachment": "devis"
+      }
+    },
+    "input_email": "Bonjour,\n\nadvance payment request employee Sami manager amount 800 date 19 avril type remboursement frais mission reason avance deplacement attachment devis."
+  },
+  {
+    "output": {
+      "label": "Advance Payment Request",
+      "type": "WORKFLOW",
+      "email_id": "1100",
+      "confidence_score": null,
+      "attributes": {
+        "Employee Information": "Fatma Ben Romdhane",
+        "Requested Amount": "500 TND",
+        "Requested Date": "23/04/2026",
+        "Type of Reimbursement": "frais formation",
+        "Reason for Request": "avance inscription",
+        "Attachment": "facture"
+      }
+    },
+    "input_email": "Salut,\n\nadvance payment Fatma amount 500 date 23 avril type frais formation reason avance inscription attachment facture."
+  },
+  {
+    "output": {
+      "label": "Advance Payment Request",
+      "type": "WORKFLOW",
+      "email_id": "1101",
+      "confidence_score": null,
+      "attributes": {
+        "Employee Information": "Karim Mansour",
+        "Requested Amount": "1200 TND",
+        "Requested Date": "28/04/2026",
+        "Type of Reimbursement": "frais voyage",
+        "Reason for Request": "avance hotel",
+        "Attachment": "reservation"
+      }
+    },
+    "input_email": "Bonjour,\n\nadvance payment request Karim amount 1200 date 28 avril type frais voyage reason avance hotel attachment reservation."
+  },
+  {
+    "output": {
+      "label": "New Employee Onboarding",
+      "type": "WORKFLOW",
+      "email_id": "1102",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Youssef Ben Ali",
+        "Date de début": "01/05/2026",
+        "Type Contrat": "CDI",
+        "Poste ": "developpeur",
+        "Département": "IT",
+        "Responsable hiérarchique": "Ahmed Khelifi",
+        "Matériel requis": "ordinateur portable",
+        "Accès informatiques nécessaires": "email + systeme",
+        "Bureau attribué": "etage 2",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Leila",
+        "Dates de formation": "02/05",
+        "Formations obligatoires": "securite",
+        "Matériel fourni": "oui",
+        "Commentaires": "tout prepare",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bon niveau",
+        "Intégration dans l’équipe": "bonne",
+        "Conformité aux attentes": "oui",
+        "Recommandations": "aucune",
+        "Commentaires supplémentaires": null
+      }
+    },
+    "input_email": "Bonjour,\n\nnew employee onboarding pour Youssef Ben Ali debut 1 mai CDI poste developpeur IT responsable Ahmed. Materiel ordi acces email systeme bureau etage 2. Accueil briefing tour presentation remise acces oui. Formation Leila 2 mai obligatoires securite. Commentaires tout prepare."
+  },
+  {
+    "output": {
+      "label": "New Employee Onboarding",
+      "type": "WORKFLOW",
+      "email_id": "1103",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Amina Khelifi",
+        "Date de début": "05/05/2026",
+        "Type Contrat": "CDD",
+        "Poste ": "assistante",
+        "Département": "RH",
+        "Responsable hiérarchique": "Fatma Ben Romdhane",
+        "Matériel requis": "bureau telephone",
+        "Accès informatiques nécessaires": "HR system",
+        "Bureau attribué": "etage 1",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Sarah",
+        "Dates de formation": "06/05",
+        "Formations obligatoires": "RGPD",
+        "Matériel fourni": "oui",
+        "Commentaires": "integration rapide",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bon",
+        "Intégration dans l’équipe": "excellente",
+        "Conformité aux attentes": "oui",
+        "Recommandations": null,
+        "Commentaires supplémentaires": "motivée"
+      }
+    },
+    "input_email": "Salut,\n\nonboarding nouvelle employe Amina Khelifi debut 5 mai CDD assistante RH responsable Fatma. Materiel bureau tel acces HR bureau etage 1. Tout accueil briefing oui formation Sarah 6 mai RGPD. Commentaires integration rapide."
+  },
+  {
+    "output": {
+      "label": "New Employee Onboarding",
+      "type": "WORKFLOW",
+      "email_id": "1104",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Omar Mansour",
+        "Date de début": "10/05/2026",
+        "Type Contrat": "CDI",
+        "Poste ": "commercial",
+        "Département": "vente",
+        "Responsable hiérarchique": "Karim Mansour",
+        "Matériel requis": "telephone portable",
+        "Accès informatiques nécessaires": "CRM",
+        "Bureau attribué": "open space",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Leila",
+        "Dates de formation": "11/05",
+        "Formations obligatoires": "produits",
+        "Matériel fourni": "oui",
+        "Commentaires": "ok",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bonnes",
+        "Intégration dans l’équipe": "bonne",
+        "Conformité aux attentes": "oui",
+        "Recommandations": null,
+        "Commentaires supplémentaires": null
+      }
+    },
+    "input_email": "Bonjour,\n\nnew onboarding Omar Mansour debut 10 mai CDI commercial vente responsable Karim. Materiel tel acces CRM open space. Accueil tout oui formation Leila 11 mai produits. Commentaires ok."
+  },
+  {
+    "output": {
+      "label": "Recruitment Request",
+      "type": "WORKFLOW",
+      "email_id": "1105",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "ingenieur qualite",
+        "Diplôme souhaitée ": "ingenieur",
+        "Spécialité": "qualite",
+        "Nombre des postes souhaitées ": "1",
+        "Date de recrutement souhaitée": "01/06/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "controle qualite",
+        "Cause de recrutement": "nouveau projet",
+        "Expérience souhaitée": "3 ans",
+        "Type de contrat ": "CDI"
+      }
+    },
+    "input_email": "Bonjour,\n\nrecruitment request creation demande poste ingenieur qualite diplome ingenieur specialite qualite 1 poste date 1 juin genre indifferent. Description controle qualite cause nouveau projet experience 3 ans contrat CDI."
+  },
+  {
+    "output": {
+      "label": "Recruitment Request",
+      "type": "WORKFLOW",
+      "email_id": "1106",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "comptable",
+        "Diplôme souhaitée ": "licence",
+        "Spécialité": "comptabilite",
+        "Nombre des postes souhaitées ": "2",
+        "Date de recrutement souhaitée": "15/05/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "gestion paie",
+        "Cause de recrutement": "remplacement",
+        "Expérience souhaitée": "2 ans",
+        "Type de contrat ": "CDD"
+      }
+    },
+    "input_email": "Salut,\n\nrecruitment request poste comptable licence comptabilite 2 postes date 15 mai description gestion paie cause remplacement experience 2 ans CDD."
+  },
+  {
+    "output": {
+      "label": "Recruitment Request",
+      "type": "WORKFLOW",
+      "email_id": "1107",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "vendeur",
+        "Diplôme souhaitée ": "bac",
+        "Spécialité": "vente",
+        "Nombre des postes souhaitées ": "3",
+        "Date de recrutement souhaitée": "01/07/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "vente terrain",
+        "Cause de recrutement": "expansion",
+        "Expérience souhaitée": "1 an",
+        "Type de contrat ": "CDI"
+      }
+    },
+    "input_email": "Bonjour,\n\ncreation recrutement vendeur bac specialite vente 3 postes date 1 juillet description vente terrain cause expansion experience 1 an CDI."
+  },
+  {
+    "output": {
+      "label": "Recruitment ",
+      "type": "WORKFLOW",
+      "email_id": "1108",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "besoin urgent",
+        "Poste": "ingenieur qualite",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "prepare",
+        "choix des candidats": "3",
+        "Candidats présélectionnés": "2",
+        "Entretien(s)": "oui",
+        "Date Entretien": "20/04/2026",
+        "Type Entretien": "presentiel",
+        "Évaluateurs ": "Ahmed et Leila",
+        "Résultat de l'entretien": "positif",
+        "Résultats des questionnaires": "bons",
+        "Nom du candidat retenu": "Youssef",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDI",
+        "Date d'embauche": "01/05/2026",
+        "Seuil de proposition d'embauche en TND": "2500",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nrecruitment description besoin urgent poste ingenieur qualite. Choix candidats 3 preselec 2 entretien 20 avril presentiel evaluateurs Ahmed Leila resultat positif questionnaires bons. Candidat retenu Youssef CDI embauche 1 mai seuil 2500 proposition oui contrat 0."
+  },
+  {
+    "output": {
+      "label": "Recruitment ",
+      "type": "WORKFLOW",
+      "email_id": "1109",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "remplacement",
+        "Poste": "comptable",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "en cours",
+        "choix des candidats": "4",
+        "Candidats présélectionnés": "1",
+        "Entretien(s)": "oui",
+        "Date Entretien": "25/04/2026",
+        "Type Entretien": "video",
+        "Évaluateurs ": "Fatma et Sarah",
+        "Résultat de l'entretien": "bon",
+        "Résultats des questionnaires": "moyens",
+        "Nom du candidat retenu": "Amina",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDD",
+        "Date d'embauche": "10/05/2026",
+        "Seuil de proposition d'embauche en TND": "1800",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Salut,\n\nrecruitment remplacement poste comptable choix 4 preselec 1 entretien 25 avril video evaluateurs Fatma Sarah resultat bon. Candidat Amina CDD embauche 10 mai seuil 1800 proposition oui."
+  },
+  {
+    "output": {
+      "label": "Recruitment ",
+      "type": "WORKFLOW",
+      "email_id": "1110",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "expansion",
+        "Poste": "vendeur",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "prepare",
+        "choix des candidats": "5",
+        "Candidats présélectionnés": "3",
+        "Entretien(s)": "oui",
+        "Date Entretien": "30/04/2026",
+        "Type Entretien": "presentiel",
+        "Évaluateurs ": "Karim",
+        "Résultat de l'entretien": "tres bon",
+        "Résultats des questionnaires": "excellents",
+        "Nom du candidat retenu": "Omar",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDI",
+        "Date d'embauche": "15/05/2026",
+        "Seuil de proposition d'embauche en TND": "2200",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nrecruitment expansion poste vendeur choix 5 preselec 3 entretien 30 avril presentiel evaluateur Karim resultat tres bon. Candidat Omar CDI embauche 15 mai seuil 2200."
+  },
+  {
+    "output": {
+      "label": "Post-Probation Evaluation",
+      "type": "WORKFLOW",
+      "email_id": "1111",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Youssef Ben Ali",
+        "Collaborateurs ": "Youssef Ben Ali",
+        "Evaluation sur hierarchique": "bonne",
+        "Connaissance de l'emploi ": "satisfaisante",
+        "Productivité (Qualité/Quantité de travail) ": "bonne",
+        "Fiabilité": "oui",
+        "Collaboration ": "excellente",
+        "Adaptabilité ": "bonne",
+        "Initiative (fait preuve d'empressement) ": "oui",
+        "Service à la clientèle/fournisseurs ": "bon",
+        "Commentaire": "progres rapide",
+        "Evaluation RH": "positive",
+        "Attitudes et comportements au travail ": "bon",
+        "Motivation et satisfaction personnelle ": "haute",
+        "Environnement de travail et organisation générale ": "bon",
+        "Encadrement et intégration ": "reussie",
+        "Ecart constatés ": "aucun",
+        "Relation avec les collègues au sein du département ": "tres bonne",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "formation avancee",
+        "Décision ": "confirmation CDI",
+        "Décision proposé": "confirmation"
+      }
+    },
+    "input_email": "Bonjour,\n\npost probation evaluation collaborateurs Youssef Ben Ali evaluation hierarchique bonne connaissance emploi satisfaisante productivite bonne. Collaboration excellente initiative oui. Commentaire progres rapide. Evaluation RH positive decision confirmation CDI."
+  },
+  {
+    "output": {
+      "label": "Post-Probation Evaluation",
+      "type": "WORKFLOW",
+      "email_id": "1112",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Amina Khelifi",
+        "Collaborateurs ": "Amina Khelifi",
+        "Evaluation sur hierarchique": "moyenne",
+        "Connaissance de l'emploi ": "en progres",
+        "Productivité (Qualité/Quantité de travail) ": "moyenne",
+        "Fiabilité": "oui",
+        "Collaboration ": "bonne",
+        "Adaptabilité ": "moyenne",
+        "Initiative (fait preuve d'empressement) ": "non",
+        "Service à la clientèle/fournisseurs ": "bon",
+        "Commentaire": "besoin accompagnement",
+        "Evaluation RH": "positive avec reserve",
+        "Attitudes et comportements au travail ": "correct",
+        "Motivation et satisfaction personnelle ": "moyenne",
+        "Environnement de travail et organisation générale ": "bon",
+        "Encadrement et intégration ": "en cours",
+        "Ecart constatés ": "quelques",
+        "Relation avec les collègues au sein du département ": "bonne",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "plus d initiative",
+        "Décision ": "prolongation essai",
+        "Décision proposé": "prolongation"
+      }
+    },
+    "input_email": "Salut,\n\npost probation Amina evaluation hierarchique moyenne connaissance en progres productivite moyenne. Initiative non commentaire besoin accompagnement. Decision prolongation essai."
+  },
+  {
+    "output": {
+      "label": "Post-Probation Evaluation",
+      "type": "WORKFLOW",
+      "email_id": "1113",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Omar Mansour",
+        "Collaborateurs ": "Omar Mansour",
+        "Evaluation sur hierarchique": "excellente",
+        "Connaissance de l'emploi ": "tres bonne",
+        "Productivité (Qualité/Quantité de travail) ": "excellente",
+        "Fiabilité": "oui",
+        "Collaboration ": "excellente",
+        "Adaptabilité ": "excellente",
+        "Initiative (fait preuve d'empressement) ": "oui",
+        "Service à la clientèle/fournisseurs ": "tres bon",
+        "Commentaire": "tres bon element",
+        "Evaluation RH": "tres positive",
+        "Attitudes et comportements au travail ": "excellent",
+        "Motivation et satisfaction personnelle ": "haute",
+        "Environnement de travail et organisation générale ": "excellent",
+        "Encadrement et intégration ": "reussie",
+        "Ecart constatés ": "aucun",
+        "Relation avec les collègues au sein du département ": "excellente",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "aucune",
+        "Décision ": "confirmation",
+        "Décision proposé": "confirmation CDI"
+      }
+    },
+    "input_email": "Bonjour,\n\npost probation evaluation Omar excellente connaissance tres bonne productivite excellente. Tout excellent commentaire tres bon element. Decision confirmation CDI."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1114",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Projet": "IT",
+        "Type de Congé ": "annuel",
+        "Date de sortie": "20/04/2026",
+        "Date de retour": "27/04/2026",
+        "Durée": "7 jours",
+        "Période de sortie ": "matin",
+        "Période de Retour": "matin",
+        "Motif de la demande ": "vacances",
+        "Justificative ": "0",
+        "Solde Congé": "15",
+        "Remplaçant": "Ahmed",
+        "Traitement RH": "en cours",
+        "Solde congé ": "8"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande de conge employeur oui employe Sami projet IT type annuel date sortie 20 avril retour 27 duree 7 motif vacances justificative 0 solde 15 remplacant Ahmed. Solde apres 8."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1115",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Leila Trabelsi",
+        "Projet": "RH",
+        "Type de Congé ": "maladie",
+        "Date de sortie": "15/04/2026",
+        "Date de retour": "18/04/2026",
+        "Durée": "3 jours",
+        "Période de sortie ": "matin",
+        "Période de Retour": "soir",
+        "Motif de la demande ": "medical",
+        "Justificative ": "0",
+        "Solde Congé": "10",
+        "Remplaçant": "Fatma",
+        "Traitement RH": "en cours",
+        "Solde congé ": "7"
+      }
+    },
+    "input_email": "Salut,\n\ndemande conge Leila projet RH type maladie sortie 15 retour 18 duree 3 motif medical solde 10 remplacant Fatma solde apres 7."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1116",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Karim Mansour",
+        "Projet": "vente",
+        "Type de Congé ": "personnel",
+        "Date de sortie": "22/04/2026",
+        "Date de retour": "23/04/2026",
+        "Durée": "1 jour",
+        "Période de sortie ": "matin",
+        "Période de Retour": "matin",
+        "Motif de la demande ": "affaire perso",
+        "Justificative ": "0",
+        "Solde Congé": "12",
+        "Remplaçant": "Sami",
+        "Traitement RH": "en cours",
+        "Solde congé ": "11"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande conge Karim projet vente type personnel sortie 22 retour 23 duree 1 motif affaire perso solde 12 remplacant Sami."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1117",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Collaborateur": null,
+        "Nom et prénom": "Ahmed Khelifi",
+        " Fonction": "manager",
+        " Département": "IT",
+        " Adresse personnelle": "Tunis",
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "rencontre",
+        " Motif(s) de la mission": "contrat",
+        " Date de départ": "18/04/2026",
+        " Heure de départ": "08:00",
+        " Date de retour": "20/04/2026",
+        " Heure de retour": "18:00",
+        " Type de destination": "Sfax",
+        " Adresse / Lieu de la mission": "siege",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "oui",
+        " Moyen de transport principal": "voiture",
+        " Type du moyen de transport": "entreprise",
+        " A préciser": null,
+        " Liste des outils / équipements à emporter": "ordinateur",
+        " Fond de roulement estimé": "500 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": null,
+        " Allocation des ressources": null,
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre de mission nom Ahmed Khelifi fonction manager departement IT adresse Tunis. Objet mission rencontre motif contrat date depart 18 08h retour 20 18h destination Sfax lieu siege. Hebergement oui transport voiture entreprise outils ordinateur fond 500. Piece 0."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1118",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Collaborateur": null,
+        "Nom et prénom": "Fatma Ben Romdhane",
+        " Fonction": "technicienne",
+        " Département": "qualite",
+        " Adresse personnelle": "Sfax",
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "inspection",
+        " Motif(s) de la mission": "controle",
+        " Date de départ": "25/04/2026",
+        " Heure de départ": "07:30",
+        " Date de retour": "27/04/2026",
+        " Heure de retour": "17:00",
+        " Type de destination": "Tunis",
+        " Adresse / Lieu de la mission": "usine",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "non",
+        " Moyen de transport principal": "train",
+        " Type du moyen de transport": "public",
+        " A préciser": null,
+        " Liste des outils / équipements à emporter": "checklist",
+        " Fond de roulement estimé": "300 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": null,
+        " Allocation des ressources": null,
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Salut,\n\nordre mission Fatma technicienne qualite Sfax. Objet inspection motif controle depart 25 07h30 retour 27 17h destination Tunis usine. Hebergement non transport train outils checklist fond 300 piece 0."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1119",
+      "confidence_score": null,
+      "attributes": {
+        "Informations sur le Collaborateur": null,
+        "Nom et prénom": "Leila Trabelsi",
+        " Fonction": "ingenieur",
+        " Département": "vente",
+        " Adresse personnelle": "Tunis",
+        "Informations Générales sur la Mission": "Détails de la mission",
+        " Objet de la mission": "presentation",
+        " Motif(s) de la mission": "client",
+        " Date de départ": "30/04/2026",
+        " Heure de départ": "09:00",
+        " Date de retour": "01/05/2026",
+        " Heure de retour": "16:00",
+        " Type de destination": "Kairouan",
+        " Adresse / Lieu de la mission": "client",
+        " Pièce jointe ": "0",
+        "Logistique et Préparation de Mission": null,
+        " Hébergement nécessaire": "oui",
+        " Moyen de transport principal": "voiture",
+        " Type du moyen de transport": "entreprise",
+        " A préciser": null,
+        " Liste des outils / équipements à emporter": "ordinateur",
+        " Fond de roulement estimé": "400 TND",
+        "Financement & Ressources": null,
+        " Budget pré-approuvé": null,
+        " Allocation des ressources": null,
+        " Ressources allouées": "0",
+        "Rapport de mission": null,
+        " Résumé des activités réalisées": null,
+        " Dépenses réelles engagées": null,
+        " Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre de mission Leila ingenieur vente Tunis. Objet presentation motif client depart 30 09h retour 1 mai 16h destination Kairouan client. Hebergement oui transport voiture outils ordinateur fond 400."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1120",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur": "oui",
+        "Nom et prénom": "Sami Ben Ahmed",
+        " Fonction": "manager",
+        " Département": "IT",
+        " Type d'autorisation": "courte",
+        " A préciser": "rendez vous",
+        " Date de Sortie": "17/04/2026",
+        " Heure de départ": "14:00",
+        " Heure de retour": "18:00",
+        " Nombre total d’heures": "4",
+        " Motif d'absence ": "medical",
+        " Remplaçant désigné pendant l'absence": "Ahmed"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande autorisation absence employeur oui Sami manager IT type courte a preciser rendez vous date sortie 17 depart 14h retour 18h 4 heures motif medical remplacant Ahmed."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1121",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur": "oui",
+        "Nom et prénom": "Fatma Ben Romdhane",
+        " Fonction": "technicienne",
+        " Département": "qualite",
+        " Type d'autorisation": "courte",
+        " A préciser": "banque",
+        " Date de Sortie": "21/04/2026",
+        " Heure de départ": "10:00",
+        " Heure de retour": "12:00",
+        " Nombre total d’heures": "2",
+        " Motif d'absence ": "personnel",
+        " Remplaçant désigné pendant l'absence": "Leila"
+      }
+    },
+    "input_email": "Salut,\n\ndemande autorisation absence Fatma technicienne qualite type courte date 21 depart 10h retour 12h 2 heures motif personnel remplacant Leila."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1122",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur": "oui",
+        "Nom et prénom": "Karim Mansour",
+        " Fonction": "commercial",
+        " Département": "vente",
+        " Type d'autorisation": "courte",
+        " A préciser": "famille",
+        " Date de Sortie": "24/04/2026",
+        " Heure de départ": "15:00",
+        " Heure de retour": "18:00",
+        " Nombre total d’heures": "3",
+        " Motif d'absence ": "affaire famille",
+        " Remplaçant désigné pendant l'absence": "Sami"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande autorisation absence Karim commercial vente type courte date 24 depart 15h retour 18h 3 heures motif affaire famille remplacant Sami."
+  },
+  {
+    "output": {
+      "label": "Demande d'avance",
+      "type": "WORKFLOW",
+      "email_id": "1123",
+      "confidence_score": null,
+      "attributes": {
+        "Données Employé": "Sami Ben Ahmed",
+        "Montant demandé": "800 TND",
+        "Date souhaité ": "19/04/2026",
+        "Type de remboursement": "frais mission",
+        "Motif de la demande ": "avance deplacement",
+        "Pièce jointe": "devis hotel"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d avance donnees employe Sami montant 800 date souhaitee 19 avril type remboursement frais mission motif avance deplacement piece jointe devis."
+  },
+  {
+    "output": {
+      "label": "Demande d'avance",
+      "type": "WORKFLOW",
+      "email_id": "1124",
+      "confidence_score": null,
+      "attributes": {
+        "Données Employé": "Fatma Ben Romdhane",
+        "Montant demandé": "500 TND",
+        "Date souhaité ": "23/04/2026",
+        "Type de remboursement": "frais formation",
+        "Motif de la demande ": "inscription",
+        "Pièce jointe": "facture"
+      }
+    },
+    "input_email": "Salut,\n\ndemande avance Fatma montant 500 date 23 avril type frais formation motif inscription piece facture."
+  },
+  {
+    "output": {
+      "label": "Demande d'avance",
+      "type": "WORKFLOW",
+      "email_id": "1125",
+      "confidence_score": null,
+      "attributes": {
+        "Données Employé": "Karim Mansour",
+        "Montant demandé": "1200 TND",
+        "Date souhaité ": "28/04/2026",
+        "Type de remboursement": "frais voyage",
+        "Motif de la demande ": "avance hotel",
+        "Pièce jointe": "reservation"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande d avance Karim montant 1200 date 28 avril type frais voyage motif avance hotel piece reservation."
+  },
+  {
+    "output": {
+      "label": "Processus de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1126",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "urgent",
+        "Besoin de Recrutement": "oui",
+        " Département demandeur": "IT",
+        " Intitulé du poste à pourvoir": "developpeur",
+        " Type de contrat": "CDI",
+        " Motif du recrutement": "nouveau projet",
+        " Profil recherché": "3 ans experience",
+        " Nombre de postes souhaitées": "1",
+        " Expérience souhaitée": "3 ans",
+        " Date souhaitée d'entrée en poste": "01/05/2026",
+        " Budget salarial estimé (mensuel)": "2500 TND",
+        "Choix du candidat": "oui",
+        "Candidat présélectionné": "Youssef",
+        "Nom et prénom": "Youssef Ben Ali",
+        " Téléphone": "98765432",
+        " Email ": "youssef@email.tn",
+        " Quel poste prétendez-vous ?": "developpeur",
+        " Salaire désiré net (TND)": "2600",
+        " Photo d’identité": "0",
+        " Photocopie des diplômes et certificats de scolarité": "0",
+        "CV": "0",
+        " Lettre de Motivation": "0",
+        "Planification de l'entretien": "oui",
+        " Date Entretien": "20/04/2026",
+        " Type Entretien": "presentiel",
+        "Évaluateurs ": "Ahmed Leila",
+        "Entretien technique": "oui",
+        " Évaluation technique": "bonne",
+        "Entretien RH": "oui",
+        " Évaluation comportementale": "bonne",
+        " Commentaires RH": "motivé",
+        "Décision DG": "oui",
+        " Décision finale": "embauche",
+        "Envoi de Motif de Rejet": "non",
+        " Motif de Rejet": null,
+        "Envoi de réponse": "oui",
+        " Date d'embauche": "01/05/2026",
+        " Proposition final d'embauche": "oui",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocessus recrutement description urgent departement IT poste developpeur CDI motif nouveau projet profil 3 ans 1 poste date entree 1 mai budget 2500. Candidat Youssef tel 98765432 email youssef@email.tn salaire desire 2600. Entretien 20 avril presentiel evaluateurs Ahmed Leila eval tech bonne RH bonne. Decision DG embauche date 1 mai proposition oui."
+  },
+  {
+    "output": {
+      "label": "Processus de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1127",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "remplacement",
+        "Besoin de Recrutement": "oui",
+        " Département demandeur": "RH",
+        " Intitulé du poste à pourvoir": "assistante",
+        " Type de contrat": "CDD",
+        " Motif du recrutement": "depart",
+        " Profil recherché": "licence RH",
+        " Nombre de postes souhaitées": "1",
+        " Expérience souhaitée": "2 ans",
+        " Date souhaitée d'entrée en poste": "10/05/2026",
+        " Budget salarial estimé (mensuel)": "1800 TND",
+        "Choix du candidat": "oui",
+        "Candidat présélectionné": "Amina",
+        "Nom et prénom": "Amina Khelifi",
+        " Téléphone": "23456789",
+        " Email ": "amina@email.tn",
+        " Quel poste prétendez-vous ?": "assistante",
+        " Salaire désiré net (TND)": "1900",
+        " Photo d’identité": "0",
+        " Photocopie des diplômes et certificats de scolarité": "0",
+        "CV": "0",
+        " Lettre de Motivation": "0",
+        "Planification de l'entretien": "oui",
+        " Date Entretien": "25/04/2026",
+        " Type Entretien": "video",
+        "Évaluateurs ": "Fatma Sarah",
+        "Entretien technique": "oui",
+        " Évaluation technique": "moyenne",
+        "Entretien RH": "oui",
+        " Évaluation comportementale": "bonne",
+        " Commentaires RH": "ok",
+        "Décision DG": "oui",
+        " Décision finale": "embauche",
+        "Envoi de Motif de Rejet": "non",
+        " Motif de Rejet": null,
+        "Envoi de réponse": "oui",
+        " Date d'embauche": "10/05/2026",
+        " Proposition final d'embauche": "oui",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Salut,\n\nprocessus recrutement remplacement RH poste assistante CDD motif depart profil licence 1 poste date 10 mai budget 1800. Candidat Amina tel 23456789 email amina. Entretien 25 video evaluateurs Fatma Sarah eval tech moyenne RH bonne. Decision embauche."
+  },
+  {
+    "output": {
+      "label": "Processus de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1128",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "expansion",
+        "Besoin de Recrutement": "oui",
+        " Département demandeur": "vente",
+        " Intitulé du poste à pourvoir": "vendeur",
+        " Type de contrat": "CDI",
+        " Motif du recrutement": "croissance",
+        " Profil recherché": "bac vente",
+        " Nombre de postes souhaitées": "2",
+        " Expérience souhaitée": "1 an",
+        " Date souhaitée d'entrée en poste": "15/05/2026",
+        " Budget salarial estimé (mensuel)": "2200 TND",
+        "Choix du candidat": "oui",
+        "Candidat présélectionné": "Omar",
+        "Nom et prénom": "Omar Mansour",
+        " Téléphone": "45678901",
+        " Email ": "omar@email.tn",
+        " Quel poste prétendez-vous ?": "vendeur",
+        " Salaire désiré net (TND)": "2300",
+        " Photo d’identité": "0",
+        " Photocopie des diplômes et certificats de scolarité": "0",
+        "CV": "0",
+        " Lettre de Motivation": "0",
+        "Planification de l'entretien": "oui",
+        " Date Entretien": "30/04/2026",
+        " Type Entretien": "presentiel",
+        "Évaluateurs ": "Karim",
+        "Entretien technique": "oui",
+        " Évaluation technique": "tres bonne",
+        "Entretien RH": "oui",
+        " Évaluation comportementale": "tres bonne",
+        " Commentaires RH": "parfait",
+        "Décision DG": "oui",
+        " Décision finale": "embauche",
+        "Envoi de Motif de Rejet": "non",
+        " Motif de Rejet": null,
+        "Envoi de réponse": "oui",
+        " Date d'embauche": "15/05/2026",
+        " Proposition final d'embauche": "oui",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nprocessus recrutement expansion vente poste vendeur CDI motif croissance profil bac 2 postes date 15 mai budget 2200. Candidat Omar tel 45678901 email omar. Entretien 30 presentiel evaluateur Karim eval tres bonne. Decision embauche."
+  },
+  {
+    "output": {
+      "label": "Expression de Besoin de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1129",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        " Département demandeur": "IT",
+        " Intitulé du poste à pourvoir": "developpeur",
+        " Type de contrat": "CDI",
+        " Motif du recrutement": "nouveau projet",
+        "Autre": null,
+        " Profil recherché": "3 ans python",
+        " Nombre de postes souhaitées ": "1",
+        " Expérience souhaitée": "3 ans",
+        " Date souhaitée d'entrée en poste": "01/05/2026",
+        " Lieu de travail": "Tunis",
+        " Budget salarial estimé (mensuel)": "2500 TND",
+        " Description des taches ": "developpement app",
+        " Compétences spécifiques souhaitées": "framework"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin recrutement departement IT poste developpeur CDI motif nouveau projet profil 3 ans python 1 poste date entree 1 mai lieu Tunis budget 2500. Description developpement app competences framework."
+  },
+  {
+    "output": {
+      "label": "Expression de Besoin de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1130",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        " Département demandeur": "RH",
+        " Intitulé du poste à pourvoir": "assistante",
+        " Type de contrat": "CDD",
+        " Motif du recrutement": "remplacement",
+        "Autre": null,
+        " Profil recherché": "licence admin",
+        " Nombre de postes souhaitées ": "1",
+        " Expérience souhaitée": "2 ans",
+        " Date souhaitée d'entrée en poste": "10/05/2026",
+        " Lieu de travail": "Sfax",
+        " Budget salarial estimé (mensuel)": "1800 TND",
+        " Description des taches ": "gestion admin",
+        " Compétences spécifiques souhaitées": "excel"
+      }
+    },
+    "input_email": "Salut,\n\nexpression besoin recrutement RH poste assistante CDD motif remplacement profil licence admin 1 poste date 10 mai lieu Sfax budget 1800 description gestion admin competences excel."
+  },
+  {
+    "output": {
+      "label": "Expression de Besoin de Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1131",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        " Département demandeur": "vente",
+        " Intitulé du poste à pourvoir": "vendeur",
+        " Type de contrat": "CDI",
+        " Motif du recrutement": "expansion",
+        "Autre": null,
+        " Profil recherché": "bac commercial",
+        " Nombre de postes souhaitées ": "2",
+        " Expérience souhaitée": "1 an",
+        " Date souhaitée d'entrée en poste": "15/05/2026",
+        " Lieu de travail": "Tunis",
+        " Budget salarial estimé (mensuel)": "2200 TND",
+        " Description des taches ": "vente terrain",
+        " Compétences spécifiques souhaitées": "negotiation"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin recrutement vente poste vendeur CDI motif expansion profil bac commercial 2 postes date 15 mai lieu Tunis budget 2200 description vente terrain competences negotiation."
+  },
+  {
+    "output": {
+      "label": "Planification des formations",
+      "type": "WORKFLOW",
+      "email_id": "1132",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la Formation": null,
+        " Thématique de la formation": "securite",
+        " Titre ou sujet souhaité": "formation HSE",
+        " Objectif de la formation": "prevention accidents",
+        " Type de formation souhaité": "presentiel",
+        " Du": "20/04/2026",
+        " Au": "21/04/2026",
+        "Documents justificatifs": "0",
+        "Sélection du formateur": null,
+        " Type de formateur\t": "externe",
+        " Nom du formateur / Organisme": "HSE Expert",
+        "Planification logistique": null,
+        " Date": "20/04/2026",
+        " Durée (en heures ou jours)": "2 jours",
+        " Lieu": "salle formation",
+        " Nombre de participants": "15",
+        " Supports et logistique nécessaires": "projecteur",
+        "Convocation des participants": "oui",
+        " Participants": "equipe production",
+        "Réalisation de la formation": "oui",
+        "Fiche de présence": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nplanification formations thematique securite titre formation HSE objectif prevention accidents type presentiel du 20 au 21 avril. Formateur externe HSE Expert. Logistique date 20 duree 2 jours lieu salle 15 participants supports projecteur. Convocation equipe production fiche presence 0."
+  },
+  {
+    "output": {
+      "label": "Planification des formations",
+      "type": "WORKFLOW",
+      "email_id": "1133",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la Formation": null,
+        " Thématique de la formation": "qualite",
+        " Titre ou sujet souhaité": "ISO 22000",
+        " Objectif de la formation": "conformite norme",
+        " Type de formation souhaité": "en ligne",
+        " Du": "25/04/2026",
+        " Au": "25/04/2026",
+        "Documents justificatifs": "0",
+        "Sélection du formateur": null,
+        " Type de formateur\t": "interne",
+        " Nom du formateur / Organisme": "Leila",
+        "Planification logistique": null,
+        " Date": "25/04/2026",
+        " Durée (en heures ou jours)": "1 jour",
+        " Lieu": "online",
+        " Nombre de participants": "10",
+        " Supports et logistique nécessaires": "lien zoom",
+        "Convocation des participants": "oui",
+        " Participants": "equipe qualite",
+        "Réalisation de la formation": "oui",
+        "Fiche de présence": "0"
+      }
+    },
+    "input_email": "Salut,\n\nplanification formation thematique qualite titre ISO 22000 objectif conformite type en ligne du 25 au 25 avril. Formateur interne Leila. Logistique 25 avril duree 1 jour online 10 participants lien zoom. Convocation equipe qualite."
+  },
+  {
+    "output": {
+      "label": "Planification des formations",
+      "type": "WORKFLOW",
+      "email_id": "1134",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la Formation": null,
+        " Thématique de la formation": "vente",
+        " Titre ou sujet souhaité": "negotiation",
+        " Objectif de la formation": "ameliorer techniques",
+        " Type de formation souhaité": "presentiel",
+        " Du": "28/04/2026",
+        " Au": "28/04/2026",
+        "Documents justificatifs": "0",
+        "Sélection du formateur": null,
+        " Type de formateur\t": "externe",
+        " Nom du formateur / Organisme": "Sales Pro",
+        "Planification logistique": null,
+        " Date": "28/04/2026",
+        " Durée (en heures ou jours)": "1 jour",
+        " Lieu": "salle B",
+        " Nombre de participants": "12",
+        " Supports et logistique nécessaires": "tableau",
+        "Convocation des participants": "oui",
+        " Participants": "equipe vente",
+        "Réalisation de la formation": "oui",
+        "Fiche de présence": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nplanification formations thematique vente titre negotiation objectif ameliorer techniques type presentiel 28 avril. Formateur externe Sales Pro. Logistique 28 avril duree 1 jour salle B 12 participants tableau. Convocation equipe vente."
+  },
+  {
+    "output": {
+      "label": "Evaluation après une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1135",
+      "confidence_score": null,
+      "attributes": {
+        "Détails du Collaborateur": null,
+        " Nom du collaborateur": "Youssef Ben Ali",
+        " Poste": "developpeur",
+        " Manager hiérarchique": "Ahmed Khelifi",
+        " Date d’entrée": "01/02/2026",
+        " Fin de période d’essai": "30/04/2026",
+        "Évaluation par le responsable hiérarchique": "positive",
+        " Connaissance de l'emploi": "bonne",
+        " Productivité (Qualité / Quantité)": "bonne",
+        " Fiabilité / Respect des engagements": "oui",
+        " Collaboration avec les collègues": "excellente",
+        " Adaptabilité": "bonne",
+        " Initiative et proactivité": "oui",
+        " Relation client/fournisseur (si applicable)": "n/a",
+        " Commentaires du manager": "progres rapides",
+        "Évaluation par le service RH": "positive",
+        " Attitudes et comportements professionnels": "bon",
+        " Motivation / Satisfaction personnelle": "haute",
+        " Adaptation à l’environnement de travail": "bonne",
+        " Niveau d’intégration / Encadrement reçu": "bon",
+        " Écarts constatés par rapport au profil recherché": "aucun",
+        " Relation avec collègues au sein du département": "excellente",
+        " Ambitions exprimées": "oui",
+        " Commentaire RH": "recommande confirmation",
+        " Proposition d’amélioration ou accompagnement": "formation avancee",
+        "Décision finale par la Direction Générale": "confirmation",
+        " Décision proposé": "confirmation CDI",
+        " Commentaire ou précision DG": "felicitations"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation apres periode essai Youssef developpeur manager Ahmed date entree 1 fev fin essai 30 avril. Evaluation hierarchique positive connaissance bonne productivite bonne. Commentaires manager progres rapides. RH positive decision confirmation CDI."
+  },
+  {
+    "output": {
+      "label": "Evaluation après une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1136",
+      "confidence_score": null,
+      "attributes": {
+        "Détails du Collaborateur": null,
+        " Nom du collaborateur": "Amina Khelifi",
+        " Poste": "assistante",
+        " Manager hiérarchique": "Fatma Ben Romdhane",
+        " Date d’entrée": "01/03/2026",
+        " Fin de période d’essai": "30/04/2026",
+        "Évaluation par le responsable hiérarchique": "moyenne",
+        " Connaissance de l'emploi": "en progres",
+        " Productivité (Qualité / Quantité)": "moyenne",
+        " Fiabilité / Respect des engagements": "oui",
+        " Collaboration avec les collègues": "bonne",
+        " Adaptabilité": "moyenne",
+        " Initiative et proactivité": "a ameliorer",
+        " Relation client/fournisseur (si applicable)": "n/a",
+        " Commentaires du manager": "accompagnement necessaire",
+        "Évaluation par le service RH": "positive avec reserve",
+        " Attitudes et comportements professionnels": "correct",
+        " Motivation / Satisfaction personnelle": "moyenne",
+        " Adaptation à l’environnement de travail": "en cours",
+        " Niveau d’intégration / Encadrement reçu": "bon",
+        " Écarts constatés par rapport au profil recherché": "quelques",
+        " Relation avec collègues au sein du département": "bonne",
+        " Ambitions exprimées": "oui",
+        " Commentaire RH": "prolongation possible",
+        " Proposition d’amélioration ou accompagnement": "plus initiative",
+        "Décision finale par la Direction Générale": "prolongation",
+        " Décision proposé": "prolongation essai",
+        " Commentaire ou précision DG": null
+      }
+    },
+    "input_email": "Salut,\n\nevaluation apres essai Amina assistante manager Fatma date entree 1 mars fin 30 avril. Evaluation moyenne connaissance en progres initiative a ameliorer. Commentaires manager accompagnement necessaire. RH prolongation essai."
+  },
+  {
+    "output": {
+      "label": "Evaluation après une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1137",
+      "confidence_score": null,
+      "attributes": {
+        "Détails du Collaborateur": null,
+        " Nom du collaborateur": "Omar Mansour",
+        " Poste": "vendeur",
+        " Manager hiérarchique": "Karim Mansour",
+        " Date d’entrée": "01/03/2026",
+        " Fin de période d’essai": "30/04/2026",
+        "Évaluation par le responsable hiérarchique": "excellente",
+        " Connaissance de l'emploi": "tres bonne",
+        " Productivité (Qualité / Quantité)": "excellente",
+        " Fiabilité / Respect des engagements": "oui",
+        " Collaboration avec les collègues": "excellente",
+        " Adaptabilité": "excellente",
+        " Initiative et proactivité": "oui",
+        " Relation client/fournisseur (si applicable)": "tres bonne",
+        " Commentaires du manager": "element cle",
+        "Évaluation par le service RH": "tres positive",
+        " Attitudes et comportements professionnels": "excellent",
+        " Motivation / Satisfaction personnelle": "haute",
+        " Adaptation à l’environnement de travail": "parfaite",
+        " Niveau d’intégration / Encadrement reçu": "bon",
+        " Écarts constatés par rapport au profil recherché": "aucun",
+        " Relation avec collègues au sein du département": "excellente",
+        " Ambitions exprimées": "oui",
+        " Commentaire RH": "felicitations",
+        " Proposition d’amélioration ou accompagnement": "aucune",
+        "Décision finale par la Direction Générale": "confirmation",
+        " Décision proposé": "confirmation CDI",
+        " Commentaire ou précision DG": "felicitations"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation apres essai Omar vendeur manager Karim date entree 1 mars fin 30 avril. Evaluation excellente tout tres bonne. Commentaires element cle. RH tres positive decision confirmation CDI."
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1138",
+      "confidence_score": null,
+      "attributes": {
+        "Informations personnelles": null,
+        " Nom et prénom": "Ahmed Khelifi",
+        " Fonction": "manager",
+        " Département / Service": "IT",
+        "Détails de la formation souhaitée": null,
+        " Thématique de la formation": "management",
+        "Autre": null,
+        " Titre ou sujet souhaité": "leadership",
+        " Objectif de la formation": "ameliorer equipe",
+        " Urgence du besoin": "moyenne",
+        " Type de formation souhaité": "presentiel",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "15/05/2026",
+        "Au": "16/05/2026",
+        " Formateur pressenti (si connu)": "externe",
+        " Budget estimé (si connu)": "3000 TND",
+        "Documents justificatifs": "0",
+        " Commentaire complémentaire": "prioritaire equipe"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin formation Ahmed manager IT thematique management titre leadership objectif ameliorer equipe urgence moyenne type presentiel du 15 au 16 mai. Budget 3000 formateur externe. Commentaire prioritaire equipe."
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1139",
+      "confidence_score": null,
+      "attributes": {
+        "Informations personnelles": null,
+        " Nom et prénom": "Fatma Ben Romdhane",
+        " Fonction": "technicienne",
+        " Département / Service": "qualite",
+        "Détails de la formation souhaitée": null,
+        " Thématique de la formation": "qualite",
+        "Autre": null,
+        " Titre ou sujet souhaité": "ISO update",
+        " Objectif de la formation": "mise a jour norme",
+        " Urgence du besoin": "haute",
+        " Type de formation souhaité": "en ligne",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "20/05/2026",
+        "Au": "20/05/2026",
+        " Formateur pressenti (si connu)": "interne",
+        " Budget estimé (si connu)": "1000 TND",
+        "Documents justificatifs": "0",
+        " Commentaire complémentaire": "urgent"
+      }
+    },
+    "input_email": "Salut,\n\nexpression besoin formation Fatma technicienne qualite thematique qualite titre ISO update objectif mise a jour urgence haute type en ligne 20 mai. Budget 1000 formateur interne urgent."
+  },
+  {
+    "output": {
+      "label": "Expression Besoin en Formation",
+      "type": "WORKFLOW",
+      "email_id": "1140",
+      "confidence_score": null,
+      "attributes": {
+        "Informations personnelles": null,
+        " Nom et prénom": "Karim Mansour",
+        " Fonction": "commercial",
+        " Département / Service": "vente",
+        "Détails de la formation souhaitée": null,
+        " Thématique de la formation": "vente",
+        "Autre": null,
+        " Titre ou sujet souhaité": "negotiation avancee",
+        " Objectif de la formation": "augmenter ventes",
+        " Urgence du besoin": "moyenne",
+        " Type de formation souhaité": "presentiel",
+        "Période souhaitée de la formation": "Période souhaitée de la formation",
+        "Du": "25/05/2026",
+        "Au": "26/05/2026",
+        " Formateur pressenti (si connu)": "externe",
+        " Budget estimé (si connu)": "2500 TND",
+        "Documents justificatifs": "0",
+        " Commentaire complémentaire": "pour equipe"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin formation Karim commercial vente thematique vente titre negotiation avancee objectif augmenter ventes urgence moyenne type presentiel 25-26 mai. Budget 2500 formateur externe commentaire pour equipe."
+  },
+  {
+    "output": {
+      "label": "Demande d'attestation de travail",
+      "type": "WORKFLOW",
+      "email_id": "1141",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Date Soumission": "10/04/2026",
+        "Motif de la demande ": "banque",
+        "Traitement RH": "en cours",
+        "Commentaire": "standard",
+        "Validation": "oui",
+        "Préparation de l'Attestation": "oui",
+        "ID Attestation": "ATT-001",
+        "Date Émission": "12/04/2026",
+        "Attestation": "0",
+        "Validation ": "oui",
+        "Attestation Signée": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande attestation travail employeur oui employe Sami date soumission 10 avril motif banque. Traitement RH en cours validation oui preparation ID ATT-001 emission 12 avril attestation 0 signee 0."
+  },
+  {
+    "output": {
+      "label": "Demande d'attestation de travail",
+      "type": "WORKFLOW",
+      "email_id": "1142",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Fatma Ben Romdhane",
+        "Date Soumission": "15/04/2026",
+        "Motif de la demande ": "visa",
+        "Traitement RH": "en cours",
+        "Commentaire": "urgent",
+        "Validation": "oui",
+        "Préparation de l'Attestation": "oui",
+        "ID Attestation": "ATT-002",
+        "Date Émission": "17/04/2026",
+        "Attestation": "0",
+        "Validation ": "oui",
+        "Attestation Signée": "0"
+      }
+    },
+    "input_email": "Salut,\n\ndemande attestation Fatma date soumission 15 avril motif visa traitement RH urgent validation oui ID ATT-002 emission 17."
+  },
+  {
+    "output": {
+      "label": "Demande d'attestation de travail",
+      "type": "WORKFLOW",
+      "email_id": "1143",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Karim Mansour",
+        "Date Soumission": "20/04/2026",
+        "Motif de la demande ": "ecole enfants",
+        "Traitement RH": "en cours",
+        "Commentaire": "standard",
+        "Validation": "oui",
+        "Préparation de l'Attestation": "oui",
+        "ID Attestation": "ATT-003",
+        "Date Émission": "22/04/2026",
+        "Attestation": "0",
+        "Validation ": "oui",
+        "Attestation Signée": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande attestation Karim date 20 avril motif ecole enfants traitement en cours validation oui ID ATT-003 emission 22."
+  },
+  {
+    "output": {
+      "label": "Conciliation entre HP et HT",
+      "type": "WORKFLOW",
+      "email_id": "1144",
+      "confidence_score": null,
+      "attributes": {
+        "Collecte des Données": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Date ": "10/04/2026",
+        "Heure Arrivée Prévue": "08:00",
+        "Heure Arrivée Pointage": "08:05",
+        "Heure Départ Prévue": "17:00",
+        "Heure Départ Pointage": "17:10",
+        "Calcul des Écarts": "oui",
+        "Écart Arrivée (min)": "5",
+        "Écart Départ (min)": "10",
+        "Heures Travail Planifiées": "8",
+        "Heures Travail Réelles": "8.25",
+        "Écart Total (h)": "0.25",
+        "Écart Total (min)": "15",
+        "Vérification": "oui",
+        "ID Vérificateur": "RH001",
+        "Justification Écart": "retard trafic",
+        "Commentaire Vérificateur": "accepte",
+        "Validation": "oui",
+        "Date Validation": "12/04/2026",
+        "Heures Validées": "8.25",
+        "Statut Validation": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\nconciliation HP HT employe Sami date 10 avril arrivee prevu 08h pointage 08h05 depart prevu 17h pointage 17h10. Ecart arrivee 5 min depart 10 min total 15 min justification retard trafic. Verificateur RH001 accepte validation 12 avril heures validees 8.25."
+  },
+  {
+    "output": {
+      "label": "Conciliation entre HP et HT",
+      "type": "WORKFLOW",
+      "email_id": "1145",
+      "confidence_score": null,
+      "attributes": {
+        "Collecte des Données": "oui",
+        "Données Employé": "Fatma Ben Romdhane",
+        "Date ": "11/04/2026",
+        "Heure Arrivée Prévue": "08:00",
+        "Heure Arrivée Pointage": "08:00",
+        "Heure Départ Prévue": "17:00",
+        "Heure Départ Pointage": "16:55",
+        "Calcul des Écarts": "oui",
+        "Écart Arrivée (min)": "0",
+        "Écart Départ (min)": "-5",
+        "Heures Travail Planifiées": "8",
+        "Heures Travail Réelles": "7.92",
+        "Écart Total (h)": "-0.08",
+        "Écart Total (min)": "-5",
+        "Vérification": "oui",
+        "ID Vérificateur": "RH002",
+        "Justification Écart": "depart anticipe autorise",
+        "Commentaire Vérificateur": "ok",
+        "Validation": "oui",
+        "Date Validation": "13/04/2026",
+        "Heures Validées": "7.92",
+        "Statut Validation": "valide"
+      }
+    },
+    "input_email": "Salut,\n\nconciliation HP HT Fatma date 11 avril arrivee 08h pointage 08h depart prevu 17h pointage 16h55. Ecart depart -5 justification autorise. Verificateur RH002 ok validation 13 avril."
+  },
+  {
+    "output": {
+      "label": "Conciliation entre HP et HT",
+      "type": "WORKFLOW",
+      "email_id": "1146",
+      "confidence_score": null,
+      "attributes": {
+        "Collecte des Données": "oui",
+        "Données Employé": "Karim Mansour",
+        "Date ": "12/04/2026",
+        "Heure Arrivée Prévue": "08:00",
+        "Heure Arrivée Pointage": "07:55",
+        "Heure Départ Prévue": "17:00",
+        "Heure Départ Pointage": "17:05",
+        "Calcul des Écarts": "oui",
+        "Écart Arrivée (min)": "-5",
+        "Écart Départ (min)": "5",
+        "Heures Travail Planifiées": "8",
+        "Heures Travail Réelles": "8.17",
+        "Écart Total (h)": "0.17",
+        "Écart Total (min)": "10",
+        "Vérification": "oui",
+        "ID Vérificateur": "RH001",
+        "Justification Écart": "avance et retard",
+        "Commentaire Vérificateur": "accepte",
+        "Validation": "oui",
+        "Date Validation": "14/04/2026",
+        "Heures Validées": "8.17",
+        "Statut Validation": "valide"
+      }
+    },
+    "input_email": "Bonjour,\n\nconciliation Karim date 12 avril arrivee prevu 08h pointage 07h55 depart 17h pointage 17h05. Ecart arrivee -5 depart 5 total 10 min justification avance retard. Verificateur RH001 accepte validation 14 avril."
+  },
+  {
+    "output": {
+      "label": "Demandes WFH",
+      "type": "WORKFLOW",
+      "email_id": "1147",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Date Soumission": "13/04/2026",
+        "Date Demandée": "15/04/2026",
+        "Raison": "enfant malade",
+        "Type Travail": "bureau",
+        "Justificatif": "certificat",
+        "Traitement Manager": "approuve",
+        "Impact Opérationnel": "faible",
+        "Capacité Travail Distance": "oui",
+        "Avis Manager": "positif",
+        "Traitement RH": "en cours",
+        "Validation RH": "oui",
+        "Mise en Œuvre du Travail à Domicile": "oui",
+        "Date Début Travail Domicile": "15/04/2026",
+        "Durée Travail Domicile (J)": "1",
+        "Outils Nécessaires": "ordinateur",
+        "Suivi et Évaluation": "oui",
+        "Évaluation Performance": "bonne",
+        "Feedback Employé": "positif",
+        "Impact Opérationnel Final": "aucun",
+        "Recommandations Futures": "possible"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemandes WFH employeur oui employe Sami date soumission 13 date demandee 15 raison enfant malade type bureau justificatif certificat. Manager approuve impact faible capacite oui avis positif. RH validation oui debut 15 duree 1 jour outils ordi evaluation bonne."
+  },
+  {
+    "output": {
+      "label": "Demandes WFH",
+      "type": "WORKFLOW",
+      "email_id": "1148",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Fatma Ben Romdhane",
+        "Date Soumission": "14/04/2026",
+        "Date Demandée": "18/04/2026",
+        "Raison": "rendez vous",
+        "Type Travail": "administratif",
+        "Justificatif": "0",
+        "Traitement Manager": "approuve",
+        "Impact Opérationnel": "moyen",
+        "Capacité Travail Distance": "oui",
+        "Avis Manager": "ok",
+        "Traitement RH": "en cours",
+        "Validation RH": "oui",
+        "Mise en Œuvre du Travail à Domicile": "oui",
+        "Date Début Travail Domicile": "18/04/2026",
+        "Durée Travail Domicile (J)": "1",
+        "Outils Nécessaires": "laptop",
+        "Suivi et Évaluation": "oui",
+        "Évaluation Performance": "normale",
+        "Feedback Employé": "bon",
+        "Impact Opérationnel Final": "faible",
+        "Recommandations Futures": "ok"
+      }
+    },
+    "input_email": "Salut,\n\ndemandes WFH Fatma date soumission 14 demandee 18 raison rendez vous type administratif. Manager approuve impact moyen capacite oui. RH oui debut 18 duree 1 outils laptop evaluation normale."
+  },
+  {
+    "output": {
+      "label": "Demandes WFH",
+      "type": "WORKFLOW",
+      "email_id": "1149",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Karim Mansour",
+        "Date Soumission": "16/04/2026",
+        "Date Demandée": "22/04/2026",
+        "Raison": "travaux maison",
+        "Type Travail": "commercial",
+        "Justificatif": "0",
+        "Traitement Manager": "refuse",
+        "Impact Opérationnel": "eleve",
+        "Capacité Travail Distance": "non",
+        "Avis Manager": "negatif",
+        "Traitement RH": "termine",
+        "Validation RH": "non",
+        "Mise en Œuvre du Travail à Domicile": "non",
+        "Date Début Travail Domicile": null,
+        "Durée Travail Domicile (J)": null,
+        "Outils Nécessaires": null,
+        "Suivi et Évaluation": null,
+        "Évaluation Performance": null,
+        "Feedback Employé": null,
+        "Impact Opérationnel Final": "non applicable",
+        "Recommandations Futures": "presentiel"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemandes WFH Karim date 16 demandee 22 raison travaux maison type commercial. Manager refuse impact eleve capacite non avis negatif. RH validation non mise en oeuvre non recommandations presentiel."
+  },
+  {
+    "output": {
+      "label": "Post infos importantes",
+      "type": "WORKFLOW",
+      "email_id": "1150",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Création": "oui",
+        "Titre": "Nouvelle procedure",
+        "Catégorie ": "qualite",
+        "Description ": "mise a jour ISO",
+        "Destinataires": "tout le monde",
+        "Pièces Jointes": "procedure.pdf",
+        "Révision": "v2",
+        "Commentaire": "a lire"
+      }
+    },
+    "input_email": "Bonjour,\n\npost infos importantes formulaire creation titre Nouvelle procedure categorie qualite description mise a jour ISO destinataires tout le monde pieces procedure.pdf revision v2 commentaire a lire."
+  },
+  {
+    "output": {
+      "label": "Post infos importantes",
+      "type": "WORKFLOW",
+      "email_id": "1151",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Création": "oui",
+        "Titre": "Changement horaire",
+        "Catégorie ": "RH",
+        "Description ": "nouveaux horaires",
+        "Destinataires": "equipe production",
+        "Pièces Jointes": "0",
+        "Révision": "v1",
+        "Commentaire": "appliquer des lundi"
+      }
+    },
+    "input_email": "Salut,\n\npost infos importantes titre Changement horaire categorie RH description nouveaux horaires destinataires equipe production revision v1 commentaire appliquer des lundi."
+  },
+  {
+    "output": {
+      "label": "Post infos importantes",
+      "type": "WORKFLOW",
+      "email_id": "1152",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Création": "oui",
+        "Titre": "Formation obligatoire",
+        "Catégorie ": "formation",
+        "Description ": "securite incendie",
+        "Destinataires": "tous employes",
+        "Pièces Jointes": "planning.pdf",
+        "Révision": "v1",
+        "Commentaire": "inscription rapide"
+      }
+    },
+    "input_email": "Bonjour,\n\npost infos importantes titre Formation obligatoire categorie formation description securite incendie destinataires tous employes pieces planning revision v1 commentaire inscription rapide."
+  },
+  {
+    "output": {
+      "label": "Eléments de paie",
+      "type": "WORKFLOW",
+      "email_id": "1153",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Demande": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Date de début": "01/04/2026",
+        "Date de fin": "30/04/2026",
+        "Validation RH": "oui",
+        "Nombre de Jours Travaillés": "22",
+        "Heures Supplémentaires": "5",
+        "Absences (J)": "0",
+        "Retards (H)": "2",
+        "Justificatifs": "0",
+        "Commentaire": "standard",
+        "Traitement Service financier": "en cours",
+        "Fiche de paie": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nelements de paie formulaire demande employe Sami debut 1 avril fin 30 avril validation RH oui jours travailles 22 heures supp 5 absences 0 retards 2 justificatifs 0 commentaire standard. Fiche paie 0."
+  },
+  {
+    "output": {
+      "label": "Eléments de paie",
+      "type": "WORKFLOW",
+      "email_id": "1154",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Demande": "oui",
+        "Données Employé": "Fatma Ben Romdhane",
+        "Date de début": "01/04/2026",
+        "Date de fin": "30/04/2026",
+        "Validation RH": "oui",
+        "Nombre de Jours Travaillés": "20",
+        "Heures Supplémentaires": "0",
+        "Absences (J)": "2",
+        "Retards (H)": "0",
+        "Justificatifs": "0",
+        "Commentaire": "maladie",
+        "Traitement Service financier": "en cours",
+        "Fiche de paie": "0"
+      }
+    },
+    "input_email": "Salut,\n\nelements paie Fatma debut 1 fin 30 avril validation oui jours 20 absences 2 justificatifs 0 commentaire maladie. Fiche paie 0."
+  },
+  {
+    "output": {
+      "label": "Eléments de paie",
+      "type": "WORKFLOW",
+      "email_id": "1155",
+      "confidence_score": null,
+      "attributes": {
+        "Formulaire de Demande": "oui",
+        "Données Employé": "Karim Mansour",
+        "Date de début": "01/04/2026",
+        "Date de fin": "30/04/2026",
+        "Validation RH": "oui",
+        "Nombre de Jours Travaillés": "21",
+        "Heures Supplémentaires": "8",
+        "Absences (J)": "1",
+        "Retards (H)": "0",
+        "Justificatifs": "0",
+        "Commentaire": "mission",
+        "Traitement Service financier": "en cours",
+        "Fiche de paie": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nelements paie Karim debut 1 fin 30 avril validation oui jours 21 heures supp 8 absences 1 commentaire mission. Fiche paie 0."
+  },
+  {
+    "output": {
+      "label": "Intégration du nouveau collaborateur",
+      "type": "WORKFLOW",
+      "email_id": "1156",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        " Nom du collaborateur": "Youssef Ben Ali",
+        " Téléphone": "98765432",
+        " Email ": "youssef@email.tn",
+        " Poste": "developpeur",
+        " Type de contrat": "CDI",
+        " Date d’entrée prévue": "01/05/2026",
+        " Responsable hiérarchique": "Ahmed Khelifi",
+        " Matériel requis": "ordi",
+        " Accès informatiques nécessaires": "email systeme",
+        " Bureau attribué (étage, numéro)": "etage 2 bureau 5",
+        "Accueil le premier jour": "oui",
+        " Briefing de bienvenue": "oui",
+        " Tour des locaux effectué\t": "oui",
+        " Remarques éventuelles": null,
+        " Présentation à l’équipe\t": "oui",
+        " Personnes rencontrées": "toute equipe",
+        " Remise du matériel\t": "oui",
+        " Accès informatiques activés": "oui",
+        "Formation & orientation": "oui",
+        " Responsable des formations": "Leila",
+        " Dates de formation prévues\t": "02/05",
+        " Formations obligatoires": "securite",
+        " Matériel de formation fourni": "oui",
+        " Commentaires": "tout pret",
+        "Suivi de la période d’essai": "oui",
+        " Compétences techniques observées": "bonnes",
+        " Intégration dans l’équipe": "bonne",
+        " Conformité aux attentes": "oui",
+        " Recommandations": null,
+        " Commentaires supplémentaires": null,
+        "Clôture de l’intégration": "non",
+        " Évaluation finale de l’intégration": null,
+        " Prolongation ou fin de période d’essai": null,
+        " Justification": null
+      }
+    },
+    "input_email": "Bonjour,\n\nintegration nouveau collaborateur Youssef tel 98765432 email youssef poste developpeur CDI date entree 1 mai responsable Ahmed. Materiel ordi acces email bureau etage 2 5. Accueil briefing tour presentation remise acces oui. Formation Leila 2 mai securite tout pret. Competences bonnes integration bonne."
+  },
+  {
+    "output": {
+      "label": "Intégration du nouveau collaborateur",
+      "type": "WORKFLOW",
+      "email_id": "1157",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        " Nom du collaborateur": "Amina Khelifi",
+        " Téléphone": "23456789",
+        " Email ": "amina@email.tn",
+        " Poste": "assistante",
+        " Type de contrat": "CDD",
+        " Date d’entrée prévue": "05/05/2026",
+        " Responsable hiérarchique": "Fatma Ben Romdhane",
+        " Matériel requis": "bureau tel",
+        " Accès informatiques nécessaires": "HR system",
+        " Bureau attribué (étage, numéro)": "etage 1",
+        "Accueil le premier jour": "oui",
+        " Briefing de bienvenue": "oui",
+        " Tour des locaux effectué\t": "oui",
+        " Remarques éventuelles": null,
+        " Présentation à l’équipe\t": "oui",
+        " Personnes rencontrées": "RH",
+        " Remise du matériel\t": "oui",
+        " Accès informatiques activés": "oui",
+        "Formation & orientation": "oui",
+        " Responsable des formations": "Sarah",
+        " Dates de formation prévues\t": "06/05",
+        " Formations obligatoires": "RGPD",
+        " Matériel de formation fourni": "oui",
+        " Commentaires": "integration ok",
+        "Suivi de la période d’essai": "oui",
+        " Compétences techniques observées": "bonnes",
+        " Intégration dans l’équipe": "excellente",
+        " Conformité aux attentes": "oui",
+        " Recommandations": null,
+        " Commentaires supplémentaires": null,
+        "Clôture de l’intégration": "non",
+        " Évaluation finale de l’intégration": null,
+        " Prolongation ou fin de période d’essai": null,
+        " Justification": null
+      }
+    },
+    "input_email": "Salut,\n\nintegration nouveau Amina tel 23456789 email amina poste assistante CDD date 5 mai responsable Fatma. Materiel bureau tel acces HR bureau etage 1. Tout accueil formation Sarah 6 mai RGPD integration ok."
+  },
+  {
+    "output": {
+      "label": "Intégration du nouveau collaborateur",
+      "type": "WORKFLOW",
+      "email_id": "1158",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        " Nom du collaborateur": "Omar Mansour",
+        " Téléphone": "45678901",
+        " Email ": "omar@email.tn",
+        " Poste": "vendeur",
+        " Type de contrat": "CDI",
+        " Date d’entrée prévue": "10/05/2026",
+        " Responsable hiérarchique": "Karim Mansour",
+        " Matériel requis": "tel portable",
+        " Accès informatiques nécessaires": "CRM",
+        " Bureau attribué (étage, numéro)": "open space",
+        "Accueil le premier jour": "oui",
+        " Briefing de bienvenue": "oui",
+        " Tour des locaux effectué\t": "oui",
+        " Remarques éventuelles": null,
+        " Présentation à l’équipe\t": "oui",
+        " Personnes rencontrées": "vente",
+        " Remise du matériel\t": "oui",
+        " Accès informatiques activés": "oui",
+        "Formation & orientation": "oui",
+        " Responsable des formations": "Leila",
+        " Dates de formation prévues\t": "11/05",
+        " Formations obligatoires": "produits",
+        " Matériel de formation fourni": "oui",
+        " Commentaires": "pret",
+        "Suivi de la période d’essai": "oui",
+        " Compétences techniques observées": "bonnes",
+        " Intégration dans l’équipe": "bonne",
+        " Conformité aux attentes": "oui",
+        " Recommandations": null,
+        " Commentaires supplémentaires": null,
+        "Clôture de l’intégration": "non",
+        " Évaluation finale de l’intégration": null,
+        " Prolongation ou fin de période d’essai": null,
+        " Justification": null
+      }
+    },
+    "input_email": "Bonjour,\n\nintegration Omar tel 45678901 email omar poste vendeur CDI date 10 mai responsable Karim. Materiel tel acces CRM open space. Accueil tout formation Leila 11 mai produits pret."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1159",
+      "confidence_score": null,
+      "attributes": {
+        "Objet de la mission": "rencontre client",
+        "Motifs de la mission": "signature",
+        "Employé": "Ahmed Khelifi",
+        "Nom et Prénom": "Ahmed Khelifi",
+        "Poste": "manager",
+        "Domicile": "Tunis",
+        "Date de départ ": "18/04/2026",
+        "Date de Retour": "20/04/2026",
+        "Heure de départ  ": "08:00",
+        "Heure de Retour": "18:00",
+        "Type destination": "Sfax",
+        "Adresse": "siege",
+        "Pièce jointe ": "0",
+        "Fond de roulement ": "500 TND",
+        "Moyen de Transport": "voiture"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre mission objet rencontre client motifs signature employe Ahmed Khelifi poste manager domicile Tunis depart 18 08h retour 20 18h destination Sfax adresse siege. Fond roulement 500 transport voiture piece 0."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1160",
+      "confidence_score": null,
+      "attributes": {
+        "Objet de la mission": "inspection",
+        "Motifs de la mission": "controle",
+        "Employé": "Fatma Ben Romdhane",
+        "Nom et Prénom": "Fatma Ben Romdhane",
+        "Poste": "technicienne",
+        "Domicile": "Sfax",
+        "Date de départ ": "25/04/2026",
+        "Date de Retour": "27/04/2026",
+        "Heure de départ  ": "07:30",
+        "Heure de Retour": "17:00",
+        "Type destination": "Tunis",
+        "Adresse": "usine",
+        "Pièce jointe ": "0",
+        "Fond de roulement ": "300 TND",
+        "Moyen de Transport": "train"
+      }
+    },
+    "input_email": "Salut,\n\nordre mission objet inspection motifs controle employe Fatma technicienne domicile Sfax depart 25 07h30 retour 27 17h destination Tunis usine. Fond 300 transport train."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1161",
+      "confidence_score": null,
+      "attributes": {
+        "Objet de la mission": "presentation",
+        "Motifs de la mission": "client",
+        "Employé": "Leila Trabelsi",
+        "Nom et Prénom": "Leila Trabelsi",
+        "Poste": "ingenieur",
+        "Domicile": "Tunis",
+        "Date de départ ": "30/04/2026",
+        "Date de Retour": "01/05/2026",
+        "Heure de départ  ": "09:00",
+        "Heure de Retour": "16:00",
+        "Type destination": "Kairouan",
+        "Adresse": "client",
+        "Pièce jointe ": "0",
+        "Fond de roulement ": "400 TND",
+        "Moyen de Transport": "voiture"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre mission objet presentation motifs client employe Leila ingenieur domicile Tunis depart 30 09h retour 1 mai 16h destination Kairouan client. Fond 400 transport voiture."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1162",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Sami Ben Ahmed",
+        "Projet": "IT",
+        "Type de Congé ": "annuel",
+        "Date de sortie": "20/04/2026",
+        "Date de retour": "27/04/2026",
+        "Durée": "7",
+        "Période de sortie ": "matin",
+        "Période de Retour": "matin",
+        "Motif de la demande ": "vacances",
+        "Justificative ": "0",
+        "Solde Congé": "15",
+        "Remplaçant": "Ahmed",
+        "Traitement RH": "en cours",
+        "Solde congé ": "8"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande conge employeur oui Sami projet IT type annuel sortie 20 retour 27 duree 7 periode matin motif vacances justificative 0 solde 15 remplacant Ahmed traitement en cours solde 8."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1163",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Fatma Ben Romdhane",
+        "Projet": "qualite",
+        "Type de Congé ": "maladie",
+        "Date de sortie": "15/04/2026",
+        "Date de retour": "18/04/2026",
+        "Durée": "3",
+        "Période de sortie ": "matin",
+        "Période de Retour": "soir",
+        "Motif de la demande ": "medical",
+        "Justificative ": "0",
+        "Solde Congé": "10",
+        "Remplaçant": "Leila",
+        "Traitement RH": "en cours",
+        "Solde congé ": "7"
+      }
+    },
+    "input_email": "Salut,\n\ndemande conge Fatma projet qualite type maladie sortie 15 retour 18 duree 3 motif medical solde 10 remplacant Leila solde 7."
+  },
+  {
+    "output": {
+      "label": "Demande de congé",
+      "type": "WORKFLOW",
+      "email_id": "1164",
+      "confidence_score": null,
+      "attributes": {
+        "Demande Employeur ": "oui",
+        "Données Employé": "Karim Mansour",
+        "Projet": "vente",
+        "Type de Congé ": "personnel",
+        "Date de sortie": "22/04/2026",
+        "Date de retour": "23/04/2026",
+        "Durée": "1",
+        "Période de sortie ": "matin",
+        "Période de Retour": "matin",
+        "Motif de la demande ": "affaire perso",
+        "Justificative ": "0",
+        "Solde Congé": "12",
+        "Remplaçant": "Sami",
+        "Traitement RH": "en cours",
+        "Solde congé ": "11"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande conge Karim projet vente type personnel sortie 22 retour 23 duree 1 motif affaire perso solde 12 remplacant Sami."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1165",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la mission": "Détails de la mission",
+        "Objet de la mission": "rencontre",
+        "Motifs de la mission": "contrat",
+        "Employé": "Ahmed Khelifi",
+        "Nom et Prénom": "Ahmed Khelifi",
+        "Poste": "manager",
+        "Domicile": "Tunis",
+        "Date de départ ": "18/04/2026",
+        "Heure de départ  ": "08:00",
+        "Date de Retour": "20/04/2026",
+        "Heure de Retour": "18:00",
+        "Type destination": "Sfax",
+        "Adresse": "siege",
+        "Pièce jointe ": "0",
+        "Validation Sup Hiérarchique": "oui",
+        "Hébergement nécessaire": "oui",
+        "Moyens de transport": "voiture",
+        "Liste outils a emporter": "ordi",
+        "Type": "entreprise",
+        "Fond de roulement estimé": "500 TND",
+        "Allocation des ressources ": "oui",
+        "Budget approuvé": "oui",
+        "Ressources allouées": "0",
+        "Rapport de mission": null,
+        "Résumé des activités réalisées": null,
+        "Dépenses réelles": null,
+        "Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre mission details mission objet rencontre motifs contrat employe Ahmed manager Tunis depart 18 08h retour 20 18h Sfax siege. Validation sup oui hebergement oui transport voiture outils ordi type entreprise fond 500 budget approuve. Piece 0."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1166",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la mission": "Détails de la mission",
+        "Objet de la mission": "inspection",
+        "Motifs de la mission": "controle",
+        "Employé": "Fatma Ben Romdhane",
+        "Nom et Prénom": "Fatma Ben Romdhane",
+        "Poste": "technicienne",
+        "Domicile": "Sfax",
+        "Date de départ ": "25/04/2026",
+        "Heure de départ  ": "07:30",
+        "Date de Retour": "27/04/2026",
+        "Heure de Retour": "17:00",
+        "Type destination": "Tunis",
+        "Adresse": "usine",
+        "Pièce jointe ": "0",
+        "Validation Sup Hiérarchique": "oui",
+        "Hébergement nécessaire": "non",
+        "Moyens de transport": "train",
+        "Liste outils a emporter": "checklist",
+        "Type": "public",
+        "Fond de roulement estimé": "300 TND",
+        "Allocation des ressources ": "oui",
+        "Budget approuvé": "oui",
+        "Ressources allouées": "0",
+        "Rapport de mission": null,
+        "Résumé des activités réalisées": null,
+        "Dépenses réelles": null,
+        "Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Salut,\n\nordre mission Fatma technicienne Sfax depart 25 07h30 retour 27 17h Tunis usine. Validation oui hebergement non transport train outils checklist fond 300 budget oui."
+  },
+  {
+    "output": {
+      "label": "Ordre de mission",
+      "type": "WORKFLOW",
+      "email_id": "1167",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la mission": "Détails de la mission",
+        "Objet de la mission": "presentation",
+        "Motifs de la mission": "client",
+        "Employé": "Leila Trabelsi",
+        "Nom et Prénom": "Leila Trabelsi",
+        "Poste": "ingenieur",
+        "Domicile": "Tunis",
+        "Date de départ ": "30/04/2026",
+        "Heure de départ  ": "09:00",
+        "Date de Retour": "01/05/2026",
+        "Heure de Retour": "16:00",
+        "Type destination": "Kairouan",
+        "Adresse": "client",
+        "Pièce jointe ": "0",
+        "Validation Sup Hiérarchique": "oui",
+        "Hébergement nécessaire": "oui",
+        "Moyens de transport": "voiture",
+        "Liste outils a emporter": "ordi",
+        "Type": "entreprise",
+        "Fond de roulement estimé": "400 TND",
+        "Allocation des ressources ": "oui",
+        "Budget approuvé": "oui",
+        "Ressources allouées": "0",
+        "Rapport de mission": null,
+        "Résumé des activités réalisées": null,
+        "Dépenses réelles": null,
+        "Justificatifs des dépenses": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nordre mission Leila ingenieur Tunis depart 30 09h retour 1 mai 16h Kairouan client. Validation oui hebergement oui transport voiture outils ordi fond 400 budget oui."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1168",
+      "confidence_score": null,
+      "attributes": {
+        "Type d'autorisation": "courte",
+        "Date de Sortie": "17/04/2026",
+        "Nb. heures ": "4",
+        "Heure de départ ": "14:00",
+        "Heure de retour": "18:00",
+        "Motif d'absence ": "medical"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande autorisation absence type courte date sortie 17 nb heures 4 depart 14h retour 18h motif medical."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1169",
+      "confidence_score": null,
+      "attributes": {
+        "Type d'autorisation": "courte",
+        "Date de Sortie": "21/04/2026",
+        "Nb. heures ": "2",
+        "Heure de départ ": "10:00",
+        "Heure de retour": "12:00",
+        "Motif d'absence ": "banque"
+      }
+    },
+    "input_email": "Salut,\n\ndemande autorisation absence type courte date 21 nb heures 2 depart 10h retour 12h motif banque."
+  },
+  {
+    "output": {
+      "label": "Demande d'autorisation d'absence",
+      "type": "WORKFLOW",
+      "email_id": "1170",
+      "confidence_score": null,
+      "attributes": {
+        "Type d'autorisation": "courte",
+        "Date de Sortie": "24/04/2026",
+        "Nb. heures ": "3",
+        "Heure de départ ": "15:00",
+        "Heure de retour": "18:00",
+        "Motif d'absence ": "famille"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande autorisation absence type courte date 24 nb heures 3 depart 15h retour 18h motif famille."
+  },
+  {
+    "output": {
+      "label": "Onboarding d'un nouveau employé",
+      "type": "WORKFLOW",
+      "email_id": "1171",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Youssef Ben Ali",
+        "Date de début": "01/05/2026",
+        "Type Contrat": "CDI",
+        "Poste ": "developpeur",
+        "Département": "IT",
+        "Responsable hiérarchique": "Ahmed Khelifi",
+        "Matériel requis": "ordi",
+        "Accès informatiques nécessaires": "email",
+        "Bureau attribué": "etage 2",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Leila",
+        "Dates de formation": "02/05",
+        "Formations obligatoires": "securite",
+        "Matériel fourni": "oui",
+        "Commentaires": "tout ok",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bonnes",
+        "Intégration dans l’équipe": "bonne",
+        "Conformité aux attentes": "oui",
+        "Recommandations": null,
+        "Commentaires supplémentaires": null
+      }
+    },
+    "input_email": "Bonjour,\n\nonboarding nouveau employe Youssef debut 1 mai CDI poste developpeur IT responsable Ahmed. Materiel ordi acces email bureau etage 2. Accueil briefing tour presentation remise acces oui formation Leila 2 mai securite tout ok competences bonnes."
+  },
+  {
+    "output": {
+      "label": "Onboarding d'un nouveau employé",
+      "type": "WORKFLOW",
+      "email_id": "1172",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Amina Khelifi",
+        "Date de début": "05/05/2026",
+        "Type Contrat": "CDD",
+        "Poste ": "assistante",
+        "Département": "RH",
+        "Responsable hiérarchique": "Fatma Ben Romdhane",
+        "Matériel requis": "bureau",
+        "Accès informatiques nécessaires": "HR",
+        "Bureau attribué": "etage 1",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Sarah",
+        "Dates de formation": "06/05",
+        "Formations obligatoires": "RGPD",
+        "Matériel fourni": "oui",
+        "Commentaires": "ok",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bonnes",
+        "Intégration dans l’équipe": "excellente",
+        "Conformité aux attentes": "oui",
+        "Recommandations": null,
+        "Commentaires supplémentaires": null
+      }
+    },
+    "input_email": "Salut,\n\nonboarding Amina debut 5 mai CDD assistante RH responsable Fatma. Materiel bureau acces HR etage 1. Tout accueil formation Sarah 6 mai RGPD ok."
+  },
+  {
+    "output": {
+      "label": "Onboarding d'un nouveau employé",
+      "type": "WORKFLOW",
+      "email_id": "1173",
+      "confidence_score": null,
+      "attributes": {
+        "Préparation d’intégration": "oui",
+        "Employé": "Omar Mansour",
+        "Date de début": "10/05/2026",
+        "Type Contrat": "CDI",
+        "Poste ": "vendeur",
+        "Département": "vente",
+        "Responsable hiérarchique": "Karim Mansour",
+        "Matériel requis": "tel",
+        "Accès informatiques nécessaires": "CRM",
+        "Bureau attribué": "open space",
+        "Accueil le premier jour": "oui",
+        "Briefing de bienvenue": "oui",
+        "Tour des locaux effectué": "oui",
+        "Présentation à l’équipe": "oui",
+        "Remise du matériel": "oui",
+        "Accès informatiques activés": "oui",
+        "Suivi de formation et orientation": "oui",
+        "Responsable des formations": "Leila",
+        "Dates de formation": "11/05",
+        "Formations obligatoires": "produits",
+        "Matériel fourni": "oui",
+        "Commentaires": "pret",
+        "Suivi de période d’essai": "oui",
+        "Compétences techniques": "bonnes",
+        "Intégration dans l’équipe": "bonne",
+        "Conformité aux attentes": "oui",
+        "Recommandations": null,
+        "Commentaires supplémentaires": null
+      }
+    },
+    "input_email": "Bonjour,\n\nonboarding Omar debut 10 mai CDI vendeur vente responsable Karim. Materiel tel acces CRM open space. Accueil tout formation Leila 11 mai produits pret."
+  },
+  {
+    "output": {
+      "label": "Expression besoin de recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1174",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "ingenieur qualite",
+        "Diplôme souhaitée ": "ingenieur",
+        "Spécialité": "qualite",
+        "Nombre des postes souhaitées ": "1",
+        "Date de recrutement souhaitée": "01/06/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "controle",
+        "Cause de recrutement": "projet",
+        "Expérience souhaitée": "3 ans",
+        "Type de contrat ": "CDI"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin recrutement creation demande poste ingenieur qualite diplome ingenieur specialite qualite 1 poste date 1 juin genre indifferent description controle cause projet experience 3 ans CDI."
+  },
+  {
+    "output": {
+      "label": "Expression besoin de recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1175",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "comptable",
+        "Diplôme souhaitée ": "licence",
+        "Spécialité": "comptabilite",
+        "Nombre des postes souhaitées ": "1",
+        "Date de recrutement souhaitée": "15/05/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "paie",
+        "Cause de recrutement": "remplacement",
+        "Expérience souhaitée": "2 ans",
+        "Type de contrat ": "CDD"
+      }
+    },
+    "input_email": "Salut,\n\nexpression besoin recrutement poste comptable licence specialite comptabilite 1 poste date 15 mai description paie cause remplacement experience 2 ans CDD."
+  },
+  {
+    "output": {
+      "label": "Expression besoin de recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1176",
+      "confidence_score": null,
+      "attributes": {
+        "Création demande de recrutement": "oui",
+        "Intitulé du poste ": "vendeur",
+        "Diplôme souhaitée ": "bac",
+        "Spécialité": "vente",
+        "Nombre des postes souhaitées ": "2",
+        "Date de recrutement souhaitée": "01/07/2026",
+        "Genre ": "indifferent",
+        "Description des taches ": "terrain",
+        "Cause de recrutement": "expansion",
+        "Expérience souhaitée": "1 an",
+        "Type de contrat ": "CDI"
+      }
+    },
+    "input_email": "Bonjour,\n\nexpression besoin recrutement poste vendeur bac specialite vente 2 postes date 1 juillet description terrain cause expansion experience 1 an CDI."
+  },
+  {
+    "output": {
+      "label": "Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1177",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "urgent",
+        "Poste": "ingenieur qualite",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "prepare",
+        "choix des candidats": "3",
+        "Candidats présélectionnés": "2",
+        "Entretien(s)": "oui",
+        "Date Entretien": "20/04/2026",
+        "Type Entretien": "presentiel",
+        "Évaluateurs ": "Ahmed Leila",
+        "Résultat de l'entretien": "positif",
+        "Résultats des questionnaires": "bons",
+        "Nom du candidat retenu": "Youssef",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDI",
+        "Date d'embauche": "01/05/2026",
+        "Seuil de proposition d'embauche en TND": "2500",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nrecrutement description urgent poste ingenieur qualite choix 3 preselec 2 entretien 20 presentiel evaluateurs Ahmed Leila resultat positif. Candidat Youssef CDI embauche 1 mai seuil 2500 proposition oui."
+  },
+  {
+    "output": {
+      "label": "Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1178",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "remplacement",
+        "Poste": "comptable",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "en cours",
+        "choix des candidats": "4",
+        "Candidats présélectionnés": "1",
+        "Entretien(s)": "oui",
+        "Date Entretien": "25/04/2026",
+        "Type Entretien": "video",
+        "Évaluateurs ": "Fatma Sarah",
+        "Résultat de l'entretien": "bon",
+        "Résultats des questionnaires": "moyens",
+        "Nom du candidat retenu": "Amina",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDD",
+        "Date d'embauche": "10/05/2026",
+        "Seuil de proposition d'embauche en TND": "1800",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Salut,\n\nrecrutement remplacement poste comptable choix 4 preselec 1 entretien 25 video evaluateurs Fatma Sarah resultat bon. Candidat Amina CDD embauche 10 mai seuil 1800."
+  },
+  {
+    "output": {
+      "label": "Recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1179",
+      "confidence_score": null,
+      "attributes": {
+        "Description du besoin": "expansion",
+        "Poste": "vendeur",
+        "Fiche de poste": "0",
+        "Questionnaire de recrutement": "prepare",
+        "choix des candidats": "5",
+        "Candidats présélectionnés": "3",
+        "Entretien(s)": "oui",
+        "Date Entretien": "30/04/2026",
+        "Type Entretien": "presentiel",
+        "Évaluateurs ": "Karim",
+        "Résultat de l'entretien": "tres bon",
+        "Résultats des questionnaires": "excellents",
+        "Nom du candidat retenu": "Omar",
+        "Candidat retenu": "oui",
+        "Type Contrat": "CDI",
+        "Date d'embauche": "15/05/2026",
+        "Seuil de proposition d'embauche en TND": "2200",
+        "Proposition final d'embauche": "oui",
+        "Signature de contrat ": "non",
+        "Contrat": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nrecrutement expansion poste vendeur choix 5 preselec 3 entretien 30 presentiel evaluateur Karim resultat tres bon. Candidat Omar CDI embauche 15 mai seuil 2200."
+  },
+  {
+    "output": {
+      "label": "évaluation aprés une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1180",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Youssef Ben Ali",
+        "Collaborateurs ": "Youssef Ben Ali",
+        "Evaluation sur hierarchique": "bonne",
+        "Connaissance de l'emploi ": "satisfaisante",
+        "Productivité (Qualité/Quantité de travail) ": "bonne",
+        "Fiabilité": "oui",
+        "Collaboration ": "excellente",
+        "Adaptabilité ": "bonne",
+        "Initiative (fait preuve d'empressement) ": "oui",
+        "Service à la clientèle/fournisseurs ": "bon",
+        "Commentaire": "progres rapide",
+        "Evaluation RH": "positive",
+        "Attitudes et comportements au travail ": "bon",
+        "Motivation et satisfaction personnelle ": "haute",
+        "Environnement de travail et organisation générale ": "bon",
+        "Encadrement et intégration ": "reussie",
+        "Ecart constatés ": "aucun",
+        "Relation avec les collègues au sein du département ": "tres bonne",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "formation avancee",
+        "Décision ": "confirmation",
+        "Décision proposé": "confirmation"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation apres une periode dessai collaborateurs Youssef evaluation hierarchique bonne connaissance satisfaisante productivite bonne. Collaboration excellente initiative oui. Commentaire progres rapide. RH positive decision confirmation."
+  },
+  {
+    "output": {
+      "label": "évaluation aprés une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1181",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Amina Khelifi",
+        "Collaborateurs ": "Amina Khelifi",
+        "Evaluation sur hierarchique": "moyenne",
+        "Connaissance de l'emploi ": "en progres",
+        "Productivité (Qualité/Quantité de travail) ": "moyenne",
+        "Fiabilité": "oui",
+        "Collaboration ": "bonne",
+        "Adaptabilité ": "moyenne",
+        "Initiative (fait preuve d'empressement) ": "non",
+        "Service à la clientèle/fournisseurs ": "bon",
+        "Commentaire": "besoin accompagnement",
+        "Evaluation RH": "positive avec reserve",
+        "Attitudes et comportements au travail ": "correct",
+        "Motivation et satisfaction personnelle ": "moyenne",
+        "Environnement de travail et organisation générale ": "bon",
+        "Encadrement et intégration ": "en cours",
+        "Ecart constatés ": "quelques",
+        "Relation avec les collègues au sein du département ": "bonne",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "initiative",
+        "Décision ": "prolongation",
+        "Décision proposé": "prolongation"
+      }
+    },
+    "input_email": "Salut,\n\nevaluation apres periode essai Amina hierarchique moyenne connaissance en progres productivite moyenne initiative non. Commentaire besoin accompagnement. Decision prolongation."
+  },
+  {
+    "output": {
+      "label": "évaluation aprés une période d'essai",
+      "type": "WORKFLOW",
+      "email_id": "1182",
+      "confidence_score": null,
+      "attributes": {
+        "Collaborateurs": "Omar Mansour",
+        "Collaborateurs ": "Omar Mansour",
+        "Evaluation sur hierarchique": "excellente",
+        "Connaissance de l'emploi ": "tres bonne",
+        "Productivité (Qualité/Quantité de travail) ": "excellente",
+        "Fiabilité": "oui",
+        "Collaboration ": "excellente",
+        "Adaptabilité ": "excellente",
+        "Initiative (fait preuve d'empressement) ": "oui",
+        "Service à la clientèle/fournisseurs ": "tres bon",
+        "Commentaire": "tres bon element",
+        "Evaluation RH": "tres positive",
+        "Attitudes et comportements au travail ": "excellent",
+        "Motivation et satisfaction personnelle ": "haute",
+        "Environnement de travail et organisation générale ": "excellent",
+        "Encadrement et intégration ": "reussie",
+        "Ecart constatés ": "aucun",
+        "Relation avec les collègues au sein du département ": "excellente",
+        "Ambition exprimée ": "oui",
+        "Proposition d'amélioration ": "aucune",
+        "Décision ": "confirmation",
+        "Décision proposé": "confirmation"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation apres essai Omar excellente connaissance tres bonne tout excellent. Commentaire tres bon element. RH tres positive decision confirmation."
+  },
+  {
+    "output": {
+      "label": "Déclenchement de campagnes de déclarations",
+      "type": "WORKFLOW",
+      "email_id": "1183",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la campagne": null,
+        " Libellé": "Declaration TVA",
+        " Type_Déclaration": "mensuelle",
+        " Mois": "avril",
+        " Trimestre": null,
+        " Année": "2026"
+      }
+    },
+    "input_email": "Bonjour,\n\ndeclenchement campagnes declarations details campagne libelle Declaration TVA type mensuelle mois avril annee 2026."
+  },
+  {
+    "output": {
+      "label": "Déclenchement de campagnes de déclarations",
+      "type": "WORKFLOW",
+      "email_id": "1184",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la campagne": null,
+        " Libellé": "Declaration CNSS",
+        " Type_Déclaration": "trimestrielle",
+        " Mois": null,
+        " Trimestre": "Q2",
+        " Année": "2026"
+      }
+    },
+    "input_email": "Salut,\n\ndeclenchement declaration CNSS type trimestrielle trimestre Q2 annee 2026."
+  },
+  {
+    "output": {
+      "label": "Déclenchement de campagnes de déclarations",
+      "type": "WORKFLOW",
+      "email_id": "1185",
+      "confidence_score": null,
+      "attributes": {
+        "Détails de la campagne": null,
+        " Libellé": "Declaration Fiscale",
+        " Type_Déclaration": "annuelle",
+        " Mois": null,
+        " Trimestre": null,
+        " Année": "2026"
+      }
+    },
+    "input_email": "Bonjour,\n\ndeclenchement campagnes declaration fiscale type annuelle annee 2026."
+  },
+  {
+    "output": {
+      "label": "Suivi d'intégration nouveau recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1186",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom de nouveau recrue ": "Youssef Ben Ali",
+        "Fonction": "developpeur",
+        "Date de recrutement ": "01/05/2026",
+        "Plan d'intégration ": "standard"
+      }
+    },
+    "input_email": "Bonjour,\n\nsuivi integration nouveau recrutement nom Youssef Ben Ali fonction developpeur date recrutement 1 mai plan standard."
+  },
+  {
+    "output": {
+      "label": "Suivi d'intégration nouveau recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1187",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom de nouveau recrue ": "Amina Khelifi",
+        "Fonction": "assistante",
+        "Date de recrutement ": "05/05/2026",
+        "Plan d'intégration ": "RH"
+      }
+    },
+    "input_email": "Salut,\n\nsuivi integration Amina Khelifi fonction assistante date 5 mai plan RH."
+  },
+  {
+    "output": {
+      "label": "Suivi d'intégration nouveau recrutement",
+      "type": "WORKFLOW",
+      "email_id": "1188",
+      "confidence_score": null,
+      "attributes": {
+        "Nom et prénom de nouveau recrue ": "Omar Mansour",
+        "Fonction": "vendeur",
+        "Date de recrutement ": "10/05/2026",
+        "Plan d'intégration ": "vente"
+      }
+    },
+    "input_email": "Bonjour,\n\nsuivi integration Omar Mansour fonction vendeur date 10 mai plan vente."
+  },
+  {
+    "output": {
+      "label": "Evaluation de formation",
+      "type": "WORKFLOW",
+      "email_id": "1189",
+      "confidence_score": null,
+      "attributes": {
+        "Details sur la formation ": "HSE",
+        "Ficher de présence ": "0",
+        "Evaluation a Chaud": "tres satisfait",
+        "Compétences acquise lors de la formation ": "prevention",
+        "Evaluation sur la durée de la formation": "satisfait",
+        "Evaluation sur le contenu ": "bon",
+        "Evaluation sur le support": "bon",
+        "Evaluation sur le formateur ": "excellent",
+        "Evaluation sur l'apport théorique ": "bon",
+        "Evaluation sur l'apport pratique ": "excellent",
+        "Evaluation total": "tres satisfait",
+        "Participeriez-vous à une autre formation organisée par cet organisme/formateur": "oui",
+        "Explication": "utile",
+        "Recommandation ": "recommander",
+        "Evaluation a froid ": "satisfait",
+        "Nom de l'évaluateur ": "Ahmed Khelifi",
+        "Evaluation sur la durée de formation": "bon",
+        "Evaluation sur l'Acquisition des nouvelles pratiques/savoir faire": "bon",
+        "Evaluation sur la Mise en application des nouvelles compétences": "en cours",
+        "Evaluation sur l'Efficacité à court terme": "bonne",
+        "Evaluation sur l'Efficacité à long terme": "a suivre",
+        "Evaluation sur la Degré d'atteinte d'objectif fixé": "atteint",
+        "Evaluation sur l'Influence de la formation sur la satisfaction client ( interne/externe)": "positive",
+        "Recommandations/Remarques ": "continuer",
+        "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.": "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.",
+        "Commentaires ": "super"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation formation details HSE fiche presence 0 evaluation a chaud tres satisfait competences prevention. Evaluation total tres satisfait participer oui explication utile. Evaluateur Ahmed a froid satisfait. NB formation efficace si satisfait. Commentaires super."
+  },
+  {
+    "output": {
+      "label": "Evaluation de formation",
+      "type": "WORKFLOW",
+      "email_id": "1190",
+      "confidence_score": null,
+      "attributes": {
+        "Details sur la formation ": "ISO 22000",
+        "Ficher de présence ": "0",
+        "Evaluation a Chaud": "satisfait",
+        "Compétences acquise lors de la formation ": "normes",
+        "Evaluation sur la durée de la formation": "moyen",
+        "Evaluation sur le contenu ": "bon",
+        "Evaluation sur le support": "moyen",
+        "Evaluation sur le formateur ": "bon",
+        "Evaluation sur l'apport théorique ": "bon",
+        "Evaluation sur l'apport pratique ": "bon",
+        "Evaluation total": "satisfait",
+        "Participeriez-vous à une autre formation organisée par cet organisme/formateur": "oui",
+        "Explication": "utile",
+        "Recommandation ": "oui",
+        "Evaluation a froid ": "en cours",
+        "Nom de l'évaluateur ": "Fatma Ben Romdhane",
+        "Evaluation sur la durée de formation": "moyen",
+        "Evaluation sur l'Acquisition des nouvelles pratiques/savoir faire": "bon",
+        "Evaluation sur la Mise en application des nouvelles compétences": "en cours",
+        "Evaluation sur l'Efficacité à court terme": "moyenne",
+        "Evaluation sur l'Efficacité à long terme": "a suivre",
+        "Evaluation sur la Degré d'atteinte d'objectif fixé": "atteint",
+        "Evaluation sur l'Influence de la formation sur la satisfaction client ( interne/externe)": "positive",
+        "Recommandations/Remarques ": "ameliorer support",
+        "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.": "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.",
+        "Commentaires ": "ok"
+      }
+    },
+    "input_email": "Salut,\n\nevaluation formation ISO 22000 fiche 0 evaluation a chaud satisfait competences normes. Total satisfait participer oui. Evaluateur Fatma a froid en cours. Recommandations ameliorer support NB efficace si satisfait."
+  },
+  {
+    "output": {
+      "label": "Evaluation de formation",
+      "type": "WORKFLOW",
+      "email_id": "1191",
+      "confidence_score": null,
+      "attributes": {
+        "Details sur la formation ": "negotiation",
+        "Ficher de présence ": "0",
+        "Evaluation a Chaud": "tres satisfait",
+        "Compétences acquise lors de la formation ": "techniques vente",
+        "Evaluation sur la durée de la formation": "tres satisfait",
+        "Evaluation sur le contenu ": "excellent",
+        "Evaluation sur le support": "excellent",
+        "Evaluation sur le formateur ": "excellent",
+        "Evaluation sur l'apport théorique ": "excellent",
+        "Evaluation sur l'apport pratique ": "excellent",
+        "Evaluation total": "tres satisfait",
+        "Participeriez-vous à une autre formation organisée par cet organisme/formateur": "oui",
+        "Explication": "tres utile",
+        "Recommandation ": "fortement",
+        "Evaluation a froid ": "satisfait",
+        "Nom de l'évaluateur ": "Karim Mansour",
+        "Evaluation sur la durée de formation": "tres bon",
+        "Evaluation sur l'Acquisition des nouvelles pratiques/savoir faire": "tres bon",
+        "Evaluation sur la Mise en application des nouvelles compétences": "oui",
+        "Evaluation sur l'Efficacité à court terme": "tres bonne",
+        "Evaluation sur l'Efficacité à long terme": "bonne",
+        "Evaluation sur la Degré d'atteinte d'objectif fixé": "atteint",
+        "Evaluation sur l'Influence de la formation sur la satisfaction client ( interne/externe)": "positive",
+        "Recommandations/Remarques ": "continuer",
+        "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.": "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.",
+        "Commentaires ": "parfait"
+      }
+    },
+    "input_email": "Bonjour,\n\nevaluation formation negotiation fiche 0 evaluation a chaud tres satisfait competences techniques vente. Total tres satisfait participer oui tres utile. Evaluateur Karim a froid satisfait. NB efficace. Commentaires parfait."
+  },
+  {
+    "output": {
+      "label": "Audit 5S",
+      "type": "WORKFLOW",
+      "email_id": "1192",
+      "confidence_score": null,
+      "attributes": {
+        "Zone": "atelier",
+        "Chef Ligne Audité": "Ahmed Khelifi",
+        "Supprimer": null,
+        "Q1": "oui",
+        "Support Q1": "0",
+        "Q2": "oui",
+        "Support Q2": "0",
+        "Somme S3": "2"
+      }
+    },
+    "input_email": "Bonjour,\n\naudit 5S zone atelier chef ligne Ahmed Q1 oui Q2 oui somme S3 2."
+  },
+  {
+    "output": {
+      "label": "Audit 5S",
+      "type": "WORKFLOW",
+      "email_id": "1193",
+      "confidence_score": null,
+      "attributes": {
+        "Zone": "bureau",
+        "Chef Ligne Audité": "Fatma Ben Romdhane",
+        "Supprimer": null,
+        "Q1": "non",
+        "Support Q1": "0",
+        "Q2": "oui",
+        "Support Q2": "0",
+        "Somme S3": "1"
+      }
+    },
+    "input_email": "Salut,\n\naudit 5S zone bureau chef Fatma Q1 non Q2 oui somme S3 1."
+  },
+  {
+    "output": {
+      "label": "Audit 5S",
+      "type": "WORKFLOW",
+      "email_id": "1194",
+      "confidence_score": null,
+      "attributes": {
+        "Zone": "entrepot",
+        "Chef Ligne Audité": "Karim Mansour",
+        "Supprimer": null,
+        "Q1": "oui",
+        "Support Q1": "0",
+        "Q2": "oui",
+        "Support Q2": "0",
+        "Somme S3": "2"
+      }
+    },
+    "input_email": "Bonjour,\n\naudit 5S zone entrepot chef Karim Q1 oui Q2 oui somme S3 2."
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1195",
+      "confidence_score": null,
+      "attributes": {
+        "Description générale": "ordinateurs",
+        "Projet": "IT upgrade",
+        "Liste des achats": "5 laptops",
+        "Devis": "joint",
+        "Fournisseur": "TechStore",
+        "Montant Facture": "15000 TND",
+        "Taux retenu": "10%",
+        "Montant retenu": "1500 TND",
+        "Montant après retenu": "13500 TND",
+        "Justif Retenu": "standard",
+        "Montant allouée": "15000 TND",
+        "Type de paiement": "cheque",
+        "N° Chèque": "123456",
+        "Date chèque": "20/04/2026",
+        "Factures et Reçus": "oui",
+        "Mode de paiement": "cheque",
+        "Montant payé": "13500 TND"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande achat description generale ordinateurs projet IT upgrade liste 5 laptops devis joint fournisseur TechStore montant facture 15000 taux retenu 10% montant retenu 1500 apres 13500 justif standard. Montant allouee 15000 type paiement cheque n 123456 date 20 avril factures oui mode cheque montant paye 13500."
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1196",
+      "confidence_score": null,
+      "attributes": {
+        "Description générale": "papeterie",
+        "Projet": "bureau",
+        "Liste des achats": "papier A4",
+        "Devis": "joint",
+        "Fournisseur": "OfficePro",
+        "Montant Facture": "500 TND",
+        "Taux retenu": "0%",
+        "Montant retenu": "0",
+        "Montant après retenu": "500 TND",
+        "Justif Retenu": "aucun",
+        "Montant allouée": "500 TND",
+        "Type de paiement": "especes",
+        "N° Chèque": null,
+        "Date chèque": null,
+        "Factures et Reçus": "oui",
+        "Mode de paiement": "especes",
+        "Montant payé": "500 TND"
+      }
+    },
+    "input_email": "Salut,\n\ndemande achat description papeterie projet bureau liste papier A4 devis joint fournisseur OfficePro montant 500 taux 0 retenu 0 apres 500. Montant allouee 500 type especes factures oui montant paye 500."
+  },
+  {
+    "output": {
+      "label": "Demande d'achat",
+      "type": "WORKFLOW",
+      "email_id": "1197",
+      "confidence_score": null,
+      "attributes": {
+        "Description générale": "materiel securite",
+        "Projet": "chantier",
+        "Liste des achats": "casques",
+        "Devis": "joint",
+        "Fournisseur": "SafetyShop",
+        "Montant Facture": "2000 TND",
+        "Taux retenu": "5%",
+        "Montant retenu": "100 TND",
+        "Montant après retenu": "1900 TND",
+        "Justif Retenu": "standard",
+        "Montant allouée": "2000 TND",
+        "Type de paiement": "virement",
+        "N° Chèque": null,
+        "Date chèque": null,
+        "Factures et Reçus": "oui",
+        "Mode de paiement": "virement",
+        "Montant payé": "1900 TND"
+      }
+    },
+    "input_email": "Bonjour,\n\ndemande achat description materiel securite projet chantier liste casques devis joint fournisseur SafetyShop montant 2000 taux 5 retenu 100 apres 1900. Montant allouee 2000 type virement factures oui montant paye 1900."
+  },
+  {
+    "output": {
+      "label": "Projet",
+      "type": "WORKFLOW",
+      "email_id": "1198",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Projet Route",
+        "date": "01/06/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nprojet nom Projet Route date 1 juin 2026."
+  },
+  {
+    "output": {
+      "label": "Projet",
+      "type": "WORKFLOW",
+      "email_id": "1199",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Projet Usine",
+        "date": "15/07/2026"
+      }
+    },
+    "input_email": "Salut,\n\nprojet nom Projet Usine date 15 juillet 2026."
+  },
+  {
+    "output": {
+      "label": "Projet",
+      "type": "WORKFLOW",
+      "email_id": "1200",
+      "confidence_score": null,
+      "attributes": {
+        "nom": "Projet Port",
+        "date": "01/08/2026"
+      }
+    },
+    "input_email": "Bonjour,\n\nprojet nom Projet Port date 1 aout 2026."
+  },
+  {
+    "output": {
+      "label": "Fiche Poste",
+      "type": "WORKFLOW",
+      "email_id": "1201",
+      "confidence_score": null,
+      "attributes": {
+        "suivre le remboursement des sinistres déclarés": "oui",
+        "Description": "gestion sinistres",
+        "PJ": "0",
+        "réaliser les inventaires des immobilisations ": "oui",
+        "Attachement": "0",
+        "piloter les projets de construction / aménagement/ entretien  ": "oui"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche poste suivre remboursement sinistres declares oui description gestion sinistres PJ 0 realiser inventaires immobilisations oui attachement 0 piloter projets construction amenagement entretien oui."
+  },
+  {
+    "output": {
+      "label": "Fiche Poste",
+      "type": "WORKFLOW",
+      "email_id": "1202",
+      "confidence_score": null,
+      "attributes": {
+        "suivre le remboursement des sinistres déclarés": "non",
+        "Description": "gestion admin",
+        "PJ": "0",
+        "réaliser les inventaires des immobilisations ": "non",
+        "Attachement": "0",
+        "piloter les projets de construction / aménagement/ entretien  ": "non"
+      }
+    },
+    "input_email": "Salut,\n\nfiche poste description gestion admin suivre sinistres non inventaires non piloter projets non PJ 0 attachement 0."
+  },
+  {
+    "output": {
+      "label": "Fiche Poste",
+      "type": "WORKFLOW",
+      "email_id": "1203",
+      "confidence_score": null,
+      "attributes": {
+        "suivre le remboursement des sinistres déclarés": "oui",
+        "Description": "comptable",
+        "PJ": "0",
+        "réaliser les inventaires des immobilisations ": "oui",
+        "Attachement": "0",
+        "piloter les projets de construction / aménagement/ entretien  ": "non"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche poste description comptable suivre sinistres oui inventaires oui piloter projets non."
+  },
+  {
+    "output": {
+      "label": "Fiche poste 2",
+      "type": "WORKFLOW",
+      "email_id": "1204",
+      "confidence_score": null,
+      "attributes": {
+        "Description": "description generale poste",
+        "Attachement": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche poste 2 description description generale poste attachement 0."
+  },
+  {
+    "output": {
+      "label": "Fiche poste 2",
+      "type": "WORKFLOW",
+      "email_id": "1205",
+      "confidence_score": null,
+      "attributes": {
+        "Description": "poste admin",
+        "Attachement": "0"
+      }
+    },
+    "input_email": "Salut,\n\nfiche poste 2 description poste admin attachement 0."
+  },
+  {
+    "output": {
+      "label": "Fiche poste 2",
+      "type": "WORKFLOW",
+      "email_id": "1206",
+      "confidence_score": null,
+      "attributes": {
+        "Description": "poste technique",
+        "Attachement": "0"
+      }
+    },
+    "input_email": "Bonjour,\n\nfiche poste 2 description poste technique attachement 0."
+  }
+]

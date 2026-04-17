@@ -61,7 +61,7 @@ murged_prompt = (
     "- Entities may include (but are not limited to): dates, amounts, order numbers, product names, locations, conditions, deadlines, budgets, technical systems, people names, company names, constraints.\n"
     "- If no entities are found, return an empty object {}.\n"
     "- If no domain or intent is clearly identified, return [\"other\"].\n"
-    "- Ensure the JSON is syntactatically valid.\n"
+    "- Ensure the JSON is syntactically valid.\n"
     "- confidence_score must be a float between 0.0 and 1.0 reflecting classification confidence.\n"
     "- Return ONLY the JSON. No explanations. No comments. No markdown.\n\n"
     "Email:\n"
@@ -115,13 +115,17 @@ prompt_orange = (
 )
 
 # Prompt for config-list (25).json
-with open("config-list-transformed.json", "r", encoding="utf-8") as f:
-    json_conf = json.dumps(json.load(f), indent=2)
+try:
+    with open("config-list-transformed.json", "r", encoding="utf-8") as f:
+        json_conf = json.dumps(json.load(f), indent=2)
+except FileNotFoundError:
+    json_conf = "Config file not found"
 #read the json file and convert it to a string
 prompt_configlist = (
     f"You are an AI assistant that receives a JSON configuration: {json_conf}\n"
     "Select the workflow whose \"label\" best matches the email, extract the attributes"
-    " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\", \"workflow_label\", \"attributes\", \"confidence_score\".\n "
+    " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\"(should be an integer), \"workflow_label\", \"attributes\", \"confidence_score\".\n "
     "Only include attributes that appear in the email; omit missing ones. "
-    "Return ONLY the JSON, no extra text. "
+    "Return ONLY the JSON, no extra text.\n"
+    "Email:\n"
 )

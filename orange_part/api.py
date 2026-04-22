@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -5,12 +8,11 @@ from ollama import chat
 from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.config import Settings
-import os
 import json
 import pandas as pd
 from typing import Optional
-from completed_project.prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
-from orange_part.api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from shared.prompt import prompt_orange
+from api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 
 app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
 
@@ -59,7 +61,7 @@ async def initialize():
         
         # Chunk the text
         # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots
-        chunks = chunk_text(document_text, 500)
+        chunks = chunk_text(str(document_text), 500)
         
         # Create embeddings
         # Conversion des morceaux de texte en vecteurs
@@ -70,12 +72,7 @@ async def initialize():
         
         # Store in Vector Database (Chroma)
         # Initialisation du client ChromaDB avec un stockage persistant
-        client = chromadb.Client(
-            Settings(
-                persist_directory=persist_dir,
-                anonymized_telemetry=False
-            )
-        )
+        client = chromadb.PersistentClient(path=persist_dir)
         
         # Delete existing collection if it exists
         # Suppression de l'ancienne collection pour éviter les doublons lors de la réinitialisation

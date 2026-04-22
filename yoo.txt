@@ -1,0 +1,92 @@
+ D:\studying\3eme info(DSI33)\PFE\
+  │
+  ├── shared/                       # Shared modules
+  │   └── prompt.py                 # Shared prompts
+  │
+  ├── orange_part/                  # Orange workflow
+  │   ├── api.py                    # API (prompt_orange)
+  │   ├── api_methodes.py
+  │   ├── email_refresher.py
+  │   ├── mail_analyser.py
+  │   ├── prompt.py                 # Orange prompts
+  │   ├── dataset_telecom.json
+  │   ├── __pycache__/
+  │   ├── chroma_db/                # Vector DB
+  │   └── emails_output/            # Output files
+  │       ├── attachments/
+  |       |   ├── 12/               # Folder with email id
+  |       |   └── ...
+  │       ├── images/
+  |       |   ├── 12/               # Folder with email id
+  |       |   └── ...
+  │       └── emails.xlsx
+  │
+  ├── systeme_de_Classification_Intelligent_des_emails/  # Main workflow
+  │   ├── cp_api.py                 # Main API (config-list)
+  │   ├── cp_api_methodes.py
+  │   ├── email_refresher.py
+  │   ├── mail_analyser.py
+  │   ├── Ocr_methodes.py
+  │   ├── prompt.py
+  │   ├── full_dataset.json
+  │   ├── config-list-transformed.json
+  │   ├── __pycache__/
+  │   ├── chroma_db/                # Vector DB
+  │   └── emails_output/            # Output files
+  │       ├── attachments/
+  |       |   ├── 12/               # Folder with email id
+  |       |   └── ...
+  │       ├── images/
+  |       |   ├── 12/               # Folder with email id
+  |       |   └── ...
+  │       └── emails.xlsx
+  │
+  ├── dataset_tests/                # Test datasets
+  │   ├── config-list (25).json
+  │   ├── config-list-final.json
+  │   ├── dataset_p1.json
+  │   ├── dataset_p2.json
+  │   ├── dataset_p3.json
+  │   ├── dataset_p4.json
+  │   └── rag_dataset_1000_paragraph_emails.json
+  │
+  ├── recherche/                    # Research files (French)
+  │   ├── models.txt
+  │   ├── project_summary_fr.txt
+  │   ├── RAG_implementation_api.txt
+  │   ├── RAG_theorie_generale.txt
+  │   ├── Testing model .txt
+  │   ├── ddd.pdf
+  │   ├── Comparaison_Qwen_LLaMA_Gemma_Email_Extraction.docx
+  │   ├── Model_Benchmark_Detailed_v2.xlsx
+  │   ├── Modelfile
+  │   ├── RAG_vs_FineTuning_Comparaison_Detaillee.docx
+  │   └── description_projet_RAG_email.docx
+  │
+  ├── research_part/                # Experimental modules
+  │   ├── rag.py                    # RAG test
+  │   ├── model_test.py             # Model tests
+  │   ├── all_models.py             # Multi-model benchmark
+  │   ├── gmail_extraction_script.py
+  │   ├── pdf_ocr.py
+  │   ├── Ocr_test.py
+  │   ├── iteration_test.py
+  │   ├── test.py
+  │   ├── testgenai.py
+  │   └── old test.py
+  |
+  └── .env                          # IMAP credentials
+
+  Key Workflows
+
+  ┌──────────────────┬───────────────────────────────────────────────────┬───────────────────┬──────────────────────┐
+  │     Workflow     │                      Folder                       │      Prompt       │       Dataset        │
+  ├──────────────────┼───────────────────────────────────────────────────┼───────────────────┼──────────────────────┤
+  │ Main Config-List │ systeme_de_Classification_Intelligent_des_emails/ │ prompt_configlist │ full_dataset.json    │
+  ├──────────────────┼───────────────────────────────────────────────────┼───────────────────┼──────────────────────┤
+  │ Orange Telecom   │ orange_part/                                      │ prompt_orange     │ dataset_telecom.json │
+  └──────────────────┴───────────────────────────────────────────────────┴───────────────────┴──────────────────────┘
+
+
+
+

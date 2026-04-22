@@ -45,7 +45,7 @@ def get_last_excel_uid():
         if not os.path.exists(excel_path):
             return None
         
-        df = pd.read_excel(excel_path)
+        df = pd.read_excel(excel_path, engine="openpyxl")
         if 'UID' not in df.columns:
             return None
         

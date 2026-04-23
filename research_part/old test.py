@@ -3,10 +3,11 @@ import email
 import os
 import re
 import json
-
+import dotenv
+dotenv.load_dotenv()
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ACCOUNT = "yessineht@gmail.com"
-PASSWORD = "aughykyuhihyhgqa"
+EMAIL_ACCOUNT = os.getenv("mail_@")
+PASSWORD = os.getenv("mail_code")
 
 OUTPUT_FOLDER = "emails_output"
 
@@ -108,7 +109,7 @@ if not os.path.exists(OUTPUT_FOLDER):
 # Fetch UIDs
 _, data = mail.uid("search", None, "ALL")
 uids = data[0].split()
-last_10_uids = uids[-10:]
+last_10_uids = uids[-1:]
 
 print(f"🚀 Processing {len(last_10_uids)} emails...\n")
 

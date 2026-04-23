@@ -328,19 +328,7 @@ Corps: { "email_content": "UID: 123\nContenu de l'email ici/cut/piece1.pdf" }
 Réponse: Résultat d'analyse JSON
 
 
-10. DÉPloiEMENT
-================================================================================
-
-Docker:
-- docker compose up --build
-- Accès sur http://localhost:8086
-
-Isolation de l'environnement:
-- Toutes les dépendances dans le conteneur Docker
-- Données persistantes dans les dossiers chroma_db et emails_output
-
-
-11. PROBLÈMES CONNUS & LIMITATIONS
+10. PROBLÈMES CONNUS & LIMITATIONS
 ================================================================================
 
 1. Découpage JSON: full_dataset.json chargé comme texte, puis découpé

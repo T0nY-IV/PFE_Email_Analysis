@@ -10,12 +10,12 @@
       "Preuve demande C/A": null,
       "List choix Transporteur": null,
       "Autre transporteur": null,
-      "Date enlèvement ": null,
+      "Date enlèvement": null,
       "Vérification étapes du processus import": null,
       "Pré-alerte": null,
       "Réception pré-alerte": null,
       "Numéro BL": null,
-      "Pièce jointe ": null,
+      "Pièce jointe": null,
       "Dossier de transport": null,
       "Commentaire": null,
       "Dossier douane N°:": null,
@@ -35,12 +35,12 @@
       "Preuve demande C/A": null,
       "List choix Transporteur": null,
       "Autre transporteur": null,
-      "Date enlèvement ": null,
+      "Date enlèvement": null,
       "Vérification étapes du processus import": null,
       "Pré-alerte": null,
       "Réception pré-alerte": null,
       "Numéro BL": null,
-      "Pièce jointe ": null,
+      "Pièce jointe": null,
       "Dossier de transport": null,
       "Commentaire": null,
       "Dossier douane N°:": null,
@@ -55,8 +55,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
+      "Désignation": null,
+      "Référence": null,
       "Détail": null
     }
   },
@@ -110,7 +110,7 @@
     "confidence_score": null,
     "attributes": {
       "Identification du besoin": null,
-      "Nom du demandeur ": null,
+      "Nom du demandeur": null,
       "Objet": null,
       "Date de livraison souhaité": null,
       "Articles demandés": null,
@@ -139,12 +139,12 @@
       "Nom de l'Entreprise/Employeur": null,
       "Adresse de l'Entreprise": null,
       "Numéro de téléphone de l'Entreprise": null,
-      "Adresse e-mail de l'Entreprise ": null,
+      "Adresse e-mail de l'Entreprise": null,
       "Informations sur les Travailleurs": null,
       "Déclaration et Signature": null,
-      "Surveillance et conformité ": null,
-      "Les travailleurs respectes les conditions de permis de travail ": null,
-      "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      "Surveillance et conformité": null,
+      "Les travailleurs respectes les conditions de permis de travail": null,
+      "Les travailleurs Respectent les règlements et les lois en vigueurs": null
     }
   },
   {
@@ -169,12 +169,12 @@
       "Preuve demande C/A": null,
       "List choix Transporteur": null,
       "Autre transporteur": null,
-      "Date enlèvement ": null,
+      "Date enlèvement": null,
       "Vérification étapes du processus import": null,
       "Pré-alerte": null,
       "Réception pré-alerte": null,
       "Numéro BL": null,
-      "Pièce jointe ": null,
+      "Pièce jointe": null,
       "Dossier de transport": null,
       "Commentaire": null,
       "Dossier douane N°:": null,
@@ -232,8 +232,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
+      "Désignation": null,
+      "Référence": null,
       "Détail": null
     }
   },
@@ -260,14 +260,14 @@
       "Mesures existantes ayant pu prévenir tel Incident": null,
       "Description de l’événement": null,
       "Conséquence": null,
-      " Photo de l'incident / accident si existe": null,
+      "Photo de l'incident / accident si existe": null,
       "Réaction d'urgence du Resp HSE": null,
       "Personne cible pour cette alerte": null,
       "Réaction médicale": null,
       "Réaction technique": null,
-      "Action Correctives provisoires ": null,
+      "Action Correctives provisoires": null,
       "Détails concernant les Causes apparents": null,
-      " Recommandations préliminaires": null,
+      "Recommandations préliminaires": null,
       "diffusion": null
     }
   },
@@ -281,12 +281,12 @@
       "Processus": null,
       "Source": null,
       "remarque": null,
-      "Support ": null,
-      "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": null,
-      "Correction (s) \t": null,
+      "Support": null,
+      "Enoncé de non-conformité": null,
+      "Correction (s)": null,
       "Evaluation du correction": null,
-      "Analyse des causes \t\t\t\t\t\t\t": null,
-      "Action Corrective (s) :\t": null,
+      "Analyse des causes": null,
+      "Action Corrective (s) :": null,
       "Evaluation de l'efficacité/clôture": null,
       "Risques et opportunités": null,
       "Besoin de modification SMQ": null
@@ -302,13 +302,13 @@
       "N° de la revue": null,
       "Données d'entrée de la revue de direction": null,
       "Les résultats des audits": null,
-      " Les retours d'information des clients": null,
-      " Le fonctionnement des processus et la conformité du produit": null,
+      "Les retours d'information des clients": null,
+      "Le fonctionnement des processus et la conformité du produit": null,
       "L'état des actions préventives et correctives": null,
       "Les actions issues des revues de direction précédentes": null,
-      " Les changements pouvant affecter le système de management de la qualité": null,
+      "Les changements pouvant affecter le système de management de la qualité": null,
       "Les recommandations d'amélioration": null,
-      " Données de sortie de la revue de direction": null,
+      "Données de sortie de la revue de direction": null,
       "L'amélioration de l'efficacité du système de management de la qualité et de ses processus": null,
       "L'amélioration du produit en rapport avec les exigences du client": null,
       "Besoins en ressources": null
@@ -337,14 +337,14 @@
     "attributes": {
       "Identification et critère de qualité du produit": null,
       "Numéro d'identification unique du Produit": null,
-      "Classement Par Risque ": null,
-      "Classement par ancienneté ": null,
+      "Classement Par Risque": null,
+      "Classement par ancienneté": null,
       "Le produit respecte les critères de qualité de l'entreprise": null,
       "Le produit conforme au politique interne": null,
       "Validation": null,
       "Conformité Juridique": null,
-      "Conformité Financière ": null,
-      "Conformité Contrôle Qualité ": null,
+      "Conformité Financière": null,
+      "Conformité Contrôle Qualité": null,
       "Rapport": null,
       "Rapport d'inspection finale": null
     }
@@ -374,29 +374,29 @@
     "confidence_score": null,
     "attributes": {
       "Création de l'événement": null,
-      " Nom de l'événement": null,
-      " Type": null,
-      " Date Début": null,
-      " Date Fin": null,
-      " Lieu": null,
-      " Description": null,
-      " Etat": null,
+      "Nom de l'événement": null,
+      "Type": null,
+      "Date Début": null,
+      "Date Fin": null,
+      "Lieu": null,
+      "Description": null,
+      "Etat": null,
       "Réservation des ressources": null,
-      " Équipements requis": null,
-      " Nom Salle": null,
-      " Capacité": null,
-      " Date et heure d'installation": null,
-      " Responsable logistique": null,
-      " Statut Disponibilité": null,
+      "Équipements requis": null,
+      "Nom Salle": null,
+      "Capacité": null,
+      "Date et heure d'installation": null,
+      "Responsable logistique": null,
+      "Statut Disponibilité": null,
       "Gestion des participants": null,
-      " Liste des participants": null,
+      "Liste des participants": null,
       "Gestion des intervenants": null,
-      " Liste des intervenants": null,
+      "Liste des intervenants": null,
       "Check-list d'exécution": null,
-      " Salles prêtes ?": null,
-      " Équipements en place ?": null,
-      " Intervenants confirmés ?": null,
-      " Commentaires": null
+      "Salles prêtes ?": null,
+      "Équipements en place ?": null,
+      "Intervenants confirmés ?": null,
+      "Commentaires": null
     }
   },
   {
@@ -488,7 +488,7 @@
       "Return Time": null,
       "Destination Type": null,
       "Address": null,
-      "Attachment ": null,
+      "Attachment": null,
       "Supervisor Approval": null,
       "Accommodation Required": null,
       "Means of Transport": null,
@@ -540,7 +540,7 @@
       "Employé": null,
       "Date de début": null,
       "Type Contrat": null,
-      "Poste ": null,
+      "Poste": null,
       "Département": null,
       "Responsable hiérarchique": null,
       "Matériel requis": null,
@@ -573,16 +573,16 @@
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
-      "Intitulé du poste ": null,
-      "Diplôme souhaitée ": null,
+      "Intitulé du poste": null,
+      "Diplôme souhaitée": null,
       "Spécialité": null,
-      "Nombre des postes souhaitées ": null,
+      "Nombre des postes souhaitées": null,
       "Date de recrutement souhaitée": null,
-      "Genre ": null,
-      "Description des taches ": null,
+      "Genre": null,
+      "Description des taches": null,
       "Cause de recrutement": null,
       "Expérience souhaitée": null,
-      "Type de contrat ": null
+      "Type de contrat": null
     }
   },
   {
@@ -600,7 +600,7 @@
       "Entretien(s)": null,
       "Date Entretien": null,
       "Type Entretien": null,
-      "Évaluateurs ": null,
+      "Évaluateurs": null,
       "Résultat de l'entretien": null,
       "Résultats des questionnaires": null,
       "Nom du candidat retenu": null,
@@ -609,7 +609,7 @@
       "Date d'embauche": null,
       "Seuil de proposition d'embauche en TND": null,
       "Proposition final d'embauche": null,
-      "Signature de contrat ": null,
+      "Signature de contrat": null,
       "Contrat": null
     }
   },
@@ -620,26 +620,25 @@
     "confidence_score": null,
     "attributes": {
       "Collaborateurs": null,
-      "Collaborateurs ": null,
       "Evaluation sur hierarchique": null,
-      "Connaissance de l'emploi ": null,
-      "Productivité (Qualité/Quantité de travail) ": null,
+      "Connaissance de l'emploi": null,
+      "Productivité (Qualité/Quantité de travail)": null,
       "Fiabilité": null,
-      "Collaboration ": null,
-      "Adaptabilité ": null,
-      "Initiative (fait preuve d'empressement) ": null,
-      "Service à la clientèle/fournisseurs ": null,
+      "Collaboration": null,
+      "Adaptabilité": null,
+      "Initiative (fait preuve d'empressement)": null,
+      "Service à la clientèle/fournisseurs": null,
       "Commentaire": null,
       "Evaluation RH": null,
-      "Attitudes et comportements au travail ": null,
-      "Motivation et satisfaction personnelle ": null,
-      "Environnement de travail et organisation générale ": null,
-      "Encadrement et intégration ": null,
-      "Ecart constatés ": null,
-      "Relation avec les collègues au sein du département ": null,
-      "Ambition exprimée ": null,
-      "Proposition d'amélioration ": null,
-      "Décision ": null,
+      "Attitudes et comportements au travail": null,
+      "Motivation et satisfaction personnelle": null,
+      "Environnement de travail et organisation générale": null,
+      "Encadrement et intégration": null,
+      "Ecart constatés": null,
+      "Relation avec les collègues au sein du département": null,
+      "Ambition exprimée": null,
+      "Proposition d'amélioration": null,
+      "Décision": null,
       "Décision proposé": null
     }
   },
@@ -649,21 +648,21 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Demande Employeur ": null,
+      "Demande Employeur": null,
       "Données Employé": null,
       "Projet": null,
-      "Type de Congé ": null,
+      "Type de Congé": null,
       "Date de sortie": null,
       "Date de retour": null,
       "Durée": null,
-      "Période de sortie ": null,
+      "Période de sortie": null,
       "Période de Retour": null,
-      "Motif de la demande ": null,
-      "Justificative ": null,
+      "Motif de la demande": null,
+      "Justificative": null,
       "Solde Congé": null,
       "Remplaçant": null,
       "Traitement RH": null,
-      "Solde congé ": null
+      "Solde congé": null
     }
   },
   {
@@ -674,34 +673,34 @@
     "attributes": {
       "Informations sur le Collaborateur": null,
       "Nom et prénom": null,
-      " Fonction": null,
-      " Département": null,
-      " Adresse personnelle": null,
+      "Fonction": null,
+      "Département": null,
+      "Adresse personnelle": null,
       "Informations Générales sur la Mission": null,
-      " Objet de la mission": null,
-      " Motif(s) de la mission": null,
-      " Date de départ": null,
-      " Heure de départ": null,
-      " Date de retour": null,
-      " Heure de retour": null,
-      " Type de destination": null,
-      " Adresse / Lieu de la mission": null,
-      " Pièce jointe ": null,
+      "Objet de la mission": null,
+      "Motif(s) de la mission": null,
+      "Date de départ": null,
+      "Heure de départ": null,
+      "Date de retour": null,
+      "Heure de retour": null,
+      "Type de destination": null,
+      "Adresse / Lieu de la mission": null,
+      "Pièce jointe": null,
       "Logistique et Préparation de Mission": null,
-      " Hébergement nécessaire": null,
-      " Moyen de transport principal": null,
-      " Type du moyen de transport": null,
-      " A préciser": null,
-      " Liste des outils / équipements à emporter": null,
-      " Fond de roulement estimé": null,
+      "Hébergement nécessaire": null,
+      "Moyen de transport principal": null,
+      "Type du moyen de transport": null,
+      "A préciser": null,
+      "Liste des outils / équipements à emporter": null,
+      "Fond de roulement estimé": null,
       "Financement & Ressources": null,
-      " Budget pré-approuvé": null,
-      " Allocation des ressources": null,
-      " Ressources allouées": null,
+      "Budget pré-approuvé": null,
+      "Allocation des ressources": null,
+      "Ressources allouées": null,
       "Rapport de mission": null,
-      " Résumé des activités réalisées": null,
-      " Dépenses réelles engagées": null,
-      " Justificatifs des dépenses": null
+      "Résumé des activités réalisées": null,
+      "Dépenses réelles engagées": null,
+      "Justificatifs des dépenses": null
     }
   },
   {
@@ -712,16 +711,16 @@
     "attributes": {
       "Demande Employeur": null,
       "Nom et prénom": null,
-      " Fonction": null,
-      " Département": null,
-      " Type d'autorisation": null,
-      " A préciser": null,
-      " Date de Sortie": null,
-      " Heure de départ": null,
-      " Heure de retour": null,
-      " Nombre total d’heures": null,
-      " Motif d'absence ": null,
-      " Remplaçant désigné pendant l'absence": null
+      "Fonction": null,
+      "Département": null,
+      "Type d'autorisation": null,
+      "A préciser": null,
+      "Date de Sortie": null,
+      "Heure de départ": null,
+      "Heure de retour": null,
+      "Nombre total d’heures": null,
+      "Motif d'absence": null,
+      "Remplaçant désigné pendant l'absence": null
     }
   },
   {
@@ -732,9 +731,9 @@
     "attributes": {
       "Données Employé": null,
       "Montant demandé": null,
-      "Date souhaité ": null,
+      "Date souhaité": null,
       "Type de remboursement": null,
-      "Motif de la demande ": null,
+      "Motif de la demande": null,
       "Pièce jointe": null
     }
   },
@@ -746,42 +745,42 @@
     "attributes": {
       "Description du besoin": null,
       "Besoin de Recrutement": null,
-      " Département demandeur": null,
-      " Intitulé du poste à pourvoir": null,
-      " Type de contrat": null,
-      " Motif du recrutement": null,
-      " Profil recherché": null,
-      " Nombre de postes souhaitées": null,
-      " Expérience souhaitée": null,
-      " Date souhaitée d'entrée en poste": null,
-      " Budget salarial estimé (mensuel)": null,
+      "Département demandeur": null,
+      "Intitulé du poste à pourvoir": null,
+      "Type de contrat": null,
+      "Motif du recrutement": null,
+      "Profil recherché": null,
+      "Nombre de postes souhaitées": null,
+      "Expérience souhaitée": null,
+      "Date souhaitée d'entrée en poste": null,
+      "Budget salarial estimé (mensuel)": null,
       "Choix du candidat": null,
       "Candidat présélectionné": null,
       "Nom et prénom": null,
-      " Téléphone": null,
-      " Email ": null,
-      " Quel poste prétendez-vous ?": null,
-      " Salaire désiré net (TND)": null,
-      " Photo d’identité": null,
-      " Photocopie des diplômes et certificats de scolarité": null,
+      "Téléphone": null,
+      "Email": null,
+      "Quel poste prétendez-vous ?": null,
+      "Salaire désiré net (TND)": null,
+      "Photo d’identité": null,
+      "Photocopie des diplômes et certificats de scolarité": null,
       "CV": null,
-      " Lettre de Motivation": null,
+      "Lettre de Motivation": null,
       "Planification de l'entretien": null,
-      " Date Entretien": null,
-      " Type Entretien": null,
-      "Évaluateurs ": null,
+      "Date Entretien": null,
+      "Type Entretien": null,
+      "Évaluateurs": null,
       "Entretien technique": null,
-      " Évaluation technique": null,
+      "Évaluation technique": null,
       "Entretien RH": null,
-      " Évaluation comportementale": null,
-      " Commentaires RH": null,
+      "Évaluation comportementale": null,
+      "Commentaires RH": null,
       "Décision DG": null,
-      " Décision finale": null,
+      "Décision finale": null,
       "Envoi de Motif de Rejet": null,
-      " Motif de Rejet": null,
+      "Motif de Rejet": null,
       "Envoi de réponse": null,
-      " Date d'embauche": null,
-      " Proposition final d'embauche": null,
+      "Date d'embauche": null,
+      "Proposition final d'embauche": null,
       "Contrat": null
     }
   },
@@ -792,19 +791,19 @@
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
-      " Département demandeur": null,
-      " Intitulé du poste à pourvoir": null,
-      " Type de contrat": null,
-      " Motif du recrutement": null,
+      "Département demandeur": null,
+      "Intitulé du poste à pourvoir": null,
+      "Type de contrat": null,
+      "Motif du recrutement": null,
       "Autre": null,
-      " Profil recherché": null,
-      " Nombre de postes souhaitées ": null,
-      " Expérience souhaitée": null,
-      " Date souhaitée d'entrée en poste": null,
-      " Lieu de travail": null,
-      " Budget salarial estimé (mensuel)": null,
-      " Description des taches ": null,
-      " Compétences spécifiques souhaitées": null
+      "Profil recherché": null,
+      "Nombre de postes souhaitées": null,
+      "Expérience souhaitée": null,
+      "Date souhaitée d'entrée en poste": null,
+      "Lieu de travail": null,
+      "Budget salarial estimé (mensuel)": null,
+      "Description des taches": null,
+      "Compétences spécifiques souhaitées": null
     }
   },
   {
@@ -814,24 +813,24 @@
     "confidence_score": null,
     "attributes": {
       "Détails de la Formation": null,
-      " Thématique de la formation": null,
-      " Titre ou sujet souhaité": null,
-      " Objectif de la formation": null,
-      " Type de formation souhaité": null,
-      " Du": null,
-      " Au": null,
+      "Thématique de la formation": null,
+      "Titre ou sujet souhaité": null,
+      "Objectif de la formation": null,
+      "Type de formation souhaité": null,
+      "Du": null,
+      "Au": null,
       "Documents justificatifs": null,
       "Sélection du formateur": null,
-      " Type de formateur\t": null,
-      " Nom du formateur / Organisme": null,
+      "Type de formateur": null,
+      "Nom du formateur / Organisme": null,
       "Planification logistique": null,
-      " Date": null,
-      " Durée (en heures ou jours)": null,
-      " Lieu": null,
-      " Nombre de participants": null,
-      " Supports et logistique nécessaires": null,
+      "Date": null,
+      "Durée (en heures ou jours)": null,
+      "Lieu": null,
+      "Nombre de participants": null,
+      "Supports et logistique nécessaires": null,
       "Convocation des participants": null,
-      " Participants": null,
+      "Participants": null,
       "Réalisation de la formation": null,
       "Fiche de présence": null
     }
@@ -843,33 +842,33 @@
     "confidence_score": null,
     "attributes": {
       "Détails du Collaborateur": null,
-      " Nom du collaborateur": null,
-      " Poste": null,
-      " Manager hiérarchique": null,
-      " Date d’entrée": null,
-      " Fin de période d’essai": null,
+      "Nom du collaborateur": null,
+      "Poste": null,
+      "Manager hiérarchique": null,
+      "Date d’entrée": null,
+      "Fin de période d’essai": null,
       "Évaluation par le responsable hiérarchique": null,
-      " Connaissance de l'emploi": null,
-      " Productivité (Qualité / Quantité)": null,
-      " Fiabilité / Respect des engagements": null,
-      " Collaboration avec les collègues": null,
-      " Adaptabilité": null,
-      " Initiative et proactivité": null,
-      " Relation client/fournisseur (si applicable)": null,
-      " Commentaires du manager": null,
+      "Connaissance de l'emploi": null,
+      "Productivité (Qualité / Quantité)": null,
+      "Fiabilité / Respect des engagements": null,
+      "Collaboration avec les collègues": null,
+      "Adaptabilité": null,
+      "Initiative et proactivité": null,
+      "Relation client/fournisseur (si applicable)": null,
+      "Commentaires du manager": null,
       "Évaluation par le service RH": null,
-      " Attitudes et comportements professionnels": null,
-      " Motivation / Satisfaction personnelle": null,
-      " Adaptation à l’environnement de travail": null,
-      " Niveau d’intégration / Encadrement reçu": null,
-      " Écarts constatés par rapport au profil recherché": null,
-      " Relation avec collègues au sein du département": null,
-      " Ambitions exprimées": null,
-      " Commentaire RH": null,
-      " Proposition d’amélioration ou accompagnement": null,
+      "Attitudes et comportements professionnels": null,
+      "Motivation / Satisfaction personnelle": null,
+      "Adaptation à l’environnement de travail": null,
+      "Niveau d’intégration / Encadrement reçu": null,
+      "Écarts constatés par rapport au profil recherché": null,
+      "Relation avec collègues au sein du département": null,
+      "Ambitions exprimées": null,
+      "Commentaire RH": null,
+      "Proposition d’amélioration ou accompagnement": null,
       "Décision finale par la Direction Générale": null,
-      " Décision proposé": null,
-      " Commentaire ou précision DG": null
+      "Décision proposé": null,
+      "Commentaire ou précision DG": null
     }
   },
   {
@@ -879,23 +878,23 @@
     "confidence_score": null,
     "attributes": {
       "Informations personnelles": null,
-      " Nom et prénom": null,
-      " Fonction": null,
-      " Département / Service": null,
+      "Nom et prénom": null,
+      "Fonction": null,
+      "Département / Service": null,
       "Détails de la formation souhaitée": null,
-      " Thématique de la formation": null,
+      "Thématique de la formation": null,
       "Autre": null,
-      " Titre ou sujet souhaité": null,
-      " Objectif de la formation": null,
-      " Urgence du besoin": null,
-      " Type de formation souhaité": null,
+      "Titre ou sujet souhaité": null,
+      "Objectif de la formation": null,
+      "Urgence du besoin": null,
+      "Type de formation souhaité": null,
       "Période souhaitée de la formation": null,
       "Du": null,
       "Au": null,
-      " Formateur pressenti (si connu)": null,
-      " Budget estimé (si connu)": null,
+      "Formateur pressenti (si connu)": null,
+      "Budget estimé (si connu)": null,
       "Documents justificatifs": null,
-      " Commentaire complémentaire": null
+      "Commentaire complémentaire": null
     }
   },
   {
@@ -904,10 +903,10 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Demande Employeur ": null,
+      "Demande Employeur": null,
       "Données Employé": null,
       "Date Soumission": null,
-      "Motif de la demande ": null,
+      "Motif de la demande": null,
       "Traitement RH": null,
       "Commentaire": null,
       "Validation": null,
@@ -915,7 +914,6 @@
       "ID Attestation": null,
       "Date Émission": null,
       "Attestation": null,
-      "Validation ": null,
       "Attestation Signée": null
     }
   },
@@ -927,7 +925,7 @@
     "attributes": {
       "Collecte des Données": null,
       "Données Employé": null,
-      "Date ": null,
+      "Date": null,
       "Heure Arrivée Prévue": null,
       "Heure Arrivée Pointage": null,
       "Heure Départ Prévue": null,
@@ -955,7 +953,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Demande Employeur ": null,
+      "Demande Employeur": null,
       "Données Employé": null,
       "Date Soumission": null,
       "Date Demandée": null,
@@ -987,8 +985,8 @@
     "attributes": {
       "Formulaire de Création": null,
       "Titre": null,
-      "Catégorie ": null,
-      "Description ": null,
+      "Catégorie": null,
+      "Description": null,
       "Destinataires": null,
       "Pièces Jointes": null,
       "Révision": null,
@@ -1023,40 +1021,40 @@
     "confidence_score": null,
     "attributes": {
       "Préparation d’intégration": null,
-      " Nom du collaborateur": null,
-      " Téléphone": null,
-      " Email ": null,
-      " Poste": null,
-      " Type de contrat": null,
-      " Date d’entrée prévue": null,
-      " Responsable hiérarchique": null,
-      " Matériel requis": null,
-      " Accès informatiques nécessaires": null,
-      " Bureau attribué (étage, numéro)": null,
+      "Nom du collaborateur": null,
+      "Téléphone": null,
+      "Email": null,
+      "Poste": null,
+      "Type de contrat": null,
+      "Date d’entrée prévue": null,
+      "Responsable hiérarchique": null,
+      "Matériel requis": null,
+      "Accès informatiques nécessaires": null,
+      "Bureau attribué (étage, numéro)": null,
       "Accueil le premier jour": null,
-      " Briefing de bienvenue": null,
-      " Tour des locaux effectué\t": null,
-      " Remarques éventuelles": null,
-      " Présentation à l’équipe\t": null,
-      " Personnes rencontrées": null,
-      " Remise du matériel\t": null,
-      " Accès informatiques activés": null,
+      "Briefing de bienvenue": null,
+      "Tour des locaux effectué": null,
+      "Remarques éventuelles": null,
+      "Présentation à l’équipe": null,
+      "Personnes rencontrées": null,
+      "Remise du matériel": null,
+      "Accès informatiques activés": null,
       "Formation & orientation": null,
-      " Responsable des formations": null,
-      " Dates de formation prévues\t": null,
-      " Formations obligatoires": null,
-      " Matériel de formation fourni": null,
-      " Commentaires": null,
+      "Responsable des formations": null,
+      "Dates de formation prévues": null,
+      "Formations obligatoires": null,
+      "Matériel de formation fourni": null,
+      "Commentaires": null,
       "Suivi de la période d’essai": null,
-      " Compétences techniques observées": null,
-      " Intégration dans l’équipe": null,
-      " Conformité aux attentes": null,
-      " Recommandations": null,
-      " Commentaires supplémentaires": null,
+      "Compétences techniques observées": null,
+      "Intégration dans l’équipe": null,
+      "Conformité aux attentes": null,
+      "Recommandations": null,
+      "Commentaires supplémentaires": null,
       "Clôture de l’intégration": null,
-      " Évaluation finale de l’intégration": null,
-      " Prolongation ou fin de période d’essai": null,
-      " Justification": null
+      "Évaluation finale de l’intégration": null,
+      "Prolongation ou fin de période d’essai": null,
+      "Justification": null
     }
   },
   {
@@ -1071,14 +1069,14 @@
       "Nom et Prénom": null,
       "Poste": null,
       "Domicile": null,
-      "Date de départ ": null,
+      "Date de départ": null,
       "Date de Retour": null,
-      "Heure de départ  ": null,
+      "Heure de départ": null,
       "Heure de Retour": null,
       "Type destination": null,
       "Adresse": null,
-      "Pièce jointe ": null,
-      "Fond de roulement ": null,
+      "Pièce jointe": null,
+      "Fond de roulement": null,
       "Moyen de Transport": null
     }
   },
@@ -1095,20 +1093,20 @@
       "Nom et Prénom": null,
       "Poste": null,
       "Domicile": null,
-      "Date de départ ": null,
-      "Heure de départ  ": null,
+      "Date de départ": null,
+      "Heure de départ": null,
       "Date de Retour": null,
       "Heure de Retour": null,
       "Type destination": null,
       "Adresse": null,
-      "Pièce jointe ": null,
+      "Pièce jointe": null,
       "Validation Sup Hiérarchique": null,
       "Hébergement nécessaire": null,
       "Moyens de transport": null,
       "Liste outils a emporter": null,
       "Type": null,
       "Fond de roulement estimé": null,
-      "Allocation des ressources ": null,
+      "Allocation des ressources": null,
       "Budget approuvé": null,
       "Ressources allouées": null,
       "Rapport de mission": null,
@@ -1125,10 +1123,10 @@
     "attributes": {
       "Type d'autorisation": null,
       "Date de Sortie": null,
-      "Nb. heures ": null,
-      "Heure de départ ": null,
+      "Nb. heures": null,
+      "Heure de départ": null,
       "Heure de retour": null,
-      "Motif d'absence ": null
+      "Motif d'absence": null
     }
   },
   {
@@ -1141,7 +1139,7 @@
       "Employé": null,
       "Date de début": null,
       "Type Contrat": null,
-      "Poste ": null,
+      "Poste": null,
       "Département": null,
       "Responsable hiérarchique": null,
       "Matériel requis": null,
@@ -1174,16 +1172,16 @@
     "confidence_score": null,
     "attributes": {
       "Création demande de recrutement": null,
-      "Intitulé du poste ": null,
-      "Diplôme souhaitée ": null,
+      "Intitulé du poste": null,
+      "Diplôme souhaitée": null,
       "Spécialité": null,
-      "Nombre des postes souhaitées ": null,
+      "Nombre des postes souhaitées": null,
       "Date de recrutement souhaitée": null,
-      "Genre ": null,
-      "Description des taches ": null,
+      "Genre": null,
+      "Description des taches": null,
       "Cause de recrutement": null,
       "Expérience souhaitée": null,
-      "Type de contrat ": null
+      "Type de contrat": null
     }
   },
   {
@@ -1201,7 +1199,7 @@
       "Entretien(s)": null,
       "Date Entretien": null,
       "Type Entretien": null,
-      "Évaluateurs ": null,
+      "Évaluateurs": null,
       "Résultat de l'entretien": null,
       "Résultats des questionnaires": null,
       "Nom du candidat retenu": null,
@@ -1210,7 +1208,7 @@
       "Date d'embauche": null,
       "Seuil de proposition d'embauche en TND": null,
       "Proposition final d'embauche": null,
-      "Signature de contrat ": null,
+      "Signature de contrat": null,
       "Contrat": null
     }
   },
@@ -1221,26 +1219,25 @@
     "confidence_score": null,
     "attributes": {
       "Collaborateurs": null,
-      "Collaborateurs ": null,
       "Evaluation sur hierarchique": null,
-      "Connaissance de l'emploi ": null,
-      "Productivité (Qualité/Quantité de travail) ": null,
+      "Connaissance de l'emploi": null,
+      "Productivité (Qualité/Quantité de travail)": null,
       "Fiabilité": null,
-      "Collaboration ": null,
-      "Adaptabilité ": null,
-      "Initiative (fait preuve d'empressement) ": null,
-      "Service à la clientèle/fournisseurs ": null,
+      "Collaboration": null,
+      "Adaptabilité": null,
+      "Initiative (fait preuve d'empressement)": null,
+      "Service à la clientèle/fournisseurs": null,
       "Commentaire": null,
       "Evaluation RH": null,
-      "Attitudes et comportements au travail ": null,
-      "Motivation et satisfaction personnelle ": null,
-      "Environnement de travail et organisation générale ": null,
-      "Encadrement et intégration ": null,
-      "Ecart constatés ": null,
-      "Relation avec les collègues au sein du département ": null,
-      "Ambition exprimée ": null,
-      "Proposition d'amélioration ": null,
-      "Décision ": null,
+      "Attitudes et comportements au travail": null,
+      "Motivation et satisfaction personnelle": null,
+      "Environnement de travail et organisation générale": null,
+      "Encadrement et intégration": null,
+      "Ecart constatés": null,
+      "Relation avec les collègues au sein du département": null,
+      "Ambition exprimée": null,
+      "Proposition d'amélioration": null,
+      "Décision": null,
       "Décision proposé": null
     }
   },
@@ -1251,11 +1248,11 @@
     "confidence_score": null,
     "attributes": {
       "Détails de la campagne": null,
-      " Libellé": null,
-      " Type_Déclaration": null,
-      " Mois": null,
-      " Trimestre": null,
-      " Année": null
+      "Libellé": null,
+      "Type_Déclaration": null,
+      "Mois": null,
+      "Trimestre": null,
+      "Année": null
     }
   },
   {
@@ -1264,10 +1261,10 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Nom et prénom de nouveau recrue ": null,
+      "Nom et prénom de nouveau recrue": null,
       "Fonction": null,
-      "Date de recrutement ": null,
-      "Plan d'intégration ": null
+      "Date de recrutement": null,
+      "Plan d'intégration": null
     }
   },
   {
@@ -1276,22 +1273,22 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Details sur la formation ": null,
-      "Ficher de présence ": null,
+      "Details sur la formation": null,
+      "Ficher de présence": null,
       "Evaluation a Chaud": null,
-      "Compétences acquise lors de la formation ": null,
+      "Compétences acquise lors de la formation": null,
       "Evaluation sur la durée de la formation": null,
-      "Evaluation sur le contenu ": null,
+      "Evaluation sur le contenu": null,
       "Evaluation sur le support": null,
-      "Evaluation sur le formateur ": null,
-      "Evaluation sur l'apport théorique ": null,
-      "Evaluation sur l'apport pratique ": null,
+      "Evaluation sur le formateur": null,
+      "Evaluation sur l'apport théorique": null,
+      "Evaluation sur l'apport pratique": null,
       "Evaluation total": null,
       "Participeriez-vous à une autre formation organisée par cet organisme/formateur": null,
       "Explication": null,
-      "Recommandation ": null,
-      "Evaluation a froid ": null,
-      "Nom de l'évaluateur ": null,
+      "Recommandation": null,
+      "Evaluation a froid": null,
+      "Nom de l'évaluateur": null,
       "Evaluation sur la durée de formation": null,
       "Evaluation sur l'Acquisition des nouvelles pratiques/savoir faire": null,
       "Evaluation sur la Mise en application des nouvelles compétences": null,
@@ -1299,9 +1296,9 @@
       "Evaluation sur l'Efficacité à long terme": null,
       "Evaluation sur la Degré d'atteinte d'objectif fixé": null,
       "Evaluation sur l'Influence de la formation sur la satisfaction client ( interne/externe)": null,
-      "Recommandations/Remarques ": null,
+      "Recommandations/Remarques": null,
       "NB : Une formation est jugée efficace si l'évaluation final qui lui est attribuée est Satisfait ou Très satisfait.": null,
-      "Commentaires ": null
+      "Commentaires": null
     }
   },
   {
@@ -1364,9 +1361,9 @@
       "suivre le remboursement des sinistres déclarés": null,
       "Description": null,
       "PJ": null,
-      "réaliser les inventaires des immobilisations ": null,
+      "réaliser les inventaires des immobilisations": null,
       "Attachement": null,
-      "piloter les projets de construction / aménagement/ entretien  ": null
+      "piloter les projets de construction / aménagement/ entretien": null
     }
   },
   {
@@ -1420,23 +1417,22 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
-      " OF": null,
-      " Date de production": null,
-      " Date d'échéance": null,
-      " Normes de sécurité alimentaire": null,
-      " Étiquetage": null,
-      " Défauts visibles": null,
-      " Couleur du produit": null,
-      " Saveur du produit": null,
-      " Odeurs désagréables": null,
-      " Déchirures/perforations en emballage": null,
-      " Températures": null,
+      "Check List de Conformité": null,
+      "OF": null,
+      "Date de production": null,
+      "Date d'échéance": null,
+      "Normes de sécurité alimentaire": null,
+      "Étiquetage": null,
+      "Défauts visibles": null,
+      "Couleur du produit": null,
+      "Saveur du produit": null,
+      "Odeurs désagréables": null,
+      "Déchirures/perforations en emballage": null,
+      "Températures": null,
       "Conformité Globale": null,
       "Analyse": null,
-      " Analyse Approfondie": null,
-      "Validation de la conformité du produit": null,
-      " Validation de la conformité du produit": null
+      "Analyse Approfondie": null,
+      "Validation de la conformité du produit": null
     }
   },
   {
@@ -1450,7 +1446,7 @@
       "Date début": null,
       "Heure de Début": null,
       "Observations Préliminaires": null,
-      " Nettoyage Initial": null,
+      "Nettoyage Initial": null,
       "Produit de nettoyage Utilisé": null,
       "Temps de Nettoyage": null,
       "Résultats du Nettoyage": null,
@@ -1459,9 +1455,9 @@
       "Temps d'Application": null,
       "Résultats de la Décontamination": null,
       "Nettoyage Final": null,
-      "Méthode de Nettoyage Final ": null,
+      "Méthode de Nettoyage Final": null,
       "Résultats de Nettoyage Final": null,
-      " Inspection et Validation": null,
+      "Inspection et Validation": null,
       "Rapport D'inspection": null,
       "Commentaire": null
     }
@@ -1472,20 +1468,20 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
+      "Check List de Conformité": null,
       "Identification du Produit": null,
-      "Echantillon ": null,
+      "Echantillon": null,
       "Date de production": null,
       "Date d'échéance": null,
       "Normes de sécurité alimentaire": null,
       "Étiquetage": null,
-      " Défauts visibles": null,
+      "Défauts visibles": null,
       "Couleur du produit": null,
       "Saveur du produit": null,
       "Odeurs désagréables": null,
       "Déchirures ou de perforations en emballage": null,
       "Températures": null,
-      "Humidité Relative ": null,
+      "Humidité Relative": null,
       "Mesures de sécurité alimentaire": null,
       "Conformité Globale": null,
       "Analyse": null,
@@ -1499,17 +1495,17 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
+      "Check List de Conformité": null,
       "Identification Du MP": null,
-      "Fournisseur ": null,
+      "Fournisseur": null,
       "Demande d'achat": null,
-      "Echantillon ": null,
+      "Echantillon": null,
       "Date de production": null,
       "Date d'échéance": null,
       "Normes de sécurité alimentaire": null,
-      " Défauts visibles": null,
-      "Couleur ": null,
-      "Saveur ": null,
+      "Défauts visibles": null,
+      "Couleur": null,
+      "Saveur": null,
       "Odeurs désagréables": null,
       "Mesures de sécurité alimentaire": null,
       "Conformité Globale": null,
@@ -1535,13 +1531,13 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
+      "Check List de Conformité": null,
       "OF": null,
       "Date de production": null,
       "Date d'échéance": null,
       "Normes de sécurité alimentaire": null,
       "Étiquetage": null,
-      " Défauts visibles": null,
+      "Défauts visibles": null,
       "Couleur du produit": null,
       "Saveur du produit": null,
       "Odeurs désagréables": null,
@@ -1560,27 +1556,27 @@
     "confidence_score": null,
     "attributes": {
       "Création du lot": null,
-      " Référence du lot": null,
-      " Produit à fabriquer": null,
-      " Quantité planifiée": null,
-      " Date de début prévue": null,
-      " Ligne de production": null,
-      " Responsable de ligne": null,
+      "Référence du lot": null,
+      "Produit à fabriquer": null,
+      "Quantité planifiée": null,
+      "Date de début prévue": null,
+      "Ligne de production": null,
+      "Responsable de ligne": null,
       "Fabrication": null,
       "▶ Date de démarrage": null,
-      " Quantité produite": null,
-      " Quantité rejetée": null,
-      " Motif du rejet": null,
+      "Quantité produite": null,
+      "Quantité rejetée": null,
+      "Motif du rejet": null,
       "Contrôle qualité": null,
-      " Goût": null,
-      " Poids": null,
-      " Résultat final": null,
+      "Goût": null,
+      "Poids": null,
+      "Résultat final": null,
       "Logistique": null,
-      " Type d’emballage": null,
-      " Quantité emballée": null,
-      " Date d’expédition prévue": null,
-      " Transporteur": null,
-      " Bon de livraison": null
+      "Type d’emballage": null,
+      "Quantité emballée": null,
+      "Date d’expédition prévue": null,
+      "Transporteur": null,
+      "Bon de livraison": null
     }
   },
   {
@@ -1604,12 +1600,12 @@
       "Nom de l'Entreprise/Employeur": null,
       "Adresse de l'Entreprise": null,
       "Numéro de téléphone de l'Entreprise": null,
-      "Adresse e-mail de l'Entreprise ": null,
+      "Adresse e-mail de l'Entreprise": null,
       "Informations sur les Travailleurs": null,
       "Déclaration et Signature": null,
-      "Surveillance et conformité ": null,
-      "Les travailleurs respectes les conditions de permis de travail ": null,
-      "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      "Surveillance et conformité": null,
+      "Les travailleurs respectes les conditions de permis de travail": null,
+      "Les travailleurs Respectent les règlements et les lois en vigueurs": null
     }
   },
   {
@@ -1679,8 +1675,8 @@
     "confidence_score": null,
     "attributes": {
       "Niveau": null,
-      "Étudiant ": null,
-      "Module ": null,
+      "Étudiant": null,
+      "Module": null,
       "Note Projet": null,
       "Note DS": null,
       "Note Examen": null,
@@ -1695,7 +1691,7 @@
     "attributes": {
       "Soumission du sujet": null,
       "Niveau": null,
-      "Étudiant ": null,
+      "Étudiant": null,
       "Titre du sujet": null,
       "Description du sujet": null,
       "Désignation d’un encadrant": null,
@@ -1735,8 +1731,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Étudiant ": null,
-      "Module ": null,
+      "Étudiant": null,
+      "Module": null,
       "Note obtenue": null,
       "Décision": null
     }
@@ -1748,7 +1744,7 @@
     "confidence_score": null,
     "attributes": {
       "Soumission du sujet": null,
-      "Étudiant ": null,
+      "Étudiant": null,
       "Titre du sujet": null,
       "Description du sujet": null,
       "Désignation d’un encadrant": null,
@@ -1775,13 +1771,13 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
+      "Check List de Conformité": null,
       "OF": null,
       "Date de production": null,
       "Date d'échéance": null,
       "Normes de sécurité alimentaire": null,
       "Étiquetage": null,
-      " Défauts visibles": null,
+      "Défauts visibles": null,
       "Couleur du produit": null,
       "Saveur du produit": null,
       "Odeurs désagréables": null,
@@ -1804,7 +1800,7 @@
       "Date début": null,
       "Heure de Début": null,
       "Observations Préliminaires": null,
-      " Nettoyage Initial": null,
+      "Nettoyage Initial": null,
       "Produit de nettoyage Utilisé": null,
       "Temps de Nettoyage": null,
       "Résultats du Nettoyage": null,
@@ -1813,9 +1809,9 @@
       "Temps d'Application": null,
       "Résultats de la Décontamination": null,
       "Nettoyage Final": null,
-      "Méthode de Nettoyage Final ": null,
+      "Méthode de Nettoyage Final": null,
       "Résultats de Nettoyage Final": null,
-      " Inspection et Validation": null,
+      "Inspection et Validation": null,
       "Rapport D'inspection": null,
       "Commentaire": null
     }
@@ -1826,17 +1822,17 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Check List de Conformité ": null,
+      "Check List de Conformité": null,
       "Identification Du MP": null,
-      "Fournisseur ": null,
+      "Fournisseur": null,
       "Demande d'achat": null,
-      "Echantillon ": null,
+      "Echantillon": null,
       "Date de production": null,
       "Date d'échéance": null,
       "Normes de sécurité alimentaire": null,
-      " Défauts visibles": null,
-      "Couleur ": null,
-      "Saveur ": null,
+      "Défauts visibles": null,
+      "Couleur": null,
+      "Saveur": null,
       "Odeurs désagréables": null,
       "Mesures de sécurité alimentaire": null,
       "Conformité Globale": null,
@@ -1855,12 +1851,12 @@
       "Processus": null,
       "Source": null,
       "remarque": null,
-      "Support ": null,
-      "Enoncé de non-conformité \t\t\t\t\t\t\t\t\t\t\t\t": null,
-      "Correction (s) \t": null,
+      "Support": null,
+      "Enoncé de non-conformité": null,
+      "Correction (s)": null,
       "Evaluation du correction": null,
-      "Analyse des causes \t\t\t\t\t\t\t": null,
-      "Action Corrective (s) :\t": null,
+      "Analyse des causes": null,
+      "Action Corrective (s) :": null,
       "Evaluation de l'efficacité/clôture": null,
       "Risques et opportunités": null,
       "Besoin de modification SMQ": null
@@ -1874,14 +1870,14 @@
     "attributes": {
       "Identification et critère de qualité du produit": null,
       "Numéro d'identification unique du Produit": null,
-      "Classement Par Risque ": null,
-      "Classement par ancienneté ": null,
+      "Classement Par Risque": null,
+      "Classement par ancienneté": null,
       "Le produit respecte les critères de qualité de l'entreprise": null,
       "Le produit conforme au politique interne": null,
       "Validation": null,
       "Conformité Juridique": null,
-      "Conformité Financière ": null,
-      "Conformité Contrôle Qualité ": null,
+      "Conformité Financière": null,
+      "Conformité Contrôle Qualité": null,
       "Rapport": null,
       "Rapport d'inspection finale": null
     }
@@ -1909,14 +1905,14 @@
       "Mesures existantes ayant pu prévenir tel Incident": null,
       "Description de l’événement": null,
       "Conséquence": null,
-      " Photo de l'incident / accident si existe": null,
+      "Photo de l'incident / accident si existe": null,
       "Réaction d'urgence du Resp HSE": null,
       "Personne cible pour cette alerte": null,
       "Réaction médicale": null,
       "Réaction technique": null,
-      "Action Correctives provisoires ": null,
+      "Action Correctives provisoires": null,
       "Détails concernant les Causes apparents": null,
-      " Recommandations préliminaires": null,
+      "Recommandations préliminaires": null,
       "diffusion": null
     }
   },
@@ -1954,7 +1950,7 @@
       "Formation réaliser": null,
       "Date de réalisation": null,
       "Satisfaction": null,
-      "Fiche de présence ": null
+      "Fiche de présence": null
     }
   },
   {
@@ -2036,7 +2032,7 @@
       "La personne formée a progressé grâce à cette  formation ?": null,
       "La personne formée doit suivre un module  complémentaire sur le sujet ? si oui lequel": null,
       "La personne formée doit suivre un plan  d’action pour la mise en œuvre du nouveau  savoir-faire ? si oui préciser le N° d’action": null,
-      "Note générale du supérieur hiérarchique ": null
+      "Note générale du supérieur hiérarchique": null
     }
   },
   {
@@ -2046,29 +2042,29 @@
     "confidence_score": null,
     "attributes": {
       "Informations Générales sur la Mission": null,
-      " Objet de la mission": null,
-      " Motif(s) de la mission": null,
-      " Date de départ": null,
-      " Heure de départ": null,
-      " Date de retour": null,
-      " Heure de retour": null,
-      " Type de destination": null,
-      " Adresse / Lieu de la mission": null,
-      " Pièce jointe ": null,
+      "Objet de la mission": null,
+      "Motif(s) de la mission": null,
+      "Date de départ": null,
+      "Heure de départ": null,
+      "Date de retour": null,
+      "Heure de retour": null,
+      "Type de destination": null,
+      "Adresse / Lieu de la mission": null,
+      "Pièce jointe": null,
       "Logistique et Préparation de Mission": null,
-      " Hébergement nécessaire": null,
-      " Moyen de transport principal": null,
-      " Type du moyen de transport": null,
-      " A préciser": null,
-      " Fond de roulement estimé": null,
+      "Hébergement nécessaire": null,
+      "Moyen de transport principal": null,
+      "Type du moyen de transport": null,
+      "A préciser": null,
+      "Fond de roulement estimé": null,
       "Financement & Ressources": null,
-      " Budget pré-approuvé": null,
+      "Budget pré-approuvé": null,
       "Réservation Voiture": null,
-      " Ressources allouées": null,
+      "Ressources allouées": null,
       "Rapport de mission": null,
-      " Résumé des activités réalisées": null,
-      " Dépenses réelles engagées": null,
-      " Justificatifs des dépenses": null
+      "Résumé des activités réalisées": null,
+      "Dépenses réelles engagées": null,
+      "Justificatifs des dépenses": null
     }
   },
   {
@@ -2078,7 +2074,7 @@
     "confidence_score": null,
     "attributes": {
       "Information sur le chantier": null,
-      "Nom du chantier ": null,
+      "Nom du chantier": null,
       "Lieu du chantier": null,
       "Zone concernée": null,
       "Date et heure de début prévue": null,
@@ -2097,11 +2093,11 @@
       "Équipements de protection individuelle (obligatoire)": null,
       "Autorisations spécifiques": null,
       "Déclaration et Signature": null,
-      "Surveillance et conformité ": null,
+      "Surveillance et conformité": null,
       "Date réel des Travaux terminés": null,
       "État du chantier": null,
-      "Les travailleurs respectes les conditions de permis de travail ": null,
-      "Les travailleurs Respectent les règlements et les lois en vigueurs ": null
+      "Les travailleurs respectes les conditions de permis de travail": null,
+      "Les travailleurs Respectent les règlements et les lois en vigueurs": null
     }
   },
   {
@@ -2110,16 +2106,16 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "SCG // Sous-traitant ": null,
-      "Nbre des travailleurs ": null,
+      "SCG // Sous-traitant": null,
+      "Nbre des travailleurs": null,
       "Date et heure": null,
       "Site": null,
-      "Description de l’activité ": null,
-      "Précisée ": null,
-      "Equipements & matériels ": null,
+      "Description de l’activité": null,
+      "Précisée": null,
+      "Equipements & matériels": null,
       "Les mesures de contrôle": null,
       "Equipe de premiers secours": null,
-      "Equipe de lutte contre l’incendie ": null,
+      "Equipe de lutte contre l’incendie": null,
       "Numéro d'urgence": null,
       "Responsable HSE": null,
       "Date": null,
@@ -2191,7 +2187,7 @@
       "Mode de communication recommandé": null,
       "Pièce jointe": null,
       "Traitement": null,
-      "Date d'acquittement ": null,
+      "Date d'acquittement": null,
       "Action faite": null
     }
   },
@@ -2233,7 +2229,7 @@
       "donnée utilisateur": null,
       "nom": null,
       "prénom": null,
-      "motif de la demande ": null,
+      "motif de la demande": null,
       "détail": null
     }
   },
@@ -2349,27 +2345,27 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Informations générales ": null,
-      "Numéro de la demande ": null,
-      "Date de la demande ": null,
-      "Demandeur ": null,
-      "Département ": null,
-      "Détails de l’achat ": null,
-      "Type d’achat ": null,
-      "Désignation de l’article ": null,
-      "Description détaillée ": null,
-      "Quantité ": null,
-      "Urgence ": null,
-      "Informations financières ": null,
-      "Budget estimé ": null,
+      "Informations générales": null,
+      "Numéro de la demande": null,
+      "Date de la demande": null,
+      "Demandeur": null,
+      "Département": null,
+      "Détails de l’achat": null,
+      "Type d’achat": null,
+      "Désignation de l’article": null,
+      "Description détaillée": null,
+      "Quantité": null,
+      "Urgence": null,
+      "Informations financières": null,
+      "Budget estimé": null,
       "Fournisseur proposé": null,
-      "Devis joint ": null,
+      "Devis joint": null,
       "Pièces jointes": null,
-      "CONTRÔLE CONFORMITÉ ": null,
-      "Type de conformité ": null,
-      "Résultat du contrôle ": null,
-      "Risque identifié ": null,
-      "bon de commande ": null,
+      "CONTRÔLE CONFORMITÉ": null,
+      "Type de conformité": null,
+      "Résultat du contrôle": null,
+      "Risque identifié": null,
+      "bon de commande": null,
       "nombre": null
     }
   },
@@ -2380,39 +2376,39 @@
     "confidence_score": null,
     "attributes": {
       "création de la commande": null,
-      "Référence commande ": null,
-      "Client ": null,
-      "Type de produit ": null,
-      "Traitement demandé ": null,
-      "Quantité ": null,
+      "Référence commande": null,
+      "Client": null,
+      "Type de produit": null,
+      "Traitement demandé": null,
+      "Quantité": null,
       "Délai de livraison ⏱": null,
-      "bon de commande ": null,
-      "Validation commerciale ": null,
-      "Commentaire / Remarques ": null,
+      "bon de commande": null,
+      "Validation commerciale": null,
+      "Commentaire / Remarques": null,
       "Validation technique et planification": null,
-      "Etat de stock ": null,
-      "Disponibilité Machine ": null,
+      "Etat de stock": null,
+      "Disponibilité Machine": null,
       "Disponibilité matière": null,
       "Date de début prévue ▶": null,
       "Date de fin prévue ⏹": null,
       "Fabrication & Contrôle en production": null,
-      "Machine utilisée ": null,
-      "Etat actuel ": null,
-      "Date début fabrication ": null,
-      "Date fin fabrication ": null,
-      "Quantité produite ": null,
+      "Machine utilisée": null,
+      "Etat actuel": null,
+      "Date début fabrication": null,
+      "Date fin fabrication": null,
+      "Quantité produite": null,
       "Contrôle qualité final": null,
       "Résultat contrôle final": null,
       "Observation qualité": null,
       "expédition": null,
-      "Numéro de colis ": null,
-      "Transporteur ": null,
-      "Bon de livraison joint ": null,
+      "Numéro de colis": null,
+      "Transporteur": null,
+      "Bon de livraison joint": null,
       "Facturation & clôture": null,
-      "Montant total ": null,
-      "Mode de paiement ": null,
-      "Numéro de facture ": null,
-      "Facture ": null
+      "Montant total": null,
+      "Mode de paiement": null,
+      "Numéro de facture": null,
+      "Facture": null
     }
   },
   {
@@ -2422,33 +2418,33 @@
     "confidence_score": null,
     "attributes": {
       "Création de la demande": null,
-      " Département demandeur": null,
-      " Type d’achat": null,
-      " Quantité demandée": null,
-      " Délai souhaité": null,
-      " Urgence": null,
-      " Motif du besoin": null,
+      "Département demandeur": null,
+      "Type d’achat": null,
+      "Quantité demandée": null,
+      "Délai souhaité": null,
+      "Urgence": null,
+      "Motif du besoin": null,
       "Validation hiérarchique": null,
-      " Commentaire": null,
+      "Commentaire": null,
       "Traitement par le service achat": null,
-      " Fournisseur sélectionné": null,
-      " Montant estimé": null,
-      " Délai fournisseur": null,
-      " Bon de commande": null,
+      "Fournisseur sélectionné": null,
+      "Montant estimé": null,
+      "Délai fournisseur": null,
+      "Bon de commande": null,
       "Validation budgétaire": null,
-      " Mode de paiement": null,
+      "Mode de paiement": null,
       "Réception": null,
-      " Date de réception": null,
-      " Quantité reçue": null,
-      " Statut réception": null,
-      " Rapport réception": null,
+      "Date de réception": null,
+      "Quantité reçue": null,
+      "Statut réception": null,
+      "Rapport réception": null,
       "Vérification facture et clôture": null,
-      " Numéro facture fournisseur": null,
-      " Montant facture": null,
-      " Date facture": null,
-      " Statut paiement": null,
-      " Date paiement": null,
-      " Bon de réception associé": null
+      "Numéro facture fournisseur": null,
+      "Montant facture": null,
+      "Date facture": null,
+      "Statut paiement": null,
+      "Date paiement": null,
+      "Bon de réception associé": null
     }
   },
   {
@@ -2458,7 +2454,7 @@
     "confidence_score": null,
     "attributes": {
       "Nom": null,
-      "Prénom ": null,
+      "Prénom": null,
       "Contrat concerné": null,
       "N° Tél": null,
       "Type réclamation": null,
@@ -2514,13 +2510,13 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Client Name ": null,
-      "Opportunity Description ": null,
-      "Estimated Value ": null,
-      "Urgency Level ": null,
+      "Client Name": null,
+      "Opportunity Description": null,
+      "Estimated Value": null,
+      "Urgency Level": null,
       "Strategic Importance": null,
-      "Main Risk ": null,
-      "Decision Deadline ": null
+      "Main Risk": null,
+      "Decision Deadline": null
     }
   },
   {
@@ -2544,19 +2540,19 @@
     "confidence_score": null,
     "attributes": {
       "Matricule": null,
-      "Nom et prénom ": null,
+      "Nom et prénom": null,
       "Poste/ fonction": null,
-      "Téléphone ": null,
+      "Téléphone": null,
       "N° CNSS": null,
       "Date de 1er déclaration CNSS": null,
       "N° RIB": null,
-      "Etat ": null,
+      "Etat": null,
       "Adresse": null,
-      "Diplôme ": null,
-      "Nom du diplôme et spécialité ": null,
+      "Diplôme": null,
+      "Nom du diplôme et spécialité": null,
       "Filiale": null,
-      "Rattachement Hiérarchique ": null,
-      "Documents en Pièce joint ": null
+      "Rattachement Hiérarchique": null,
+      "Documents en Pièce joint": null
     }
   },
   {
@@ -2589,7 +2585,7 @@
     "confidence_score": null,
     "attributes": {
       "identif matériel endommagé": null,
-      "description du dommage ": null,
+      "description du dommage": null,
       "valeur estimée": null,
       "gravité": null
     }
@@ -2613,7 +2609,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "nbre de victimes ": null,
+      "nbre de victimes": null,
       "type victime": null,
       "gravité": null
     }
@@ -2651,8 +2647,8 @@
     "confidence_score": null,
     "attributes": {
       "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t": null,
-      "Date prévue \t\t": null,
+      "Action/ Décision": null,
+      "Date prévue": null,
       "Responsable": null
     }
   },
@@ -2664,7 +2660,7 @@
     "attributes": {
       "Résultat (%)": null,
       "Responsable": null,
-      "Date réalisée \t\t": null
+      "Date réalisée": null
     }
   },
   {
@@ -2684,7 +2680,7 @@
     "confidence_score": null,
     "attributes": {
       "N°": null,
-      "Action/ Décision \t\t\t\t\t\t\t\t\t\t\t\t": null,
+      "Action/ Décision": null,
       "Responsable d'action": null
     }
   },
@@ -2709,7 +2705,7 @@
     "confidence_score": null,
     "attributes": {
       "Tâche": null,
-      "Niveau d'importance ": null
+      "Niveau d'importance": null
     }
   },
   {
@@ -2719,23 +2715,23 @@
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
-      " Nom et prénom": null,
-      "Fonction ": null,
-      " Évaluation": null,
-      "Satisfait     ": null,
-      "Moyennement satisfait   ": null,
-      "insatisfait ": null,
-      "Les conditions de travail ": null,
-      "Les ressources disponibles ": null,
-      "La charge de travail ": null,
-      " La formation du personnel": null,
+      "Nom et prénom": null,
+      "Fonction": null,
+      "Évaluation": null,
+      "Satisfait": null,
+      "Moyennement satisfait": null,
+      "insatisfait": null,
+      "Les conditions de travail": null,
+      "Les ressources disponibles": null,
+      "La charge de travail": null,
+      "La formation du personnel": null,
       "La communication avec Service Client": null,
       "La communication avec Service achat": null,
       "La communication avec chef secteur": null,
       "La connaissance en matière sécurité de travail": null,
-      " La culture QHSE": null,
-      "Degré de satisfaction ": null,
-      "Votre degré de satisfaction général ": null,
+      "La culture QHSE": null,
+      "Degré de satisfaction": null,
+      "Votre degré de satisfaction général": null,
       "Observation/proposition": null
     }
   },
@@ -2745,7 +2741,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Tache": null
+      "Tache": null
     }
   },
   {
@@ -2765,15 +2761,15 @@
     "confidence_score": null,
     "attributes": {
       "Information sur l'employé": null,
-      "Date de recrutement ": null,
+      "Date de recrutement": null,
       "Ancienneté": null,
-      "Date Début contrat ": null,
-      "Date Fin contrat ": null,
-      "Salaire net actuel ": null,
-      "Catégorie ": null,
+      "Date Début contrat": null,
+      "Date Fin contrat": null,
+      "Salaire net actuel": null,
+      "Catégorie": null,
       "Echelon": null,
       "Contrat": null,
-      "Lettre de démission (en cas de démission) et PV de passation ": null
+      "Lettre de démission (en cas de démission) et PV de passation": null
     }
   },
   {
@@ -2795,7 +2791,7 @@
       "Nom et prénom": null,
       "Diplome": null,
       "Etat": null,
-      "Documents en pièces joint ": null
+      "Documents en pièces joint": null
     }
   },
   {
@@ -2804,16 +2800,16 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Référence ": null,
-      "Libellé ": null,
+      "Référence": null,
+      "Libellé": null,
       "Produit": null,
       "Catégories de produits": null,
-      "Quantités ": null,
-      "Disponibilité ": null,
+      "Quantités": null,
+      "Disponibilité": null,
       "Description": null,
       "Conditions de Conservation": null,
       "Température": null,
-      " Humidité Relative": null,
+      "Humidité Relative": null,
       "Ventilation": null
     }
   },
@@ -2823,7 +2819,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Identification ": null,
+      "Identification": null,
       "Zone et Equipement": null,
       "Analyse des Dangers (HACCP)": null,
       "Identification des Dangers": null,
@@ -2851,7 +2847,7 @@
       "Date de Contrôle": null,
       "Identification du Produit": null,
       "Date de production": null,
-      "Date d'échéance ": null,
+      "Date d'échéance": null,
       "Respect des normes de sécurité alimentaire": null,
       "Étiquetage contient la date de production et la date de péremption": null,
       "Absence de défauts visibles": null,
@@ -2862,7 +2858,7 @@
       "Respect des températures spécifiées": null,
       "Respect des niveaux d'humidité recommandés": null,
       "Personnel formé aux bonnes pratiques de manipulation et de stockage": null,
-      " Respect des mesures de sécurité alimentaire": null
+      "Respect des mesures de sécurité alimentaire": null
     }
   },
   {
@@ -2871,16 +2867,16 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Libellé": null,
-      " Matricule Fiscal": null,
-      " Type": null,
-      " Adresse": null,
-      " Ville": null,
-      " Pays": null,
-      " Site Web": null,
-      " Description": null,
-      " Nom et prénom du contact": null,
-      " Mail du contact": null
+      "Libellé": null,
+      "Matricule Fiscal": null,
+      "Type": null,
+      "Adresse": null,
+      "Ville": null,
+      "Pays": null,
+      "Site Web": null,
+      "Description": null,
+      "Nom et prénom du contact": null,
+      "Mail du contact": null
     }
   },
   {
@@ -2889,13 +2885,13 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Client": null,
-      " Date Commande": null,
-      " Date Livraison Demandée ": null,
-      " Liste des Produits": null,
-      " Bon de Commande": null,
+      "Client": null,
+      "Date Commande": null,
+      "Date Livraison Demandée": null,
+      "Liste des Produits": null,
+      "Bon de Commande": null,
       "Etat": null,
-      " Liste des OF": null
+      "Liste des OF": null
     }
   },
   {
@@ -2904,8 +2900,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Produit": null,
-      " Quantité": null
+      "Produit": null,
+      "Quantité": null
     }
   },
   {
@@ -2915,11 +2911,11 @@
     "confidence_score": null,
     "attributes": {
       "Révision": null,
-      "Pièce Jointe ": null,
-      "Date création ": null,
+      "Pièce Jointe": null,
+      "Date création": null,
       "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
+      "Vérifiée par": null,
+      "Approuvée par": null
     }
   },
   {
@@ -2928,9 +2924,9 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
-      "Détail ": null,
+      "Désignation": null,
+      "Référence": null,
+      "Détail": null,
       "Procédure liée": null
     }
   },
@@ -2941,11 +2937,11 @@
     "confidence_score": null,
     "attributes": {
       "Révision": null,
-      "Pièce jointe ": null,
+      "Pièce jointe": null,
       "Date de création": null,
       "Crée par": null,
-      " Vérifiée par": null,
-      " Approuvée par": null
+      "Vérifiée par": null,
+      "Approuvée par": null
     }
   },
   {
@@ -2954,9 +2950,9 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
-      "Détail ": null
+      "Désignation": null,
+      "Référence": null,
+      "Détail": null
     }
   },
   {
@@ -2965,10 +2961,10 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Désignation ": null,
-      "Référence ": null,
-      "Processus liée ": null,
-      "Détail ": null
+      "Désignation": null,
+      "Référence": null,
+      "Processus liée": null,
+      "Détail": null
     }
   },
   {
@@ -3024,8 +3020,8 @@
       "Niveau Hiérarchique": null,
       "Date Embauche": null,
       "Mail": null,
-      "Téléphone ": null,
-      "Adresse ": null
+      "Téléphone": null,
+      "Adresse": null
     }
   },
   {
@@ -3036,36 +3032,34 @@
     "attributes": {
       "IDENTITÉ DU CANDIDAT": null,
       "Nom et prénom": null,
-      " Date de naissance": null,
-      " Lieu de naissance": null,
-      " CIN N°": null,
-      " Délivrée le": null,
-      " À": null,
+      "Date de naissance": null,
+      "Lieu de naissance": null,
+      "CIN N°": null,
+      "Délivrée le": null,
+      "À": null,
       "Matricule CNSS": null,
-      " État civil": null,
-      " Nombre d’enfant": null,
-      " Adresse": null,
-      " Téléphone": null,
-      " Email ": null,
+      "État civil": null,
+      "Nombre d’enfant": null,
+      "Adresse": null,
+      "Téléphone": null,
+      "Email": null,
       "FORMATION ACADÉMIQUE": null,
-      " FORMATION ACADÉMIQUE": null,
-      "RENSEIGNEMENTS PROFESSIONNELS ": null,
-      " RENSEIGNEMENTS PROFESSIONNELS": null,
+      "RENSEIGNEMENTS PROFESSIONNELS": null,
       "AUTRES CONNAISSANCES": null,
-      " Logiciels maîtrisés": null,
-      " Langues écrites": null,
-      " Langues parlées": null,
+      "Logiciels maîtrisés": null,
+      "Langues écrites": null,
+      "Langues parlées": null,
       "PERMIS DE CONDUIRE": null,
-      " Avez-vous un permis de conduire ": null,
-      " Catégorie": null,
+      "Avez-vous un permis de conduire": null,
+      "Catégorie": null,
       "POSTE SOUHAITÉ": null,
-      " Quel poste prétendez-vous ?": null,
-      " Salaire désiré net (TND)": null,
+      "Quel poste prétendez-vous ?": null,
+      "Salaire désiré net (TND)": null,
       "PIÈCES JOINTES": null,
-      " Photocopie de la carte d’identité": null,
-      " Extrait de naissance": null,
-      " Photo d’identité": null,
-      " Photocopie des diplômes et certificats de scolarité": null,
+      "Photocopie de la carte d’identité": null,
+      "Extrait de naissance": null,
+      "Photo d’identité": null,
+      "Photocopie des diplômes et certificats de scolarité": null,
       "CV": null,
       "Lettre de Motivation": null
     }
@@ -3095,16 +3089,16 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Référence ": null,
-      "Libellé ": null,
+      "Référence": null,
+      "Libellé": null,
       "Produit": null,
       "Catégories de produits": null,
-      "Quantités ": null,
-      "Disponibilité ": null,
+      "Quantités": null,
+      "Disponibilité": null,
       "Description": null,
       "Conditions de Conservation": null,
       "Température": null,
-      " Humidité Relative": null,
+      "Humidité Relative": null,
       "Ventilation": null
     }
   },
@@ -3115,29 +3109,29 @@
     "confidence_score": null,
     "attributes": {
       "Informations générales": null,
-      " Nom et prénom": null,
-      " Intitulé de la formation\t": null,
-      " Date de la formation\t": null,
-      " Formateur": null,
-      " Département": null,
-      " Contenu de la formation": null,
-      " Les objectifs ont-ils été clairement définis ?": null,
-      " Les contenus étaient-ils adaptés à vos attentes ?": null,
-      " Le rythme et la durée étaient-ils appropriés ?": null,
-      " Le support utilisé était-il clair et pertinent ?": null,
-      " Le formateur maîtrisait-il son sujet ?\t": null,
-      " Sa pédagogie était-elle efficace ?": null,
-      " Son animation a-t-elle suscité l’intérêt du groupe ?": null,
-      " Organisation & logistique": null,
-      " L’organisation générale était-elle satisfaisante ?": null,
-      " Les conditions matérielles étaient-elles adéquates ?\t": null,
-      " Commentaires & suggestions": null,
-      " Quels sont les points forts de la formation ?": null,
-      " Quelles améliorations proposez-vous ?\t": null,
-      " Souhaitez-vous d'autres formations sur des sujets liés ?\t": null,
+      "Nom et prénom": null,
+      "Intitulé de la formation": null,
+      "Date de la formation": null,
+      "Formateur": null,
+      "Département": null,
+      "Contenu de la formation": null,
+      "Les objectifs ont-ils été clairement définis ?": null,
+      "Les contenus étaient-ils adaptés à vos attentes ?": null,
+      "Le rythme et la durée étaient-ils appropriés ?": null,
+      "Le support utilisé était-il clair et pertinent ?": null,
+      "Le formateur maîtrisait-il son sujet ?": null,
+      "Sa pédagogie était-elle efficace ?": null,
+      "Son animation a-t-elle suscité l’intérêt du groupe ?": null,
+      "Organisation & logistique": null,
+      "L’organisation générale était-elle satisfaisante ?": null,
+      "Les conditions matérielles étaient-elles adéquates ?": null,
+      "Commentaires & suggestions": null,
+      "Quels sont les points forts de la formation ?": null,
+      "Quelles améliorations proposez-vous ?": null,
+      "Souhaitez-vous d'autres formations sur des sujets liés ?": null,
       "Si oui, les quelles ?": null,
-      " Note générale": null,
-      " Quelle note globale attribuez-vous à cette formation ?": null
+      "Note générale": null,
+      "Quelle note globale attribuez-vous à cette formation ?": null
     }
   },
   {
@@ -3146,15 +3140,15 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Code Produit": null,
-      " Nom du Produit": null,
-      " Famille": null,
-      " Forme": null,
-      " Image du Produit": null,
-      " Spécification technique": null,
-      " Critères de Conservation": null,
-      " Température min": null,
-      " Température max": null
+      "Code Produit": null,
+      "Nom du Produit": null,
+      "Famille": null,
+      "Forme": null,
+      "Image du Produit": null,
+      "Spécification technique": null,
+      "Critères de Conservation": null,
+      "Température min": null,
+      "Température max": null
     }
   },
   {
@@ -3164,11 +3158,11 @@
     "confidence_score": null,
     "attributes": {
       "Commande": null,
-      " Produit concerné": null,
-      " Matière Première": null,
-      " Quantité": null,
+      "Produit concerné": null,
+      "Matière Première": null,
+      "Quantité": null,
       "Unité": null,
-      " Contrôles effectués": null
+      "Contrôles effectués": null
     }
   },
   {
@@ -3308,13 +3302,13 @@
       "Code": null,
       "Nom": null,
       "Prénom": null,
-      "Poste ": null,
+      "Poste": null,
       "Département": null,
       "Date Embauche": null,
       "Type_Contrat": null,
       "Mail": null,
-      "Téléphone ": null,
-      "Adresse ": null
+      "Téléphone": null,
+      "Adresse": null
     }
   },
   {
@@ -3324,13 +3318,13 @@
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
-      "Poste ": null,
+      "Poste": null,
       "Département": null,
       "Date Embauche": null,
       "Type_Contrat": null,
       "Mail": null,
-      "Téléphone ": null,
-      "Adresse ": null
+      "Téléphone": null,
+      "Adresse": null
     }
   },
   {
@@ -3341,24 +3335,24 @@
     "attributes": {
       "Votre avis est précieux pour nous aider à améliorer nos services. Merci de répondre à ce questionnaire": null,
       "Informations générales": null,
-      " Vous êtes :": null,
+      "Vous êtes :": null,
       "Évaluation des services": null,
-      " Espaces de travail": null,
-      " La qualité des bureaux/salles de réunion répond à vos attentes ?": null,
-      " Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels ?": null,
-      " Propreté et entretien": null,
-      " Les espaces sont propres et bien entretenus ?": null,
-      " Accueil et assistance": null,
-      " Le personnel est disponible et accueillant ?": null,
-      " Les réponses à vos demandes sont rapides et efficaces ?": null,
+      "Espaces de travail": null,
+      "La qualité des bureaux/salles de réunion répond à vos attentes ?": null,
+      "Les équipements (mobilier, connexion Internet, vidéoprojecteur) sont adaptés et fonctionnels ?": null,
+      "Propreté et entretien": null,
+      "Les espaces sont propres et bien entretenus ?": null,
+      "Accueil et assistance": null,
+      "Le personnel est disponible et accueillant ?": null,
+      "Les réponses à vos demandes sont rapides et efficaces ?": null,
       "Évaluation des événements": null,
-      " La qualité des événements/conférences organisés est satisfaisante ?": null,
-      " L’organisation logistique des événements est efficace ?": null,
+      "La qualité des événements/conférences organisés est satisfaisante ?": null,
+      "L’organisation logistique des événements est efficace ?": null,
       "Satisfaction globale": null,
-      " Quel est votre degré de satisfaction globale ?": null,
+      "Quel est votre degré de satisfaction globale ?": null,
       "Suggestions et commentaires": null,
-      " Quels sont, selon vous, les points forts du centre d'affaires ?": null,
-      " Quels axes d'amélioration suggérez-vous ?": null,
+      "Quels sont, selon vous, les points forts du centre d'affaires ?": null,
+      "Quels axes d'amélioration suggérez-vous ?": null,
       "file": null
     }
   },
@@ -3371,7 +3365,7 @@
       "Nom et prénom": null,
       "Email": null,
       "Téléphone": null,
-      "Organisation/Entreprise\t": null,
+      "Organisation/Entreprise": null,
       "Rôle dans l'événement": null
     }
   },
@@ -3381,16 +3375,16 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Nom de l’événement": null,
-      " Type": null,
-      " Date Début": null,
-      " Date Fin": null,
-      " Lieu": null,
-      " Description de l'événement": null,
-      " Statut": null,
-      " Budget Prévu": null,
-      " Budget Réel": null,
-      " Etat": null
+      "Nom de l’événement": null,
+      "Type": null,
+      "Date Début": null,
+      "Date Fin": null,
+      "Lieu": null,
+      "Description de l'événement": null,
+      "Statut": null,
+      "Budget Prévu": null,
+      "Budget Réel": null,
+      "Etat": null
     }
   },
   {
@@ -3400,11 +3394,11 @@
     "confidence_score": null,
     "attributes": {
       "Veuillez remplir le formulaire ci-dessous avec vos informations personnelles. Ces données nous permettront d'assurer une organisation fluide de l'événement, de vous contacter si nécessaire, et de vous envoyer les documents ou communications en lien avec votre participation.": null,
-      " Nom et Prénom": null,
-      " Téléphone": null,
-      " Email": null,
-      " Organisation": null,
-      " Rôle dans Événement": null
+      "Nom et Prénom": null,
+      "Téléphone": null,
+      "Email": null,
+      "Organisation": null,
+      "Rôle dans Événement": null
     }
   },
   {
@@ -3413,10 +3407,10 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Nom Salle": null,
-      " Capacité": null,
-      " Équipements Disponibles": null,
-      " Statut Disponibilité": null
+      "Nom Salle": null,
+      "Capacité": null,
+      "Équipements Disponibles": null,
+      "Statut Disponibilité": null
     }
   },
   {
@@ -3484,7 +3478,7 @@
       "Révision financière": null,
       "Budget disponible ?": null,
       "Montant validé": null,
-      "Conditions de paiement ": null,
+      "Conditions de paiement": null,
       "Archivage & Signature": null,
       "Contrat signé": null,
       "Date de signature": null,
@@ -3562,7 +3556,7 @@
       "Révision financière": null,
       "Budget disponible ?": null,
       "Montant validé": null,
-      "Conditions de paiement ": null,
+      "Conditions de paiement": null,
       "Archivage & Signature": null,
       "Contrat signé": null,
       "Date de signature": null,
@@ -3691,7 +3685,7 @@
     "attributes": {
       "Client": null,
       "Date Commande": null,
-      "Date Livraison Demandée ": null,
+      "Date Livraison Demandée": null,
       "Liste des Produits": null,
       "Commande": null,
       "Description": null,
@@ -3726,7 +3720,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Référence ": null,
+      "Référence": null,
       "Nom": null,
       "DCI": null,
       "Produit": null,
@@ -3757,7 +3751,7 @@
     "attributes": {
       "Client": null,
       "Date Commande": null,
-      "Date Livraison Demandée ": null,
+      "Date Livraison Demandée": null,
       "Liste des Produits": null,
       "Commande": null,
       "Description": null,
@@ -3782,7 +3776,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Référence ": null,
+      "Référence": null,
       "Nom": null,
       "DCI": null,
       "Produit": null,
@@ -3800,7 +3794,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      "Identification ": null,
+      "Identification": null,
       "Zone et Equipement": null,
       "Analyse des Dangers (HACCP)": null,
       "Identification des Dangers": null,
@@ -3837,23 +3831,23 @@
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
-      " Nom et prénom": null,
-      "Fonction ": null,
-      " Évaluation": null,
-      "Satisfait     ": null,
-      "Moyennement satisfait   ": null,
-      "insatisfait ": null,
-      "Les conditions de travail ": null,
-      "Les ressources disponibles ": null,
-      "La charge de travail ": null,
-      " La formation du personnel": null,
+      "Nom et prénom": null,
+      "Fonction": null,
+      "Évaluation": null,
+      "Satisfait": null,
+      "Moyennement satisfait": null,
+      "insatisfait": null,
+      "Les conditions de travail": null,
+      "Les ressources disponibles": null,
+      "La charge de travail": null,
+      "La formation du personnel": null,
       "La communication avec Service Client": null,
       "La communication avec Service achat": null,
       "La communication avec chef secteur": null,
       "La connaissance en matière sécurité de travail": null,
-      " La culture QHSE": null,
-      "Degré de satisfaction ": null,
-      "Votre degré de satisfaction général ": null,
+      "La culture QHSE": null,
+      "Degré de satisfaction": null,
+      "Votre degré de satisfaction général": null,
       "Observation/proposition": null
     }
   },
@@ -3864,23 +3858,23 @@
     "confidence_score": null,
     "attributes": {
       "Date enquête": null,
-      " Nom et prénom": null,
-      "Fonction ": null,
-      " Évaluation": null,
-      "Satisfait     ": null,
-      "Moyennement satisfait   ": null,
-      "insatisfait ": null,
-      "Les conditions de travail ": null,
-      "Les ressources disponibles ": null,
-      "La charge de travail ": null,
-      " La formation du personnel": null,
+      "Nom et prénom": null,
+      "Fonction": null,
+      "Évaluation": null,
+      "Satisfait": null,
+      "Moyennement satisfait": null,
+      "insatisfait": null,
+      "Les conditions de travail": null,
+      "Les ressources disponibles": null,
+      "La charge de travail": null,
+      "La formation du personnel": null,
       "La communication avec Service Client": null,
       "La communication avec Service achat": null,
       "La communication avec chef secteur": null,
       "La connaissance en matière sécurité de travail": null,
-      " La culture QHSE": null,
-      "Degré de satisfaction ": null,
-      "Votre degré de satisfaction général ": null,
+      "La culture QHSE": null,
+      "Degré de satisfaction": null,
+      "Votre degré de satisfaction général": null,
       "Observation/proposition": null
     }
   },
@@ -3901,14 +3895,14 @@
     "confidence_score": null,
     "attributes": {
       "Nom et prénom": null,
-      "Poste ": null,
+      "Poste": null,
       "Département": null,
       "Date Embauche": null,
       "Type Contrat": null,
       "Solde Congé": null,
       "Mail": null,
-      "Téléphone ": null,
-      "Adresse ": null
+      "Téléphone": null,
+      "Adresse": null
     }
   },
   {
@@ -3964,11 +3958,11 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Année": null,
-      " Durée": null,
-      " FORMATION": null,
-      " Établissement": null,
-      " Résultats obtenus": null
+      "Année": null,
+      "Durée": null,
+      "FORMATION": null,
+      "Établissement": null,
+      "Résultats obtenus": null
     }
   },
   {
@@ -3977,12 +3971,12 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " De": null,
-      " À": null,
-      " Entreprise": null,
-      " Poste": null,
-      " Salaire brut": null,
-      " Motif de départ": null
+      "De": null,
+      "À": null,
+      "Entreprise": null,
+      "Poste": null,
+      "Salaire brut": null,
+      "Motif de départ": null
     }
   },
   {
@@ -4001,7 +3995,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Langue": null,
+      "Langue": null,
       "Niveau": null
     }
   },
@@ -4011,7 +4005,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Langue": null,
+      "Langue": null,
       "Niveau": null
     }
   },
@@ -4021,7 +4015,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Compétences spécifiques souhaitées": null
+      "Compétences spécifiques souhaitées": null
     }
   },
   {
@@ -4030,8 +4024,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Évaluation comportementale": null,
-      " Note": null
+      "Évaluation comportementale": null,
+      "Note": null
     }
   },
   {
@@ -4040,7 +4034,7 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Date souhaitée": null
+      "Date souhaitée": null
     }
   },
   {
@@ -4049,8 +4043,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " De": null,
-      " A": null
+      "De": null,
+      "A": null
     }
   },
   {
@@ -4080,7 +4074,7 @@
       "Formation réaliser": null,
       "Date de réalisation": null,
       "Satisfaction": null,
-      "Fiche de présence ": null
+      "Fiche de présence": null
     }
   },
   {
@@ -4091,7 +4085,7 @@
     "attributes": {
       "Organisme de formation": null,
       "Thématique": null,
-      "Matricule fiscale ": null,
+      "Matricule fiscale": null,
       "Adresse": null,
       "Email": null,
       "Nom Formateur": null,
@@ -4226,7 +4220,7 @@
     "attributes": {
       "Nom": null,
       "Prénom": null,
-      "Contrat Concernée ": null,
+      "Contrat Concernée": null,
       "N° Tél": null,
       "Type de réclamation": null,
       "Objet": null,
@@ -4305,7 +4299,7 @@
       "Besoin principal observé": null,
       "Solution via Lunflow": null,
       "Solution via App spécifique": null,
-      "Arguments clés ": null,
+      "Arguments clés": null,
       "Valeur ajoutée proposée": null
     }
   },
@@ -4315,8 +4309,8 @@
     "email_id": null,
     "confidence_score": null,
     "attributes": {
-      " Produit": null,
-      " Quantité": null
+      "Produit": null,
+      "Quantité": null
     }
   },
   {

@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,58 +46,73 @@ class QueryRequest(BaseModel):
     email_content: Optional[str]
 
 
+def chunk_json_dataset(data, chunk_size=5):
+    """Chunk JSON dataset by grouping entries together for semantic retrieval."""
+    chunks = []
+    if not isinstance(data, list):
+        data = [data]
+
+    for i in range(0, len(data), chunk_size):
+        chunk_entries = data[i:i+chunk_size]
+        chunk_text = ""
+        for entry in chunk_entries:
+            if isinstance(entry, dict) and "input_email" in entry and "output" in entry:
+                output = entry.get("output", {})
+                workflow_label = output.get("workflow_label", output.get("label", "unknown"))
+                chunk_text += f"Workflow: {workflow_label}\n"
+                chunk_text += f"Email sample: {entry['input_email'][:300]}\n"
+                chunk_text += "---\n"
+        if chunk_text:
+            chunks.append(chunk_text)
+
+    return chunks
+
+
 @app.post("/initialize")
 async def initialize():
     """Initialize the RAG system by loading document and creating embeddings"""
     global embedding_model, client, collection, document_text, chunks, embeddings
-    
+
     try:
         # Load embedding model
-        # Chargement du modèle de plongement (embedding) pour vectoriser le texte
         embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-        
+
         # Load document
-        # Chargement du corpus depuis le fichier JSON
         document_text = json.load(open("dataset_telecom.json", "r", encoding="utf-8"))
-        
-        # Chunk the text
-        # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots
-        chunks = chunk_text(str(document_text), 500)
-        
+
+        # Chunk the text - use JSON-aware chunking that preserves structure
+        chunks = chunk_json_dataset(document_text, chunk_size=5)
+
         # Create embeddings
-        # Conversion des morceaux de texte en vecteurs
         embeddings = embedding_model.encode(chunks)
-        
-        # Définition du répertoire pour la base de données Chroma locale
+
+        # Define ChromaDB persist directory
         persist_dir = "./chroma_db"
-        
+
         # Store in Vector Database (Chroma)
-        # Initialisation du client ChromaDB avec un stockage persistant
         client = chromadb.PersistentClient(path=persist_dir)
-        
+
         # Delete existing collection if it exists
-        # Suppression de l'ancienne collection pour éviter les doublons lors de la réinitialisation
         try:
             client.delete_collection("my_docs")
         except:
             pass
-        
-        # Création d'une nouvelle collection vierge
+
+        # Create new collection
         collection = client.create_collection("my_docs")
-        
-        # Ajout des documents, de leurs vecteurs et d'identifiants uniques dans la collection
+
+        # Add documents to collection
         for i, chunk in enumerate(chunks):
             collection.add(
                 documents=[chunk],
                 embeddings=[embeddings[i].tolist()],
                 ids=[str(i)]
             )
-            
-        
-        # Mettre à jour les derniers UIDs
+
+
+        # Update last UIDs
         last_excel_uid, last_json_uid = update_last_uids()
-        
-        # Retourne un message de succès avec des statistiques sur les données chargées
+
         return {
             "status": "success",
             "message": f"RAG system initialized with {len(chunks)} chunks",
@@ -105,92 +121,107 @@ async def initialize():
             "last_excel_uid": last_excel_uid,
             "last_json_uid": last_json_uid
         }
-    
+
     except FileNotFoundError as e:
-        # Gestion de l'erreur si le fichier de données n'est pas trouvé
         raise HTTPException(status_code=404, detail=f"Document not found: dataset_telecom.json")
     except Exception as e:
-        # Gestion des autres erreurs génériques lors de l'initialisation
         raise HTTPException(status_code=500, detail=f"Initialization error: {str(e)}")
+
+def extract_json_from_response(response_text: str) -> dict:
+    """Extract valid JSON from LLM response, handling thought blocks and markdown."""
+    # Step 1: Remove <think>...</think> thought blocks (Qwen3 specific)
+    response_text = re.sub(r'<think>.*?</think>', '', response_text, flags=re.DOTALL | re.IGNORECASE)
+
+    # Step 2: Remove markdown code blocks if present
+    response_text = re.sub(r'```json\s*', '', response_text, flags=re.IGNORECASE)
+    response_text = re.sub(r'```\s*', '', response_text)
+
+    # Step 3: Find JSON object using regex
+    json_match = re.search(r'\{.*\}', response_text, re.DOTALL)
+    if json_match:
+        try:
+            return json.loads(json_match.group())
+        except json.JSONDecodeError:
+            pass
+
+    # Step 4: Try direct parsing as fallback
+    try:
+        return json.loads(response_text.strip())
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to parse JSON from response: {str(e)[:200]}")
+
 
 @app.post("/query")
 async def query(request: QueryRequest):
     """Query the RAG system and get response from Ollama"""
     global embedding_model, collection
-    
+
     try:
         # Check if system is initialized
         if embedding_model is None or collection is None:
             raise HTTPException(status_code=400, detail="RAG system not initialized. Call /initialize first.")
 
-        # Conversion de notre prompt spécifique en vecteur pour la recherche
-        query_embedding = embedding_model.encode([prompt_orange])[0]
-        
-        # Retrieve relevant context
-        results = collection.query(
-            query_embeddings=[query_embedding.tolist()],
-            n_results=5
-        )
-        
-        documents = results.get("documents")
-        if not documents or not documents[0]:
-            raise HTTPException(status_code=404, detail="No documents retrieved from vector store.")
-        retrieved_docs = documents[0]
-        
         # Lecture du contenu de l'email à traiter
         email_content = str(request.email_content)
-        
-        # Create augmented prompt
-        # Concaténation du prompt système avec le contenu de l'email
-        full_prompt = prompt_orange + "\n\n" + email_content
-        
-        # Jointure des documents retrouvés pour former le contexte
-        context = "\n\n".join(retrieved_docs)
-        
-        # Construction du prompt final (Augmented Prompt) à envoyer au modèle LLM
-        augmented_prompt = f"""
-You are an assistant. Use the context below to answer the question.
 
-Context:
+        # Retrieve relevant context using EMAIL CONTENT as query (not the prompt!)
+        query_embedding = embedding_model.encode([email_content])[0]
+
+        results = collection.query(
+            query_embeddings=[query_embedding.tolist()],
+            n_results=3
+        )
+
+        documents = results.get("documents")
+        retrieved_docs = documents[0] if documents and documents[0] else []
+
+        # Create augmented prompt with retrieved context as few-shot examples
+        if retrieved_docs:
+            context = "\n\n".join(retrieved_docs)
+            augmented_prompt = f"""You are an assistant. Use the context below as reference examples.
+
+Context (similar emails):
 {context}
 
-Question:
-{full_prompt}
+Task: Analyze the following email using the same format:
+{prompt_orange}
+
+Email to analyze:
+{email_content}
 
 Answer:
 """
-        
-        # Get response from Ollama
-        # Génération de la réponse via le modèle LLM local (Ollama)
+        else:
+            augmented_prompt = f"{prompt_orange}\n\n{email_content}"
+
+        # Get response from Ollama with temperature control for deterministic output
         response = chat(
             model="qwen3:1.7b",
-            messages=[{"role": "user", "content": augmented_prompt}]
+            messages=[{"role": "user", "content": augmented_prompt}],
+            options={
+                "temperature": 0.1,  # Low temperature for consistent JSON
+                "top_p": 0.9,
+                "num_predict": 500,
+                "stop": ["</s>", "Email:", "Context"]
+            }
         )
-        
-        # Extraction et conversion de la réponse JSON retournée par le modèle
-        data_json = json.loads(response["message"]["content"])
-        
+
+        # Extract and parse JSON from response (handles <think> blocks)
+        response_content = response["message"]["content"]
+        data_json = extract_json_from_response(response_content)
+
         # Sauvegarde du résultat dans le dataset (utile pour le RAG ou l'historique)
         save_to_dataset(email_content, data_json)
-        
+
         # Affichage en console et retour de la réponse à l'utilisateur
         print(data_json)
         return data_json
-        
-        # Lignes commentées d'origine gardées intactes
-        #return {
-        #    #"status": "success",
-        #    #"query": augmented_prompt,
-        #    #"retrieved_context": retrieved_docs,
-        #    "response": response["message"]["content"],
-        #    #"email_content": request.email_content
-        #}
-    
+
     except HTTPException:
-        # Propagation directe des exceptions HTTP déjà gérées
         raise
+    except (json.JSONDecodeError, ValueError) as e:
+        raise HTTPException(status_code=500, detail=f"Invalid JSON response from model: {str(e)[:200]}")
     except Exception as e:
-        # Transformation de toutes les autres erreurs en HTTP 500
         raise HTTPException(status_code=500, detail=f"Query error: {str(e)}")
 
 @app.get("/health")

@@ -115,70 +115,86 @@ prompt_orange = (
 )
 
 # Prompt for config-list (25).json
-try:
-    with open("systeme_de_Classification_Intelligent_des_emails/config-list-transformed.json", "r", encoding="utf-8") as f:
-        json_conf = json.dumps(json.load(f), indent=2)
-except FileNotFoundError:
-    json_conf = "Config file not found"
-#read the json file and convert it to a string
-prompt_configlist_nonTechnical = (
-    f"You are an AI assistant that receives a JSON configuration: {json_conf}\n"
-    "Select the workflow whose \"label\" best matches the email, extract the attributes"
-    " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\"(should be an integer), \"workflow_label\", \"attributes\", \"confidence_score\".\n "
-    "Only include attributes that appear in the email; omit missing ones. "
-    "Return ONLY the JSON, no extra text.\n"
-    "Email:\n"
-)
-prompt_configlist = (
-    f"You are an email workflow classification and information extraction system.\n\n"
+# NOTE: Config is loaded dynamically via get_prompt_configlist() to avoid injection at import time
 
-    "INPUT:\n"
-    "You are given a JSON configuration containing multiple workflow definitions.\n"
-    f"Configuration:\n{json_conf}\n\n"
+def get_json_config():
+    """Load and return the JSON configuration from config-list-transformed.json"""
+    try:
+        with open("systeme_de_Classification_Intelligent_des_emails/config-list-transformed.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {"error": "Config file not found"}
 
-    "Each workflow object contains:\n"
-    "- label: the workflow name\n"
-    "- type: always 'WORKFLOW'\n"
-    "- attributes: a dictionary where keys represent fields that may appear in the email\n\n"
+def get_prompt_configlist_nonTechnical():
+    """Build the non-technical prompt with config injected dynamically"""
+    json_conf = json.dumps(get_json_config(), indent=2)
+    return (
+        f"You are an AI assistant that receives a JSON configuration: {json_conf}\n"
+        "Select the workflow whose \"label\" best matches the email, extract the attributes"
+        " defined in its \"attributes\" keys from the email, and output a JSON with fields: \"email_id\"(should be an integer), \"workflow_label\", \"attributes\", \"confidence_score\".\n "
+        "Only include attributes that appear in the email; omit missing ones. "
+        "Return ONLY the JSON, no extra text.\n"
+        "Email:\n"
+    )
 
-    "TASK:\n"
-    "1. Read the email content.\n"
-    "2. Determine which workflow 'label' best matches the email intent.\n"
-    "3. Select ONLY that workflow.\n"
-    "4. From the selected workflow's 'attributes', extract values that explicitly appear in the email.\n\n"
+def get_prompt_configlist():
+    """Build the main classification prompt with config injected dynamically"""
+    json_conf = json.dumps(get_json_config(), indent=2)
+    return (
+        "You are an email workflow classification and information extraction system.\n\n"
 
-    "ATTRIBUTE EXTRACTION RULES:\n"
-    "- Only extract attributes that belong to the selected workflow.\n"
-    "- Only include attributes that are explicitly mentioned in the email.\n"
-    "- Do NOT guess or infer missing information.\n"
-    "- If an attribute is not present in the email, omit it from the output.\n"
-    "- Attribute names must match EXACTLY the keys defined in the workflow configuration.\n"
-    "- Preserve spaces and punctuation in attribute names exactly as they appear in the configuration.\n\n"
+        "INPUT:\n"
+        "You are given a JSON configuration containing multiple workflow definitions.\n"
+        f"Configuration:\n{json_conf}\n\n"
 
-    "WORKFLOW SELECTION RULES:\n"
-    "- Compare the email intent with workflow labels.\n"
-    "- Choose the workflow with the highest semantic similarity to the email request.\n"
-    "- Only ONE workflow must be selected.\n\n"
+        "Each workflow object contains:\n"
+        "- label: the workflow name\n"
+        "- type: always 'WORKFLOW'\n"
+        "- attributes: a dictionary where keys represent fields that may appear in the email\n\n"
 
-    "OUTPUT FORMAT:\n"
-    "Return a STRICT JSON object with the following schema:\n"
-    "{\n" \
-    "  \"label\": string,\n"
-    "  \"email_id\": integer,\n"
-    "  \"workflow_label\": string,\n"
-    "  \"confidence_score\": float\n"
-    "  \"attributes\": {\n"
-    "      \"attribute_key_from_config\": \"extracted_value\"\n"
-    "  },\n"
-    "}\n\n"
+        "TASK:\n"
+        "1. Read the email content.\n"
+        "2. Determine which workflow 'label' best matches the email intent.\n"
+        "3. Select ONLY that workflow.\n"
+        "4. From the selected workflow's 'attributes', extract values that explicitly appear in the email.\n\n"
 
-    "OUTPUT CONSTRAINTS:\n"
-    "- email_id must be an integer.\n"
-    "- workflow_label must exactly match one workflow label from the configuration.\n"
-    "- attributes must contain only extracted attribute key-value pairs.\n"
-    "- confidence_score must be a number between 0 and 1 indicating classification confidence.\n"
-    "- The response MUST be valid JSON.\n"
-    "- Do NOT include explanations, comments, markdown, or additional text.\n\n"
+        "ATTRIBUTE EXTRACTION RULES:\n"
+        "- Only extract attributes that belong to the selected workflow.\n"
+        "- Only include attributes that are explicitly mentioned in the email.\n"
+        "- Do NOT guess or infer missing information.\n"
+        "- If an attribute is not present in the email, omit it from the output.\n"
+        "- Attribute names must match EXACTLY the keys defined in the workflow configuration.\n"
+        "- Preserve spaces and punctuation in attribute names exactly as they appear in the configuration.\n\n"
 
-    "EMAIL:\n"
-)
+        "WORKFLOW SELECTION RULES:\n"
+        "- Compare the email intent with workflow labels.\n"
+        "- Choose the workflow with the highest semantic similarity to the email request.\n"
+        "- Only ONE workflow must be selected.\n\n"
+
+        "OUTPUT FORMAT:\n"
+        "Return a STRICT JSON object with the following schema:\n"
+        "{\n" \
+        "  \"label\": string,\n"
+        "  \"email_id\": integer,\n"
+        "  \"workflow_label\": string,\n"
+        "  \"confidence_score\": float,\n"
+        "  \"attributes\": {\n"
+        "      \"attribute_key_from_config\": \"extracted_value\"\n"
+        "  }\n"
+        "}\n\n"
+
+        "OUTPUT CONSTRAINTS:\n"
+        "- email_id must be an integer.\n"
+        "- workflow_label must exactly match one workflow label from the configuration.\n"
+        "- attributes must contain only extracted attribute key-value pairs.\n"
+        "- confidence_score must be a number between 0 and 1 indicating classification confidence.\n"
+        "- The response MUST be valid JSON.\n"
+        "- Do NOT include explanations, comments, markdown, or additional text.\n\n"
+
+        "EMAIL:\n"
+    )
+
+# Keep prompt_configlist as a function call for backward compatibility
+def prompt_configlist():
+    """Wrapper function for backward compatibility - calls get_prompt_configlist()"""
+    return get_prompt_configlist()

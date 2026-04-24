@@ -3414,7 +3414,7 @@
     }
   },
   {
-    "input_email": "Bonjour,\n\nelements paie Karim debut 1 fin 30 avril validation oui jours 21 heures supp 8 absences 1 commentaire mission. Fiche paie 0.",
+    "input_email": "Bonjour,\n\n elements paie Karim debut 1 fin 30 avril validation oui jours 21 heures supp 8 absences 1 commentaire mission. Fiche paie 0.",
     "output": {
       "label": "Eléments de paie",
       "type": "WORKFLOW",

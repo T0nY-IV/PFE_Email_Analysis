@@ -151,7 +151,7 @@ prompt_configlist = (
     "- Only extract attributes that belong to the selected workflow.\n"
     "- Only include attributes that are explicitly mentioned in the email.\n"
     "- Do NOT guess or infer missing information.\n"
-    "- If an attribute is not present in the email, omit it from the output.\n"
+    "- If an attribute is not present in the email, put it as null in the output.\n"
     "- Attribute names must match EXACTLY the keys defined in the workflow configuration.\n"
     "- Preserve spaces and punctuation in attribute names exactly as they appear in the configuration.\n\n"
 
@@ -165,7 +165,7 @@ prompt_configlist = (
     "{\n" \
     "  \"label\": string,\n"
     "  \"email_id\": integer,\n"
-    "  \"workflow_label\": string,\n"
+    "  \"type\": string,\n"
     "  \"confidence_score\": float\n"
     "  \"attributes\": {\n"
     "      \"attribute_key_from_config\": \"extracted_value\"\n"

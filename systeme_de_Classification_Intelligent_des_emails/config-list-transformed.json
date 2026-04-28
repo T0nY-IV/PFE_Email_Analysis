@@ -2146,16 +2146,6 @@
     }
   },
   {
-    "label": "ijipi",
-    "type": "WORKFLOW",
-    "email_id": null,
-    "confidence_score": null,
-    "attributes": {
-      "nom": null,
-      "date": null
-    }
-  },
-  {
     "label": "Process Appel Offre",
     "type": "WORKFLOW",
     "email_id": null,

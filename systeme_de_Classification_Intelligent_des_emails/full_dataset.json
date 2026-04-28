@@ -7353,45 +7353,6 @@
     }
   },
   {
-    "input_email": "Salut,\n\nijipi nom Projet Test date 30 avril 2026. A valider",
-    "output": {
-      "label": "ijipi",
-      "type": "WORKFLOW",
-      "email_id": "1309",
-      "confidence_score": null,
-      "attributes": {
-        "nom": "Projet Test",
-        "date": "30/04/2026"
-      }
-    }
-  },
-  {
-    "input_email": "Bonjour,\n\nijipi nom Test 2 date 5 mai 2026",
-    "output": {
-      "label": "ijipi",
-      "type": "WORKFLOW",
-      "email_id": "1310",
-      "confidence_score": null,
-      "attributes": {
-        "nom": "Test 2",
-        "date": "05/05/2026"
-      }
-    }
-  },
-  {
-    "input_email": "Hello,\n\nijipi nom Projet Final date 10 mai 2026. Merci",
-    "output": {
-      "label": "ijipi",
-      "type": "WORKFLOW",
-      "email_id": "1311",
-      "confidence_score": null,
-      "attributes": {
-        "nom": "Projet Final",
-        "date": "10/05/2026"
-      }
-    }
-  },
-  {
     "input_email": "Bonjour,\n\nprocess appel offre nom Appel Offre Fourniture date soumission 25 avril 2026",
     "output": {
       "label": "Process Appel Offre",
@@ -15632,10 +15593,15 @@
   {
     "input_email": "UID: 19\nYessine Ht <yessineht@gmail.com>\nBonjour,_x000D_\n_x000D_\nJe vous écris afin de vous demander l’autorisation de prendre un congé._x000D_\n_x000D_\nDurant cette période, je veillerai à ce que toutes mes tâches en cours_x000D_\nsoient organisées ou transmises afin d’assurer la continuité du travail._x000D_\n_x000D_\nJe reste bien entendu disponible pour toute information complémentaire et_x000D_\nje vous remercie par avance pour votre compréhension._x000D_\n_x000D_\nCordialement,_x000D_\nyessine haj taieb_x000D_\ndeveloppeur\n\nAttachments:\n\n\nibn khaldoun\n\nUrgent Care\n\nPatient Name: yessine haj taieb\n\nPatientDateofBirth:04/20/2004\n\nDateofConsult:04/22/2026\n\nTo Whom it May Concern;\n\nThis is to certify that I have evaluated yessine haj taieb, and I recommend that they be excused from attending work on 04/22/2026,04/23/2026,04/24/2026,and 04/25/2026 due to an illness.Based on the current\n\nFor further questions,pleasecontact my office.\n\nsincerely,\n\nNatalie K. Thompson, M.D.\n\nDoctorLicenseVerification\n\nScantheQRcodetoverifythephysician'scredentialsonline.\n\nPhysicianLicensingDetails\n\nStateMedicalLicense:\n\nOP656987850\n\nNationalProviderldentifier:14678563858\n\nSecureMedicalDocument|Verifyonline:VerifyDrlnfo.com\n\nDocumentRef:F2E2L-AIWWB-04YLG-FHSYK-ISZJU\n\nPage1of2\n\nDr.NatalieK.Thompson\n\nEMERGENCYMEDICINE\n\n28892625\n\nCERTIFICATE Of SIGNATURE\n\nREF.NUMBER\n\nF2E2L-AIWWB-O4YLG-FHSYK-ISZJU\n\nSIGNER\n\nTIMESTAMP\n\nEMAIL\n\nSENT\n\nWELL*****@GMAIL.COM\n\n22APR202612:54:08UTC\n\nVIEWED\n\n22APR202612:56:08UTC\n\nSIGNED\n\n22APR202612:58:08UTC\n\nRECIPIENTVERIFICATION\n\nEMAIL VERIFIED\n\n22 APR 202612:56:08 UTC\n\nSignedwith PandaDoc\n\nDOCUMENT COMPLETED BY ALL PARTIES ON 22 APR2026 12:58:08UTC\n\nSIGNATURE\n\nNT\n\nLOCATION\n\nSFAX\n\nPage2of2\n\n",
     "output": {
+      "label": "demande autorisation absence",
       "email_id": 19,
-      "workflow_label": "mm",
-      "attributes": {},
-      "confidence_score": 100
+      "type": "WORKFLOW",
+      "confidence_score": 0.95,
+      "attributes": {
+        "date_depart": "15h",
+        "date_retour": "18h",
+        "nb_heures": "3"
+      }
     }
   }
 ]

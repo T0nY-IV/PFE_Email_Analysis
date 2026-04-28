@@ -75,4 +75,4 @@ def loop_through_emails_and_send_requests():
                 response = send_request_to_api(email_content)
                 print(f"Réponse pour UID {uid}: {response}")
             except Exception as e:
-                print(f"Erreur lors de l'envoi de la requête pour UID {uid}: {e}")
+                print(f"Erreur lors de l'envoi de la requête pour UID {uid}: {e}\n with content: {response}")

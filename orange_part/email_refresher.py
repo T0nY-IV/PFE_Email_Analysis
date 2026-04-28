@@ -6,8 +6,8 @@ import json
 import time
 import pandas as pd
 import dotenv
-from orange_part.mail_analyser import loop_through_emails_and_send_requests, initialize_rag_system
-from orange_part.api_methodes import get_last_excel_uid
+from mail_analyser import loop_through_emails_and_send_requests, initialize_rag_system
+from api_methodes import get_last_excel_uid
 
 
 # Load credentials from the .env file (keeps secrets out of code).

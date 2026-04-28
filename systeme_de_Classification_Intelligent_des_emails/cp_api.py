@@ -35,6 +35,7 @@ collection = None
 document_text = None
 chunks = None
 embeddings = None
+chunk_metadata = None
 # Variables pour les derniers IDs
 last_excel_uid = None
 last_json_uid = None
@@ -49,7 +50,7 @@ class QueryRequest(BaseModel):
 @app.post("/initialize")
 async def initialize():
     """Initialize the RAG system by loading document and creating embeddings"""
-    global embedding_model, client, collection, document_text, chunks, embeddings, last_excel_uid, last_json_uid
+    global embedding_model, client, collection, document_text, chunks, embeddings, chunk_metadata, last_excel_uid, last_json_uid
     
     try:
         # Load embedding model
@@ -59,15 +60,24 @@ async def initialize():
         # Load document
         # Chargement du corpus depuis le fichier JSON
         document_text = json.load(open("full_dataset.json", "r", encoding="utf-8"))
-        
-        # Chunk the text
-        # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots
-        chunks = chunk_text(str(document_text), 500)
-        
+
+        # Create embeddings from meaningful content (input_email fields)
+        # Extraction du contenu sémantique des emails pour un embedding de qualité
+        chunks = []
+        chunk_metadata = []
+        for entry in document_text:
+            if "input_email" in entry:
+                chunks.append(entry["input_email"])
+                chunk_metadata.append({
+                    "email_id": entry.get("output", {}).get("email_id"),
+                    "label": entry.get("output", {}).get("label"),
+                    "type": entry.get("output", {}).get("type")
+                })
+
         # Create embeddings
-        # Conversion des morceaux de texte en vecteurs
+        # Conversion des emails en vecteurs
         embeddings = embedding_model.encode(chunks)
-        
+
         # Définition du répertoire pour la base de données Chroma locale
         persist_dir = "./chroma_db"
         
@@ -85,12 +95,13 @@ async def initialize():
         # Création d'une nouvelle collection vierge
         collection = client.create_collection("my_docs")
         
-        # Ajout des documents, de leurs vecteurs et d'identifiants uniques dans la collection
+        # Ajout des documents, de leurs vecteurs et métadonnées dans la collection
         for i, chunk in enumerate(chunks):
             collection.add(
                 documents=[chunk],
                 embeddings=[embeddings[i].tolist()],
-                ids=[str(i)]
+                ids=[str(i)],
+                metadatas=[chunk_metadata[i]]
             )
             
         
@@ -120,12 +131,15 @@ async def query(request: QueryRequest):
     global embedding_model, collection
     
     try:
+        # Lecture du contenu de l'email à traiter
+        req_content = str(request.email_content)
+        email_content = req_content.split("/cut/")[0]
         # Check if system is initialized
         if embedding_model is None or collection is None:
             raise HTTPException(status_code=400, detail="RAG system not initialized. Call /initialize first.")
 
         # Conversion de notre prompt spécifique en vecteur pour la recherche
-        query_embedding = embedding_model.encode([prompt_configlist])[0]
+        query_embedding = embedding_model.encode([email_content])[0]
         
         # Retrieve relevant context
         results = collection.query(
@@ -138,9 +152,7 @@ async def query(request: QueryRequest):
             raise HTTPException(status_code=404, detail="No documents retrieved from vector store.")
         retrieved_docs = documents[0]
         
-        # Lecture du contenu de l'email à traiter
-        req_content = str(request.email_content)
-        email_content = req_content.split("/cut/")[0]
+        
         #separation of the attachments from the email content
         email_attachments = req_content.split("/cut/")[1]
         if email_attachments == "":
@@ -188,7 +200,7 @@ async def query(request: QueryRequest):
         # Get response from Ollama
         # Génération de la réponse via le modèle LLM local (Ollama)
         response = chat(
-            model="qwen3:1.7b",
+            model="hoangquan456/qwen3-nothink:1.7b",
             messages=[{"role": "user", "content": augmented_prompt}]
         )
         

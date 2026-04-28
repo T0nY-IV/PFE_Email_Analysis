@@ -19,8 +19,7 @@ PASSWORD = os.getenv("mail_code")
 # Output folder for exported content.
 OUTPUT_FOLDER = "emails_output"
 # How often to check the mailbox (seconds). Can be overridden via env var.
-POLL_INTERVAL_SECONDS = 60
-
+POLL_INTERVAL_SECONDS = 20
 
 def remove_html_tags(text):
     """Strip HTML tags from a string."""

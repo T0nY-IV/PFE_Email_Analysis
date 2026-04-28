@@ -2,11 +2,21 @@ import json
 from typing import List, Any
 from mail_analyser import initialize_rag_system, loop_through_emails_and_send_requests
 from email_refresher import run_once
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from database import Base, engine
+from auth.router import router as auth_router
+from auth.dependencies import require_role
+from auth.models import User, UserRole
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Backend Methods API", description="API for backend methods and email processing")
+
+# Include auth router
+app.include_router(auth_router)
 
 def paginate_list(items: List[Any], page: int, page_size: int) -> dict:
     if page < 1 or page_size < 1:
@@ -39,7 +49,7 @@ class PageRequest(BaseModel):
 
 # To initialize, use the base API: http://127.0.0.1:8086/initialize
 
-@app.post("/process-emails") #  http://127.0.0.1:8087/process-emails
+@app.post("/process-emails")
 async def api_process_emails():
     """API endpoint to process emails and send requests to the API"""
     try:
@@ -57,7 +67,7 @@ async def api_fetch_emails():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error fetching emails: {str(e)}")
 
-@app.get("/get_reclamations") # http://127.0.0.1:8087/get_reclamations
+@app.get("/get_reclamations", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_RECLAMATIONS))])
 async def api_get_reclamations(request: PageRequest):
     """API endpoint to get all reclamations"""
     try:
@@ -86,7 +96,7 @@ async def api_get_reclamations(request: PageRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving reclamations: {str(e)}")
 
-@app.get("/get_demandes") # http://127.0.0.1:8087/get_demandes
+@app.get("/get_demandes", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_DEMANDES))])
 async def api_get_demandes(request: PageRequest):
     """API endpoint to get all demandes"""
     try:
@@ -116,7 +126,7 @@ async def api_get_demandes(request: PageRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving demandes: {str(e)}")
 
-@app.get("/get_all") # http://127.0.0.1:8087/get_all
+@app.get("/get_all", dependencies=[Depends(require_role(UserRole.ADMIN))])
 async def api_get_all(request: PageRequest):
     """API endpoint to get all items"""
     try:

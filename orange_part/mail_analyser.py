@@ -1,34 +1,7 @@
-import requests
 import pandas as pd
 import os
 from api_methodes import get_last_json_uid
-
-def send_request_to_api(email_content: str):
-    url = "http://localhost:8086/query"
-    payload = {
-        "email_content": email_content,
-    }
-    response = requests.post(url, json=payload)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(f"API request failed with status code {response.status_code}: {response.text}")
-    
-def initialize_rag_system():
-    url = "http://localhost:8086/initialize"
-    try:
-        last_json_uid = get_last_json_uid()
-        last_excel_uid = 0  # Placeholder, can be updated to get the actual last Excel UID if needed
-        
-        response = requests.post(url, json={})
-        if response.status_code == 200:
-            return response.json()
-        else:
-            raise Exception(f"Initialization failed with status code {response.status_code}: {response.text}")
-    except Exception as e:
-        print(f"Error during initialization: {e}")
-        return None
-
+from api import analyze
 
 def get_mailContent_from_exel_by_uid(uid):
     """Récupère le contenu d'un email depuis le fichier Excel en utilisant l'UID"""
@@ -71,7 +44,7 @@ def loop_through_emails_and_send_requests():
         email_content = get_mailContent_from_exel_by_uid(uid)
         if email_content:
             try:
-                response = send_request_to_api(email_content)
+                response = analyze(email_content)
                 print(f"Réponse pour UID {uid}: {response}")
             except Exception as e:
                 print(f"Erreur lors de l'envoi de la requête pour UID {uid}: {e}")

@@ -1,30 +1,14 @@
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
 from ollama import chat
 from sentence_transformers import SentenceTransformer
 import chromadb
-from chromadb.config import Settings
 import json
-import pandas as pd
-from typing import Optional
 from shared.prompt import prompt_orange
-from api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
+from api_methodes import chunk_text, save_to_dataset, update_last_uids
 
-app = FastAPI(title="RAG API", description="Retrieval-Augmented Generation API with Ollama")
 
-# Add CORS middleware 
-# Configuration CORS pour autoriser les requêtes provenant de n'importe quelle origine ("*")
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # Global variables
 # Variables globales pour stocker l'état du système RAG en mémoire
@@ -40,13 +24,7 @@ last_json_uid = None
 
 
 
-# Modèle de requête pour récupérer le chemin du fichier email
-class QueryRequest(BaseModel):
-    email_content: Optional[str]
-
-
-@app.post("/initialize")
-async def initialize():
+def initialize():
     """Initialize the RAG system by loading document and creating embeddings"""
     global embedding_model, client, collection, document_text, chunks, embeddings
     
@@ -108,20 +86,20 @@ async def initialize():
     
     except FileNotFoundError as e:
         # Gestion de l'erreur si le fichier de données n'est pas trouvé
-        raise HTTPException(status_code=404, detail=f"Document not found: dataset_telecom.json")
+        raise Exception("Dataset file not found")
     except Exception as e:
         # Gestion des autres erreurs génériques lors de l'initialisation
-        raise HTTPException(status_code=500, detail=f"Initialization error: {str(e)}")
+        print(f"Initialization error: {str(e)}")
 
-@app.post("/query")
-async def query(request: QueryRequest):
+
+def analyze(mail_content):
     """Query the RAG system and get response from Ollama"""
     global embedding_model, collection
     
     try:
         # Check if system is initialized
         if embedding_model is None or collection is None:
-            raise HTTPException(status_code=400, detail="RAG system not initialized. Call /initialize first.")
+            raise Exception("RAG system not initialized. Call /initialize first.")
 
         # Conversion de notre prompt spécifique en vecteur pour la recherche
         query_embedding = embedding_model.encode([prompt_orange])[0]
@@ -134,11 +112,12 @@ async def query(request: QueryRequest):
         
         documents = results.get("documents")
         if not documents or not documents[0]:
-            raise HTTPException(status_code=404, detail="No documents retrieved from vector store.")
+            raise Exception("No documents retrieved from vector store.")
+            
         retrieved_docs = documents[0]
         
         # Lecture du contenu de l'email à traiter
-        email_content = str(request.email_content)
+        email_content = str(mail_content)
         
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email
@@ -177,43 +156,8 @@ Answer:
         print(data_json)
         return data_json
         
-        # Lignes commentées d'origine gardées intactes
-        #return {
-        #    #"status": "success",
-        #    #"query": augmented_prompt,
-        #    #"retrieved_context": retrieved_docs,
-        #    "response": response["message"]["content"],
-        #    #"email_content": request.email_content
-        #}
-    
-    except HTTPException:
-        # Propagation directe des exceptions HTTP déjà gérées
-        raise
     except Exception as e:
         # Transformation de toutes les autres erreurs en HTTP 500
-        raise HTTPException(status_code=500, detail=f"Query error: {str(e)}")
+        raise Exception(f"email content error: {str(e)}")
+        
 
-@app.get("/health")
-async def health():
-    """Health check endpoint"""
-    # Endpoint utilisé pour vérifier si l'API est en ligne et son état d'initialisation
-    return {
-        "status": "ok",
-        "system_initialized": embedding_model is not None and collection is not None
-    }
-
-@app.get("/status")
-async def status():
-    """Get current system status"""
-    # Endpoint de diagnostic pour récupérer les détails de l'état actuel du système
-    return {
-        "embedding_model_loaded": embedding_model is not None,
-        "database_initialized": collection is not None,
-        "chunks_count": len(chunks) if chunks else 0,
-        "document_loaded": document_text is not None
-    }
-
-if __name__ == "__main__":
-    import uvicorn
-    # Démarrage du serveur Uvicorn en local (127.0.0.1) sur le port 8086
-    uvicorn.run(app, host="127.0.0.1", port=8086)

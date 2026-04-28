@@ -4,10 +4,17 @@ import os
 import re
 import json
 import time
+import threading
 import pandas as pd
 import dotenv
-from mail_analyser import loop_through_emails_and_send_requests, initialize_rag_system
+from mail_analyser import loop_through_emails_and_send_requests
+from api import initialize
 from api_methodes import get_last_excel_uid
+
+# Global stop event (thread-safe)
+_stop_event = threading.Event()
+_email_poller_thread = None
+_current_poll_interval = 60
 
 
 # Load credentials from the .env file (keeps secrets out of code).
@@ -215,25 +222,74 @@ def run_once():
             pass
 
 
-def main():
-    """Run mailbox checks on a fixed interval until the user stops the script."""
+def stop_auto_refresh():
+    """Signal the background thread to stop"""
+    _stop_event.set()
+
+
+def reset_stop_event():
+    """Reset the stop flag before starting a new thread"""
+    _stop_event.clear()
+
+
+def get_poller_status():
+    """Return the current poller status"""
+    global _email_poller_thread, _current_poll_interval
+    is_alive = _email_poller_thread is not None and _email_poller_thread.is_alive()
+    return {
+        "running": is_alive,
+        "poll_interval_seconds": _current_poll_interval
+    }
+
+
+def start_email_poller(cooldown_seconds=None):
+    """Start the background poller and return the thread"""
+    global _email_poller_thread, _current_poll_interval
+
+    if cooldown_seconds is not None:
+        _current_poll_interval = cooldown_seconds
+
+    # Stop existing thread if running
+    if _email_poller_thread and _email_poller_thread.is_alive():
+        stop_auto_refresh()
+        _email_poller_thread.join(timeout=2)
+
+    reset_stop_event()
+    _email_poller_thread = threading.Thread(
+        target=auto_refresh,
+        args=(cooldown_seconds,),
+        daemon=True
+    )
+    _email_poller_thread.start()
+    return _email_poller_thread
+
+
+def auto_refresh(cooldown_seconds=None):
+    """Run mailbox checks on a fixed interval until stopped."""
+    global _current_poll_interval
+
+    # Use provided cooldown or default
+    interval = cooldown_seconds if cooldown_seconds is not None else _current_poll_interval
+
     # Sanity check credentials before starting the loop.
     if not EMAIL_ACCOUNT or not PASSWORD:
         raise ValueError("Missing credentials. Set mail_@ and mail_code in your .env file.")
 
-    print(f"Mailbox watcher started. Polling every {POLL_INTERVAL_SECONDS} seconds.")
+    print(f"Mailbox watcher started. Polling every {interval} seconds.")
 
     try:
-        initialize_rag_system()
-        while True:
+        initialize()
+        while not _stop_event.is_set():
             print(time.strftime("[%Y-%m-%d %H:%M:%S] Checking for new emails..."))
             run_once()
-            print(f"Sleeping for {POLL_INTERVAL_SECONDS} seconds...\n")
-            loop_through_emails_and_send_requests()  # Call the function to process emails and send requests to the API
-            time.sleep(POLL_INTERVAL_SECONDS)
+            loop_through_emails_and_send_requests()
+            print(f"Sleeping for {interval} seconds...\n")
+            # Use wait() instead of sleep() so it responds to stop quickly
+            if _stop_event.wait(timeout=interval):
+                break  # Stop event was set during sleep
     except KeyboardInterrupt:
         print("Mailbox watcher stopped by user.")
 
 
 if __name__ == "__main__":
-    main()
+    auto_refresh()

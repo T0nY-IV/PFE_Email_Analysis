@@ -1,8 +1,8 @@
 import json
+import asyncio
 from typing import List, Any
-from mail_analyser import initialize_rag_system, loop_through_emails_and_send_requests
-from email_refresher import run_once
-from fastapi import FastAPI, HTTPException, Depends
+from email_refresher import start_email_poller, stop_auto_refresh, get_poller_status, auto_refresh
+from fastapi import FastAPI, HTTPException, Depends, BackgroundTasks
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from database import Base, engine
@@ -17,19 +17,6 @@ app = FastAPI(title="Backend Methods API", description="API for backend methods 
 
 # Include auth router
 app.include_router(auth_router)
-
-def paginate_list(items: List[Any], page: int, page_size: int) -> dict:
-    if page < 1 or page_size < 1:
-        raise ValueError("page and page_size must be positive integers")
-    start = (page - 1) * page_size
-    end = start + page_size
-    return {
-        "page": page,
-        "page_size": page_size,
-        "total": len(items),
-        "pages": (len(items) + page_size - 1) // page_size,
-        "items": items[start:end],
-    }
 
 
 # Add CORS middleware
@@ -46,23 +33,57 @@ class PageRequest(BaseModel):
     page_size: int = 10
 
 
+class CooldownRequest(BaseModel):
+    cooldown_seconds: int = 60
 
-# To initialize, use the base API: http://127.0.0.1:8086/initialize
 
-@app.post("/process-emails")
-async def api_process_emails():
-    """API endpoint to process emails and send requests to the API"""
+@app.on_event("startup")
+async def startup_event():
+    """Start email poller automatically when API starts"""
+    start_email_poller()
+    print("Email poller started in background thread")
+
+
+@app.post("/refresh/start")
+async def start_email_poller_endpoint(request: CooldownRequest = None):
+    """Start or restart the email poller with optional new cooldown time"""
     try:
-        loop_through_emails_and_send_requests()
-        return {"status": "success", "message": "Emails processed successfully"}
+        cooldown = request.cooldown_seconds if request else None
+        start_email_poller(cooldown)
+        return {
+            "status": "success",
+            "message": "Email poller started",
+            "poll_interval_seconds": cooldown
+        }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error processing emails: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Error starting poller: {str(e)}")
 
-@app.post("/fetch-emails")
-async def api_fetch_emails():
-    """API endpoint to fetch new emails from Gmail"""
+
+@app.post("/refresh/stop")
+async def stop_email_poller_endpoint():
+    """Stop the email poller gracefully"""
     try:
-        run_once()
+        stop_auto_refresh()
+        return {"status": "success", "message": "Email poller stopping..."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error stopping poller: {str(e)}")
+
+
+@app.get("/refresh/status")
+async def get_poller_status_endpoint():
+    """Get the current status of the email poller"""
+    try:
+        status = get_poller_status()
+        return {"status": "success", **status}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error getting status: {str(e)}")
+
+
+@app.post("/refresh/once")
+async def fetch_emails_once():
+    """Fetch emails once immediately (non-blocking, runs in background thread)"""
+    try:
+        await asyncio.to_thread(auto_refresh, cooldown_seconds=None)
         return {"status": "success", "message": "Emails fetched successfully"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error fetching emails: {str(e)}")
@@ -151,4 +172,4 @@ async def api_get_all(request: PageRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8087)
+    uvicorn.run(app, host="127.0.0.1", port=8086)

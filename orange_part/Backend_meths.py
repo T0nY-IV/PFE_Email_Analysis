@@ -89,7 +89,7 @@ async def fetch_emails_once():
         raise HTTPException(status_code=500, detail=f"Error fetching emails: {str(e)}")
 
 @app.get("/get_reclamations", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_RECLAMATIONS))])
-async def api_get_reclamations(request: PageRequest):
+async def api_get_reclamations(request: PageRequest = Depends()):
     """API endpoint to get all reclamations"""
     try:
         # Load the dataset
@@ -118,7 +118,7 @@ async def api_get_reclamations(request: PageRequest):
         raise HTTPException(status_code=500, detail=f"Error retrieving reclamations: {str(e)}")
 
 @app.get("/get_demandes", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_DEMANDES))])
-async def api_get_demandes(request: PageRequest):
+async def api_get_demandes(request: PageRequest = Depends()):
     """API endpoint to get all demandes"""
     try:
         # Load the dataset
@@ -148,7 +148,7 @@ async def api_get_demandes(request: PageRequest):
         raise HTTPException(status_code=500, detail=f"Error retrieving demandes: {str(e)}")
 
 @app.get("/get_all", dependencies=[Depends(require_role(UserRole.ADMIN))])
-async def api_get_all(request: PageRequest):
+async def api_get_all(request: PageRequest = Depends()):
     """API endpoint to get all items"""
     try:
         # Load the dataset

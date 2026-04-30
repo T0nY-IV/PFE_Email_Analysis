@@ -1,7 +1,6 @@
 import pandas as pd
 import os
-from api_methodes import get_last_json_uid
-from api import analyze
+from api_methodes import get_last_json_uid, analyze
 
 def get_mailContent_from_exel_by_uid(uid):
     """Récupère le contenu d'un email depuis le fichier Excel en utilisant l'UID"""

@@ -8,8 +8,7 @@ import threading
 import pandas as pd
 import dotenv
 from mail_analyser import loop_through_emails_and_send_requests
-from api import initialize
-from api_methodes import get_last_excel_uid
+from api_methodes import get_last_excel_uid, initialize
 
 # Global stop event (thread-safe)
 _stop_event = threading.Event()

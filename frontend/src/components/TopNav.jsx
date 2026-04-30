@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LogOut, Bell, Search, Activity, Play, Square, RefreshCw } from 'lucide-react';
+import { LogOut, Bell, Search, Activity, Play, Square, RefreshCw, Timer } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { pollerAPI } from '../services/api';
 import './TopNav.css';
@@ -8,6 +8,7 @@ const TopNav = () => {
   const { logout } = useAuth();
   const [pollerStatus, setPollerStatus] = useState({ is_running: false });
   const [isRefreshing, setIsRefreshing] = useState(false);
+  const [cooldownTime, setCooldownTime] = useState(60);
 
   useEffect(() => {
     fetchStatus();
@@ -26,7 +27,7 @@ const TopNav = () => {
 
   const handleStart = async () => {
     try {
-      await pollerAPI.start();
+      await pollerAPI.start(cooldownTime);
       fetchStatus();
     } catch (err) {
       console.error(err);
@@ -66,6 +67,18 @@ const TopNav = () => {
             <span className={`status-dot ${pollerStatus.is_running ? 'running' : 'stopped'}`}></span>
             <span className="status-text">{pollerStatus.is_running ? 'Poller Active' : 'Poller Paused'}</span>
           </div>
+          <div className="cooldown-wrapper">
+            <Timer size={14} className="cooldown-icon" />
+            <input 
+              type="number" 
+              className="cooldown-input" 
+              value={cooldownTime}
+              onChange={(e) => setCooldownTime(Number(e.target.value))}
+              min="10"
+              title="Cooldown time in seconds"
+            />
+            <span className="cooldown-unit">s</span>
+          </div>
           
           <div className="action-buttons">
             {!pollerStatus.is_running ? (
@@ -73,9 +86,14 @@ const TopNav = () => {
                 <Play size={16} />
               </button>
             ) : (
-              <button className="icon-btn stop" onClick={handleStop} title="Stop Poller">
-                <Square size={16} />
-              </button>
+              <>
+                <button className="icon-btn stop" onClick={handleStop} title="Stop Poller">
+                  <Square size={16} />
+                </button>
+                <button className="icon-btn start" onClick={handleStart} title="Restart with new cooldown">
+                  <Play size={16} />
+                </button>
+              </>
             )}
             <button 
               className={`icon-btn refresh ${isRefreshing ? 'spin' : ''}`} 

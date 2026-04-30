@@ -94,6 +94,47 @@
   color: var(--text-secondary);
 }
 
+.cooldown-wrapper {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  padding: 2px 8px;
+  gap: 4px;
+}
+
+.cooldown-icon {
+  color: var(--text-secondary);
+}
+
+.cooldown-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  width: 40px;
+  outline: none;
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+/* Hide spin buttons for input type number */
+.cooldown-input::-webkit-outer-spin-button,
+.cooldown-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cooldown-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.cooldown-unit {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  user-select: none;
+}
+
 .action-buttons {
   display: flex;
   align-items: center;

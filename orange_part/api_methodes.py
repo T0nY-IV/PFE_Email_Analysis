@@ -110,70 +110,62 @@ last_json_uid = None
 
 def initialize():
     """Initialize the RAG system by loading document and creating embeddings"""
-    global embedding_model, client, collection, document_text, chunks, embeddings
-    
+    global embedding_model, client, collection, chunks, embeddings
+
     try:
         # Load embedding model
-        # Chargement du modèle de plongement (embedding) pour vectoriser le texte
         embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
-        
-        # Load document
-        # Chargement du corpus depuis le fichier JSON
-        document_text = json.load(open("dataset_telecom.json", "r", encoding="utf-8"))
-        
-        # Chunk the text
-        # Découpage du texte en petits morceaux (chunks) de 500 caractères/mots
-        chunks = chunk_text(str(document_text), 500)
-        
-        # Create embeddings
-        # Conversion des morceaux de texte en vecteurs
+
+        # Load JSON dataset
+        with open("dataset_telecom.json", "r", encoding="utf-8") as f:
+            dataset = json.load(f)
+
+        # Extract only email content (input_email field) for chunking
+        chunks = [entry["input_email"] for entry in dataset if "input_email" in entry]
+
+        if not chunks:
+            raise Exception("No email content found in dataset")
+
+        # Create embeddings from email content
         embeddings = embedding_model.encode(chunks)
-        
-        # Définition du répertoire pour la base de données Chroma locale
+
+        # Setup ChromaDB persistent storage
         persist_dir = "./chroma_db"
-        
-        # Store in Vector Database (Chroma)
-        # Initialisation du client ChromaDB avec un stockage persistant
         client = chromadb.PersistentClient(path=persist_dir)
-        
+
         # Delete existing collection if it exists
-        # Suppression de l'ancienne collection pour éviter les doublons lors de la réinitialisation
         try:
             client.delete_collection("my_docs")
         except:
             pass
-        
-        # Création d'une nouvelle collection vierge
+
+        # Create new collection
         collection = client.create_collection("my_docs")
-        
-        # Ajout des documents, de leurs vecteurs et d'identifiants uniques dans la collection
+
+        # Add documents with their embeddings and unique IDs
         for i, chunk in enumerate(chunks):
             collection.add(
                 documents=[chunk],
                 embeddings=[embeddings[i].tolist()],
                 ids=[str(i)]
             )
-            
-        
-        # Mettre à jour les derniers UIDs
+
+        # Update last UIDs
         last_excel_uid, last_json_uid = update_last_uids()
-        
-        # Retourne un message de succès avec des statistiques sur les données chargées
+
         return {
             "status": "success",
-            "message": f"RAG system initialized with {len(chunks)} chunks",
+            "message": f"RAG system initialized with {len(chunks)} email chunks",
             "chunks_count": len(chunks),
-            "document_path": "dataset_telecom.json",
             "last_excel_uid": last_excel_uid,
             "last_json_uid": last_json_uid
         }
-    
-    except FileNotFoundError as e:
-        # Gestion de l'erreur si le fichier de données n'est pas trouvé
+
+    except FileNotFoundError:
         raise Exception("Dataset file not found")
     except Exception as e:
-        # Gestion des autres erreurs génériques lors de l'initialisation
         print(f"Initialization error: {str(e)}")
+        raise
 
 
 def analyze(mail_content):
@@ -185,8 +177,8 @@ def analyze(mail_content):
         if embedding_model is None or collection is None:
             raise Exception("RAG system not initialized. Call /initialize first.")
 
-        # Conversion de notre prompt spécifique en vecteur pour la recherche
-        query_embedding = embedding_model.encode([prompt_orange])[0]
+        # Encode the actual mail content for query (not the prompt template)
+        query_embedding = embedding_model.encode([str(mail_content)])[0]
         
         # Retrieve relevant context
         results = collection.query(

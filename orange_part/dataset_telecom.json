@@ -10767,6 +10767,7 @@
     "output": {
       "email_id": "18",
       "workflow_type": "Demande",
+      "description": null,
       "attributes": {},
       "confidence_score": 0.86
     }
@@ -10777,9 +10778,9 @@
       "email_id": "19",
       "workflow_type": "Demande",
       "attributes": {
-        "email": "yessineht@gmail.com",
-        "tel": "",
-        "type": "Demande"
+        "description": "Je vous écris afin de vous demander l'autorisation de prendre un congé.",
+        "type": "Demande",
+        "email": "yessineht@gmail.com"
       },
       "confidence_score": 0.8
     }

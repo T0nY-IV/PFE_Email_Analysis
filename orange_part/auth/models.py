@@ -48,3 +48,21 @@ class User(Base):
     @property
     def can_view_all(self) -> bool:
         return self.role == UserRole.ADMIN
+
+
+class ReclamationResolution(Base):
+    """Table to track resolved reclamations (complaints/issues)"""
+    __tablename__ = "reclamations_resolved"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email_uid = Column(String, unique=True, index=True, nullable=False)
+    resolved_at = Column(DateTime(timezone=True), server_default=func.now())
+
+
+class DemandeResolution(Base):
+    """Table to track resolved demandes (requests/demands)"""
+    __tablename__ = "demandes_resolved"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email_uid = Column(String, unique=True, index=True, nullable=False)
+    resolved_at = Column(DateTime(timezone=True), server_default=func.now())

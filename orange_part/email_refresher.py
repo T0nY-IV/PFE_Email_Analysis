@@ -236,7 +236,7 @@ def get_poller_status():
     global _email_poller_thread, _current_poll_interval
     is_alive = _email_poller_thread is not None and _email_poller_thread.is_alive()
     return {
-        "running": is_alive,
+        "is_running": is_alive,
         "poll_interval_seconds": _current_poll_interval
     }
 

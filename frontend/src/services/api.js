@@ -19,12 +19,16 @@ export const authAPI = {
   register: (data) => api.post('/auth/register', data),
   getMe: () => api.get('/auth/me'),
   refresh: (refresh_token) => api.post('/auth/refresh', { refresh_token }),
+  getUsers: (role) => api.get('/auth/users', role ? { params: { role } } : {}),
+  createUser: (data) => api.post('/auth/users', data),
+  updateUser: (userId, data) => api.put(`/auth/users/${userId}`, data),
+  deleteUser: (userId) => api.delete(`/auth/users/${userId}`),
 };
 
 export const dataAPI = {
-  getReclamations: (page = 1, page_size = 10) => api.get('/get_reclamations', { params: { page, page_size } }),
-  getDemandes: (page = 1, page_size = 10) => api.get('/get_demandes', { params: { page, page_size } }),
-  getAll: (page = 1, page_size = 10) => api.get('/get_all', { params: { page, page_size } }),
+  getReclamations: (page = 1, page_size = 30) => api.get('/get_reclamations', { params: { page, page_size } }),
+  getDemandes: (page = 1, page_size = 30) => api.get('/get_demandes', { params: { page, page_size } }),
+  getAll: (page = 1, page_size = 30) => api.get('/get_all', { params: { page, page_size } }),
 };
 
 export const pollerAPI = {
@@ -32,6 +36,20 @@ export const pollerAPI = {
   stop: () => api.post('/refresh/stop'),
   getStatus: () => api.get('/refresh/status'),
   fetchOnce: () => api.post('/refresh/once'),
+};
+
+export const reclamationsAPI = {
+  markResolved: (email_uid) => api.post('/reclamations/mark-resolved', { email_uid }),
+  markUnresolved: (email_uid) => api.delete(`/reclamations/mark-unresolved/${email_uid}`),
+  isResolved: (email_uid) => api.get(`/reclamations/is-resolved/${email_uid}`),
+  getResolvedList: () => api.get('/reclamations/resolved-list'),
+};
+
+export const demandesAPI = {
+  markResolved: (email_uid) => api.post('/demandes/mark-resolved', { email_uid }),
+  markUnresolved: (email_uid) => api.delete(`/demandes/mark-unresolved/${email_uid}`),
+  isResolved: (email_uid) => api.get(`/demandes/is-resolved/${email_uid}`),
+  getResolvedList: () => api.get('/demandes/resolved-list'),
 };
 
 export default api;

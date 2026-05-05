@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from datetime import timedelta
+from typing import Optional, List
 from auth.jwt_handler import (
     verify_password,
     get_password_hash,
@@ -126,11 +127,51 @@ async def get_current_user_info(current_user: User = Depends(get_current_user)):
     return current_user
 
 
-@router.get("/users", response_model=list[UserResponse], dependencies=[Depends(require_admin)])
-async def list_users(db: Session = Depends(get_db)):
-    """List all users (admin only)"""
-    users = db.query(User).all()
-    return users
+@router.get("/users", response_model=List[UserResponse], dependencies=[Depends(require_admin)])
+async def list_users(role: Optional[UserRole] = None, db: Session = Depends(get_db)):
+    try:
+        query = db.query(User)
+        if role:
+            query = query.filter(User.role == role)
+        users = query.all()
+        return users
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/users", response_model=UserResponse, status_code=status.HTTP_201_CREATED, dependencies=[Depends(require_admin)])
+async def create_user_admin(user_data: UserCreate, db: Session = Depends(get_db)):
+    """Create a new user (admin only)"""
+    # Check if email already exists
+    existing_user = db.query(User).filter(User.email == user_data.email).first()
+    if existing_user:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Email already registered",
+        )
+
+    # Check if username already exists
+    existing_username = db.query(User).filter(User.username == user_data.username).first()
+    if existing_username:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Username already taken",
+        )
+
+    # Create new user
+    hashed_password = get_password_hash(user_data.password)
+    new_user = User(
+        email=user_data.email,
+        username=user_data.username,
+        hashed_password=hashed_password,
+        role=user_data.role,
+    )
+
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+
+    return new_user
 
 
 @router.get("/users/{user_id}", response_model=UserResponse, dependencies=[Depends(require_admin)])
@@ -160,6 +201,11 @@ async def update_user(
         )
 
     update_data = user_update.model_dump(exclude_unset=True)
+    
+    # Handle password update specifically
+    if "password" in update_data and update_data["password"]:
+        update_data["hashed_password"] = get_password_hash(update_data.pop("password"))
+    
     for field, value in update_data.items():
         setattr(user, field, value)
 

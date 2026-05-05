@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Mail, Clock, ShieldAlert, CheckCircle, ChevronLeft, ChevronRight, Inbox } from 'lucide-react';
-import { dataAPI } from '../services/api';
+import { Mail, Clock, ShieldAlert, CheckCircle, ChevronLeft, ChevronRight, Inbox, X } from 'lucide-react';
+import { dataAPI, reclamationsAPI } from '../services/api';
+import EmailDetailsModal from '../components/EmailDetailsModal';
 import './DataPages.css';
 
 const Reclamations = () => {
@@ -8,7 +9,9 @@ const Reclamations = () => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
-  const pageSize = 10;
+  const [resolvedIds, setResolvedIds] = useState(new Set());
+  const [selectedEmail, setSelectedEmail] = useState(null);
+  const pageSize = 30;
 
   useEffect(() => {
     fetchData();
@@ -17,9 +20,13 @@ const Reclamations = () => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const res = await dataAPI.getReclamations(page, pageSize);
+      const [res, resolvedRes] = await Promise.all([
+        dataAPI.getReclamations(page, pageSize),
+        reclamationsAPI.getResolvedList().catch(() => ({ data: { resolved_uids: [] } }))
+      ]);
       setData(res.data.data || []);
       setTotalCount(res.data.count || 0);
+      setResolvedIds(new Set((resolvedRes.data.resolved_uids || []).map(String)));
     } catch (err) {
       console.error(err);
     } finally {
@@ -27,7 +34,50 @@ const Reclamations = () => {
     }
   };
 
+  const toggleResolved = async (emailId) => {
+    if (!emailId) return;
+    const idStr = String(emailId);
+    try {
+      const isResolved = resolvedIds.has(idStr);
+      if (isResolved) {
+        await reclamationsAPI.markUnresolved(idStr);
+        setResolvedIds(prev => {
+          const newSet = new Set(prev);
+          newSet.delete(idStr);
+          return newSet;
+        });
+      } else {
+        await reclamationsAPI.markResolved(idStr);
+        setResolvedIds(prev => {
+          const newSet = new Set(prev);
+          newSet.add(idStr);
+          return newSet;
+        });
+      }
+    } catch (err) {
+      console.error('Failed to toggle resolved status', err);
+    }
+  };
+
   const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
+
+  const getPageNumbers = () => {
+    const pages = [];
+    const range = 2; // Show 2 pages before and after
+    
+    for (let i = 1; i <= totalPages; i++) {
+      if (
+        i === 1 || 
+        i === totalPages || 
+        (i >= page - range && i <= page + range)
+      ) {
+        pages.push(i);
+      } else if (i === page - range - 1 || i === page + range + 1) {
+        pages.push('...');
+      }
+    }
+    return [...new Set(pages)]; // Remove duplicates
+  };
 
   return (
     <div className="page-container animate-fade-in">
@@ -61,40 +111,45 @@ const Reclamations = () => {
               const emailContent = item.input_email || '';
               
               return (
-                <div key={index} className="email-card glass-panel">
+                <div key={index} className="email-card glass-panel" onClick={() => setSelectedEmail(item)}>
                   <div className="card-header">
                     <div className="card-title">
                       <Mail size={16} />
                       <h4>Email #{output.email_id || index + 1}</h4>
                     </div>
-                    <span className="badge red">Réclamation</span>
+                    <div className="header-actions">
+                      <button 
+                        className={`resolve-btn ${resolvedIds.has(String(output.email_id)) ? 'resolved' : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleResolved(output.email_id);
+                        }}
+                        title={resolvedIds.has(String(output.email_id)) ? "Mark as Unresolved" : "Mark as Resolved"}
+                      >
+                        <CheckCircle size={14} />
+                        <span>{resolvedIds.has(String(output.email_id)) ? 'Resolved' : 'Resolve'}</span>
+                      </button>
+                      <span className="badge red">Réclamation</span>
+                    </div>
                   </div>
                   
                   <div className="card-body">
                     <div className="info-row">
-                      <span className="info-label">Sentiment:</span>
-                      <span className={`badge ${output.sentiment === 'Négatif' ? 'red' : 'orange'}`}>
-                        {output.sentiment}
-                      </span>
-                    </div>
-                    
-                    <div className="info-row">
-                      <span className="info-label">Keywords:</span>
+                      <span className="info-label">Attributes:</span>
                       <div className="tags">
-                        {(output.keywords || []).map((kw, i) => (
-                          <span key={i} className="tag">{kw}</span>
+                        {Object.entries(output.attributes || {})
+                          .filter(([key, value]) => key !== 'description' && value !== null && value !== '')
+                          .map(([key, value], i) => (
+                          <span key={i} className="tag">
+                            <strong>{key}:</strong> {String(value)}
+                          </span>
                         ))}
                       </div>
                     </div>
                     
                     <div className="info-row summary">
-                      <span className="info-label">Summary:</span>
-                      <p>{output.summary || "No summary provided."}</p>
-                    </div>
-                    
-                    <div className="action-row">
-                      <span className="info-label">Action:</span>
-                      <p className="action-text">{output.recommended_action || "Investigate"}</p>
+                      <span className="info-label">Description:</span>
+                      <p>{output.attributes?.description || "No description provided."}</p>
                     </div>
                   </div>
                 </div>
@@ -104,22 +159,46 @@ const Reclamations = () => {
         )}
       </div>
 
-      {!loading && data.length > 0 && (
+      {/* Modal Window */}
+      <EmailDetailsModal 
+        isOpen={!!selectedEmail}
+        onClose={() => setSelectedEmail(null)}
+        email={selectedEmail}
+        type="Réclamation"
+      />
+
+      {!loading && totalCount > 0 && (
         <div className="pagination glass-panel">
           <button 
-            className="btn-secondary" 
+            className="btn-secondary pagination-arrow" 
             onClick={() => setPage(p => Math.max(1, p - 1))}
             disabled={page === 1}
           >
-            <ChevronLeft size={16} /> Prev
+            <ChevronLeft size={16} />
           </button>
-          <span className="page-info">Page {page} of {totalPages}</span>
+          
+          <div className="page-numbers">
+            {getPageNumbers().map((p, idx) => (
+              p === '...' ? (
+                <span key={`dots-${idx}`} className="pagination-dots">...</span>
+              ) : (
+                <button
+                  key={p}
+                  className={`page-num-btn ${page === p ? 'active' : ''}`}
+                  onClick={() => setPage(p)}
+                >
+                  {p}
+                </button>
+              )
+            ))}
+          </div>
+
           <button 
-            className="btn-secondary" 
+            className="btn-secondary pagination-arrow" 
             onClick={() => setPage(p => Math.min(totalPages, p + 1))}
             disabled={page >= totalPages}
           >
-            Next <ChevronRight size={16} />
+            <ChevronRight size={16} />
           </button>
         </div>
       )}

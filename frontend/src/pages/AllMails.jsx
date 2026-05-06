@@ -3,6 +3,7 @@ import { Mail, ChevronLeft, ChevronRight, Inbox, Database, X } from 'lucide-reac
 import { dataAPI } from '../services/api';
 import EmailDetailsModal from '../components/EmailDetailsModal';
 import './DataPages.css';
+import { useLocation } from 'react-router-dom';
 
 const AllMails = () => {
   const [data, setData] = useState([]);
@@ -11,6 +12,17 @@ const AllMails = () => {
   const [totalCount, setTotalCount] = useState(0);
   const [selectedEmail, setSelectedEmail] = useState(null);
   const pageSize = 30;
+  const location = useLocation();
+  const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
+  const filteredData = searchQuery
+    ? data.filter(item => {
+        const output = item.output || {};
+        const emailContent = item.input_email || '';
+        const attrs = Object.values(output.attributes || {}).join(' ');
+        const combined = `${output.email_id || ''} ${emailContent} ${attrs}`.toLowerCase();
+        return combined.includes(searchQuery);
+      })
+    : data;
 
   useEffect(() => {
     fetchData();
@@ -76,7 +88,7 @@ const AllMails = () => {
           </div>
         ) : (
           <div className="email-grid">
-            {data.map((item, index) => {
+            {filteredData.map((item, index) => {
               const output = item.output || {};
               const emailContent = item.input_email || '';
               const type = output.workflow_type || "Unknown";

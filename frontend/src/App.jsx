@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { SearchProvider } from './context/SearchContext';
 import Layout from './components/Layout';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
@@ -30,29 +31,13 @@ const AppRoutes = () => {
       <Route path="/" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
         <Route index element={<Dashboard />} />
 
-        <Route path="reclamations" element={
-          <ProtectedRoute allowedRoles={['admin', 'responsable_reclamations']}>
-            <Reclamations />
-          </ProtectedRoute>
-        } />
+        <Route path="reclamations" element={<ProtectedRoute allowedRoles={['admin', 'responsable_reclamations']}><Reclamations /></ProtectedRoute>} />
 
-        <Route path="demandes" element={
-          <ProtectedRoute allowedRoles={['admin', 'responsable_demandes']}>
-            <Demandes />
-          </ProtectedRoute>
-        } />
+        <Route path="demandes" element={<ProtectedRoute allowedRoles={['admin', 'responsable_demandes']}><Demandes /></ProtectedRoute>} />
 
-        <Route path="all" element={
-          <ProtectedRoute allowedRoles={['admin']}>
-            <AllMails />
-          </ProtectedRoute>
-        } />
+        <Route path="all" element={<ProtectedRoute allowedRoles={['admin']}><AllMails /></ProtectedRoute>} />
         
-        <Route path="users" element={
-          <ProtectedRoute allowedRoles={['admin']}>
-            <Users />
-          </ProtectedRoute>
-        } />
+        <Route path="users" element={<ProtectedRoute allowedRoles={['admin']}><Users /></ProtectedRoute>} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" />} />
@@ -64,7 +49,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <AppRoutes />
+        <SearchProvider>
+          <AppRoutes />
+        </SearchProvider>
       </AuthProvider>
     </BrowserRouter>
   );

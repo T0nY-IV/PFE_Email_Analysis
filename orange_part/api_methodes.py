@@ -168,17 +168,19 @@ def initialize():
         raise
 
 
-def analyze(mail_content):
+def analyze(email):
     """Query the RAG system and get response from Ollama"""
     global embedding_model, collection
-    
+
     try:
+
+        email_content = email.split("/cut/")[0]
         # Check if system is initialized
         if embedding_model is None or collection is None:
             raise Exception("RAG system not initialized. Call /initialize first.")
 
         # Encode the actual mail content for query (not the prompt template)
-        query_embedding = embedding_model.encode([str(mail_content)])[0]
+        query_embedding = embedding_model.encode([str(email_content)])[0]
         
         # Retrieve relevant context
         results = collection.query(
@@ -192,8 +194,32 @@ def analyze(mail_content):
             
         retrieved_docs = documents[0]
         
+        #separation of the attachments from the email content
+        email_attachments = email.split("/cut/")[1]
+        if email_attachments == "":
+            attachements = []
+        else:
+            attachements = email_attachments.split(";")
+        email_content += "\n\nAttachments:\n"
+        Uid = email_content.split("UID:")[1].split("\n")[0].strip()
+
+        #attachement processing with OCR if necessary
+        if attachements:
+            for att in attachements:
+                if att.endswith(".pdf"):
+                    link_att_pdf = "emails_output/attachments/" + Uid + "/" + att
+                    ocr_result = Ocr_pdf(link_att_pdf, layout)
+                    email_content += "\n\n" + str(ocr_result)
+                elif att.endswith((".jpg", ".jpeg", ".png")):
+                    link_att_img = "emails_output/images/" + Uid + "/" + att
+                    ocr_result = Ocr_picture(link_att_img)
+                    email_content += "\n\n" + str(ocr_result)
+        else:
+            email_content += "None"
+
+
         # Lecture du contenu de l'email à traiter
-        email_content = str(mail_content)
+        email_content = str(email_content)
         
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email

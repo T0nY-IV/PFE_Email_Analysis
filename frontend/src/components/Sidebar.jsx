@@ -28,6 +28,17 @@ const Sidebar = () => {
           {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
         </button>
       </div>
+      <div className="sidebar-footer">
+        <div className="user-info">
+          <div className="avatar">{user.username.charAt(0).toUpperCase()}</div>
+          {!isCollapsed && (
+            <div className="user-details">
+              <span className="user-name">{user.username}</span>
+              <span className="user-role badge orange">{user.role.replace('_', ' ')}</span>
+            </div>
+          )}
+        </div>
+      </div>
 
       <nav className="sidebar-nav">
         <NavLink to="/" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`} end>
@@ -63,17 +74,7 @@ const Sidebar = () => {
         )}
       </nav>
 
-      <div className="sidebar-footer">
-        <div className="user-info">
-          <div className="avatar">{user.username.charAt(0).toUpperCase()}</div>
-          {!isCollapsed && (
-            <div className="user-details">
-              <span className="user-name">{user.username}</span>
-              <span className="user-role badge orange">{user.role.replace('_', ' ')}</span>
-            </div>
-          )}
-        </div>
-      </div>
+      
     </aside>
   );
 };

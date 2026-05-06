@@ -244,6 +244,7 @@ const Users = () => {
       </div>
 
       {isModalOpen && (
+        
         <div className="modal-overlay">
           <div className="modal-content glass-panel animate-scale-in">
             <div className="modal-header">

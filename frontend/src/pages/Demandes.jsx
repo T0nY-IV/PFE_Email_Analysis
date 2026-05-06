@@ -3,6 +3,7 @@ import { Mail, ChevronLeft, ChevronRight, Inbox, HelpCircle, CheckCircle, X } fr
 import { dataAPI, demandesAPI } from '../services/api';
 import EmailDetailsModal from '../components/EmailDetailsModal';
 import './DataPages.css';
+import { useLocation } from 'react-router-dom';
 
 const Demandes = () => {
   const [data, setData] = useState([]);
@@ -12,6 +13,17 @@ const Demandes = () => {
   const [resolvedIds, setResolvedIds] = useState(new Set());
   const [selectedEmail, setSelectedEmail] = useState(null);
   const pageSize = 30;
+  const location = useLocation();
+  const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
+  const filteredData = searchQuery
+    ? data.filter(item => {
+        const output = item.output || {};
+        const emailContent = item.input_email || '';
+        const attrs = Object.values(output.attributes || {}).join(' ');
+        const combined = `${output.email_id || ''} ${emailContent} ${attrs}`.toLowerCase();
+        return combined.includes(searchQuery);
+      })
+    : data;
 
   useEffect(() => {
     fetchData();
@@ -106,7 +118,7 @@ const Demandes = () => {
           </div>
         ) : (
           <div className="email-grid">
-            {data.map((item, index) => {
+            {filteredData.map((item, index) => {
               const output = item.output || {};
               const emailContent = item.input_email || '';
               

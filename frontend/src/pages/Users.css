@@ -288,7 +288,7 @@
 }
 
 .modal-header {
-  display: flex;
+  display: relative;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;

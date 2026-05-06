@@ -1,14 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import { LogOut, Bell, Search, Activity, Play, Square, RefreshCw, Timer } from 'lucide-react';
+import { LogOut, Search, Play, Square, RefreshCw, Timer, Sun, Moon } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { pollerAPI } from '../services/api';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './TopNav.css';
 
 const TopNav = () => {
   const { logout } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [search, setSearch] = useState('');
   const [pollerStatus, setPollerStatus] = useState({ is_running: false });
   const [isRefreshing, setIsRefreshing] = useState(false);
   const [cooldownTime, setCooldownTime] = useState(60);
+  const [theme, setTheme] = useState('dark');
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme') || 'dark';
+    setTheme(storedTheme);
+    applyTheme(storedTheme);
+  }, []);
+
+  useEffect(() => {
+    fetchStatus();
+    const interval = setInterval(fetchStatus, 10000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const applyTheme = (themeMode) => {
+    document.body.classList.toggle('light-theme', themeMode === 'light');
+    localStorage.setItem('theme', themeMode);
+  };
+
+  const toggleTheme = () => {
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    applyTheme(nextTheme);
+  };
 
   useEffect(() => {
     fetchStatus();
@@ -58,7 +86,11 @@ const TopNav = () => {
     <header className="topnav glass-panel">
       <div className="search-bar">
         <Search size={18} className="search-icon" />
-        <input type="text" placeholder="Search emails, subjects..." className="search-input" />
+        <input type="text" placeholder="Search emails, subjects..." className="search-input"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={(e) => { if (e.key === 'Enter') { navigate(`${location.pathname}?q=${search}`); } }}
+        />
       </div>
 
       <div className="topnav-actions">
@@ -107,11 +139,10 @@ const TopNav = () => {
 
         <div className="divider"></div>
 
-        <button className="icon-btn">
-          <Bell size={20} />
-          <span className="notification-dot"></span>
+        <button className="icon-btn theme-toggle" onClick={toggleTheme} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
+          {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
         </button>
-        
+
         <button className="icon-btn logout-btn" onClick={logout} title="Logout">
           <LogOut size={20} />
         </button>

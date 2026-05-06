@@ -20,7 +20,8 @@ def get_mailContent_from_exel_by_uid(uid):
         
         # Extraire le contenu de l'email
         email_content = email_row.iloc[0]['Email Content']  # Utiliser la colonne 'Email Content'
-        return "UID: " + str(uid) + "\n" + email_content
+        email_attachements = email_row.iloc[0]['Attachments']  # Utiliser la colonne 'Attachments' si nécessaire
+        return "UID: " + str(uid) + "\n" + email_content + "/cut/" + str(email_attachements)
     except Exception as e:
         print(f"Erreur lors de la récupération du contenu de l'email: {e}")
         return None

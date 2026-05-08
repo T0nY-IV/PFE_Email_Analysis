@@ -252,7 +252,7 @@ async def create_user_admin(user_data: UserCreate, db: Session = Depends(get_db)
             <body style="background-color: #f8fafc; padding: 40px 20px; margin: 0;">
                 <div class="container">
                     <div class="header">
-                        <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em;">Email Intelligence Pro</h1>
+                        <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em;">Orange Analytics</h1>
                     </div>
                     <div class="content">
                         <h2 style="margin-top: 0; color: #0f172a; font-size: 20px;">Welcome, {user_data.username}!</h2>
@@ -288,7 +288,7 @@ async def create_user_admin(user_data: UserCreate, db: Session = Depends(get_db)
                         </div>
                     </div>
                     <div class="footer">
-                        <p style="margin: 0;">&copy; 2026 Email Intelligence Pro &bull; Security & Analysis Suite</p>
+                        <p style="margin: 0;">&copy; 2026 Orange Analytics &bull; Security & Analysis Suite</p>
                         <p style="margin: 4px 0 0 0;">This is an automated message, please do not reply.</p>
                     </div>
                 </div>
@@ -347,6 +347,250 @@ async def update_user(
             status_code=status.HTTP_404_NOT_FOUND,
             detail="User not found",
         )
+    
+    if (user.is_active is not user_update.is_active) and user_update.is_active == False:
+        try:
+            sender_email = os.getenv("mail_@")
+            sender_password = os.getenv("mail_code")
+
+            if sender_email and sender_password:
+                msg = MIMEMultipart()
+                msg['From'] = sender_email
+                msg['To'] = str(user.email)
+                msg['Subject'] = "Your Account Has Been Disabled"
+
+                html_body = f"""
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <style>
+                        .container {{
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            max-width: 600px;
+                            margin: 0 auto;
+                            background-color: #ffffff;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+                            border: 1px solid #e2e8f0;
+                        }}
+                        .header {{
+                            background: linear-gradient(135deg, #f97316, #8b5cf6);
+                            padding: 40px 20px;
+                            text-align: center;
+                            color: white;
+                        }}
+                        .content {{
+                            padding: 40px 30px;
+                            color: #1e293b;
+                            line-height: 1.6;
+                        }}
+                        .credentials-card {{
+                            background-color: #f8fafc;
+                            border-radius: 12px;
+                            padding: 24px;
+                            margin: 24px 0;
+                            border: 1px solid #e2e8f0;
+                        }}
+                        .credential-item {{
+                            padding: 12px 0;
+                            border-bottom: 1px solid #f1f5f9;
+                        }}
+                        .credential-item:last-child {{
+                            border-bottom: none;
+                        }}
+                        .label {{
+                            color: #64748b;
+                            font-weight: 600;
+                            font-size: 0.75rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                            display: block;
+                            margin-bottom: 4px;
+                        }}
+                        .value {{
+                            color: #0f172a;
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                            display: block;
+                        }}
+                        .footer {{
+                            padding: 30px;
+                            text-align: center;
+                            color: #94a3b8;
+                            font-size: 0.8rem;
+                            background-color: #f8fafc;
+                            border-top: 1px solid #f1f5f9;
+                        }}
+                        .btn {{
+                            display: inline-block;
+                            padding: 16px 32px;
+                            background: linear-gradient(135deg, #f97316, #ea580c);
+                            color: #ffffff !important;
+                            text-decoration: none;
+                            border-radius: 12px;
+                            font-weight: 700;
+                            margin-top: 20px;
+                            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+                        }}
+                    </style>
+                </head>
+                <body style="background-color: #f8fafc; padding: 40px 20px; margin: 0;">
+                    <div class="container">
+                        <div class="header">
+                            <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em;">Orange Analytics</h1>
+                        </div>
+                        <div class="content">
+                            <h2 style="margin-top: 0; color: #0f172a; font-size: 20px;">Welcome, {user.username}!</h2>
+                            <p style="font-size: 16px; color: #475569;">Your administrative account has been disabled.</p>
+
+                            <div style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 16px; margin: 24px 0; border-radius: 8px;">
+                                <p style="margin: 0; color: #9a3412; font-size: 14px; font-weight: 500;">
+                                    <strong>Security Notice:</strong> Your administrative account has been disabled. If you believe this is a mistake, please contact your system administrator.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p style="margin: 0;">&copy; 2026 Orange Analytics &bull; Security & Analysis Suite</p>
+                            <p style="margin: 4px 0 0 0;">This is an automated message, please do not reply.</p>
+                        </div>
+                    </div>
+                </body>
+                </html>
+                """
+
+                msg.attach(MIMEText(html_body, 'html'))
+
+                # Using SMTP to send the email (IMAP is for reading/managing)
+                with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+                    server.login(sender_email, sender_password)
+                    server.send_message(msg)
+                    print(f"message sent to {user.email}")
+        except Exception as e:
+            print(f"Error sending message email: {str(e)}")
+    else:
+        try:
+            sender_email = os.getenv("mail_@")
+            sender_password = os.getenv("mail_code")
+
+            if sender_email and sender_password:
+                msg = MIMEMultipart()
+                msg['From'] = sender_email
+                msg['To'] = str(user.email)
+                msg['Subject'] = "Your Account Has Been Disabled"
+
+                html_body = f"""
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <style>
+                        .container {{
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            max-width: 600px;
+                            margin: 0 auto;
+                            background-color: #ffffff;
+                            border-radius: 16px;
+                            overflow: hidden;
+                            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+                            border: 1px solid #e2e8f0;
+                        }}
+                        .header {{
+                            background: linear-gradient(135deg, #f97316, #8b5cf6);
+                            padding: 40px 20px;
+                            text-align: center;
+                            color: white;
+                        }}
+                        .content {{
+                            padding: 40px 30px;
+                            color: #1e293b;
+                            line-height: 1.6;
+                        }}
+                        .credentials-card {{
+                            background-color: #f8fafc;
+                            border-radius: 12px;
+                            padding: 24px;
+                            margin: 24px 0;
+                            border: 1px solid #e2e8f0;
+                        }}
+                        .credential-item {{
+                            padding: 12px 0;
+                            border-bottom: 1px solid #f1f5f9;
+                        }}
+                        .credential-item:last-child {{
+                            border-bottom: none;
+                        }}
+                        .label {{
+                            color: #64748b;
+                            font-weight: 600;
+                            font-size: 0.75rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.05em;
+                            display: block;
+                            margin-bottom: 4px;
+                        }}
+                        .value {{
+                            color: #0f172a;
+                            font-weight: 700;
+                            font-size: 1.1rem;
+                            display: block;
+                        }}
+                        .footer {{
+                            padding: 30px;
+                            text-align: center;
+                            color: #94a3b8;
+                            font-size: 0.8rem;
+                            background-color: #f8fafc;
+                            border-top: 1px solid #f1f5f9;
+                        }}
+                        .btn {{
+                            display: inline-block;
+                            padding: 16px 32px;
+                            background: linear-gradient(135deg, #f97316, #ea580c);
+                            color: #ffffff !important;
+                            text-decoration: none;
+                            border-radius: 12px;
+                            font-weight: 700;
+                            margin-top: 20px;
+                            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+                        }}
+                    </style>
+                </head>
+                <body style="background-color: #f8fafc; padding: 40px 20px; margin: 0;">
+                    <div class="container">
+                        <div class="header">
+                            <h1 style="margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.02em;">Orange Analytics</h1>
+                        </div>
+                        <div class="content">
+                            <h2 style="margin-top: 0; color: #0f172a; font-size: 20px;">Welcome, {user.username}!</h2>
+                            <p style="font-size: 16px; color: #475569;">Your administrative account has been enabled.</p>
+
+                            <div style="background-color: #fff7ed; border-left: 4px solid #f97316; padding: 16px; margin: 24px 0; border-radius: 8px;">
+                                <p style="margin: 0; color: #9a3412; font-size: 14px; font-weight: 500;">
+                                    <strong>Security Notice:</strong> Your administrative account has been enabled. Please contact your system administrator for more information.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p style="margin: 0;">&copy; 2026 Orange Analytics &bull; Security & Analysis Suite</p>
+                            <p style="margin: 4px 0 0 0;">This is an automated message, please do not reply.</p>
+                        </div>
+                    </div>
+                </body>
+                </html>
+                """
+
+                msg.attach(MIMEText(html_body, 'html'))
+
+                # Using SMTP to send the email (IMAP is for reading/managing)
+                with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+                    server.login(sender_email, sender_password)
+                    server.send_message(msg)
+                    print(f"message sent to {user.email}")
+        except Exception as e:
+            print(f"Error sending message email: {str(e)}")
+        
+
+        
 
     update_data = user_update.model_dump(exclude_unset=True)
     

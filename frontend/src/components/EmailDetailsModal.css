@@ -59,14 +59,15 @@
   max-height: 100%;
   overflow-y: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   gap: 40px;
 }
 
-.modal-header {
+.modal-headerg {
   display: flex;
   align-items: center;
   gap: 20px;
+  
 }
 
 .modal-icon-badge {
@@ -186,7 +187,7 @@
   font-weight: 500;
 }
 
-.modal-footer {
+.modal-footerg {
   margin-top: auto;
   padding-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);

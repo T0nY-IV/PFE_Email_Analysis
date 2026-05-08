@@ -1,3 +1,4 @@
+from email.header import decode_header
 import imaplib
 import email
 import os
@@ -130,6 +131,19 @@ def save_attachments(msg, email_uid, base_folder=OUTPUT_FOLDER):
     return attachments_info
 
 
+def decode_email_header(header_value):
+    """Properly decode RFC 2047 encoded email headers."""
+    if not header_value:
+        return ""
+    decoded_parts = decode_header(header_value)
+    result = []
+    for part, encoding in decoded_parts:
+        if isinstance(part, bytes):
+            result.append(part.decode(encoding or 'utf-8', errors='ignore'))
+        else:
+            result.append(part)
+    return ''.join(result)
+
 # ---- Main flow ----
 
 
@@ -146,8 +160,11 @@ def run_once():
 
     # Connect to Gmail over IMAP+SSL.
     mail = imaplib.IMAP4_SSL(IMAP_SERVER)
+
     try:
+        #login and select the inbox.
         mail.login(str(EMAIL_ACCOUNT), str(PASSWORD))
+        print("Successfully connected to the mailbox.")
         mail.select("inbox")
 
         # Search for new emails since the last UID we processed.
@@ -187,13 +204,13 @@ def run_once():
 
             # Extract attachments and message body.
             attachments = save_attachments(msg, email_uid, OUTPUT_FOLDER)
-            email_body = msg.get("from", "Unknown")+"\n"+get_body(msg)
+            email_body = "From: " + msg.get("from", "Unknown") + " \n " + "Subject: " + decode_email_header(msg.get("subject", "No Subject")) + " \n " + "Date: " + msg.get("date", "Unknown Date") + " \n " + get_body(msg)
 
             # Log extracted data to console (useful for quick checks).
             email_json = {
                 "id": email_uid,
                 "from": msg.get("from", "Unknown"),
-                "subject": msg.get("subject", "No Subject"),
+                "subject": decode_email_header(msg.get("subject", "No Subject")),
                 "date": msg.get("date", "Unknown Date"),
                 "body": email_body.strip(),
                 "attachments": attachments,

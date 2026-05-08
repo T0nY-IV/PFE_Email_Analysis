@@ -7,6 +7,9 @@ from ollama import chat
 from sentence_transformers import SentenceTransformer
 import chromadb
 from shared.prompt import prompt_orange
+from Ocr_methodes import Ocr_pdf, Ocr_pdf_Init, Ocr_picture
+
+layout = Ocr_pdf_Init()
 
 def save_to_dataset(input_email, output_data):
     """Append new RAG result to dataset JSON file"""

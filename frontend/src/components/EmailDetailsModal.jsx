@@ -30,7 +30,7 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
         </button>
 
         <div className="modal-inner">
-          <header className="modal-header">
+          <header className="modal-headerg">
             <div className={`modal-icon-badge ${type === 'Réclamation' ? 'red' : 'purple'}`}>
               <Mail size={24} />
             </div>
@@ -69,7 +69,7 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
             </section>
           </div>
 
-          <footer className="modal-footer">
+          <footer className="modal-footerg">
             <div className="confidence-meter">
               <div className="meter-header">
                 <span>AI Confidence Score</span>

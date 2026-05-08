@@ -1,3 +1,4 @@
+from email.header import decode_header
 import imaplib
 import email
 import os
@@ -9,8 +10,8 @@ import dotenv
 
 dotenv.load_dotenv()
 IMAP_SERVER = "imap.gmail.com"
-EMAIL_ACCOUNT = os.getenv("mail_@")
-PASSWORD = os.getenv("mail_code")
+EMAIL_ACCOUNT = str(os.getenv("mail_@"))
+PASSWORD = str(os.getenv("mail_code"))
 OUTPUT_FOLDER = "emails_output"
 
 
@@ -113,6 +114,19 @@ def save_attachments(msg, email_uid, base_folder="emails_output"):
 
     return attachments_info
 
+def decode_email_header(header_value):
+    """Properly decode RFC 2047 encoded email headers."""
+    if not header_value:
+        return ""
+    decoded_parts = decode_header(header_value)
+    result = []
+    for part, encoding in decoded_parts:
+        if isinstance(part, bytes):
+            result.append(part.decode(encoding or 'utf-8', errors='ignore'))
+        else:
+            result.append(part)
+    return ''.join(result)
+
 
 # --- Main Script ---
 
@@ -158,13 +172,13 @@ for uid in reversed(last_10_uids):
     attachments = save_attachments(msg, email_uid, OUTPUT_FOLDER)
 
     # 2. Get cleaned body
-    email_body = get_body(msg)
+    email_body = "From: " + msg.get("from", "Unknown") + " \n " + "Subject: " + decode_email_header(msg.get("subject", "No Subject")) + " \n " + "Date: " + msg.get("date", "Unknown Date") + " \n " + get_body(msg)
 
     # 3. Prepare JSON Data
     email_json = {
         "id": email_uid,
         "from": msg.get("from", "Unknown"),
-        "subject": msg.get("subject", "No Subject"),
+        "subject": decode_email_header(msg.get("subject", "No Subject")),
         "date": msg.get("date", "Unknown Date"),
         "body": email_body.strip(),
         "attachments": attachments  # Added attachment list here

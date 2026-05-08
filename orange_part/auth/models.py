@@ -57,6 +57,7 @@ class ReclamationResolution(Base):
     id = Column(Integer, primary_key=True, index=True)
     email_uid = Column(String, unique=True, index=True, nullable=False)
     resolved_at = Column(DateTime(timezone=True), server_default=func.now())
+    resolved_by = Column(String, nullable=True)
 
 
 class DemandeResolution(Base):
@@ -66,3 +67,4 @@ class DemandeResolution(Base):
     id = Column(Integer, primary_key=True, index=True)
     email_uid = Column(String, unique=True, index=True, nullable=False)
     resolved_at = Column(DateTime(timezone=True), server_default=func.now())
+    resolved_by = Column(String, nullable=True)

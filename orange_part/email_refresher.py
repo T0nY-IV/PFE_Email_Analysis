@@ -9,7 +9,7 @@ import threading
 import pandas as pd
 import dotenv
 from mail_analyser import loop_through_emails_and_send_requests
-from api_methodes import get_last_excel_uid, initialize
+from Mail_treatement_methodes import get_last_excel_uid, initialize
 
 # Global stop event (thread-safe)
 _stop_event = threading.Event()
@@ -149,7 +149,7 @@ def decode_email_header(header_value):
 
 
 
-def run_once():
+def mail_getter():
     """One polling cycle: connect, fetch new emails, extract, and update state."""
     # Ensure the output directory exists.
     os.makedirs(OUTPUT_FOLDER, exist_ok=True)
@@ -297,7 +297,7 @@ def auto_refresh(cooldown_seconds=None):
         initialize()
         while not _stop_event.is_set():
             print(time.strftime("[%Y-%m-%d %H:%M:%S] Checking for new emails..."))
-            run_once()
+            mail_getter()
             loop_through_emails_and_send_requests()
             print(f"Sleeping for {interval} seconds...\n")
             # Use wait() instead of sleep() so it responds to stop quickly

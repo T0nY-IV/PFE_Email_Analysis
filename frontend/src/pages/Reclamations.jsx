@@ -10,11 +10,12 @@ const Reclamations = () => {
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
-  const [resolvedIds, setResolvedIds] = useState(new Set());
+  const [resolvedMap, setResolvedMap] = useState({}); // Map of email_uid -> {resolved_by, resolved_at}
   const [selectedEmail, setSelectedEmail] = useState(null);
   const pageSize = 30;
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
+  
   const filteredData = searchQuery
     ? data.filter(item => {
         const output = item.output || {};
@@ -34,11 +35,19 @@ const Reclamations = () => {
     try {
       const [res, resolvedRes] = await Promise.all([
         dataAPI.getReclamations(page, pageSize),
-        reclamationsAPI.getResolvedList().catch(() => ({ data: { resolved_uids: [] } }))
+        reclamationsAPI.getResolvedList().catch(() => ({ data: { resolved_list: [] } }))
       ]);
       setData(res.data.data || []);
       setTotalCount(res.data.count || 0);
-      setResolvedIds(new Set((resolvedRes.data.resolved_uids || []).map(String)));
+      
+      const mapping = {};
+      (resolvedRes.data.resolved_list || []).forEach(item => {
+        mapping[String(item.email_uid)] = {
+          resolved_by: item.resolved_by,
+          resolved_at: item.resolved_at
+        };
+      });
+      setResolvedMap(mapping);
     } catch (err) {
       console.error(err);
     } finally {
@@ -50,21 +59,23 @@ const Reclamations = () => {
     if (!emailId) return;
     const idStr = String(emailId);
     try {
-      const isResolved = resolvedIds.has(idStr);
+      const isResolved = idStr in resolvedMap;
       if (isResolved) {
         await reclamationsAPI.markUnresolved(idStr);
-        setResolvedIds(prev => {
-          const newSet = new Set(prev);
-          newSet.delete(idStr);
-          return newSet;
+        setResolvedMap(prev => {
+          const newMap = { ...prev };
+          delete newMap[idStr];
+          return newMap;
         });
       } else {
-        await reclamationsAPI.markResolved(idStr);
-        setResolvedIds(prev => {
-          const newSet = new Set(prev);
-          newSet.add(idStr);
-          return newSet;
-        });
+        const response = await reclamationsAPI.markResolved(idStr);
+        setResolvedMap(prev => ({
+          ...prev,
+          [idStr]: {
+            resolved_by: response.data.resolved_by,
+            resolved_at: response.data.resolved_at
+          }
+        }));
       }
     } catch (err) {
       console.error('Failed to toggle resolved status', err);
@@ -89,6 +100,12 @@ const Reclamations = () => {
       }
     }
     return [...new Set(pages)]; // Remove duplicates
+  };
+
+  const formatResolvedAt = (dateStr) => {
+    if (!dateStr) return '';
+    const date = new Date(dateStr);
+    return date.toLocaleString();
   };
 
   return (
@@ -120,7 +137,8 @@ const Reclamations = () => {
           <div className="email-grid">
             {filteredData.map((item, index) => {
               const output = item.output || {};
-              const emailContent = item.input_email || '';
+              const emailId = String(output.email_id || '');
+              const resolution = resolvedMap[emailId];
               
               return (
                 <div key={index} className="email-card glass-panel" onClick={() => setSelectedEmail(item)}>
@@ -130,17 +148,25 @@ const Reclamations = () => {
                       <h4>Email #{output.email_id || index + 1}</h4>
                     </div>
                     <div className="header-actions">
-                      <button 
-                        className={`resolve-btn ${resolvedIds.has(String(output.email_id)) ? 'resolved' : ''}`}
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleResolved(output.email_id);
-                        }}
-                        title={resolvedIds.has(String(output.email_id)) ? "Mark as Unresolved" : "Mark as Resolved"}
-                      >
-                        <CheckCircle size={14} />
-                        <span>{resolvedIds.has(String(output.email_id)) ? 'Resolved' : 'Resolve'}</span>
-                      </button>
+                      <div className="resolution-wrapper">
+                        <button 
+                          className={`resolve-btn ${resolution ? 'resolved' : ''}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleResolved(output.email_id);
+                          }}
+                          title={resolution ? "Mark as Unresolved" : "Mark as Resolved"}
+                        >
+                          <CheckCircle size={14} />
+                          <span>{resolution ? 'Resolved' : 'Resolve'}</span>
+                        </button>
+                        {resolution && (
+                          <div className="resolved-info">
+                            <span>By: <span className="resolver-name">{resolution.resolved_by || 'Unknown'}</span></span>
+                            <span className="resolved-date">{formatResolvedAt(resolution.resolved_at)}</span>
+                          </div>
+                        )}
+                      </div>
                       <span className="badge red">Réclamation</span>
                     </div>
                   </div>

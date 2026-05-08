@@ -7,7 +7,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from database import Base, engine, SessionLocal, get_db
 from auth.router import router as auth_router
-from auth.dependencies import require_role
+from auth.dependencies import require_role, get_current_user
 from auth.models import User, UserRole, ReclamationResolution, DemandeResolution
 
 # Create database tables
@@ -184,8 +184,8 @@ async def api_get_all(request: PageRequest = Depends()):
 # ===================== RECLAMATIONS RESOLUTION ENDPOINTS =====================
 
 @app.post("/reclamations/mark-resolved", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_RECLAMATIONS))])
-async def mark_reclamation_resolved(request: EmailUIDRequest, db = Depends(get_db)):
-    """Mark a reclamation as resolved by storing its UID"""
+async def mark_reclamation_resolved(request: EmailUIDRequest, db = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """Mark a reclamation as resolved by storing its UID and the resolver's username"""
     try:
         # Check if already exists
         existing = db.query(ReclamationResolution).filter(
@@ -196,11 +196,12 @@ async def mark_reclamation_resolved(request: EmailUIDRequest, db = Depends(get_d
             return {
                 "status": "success",
                 "message": "Reclamation already marked as resolved",
-                "email_uid": request.email_uid
+                "email_uid": request.email_uid,
+                "resolved_by": existing.resolved_by
             }
         
         # Create new resolution record
-        resolution = ReclamationResolution(email_uid=request.email_uid)
+        resolution = ReclamationResolution(email_uid=request.email_uid, resolved_by=current_user.username)
         db.add(resolution)
         db.commit()
         db.refresh(resolution)
@@ -209,7 +210,8 @@ async def mark_reclamation_resolved(request: EmailUIDRequest, db = Depends(get_d
             "status": "success",
             "message": "Reclamation marked as resolved",
             "email_uid": request.email_uid,
-            "resolved_at": resolution.resolved_at
+            "resolved_at": resolution.resolved_at,
+            "resolved_by": resolution.resolved_by
         }
     except Exception as e:
         db.rollback()
@@ -256,7 +258,8 @@ async def check_reclamation_resolved(email_uid: str, db = Depends(get_db)):
             "status": "success",
             "email_uid": email_uid,
             "is_resolved": is_resolved,
-            "resolved_at": resolution.resolved_at if is_resolved else None
+            "resolved_at": resolution.resolved_at if is_resolved else None,
+            "resolved_by": resolution.resolved_by if is_resolved else None
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error checking reclamation resolution: {str(e)}")
@@ -264,16 +267,20 @@ async def check_reclamation_resolved(email_uid: str, db = Depends(get_db)):
 
 @app.get("/reclamations/resolved-list")
 async def get_resolved_reclamations(db = Depends(get_db)):
-    """Get all resolved reclamation UIDs"""
+    """Get all resolved reclamation data including UIDs and resolvers"""
     try:
         resolutions = db.query(ReclamationResolution).all()
         
-        resolved_uids = [r.email_uid for r in resolutions]
+        resolved_data = [
+            {"email_uid": r.email_uid, "resolved_by": r.resolved_by, "resolved_at": r.resolved_at} 
+            for r in resolutions
+        ]
         
         return {
             "status": "success",
-            "count": len(resolved_uids),
-            "resolved_uids": resolved_uids
+            "count": len(resolved_data),
+            "resolved_list": resolved_data,
+            "resolved_uids": [r.email_uid for r in resolutions] # Keep for backward compatibility if needed
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving resolved reclamations: {str(e)}")
@@ -282,8 +289,8 @@ async def get_resolved_reclamations(db = Depends(get_db)):
 # ===================== DEMANDES RESOLUTION ENDPOINTS =====================
 
 @app.post("/demandes/mark-resolved", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_DEMANDES))])
-async def mark_demande_resolved(request: EmailUIDRequest, db = Depends(get_db)):
-    """Mark a demande as resolved by storing its UID"""
+async def mark_demande_resolved(request: EmailUIDRequest, db = Depends(get_db), current_user: User = Depends(get_current_user)):
+    """Mark a demande as resolved by storing its UID and the resolver's username"""
     try:
         # Check if already exists
         existing = db.query(DemandeResolution).filter(
@@ -294,11 +301,12 @@ async def mark_demande_resolved(request: EmailUIDRequest, db = Depends(get_db)):
             return {
                 "status": "success",
                 "message": "Demande already marked as resolved",
-                "email_uid": request.email_uid
+                "email_uid": request.email_uid,
+                "resolved_by": existing.resolved_by
             }
         
         # Create new resolution record
-        resolution = DemandeResolution(email_uid=request.email_uid)
+        resolution = DemandeResolution(email_uid=request.email_uid, resolved_by=current_user.username)
         db.add(resolution)
         db.commit()
         db.refresh(resolution)
@@ -307,7 +315,8 @@ async def mark_demande_resolved(request: EmailUIDRequest, db = Depends(get_db)):
             "status": "success",
             "message": "Demande marked as resolved",
             "email_uid": request.email_uid,
-            "resolved_at": resolution.resolved_at
+            "resolved_at": resolution.resolved_at,
+            "resolved_by": resolution.resolved_by
         }
     except Exception as e:
         db.rollback()
@@ -354,7 +363,8 @@ async def check_demande_resolved(email_uid: str, db = Depends(get_db)):
             "status": "success",
             "email_uid": email_uid,
             "is_resolved": is_resolved,
-            "resolved_at": resolution.resolved_at if is_resolved else None
+            "resolved_at": resolution.resolved_at if is_resolved else None,
+            "resolved_by": resolution.resolved_by if is_resolved else None
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error checking demande resolution: {str(e)}")
@@ -362,16 +372,20 @@ async def check_demande_resolved(email_uid: str, db = Depends(get_db)):
 
 @app.get("/demandes/resolved-list")
 async def get_resolved_demandes(db = Depends(get_db)):
-    """Get all resolved demande UIDs"""
+    """Get all resolved demande data including UIDs and resolvers"""
     try:
         resolutions = db.query(DemandeResolution).all()
         
-        resolved_uids = [r.email_uid for r in resolutions]
+        resolved_data = [
+            {"email_uid": r.email_uid, "resolved_by": r.resolved_by, "resolved_at": r.resolved_at} 
+            for r in resolutions
+        ]
         
         return {
             "status": "success",
-            "count": len(resolved_uids),
-            "resolved_uids": resolved_uids
+            "count": len(resolved_data),
+            "resolved_list": resolved_data,
+            "resolved_uids": [r.email_uid for r in resolutions] # Keep for backward compatibility if needed
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving resolved demandes: {str(e)}")

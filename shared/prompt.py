@@ -87,7 +87,7 @@ prompt_orange = (
     "Attribute Extraction Rules:\n"
     "- Extract ONLY attributes that match the selected workflow.\n"
     "- Use EXACT attribute keys as defined below.\n"
-    "- If an attribute is missing, do NOT invent it.\n"
+    "- If an attribute is missing, do NOT invent it and make it null.\n"
     "- If no attributes are found, return an empty object {}.\n\n"
     "For workflow_type = 'Réclamation', allowed attributes:\n"
     "- titre\n"
@@ -109,7 +109,8 @@ prompt_orange = (
     "Additional Constraints:\n"
     "- Do NOT create attributes outside the allowed list.\n"
     "- Values must be extracted exactly from the email content.\n"
-    "- confidence_score must be a float between 0.0 and 1.0.\n"
+    "- confidence_score must be a float between 0.0 and 1.0.\n" \
+    "- the extracted date in the json output must be in 'mm/dd/yyyy' format\n"
     "- Return ONLY the JSON. No explanations. No markdown. No extra text.\n\n"
     "Email:\n"
 )

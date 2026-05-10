@@ -1,6 +1,7 @@
 .page-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 80px;
 }
 
 .page-header {
@@ -179,12 +180,67 @@
 }
 
 .pagination {
+  position: sticky;
+  bottom: -30px;
+  margin: 24px -30px -30px -30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  padding: 16px;
-  margin-top: 24px;
+  gap: 24px;
+  padding: 16px 40px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border-glass);
+  z-index: 1000;
+  box-shadow: var(--shadow-glow);
+}
+
+.pagination-info {
+  position: absolute;
+  left: 40px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-info strong {
+  color: var(--accent-orange);
+  font-weight: 700;
+}
+
+.page-size-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  right: 40px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.page-size-select {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.page-size-select:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent-orange);
+}
+
+.page-size-select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .page-numbers {

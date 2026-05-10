@@ -1,7 +1,7 @@
 .email-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(16px);
   z-index: 100000;
   /* Extremely high to cover everything */
@@ -13,12 +13,12 @@
 }
 
 .email-modal-container {
-  background: rgba(18, 18, 23, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass);
   border-radius: 32px;
-  width: 90%;
-  max-width: 1100px;
-  max-height: 85vh;
+  width: 95%;
+  max-width: 1400px;
+  max-height: 90vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,9 +34,9 @@
   position: absolute;
   top: 24px;
   right: 24px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--bg-card);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
   width: 40px;
   height: 40px;
   border-radius: 12px;
@@ -59,7 +59,7 @@
   max-height: 100%;
   overflow-y: auto;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 40px;
 }
 
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  
+
 }
 
 .modal-icon-badge {
@@ -95,7 +95,7 @@
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .type-tag {
@@ -119,10 +119,31 @@
   color: white;
 }
 
-.modal-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
+.modal-table-layout {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.modal-table-cell {
+  vertical-align: top;
+  padding: 0 30px;
+}
+
+.confidence-cell {
+  width: 20%;
+  padding-left: 0;
+  border-right: 1px solid var(--border-glass);
+}
+
+.content-cell {
+  width: 45%;
+  border-right: 1px solid var(--border-glass);
+}
+
+.data-cell {
+  width: 35%;
+  padding-right: 0;
 }
 
 .modal-section {
@@ -146,13 +167,13 @@
 }
 
 .content-scrollbox {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-glass);
   padding: 24px;
   border-radius: 20px;
   font-size: 1rem;
   line-height: 1.8;
-  color: #d1d5db;
+  color: var(--text-primary);
   white-space: pre-wrap;
   word-break: break-word;
   border-left: 4px solid var(--accent-orange);
@@ -165,10 +186,10 @@
 }
 
 .attribute-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-card);
   padding: 16px 20px;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -183,14 +204,14 @@
 
 .attribute-value {
   font-size: 1.05rem;
-  color: #fff;
+  color: var(--text-primary);
   font-weight: 500;
 }
 
 .modal-footerg {
   margin-top: auto;
   padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border-glass);
 }
 
 .confidence-meter {
@@ -208,12 +229,12 @@
 }
 
 .meter-header .percentage {
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .meter-track {
   height: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-primary);
   border-radius: 10px;
   overflow: hidden;
 }

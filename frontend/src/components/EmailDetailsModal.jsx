@@ -41,48 +41,55 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
               </span>
             </div>
           </header>
-
-          <div className="modal-grid">
-            <section className="modal-section">
-              <div className="section-header">
-                <Mail size={16} />
-                <span className="section-title">Original Email Content</span>
-              </div>
-              <div className="content-scrollbox">
-                {email.input_email || "No content available."}
-              </div>
-            </section>
-
-            <section className="modal-section">
-              <div className="section-header">
-                <AlertCircle size={16} />
-                <span className="section-title">Extracted Data Points</span>
-              </div>
-              <div className="attributes-display-grid">
-                {Object.entries(attributes).map(([key, value], i) => (
-                  <div key={i} className="attribute-card">
-                    <span className="attribute-key">{key.replace(/_/g, ' ')}</span>
-                    <span className="attribute-value">{String(value || 'N/A')}</span>
+                <div>
+                  <div className="confidence-meter">
+                    <div className="meter-header">
+                      <span>AI Confidence Score</span>
+                      <span className="percentage">{(confidenceScore * 100).toFixed(1)}%</span>
+                    </div>
+                    <div className="meter-track">
+                      <div
+                        className="meter-fill"
+                        style={{ width: `${confidenceScore * 100}%` }}
+                      ></div>
+                    </div>
                   </div>
-                ))}
-              </div>
-            </section>
-          </div>
+                </div>
+          <table className="modal-table-layout">
+            <tbody>
+              <tr>
+                <td className="modal-table-cell content-cell">
+                  <section className="modal-section">
+                    <div className="section-header">
+                      <Mail size={16} />
+                      <span className="section-title">Original Email Content</span>
+                    </div>
+                    <div className="content-scrollbox">
+                      {email.input_email || "No content available."}
+                    </div>
+                  </section>
+                </td>
 
-          <footer className="modal-footerg">
-            <div className="confidence-meter">
-              <div className="meter-header">
-                <span>AI Confidence Score</span>
-                <span className="percentage">{(confidenceScore * 100).toFixed(1)}%</span>
-              </div>
-              <div className="meter-track">
-                <div 
-                  className="meter-fill" 
-                  style={{ width: `${confidenceScore * 100}%` }}
-                ></div>
-              </div>
-            </div>
-          </footer>
+                <td className="modal-table-cell data-cell">
+                  <section className="modal-section">
+                    <div className="section-header">
+                      <AlertCircle size={16} />
+                      <span className="section-title">Extracted Data Points</span>
+                    </div>
+                    <div className="attributes-display-grid">
+                      {Object.entries(attributes).map(([key, value], i) => (
+                        <div key={i} className="attribute-card">
+                          <span className="attribute-key">{key.replace(/_/g, ' ')}</span>
+                          <span className="attribute-value">{String(value || 'N/A')}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </div>

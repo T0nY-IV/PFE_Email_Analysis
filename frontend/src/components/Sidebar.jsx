@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Inbox, FileText, Database, Settings, ChevronLeft, ChevronRight } from 'lucide-react';
+import { LayoutDashboard, Inbox, FileText, Database, Settings, ChevronLeft, ChevronRight, User } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import logoImg from '../assets/logo.png';
 import './Sidebar.css';
@@ -49,7 +49,7 @@ const Sidebar = () => {
         {(role === 'admin' || role === 'responsable_reclamations') && (
           <NavLink to="/reclamations" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <Inbox size={20} />
-            {!isCollapsed && <span>Réclamations</span>}
+            {!isCollapsed && <span>Reclamations</span>}
           </NavLink>
         )}
 
@@ -67,10 +67,17 @@ const Sidebar = () => {
               {!isCollapsed && <span>All Emails</span>}
             </NavLink>
             <NavLink to="/users" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
-              <Settings size={20} />
+              <User size={20} />
               {!isCollapsed && <span>Accounts</span>}
             </NavLink>
           </>
+        )}
+
+        {role !== 'admin' && (
+          <NavLink to="/settings" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
+            <Settings size={20} />
+            {!isCollapsed && <span>Settings</span>}
+          </NavLink>
         )}
       </nav>
 

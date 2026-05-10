@@ -1,5 +1,7 @@
 import json
 import asyncio
+import re
+from datetime import datetime
 from typing import List, Any
 from email_refresher import start_email_poller, stop_auto_refresh, get_poller_status, auto_refresh
 from fastapi import FastAPI, HTTPException, Depends, BackgroundTasks
@@ -31,6 +33,7 @@ app.add_middleware(
 class PageRequest(BaseModel):
     page: int
     page_size: int = 10
+    q: str = ""
 
 
 class CooldownRequest(BaseModel):
@@ -106,13 +109,24 @@ async def api_get_reclamations(request: PageRequest = Depends()):
             dataset = json.load(f)
         page = request.page
         page_size = request.page_size
+        q = request.q.lower().strip() if request.q else ""
+        
         index = 0
         reclamations = []
         for item in reversed(dataset):
             if item.get("output", {}).get("workflow_type") == "Réclamation":
+                # Apply search filter
+                if q:
+                    output = item.get("output", {})
+                    email_content = item.get("input_email", "").lower()
+                    attrs = " ".join([str(v) for v in output.get("attributes", {}).values() if v]).lower()
+                    combined = f"{output.get('email_id', '')} {email_content} {attrs}"
+                    if q not in combined:
+                        continue
+                
                 index += 1
-                if index <= (page * page_size) - 1 and index > ((page-1) * page_size) - 1:
-                    rec = {"input_email":item.get("input_email"), "output": item.get("output")}
+                if index <= (page * page_size) and index > (page - 1) * page_size:
+                    rec = {"input_email": item.get("input_email"), "output": item.get("output")}
                     reclamations.append(rec)
         
         return {
@@ -136,13 +150,24 @@ async def api_get_demandes(request: PageRequest = Depends()):
         
         page = request.page
         page_size = request.page_size
+        q = request.q.lower().strip() if request.q else ""
+        
         index = 0
         demandes = []
         for item in reversed(dataset):
             if item.get("output", {}).get("workflow_type") == "Demande":
+                # Apply search filter
+                if q:
+                    output = item.get("output", {})
+                    email_content = item.get("input_email", "").lower()
+                    attrs = " ".join([str(v) for v in output.get("attributes", {}).values() if v]).lower()
+                    combined = f"{output.get('email_id', '')} {email_content} {attrs}"
+                    if q not in combined:
+                        continue
+                
                 index += 1
-                if index <= (page * page_size) - 1 and index > ((page-1) * page_size) - 1:
-                    dem = {"input_email":item.get("input_email"), "output": item.get("output")}
+                if index <= (page * page_size) and index > (page - 1) * page_size:
+                    dem = {"input_email": item.get("input_email"), "output": item.get("output")}
                     demandes.append(dem)
         
         return {
@@ -166,12 +191,25 @@ async def api_get_all(request: PageRequest = Depends()):
         
         page = request.page
         page_size = request.page_size
-        dataset_rev = dataset[::-1]
-        items = dataset_rev[(page-1)*page_size : page*page_size]
+        q = request.q.lower().strip() if request.q else ""
+        
+        filtered_dataset = []
+        if q:
+            for item in reversed(dataset):
+                output = item.get("output", {})
+                email_content = item.get("input_email", "").lower()
+                attrs = " ".join([str(v) for v in output.get("attributes", {}).values() if v]).lower()
+                combined = f"{output.get('email_id', '')} {email_content} {attrs}"
+                if q in combined:
+                    filtered_dataset.append(item)
+        else:
+            filtered_dataset = dataset[::-1]
+
+        items = filtered_dataset[(page-1)*page_size : page*page_size]
 
         return {
             "status": "success",
-            "count": len(dataset),
+            "count": len(filtered_dataset),
             "current_page": page,
             "data": items
         }
@@ -179,6 +217,68 @@ async def api_get_all(request: PageRequest = Depends()):
         raise HTTPException(status_code=404, detail="Dataset file not found")
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving all items: {str(e)}")
+
+
+@app.get("/stats/monthly", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_RECLAMATIONS, UserRole.RESPONSABLE_DEMANDES))])
+async def get_monthly_stats():
+    """Get monthly counts for reclamations and demandes in the current year"""
+    try:
+        # Load the dataset
+        with open("dataset_telecom.json", "r", encoding="utf-8") as f:
+            dataset = json.load(f)
+        
+        current_year = datetime.now().year
+        # Group by month (1-12)
+        # Result structure: {month: {"reclamation": count, "demande": count}}
+        stats = {month: {"reclamation": 0, "demande": 0} for month in range(1, 13)}
+        
+        month_map = {
+            'Jan': 1, 'Feb': 2, 'Mar': 3, 'Apr': 4, 'May': 5, 'Jun': 6,
+            'Jul': 7, 'Aug': 8, 'Sep': 9, 'Oct': 10, 'Nov': 11, 'Dec': 12
+        }
+        
+        # Regex to extract Date from input_email string
+        # Format expected: "Date: Tue, 03 Feb 2026 13:01:13 +0100"
+        date_pattern = re.compile(r"Date:\s+.*,\s+(\d{2})\s+(\w{3})\s+(\d{4})")
+        
+        for item in dataset:
+            input_email = item.get("input_email", "")
+            workflow_type = item.get("output", {}).get("workflow_type")
+            
+            if not workflow_type:
+                continue
+                
+            match = date_pattern.search(input_email)
+            if match:
+                _, mon_str, year = match.groups()
+                year = int(year)
+                if year == current_year:
+                    month = month_map.get(mon_str)
+                    if month:
+                        if workflow_type == "Réclamation":
+                            stats[month]["reclamation"] += 1
+                        elif workflow_type == "Demande":
+                            stats[month]["demande"] += 1
+        
+        # Format for frontend: [{month: "Jan", reclamations: X, demandes: Y}, ...]
+        month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        formatted_stats = []
+        for m in range(1, 13):
+            formatted_stats.append({
+                "name": month_names[m-1],
+                "Reclamations": stats[m]["reclamation"],
+                "Demandes": stats[m]["demande"]
+            })
+            
+        return {
+            "status": "success",
+            "year": current_year,
+            "data": formatted_stats
+        }
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Dataset file not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error calculating monthly stats: {str(e)}")
 
 
 # ===================== RECLAMATIONS RESOLUTION ENDPOINTS =====================
@@ -218,7 +318,7 @@ async def mark_reclamation_resolved(request: EmailUIDRequest, db = Depends(get_d
         raise HTTPException(status_code=500, detail=f"Error marking reclamation as resolved: {str(e)}")
 
 
-@app.delete("/reclamations/mark-unresolved/{email_uid}", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_RECLAMATIONS))])
+@app.delete("/reclamations/mark-unresolved/{email_uid}", dependencies=[Depends(require_role(UserRole.ADMIN))])
 async def mark_reclamation_unresolved(email_uid: str, db = Depends(get_db)):
     """Remove a reclamation from resolved list (mark as unresolved)"""
     try:
@@ -323,7 +423,7 @@ async def mark_demande_resolved(request: EmailUIDRequest, db = Depends(get_db), 
         raise HTTPException(status_code=500, detail=f"Error marking demande as resolved: {str(e)}")
 
 
-@app.delete("/demandes/mark-unresolved/{email_uid}", dependencies=[Depends(require_role(UserRole.ADMIN, UserRole.RESPONSABLE_DEMANDES))])
+@app.delete("/demandes/mark-unresolved/{email_uid}", dependencies=[Depends(require_role(UserRole.ADMIN))])
 async def mark_demande_unresolved(email_uid: str, db = Depends(get_db)):
     """Remove a demande from resolved list (mark as unresolved)"""
     try:

@@ -9,6 +9,8 @@ import Reclamations from './pages/Reclamations';
 import Demandes from './pages/Demandes';
 import AllMails from './pages/AllMails';
 import Users from './pages/Users';
+import Settings from './pages/Settings';
+import SessionExpiredModal from './components/SessionExpiredModal';
 
 // Protected Route Wrapper
 const ProtectedRoute = ({ children, allowedRoles }) => {
@@ -38,6 +40,8 @@ const AppRoutes = () => {
         <Route path="all" element={<ProtectedRoute allowedRoles={['admin']}><AllMails /></ProtectedRoute>} />
         
         <Route path="users" element={<ProtectedRoute allowedRoles={['admin']}><Users /></ProtectedRoute>} />
+        
+        <Route path="settings" element={<ProtectedRoute allowedRoles={['responsable_reclamations', 'responsable_demandes']}><Settings /></ProtectedRoute>} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" />} />
@@ -51,6 +55,7 @@ const App = () => {
       <AuthProvider>
         <SearchProvider>
           <AppRoutes />
+          <SessionExpiredModal />
         </SearchProvider>
       </AuthProvider>
     </BrowserRouter>

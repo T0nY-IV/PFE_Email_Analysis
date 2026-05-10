@@ -14,7 +14,7 @@ from auth.jwt_handler import (
     verify_token,
 )
 from auth.models import User, UserRole
-from auth.schemas import UserCreate, UserLogin, Token, UserResponse, UserUpdate, TokenRefresh
+from auth.schemas import UserCreate, UserLogin, Token, UserResponse, UserUpdate, TokenRefresh, PasswordChange
 from auth.dependencies import get_current_user, require_admin
 from database import get_db
 
@@ -129,6 +129,24 @@ async def refresh_token(token_data: TokenRefresh, db: Session = Depends(get_db))
 async def get_current_user_info(current_user: User = Depends(get_current_user)):
     """Get current authenticated user information"""
     return current_user
+
+
+@router.post("/change-password")
+async def change_password(
+    password_data: PasswordChange,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Change current user password"""
+    if not verify_password(password_data.current_password, current_user.hashed_password):
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Incorrect current password",
+        )
+    
+    current_user.hashed_password = get_password_hash(password_data.new_password)
+    db.commit()
+    return {"status": "success", "message": "Password changed successfully"}
 
 
 @router.get("/users", response_model=List[UserResponse], dependencies=[Depends(require_admin)])

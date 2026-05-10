@@ -4,6 +4,7 @@ import { dataAPI, demandesAPI } from '../services/api';
 import EmailDetailsModal from '../components/EmailDetailsModal';
 import './DataPages.css';
 import { useLocation } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const Demandes = () => {
   const [data, setData] = useState([]);
@@ -12,34 +13,34 @@ const Demandes = () => {
   const [totalCount, setTotalCount] = useState(0);
   const [resolvedMap, setResolvedMap] = useState({}); // Map of email_uid -> {resolved_by, resolved_at}
   const [selectedEmail, setSelectedEmail] = useState(null);
-  const pageSize = 30;
+  const { user } = useAuth();
+  const [pageSize, setPageSize] = useState(24);
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
 
-  const filteredData = searchQuery
-    ? data.filter(item => {
-        const output = item.output || {};
-        const emailContent = item.input_email || '';
-        const attrs = Object.values(output.attributes || {}).join(' ');
-        const combined = `${output.email_id || ''} ${emailContent} ${attrs}`.toLowerCase();
-        return combined.includes(searchQuery);
-      })
-    : data;
+  // Search is now handled on the backend
+  const displayData = data;
+
+  useEffect(() => {
+    // Reset to page 1 when search query changes
+    setPage(1);
+    fetchData();
+  }, [searchQuery]);
 
   useEffect(() => {
     fetchData();
-  }, [page]);
+  }, [page, pageSize]);
 
   const fetchData = async () => {
     setLoading(true);
     try {
       const [res, resolvedRes] = await Promise.all([
-        dataAPI.getDemandes(page, pageSize),
+        dataAPI.getDemandes(page, pageSize, searchQuery),
         demandesAPI.getResolvedList().catch(() => ({ data: { resolved_list: [] } }))
       ]);
       setData(res.data.data || []);
       setTotalCount(res.data.count || 0);
-      
+
       const mapping = {};
       (resolvedRes.data.resolved_list || []).forEach(item => {
         mapping[String(item.email_uid)] = {
@@ -61,6 +62,9 @@ const Demandes = () => {
     try {
       const isResolved = idStr in resolvedMap;
       if (isResolved) {
+        if (user?.role !== 'admin') {
+          return;
+        }
         await demandesAPI.markUnresolved(idStr);
         setResolvedMap(prev => {
           const newMap = { ...prev };
@@ -87,11 +91,11 @@ const Demandes = () => {
   const getPageNumbers = () => {
     const pages = [];
     const range = 2; // Show 2 pages before and after
-    
+
     for (let i = 1; i <= totalPages; i++) {
       if (
-        i === 1 || 
-        i === totalPages || 
+        i === 1 ||
+        i === totalPages ||
         (i >= page - range && i <= page + range)
       ) {
         pages.push(i);
@@ -113,10 +117,9 @@ const Demandes = () => {
       <div className="page-header">
         <div>
           <h1>Demandes</h1>
-          <p>Process customer requests and inquiries.</p>
         </div>
         <div className="stats-badge glass-panel">
-          <HelpCircle size={18} className="text-purple-500" style={{color: '#8b5cf6'}} />
+          <HelpCircle size={18} className="text-purple-500" style={{ color: '#8b5cf6' }} />
           <span>{totalCount} Total Requests</span>
         </div>
       </div>
@@ -135,11 +138,11 @@ const Demandes = () => {
           </div>
         ) : (
           <div className="email-grid">
-            {filteredData.map((item, index) => {
+            {displayData.map((item, index) => {
               const output = item.output || {};
               const emailId = String(output.email_id || '');
               const resolution = resolvedMap[emailId];
-              
+
               return (
                 <div key={index} className="email-card glass-panel" onClick={() => setSelectedEmail(item)}>
                   <div className="card-header">
@@ -149,13 +152,14 @@ const Demandes = () => {
                     </div>
                     <div className="header-actions">
                       <div className="resolution-wrapper">
-                        <button 
+                        <button
                           className={`resolve-btn ${resolution ? 'resolved' : ''}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleResolved(output.email_id);
                           }}
-                          title={resolution ? "Mark as Unresolved" : "Mark as Resolved"}
+                          disabled={resolution && user?.role !== 'admin'}
+                          title={resolution ? (user?.role === 'admin' ? "Mark as Unresolved" : "Only admins can unmark") : "Mark as Resolved"}
                         >
                           <CheckCircle size={14} />
                           <span>{resolution ? 'Resolved' : 'Resolve'}</span>
@@ -170,21 +174,20 @@ const Demandes = () => {
                       <span className="badge purple">Demande</span>
                     </div>
                   </div>
-                  
+
                   <div className="card-body">
                     <div className="info-row">
-                      <span className="info-label">Attributes:</span>
-                      <div className="tags">
+                      <div className="tags">24
                         {Object.entries(output.attributes || {})
                           .filter(([key, value]) => key !== 'description' && value !== null && value !== '')
                           .map(([key, value], i) => (
-                          <span key={i} className="tag">
-                            <strong>{key}:</strong> {String(value)}
-                          </span>
-                        ))}
+                            <span key={i} className="tag">
+                              <strong>{key}:</strong> {String(value)}
+                            </span>
+                          ))}
                       </div>
                     </div>
-                    
+
                     <div className="info-row summary">
                       <span className="info-label">Description:</span>
                       <p>{output.attributes?.description || "No description provided."}</p>
@@ -198,7 +201,7 @@ const Demandes = () => {
       </div>
 
       {/* Modal Window */}
-      <EmailDetailsModal 
+      <EmailDetailsModal
         isOpen={!!selectedEmail}
         onClose={() => setSelectedEmail(null)}
         email={selectedEmail}
@@ -206,15 +209,18 @@ const Demandes = () => {
       />
 
       {!loading && totalCount > 0 && (
-        <div className="pagination glass-panel">
-          <button 
-            className="btn-secondary pagination-arrow" 
+        <div className="pagination">
+          <div className="pagination-info">
+            <strong>{(page - 1) * pageSize + displayData.length}</strong> / <strong>{totalCount}</strong> elements
+          </div>
+          <button
+            className="btn-secondary pagination-arrow"
             onClick={() => setPage(p => Math.max(1, p - 1))}
             disabled={page === 1}
           >
             <ChevronLeft size={16} />
           </button>
-          
+
           <div className="page-numbers">
             {getPageNumbers().map((p, idx) => (
               p === '...' ? (
@@ -231,13 +237,30 @@ const Demandes = () => {
             ))}
           </div>
 
-          <button 
-            className="btn-secondary pagination-arrow" 
+          <button
+            className="btn-secondary pagination-arrow"
             onClick={() => setPage(p => Math.min(totalPages, p + 1))}
             disabled={page >= totalPages}
           >
             <ChevronRight size={16} />
           </button>
+
+          <div className="page-size-selector">
+            <label htmlFor="pageSize">Items per page:</label>
+            <select
+              id="pageSize"
+              value={pageSize}
+              onChange={(e) => {
+                setPageSize(Number(e.target.value));
+                setPage(1);
+              }}
+              className="page-size-select"
+            >
+              {[8, 16, 24, 32, 40].map(size => (
+                <option key={size} value={size}>{size}</option>
+              ))}
+            </select>
+          </div>
         </div>
       )}
     </div>

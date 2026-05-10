@@ -11,27 +11,26 @@ const AllMails = () => {
   const [loading, setLoading] = useState(true);
   const [totalCount, setTotalCount] = useState(0);
   const [selectedEmail, setSelectedEmail] = useState(null);
-  const pageSize = 30;
+  const [pageSize, setPageSize] = useState(24);
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
-  const filteredData = searchQuery
-    ? data.filter(item => {
-        const output = item.output || {};
-        const emailContent = item.input_email || '';
-        const attrs = Object.values(output.attributes || {}).join(' ');
-        const combined = `${output.email_id || ''} ${emailContent} ${attrs}`.toLowerCase();
-        return combined.includes(searchQuery);
-      })
-    : data;
+  // Search is now handled on the backend
+  const displayData = data;
+
+  useEffect(() => {
+    // Reset to page 1 when search query changes
+    setPage(1);
+    fetchData();
+  }, [searchQuery]);
 
   useEffect(() => {
     fetchData();
-  }, [page]);
+  }, [page, pageSize]);
 
   const fetchData = async () => {
     setLoading(true);
     try {
-      const res = await dataAPI.getAll(page, pageSize);
+      const res = await dataAPI.getAll(page, pageSize, searchQuery);
       setData(res.data.data || []);
       setTotalCount(res.data.count || 0);
     } catch (err) {
@@ -66,7 +65,6 @@ const AllMails = () => {
       <div className="page-header">
         <div>
           <h1>All Emails Database</h1>
-          <p>Global view of all processed emails (Admin Only).</p>
         </div>
         <div className="stats-badge glass-panel">
           <Database size={18} className="text-blue-500" style={{color: '#3b82f6'}} />
@@ -88,7 +86,7 @@ const AllMails = () => {
           </div>
         ) : (
           <div className="email-grid">
-            {filteredData.map((item, index) => {
+            {displayData.map((item, index) => {
               const output = item.output || {};
               const emailContent = item.input_email || '';
               const type = output.workflow_type || "Unknown";
@@ -109,7 +107,6 @@ const AllMails = () => {
                   
                   <div className="card-body">
                     <div className="info-row">
-                      <span className="info-label">Attributes:</span>
                       <div className="tags">
                         {Object.entries(output.attributes || {})
                           .filter(([key, value]) => key !== 'description' && value !== null && value !== '')
@@ -142,7 +139,10 @@ const AllMails = () => {
       />
 
       {!loading && totalCount > 0 && (
-        <div className="pagination glass-panel">
+        <div className="pagination">
+          <div className="pagination-info">
+            <strong>{(page - 1) * pageSize + displayData.length}</strong> / <strong>{totalCount}</strong> elements
+          </div>
           <button 
             className="btn-secondary pagination-arrow" 
             onClick={() => setPage(p => Math.max(1, p - 1))}
@@ -174,6 +174,23 @@ const AllMails = () => {
           >
             <ChevronRight size={16} />
           </button>
+
+          <div className="page-size-selector">
+            <label htmlFor="pageSize">Items per page:</label>
+            <select
+              id="pageSize"
+              value={pageSize}
+              onChange={(e) => {
+                setPageSize(Number(e.target.value));
+                setPage(1);
+              }}
+              className="page-size-select"
+            >
+              {[8, 16, 24, 32, 40].map(size => (
+                <option key={size} value={size}>{size}</option>
+              ))}
+            </select>
+          </div>
         </div>
       )}
     </div>

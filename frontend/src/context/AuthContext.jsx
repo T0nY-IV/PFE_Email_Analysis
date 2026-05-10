@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { authAPI } from '../services/api';
+import { authAPI, setSessionExpiredHandler } from '../services/api';
 
 const AuthContext = createContext(null);
 
@@ -8,8 +8,13 @@ export const useAuth = () => useContext(AuthContext);
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [sessionExpired, setSessionExpired] = useState(false);
 
   useEffect(() => {
+    setSessionExpiredHandler(() => {
+      setSessionExpired(true);
+    });
+
     const initAuth = async () => {
       const token = localStorage.getItem('token');
       if (token) {
@@ -36,6 +41,7 @@ export const AuthProvider = ({ children }) => {
     
     const userRes = await authAPI.getMe();
     setUser(userRes.data);
+    setSessionExpired(false);
     return userRes.data;
   };
 
@@ -43,6 +49,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('token');
     localStorage.removeItem('refresh_token');
     setUser(null);
+    setSessionExpired(false);
   };
 
   if (loading) {
@@ -50,7 +57,7 @@ export const AuthProvider = ({ children }) => {
   }
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isAuthenticated: !!user }}>
+    <AuthContext.Provider value={{ user, login, logout, isAuthenticated: !!user, sessionExpired, setSessionExpired }}>
       {children}
     </AuthContext.Provider>
   );

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const API_URL = 'http://127.0.0.1:8086';
+var Page_S = 24;
 
 const api = axios.create({
   baseURL: API_URL,
@@ -18,6 +19,7 @@ export const authAPI = {
   login: (email, password) => api.post('/auth/login', { email, password }),
   register: (data) => api.post('/auth/register', data),
   getMe: () => api.get('/auth/me'),
+  changePassword: (data) => api.post('/auth/change-password', data),
   refresh: (refresh_token) => api.post('/auth/refresh', { refresh_token }),
   getUsers: (role) => api.get('/auth/users', role ? { params: { role } } : {}),
   createUser: (data) => api.post('/auth/users', data),
@@ -26,9 +28,10 @@ export const authAPI = {
 };
 
 export const dataAPI = {
-  getReclamations: (page = 1, page_size = 30) => api.get('/get_reclamations', { params: { page, page_size } }),
-  getDemandes: (page = 1, page_size = 30) => api.get('/get_demandes', { params: { page, page_size } }),
-  getAll: (page = 1, page_size = 30) => api.get('/get_all', { params: { page, page_size } }),
+  getReclamations: (page = 1, page_size = 24, q = '') => api.get('/get_reclamations', { params: { page, page_size, q } }),
+  getDemandes: (page = 1, page_size = 24, q = '') => api.get('/get_demandes', { params: { page, page_size, q } }),
+  getAll: (page = 1, page_size = 24, q = '') => api.get('/get_all', { params: { page, page_size, q } }),
+  getMonthlyStats: () => api.get('/stats/monthly'),
 };
 
 export const pollerAPI = {
@@ -51,5 +54,24 @@ export const demandesAPI = {
   isResolved: (email_uid) => api.get(`/demandes/is-resolved/${email_uid}`),
   getResolvedList: () => api.get('/demandes/resolved-list'),
 };
+
+let onSessionExpired = () => { };
+
+export const setSessionExpiredHandler = (handler) => {
+  onSessionExpired = handler;
+};
+
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response && error.response.status === 401) {
+      // Check if it's not the login request itself
+      if (!error.config.url.includes('/auth/login')) {
+        onSessionExpired();
+      }
+    }
+    return Promise.reject(error);
+  }
+);
 
 export default api;

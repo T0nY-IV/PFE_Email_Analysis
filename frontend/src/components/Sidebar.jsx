@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { LayoutDashboard, Inbox, FileText, Database, Settings, ChevronLeft, ChevronRight, User } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import logoImg from '../assets/logo.png';
 import './Sidebar.css';
 
 const Sidebar = () => {
+  const { t } = useTranslation();
   const { user } = useAuth();
   const [isCollapsed, setIsCollapsed] = useState(false);
 
@@ -23,7 +25,7 @@ const Sidebar = () => {
         <button
           className="collapse-toggle"
           onClick={() => setIsCollapsed(!isCollapsed)}
-          title={isCollapsed ? "Expand" : "Collapse"}
+          title={isCollapsed ? t('expand') : t('collapse')}
         >
           {isCollapsed ? <ChevronRight size={18} /> : <ChevronLeft size={18} />}
         </button>
@@ -43,20 +45,20 @@ const Sidebar = () => {
       <nav className="sidebar-nav">
         <NavLink to="/" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`} end>
           <LayoutDashboard size={20} />
-          {!isCollapsed && <span>Dashboard</span>}
+          {!isCollapsed && <span>{t('dashboard')}</span>}
         </NavLink>
 
         {(role === 'admin' || role === 'responsable_reclamations') && (
           <NavLink to="/reclamations" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <Inbox size={20} />
-            {!isCollapsed && <span>Reclamations</span>}
+            {!isCollapsed && <span>{t('reclamations')}</span>}
           </NavLink>
         )}
 
         {(role === 'admin' || role === 'responsable_demandes') && (
           <NavLink to="/demandes" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <FileText size={20} />
-            {!isCollapsed && <span>Demandes</span>}
+            {!isCollapsed && <span>{t('demandes')}</span>}
           </NavLink>
         )}
 
@@ -64,11 +66,11 @@ const Sidebar = () => {
           <>
             <NavLink to="/all" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
               <Database size={20} />
-              {!isCollapsed && <span>All Emails</span>}
+              {!isCollapsed && <span>{t('all_emails')}</span>}
             </NavLink>
             <NavLink to="/users" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
               <User size={20} />
-              {!isCollapsed && <span>Accounts</span>}
+              {!isCollapsed && <span>{t('accounts')}</span>}
             </NavLink>
           </>
         )}
@@ -76,7 +78,7 @@ const Sidebar = () => {
         {role !== 'admin' && (
           <NavLink to="/settings" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
             <Settings size={20} />
-            {!isCollapsed && <span>Settings</span>}
+            {!isCollapsed && <span>{t('settings')}</span>}
           </NavLink>
         )}
       </nav>

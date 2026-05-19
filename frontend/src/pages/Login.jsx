@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { Mail, Lock, AlertCircle, ArrowRight } from 'lucide-react';
 import './Login.css';
 
 const Login = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -34,8 +36,8 @@ const Login = () => {
           <div className="logo-wrapper">
             <Mail size={32} className="logo-icon" />
           </div>
-          <h1>Welcome Back</h1>
-          <p>Sign in to access the Email Analysis Dashboard</p>
+          <h1>{t('welcome_back')}</h1>
+          <p>{t('sign_in_message')}</p>
         </div>
 
         {error && (
@@ -47,7 +49,7 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="login-form">
           <div className="form-group">
-            <label>Email Address</label>
+            <label>{t('email_address')}</label>
             <div className="input-wrapper">
               <Mail className="input-icon" size={18} />
               <input
@@ -62,7 +64,7 @@ const Login = () => {
           </div>
 
           <div className="form-group">
-            <label>Password</label>
+            <label>{t('password')}</label>
             <div className="input-wrapper">
               <Lock className="input-icon" size={18} />
               <input
@@ -77,7 +79,7 @@ const Login = () => {
           </div>
 
           <button type="submit" className="btn-primary login-btn" disabled={isLoading}>
-            {isLoading ? 'Signing in...' : 'Sign In'}
+            {isLoading ? t('signing_in') : t('sign_in')}
             {!isLoading && <ArrowRight size={18} />}
           </button>
         </form>

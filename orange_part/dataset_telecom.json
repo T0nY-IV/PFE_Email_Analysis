@@ -10779,12 +10779,12 @@
       "workflow_type": "Demande",
       "attributes": {
         "date": "04/22/2026",
-        "description": "Demande de congé",
-        "produit": "Congé",
-        "site": "Doctor License Verification",
+        "description": "demande de congé",
+        "produit": null,
+        "site": null,
         "email": "yessineht@gmail.com",
-        "tel": "yessine haj taieb",
-        "type": "Demande"
+        "tel": null,
+        "type": "demande de congé"
       },
       "confidence_score": 0.9
     }
@@ -10795,13 +10795,40 @@
       "email_id": "21",
       "workflow_type": "Réclamation",
       "attributes": {
-        "titre": "problème de connexion",
-        "date": "Thu, 7 May 2026",
-        "tel": "yessinehht@gmail.com",
+        "titre": null,
+        "date": "05/07/2026",
+        "tel": null,
         "email": "yessineht@gmail.com",
-        "etat": "en cours",
-        "description": "problème lors de l’accès à mon espace client",
-        "produit": "espace client"
+        "etat": null,
+        "description": "problème de connexion lors de l'accès à mon espace client, erreur 404",
+        "produit": null,
+        "site": null
+      },
+      "confidence_score": 0.95
+    }
+  },
+  {
+    "input_email": "UID: 26\nFrom: Mail Delivery Subsystem <mailer-daemon@googlemail.com> \n Subject: Delivery Status Notification (Delay) \n Date: Mon, 11 May 2026 08:13:37 -0700 (PDT) \n _x000D_\n** Delivery incomplete **_x000D_\n_x000D_\nThere was a temporary problem delivering your message to recla@admin.com. Gmail will retry for 44 more hours. You'll be notified if the delivery fails permanently._x000D_\n_x000D_\nLearn more here: https://support.google.com/mail/answer/7720_x000D_\n_x000D_\nThe response was:_x000D_\n_x000D_\nThe recipient server did not accept our requests to connect. For more information, go to https://support.google.com/mail/answer/7720 _x000D_\n[localhost.admin.com. 127.0.0.1: timed out]\n\nAttachments:\n\n\n",
+    "output": {
+      "email_id": "26",
+      "workflow_type": "other",
+      "attributes": {},
+      "confidence_score": 0.0
+    }
+  },
+  {
+    "input_email": "UID: 31\nFrom: Yessine Ht <yessineht@gmail.com> \n Subject: Mission Order Request \n Date: Tue, 19 May 2026 21:42:45 +0100 \n J'espère que vous allez bien ! Je me permets de vous contacter afin de_x000D_\nsolliciter votre validation pour un court déplacement professionnel prévu_x000D_\nles 17 et 18 novembre 2024 à Kairouan. Cette mission est liée à des_x000D_\nactivités en cours qui nécessitent vraiment une présence sur place, et je_x000D_\nsouhaite m'assurer que tout se passe dans les meilleures conditions._x000D_\n_x000D_\nVoici mes informations pour la demande : je m'appelle Imen Souissi, vous_x000D_\npouvez me joindre à l'adresse yessineht@gmail.com, et la destination est_x000D_\nKairouan pour ces deux journées. L'accord de mon responsable est encore en_x000D_\nattente, mais je souhaitais vous transmettre cette demande en avance afin_x000D_\nd'éviter tout délai de traitement._x000D_\n_x000D_\nSi vous avez besoin de quoi que ce soit de ma part — documents_x000D_\nsupplémentaires, détails sur les objectifs de la mission, ou autre —_x000D_\nn'hésitez pas à me le faire savoir et je vous fournirai tout cela dans les_x000D_\nplus brefs délais._x000D_\n_x000D_\nMerci beaucoup pour votre aide et votre disponibilité !_x000D_\n_x000D_\nCordialement,_x000D_\nyessine haj taieb\n\nAttachments:\n",
+    "output": {
+      "email_id": "31",
+      "workflow_type": "Demande",
+      "attributes": {
+        "date": "11/17/2024",
+        "description": null,
+        "produit": null,
+        "site": "Kairouan",
+        "email": "yessineht@gmail.com",
+        "tel": null,
+        "type": null
       },
       "confidence_score": 0.9
     }

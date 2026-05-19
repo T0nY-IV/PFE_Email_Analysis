@@ -9,7 +9,6 @@ class UserRole(str, enum.Enum):
     RESPONSABLE_RECLAMATIONS = "responsable_reclamations"
     RESPONSABLE_DEMANDES = "responsable_demandes"
 
-
 class User(Base):
     __tablename__ = "users"
 

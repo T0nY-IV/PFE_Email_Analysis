@@ -193,6 +193,29 @@
   background: var(--border-glass);
 }
 
+.language-select {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  color: var(--text-primary);
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-family: var(--font-main);
+  outline: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.language-select:hover {
+  border-color: var(--accent-purple);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.language-select:focus {
+  border-color: var(--accent-purple);
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.12);
+}
+
 @keyframes pulse {
   0% {
     opacity: 1;
@@ -218,4 +241,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* RTL Support */
+[dir="rtl"] .search-icon {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+[dir="rtl"] .search-bar {
+  direction: rtl;
+}
+
+[dir="rtl"] .search-input {
+  text-align: right;
+}
+
+[dir="rtl"] .cooldown-wrapper {
+  direction: rtl;
+}
+
+[dir="rtl"] .cooldown-icon {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+[dir="rtl"] .topnav {
+  padding: 0 32px;
 }

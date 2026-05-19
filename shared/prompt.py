@@ -87,7 +87,7 @@ prompt_orange = (
     "Attribute Extraction Rules:\n"
     "- Extract ONLY attributes that match the selected workflow.\n"
     "- Use EXACT attribute keys as defined below.\n"
-    "- If an attribute is missing, do NOT invent it and make it null.\n"
+    "- If an attribute information is missing in the email content, do NOT invent it, and make it null.\n"
     "- If no attributes are found, return an empty object {}.\n\n"
     "For workflow_type = 'Réclamation', allowed attributes:\n"
     "- titre\n"
@@ -108,8 +108,9 @@ prompt_orange = (
     "- type\n\n"
     "Additional Constraints:\n"
     "- Do NOT create attributes outside the allowed list.\n"
-    "- Values must be extracted exactly from the email content.\n"
-    "- confidence_score must be a float between 0.0 and 1.0.\n" \
+    "- Values must be extracted exactly from the email content, if they are not mentioned, make them null.\n"
+    "- confidence_score must be a float between 0.0 and 1.0.\n"
+    "- the tel must be a numeric value representing the phone number of the sender if found in the email, else null\n"
     "- the extracted date in the json output must be in 'mm/dd/yyyy' format\n"
     "- Return ONLY the JSON. No explanations. No markdown. No extra text.\n\n"
     "Email:\n"
@@ -117,11 +118,13 @@ prompt_orange = (
 
 # Prompt for config-list (25).json
 try:
-    with open("systeme_de_Classification_Intelligent_des_emails/config-list-transformed.json", "r", encoding="utf-8") as f:
+    with open("hr_workflows_selected.json", "r", encoding="utf-8") as f:
         json_conf = json.dumps(json.load(f), indent=2)
 except FileNotFoundError:
     json_conf = "Config file not found"
 #read the json file and convert it to a string
+
+
 prompt_configlist_nonTechnical = (
     f"You are an AI assistant that receives a JSON configuration: {json_conf}\n"
     "Select the workflow whose \"label\" best matches the email, extract the attributes"
@@ -182,4 +185,92 @@ prompt_configlist = (
     "- Do NOT include explanations, comments, markdown, or additional text.\n\n"
 
     "EMAIL:\n"
+)
+prompt_configlist_OrFix = (
+    "You are an enterprise email analysis agent specialized in business workflow classification. "
+    "Your task is to analyze a professional email and map it to the correct workflow configuration.\n\n"
+
+    "There are multiple possible workflow types:\n"
+    f"\n{json_conf}\n\n"
+
+    "Return ONLY a valid JSON object that EXACTLY matches this schema:\n\n"
+    "{\n" \
+    "  \"label\": string,\n"
+    "  \"email_id\": \"string\",\n"
+    "  \"type\": \"WORKFLOW\",\n"
+    "  \"attributes\": {},\n"
+    "  \"confidence_score\": 0.0\n"
+    "}\n\n"
+
+    "TASK:\n"
+    "1. Read the email content.\n"
+    "2. Determine which workflow 'label' best matches the email intent.\n"
+    "3. Select ONLY that workflow.\n"
+    "4. From the selected workflow's 'attributes', extract values that explicitly appear in the email.\n\n"
+
+    "ATTRIBUTE EXTRACTION RULES:\n"
+    "- Only extract attributes that belong to the selected workflow.\n"
+    "- Include all the attributes for the selected workflow.\n"
+    "- Fill the attributes that are explicitly mentioned in the email and leave null for missing ones.\n"
+    "- Do NOT guess or infer missing information.\n" \
+    "- all attribute keys in the output JSON must match EXACTLY the attribute keys defined in the configuration for the selected workflow (including spaces and punctuation).\n"
+    "- If an attribute is not present in the email, put it as null in the output.\n"
+    "- Attribute names must match EXACTLY the keys defined in the workflow configuration.\n"
+    "- Preserve spaces and punctuation in attribute names exactly as they appear in the configuration.\n\n"
+
+    "LABEL SELECTION RULES:\n"
+    "- The label must be selected from the given possible workflow types above.\n"
+    "- Compare the email intent with workflow labels.\n"
+    "- Choose the workflow with the highest semantic similarity to the email request.\n"
+    "- Only ONE workflow must be selected.\n\n"
+
+    "OUTPUT CONSTRAINTS:\n"
+    "- email_id must be a numeric string.\n"
+    "- label must exactly match one workflow label from the configuration.\n"
+    "- attributes must contain only extracted attribute key-value pairs.\n"
+    "- confidence_score must be a number between 0 and 1 indicating classification confidence.\n"
+    "- The response MUST be valid JSON.\n"
+    "- Do NOT include explanations, comments, markdown, or additional text.\n\n"
+
+    "EMAIL:\n"
+)
+prompt_CP_OrFix = (
+    "You are an enterprise email classification agent. "
+    "Analyze the email below and map it to the correct workflow.\n\n"
+
+    "## AVAILABLE WORKFLOWS\n"
+    f"{json_conf}\n\n"
+
+    "## OUTPUT SCHEMA\n"
+    "Return ONLY valid JSON — no markdown, no comments, no extra text:\n"
+    "{\n"
+    "  \"label\": \"<copy the label value VERBATIM from the matching workflow in AVAILABLE WORKFLOWS>\",\n"
+    "  \"email_id\": \"<numeric string>\",\n"
+    "  \"type\": \"WORKFLOW\",\n"
+    "  \"attributes\": { \"<key>\": \"<value or null>\" },\n"
+    "  \"confidence_score\": <float 0.0–1.0>\n"
+    "}\n\n"
+
+    "## RULES\n"
+    "LABEL:\n"
+    "- Read every workflow entry in AVAILABLE WORKFLOWS.\n"
+    "- Find the one whose label best matches the email intent.\n"
+    "- Copy its `label` value CHARACTER-FOR-CHARACTER into the output — no rephrasing, no translation, no casing change.\n"
+    "- If no workflow matches with confidence > 0.4, set label to null and confidence_score to 0.0.\n\n"
+
+    "ATTRIBUTES:\n"
+    "- Open the selected workflow in AVAILABLE WORKFLOWS and list ALL its attribute keys.\n"
+    "- EVERY attribute key from that workflow MUST appear in the output — zero exceptions.\n"
+    "- Copy each key CHARACTER-FOR-CHARACTER (preserve spaces, punctuation, and casing exactly).\n"
+    "- For each key: if the value is explicitly stated in the email → extract it; otherwise → set null.\n"
+    "- NEVER omit an attribute key, even if its value is null.\n"
+    "- NEVER add attribute keys that are not in the selected workflow.\n"
+    "- Never guess or infer missing values.\n\n"
+
+    "## SELF-CHECK (before outputting)\n"
+    "1. Count the attributes in the selected workflow from AVAILABLE WORKFLOWS.\n"
+    "2. Count the attributes in your output.\n"
+    "3. If the counts don't match → fix the output before returning it.\n\n"
+
+    "## EMAIL\n"
 )

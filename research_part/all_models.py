@@ -2,16 +2,16 @@ from research_part.iteration_test import run_iterations
 import sys
 
 models = [
-	#"qwen2.5:1.5b",
+	"qwen2.5:1.5b",
 	"qwen2.5:3b",
 	"gemma:2b",
-	#"gemma:latest",#7b
-	#"phi3:mini",
-	#"llama3:8b",
+	"gemma:latest",#7b
+	"phi3:mini",
+	"llama3:8b",
 	"qwen3:1.7b",
 	"llama3.1:latest",
-	#"qwen3:4b",
-	#"qwen3:8b",
+	"qwen3:4b",
+	"qwen3:8b",
 ]
 
 

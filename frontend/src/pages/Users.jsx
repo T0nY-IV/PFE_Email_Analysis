@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { 
   Users as UsersIcon, 
   UserPlus, 
@@ -19,6 +20,7 @@ import './DataPages.css'; // Reusing some base styles
 import './Users.css';
 
 const Users = () => {
+  const { t } = useTranslation();
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -91,17 +93,17 @@ const Users = () => {
       setIsModalOpen(false);
       fetchUsers();
     } catch (err) {
-      alert(err.response?.data?.detail || 'Operation failed');
+      alert(err.response?.data?.detail || t('operation_failed'));
     }
   };
 
   const handleDelete = async (userId) => {
-    if (window.confirm('Are you sure you want to delete this user?')) {
+    if (window.confirm(t('delete_user_confirm'))) {
       try {
         await authAPI.deleteUser(userId);
         fetchUsers();
       } catch (err) {
-        alert('Failed to delete user');
+        alert(t('failed_to_delete_user'));
       }
     }
   };
@@ -122,9 +124,9 @@ const Users = () => {
 
   const getRoleLabel = (role) => {
     switch (role) {
-      case 'admin': return 'Administrator';
-      case 'responsable_reclamations': return 'Complaints Manager';
-      case 'responsable_demandes': return 'Requests Manager';
+      case 'admin': return t('admin_role');
+      case 'responsable_reclamations': return t('complaints_manager_role');
+      case 'responsable_demandes': return t('requests_manager_role');
       default: return role;
     }
   };
@@ -137,13 +139,13 @@ const Users = () => {
             <UsersIcon size={24} />
           </div>
           <div>
-            <h1>Account Management</h1>
-            <p>Manage all user accounts and system permissions</p>
+            <h1>{t('account_management')}</h1>
+            <p>{t('manage_user_accounts')}</p>
           </div>
         </div>
         <button className="create-btn" onClick={() => handleOpenModal()}>
           <UserPlus size={18} />
-          Add New User
+          {t('add_new_user')}
         </button>
       </div>
 
@@ -152,7 +154,7 @@ const Users = () => {
           <Search size={18} />
           <input 
             type="text" 
-            placeholder="Search by username or email..." 
+            placeholder={t('search_by_username_or_email')} 
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -161,13 +163,13 @@ const Users = () => {
           <div className="filter-item">
             <Filter size={16} />
             <select value={filterRole} onChange={(e) => setFilterRole(e.target.value)}>
-              <option value="">All Roles</option>
-              <option value="admin">Admin</option>
-              <option value="responsable_reclamations">Complaints Manager</option>
-              <option value="responsable_demandes">Requests Manager</option>
+              <option value="">{t('all_roles')}</option>
+              <option value="admin">{t('admin_role')}</option>
+              <option value="responsable_reclamations">{t('complaints_manager_role')}</option>
+              <option value="responsable_demandes">{t('requests_manager_role')}</option>
             </select>
           </div>
-          <button className="refresh-btn-icon" onClick={fetchUsers} title="Refresh List">
+          <button className="refresh-btn-icon" onClick={fetchUsers} title={t('refresh_list')}>
             <RefreshCw size={18} className={loading ? 'spin' : ''} />
           </button>
         </div>
@@ -180,11 +182,11 @@ const Users = () => {
             <p>{error}</p>
           </div>
         ) : loading ? (
-          <div className="loading-state">Loading users...</div>
+          <div className="loading-state">{t('loading_records')}</div>
         ) : filteredUsers.length === 0 ? (
           <div className="empty-state glass-panel">
             <UsersIcon size={48} />
-            <p>No users found matching your criteria</p>
+            <p>{t('no_users_found_matching')}</p>
           </div>
         ) : (
           filteredUsers.map(user => (
@@ -201,12 +203,12 @@ const Users = () => {
                 </div>
                 <div className="user-status">
                   {user.is_active ? (
-                    <span className="status-indicator active" title="Active Account">
-                      <CheckCircle size={14} /> Active
+                    <span className="status-indicator active" title={t('active_account')}>
+                      <CheckCircle size={14} /> {t('active')}
                     </span>
                   ) : (
-                    <span className="status-indicator inactive" title="Disabled Account">
-                      <XCircle size={14} /> Inactive
+                    <span className="status-indicator inactive" title={t('inactive_account')}>
+                      <XCircle size={14} /> {t('inactive')}
                     </span>
                   )}
                 </div>
@@ -219,23 +221,23 @@ const Users = () => {
                 </div>
                 <div className="info-row">
                   <Calendar size={14} />
-                  <span>Joined {new Date(user.created_at).toLocaleDateString()}</span>
+                  <span>{t('joined_on')} {new Date(user.created_at).toLocaleDateString()}</span>
                 </div>
               </div>
 
               <div className="user-card-actions">
                 <button className="edit-btn" onClick={() => handleOpenModal(user)}>
                   <Edit2 size={16} />
-                  Edit
+                  {t('edit_label')}
                 </button>
                 <button 
                   className="delete-btn" 
                   onClick={() => handleDelete(user.id)}
                   disabled={user.role === 'admin' && users.filter(u => u.role === 'admin').length <= 1}
-                  title={user.role === 'admin' && users.filter(u => u.role === 'admin').length <= 1 ? "Cannot delete the last admin" : ""}
+                  title={user.role === 'admin' && users.filter(u => u.role === 'admin').length <= 1 ? t('cannot_delete_last_admin') : ""}
                 >
                   <Trash2 size={16} />
-                  Delete
+                  {t('delete_label')}
                 </button>
               </div>
             </div>
@@ -248,7 +250,7 @@ const Users = () => {
         <div className="modal-overlay">
           <div className="modal-content glass-panel animate-scale-in">
             <div className="modal-header">
-              <h2>{currentUser ? 'Edit User' : 'Create New User'}</h2>
+              <h2>{currentUser ? t('edit_user') : t('create_new_user')}</h2>
               <button className="close-btn" onClick={() => setIsModalOpen(false)}>
                 <XCircle size={24} />
               </button>
@@ -256,7 +258,7 @@ const Users = () => {
             <form onSubmit={handleSubmit}>
               <div className="form-grid">
                 <div className="form-group">
-                  <label>Username</label>
+                  <label>{t('username_label')}</label>
                   <input 
                     type="text" 
                     required 
@@ -265,7 +267,7 @@ const Users = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Email Address</label>
+                  <label>{t('email_address_label')}</label>
                   <input 
                     type="email" 
                     required 
@@ -274,7 +276,7 @@ const Users = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>{currentUser ? 'New Password (leave blank to keep current)' : 'Password'}</label>
+                  <label>{currentUser ? t('new_password_leave_blank') : t('password_label')}</label>
                   <input 
                     type="password" 
                     required={!currentUser}
@@ -283,14 +285,14 @@ const Users = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label>Role</label>
+                  <label>{t('role_label')}</label>
                   <select 
                     value={formData.role}
                     onChange={(e) => setFormData({...formData, role: e.target.value})}
                   >
-                    <option value="admin">Admin</option>
-                    <option value="responsable_reclamations">Complaints Manager</option>
-                    <option value="responsable_demandes">Requests Manager</option>
+                    <option value="admin">{t('admin_role')}</option>
+                    <option value="responsable_reclamations">{t('complaints_manager_role')}</option>
+                    <option value="responsable_demandes">{t('requests_manager_role')}</option>
                   </select>
                 </div>
                 <div className="form-group checkbox">
@@ -300,13 +302,13 @@ const Users = () => {
                       checked={formData.is_active}
                       onChange={(e) => setFormData({...formData, is_active: e.target.checked})}
                     />
-                    Account Active
+                    {t('account_active')}
                   </label>
                 </div>
               </div>
               <div className="modal-footer">
-                <button type="button" className="cancel-btn" onClick={() => setIsModalOpen(false)}>Cancel</button>
-                <button type="submit" className="submit-btn">{currentUser ? 'Update User' : 'Create User'}</button>
+                <button type="button" className="cancel-btn" onClick={() => setIsModalOpen(false)}>{t('cancel')}</button>
+                <button type="submit" className="submit-btn">{currentUser ? t('update_user') : t('create_user')}</button>
               </div>
             </form>
           </div>

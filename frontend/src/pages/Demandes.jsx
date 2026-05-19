@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Mail, ChevronLeft, ChevronRight, Inbox, HelpCircle, CheckCircle, X } from 'lucide-react';
 import { dataAPI, demandesAPI } from '../services/api';
 import EmailDetailsModal from '../components/EmailDetailsModal';
@@ -7,6 +8,7 @@ import { useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 const Demandes = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
@@ -15,6 +17,7 @@ const Demandes = () => {
   const [selectedEmail, setSelectedEmail] = useState(null);
   const { user } = useAuth();
   const [pageSize, setPageSize] = useState(24);
+  const [viewMode, setViewMode] = useState(localStorage.getItem('viewMode') || 'cards');
   const location = useLocation();
   const searchQuery = new URLSearchParams(location.search).get('q')?.trim().toLowerCase() || '';
 
@@ -30,6 +33,10 @@ const Demandes = () => {
   useEffect(() => {
     fetchData();
   }, [page, pageSize]);
+
+  useEffect(() => {
+    try { localStorage.setItem('viewMode', viewMode); } catch (e) {}
+  }, [viewMode]);
 
   const fetchData = async () => {
     setLoading(true);
@@ -116,11 +123,18 @@ const Demandes = () => {
     <div className="page-container animate-fade-in">
       <div className="page-header">
         <div>
-          <h1>Demandes</h1>
+          <h1>{t('demandes')}</h1>
         </div>
-        <div className="stats-badge glass-panel">
+        <div style={{display: 'flex', alignItems: 'center', gap: 12}}>
+          <div className="view-toggle">
+            <button className="view-toggle-btn" onClick={() => setViewMode(viewMode === 'cards' ? 'list' : 'cards')}>
+              {viewMode === 'cards' ? t('switch_to_list_view') : t('switch_to_cards_view')}
+            </button>
+          </div>
+          <div className="stats-badge glass-panel">
           <HelpCircle size={18} className="text-purple-500" style={{ color: '#8b5cf6' }} />
-          <span>{totalCount} Total Requests</span>
+          <span>{totalCount} {t('total_requests')}</span>
+          </div>
         </div>
       </div>
 
@@ -128,75 +142,116 @@ const Demandes = () => {
         {loading ? (
           <div className="loading-state">
             <div className="spinner"></div>
-            <p>Loading records...</p>
+            <p>{t('loading_records')}</p>
           </div>
         ) : data.length === 0 ? (
           <div className="empty-state glass-panel">
             <Inbox size={48} className="empty-icon" />
-            <h3>No Demandes Found</h3>
-            <p>You're all caught up!</p>
+            <h3>{t('no_demandes_found')}</h3>
+            <p>{t('youre_all_caught_up')}</p>
           </div>
         ) : (
-          <div className="email-grid">
-            {displayData.map((item, index) => {
-              const output = item.output || {};
-              const emailId = String(output.email_id || '');
-              const resolution = resolvedMap[emailId];
+          viewMode === 'cards' ? (
+            <div className="email-grid">
+              {displayData.map((item, index) => {
+                const output = item.output || {};
+                const emailId = String(output.email_id || '');
+                const resolution = resolvedMap[emailId];
 
-              return (
-                <div key={index} className="email-card glass-panel" onClick={() => setSelectedEmail(item)}>
-                  <div className="card-header">
-                    <div className="card-title">
-                      <Mail size={16} />
-                      <h4>Email #{output.email_id || index + 1}</h4>
+                return (
+                  <div key={index} className="email-card glass-panel" onClick={() => setSelectedEmail(item)}>
+                    <div className="card-header">
+                      <div className="card-title">
+                        <Mail size={16} />
+                        <h4>Email #{output.email_id || index + 1}</h4>
+                      </div>
+                      <div className="header-actions">
+                        <div className="resolution-wrapper">
+                          <button
+                            className={`resolve-btn ${resolution ? 'resolved' : ''}`}
+                            onClick={(e) => { e.stopPropagation(); toggleResolved(output.email_id); }}
+                            disabled={resolution && user?.role !== 'admin'}
+                            title={resolution ? (user?.role === 'admin' ? t('mark_as_unresolved') : t('only_admins_can_unmark')) : t('mark_as_resolved')}
+                          >
+                            <CheckCircle size={14} />
+                            <span>{resolution ? t('resolved') : t('resolve')}</span>
+                          </button>
+                          {resolution && (
+                            <div className="resolved-info">
+                              <span>{t('by_label')} <span className="resolver-name">{resolution.resolved_by || 'Unknown'}</span></span>
+                              <span className="resolved-date">{formatResolvedAt(resolution.resolved_at)}</span>
+                            </div>
+                          )}
+                        </div>
+                        <span className="badge purple">{t('demande_label')}</span>
+                      </div>
                     </div>
-                    <div className="header-actions">
+
+                    <div className="card-body">
+                      <div className="info-row">
+                        <div className="tags">
+                          {Object.entries(output.attributes || {})
+                            .filter(([key, value]) => key !== 'description' && value !== null && value !== '')
+                            .map(([key, value], i) => (
+                              <span key={i} className="tag">
+                                <strong>{key}:</strong> {String(value)}
+                              </span>
+                            ))}
+                        </div>
+                      </div>
+
+                      <div className="info-row summary">
+                        <span className="info-label">{t('description_label')}</span>
+                        <p>{output.attributes?.description || t('no_description_provided')}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <div className="email-list">
+              {displayData.map((item, index) => {
+                const output = item.output || {};
+                const emailId = String(output.email_id || '');
+                const resolution = resolvedMap[emailId];
+
+                return (
+                  <div key={index} className="email-list-item glass-panel" onClick={() => setSelectedEmail(item)}>
+                    <div className="list-left">
+                      <div className="list-title">
+                        <Mail size={16} />
+                        <div>
+                          <h4>Email #{output.email_id || index + 1}</h4>
+                          <p className="list-snippet">{output.attributes?.description ? String(output.attributes.description).slice(0, 200) : t('no_description_provided')}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="list-right header-actions">
                       <div className="resolution-wrapper">
                         <button
                           className={`resolve-btn ${resolution ? 'resolved' : ''}`}
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleResolved(output.email_id);
-                          }}
+                          onClick={(e) => { e.stopPropagation(); toggleResolved(output.email_id); }}
                           disabled={resolution && user?.role !== 'admin'}
-                          title={resolution ? (user?.role === 'admin' ? "Mark as Unresolved" : "Only admins can unmark") : "Mark as Resolved"}
+                          title={resolution ? (user?.role === 'admin' ? t('mark_as_unresolved') : t('only_admins_can_unmark')) : t('mark_as_resolved')}
                         >
                           <CheckCircle size={14} />
-                          <span>{resolution ? 'Resolved' : 'Resolve'}</span>
+                          <span>{resolution ? t('resolved') : t('resolve')}</span>
                         </button>
                         {resolution && (
                           <div className="resolved-info">
-                            <span>By: <span className="resolver-name">{resolution.resolved_by || 'Unknown'}</span></span>
+                            <span>{t('by_label')} <span className="resolver-name">{resolution.resolved_by || 'Unknown'}</span></span>
                             <span className="resolved-date">{formatResolvedAt(resolution.resolved_at)}</span>
                           </div>
                         )}
                       </div>
-                      <span className="badge purple">Demande</span>
+                      <span className="badge purple">{t('demande_label')}</span>
                     </div>
                   </div>
-
-                  <div className="card-body">
-                    <div className="info-row">
-                      <div className="tags">24
-                        {Object.entries(output.attributes || {})
-                          .filter(([key, value]) => key !== 'description' && value !== null && value !== '')
-                          .map(([key, value], i) => (
-                            <span key={i} className="tag">
-                              <strong>{key}:</strong> {String(value)}
-                            </span>
-                          ))}
-                      </div>
-                    </div>
-
-                    <div className="info-row summary">
-                      <span className="info-label">Description:</span>
-                      <p>{output.attributes?.description || "No description provided."}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          )
         )}
       </div>
 
@@ -211,7 +266,7 @@ const Demandes = () => {
       {!loading && totalCount > 0 && (
         <div className="pagination">
           <div className="pagination-info">
-            <strong>{(page - 1) * pageSize + displayData.length}</strong> / <strong>{totalCount}</strong> elements
+            <strong>{(page - 1) * pageSize + 1}...{(page - 1) * pageSize + displayData.length}</strong> / <strong>{totalCount}</strong> elements
           </div>
           <button
             className="btn-secondary pagination-arrow"
@@ -246,7 +301,7 @@ const Demandes = () => {
           </button>
 
           <div className="page-size-selector">
-            <label htmlFor="pageSize">Items per page:</label>
+            <label htmlFor="pageSize">{t('items_per_page')}</label>
             <select
               id="pageSize"
               value={pageSize}

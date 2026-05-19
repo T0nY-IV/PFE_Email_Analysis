@@ -3,7 +3,7 @@ from sentence_transformers import SentenceTransformer
 import chromadb
 from completed_project.prompt import prompt_1, prompt_2, murged_prompt, prompt_orange
 #Choose an Embedding Model
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+embedding_model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder="./models")
 
 def load_document(path):
     with open(path, "r", encoding="utf-8") as f:

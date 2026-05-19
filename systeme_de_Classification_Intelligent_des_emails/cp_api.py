@@ -1,4 +1,6 @@
 #completed project api.py
+import time
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -10,7 +12,7 @@ import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from typing import Optional
-from shared.prompt import prompt_configlist
+from shared.prompt import prompt_configlist, prompt_configlist_OrFix,prompt_CP_OrFix
 from cp_api_methodes import load_document, chunk_text, save_to_dataset, update_last_uids
 from Ocr_methodes import Ocr_pdf_Init, Ocr_pdf, Ocr_picture
 
@@ -55,11 +57,11 @@ async def initialize():
     try:
         # Load embedding model
         # Chargement du modèle de plongement (embedding) pour vectoriser le texte
-        embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+        embedding_model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder="./models")
         
         # Load document
         # Chargement du corpus depuis le fichier JSON
-        document_text = json.load(open("full_dataset.json", "r", encoding="utf-8"))
+        document_text = json.load(open("hR.json", "r", encoding="utf-8"))
 
         # Create embeddings from meaningful content (input_email fields)
         # Extraction du contenu sémantique des emails pour un embedding de qualité
@@ -113,14 +115,14 @@ async def initialize():
             "status": "success",
             "message": f"RAG system initialized with {len(chunks)} chunks",
             "chunks_count": len(chunks),
-            "document_path": "full_dataset.json",
+            "document_path": "hR.json",
             "last_excel_uid": last_excel_uid,
             "last_json_uid": last_json_uid
         }
     
     except FileNotFoundError as e:
         # Gestion de l'erreur si le fichier de données n'est pas trouvé
-        raise HTTPException(status_code=404, detail=f"Document not found: full_dataset.json")
+        raise HTTPException(status_code=404, detail=f"Document not found: hR.json")
     except Exception as e:
         # Gestion des autres erreurs génériques lors de l'initialisation
         raise HTTPException(status_code=500, detail=f"Initialization error: {str(e)}")
@@ -179,8 +181,8 @@ async def query(request: QueryRequest):
 
         # Create augmented prompt
         # Concaténation du prompt système avec le contenu de l'email
-        full_prompt = prompt_configlist + "\n\n" + email_content
-        
+        full_prompt = prompt_CP_OrFix + "\n\n" + email_content
+        print(prompt_CP_OrFix)
         # Jointure des documents retrouvés pour former le contexte
         context = "\n\n".join(retrieved_docs)
         
@@ -197,12 +199,22 @@ async def query(request: QueryRequest):
             Answer:
             """
         
-        # Get response from Ollama
-        # Génération de la réponse via le modèle LLM local (Ollama)
-        response = chat(
-            model="hoangquan456/qwen3-nothink:1.7b",
-            messages=[{"role": "user", "content": augmented_prompt}]
-        )
+       # Retry prediction until a valid JSON response is obtained
+        retry_delay = 1
+        attempt = 0
+        while True:
+            attempt += 1
+            try:
+                response = chat(
+                    model="llama3.1:latest",
+                    messages=[{"role": "user", "content": augmented_prompt}]
+                )
+                data_json = json.loads(response["message"]["content"])
+                break
+            except Exception as retry_error:
+                print(f"Prediction attempt {attempt} failed: {retry_error}. Retrying...")
+                time.sleep(retry_delay)
+                continue
         
         # Extraction et conversion de la réponse JSON retournée par le modèle
         data_json = json.loads(response["message"]["content"])

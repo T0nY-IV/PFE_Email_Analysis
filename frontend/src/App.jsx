@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { SearchProvider } from './context/SearchContext';
 import Layout from './components/Layout';
@@ -50,6 +51,8 @@ const AppRoutes = () => {
 };
 
 const App = () => {
+  const { t } = useTranslation();
+
   return (
     <BrowserRouter>
       <AuthProvider>

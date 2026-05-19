@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { LogOut, Search, Play, Square, RefreshCw, Timer, Sun, Moon } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import { pollerAPI } from '../services/api';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './TopNav.css';
 
 const TopNav = () => {
+  const { t, i18n } = useTranslation();
   const { logout } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -97,7 +99,7 @@ const TopNav = () => {
         <div className="poller-controls">
           <div className="status-indicator">
             <span className={`status-dot ${pollerStatus.is_running ? 'running' : 'stopped'}`}></span>
-            <span className="status-text">{pollerStatus.is_running ? 'Poller Active' : 'Poller Paused'}</span>
+            <span className="status-text">{pollerStatus.is_running ? t('poller_active') : t('poller_paused')}</span>
           </div>
           <div className="cooldown-wrapper">
             <Timer size={14} className="cooldown-icon" />
@@ -138,6 +140,17 @@ const TopNav = () => {
         </div>
 
         <div className="divider"></div>
+
+        <select 
+          value={i18n.language} 
+          onChange={(e) => i18n.changeLanguage(e.target.value)} 
+          className="language-select"
+          title="Select Language"
+        >
+          <option value="en">{t('english')}</option>
+          <option value="fr">{t('french')}</option>
+          <option value="ar">{t('arabic')}</option>
+        </select>
 
         <button className="icon-btn theme-toggle" onClick={toggleTheme} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>
           {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}

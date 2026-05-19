@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import { useTranslation } from 'react-i18next';
 import { X, Mail, CheckCircle, AlertCircle } from 'lucide-react';
 import './EmailDetailsModal.css';
 
 const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
+  const { t } = useTranslation();
   // Lock scroll when modal is open
   useEffect(() => {
     if (isOpen) {
@@ -35,7 +37,7 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
               <Mail size={24} />
             </div>
             <div className="modal-title-group">
-              <h3>Email Analysis - #{output.email_id}</h3>
+              <h3>{t('email_analysis')} - #{output.email_id}</h3>
               <span className={`type-tag ${type === 'Réclamation' ? 'red' : 'purple'}`}>
                 {type}
               </span>
@@ -44,7 +46,7 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
                 <div>
                   <div className="confidence-meter">
                     <div className="meter-header">
-                      <span>AI Confidence Score</span>
+                      <span>{t('ai_confidence_score')}</span>
                       <span className="percentage">{(confidenceScore * 100).toFixed(1)}%</span>
                     </div>
                     <div className="meter-track">
@@ -62,10 +64,10 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
                   <section className="modal-section">
                     <div className="section-header">
                       <Mail size={16} />
-                      <span className="section-title">Original Email Content</span>
+                      <span className="section-title">{t('original_email_content')}</span>
                     </div>
                     <div className="content-scrollbox">
-                      {email.input_email || "No content available."}
+                      {email.input_email || t('no_content_available')}
                     </div>
                   </section>
                 </td>
@@ -74,7 +76,7 @@ const EmailDetailsModal = ({ isOpen, onClose, email, type }) => {
                   <section className="modal-section">
                     <div className="section-header">
                       <AlertCircle size={16} />
-                      <span className="section-title">Extracted Data Points</span>
+                      <span className="section-title">{t('extracted_data_points')}</span>
                     </div>
                     <div className="attributes-display-grid">
                       {Object.entries(attributes).map(([key, value], i) => (

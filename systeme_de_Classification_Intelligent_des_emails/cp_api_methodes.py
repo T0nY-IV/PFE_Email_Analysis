@@ -11,8 +11,8 @@ def save_to_dataset(input_email, output_data):
     }
 
     # If file exists → load existing data
-    if os.path.exists("full_dataset.json"):
-        with open("full_dataset.json", "r", encoding="utf-8") as f:
+    if os.path.exists("hR.json"):
+        with open("hR.json", "r", encoding="utf-8") as f:
             try:
                 dataset = json.load(f)
             except json.JSONDecodeError:
@@ -24,7 +24,7 @@ def save_to_dataset(input_email, output_data):
     dataset.append(new_entry)
 
     # Save updated dataset
-    with open("full_dataset.json", "w", encoding="utf-8") as f:
+    with open("hR.json", "w", encoding="utf-8") as f:
         json.dump(dataset, f, indent=2, ensure_ascii=False)
 
 
@@ -58,7 +58,7 @@ def get_last_excel_uid():
 def get_last_json_uid():
     """Récupère le dernier UID depuis le fichier JSON"""
     try:
-        json_path = "full_dataset.json"
+        json_path = "hR.json"
         if not os.path.exists(json_path):
             return None
         

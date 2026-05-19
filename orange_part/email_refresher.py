@@ -8,6 +8,7 @@ import time
 import threading
 import pandas as pd
 import dotenv
+from streamlit import user
 from mail_analyser import loop_through_emails_and_send_requests
 from Mail_treatement_methodes import get_last_excel_uid, initialize
 
@@ -204,12 +205,12 @@ def mail_getter():
 
             # Extract attachments and message body.
             attachments = save_attachments(msg, email_uid, OUTPUT_FOLDER)
-            email_body = "From: " + msg.get("from", "Unknown") + " \n " + "Subject: " + decode_email_header(msg.get("subject", "No Subject")) + " \n " + "Date: " + msg.get("date", "Unknown Date") + " \n " + get_body(msg)
-
+            email_body = "From: " + "/*MailSender*/" +msg.get("from", "Unknown") + "/*MailSender*/ \n " + "Subject: /*MailSub*/" + decode_email_header(msg.get("subject", "No Subject")) + "/*MailSub*/ \n " + "Date: " + msg.get("date", "Unknown Date") + " \n " + get_body(msg)
+            
             # Log extracted data to console (useful for quick checks).
             email_json = {
                 "id": email_uid,
-                "from": msg.get("from", "Unknown"),
+                "from": msg.get("from", "Unknown"), #
                 "subject": decode_email_header(msg.get("subject", "No Subject")),
                 "date": msg.get("date", "Unknown Date"),
                 "body": email_body.strip(),

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Key, Save, AlertCircle, CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { authAPI } from '../services/api';
 import './DataPages.css';
 
 const Settings = () => {
+  const { t } = useTranslation();
   const [passwords, setPasswords] = useState({
     current_password: '',
     new_password: '',
@@ -21,7 +23,7 @@ const Settings = () => {
     setMessage({ type: '', text: '' });
 
     if (passwords.new_password !== passwords.confirm_password) {
-      setMessage({ type: 'error', text: 'New passwords do not match!' });
+      setMessage({ type: 'error', text: t('passwords_do_not_match') });
       return;
     }
 
@@ -31,12 +33,12 @@ const Settings = () => {
         current_password: passwords.current_password,
         new_password: passwords.new_password
       });
-      setMessage({ type: 'success', text: 'Password changed successfully!' });
+      setMessage({ type: 'success', text: t('password_changed_success') });
       setPasswords({ current_password: '', new_password: '', confirm_password: '' });
     } catch (err) {
       setMessage({ 
         type: 'error', 
-        text: err.response?.data?.detail || 'Failed to change password.' 
+        text: err.response?.data?.detail || t('failed_to_change_password')
       });
     } finally {
       setLoading(false);
@@ -47,8 +49,8 @@ const Settings = () => {
     <div className="page-container animate-fade-in">
       <div className="page-header">
         <div>
-          <h1>User Settings</h1>
-          <p>Manage your account security and preferences.</p>
+          <h1>{t('user_settings')}</h1>
+          <p>{t('manage_account_security')}</p>
         </div>
       </div>
 
@@ -56,13 +58,13 @@ const Settings = () => {
         <div className="glass-panel" style={{ padding: '2rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.5rem' }}>
             <Key className="text-gradient" size={24} />
-            <h3 style={{ margin: 0 }}>Change Password</h3>
+            <h3 style={{ margin: 0 }}>{t('change_password_title')}</h3>
           </div>
 
           <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
             <div className="form-group">
               <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: '#64748b' }}>
-                Current Password
+                {t('current_password')}
               </label>
               <input
                 type="password"
@@ -71,14 +73,14 @@ const Settings = () => {
                 onChange={handleChange}
                 required
                 className="input-glass"
-                placeholder="Enter current password"
+                placeholder={t('enter_current_password')}
                 style={{ width: '100%', padding: '0.75rem', borderRadius: '8px' }}
               />
             </div>
 
             <div className="form-group">
               <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: '#64748b' }}>
-                New Password
+                {t('new_password')}
               </label>
               <input
                 type="password"
@@ -87,14 +89,14 @@ const Settings = () => {
                 onChange={handleChange}
                 required
                 className="input-glass"
-                placeholder="Enter new password"
+                placeholder={t('enter_new_password')}
                 style={{ width: '100%', padding: '0.75rem', borderRadius: '8px' }}
               />
             </div>
 
             <div className="form-group">
               <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.9rem', color: '#64748b' }}>
-                Confirm New Password
+                {t('confirm_new_password')}
               </label>
               <input
                 type="password"
@@ -103,7 +105,7 @@ const Settings = () => {
                 onChange={handleChange}
                 required
                 className="input-glass"
-                placeholder="Confirm new password"
+                placeholder={t('enter_confirm_password')}
                 style={{ width: '100%', padding: '0.75rem', borderRadius: '8px' }}
               />
             </div>
@@ -143,7 +145,7 @@ const Settings = () => {
               ) : (
                 <>
                   <Save size={18} />
-                  <span>Update Password</span>
+                  <span>{t('update_user')}</span>
                 </>
               )}
             </button>

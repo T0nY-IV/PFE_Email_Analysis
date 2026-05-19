@@ -252,3 +252,54 @@ button {
 .delay-300 {
   animation-delay: 300ms;
 }
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] button,
+[dir="rtl"] input,
+[dir="rtl"] select,
+[dir="rtl"] textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] .badge {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .btn-primary,
+[dir="rtl"] .btn-secondary {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .text-gradient {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Form RTL */
+[dir="rtl"] .input-glass {
+  text-align: right;
+}
+
+[dir="rtl"] .form-group label {
+  text-align: right;
+}
+
+/* Lists and grids RTL */
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+  padding-left: 0;
+  padding-right: 2rem;
+}
+
+[dir="rtl"] li {
+  text-align: right;
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../context/AuthContext';
 import {
   Activity,
@@ -35,6 +36,7 @@ import { dataAPI, pollerAPI, reclamationsAPI, demandesAPI } from '../services/ap
 import './Dashboard.css';
 
 const Dashboard = () => {
+  const { t } = useTranslation();
   const { user } = useAuth();
   const [pollerStatus, setPollerStatus] = useState(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
@@ -121,25 +123,25 @@ const Dashboard = () => {
   const totalPending = totalMails - totalResolved;
 
   const pieData = [];
-  if (showReclamations) pieData.push({ name: 'Réclamations', value: stats.reclamations.total, color: '#ef4444' });
-  if (showDemandes) pieData.push({ name: 'Demandes', value: stats.demandes.total, color: '#8b5cf6' });
+  if (showReclamations) pieData.push({ name: t('reclamations'), value: stats.reclamations.total, color: '#ef4444' });
+  if (showDemandes) pieData.push({ name: t('demandes'), value: stats.demandes.total, color: '#8b5cf6' });
 
   const overallStatusData = [
-    { name: 'Resolved', value: totalResolved, color: '#10b981' },
-    { name: 'Pending', value: totalPending, color: '#f97316' }
+    { name: t('resolved'), value: totalResolved, color: '#10b981' },
+    { name: t('pending'), value: totalPending, color: '#f97316' }
   ];
 
   const barData = [];
   if (showReclamations) {
     barData.push({
-      name: 'Réclamations',
+      name: t('reclamations'),
       Resolved: stats.reclamations.resolved,
       Pending: stats.reclamations.total - stats.reclamations.resolved
     });
   }
   if (showDemandes) {
     barData.push({
-      name: 'Demandes',
+      name: t('demandes'),
       Resolved: stats.demandes.resolved,
       Pending: stats.demandes.total - stats.demandes.resolved
     });
@@ -225,16 +227,16 @@ const Dashboard = () => {
     <div className="dashboard animate-fade-in">
       <div className="dashboard-header">
         <div className="header-content">
-          <h1>Welcome back, {user?.username}!</h1>
-          <p>Monitor your email processing workflows in real-time</p>
+          <h1>{t('welcome_back')}, {user?.username}!</h1>
+          <p>{t('monitor_workflows')}</p>
           <div className="header-stats">
             <div className="mini-stat">
               <TrendingUp size={16} />
-              <span>{totalMails} Total Emails</span>
+              <span>{totalMails} {t('total_emails')}</span>
             </div>
             <div className="mini-stat">
               <CheckCircle size={16} />
-              <span>{((totalResolved / (totalMails || 1)) * 100).toFixed(1)}% Resolved</span>
+              <span>{((totalResolved / (totalMails || 1)) * 100).toFixed(1)} {t('percent_resolved')}</span>
             </div>
           </div>
         </div>
@@ -244,7 +246,7 @@ const Dashboard = () => {
           disabled={isRefreshing}
         >
           <Activity size={16} className={isRefreshing ? 'spin' : ''} />
-          {isRefreshing ? 'Refreshing...' : 'Refresh Data'}
+          {isRefreshing ? t('refreshing') : t('refresh_data')}
         </button>
       </div>
 
@@ -254,11 +256,11 @@ const Dashboard = () => {
             <Activity size={28} />
           </div>
           <div className="stat-content">
-            <p className="stat-label">System Status</p>
-            <h3 className="stat-value">{pollerStatus?.is_running ? 'Active' : 'Paused'}</h3>
+            <p className="stat-label">{t('system_status')}</p>
+            <h3 className="stat-value">{pollerStatus?.is_running ? t('active') : t('paused')}</h3>
             <div className={`stat-trend ${pollerStatus?.is_running ? 'positive' : 'negative'}`}>
               {pollerStatus?.is_running ? <CheckCircle size={14} /> : <AlertCircle size={14} />}
-              <span>{pollerStatus?.is_running ? 'Running smoothly' : 'Needs attention'}</span>
+              <span>{pollerStatus?.is_running ? t('running_smoothly') : t('needs_attention')}</span>
             </div>
           </div>
         </div>
@@ -268,11 +270,11 @@ const Dashboard = () => {
             <CheckCircle size={28} />
           </div>
           <div className="stat-content">
-            <p className="stat-label">Resolved Cases</p>
+            <p className="stat-label">{t('resolved_cases')}</p>
             <h3 className="stat-value">{totalResolved}</h3>
             <div className="stat-trend positive">
               <ArrowUpRight size={14} />
-              <span>{((totalResolved / (totalMails || 1)) * 100).toFixed(1)}% success rate</span>
+              <span>{((totalResolved / (totalMails || 1)) * 100).toFixed(1)}% {t('success_rate')}</span>
             </div>
           </div>
         </div>
@@ -282,11 +284,11 @@ const Dashboard = () => {
             <AlertCircle size={28} />
           </div>
           <div className="stat-content">
-            <p className="stat-label">Pending Cases</p>
+            <p className="stat-label">{t('pending_cases')}</p>
             <h3 className="stat-value">{totalPending}</h3>
             <div className="stat-trend negative">
               <ArrowDownRight size={14} />
-              <span>Requires action</span>
+              <span>{t('requires_action')}</span>
             </div>
           </div>
         </div>
@@ -296,11 +298,11 @@ const Dashboard = () => {
             <Mail size={28} />
           </div>
           <div className="stat-content">
-            <p className="stat-label">Total Volume</p>
+            <p className="stat-label">{t('total_volume')}</p>
             <h3 className="stat-value">{totalMails}</h3>
             <div className="stat-trend neutral">
               <BarChart3 size={14} />
-              <span>This week</span>
+              <span>{t('this_week')}</span>
             </div>
           </div>
         </div>
@@ -310,7 +312,7 @@ const Dashboard = () => {
         <div className="chart-card glass-panel animate-slide-up">
           <div className="chart-header">
             <PieChartIcon size={20} />
-            <h3>Volume Distribution</h3>
+            <h3>{t('volume_distribution')}</h3>
           </div>
           <div className="chart-container">
             <ResponsiveContainer width="100%" height={280}>
@@ -352,7 +354,7 @@ const Dashboard = () => {
         <div className="chart-card glass-panel animate-slide-up delay-200">
           <div className="chart-header">
             <BarChart3 size={20} />
-            <h3>Resolution Performance</h3>
+            <h3>{t('resolution_performance')}</h3>
           </div>
           <div className="chart-container">
             <ResponsiveContainer width="100%" height={280}>
@@ -399,7 +401,7 @@ const Dashboard = () => {
         <div className="chart-card glass-panel animate-slide-up delay-400">
           <div className="chart-header">
             <TrendingUp size={20} />
-            <h3>Weekly Trends</h3>
+            <h3>{t('weekly_trends')}</h3>
           </div>
           <div className="chart-container">
             <ResponsiveContainer width="100%" height={280}>
@@ -456,11 +458,11 @@ const Dashboard = () => {
             </ResponsiveContainer>
           </div>
         </div>
-        <div className="chart-card glass-panel animate-slide-up delay-600">
+        <div className="chart-card glass-panel animate-slide-up delay-600 full-width">
           <div className="chart-header">
             <Activity size={20} />
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <h3>My Resolution Rate</h3>
+              <h3>{t('my_resolution_rate')}</h3>
               <span style={{ 
                 background: 'var(--accent-gradient)', 
                 color: 'white', 
@@ -469,7 +471,7 @@ const Dashboard = () => {
                 borderRadius: '20px',
                 fontWeight: '700'
               }}>
-                IMPACT: {totalImpactCount}
+                {t('impact')}: {totalImpactCount}
               </span>
             </div>
           </div>
@@ -504,7 +506,7 @@ const Dashboard = () => {
                   <Line
                     type="monotone"
                     dataKey="reclamations"
-                    name="My Reclamations"
+                    name={t('my_reclamations')}
                     stroke="#ef4444"
                     strokeWidth={4}
                     dot={{ fill: '#ef4444', strokeWidth: 2, r: 6, stroke: '#fff' }}
@@ -517,7 +519,7 @@ const Dashboard = () => {
                   <Line
                     type="monotone"
                     dataKey="demandes"
-                    name="My Demandes"
+                    name={t('my_demandes')}
                     stroke="#8b5cf6"
                     strokeWidth={4}
                     dot={{ fill: '#8b5cf6', strokeWidth: 2, r: 6, stroke: '#fff' }}
@@ -534,7 +536,7 @@ const Dashboard = () => {
         <div className="chart-card glass-panel animate-slide-up delay-600 full-width">
           <div className="chart-header">
             <BarChart3 size={20} />
-            <h3>Monthly Retrieval Volume ({new Date().getFullYear()})</h3>
+            <h3>{t('monthly_retrieval_volume')} ({new Date().getFullYear()})</h3>
           </div>
           <div className="chart-container">
             <ResponsiveContainer width="100%" height={300}>
@@ -550,7 +552,7 @@ const Dashboard = () => {
                 <YAxis 
                   stroke="var(--text-secondary)" 
                   fontSize={12} 
-                  axisLine={false}
+                  axisLine={false} 
                   tickLine={false}
                 />
                 <Tooltip 
@@ -566,6 +568,7 @@ const Dashboard = () => {
                 <Legend />
                 <Bar 
                   dataKey="Reclamations" 
+                  name={t('monthly_reclamations')}
                   fill="#ef4444" 
                   radius={[4, 4, 0, 0]} 
                   barSize={20}
@@ -574,9 +577,8 @@ const Dashboard = () => {
                 />
                 <Bar 
                   dataKey="Demandes" 
+                  name={t('monthly_demandes')}
                   fill="#8b5cf6" 
-                  radius={[4, 4, 0, 0]} 
-                  barSize={20}
                   animationBegin={500}
                   animationDuration={1500}
                 />

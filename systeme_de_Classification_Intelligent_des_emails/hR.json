@@ -6601,5 +6601,63 @@
       },
       "confidence_score": 1.0
     }
+  },
+  {
+    "input_email": "UID: 31\nFrom: Yessine Ht <yessineht@gmail.com> \n Subject: Mission Order Request \n Date: Tue, 19 May 2026 21:42:45 +0100 \n J'espère que vous allez bien ! Je me permets de vous contacter afin de_x000D_\nsolliciter votre validation pour un court déplacement professionnel prévu_x000D_\nles 17 et 18 novembre 2024 à Kairouan. Cette mission est liée à des_x000D_\nactivités en cours qui nécessitent vraiment une présence sur place, et je_x000D_\nsouhaite m'assurer que tout se passe dans les meilleures conditions._x000D_\n_x000D_\nVoici mes informations pour la demande : je m'appelle Imen Souissi, vous_x000D_\npouvez me joindre à l'adresse yessineht@gmail.com, et la destination est_x000D_\nKairouan pour ces deux journées. L'accord de mon responsable est encore en_x000D_\nattente, mais je souhaitais vous transmettre cette demande en avance afin_x000D_\nd'éviter tout délai de traitement._x000D_\n_x000D_\nSi vous avez besoin de quoi que ce soit de ma part — documents_x000D_\nsupplémentaires, détails sur les objectifs de la mission, ou autre —_x000D_\nn'hésitez pas à me le faire savoir et je vous fournirai tout cela dans les_x000D_\nplus brefs délais._x000D_\n_x000D_\nMerci beaucoup pour votre aide et votre disponibilité !_x000D_\n_x000D_\nCordialement,_x000D_\nyessine haj taieb\n\nAttachments:\n",
+    "output": {
+      "label": "Mission Order",
+      "email_id": "31",
+      "type": "WORKFLOW",
+      "attributes": {
+        "Destination": "Kairouan",
+        "Période": "17 et 18 novembre 2024",
+        "Objet": null,
+        "Employee": "Imen Souissi",
+        "Full Name": "Imen Souissi",
+        "Position": null,
+        "Home Address": null,
+        "Departure Date": null,
+        "Departure Time": null,
+        "Return Date": null,
+        "Return Time": null,
+        "Destination Type": null,
+        "Address": "Kairouan",
+        "Attachment ": null,
+        "Supervisor Approval": null,
+        "Accommodation Required": null,
+        "Means of Transport": null,
+        "Type": null,
+        "Estimated Working Capital": null,
+        "Resource Allocation": null,
+        "Approved Budget": null,
+        "Allocated Resources": null,
+        "Mission Report": null,
+        "Summary of Activities Performed": null,
+        "Expense Receipts": null
+      },
+      "confidence_score": 1.0
+    }
+  },
+  {
+    "input_email": "UID: 33\nFrom: Yessine Ht <yessineht@gmail.com> \n Subject: Demande de recrutement – Poste : Développeur Full Stack \n Date: Thu, 21 May 2026 09:45:19 +0100 \n Madame, Monsieur,_x000D_\n_x000D_\nJe me permets de vous adresser la présente afin d'initier une demande de_x000D_\nrecrutement pour le poste de Développeur Full Stack au sein de notre_x000D_\ndépartement Informatique._x000D_\n_x000D_\n**Description du besoin**_x000D_\nFace à l'accroissement de nos projets de développement, nous avons besoin_x000D_\nde renforcer notre équipe technique par le recrutement d'un profil_x000D_\nexpérimenté en développement web Full Stack._x000D_\n_x000D_\n**Poste**_x000D_\nDéveloppeur Full Stack_x000D_\n_x000D_\n**Documents joints**_x000D_\n- Fiche de poste : ci-jointe_x000D_\n- Questionnaire de recrutement : ci-joint_x000D_\n_x000D_\n**Présélection des candidats**_x000D_\nSuite à l'analyse des candidatures reçues, les candidats présélectionnés_x000D_\nsont les suivants :_x000D_\n1. Ahmed Ben Salem_x000D_\n2. Sonia Trabelsi_x000D_\n3. Karim Mansour_x000D_\n_x000D_\n**Entretien(s)**_x000D_\n- Date d'entretien : 28/05/2026_x000D_\n- Type d'entretien : Entretien technique + RH_x000D_\n- Évaluateurs : M. Youssef Chaabane (Responsable technique), Mme Rim_x000D_\nBouaziz (RH)_x000D_\n_x000D_\n**Résultats**_x000D_\n- Résultats des questionnaires : ci-joints_x000D_\n- Résultat de l'entretien : Favorable pour M. Ahmed Ben Salem_x000D_\n_x000D_\n**Candidat retenu**_x000D_\n- Nom du candidat retenu : Ahmed Ben Salem_x000D_\n- Type de contrat : CDI_x000D_\n- Date d'embauche : 01/07/2026_x000D_\n- Seuil de proposition d'embauche : 2 800 TND_x000D_\n- Proposition finale d'embauche : 3 000 TND_x000D_\n_x000D_\nNous vous prions de bien vouloir procéder à la préparation du contrat et de_x000D_\nplanifier la signature dans les meilleurs délais._x000D_\n_x000D_\nContrat : à établir_x000D_\n_x000D_\nRestant à votre disposition pour tout complément d'information,_x000D_\n_x000D_\nCordialement,_x000D_\n_x000D_\nMohamed Khalil_x000D_\nResponsable Département Informatique_x000D_\nm.khalil@entreprise.tn | +216 71 000 000\n\nAttachments:\n",
+    "output": {
+      "label": "Recruitment Request",
+      "email_id": 33,
+      "type": "WORKFLOW",
+      "attributes": {
+        "Création demande de recrutement": null,
+        "Intitulé du poste ": "Développeur Full Stack",
+        "Diplôme souhaitée ": null,
+        "Spécialité": null,
+        "Nombre des postes souhaitées ": null,
+        "Date de recrutement souhaitée": null,
+        "Genre ": null,
+        "Description des tâches ": null,
+        "Cause de recrutement": null,
+        "Expérience souhaitée": null,
+        "Type de contrat ": "CDI"
+      },
+      "confidence_score": 1.0
+    }
   }
 ]

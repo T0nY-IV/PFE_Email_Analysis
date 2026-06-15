@@ -209,6 +209,7 @@ async def query(request: QueryRequest):
                     model="llama3.1:latest",
                     messages=[{"role": "user", "content": augmented_prompt}]
                 )
+                print(response["message"]["content"])
                 data_json = json.loads(response["message"]["content"])
                 break
             except Exception as retry_error:

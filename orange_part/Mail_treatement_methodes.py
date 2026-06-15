@@ -255,8 +255,8 @@ Answer:
         # Retry prediction up to 3 times, then fallback to "not analysed"
         max_attempts = 3
         retry_delay = 1
-        data_json = "not analysed"
-        for attempt in range(0, max_attempts):
+        data_json = {"email_id": str(Uid), "workflow_type": "Other", "attributes": {},"confidence_score": 0.0}
+        for attempt in range(0, max_attempts + 1):
             try:
                 response = chat(
                     model="llama3.1:latest",
@@ -271,9 +271,10 @@ Answer:
                     print("Retrying...")
                     time.sleep(retry_delay)
                 else:
-                    print("Prediction failed after 3 attempts. Output set to 'not analysed'.")
+                    print("Prediction failed after 3 attempts. Output set to 'Other'.")
+                    data_json["attributes"] = {"error": "Prediction failed after 3 attempts.", "output": response["message"]["content"] if 'response' in locals() else "No response received."}
         
-        if len(email.split("/*MailSender*/")) > 1 and len(email.split("/*MailSub*/")) > 1 and data_json != "not analysed":
+        if len(email.split("/*MailSender*/")) > 1 and len(email.split("/*MailSub*/")) > 1 and data_json["workflow_type"] != "Other":
             sender = email.split("/*MailSender*/")[1]
             subject = email.split("/*MailSub*/")[1]
             try:

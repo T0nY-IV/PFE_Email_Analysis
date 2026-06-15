@@ -495,7 +495,7 @@ async def update_user(
                 msg = MIMEMultipart()
                 msg['From'] = sender_email
                 msg['To'] = str(user.email)
-                msg['Subject'] = "Your Account Has Been Disabled"
+                msg['Subject'] = "Your Account Has Been Enabled"
 
                 html_body = f"""
                 <!DOCTYPE html>

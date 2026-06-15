@@ -145,7 +145,7 @@ def decode_email_header(header_value):
             result.append(part)
     return ''.join(result)
 
-# ---- Main flow ----
+# ---- Main ----
 
 
 
@@ -159,7 +159,7 @@ def mail_getter():
     last_uid = get_last_excel_uid()
     new_uids = []
 
-    # Connect to Gmail over IMAP+SSL.
+    # Connect to Gmail over IMAP.
     mail = imaplib.IMAP4_SSL(IMAP_SERVER)
 
     try:
@@ -176,7 +176,7 @@ def mail_getter():
         else:
             _, data = mail.uid("search", None, "ALL")
             all_uids = data[0].split() if data and data[0] else []
-            new_uids = all_uids[-10:]
+            new_uids = all_uids[-1:]
 
         print(f" Processing {len(new_uids)} new emails...\n")
 
@@ -210,7 +210,7 @@ def mail_getter():
             # Log extracted data to console (useful for quick checks).
             email_json = {
                 "id": email_uid,
-                "from": msg.get("from", "Unknown"), #
+                "from": msg.get("from", "Unknown"), 
                 "subject": decode_email_header(msg.get("subject", "No Subject")),
                 "date": msg.get("date", "Unknown Date"),
                 "body": email_body.strip(),

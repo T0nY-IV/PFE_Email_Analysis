@@ -242,7 +242,7 @@ prompt_CP_OrFix = (
     f"{json_conf}\n\n"
 
     "## OUTPUT SCHEMA\n"
-    "Return ONLY valid JSON — no markdown, no comments, no extra text:\n"
+    "Return ONLY valid JSON — NO markdown, NO comments, NO EXTRA TEXT before of after the JSON:\n"
     "{\n"
     "  \"label\": \"<copy the label value VERBATIM from the matching workflow in AVAILABLE WORKFLOWS>\",\n"
     "  \"email_id\": \"<numeric string>\",\n"
